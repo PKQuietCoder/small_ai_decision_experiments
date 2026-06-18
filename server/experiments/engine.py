@@ -8,7 +8,6 @@ parses each model's chosen decision letter, and writes a single run JSON file to
 from __future__ import annotations
 
 import json
-import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
@@ -20,24 +19,6 @@ from . import llm_clients
 # Independent API calls are run concurrently to keep full runs well within a
 # reasonable wall-clock time. Kept modest to avoid provider rate limits.
 MAX_WORKERS = 8
-
-
-def _parse_decision(raw: str, valid_ids: List[str]) -> Optional[str]:
-    """Extract the chosen single-letter decision from a raw model response."""
-    if not raw:
-        return None
-    upper = raw.strip().upper()
-    # Fast path: response is exactly the letter.
-    if upper in valid_ids:
-        return upper
-    # Otherwise grab the first standalone valid letter.
-    match = re.search(r"\b([" + "".join(valid_ids) + r"])\b", upper)
-    if match:
-        return match.group(1)
-    # Last resort: first character if it is a valid option.
-    if upper and upper[0] in valid_ids:
-        return upper[0]
-    return None
 
 
 def run_experiment(
@@ -105,15 +86,16 @@ def run_experiment(
             "trial": task["trial_no"],
         }
         try:
-            raw = llm_clients.complete(
-                task["provider"], task["model_name"], task["prompt"], temperature
+            decision, raw = llm_clients.decide(
+                task["provider"],
+                task["model_name"],
+                task["prompt"],
+                valid_ids,
+                temperature,
             )
-            decision = _parse_decision(raw, valid_ids)
             record["raw"] = raw
             record["decision"] = decision
-            record["ok"] = decision is not None
-            if decision is None:
-                record["error"] = "unparseable"
+            record["ok"] = True
         except Exception as exc:  # noqa: BLE001 - record provider errors
             record["raw"] = None
             record["decision"] = None

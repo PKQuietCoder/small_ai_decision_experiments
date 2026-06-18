@@ -25,10 +25,16 @@ app.add_middleware(
 
 
 def _preview_enabled(preview: bool) -> bool:
-    """Allow draft (unpublished) content only outside production."""
+    """Allow draft (unpublished) content only in the development workspace.
+
+    Secure default: drafts are NEVER served from a published deployment,
+    regardless of the ``?preview`` flag. Replit sets ``REPLIT_DEPLOYMENT=1`` in
+    deployments and leaves it unset in the dev workspace, so preview is a
+    development-only convenience for reviewing posts before publishing.
+    """
     if not preview:
         return False
-    return os.environ.get("NODE_ENV") != "production"
+    return os.environ.get("REPLIT_DEPLOYMENT") != "1"
 
 
 @app.get("/api/healthz")

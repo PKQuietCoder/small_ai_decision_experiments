@@ -22,10 +22,10 @@ Site-wide metadata for header/footer/about.
   "tagline": "Small, careful experiments on how language models actually decide.",
   "description": "A running series of decision-science experiments ...",
   "author": "The LLM Decision Science Lab",
-  "about": "..."          // markdown/plaintext string for the About page
+  "aboutHtml": "<p>...</p>"   // rendered HTML for the About page (from markdown)
 }
 ```
-(Additional keys may be present; treat the object as open. `about` may be long.)
+(Additional keys may be present; treat the object as open. `aboutHtml` is server-rendered HTML and may be long.)
 
 ## GET /api/posts
 Returns an array of post summaries (published only; drafts with `?preview=1`).

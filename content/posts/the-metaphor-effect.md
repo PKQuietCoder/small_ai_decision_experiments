@@ -7,7 +7,7 @@ excerpt: 'We hold a decision scenario perfectly constant and change only one thi
 experimentId: metaphor-effect
 featured: true
 published: true
-runId: 20260618T233153Z
+runId: 20260618T234637Z
 slug: the-metaphor-effect
 tags:
 - framing
@@ -69,17 +69,17 @@ Answer with only the single capital letter (A, B, C, or D).
 ## What we found
 
 The effect is stark. Across **five of the six metaphors** — sinking ship, machine,
-patient, battlefield, and puzzle — both models converged almost unanimously on
+patient, battlefield, and puzzle — both models converged unanimously on
 **C, "Diagnose first."** Nothing about the underlying situation changed, yet the
-recommendation was essentially deterministic.
+recommendation was completely deterministic.
 
 One metaphor broke the pattern. When the team was framed as **"a garden that needs
-tending,"** the models flipped to **B, "Coach and support,"** in 47 of 50 trials.
+tending,"** the models flipped to **B, "Coach and support,"** in all 50 of 50 trials.
 A single organic, nurturing image was enough to move the decision off the otherwise
 universal "diagnose" default and toward patient cultivation.
 
-- **"Garden"** → *Coach and support* (B) **94%** of the time.
-- **Every other metaphor** → *Diagnose first* (C) **~100%** of the time.
+- **"Garden"** → *Coach and support* (B) **100%** of the time.
+- **Every other metaphor** → *Diagnose first* (C) **100%** of the time.
 
 The framing — and nothing else — moved the decision. The charts below break this
 down by metaphor and by model.

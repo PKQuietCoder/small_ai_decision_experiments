@@ -1,2 +1,3 @@
 - [Artifact dev port must be in .replit ports](artifact-dev-ports.md) — a web artifact's localPort must match a reserved `[[ports]]` entry in `.replit`, or the workflow fails with DIDNT_OPEN_A_PORT even though vite logs "ready".
 - [Detached shell processes get killed](shell-detached-processes.md) — nohup/setsid background processes are killed when the bash call returns; long jobs must finish inside one foreground call (or be made fast enough to).
+- [LLM structured decisions & preview gating](llm-structured-decisions.md) — decisions read from provider-enforced enum (OpenAI json_schema / Anthropic forced tool), never regex; drafts gated by REPLIT_DEPLOYMENT!=1 (deny-by-default), not NODE_ENV.

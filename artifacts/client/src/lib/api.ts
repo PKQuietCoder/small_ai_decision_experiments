@@ -3,7 +3,7 @@ export interface SiteInfo {
   tagline: string;
   description: string;
   author: string;
-  about: string;
+  aboutHtml: string;
   [key: string]: any;
 }
 

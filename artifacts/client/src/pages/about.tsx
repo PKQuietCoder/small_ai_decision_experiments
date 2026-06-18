@@ -30,7 +30,7 @@ export default function About() {
           </p>
           
           <div 
-            dangerouslySetInnerHTML={{ __html: site.about.replace(/\n\n/g, '</p><p>').replace(/^/, '<p>').replace(/$/, '</p>') }} 
+            dangerouslySetInnerHTML={{ __html: site.aboutHtml ?? "" }} 
           />
 
           <hr className="my-12 border-border" />

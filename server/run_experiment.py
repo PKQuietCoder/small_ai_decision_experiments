@@ -18,6 +18,7 @@ from __future__ import annotations
 import argparse
 import sys
 
+from server.app import content_store
 from server.app.content_store import load_experiment_config
 from server.experiments.engine import run_experiment
 from server.experiments.post_generator import generate_post
@@ -45,6 +46,12 @@ def main(argv: list[str] | None = None) -> int:
     ok = sum(1 for trial in run["trials"] if trial.get("ok"))
     total = len(run["trials"])
     print(f"Completed: {ok}/{total} trials parsed successfully.")
+
+    analysis = content_store.build_analysis(experiment, run)
+    analysis_path = content_store.save_analysis(
+        experiment["id"], run["runId"], analysis
+    )
+    print(f"Analysis written to: {analysis_path}")
 
     if not args.no_post:
         path = generate_post(experiment, run, overwrite=not args.keep_post)

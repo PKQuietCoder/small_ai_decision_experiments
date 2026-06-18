@@ -75,6 +75,52 @@ def latest_run(experiment_id: str) -> Optional[Dict[str, Any]]:
 
 
 # --------------------------------------------------------------------------- #
+# Analysis persistence
+#
+# Analysis is computed once when a run completes and written to a file so the
+# public API and posts render from stored artifacts and never re-call the
+# models. ``analysis_for`` reads that file, rebuilding (and persisting) it only
+# as a migration fallback for runs that predate analysis-file storage.
+# --------------------------------------------------------------------------- #
+def analysis_path(experiment_id: str, run_id: str) -> Path:
+    return config.ANALYSIS_DIR / experiment_id / f"{run_id}.json"
+
+
+def save_analysis(
+    experiment_id: str, run_id: str, analysis: Dict[str, Any]
+) -> Path:
+    config.ensure_dirs()
+    directory = config.ANALYSIS_DIR / experiment_id
+    directory.mkdir(parents=True, exist_ok=True)
+    path = directory / f"{run_id}.json"
+    with path.open("w", encoding="utf-8") as handle:
+        json.dump(analysis, handle, indent=2)
+    return path
+
+
+def load_analysis(experiment_id: str, run_id: str) -> Optional[Dict[str, Any]]:
+    path = analysis_path(experiment_id, run_id)
+    if not path.exists():
+        return None
+    with path.open("r", encoding="utf-8") as handle:
+        return json.load(handle)
+
+
+def analysis_for(
+    experiment: Dict[str, Any], run: Dict[str, Any]
+) -> Dict[str, Any]:
+    """Return the stored analysis for a run, rebuilding + persisting if absent."""
+    experiment_id = experiment["id"]
+    run_id = run["runId"]
+    stored = load_analysis(experiment_id, run_id)
+    if stored is not None:
+        return stored
+    analysis = build_analysis(experiment, run)
+    save_analysis(experiment_id, run_id, analysis)
+    return analysis
+
+
+# --------------------------------------------------------------------------- #
 # Analysis
 # --------------------------------------------------------------------------- #
 def build_analysis(
@@ -257,7 +303,7 @@ def get_post(slug: str, include_unpublished: bool = False) -> Optional[Dict[str,
         if experiment:
             run = load_run(experiment_id, run_id) if run_id else latest_run(experiment_id)
         if experiment and run:
-            analysis = build_analysis(experiment, run)
+            analysis = analysis_for(experiment, run)
 
     return {**summary, "bodyHtml": body_html, "analysis": analysis}
 
@@ -296,7 +342,7 @@ def get_experiment(experiment_id: str) -> Optional[Dict[str, Any]]:
         return None
     summary = _experiment_summary(experiment)
     run = latest_run(experiment_id)
-    analysis = build_analysis(experiment, run) if run else None
+    analysis = analysis_for(experiment, run) if run else None
     return {
         **summary,
         "hypothesis": (experiment.get("hypothesis") or "").strip(),

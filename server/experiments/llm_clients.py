@@ -8,6 +8,7 @@ talks to the providers directly through their official Python SDKs.
 from __future__ import annotations
 
 import os
+import threading
 from typing import Optional
 
 from anthropic import Anthropic
@@ -15,29 +16,36 @@ from openai import OpenAI
 
 _openai_client: Optional[OpenAI] = None
 _anthropic_client: Optional[Anthropic] = None
+# Guards lazy singleton creation: the engine calls complete() from many threads,
+# so first-time initialization must not race.
+_client_lock = threading.Lock()
 
 
 def _get_openai() -> OpenAI:
     global _openai_client
     if _openai_client is None:
-        key = os.environ.get("OPENAI_API_KEY")
-        if not key:
-            raise RuntimeError(
-                "OPENAI_API_KEY is not set. Add it in the Replit Secrets pane."
-            )
-        _openai_client = OpenAI(api_key=key)
+        with _client_lock:
+            if _openai_client is None:
+                key = os.environ.get("OPENAI_API_KEY")
+                if not key:
+                    raise RuntimeError(
+                        "OPENAI_API_KEY is not set. Add it in the Replit Secrets pane."
+                    )
+                _openai_client = OpenAI(api_key=key)
     return _openai_client
 
 
 def _get_anthropic() -> Anthropic:
     global _anthropic_client
     if _anthropic_client is None:
-        key = os.environ.get("ANTHROPIC_API_KEY")
-        if not key:
-            raise RuntimeError(
-                "ANTHROPIC_API_KEY is not set. Add it in the Replit Secrets pane."
-            )
-        _anthropic_client = Anthropic(api_key=key)
+        with _client_lock:
+            if _anthropic_client is None:
+                key = os.environ.get("ANTHROPIC_API_KEY")
+                if not key:
+                    raise RuntimeError(
+                        "ANTHROPIC_API_KEY is not set. Add it in the Replit Secrets pane."
+                    )
+                _anthropic_client = Anthropic(api_key=key)
     return _anthropic_client
 
 

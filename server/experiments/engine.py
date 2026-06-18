@@ -9,12 +9,17 @@ from __future__ import annotations
 
 import json
 import re
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Callable, Dict, List, Optional
 
 from ..app import config
 from . import llm_clients
+
+# Independent API calls are run concurrently to keep full runs well within a
+# reasonable wall-clock time. Kept modest to avoid provider rate limits.
+MAX_WORKERS = 8
 
 
 def _parse_decision(raw: str, valid_ids: List[str]) -> Optional[str]:
@@ -59,42 +64,76 @@ def run_experiment(
     trials: List[Dict[str, Any]] = []
 
     total_cells = len(models) * len(variants)
-    cell_index = 0
 
+    # Build the full task list up front so independent API calls can run
+    # concurrently. ``order`` preserves a deterministic model-major,
+    # variant, then trial ordering in the final trials list.
+    tasks: List[Dict[str, Any]] = []
+    order = 0
+    cell_index = 0
     for model_cfg in models:
         provider = model_cfg["provider"]
         model_name = model_cfg["model"]
         model_label = model_cfg.get("label", model_name)
         for variant in variants:
             cell_index += 1
-            log(
-                f"[{cell_index}/{total_cells}] {model_label} x "
-                f"{variant.get('label', variant['id'])} ..."
-            )
             prompt = prompt_template.format(metaphor=variant["metaphor"])
             for trial_no in range(trials_per_cell):
-                record: Dict[str, Any] = {
-                    "model": model_label,
-                    "provider": provider,
-                    "variantId": variant["id"],
-                    "trial": trial_no,
-                }
-                try:
-                    raw = llm_clients.complete(
-                        provider, model_name, prompt, temperature
-                    )
-                    decision = _parse_decision(raw, valid_ids)
-                    record["raw"] = raw
-                    record["decision"] = decision
-                    record["ok"] = decision is not None
-                    if decision is None:
-                        record["error"] = "unparseable"
-                except Exception as exc:  # noqa: BLE001 - record provider errors
-                    record["raw"] = None
-                    record["decision"] = None
-                    record["ok"] = False
-                    record["error"] = str(exc)
-                trials.append(record)
+                tasks.append(
+                    {
+                        "order": order,
+                        "cell_index": cell_index,
+                        "cell_label": (
+                            f"[{cell_index}/{total_cells}] {model_label} x "
+                            f"{variant.get('label', variant['id'])}"
+                        ),
+                        "provider": provider,
+                        "model_name": model_name,
+                        "model_label": model_label,
+                        "variant_id": variant["id"],
+                        "trial_no": trial_no,
+                        "prompt": prompt,
+                    }
+                )
+                order += 1
+
+    def run_task(task: Dict[str, Any]) -> Dict[str, Any]:
+        record: Dict[str, Any] = {
+            "model": task["model_label"],
+            "provider": task["provider"],
+            "variantId": task["variant_id"],
+            "trial": task["trial_no"],
+        }
+        try:
+            raw = llm_clients.complete(
+                task["provider"], task["model_name"], task["prompt"], temperature
+            )
+            decision = _parse_decision(raw, valid_ids)
+            record["raw"] = raw
+            record["decision"] = decision
+            record["ok"] = decision is not None
+            if decision is None:
+                record["error"] = "unparseable"
+        except Exception as exc:  # noqa: BLE001 - record provider errors
+            record["raw"] = None
+            record["decision"] = None
+            record["ok"] = False
+            record["error"] = str(exc)
+        return record
+
+    results: List[Optional[Dict[str, Any]]] = [None] * len(tasks)
+    cells_done: set = set()
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        future_to_task = {executor.submit(run_task, task): task for task in tasks}
+        for future in as_completed(future_to_task):
+            task = future_to_task[future]
+            results[task["order"]] = future.result()
+            cell = task["cell_index"]
+            if cell not in cells_done:
+                cells_done.add(cell)
+                log(f"{task['cell_label']} ...")
+
+    trials = [record for record in results if record is not None]
 
     finished_at = datetime.now(timezone.utc)
 

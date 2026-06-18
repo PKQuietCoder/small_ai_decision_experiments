@@ -7,7 +7,7 @@ excerpt: 'We hold a decision scenario perfectly constant and change only one thi
 experimentId: metaphor-effect
 featured: true
 published: true
-runId: 20260618T224838Z-sample
+runId: 20260618T233153Z
 slug: the-metaphor-effect
 tags:
 - framing
@@ -44,7 +44,7 @@ For every framing the model picks one of four actions:
 - **D** — Push accountability
 
 We ran **25 trials per framing, per model**,
-at temperature 1.0, across GPT-4o mini, Claude 3.5 Haiku.
+at temperature 1.0, across GPT-4o mini, Claude Haiku 4.5.
 The charts below are generated live from the recorded run.
 
 ### The exact prompt
@@ -68,9 +68,21 @@ Answer with only the single capital letter (A, B, C, or D).
 
 ## What we found
 
-- When the team was framed as "a sinking ship", the models chose **Restructure leadership** 58% of the time — the highest of any framing.
-- The same option fell to 2% when the team was described as "a garden that needs tending".
-- Across all framings there is a statistically significant association between the metaphor and the chosen action (chi-square p = 0.0000, Cramer's V = 0.4646).
+The effect is stark. Across **five of the six metaphors** — sinking ship, machine,
+patient, battlefield, and puzzle — both models converged almost unanimously on
+**C, "Diagnose first."** Nothing about the underlying situation changed, yet the
+recommendation was essentially deterministic.
+
+One metaphor broke the pattern. When the team was framed as **"a garden that needs
+tending,"** the models flipped to **B, "Coach and support,"** in 47 of 50 trials.
+A single organic, nurturing image was enough to move the decision off the otherwise
+universal "diagnose" default and toward patient cultivation.
+
+- **"Garden"** → *Coach and support* (B) **94%** of the time.
+- **Every other metaphor** → *Diagnose first* (C) **~100%** of the time.
+
+The framing — and nothing else — moved the decision. The charts below break this
+down by metaphor and by model.
 
 ## Reading the results
 

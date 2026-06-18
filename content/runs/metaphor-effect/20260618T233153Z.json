@@ -1,0 +1,2722 @@
+{
+  "runId": "20260618T233153Z",
+  "experimentId": "metaphor-effect",
+  "startedAt": "2026-06-18T23:31:53.061372+00:00",
+  "finishedAt": "2026-06-18T23:32:17.650678+00:00",
+  "trialsPerCell": 25,
+  "temperature": 1.0,
+  "models": [
+    "GPT-4o mini",
+    "Claude Haiku 4.5"
+  ],
+  "variants": [
+    "sinking_ship",
+    "garden",
+    "machine",
+    "patient",
+    "battlefield",
+    "puzzle"
+  ],
+  "trials": [
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 0,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 1,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 2,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 3,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 4,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 5,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 6,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 7,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 8,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 9,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 10,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 11,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 12,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 13,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 14,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 15,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 16,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 17,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 18,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 19,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 20,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 21,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 22,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 23,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 24,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 0,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 1,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 2,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 3,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 4,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 5,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 6,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 7,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 8,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 9,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 10,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 11,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 12,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 13,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 14,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 15,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 16,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 17,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 18,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 19,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 20,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 21,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 22,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 23,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 24,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 0,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 1,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 2,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 3,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 4,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 5,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 6,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 7,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 8,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 9,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 10,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 11,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 12,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 13,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 14,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 15,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 16,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 17,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 18,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 19,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 20,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 21,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 22,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 23,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 24,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 0,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 1,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 2,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 3,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 4,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 5,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 6,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 7,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 8,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 9,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 10,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 11,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 12,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 13,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 14,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 15,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 16,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 17,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 18,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 19,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 20,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 21,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 22,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 23,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 24,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 0,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 1,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 2,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 3,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 4,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 5,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 6,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 7,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 8,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 9,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 10,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 11,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 12,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 13,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 14,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 15,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 16,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 17,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 18,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 19,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 20,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 21,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 22,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 23,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 24,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 0,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 1,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 2,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 3,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 4,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 5,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 6,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 7,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 8,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 9,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 10,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 11,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 12,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 13,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 14,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 15,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 16,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 17,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 18,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 19,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 20,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 21,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 22,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 23,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 24,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 0,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 1,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 2,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 3,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 4,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 5,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 6,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 7,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 8,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 9,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 10,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 11,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 12,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 13,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 14,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 15,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 16,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 17,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 18,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 19,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 20,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 21,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 22,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 23,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 24,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 0,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 1,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 2,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 3,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 4,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 5,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 6,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 7,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 8,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 9,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 10,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 11,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 12,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 13,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 14,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 15,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 16,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 17,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 18,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 19,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 20,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 21,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 22,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 23,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 24,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 0,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 1,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 2,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 3,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 4,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 5,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 6,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 7,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 8,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 9,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 10,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 11,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 12,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 13,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 14,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 15,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 16,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 17,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 18,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 19,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 20,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 21,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 22,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 23,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 24,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 0,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 1,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 2,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 3,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 4,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 5,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 6,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 7,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 8,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 9,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 10,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 11,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 12,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 13,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 14,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 15,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 16,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 17,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 18,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 19,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 20,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 21,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 22,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 23,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 24,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 0,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 1,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 2,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 3,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 4,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 5,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 6,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 7,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 8,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 9,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 10,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 11,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 12,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 13,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 14,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 15,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 16,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 17,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 18,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 19,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 20,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 21,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 22,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 23,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 24,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 0,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 1,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 2,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 3,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 4,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 5,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 6,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 7,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 8,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 9,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 10,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 11,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 12,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 13,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 14,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 15,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 16,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 17,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 18,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 19,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 20,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 21,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 22,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 23,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 24,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    }
+  ]
+}

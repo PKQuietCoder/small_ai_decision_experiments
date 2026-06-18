@@ -43,15 +43,23 @@ def chi_square_contingency(table: Sequence[Sequence[int]]) -> Dict[str, object]:
     sparse for a meaningful test.
     """
     matrix = np.array(table, dtype=float)
-    grand_total = float(matrix.sum())
 
-    # A degenerate table (empty, single row/column, or all-zero) cannot be tested.
+    # Drop options (columns) and variants (rows) that never occur: an option no
+    # model ever chose carries no information for a test of independence, and an
+    # all-zero row/column would force a zero marginal that breaks chi-square.
+    if matrix.size:
+        matrix = matrix[matrix.sum(axis=1) != 0]
+        if matrix.size:
+            matrix = matrix[:, matrix.sum(axis=0) != 0]
+
+    grand_total = float(matrix.sum()) if matrix.size else 0.0
+
+    # A degenerate table (empty or only a single row/column) cannot be tested.
     if (
-        grand_total == 0
+        matrix.size == 0
+        or grand_total == 0
         or matrix.shape[0] < 2
         or matrix.shape[1] < 2
-        or (matrix.sum(axis=1) == 0).any()
-        or (matrix.sum(axis=0) == 0).any()
     ):
         return {
             "statistic": None,

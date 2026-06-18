@@ -1,0 +1,2872 @@
+{
+  "runId": "20260618T233052Z",
+  "experimentId": "metaphor-effect",
+  "startedAt": "2026-06-18T23:30:52.187031+00:00",
+  "finishedAt": "2026-06-18T23:31:04.658273+00:00",
+  "trialsPerCell": 25,
+  "temperature": 1.0,
+  "models": [
+    "GPT-4o mini",
+    "Claude 3.5 Haiku"
+  ],
+  "variants": [
+    "sinking_ship",
+    "garden",
+    "machine",
+    "patient",
+    "battlefield",
+    "puzzle"
+  ],
+  "trials": [
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 0,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 1,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 2,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 3,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 4,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 5,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 6,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 7,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 8,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 9,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 10,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 11,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 12,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 13,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 14,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 15,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 16,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 17,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 18,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 19,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 20,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 21,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 22,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 23,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "sinking_ship",
+      "trial": 24,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 0,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 1,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 2,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 3,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 4,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 5,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 6,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 7,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 8,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 9,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 10,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 11,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 12,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 13,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 14,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 15,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 16,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 17,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 18,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 19,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 20,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 21,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 22,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 23,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "garden",
+      "trial": 24,
+      "raw": "B",
+      "decision": "B",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 0,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 1,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 2,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 3,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 4,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 5,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 6,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 7,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 8,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 9,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 10,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 11,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 12,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 13,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 14,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 15,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 16,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 17,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 18,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 19,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 20,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 21,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 22,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 23,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "machine",
+      "trial": 24,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 0,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 1,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 2,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 3,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 4,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 5,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 6,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 7,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 8,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 9,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 10,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 11,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 12,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 13,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 14,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 15,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 16,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 17,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 18,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 19,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 20,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 21,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 22,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 23,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "patient",
+      "trial": 24,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 0,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 1,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 2,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 3,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 4,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 5,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 6,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 7,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 8,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 9,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 10,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 11,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 12,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 13,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 14,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 15,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 16,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 17,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 18,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 19,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 20,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 21,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 22,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 23,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "battlefield",
+      "trial": 24,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 0,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 1,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 2,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 3,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 4,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 5,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 6,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 7,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 8,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 9,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 10,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 11,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 12,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 13,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 14,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 15,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 16,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 17,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 18,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 19,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 20,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 21,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 22,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 23,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "openai",
+      "variantId": "puzzle",
+      "trial": 24,
+      "raw": "C",
+      "decision": "C",
+      "ok": true
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 0,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYoNrRPvgbd6NBjVw5'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 1,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYoaWYQjrkAQSw8YDv'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 2,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYpFCDVwX2rvsg17VE'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 3,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYp7zv8ToiYb1JihMP'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 4,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYptPP8FAEPVrfRPEJ'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 5,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYpCxcsat3ghueUPMS'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 6,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYpBj2NzcqKgq3SW3k'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 7,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYpW5DnQgp7bxZhakm'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 8,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYpanQS9UaB1mjimAG'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 9,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYpbXQKL7tgRq5NwtC'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 10,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYpfVumgzWrKUDPjwr'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 11,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYps9ZPqbCGzKYfxgg'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 12,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYq1aoUrP3B2VqHuxb'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 13,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYq25aRuMN3zcwffN8'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 14,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYq6YQwaxoskcy7mFt'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 15,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYqBVyKbkJyG1Cn4Dc'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 16,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYqPQXUgiuKtQ24tyX'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 17,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYqMfZxjsrCtGkN2rL'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 18,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYqKBeHxE2ducZPQgJ'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 19,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYqS8ccpqGFQWuJ6Ue'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 20,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYqSdX9pFKPmKmUrZL'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 21,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYqYaUuqkkdeZnDTvr'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 22,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYqaKDXKCPycF6ijgG'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 23,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYqhkZaStbqiPiZabP'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "sinking_ship",
+      "trial": 24,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYqkyiikJPVocYQmJ7'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 0,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYqphKbxkGuvZsyQHh'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 1,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYqqw3cDjPgwMxeE2b'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 2,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYqsBFh25wv1Y2hrEW'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 3,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYqycwaGfmt4Zexa6j'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 4,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYqx8ciZjHd4tQtjkQ'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 5,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYrBmt1JaDwVgVrUFB'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 6,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYrA3M5eWiv9AMGJG8'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 7,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYrHjAUfvEg5Cqqm1n'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 8,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYrEFfhycJbVkc8qVQ'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 9,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYrnjjrMu9wkqM7AZh'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 10,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYrLTGP69mtzrsYwAM'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 11,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYraLix2A894kS6HuW'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 12,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYrbadGLzMi56rb5bd'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 13,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYrd4rXCGkDz5WqAoc'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 14,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYri2LCm3k9Xmc2U85'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 15,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYrsStjULiKvPDKGr3'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 16,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYroyWDnfBtLNQtnZ7'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 17,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYs37oe8Gv3hVSHWp7'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 18,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYs2sm26Cd4Pnm2Qjh'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 19,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYs5bcUNvWMDuva7Ue'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 20,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYs85UEbqx1GnguKQo'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 21,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYsC3jkY3srXV2Vcr6'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 22,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYsE2cCnjKxaXqzUnX'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 23,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYsKVD2Gj92L8ibomw'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "garden",
+      "trial": 24,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYsQhMG91xRGdRpvCn'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 0,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYsSvWBnFHY6Bzxq7N'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 1,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYsUfcboPwSLkDPmWj'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 2,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYsZ8GaNNN1Nimmqx9'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 3,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYsaN5DH5azwkbs8se'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 4,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYscMER3mx7KXLVPmB'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 5,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYsjYMWbPTf6b44yAR'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 6,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYsp1H9q9qDvtRV4Jq'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 7,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYssyKMgWMTJkdbdx3'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 8,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYsyRbsUn2MCpkuxij'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 9,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYtF3kZAFsiVe4eyWZ'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 10,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYt6NZFjubECbNPEaF'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 11,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYtEoZGtuQSJ8rA2rN'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 12,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYt9MGx4c2mVnDZeeZ'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 13,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYtKGHVCmPGZEyEdb7'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 14,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYtFJRePu9XGSabPYV'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 15,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYtKWghv5umdohVog7'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 16,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYtPENWwyXJhZEoVhU'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 17,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYtUC8eR8nZ4cNRpFv'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 18,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYtZQKv38C4SwMrFuw'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 19,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYtdsHGKv6cZ9AniTL'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 20,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYtgbQvTnj3Y2VNG5x'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 21,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYtnnfb4GxcBKBw7Jk'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 22,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYtjp46ubAKeDy3Rmp'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 23,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYtnJ3XTTogG2Fo2Ty'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "machine",
+      "trial": 24,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYtsW6Y43dRkm8fCVB'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 0,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYtwDoqMwCY8zyrvXD'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 1,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYu3B2nDXUhi8bHogF'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 2,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYu3vJTanfyopAnqB5'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 3,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYu59vsfURyw8JoNHZ'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 4,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYu98KAPnE3RGEeWqu'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 5,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYuBrb25uvtMrEBqT1'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 6,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYuGKLXnAqAQCvpyzy'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 7,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYuL31tE7Tfcga4SWL'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 8,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYuNGZfgo7aM3QsxKj'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 9,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYuWCwucWHMoKLuoyw'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 10,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYuVCzz8ziZTgwKiGH'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 11,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYuVxEuSgenurfP9L7'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 12,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYuf8ZiEcoYZy8mc29'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 13,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYukqNyotnX4ZNeW9V'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 14,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYukaqBZfA366noGLJ'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 15,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYuo4ipERBkzXb99Q7'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 16,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYunKaB6RUSaMPMDP8'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 17,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYusn5Fnd866SB7A6T'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 18,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYutXE26EvQ5tJFo61'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 19,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYuvWLGfTQRtCmFf6f'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 20,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYv3wcoQHVHsMftNTK'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 21,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYv99eXCYyYjg54k8k'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 22,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYvCsVyvdVzM22xykR'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 23,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYvFMKb6ERNUvnyF7u'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "patient",
+      "trial": 24,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYvF73XP4HpyP2DiEz'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 0,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYvJpcBTZ8u98HhUFz'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 1,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYvHqGZwn5T3yLBp3c'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 2,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYvL4LVTBWy2725An8'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 3,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYvTzhKzaeaGC54NWh'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 4,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYvXy5r2F3Qz1y3Cgb'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 5,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYvp5ksC2ozbmWcbrK'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 6,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYvpaWtyQETcyZprMu'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 7,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYwPKEBiWpDyqow7g9'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 8,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYvqpfnY7KwhzZ5onY'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 9,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYvwGyPzucC9QxWc5Z'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 10,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYvto2fw2ykeH9jDie'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 11,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYvv2rUjVm8bSwub7G'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 12,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYvvXnoAeyiamw2ut3'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 13,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYwDeKwKxw5LmwA1AB'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 14,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYwF8QSPiHr6hsK4rc'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 15,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYwJMGh1qrLcCeT3UH'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 16,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYwKqrkpqRnxHr16aQ'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 17,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYwQYkqW5yKr1LLjr4'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 18,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYwTmx456x6mmyGTeR'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 19,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYwRJ9hBBxiNyV9aR6'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 20,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYwbiAxhciURswJjNL'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 21,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYwfBYNp2dDifG599g'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 22,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYwiesyLqPkWk23Nzo'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 23,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYwmskKEyqjGWiZN3q'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "battlefield",
+      "trial": 24,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYwp7BTQKGZWypyrKH'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 0,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYx11veRd41VtkWuc8'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 1,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYwz2TzYEsiTtprSPN'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 2,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYx1GJBXEY554KkdTt'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 3,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYx6ECrUGYAQH17sNt'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 4,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYx8Tax6SWFyvEb5fX'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 5,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYxBvw1x2GRVSZagPR'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 6,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYxJ8crurFaHSaHpiP'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 7,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYxPqSZjnRFhnTzFcM'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 8,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYxR56p57CZTi1hQS2'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 9,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYxY1qZE43Cd8C8yt2'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 10,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYxYWaANNpJj84AWy1'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 11,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYxpstD7zu75UtEphs'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 12,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYxcyPsZKgpQbJs6hT'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 13,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYxeiJTk7QbhBwQ6y9'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 14,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYxgT1jXAnpuHdgqZJ'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 15,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYxoPnVHGq3aairUiy'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 16,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYyT5gs1EVWeW7ZyJ1'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 17,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYxwaTm2DVqej1hbvZ'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 18,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYxxZneQoB6pd32s4u'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 19,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYy51sf9y6tNAsASNh'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 20,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYyCTDhbU2PEAUoYJt'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 21,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYyFvXe2syP7Ds1Nhn'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 22,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYyKPuPRTUv5XXf1Mc'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 23,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYyLtAZoLbEz1heGsY'}"
+    },
+    {
+      "model": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "variantId": "puzzle",
+      "trial": 24,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-latest'}, 'request_id': 'req_011CcBbYyNNUtREqK9e9hJSu'}"
+    }
+  ]
+}

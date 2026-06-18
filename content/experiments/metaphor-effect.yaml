@@ -15,8 +15,8 @@ models:
     model: gpt-4o-mini
     label: "GPT-4o mini"
   - provider: anthropic
-    model: claude-3-5-haiku-latest
-    label: "Claude 3.5 Haiku"
+    model: claude-haiku-4-5
+    label: "Claude Haiku 4.5"
 trials_per_cell: 25
 temperature: 1.0
 prompt_template: |

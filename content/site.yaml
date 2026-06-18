@@ -1,0 +1,30 @@
+title: "LLM Decision Science"
+tagline: "Small, careful experiments on how language models actually decide."
+description: >
+  A running series of decision-science experiments on large language models.
+  Each post takes a single, controlled question — change one variable, hold
+  everything else constant — and measures how it moves a model's choices.
+author: "The LLM Decision Science Lab"
+about: |
+  ## About this project
+
+  Large language models are increasingly asked to make decisions: which action to
+  recommend, which option to pick, how to triage. But these models are deeply
+  sensitive to *how* a question is asked, not just *what* is asked.
+
+  This site publishes a series of small, reproducible experiments that isolate a
+  single variable and measure its effect on a model's decisions. Every experiment
+  holds the scenario constant and changes exactly one thing — a metaphor, a word,
+  an ordering — then runs enough trials to see whether the change actually moves
+  the outcome.
+
+  ### How we run experiments
+
+  - Each experiment is defined as a simple config file.
+  - We run many trials per condition across multiple frontier models.
+  - We report distributions, confidence intervals, and significance tests — not
+    cherry-picked single responses.
+  - Every write-up starts as an editable draft and is published once reviewed.
+
+  The goal is not to rank models, but to build intuition for how framing shapes
+  machine decisions.

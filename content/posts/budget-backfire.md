@@ -5,7 +5,7 @@ date: '2026-06-19'
 excerpt: 'In people, naming a budget before you shop backfires. It splits one decision into two, pulls attention from price to quality, and you spend more. We rebuilt Larson & Hamilton''s 2012 pen study as an agentic decision and forced Claude to take one, two, or five steps before choosing. The backfire never shows up. Claude lands on the same mid-tier pen whether it budgets or not, and left alone, it budgets anyway. A second model at maximum temperature holds the same line.'
 experimentId: budget-backfire
 featured: false
-published: false
+published: true
 runId: 20260619T134607Z
 slug: budget-backfire
 tags:

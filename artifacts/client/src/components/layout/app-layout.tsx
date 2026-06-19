@@ -46,7 +46,21 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
             <p className="mt-1">{site?.tagline}</p>
           </div>
           <div className="flex items-center gap-6">
-            <p>© {new Date().getFullYear()} {site?.author}</p>
+            <p>
+              © {new Date().getFullYear()}{" "}
+              {site?.authorUrl ? (
+                <a
+                  href={site.authorUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-foreground transition-colors"
+                >
+                  {site?.author}
+                </a>
+              ) : (
+                site?.author
+              )}
+            </p>
           </div>
         </div>
       </footer>

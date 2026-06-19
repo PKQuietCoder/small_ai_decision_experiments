@@ -11,12 +11,13 @@ function safeDate(value: string): string {
 interface PostCardProps {
   post: PostSummary;
   author: string;
+  authorUrl?: string;
   index?: number;
 }
 
 // Editorial card (Nature PoV): flat cream surface, hairline rule, sharp corners,
 // no shadow. Hierarchy comes from type and whitespace, not decoration.
-export function PostCard({ post, author, index = 0 }: PostCardProps) {
+export function PostCard({ post, author, authorUrl, index = 0 }: PostCardProps) {
   return (
     <article
       className="group relative flex flex-col border border-border bg-card p-6 transition-colors duration-200 hover:border-foreground animate-in fade-in slide-in-from-bottom-4 fill-mode-both"
@@ -49,7 +50,18 @@ export function PostCard({ post, author, index = 0 }: PostCardProps) {
           className="h-9 w-9 shrink-0 rounded-none object-cover"
         />
         <div className="leading-tight">
-          <div className="font-medium text-foreground">{author}</div>
+          {authorUrl ? (
+            <a
+              href={authorUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative z-20 font-medium text-foreground hover:underline"
+            >
+              {author}
+            </a>
+          ) : (
+            <div className="font-medium text-foreground">{author}</div>
+          )}
           <time className="font-mono text-xs text-muted-foreground" dateTime={post.date}>
             {safeDate(post.date)}
           </time>

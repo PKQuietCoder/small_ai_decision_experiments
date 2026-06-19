@@ -93,7 +93,7 @@ export default function Home() {
       ) : (
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {visible.map((post, i) => (
-            <PostCard key={post.slug} post={post} author={author} index={i} />
+            <PostCard key={post.slug} post={post} author={author} authorUrl={site?.authorUrl} index={i} />
           ))}
         </div>
       )}

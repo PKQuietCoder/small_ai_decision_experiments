@@ -22,6 +22,7 @@ Site-wide metadata for header/footer/about.
   "tagline": "Classic experiments and methods, run on people and rerun on language models and agents.",
   "description": "A file-based notebook of logs and findings on large language models ...",
   "author": "P.K. Mishra",
+  "authorUrl": "https://www.linkedin.com/in/pradkmishra/",  // optional; byline links here
   "categories": ["Decisions", "Science", "Creativity"],  // section tags; ordered list for the feed filter
   "types": ["Experiments", "Methods"],                   // method tags shown alongside each post's section
   "aboutHtml": "<p>...</p>"   // rendered HTML for the About page (from markdown)

@@ -4,6 +4,7 @@ export interface SiteInfo {
   intro: string;
   description: string;
   author: string;
+  authorUrl?: string;
   categories?: string[];
   types?: string[];
   aboutHtml: string;

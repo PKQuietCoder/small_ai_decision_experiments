@@ -82,7 +82,18 @@ export default function Post() {
               alt={author}
               className="h-10 w-10 shrink-0 rounded-none object-cover"
             />
-            <span className="font-medium text-foreground">{author}</span>
+            {site?.authorUrl ? (
+              <a
+                href={site.authorUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-foreground hover:underline"
+              >
+                {author}
+              </a>
+            ) : (
+              <span className="font-medium text-foreground">{author}</span>
+            )}
           </div>
         </div>
       </header>

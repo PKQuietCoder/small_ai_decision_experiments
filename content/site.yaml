@@ -17,6 +17,7 @@ description: >
   human-bias experiments on language models and agents to see which of those rules they
   inherit, which they smooth away, and which they invent on their own.
 author: "P.K. Mishra"
+authorUrl: "https://www.linkedin.com/in/pradkmishra/"
 about: |
   We like to think we reason our way to decisions. Decades of research says otherwise.
   Mostly we follow hidden rules, and those rules are predictable and often counterintuitive.

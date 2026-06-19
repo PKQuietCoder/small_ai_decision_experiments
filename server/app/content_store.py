@@ -454,7 +454,7 @@ def get_site_meta() -> Dict[str, Any]:
     default_types = ["Experiments", "Methods"]
     if not config.SITE_FILE.exists():
         return {
-            "title": "The Model Notebook",
+            "title": "Borrowed Instincts",
             "tagline": "",
             "intro": "",
             "description": "",
@@ -466,7 +466,7 @@ def get_site_meta() -> Dict[str, Any]:
     data = _read_yaml(config.SITE_FILE)
     about_html = md.markdown(data.get("about", "") or "", extensions=MARKDOWN_EXTENSIONS)
     return {
-        "title": data.get("title", "The Model Notebook"),
+        "title": data.get("title", "Borrowed Instincts"),
         "tagline": data.get("tagline", ""),
         "intro": (data.get("intro", "") or "").strip(),
         "description": data.get("description", ""),

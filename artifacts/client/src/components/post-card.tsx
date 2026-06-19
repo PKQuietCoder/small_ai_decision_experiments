@@ -32,12 +32,6 @@ export function PostCard({ post, author, index = 0 }: PostCardProps) {
           <span className="text-muted-foreground" aria-hidden="true">·</span>
         )}
         <span className="eyebrow">{post.category || "Article"}</span>
-        {post.featured && (
-          <>
-            <span className="text-muted-foreground" aria-hidden="true">·</span>
-            <span className="eyebrow text-foreground">Featured</span>
-          </>
-        )}
       </div>
 
       <h3 className="mt-3 font-serif text-xl font-semibold leading-snug text-foreground">

@@ -201,3 +201,10 @@ tool API differs, is the other obvious next step.
 
 The featured chart shows the Claude Opus 4.8 run. The Sonnet 4.6 temperature-1.0 figures are in the
 text above.
+
+## Data and code
+
+Every prompt, all 400 trials, the tool definitions, the step sequences, and the analysis behind
+these charts live in the
+[`experiments/budget-backfire`](https://github.com/PKQuietCoder/small_ai_decision_experiments/tree/HEAD/experiments/budget-backfire)
+folder on GitHub. Rerun it, recode it, or check the numbers yourself.

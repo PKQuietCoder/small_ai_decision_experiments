@@ -1,5 +1,5 @@
-title: "The Model Notebook"
-tagline: "Field notes on language models: decisions, science, and creativity."
+title: "Borrowed Instincts"
+tagline: "Classic experiments and methods, run on people and rerun on language models and agents."
 categories:
   - Decisions
   - Science
@@ -8,58 +8,44 @@ types:
   - Experiments
   - Methods
 intro: >
-  We rerun established, peer-reviewed experiments from decision and behavioral science on
-  language models and agents, then report what carries over, what breaks, and how people
-  and AI can best work together. Every entry files under one section (Decisions, Science,
-  or Creativity) and one method (Experiments or Methods). All data and code are open on
-  GitHub for critique and replication.
+  An ongoing series that reruns one classic human-bias experiment at a time on language
+  models and agents, then reports in plain language, with real A/B tests, whether the
+  model copies our bias, smooths it out, or makes it worse.
 description: >
-  We take established, peer-reviewed experiments from decision science and behavioral
-  science, the ones first run on people, and rerun them on language models and agents to
-  see what carries over and what breaks. The point isn't to rank models. It's to learn
-  when humans and AI working together amplify a cognitive bias, smooth it out, or cancel
-  it.
+  We like to think we reason our way to decisions. Mostly we follow hidden rules,
+  predictable and often counterintuitive. This is an ongoing series that reruns classic
+  human-bias experiments on language models and agents to see which of those rules they
+  inherit, which they smooth away, and which they invent on their own.
 author: "P.K. Mishra"
 about: |
-  We've known for decades how human judgment actually works. Framing effects. Anchoring.
-  The way naming a budget quietly changes what you buy. This notebook puts each of those
-  findings to a new test. Run the same study on a language model or an agent, then watch
-  what happens. Does the bias show up? Fade? Flip?
+  We like to think we reason our way to decisions. Decades of research says otherwise.
+  Mostly we follow hidden rules, and those rules are predictable and often counterintuitive.
+  A number you saw first drags the next one toward it. The way a question is framed flips
+  the answer. Naming a budget makes you spend more, not less.
 
-  Each entry starts from a real, peer-reviewed study and reruns it faithfully. Hold the
-  scenario steady, change one thing, run it many times, report what the data says in plain
-  words. Then the part you can actually use: a few concrete tips on when to trust a model
-  with a decision, when to keep a human in the loop, and when the pair beats either one
-  alone.
+  Today we're handing more of those decisions to language models, and to agents that decide
+  over several steps. Here's the catch. We don't actually know what rules they follow. Some
+  they may inherit from us, soaked up from a training set full of human choices. Some they
+  may invent on their own.
 
-  ### How entries are tagged
+  This is an ongoing series. In each entry I take one classic human-bias experiment, rerun it live
+  on a language model or an agent, and ask a simple question: does the model copy our bias,
+  smooth it out, or make it worse? Every post explains the result in plain language and backs
+  it with real A/B tests and significance checks. No vibes. No cherry-picked screenshots.
 
-  Two small tag sets. One says what an entry is about. The other says how we went at it.
-
-  What it's about, pick one:
-
-  - **Decisions.** Judgment and choice. Classic decision-science and behavioral studies,
-    rerun on models and agents, watching how their picks bend when we change the framing
-    instead of the facts.
-  - **Science.** The bar we hold ourselves to: controlled comparisons, honest statistics,
-    plain language. A few entries reach into broader reasoning and scientific judgment too.
-  - **Creativity.** The open-ended work, where no answer is the right one. Writing, ideas,
-    the texture of a model's voice.
-
-  How we went at it, pick one:
-
-  - **Experiments.** A faithful replication of one specific published study.
-  - **Methods.** A technique or measurement approach instead of a single experiment.
+  The point isn't trivia about models. It's practical. The better we understand how these
+  systems decide, and where their instincts line up with ours or pull against them, the
+  better we can work alongside them and make good calls together.
 
   ### Open data and code
 
-  Everything's in the open. Prompts, per-trial data, analysis code, the charts. It all
-  lives in the project's GitHub repository. Check the work. Disagree with a coding call.
-  Rerun it on a model I never touched.
+  Everything's in the open. Prompts, per-trial data, analysis code, the charts. It all lives
+  in the project's GitHub repository. Check the work. Disagree with a coding call. Rerun it
+  on a model I never touched.
 
   ### One person, so replicate me
 
   This is a solo project, and solo projects have bugs. A prompt that leaks a cue. A judge
-  that miscodes a borderline answer. A p-value read too kindly. Independent replication
-  isn't a courtesy here. It's the method. Rerun an entry and get a different number? Tell
-  me. Spot a flaw? Even better. I'd rather be corrected than stay wrong.
+  that miscodes a borderline answer. A p-value read too kindly. Independent replication isn't
+  a courtesy here. It's the method. Rerun an entry and get a different number? Tell me. Spot a
+  flaw? Even better. I'd rather be corrected than stay wrong.

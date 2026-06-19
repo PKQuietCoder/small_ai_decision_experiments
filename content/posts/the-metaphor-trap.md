@@ -174,7 +174,7 @@ metaphors it has never encountered. The flat response is a trained disposition t
 framing, not naïve recall of one paper. What this can't prove is the converse: a capable model's
 resistance to framing is itself learned, and no novel stimulus escapes it. We measure that
 disposition rather than claim to have removed it. The recognition, novel-stimulus, and paraphrase
-runs ship in full in the experiment's data package.
+runs ship in full in the [data package on GitHub](https://github.com/PKQuietCoder/small_ai_decision_experiments/tree/HEAD/experiments/crime-metaphor).
 
 ## Practical takeaways for deciding with AI
 
@@ -238,6 +238,13 @@ just know the study?" Recognition is real, but it doesn't reproduce the swing.
 
 *Every model in the catalog can be rerun from the command line, and the chart regenerates from the
 recorded run.*
+
+## Data and code
+
+Every prompt, all 1,200 main-study trials (plus the 1,800 contamination-control trials), the judge
+rubric, and the analysis behind these charts live in the
+[`experiments/crime-metaphor`](https://github.com/PKQuietCoder/small_ai_decision_experiments/tree/HEAD/experiments/crime-metaphor)
+folder on GitHub. Rerun it, recode it, or check the numbers yourself.
 
 ## Reference
 

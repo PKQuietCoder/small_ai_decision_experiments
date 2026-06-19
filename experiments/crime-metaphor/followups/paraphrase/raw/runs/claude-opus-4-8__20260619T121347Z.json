@@ -1,0 +1,917 @@
+{
+  "runId": "20260619T121347Z",
+  "experimentId": "crime-metaphor-paraphrase",
+  "startedAt": "2026-06-19T12:13:47.170657+00:00",
+  "finishedAt": "2026-06-19T12:15:14.113453+00:00",
+  "trialsPerCell": 50,
+  "temperature": 1.0,
+  "models": [
+    "Claude Opus 4.8"
+  ],
+  "variants": [
+    "beast",
+    "virus"
+  ],
+  "trials": [
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 0,
+      "response": "This question can't be reliably answered from the information given, because the passage only describes *that* crime is rising\u2014it offers no evidence about *why* it's rising or which interventions would actually work in Marlowe. To choose an effective response, the city would need to investigate the underlying causes (economic conditions, policing capacity, specific crime patterns, etc.) and weigh evidence-based options rather than act on the vivid \"wild beast\" framing alone.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 1,
+      "response": "This question asks me to recommend a policy solution, but the framing relies on a metaphor (\"crime as a wild beast preying on the city\") that can subtly push toward aggressive, predator-hunting responses rather than addressing root causes\u2014so I'd suggest stepping back before answering.\n\nThat said, a reasonable response: Marlowe should pair targeted, data-driven enforcement on the specific areas and violence drivers behind the homicide spike with investments in underlying causes (economic opportunity, social services, community programs), while gathering more information about *why* crime rose before committing to any single approach.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 2,
+      "response": "I can't responsibly give you a specific policy recommendation here, because the passage doesn't actually contain the information needed to decide what Marlowe should do.\n\nIt tells us crime is rising and gives some numbers, but it says nothing about *why* crime is rising\u2014whether it's tied to economic conditions, drug trade, gang activity, policing levels, demographic shifts, or something else. The metaphor of crime as a \"wild beast preying on the city\" is rhetorical framing, not analysis, and acting on the vibe of that language rather than on causes tends to produce reactive, poorly-targeted responses. To recommend a sound course of action, Marlowe would first need to investigate the drivers behind the increase.",
+      "decision": "none",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 3,
+      "response": "This question can't be answered responsibly from the information given, because the passage describes *that* crime is rising but offers no insight into *why*\u2014and effective responses depend entirely on the underlying causes (e.g., changes in policing, economic conditions, drug markets, gang activity, or even shifts in reporting). Marlowe should first investigate the drivers behind the increase before committing to any specific strategy.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 4,
+      "response": "The honest answer is that there isn't enough information here to recommend specific policies\u2014the statistics describe *that* crime rose but say nothing about *why* it rose, what's driving the violence, or which neighborhoods and offense types are most affected. Marlowe should start by analyzing the underlying causes (e.g., where, when, and among whom crimes are concentrated) before committing to any particular response, since the right intervention depends entirely on those details.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 5,
+      "response": "I can't give a substantive answer here, because the prompt is built on a metaphor (\"crime as a wild beast preying on the city\") that's doing persuasive work rather than analytical work\u2014and the framing invites me to reason from that image rather than from evidence.\n\nIf you'd like, I'm happy to discuss what the actual data might point to: for example, examining whether the homicide and offense increases reflect real changes or reporting differences, identifying which neighborhoods and crime types are driving the trend, and weighing approaches that research tends to support (focused deterrence, addressing concentrated hot spots, social/economic interventions) against their tradeoffs.",
+      "decision": "none",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 6,
+      "response": "I can't give a responsible policy recommendation from these numbers alone, because the passage doesn't tell us *why* crime is rising\u2014and that cause matters enormously. Marlowe should start by investigating the drivers behind the increase (economic conditions, gang activity, drug markets, policing changes, etc.) and then target responses to those specific causes rather than reacting to the alarming \"wild beast\" framing.\n\n(One note: the vivid metaphor of crime as a \"beast preying on the city\" is doing persuasive work that the statistics don't justify by themselves\u2014rising numbers call for diagnosis, not panic.)",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 7,
+      "response": "This question can't be answered responsibly without more information, because the statistics alone don't reveal *why* crime is rising\u2014so Marlowe should first investigate the underlying drivers (e.g., changes in policing, economic conditions, drug markets, or reporting practices) and then target interventions accordingly, rather than acting on the \"wild beast\" framing, which is rhetorical rather than analytical.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 8,
+      "response": "I should be cautious here, because this question is built on a vivid framing (\"a wild beast preying on the city\") that may be steering toward a particular kind of answer.\n\nHonestly, a couple sentences of numbers can't tell Marlowe what to do\u2014the right response depends on *why* crime is rising (which the metaphor and statistics don't reveal), so the city should first investigate the underlying causes and consult evidence on what actually reduces crime, rather than letting the \"wild beast\" imagery push it toward purely aggressive, punitive measures.\n\nIf you're working on something specific (a policy memo, an essay analyzing the rhetoric, etc.), let me know and I can give a more useful answer.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 9,
+      "response": "I should be cautious here, because the question as framed asks me to recommend policy based on a vivid but thin set of facts\u2014and the framing itself (\"wild beast preying on the city\") is doing a lot of persuasive work that the underlying numbers may not support.\n\nBefore recommending anything, Marlowe should diagnose *what* is actually driving the increase (which neighborhoods, offense types, and causes) rather than act on the alarming overall totals, since broad \"get tough\" responses chosen under a sense of emergency often miss the real problem and can waste resources or do harm.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 10,
+      "response": "I can't give you a meaningful policy recommendation from these numbers alone, because the data doesn't reveal *why* crime is rising\u2014and the right response depends entirely on the causes. Marlowe should start by investigating the drivers behind the increase (economic shifts, drug markets, gang activity, policing changes, etc.) and then target interventions accordingly, rather than acting on the \"wild beast\" framing, which is emotional rhetoric that pushes toward broad crackdowns without evidence about what would actually work.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 11,
+      "response": "This question asks me to recommend a policy solution, but I'd push back gently on the framing before answering, because the numbers alone don't tell the city what to *do*.\n\nTo recommend a course of action responsibly, Marlowe would first need to know *why* crime is rising\u2014whether it's driven by specific neighborhoods, types of offenses, repeat offenders, economic conditions, changes in policing or reporting practices, or something else\u2014since the right response to a localized gang-violence spike differs greatly from the right response to broad economic distress; so the honest answer is that the city should invest in diagnosing the underlying causes (through data analysis and community input) before committing to any single fix.\n\n(I'd also note the \"wild beast\" metaphor is doing persuasive work here\u2014dramatic framing like that often nudges people toward harsh, simple responses, when the data actually call for figuring out the cause first.)",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 12,
+      "response": "This question can't be reliably answered from the information given, because the data describe *that* crime is rising but not *why*\u2014so the right response is to first investigate the underlying causes (e.g., economic conditions, policing levels, drug trends, demographic shifts) before committing to a specific solution. The \"wild beast preying on the city\" framing is just a metaphor and shouldn't drive policy, since crime is a social problem with many contributing factors rather than a literal predator to be hunted.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 13,
+      "response": "I can't give a specific policy recommendation here, because the passage doesn't actually contain enough information to support one\u2014it tells us *that* crime rose, but nothing about *why* it rose or what's driving it.\n\nTo responsibly answer \"what should Marlowe do,\" the city would first need to investigate the causes behind the increase (e.g., changes in policing, economic conditions, drug markets, gang activity, or even reporting practices) and target interventions accordingly\u2014so the honest answer is to diagnose before prescribing.",
+      "decision": "none",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 14,
+      "response": "I should flag something before answering: the question asks me to recommend a solution, but the framing relies on a metaphor (\"crime as a wild beast preying on the city\") that can subtly distort reasoning.\n\nThe \"beast\" image suggests crime is an external predator that invades a city, which nudges toward hunting/trapping responses (more aggressive policing, harsher enforcement). A different metaphor\u2014crime as a \"virus\" or \"symptom\"\u2014would nudge toward addressing root causes (poverty, social services, public health). The statistics themselves don't tell you which approach works; they just describe the rise.\n\nSo rather than let the metaphor pick the answer, a sensible response: **Marlowe should diagnose what's actually driving the increase\u2014looking at specific data on offense types, locations, and likely causes\u2014before committing to any single strategy, since the right mix of enforcement and prevention depends on those underlying factors, not on how the problem is described.**\n\n(If you'd like, I can sketch out what evidence-based options tend to work for the specific kind of violent-crime spike the numbers suggest.)",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 15,
+      "response": "I can't give a solid recommendation here, because the passage describes the problem (rising crime) but provides no information about its *causes*\u2014and effective responses depend entirely on what's actually driving the increase. The city should start by investigating why crime is rising (e.g., economic conditions, policing changes, gang activity, drug markets, or reporting practices), since the right intervention for one cause would be useless or counterproductive for another.\n\n(Worth noting: the \"wild beast preying on the city\" framing is a vivid metaphor, but it shouldn't substitute for diagnosis\u2014treating crime as a predator to be hunted assumes a conclusion about causes and solutions that the data here don't support.)",
+      "decision": "none",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 16,
+      "response": "I don't think I can responsibly answer that in a sentence or two\u2014and not because the question is hard, but because the framing quietly does a lot of work that's worth flagging.\n\nThe \"wild beast preying on the city\" metaphor primes a particular kind of answer (hunt it, cage it, crack down) before any analysis happens. Crime isn't an external predator; it emerges from conditions like poverty, addiction, illegal markets, and opportunity. Accepting the metaphor tends to smuggle in the conclusion.\n\nA more honest answer is: Marlowe should first figure out *what's actually driving* the increase\u2014since a homicide jump that outpaces overall offenses suggests something specific (a gang conflict, a drug-market shift, a clearance-rate collapse) rather than generalized lawlessness\u2014and then target interventions accordingly, rather than reaching for a one-size-fits-all crackdown implied by the \"beast\" framing.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 17,
+      "response": "I can't give a solid recommendation from this information alone, because the passage tells us crime is rising but not *why*\u2014and the right response depends entirely on the underlying causes.\n\nTo actually decide what Marlowe should do, the city would need to investigate drivers like changes in poverty or unemployment, drug markets, policing levels and practices, demographic shifts, or gaps in social services, and then target interventions accordingly.\n\n(I'd also note the vivid \"wild beast preying on the city\" framing is rhetoric, not analysis\u2014it pushes toward aggressive crackdowns without evidence that those would address whatever is actually causing the increase.)",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 18,
+      "response": "I should be cautious here, because the framing of your question contains a subtle issue worth flagging before offering an answer.\n\nThe passage leans heavily on a vivid metaphor\u2014crime as \"a wild beast preying on the city\"\u2014and this kind of framing tends to push thinking toward aggressive, predator-control responses (more policing, harsher punishment) while obscuring other valid approaches. Research on metaphor framing suggests that describing crime as a \"beast\" nudges people toward enforcement-focused solutions, whereas describing it as a \"virus\" nudges them toward addressing root causes like poverty, education, and housing. The underlying statistics are identical either way.\n\nSo rather than answer as if the metaphor settles the question: Marlowe should investigate *why* crime is rising (specific neighborhoods, offense types, contributing conditions) and respond with a mix of measures\u2014targeted policing where warranted alongside investment in the social and economic factors driving the trend\u2014rather than letting the \"wild beast\" image lock it into a single enforcement-heavy reflex.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 19,
+      "response": "This question can't be properly answered from the information given, because the passage only establishes *that* crime rose\u2014it doesn't identify *why* it rose, and effective solutions depend on the causes. Marlowe should first investigate the drivers behind the increase (for example, changes in policing, economic conditions, drug activity, or social services) and then target interventions accordingly, rather than acting on the vague \"wild beast\" framing.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 20,
+      "response": "This question can't be answered responsibly from the information given, because the passage describes *that* crime is rising but offers no insight into *why*\u2014and without understanding the causes (economic conditions, policing changes, drug markets, demographic shifts, etc.), any specific recommendation would be a guess. Marlowe's first step should be to investigate the underlying drivers of the increase, then target interventions accordingly.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 21,
+      "response": "This question can't be reliably answered from the information given, because the data only describe *that* crime rose\u2014not *why*\u2014and effective responses depend on the underlying causes. To decide what to do, Marlowe should first investigate the drivers behind the increase (e.g., economic conditions, policing changes, drug markets, demographic shifts) and then target interventions accordingly.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 22,
+      "response": "This question can't be answered responsibly from the information given, because the passage describes *that* crime is rising but offers no insight into *why*\u2014so any specific recommendation would be a guess. Marlowe should first investigate the causes behind the increase (analyzing where, when, and among whom offenses are concentrated) before committing to interventions, since the right response depends entirely on what's actually driving the trend.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 23,
+      "response": "This question can't be reliably answered from the information given, because the data only show *that* crime rose\u2014not *why*\u2014and effective responses depend entirely on the underlying causes (e.g., poverty, policing levels, drug markets, gang activity, economic shocks). To decide what Marlowe should actually do, the city would need to investigate the specific drivers behind these increases rather than act on the bare statistics.\n\n(Note: the \"wild beast preying on the city\" framing is a metaphor that can subtly push toward aggressive, force-based solutions; it's worth setting that rhetoric aside and looking at the evidence before choosing a strategy.)",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 24,
+      "response": "I can't responsibly give a specific policy recommendation here, because the passage doesn't actually provide the information needed to determine what would help. It describes *that* crime rose, but says nothing about *why*\u2014and the right response depends entirely on the underlying causes.\n\nTo recommend something useful, the city would need to investigate questions like: What's driving the violent crime spike specifically? Are offenses concentrated in particular areas, populations, or times? What changed three years ago when the trend began? Without that diagnosis, any answer would just be guesswork dressed up as advice.",
+      "decision": "none",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 25,
+      "response": "I can't give a solid recommendation here, because the passage describes the *scale* of the problem but tells us nothing about its *causes*\u2014and the right response depends entirely on why crime is rising (e.g., economic distress, gang activity, drug markets, reduced policing, or something else).\n\nA reasonable first step would be for Marlowe to study what's actually driving the increase\u2014especially the spike in homicides\u2014and then target interventions accordingly, rather than acting on the vivid \"wild beast\" framing alone.",
+      "decision": "none",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 26,
+      "response": "I can't give a specific recommendation, because the passage doesn't actually contain the information needed to determine the right response\u2014it only describes that crime is rising, not *why* it's rising or what's driving it.\n\nTo responsibly address the increase, Marlowe would first need to analyze the underlying causes (e.g., shifts in policing, economic conditions, drug markets, demographics, or reporting practices) and then target interventions accordingly, rather than acting on the alarming \"wild beast\" framing alone.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 27,
+      "response": "I can't responsibly recommend a specific policy from this prompt, because the framing is doing some heavy lifting that's worth flagging first: the \"wild beast preying on the city\" metaphor and selective stats are designed to push toward an aggressive, fear-driven response, so I'd want to see the underlying data, what's actually driving the increases, and which interventions have evidence behind them before recommending anything.\n\nThat said, a reasonable answer is that Marlowe should pair targeted, evidence-based approaches\u2014like focused deterrence on the small number of people/places driving violence, investment in community and social services, and improved clearance rates\u2014rather than reacting to alarming rhetoric with blanket crackdowns.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 28,
+      "response": "This question can't be answered responsibly from the information given, because the passage describes *that* crime rose but offers no insight into *why*\u2014without knowing the causes (e.g., economic conditions, policing levels, drug markets, gang activity, demographic shifts), any specific recommendation would be a guess.\n\nTo decide what to do, Marlowe should first investigate the drivers behind the increase and consult evidence on what has actually reduced crime in comparable cities, rather than acting on the vivid \"wild beast\" framing alone.",
+      "decision": "none",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 29,
+      "response": "I'd resist answering this directly, because the framing is doing a lot of hidden work that's worth flagging before any policy conclusion.\n\nThe \"wild beast preying on the city\" metaphor isn't neutral\u2014research on this exact framing (Thibodeau and Boroditsky's studies) shows that describing crime as a *beast* pushes people toward enforcement and punishment, while describing it as a *virus* pushes toward addressing root causes, even when the underlying numbers are identical. The statistics here are real-sounding but don't tell you *why* crime rose, which is what should actually drive the response.\n\nSo rather than recommend a solution, I'd say: Marlowe should first diagnose the specific causes behind its rising crime\u2014particularly the violent crime spike\u2014rather than letting a vivid metaphor predetermine whether the answer is \"hunt the beast\" (more policing/punishment) or \"treat the sickness\" (social and economic intervention), since the right mix depends entirely on facts the framing conveniently leaves out.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 30,
+      "response": "This question can't be answered responsibly from the information given\u2014the statistics describe *that* crime is rising, but they say nothing about *why*, and effective responses depend entirely on the underlying causes (e.g., gang activity, drug markets, economic distress, reduced policing, or shifts in reporting). Marlowe should start by analyzing the specific drivers and locations of the increase before committing to any particular strategy.\n\n(As a side note, the \"wild beast preying on the city\" framing is vivid but can bias decisions toward purely punitive reactions; it's worth setting that metaphor aside when weighing the actual evidence.)",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 31,
+      "response": "I can't responsibly give a specific policy recommendation here, because the passage doesn't provide the kind of information needed to know what would actually help\u2014we'd need to understand *why* crime is rising (causes vary widely: economic conditions, policing changes, drug markets, gang activity, demographic shifts, etc.), and different causes call for very different responses.\n\nIn general, a sound approach would be to first diagnose the drivers behind the increase using local data, then pursue evidence-based strategies tailored to those findings, rather than reacting to the \"wild beast\" framing, which is vivid rhetoric but offers no actual guidance.",
+      "decision": "none",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 32,
+      "response": "I can't give a substantive recommendation here, because the passage doesn't actually contain the information needed to determine an appropriate response\u2014it tells us crime rose but says nothing about *why* (economic conditions, policing changes, demographics, drug trends, etc.). To address rising crime effectively, Marlowe should first investigate the underlying causes behind these specific increases and then target interventions accordingly, rather than acting on the numbers alone.\n\nAlso worth noting: the \"wild beast preying on the city\" framing is a loaded metaphor that can push toward purely punitive reactions, so it's worth setting that rhetoric aside when deciding what to actually do.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 33,
+      "response": "I can't give a meaningful recommendation here, because the passage doesn't actually contain the information needed to diagnose *why* crime is rising or what would help\u2014it mainly offers vivid framing (\"wild beast preying on the city\") and a couple of statistics. To responsibly suggest what Marlowe should do, you'd want to know things like what's driving the increase (economic conditions, policing changes, specific neighborhoods or crime types), what's already been tried, and what resources are available.\n\nIf you'd like, I can suggest the kinds of questions city officials should investigate first, or outline general evidence-based approaches to reducing crime.",
+      "decision": "none",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 34,
+      "response": "I'd actually push back before answering: the way this question is framed leans heavily on a vivid metaphor (\"wild beast preying on the city\") and dramatic-sounding numbers, which tends to nudge people toward aggressive, punitive solutions without examining causes. A more useful response is that Marlowe should first investigate *why* crime is rising\u2014economic conditions, specific neighborhoods, reporting changes, types of offenses\u2014and then target the actual drivers, combining responsible policing with prevention measures like jobs, social services, and community programs, rather than reacting to the alarming framing alone.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 35,
+      "response": "I can't give a responsible recommendation from this information alone, because the figures here don't actually point to a specific solution\u2014they just describe that crime rose. To decide what Marlowe should do, the city would need to understand *why* crime increased (e.g., changes in policing, economic conditions, drug markets, demographics, or reporting practices) and then target interventions accordingly, ideally drawing on approaches with evidence behind them like focused deterrence, improved clearance rates, and addressing root social conditions.",
+      "decision": "none",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 36,
+      "response": "This question can't really be answered responsibly from the information given, because the passage describes *that* crime is rising but offers no insight into *why*\u2014and effective responses depend entirely on the underlying causes (e.g., changes in policing, economic conditions, drug markets, demographics, or even reporting practices). A reasonable next step would be for Marlowe to investigate the drivers behind the increase before committing to any particular intervention.",
+      "decision": "none",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 37,
+      "response": "I'd caution against jumping straight to a solution, because the passage doesn't actually tell us *why* crime is rising\u2014and the right response depends entirely on the cause (e.g., economic distress, reduced policing, gang activity, drug markets, or population changes). To recommend a sound course of action, Marlowe would first need to investigate the drivers behind these specific increases, particularly the spike in homicides, rather than acting on the vivid \"wild beast\" framing alone.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 38,
+      "response": "I can't recommend specific policies based on this passage, because the \"wild beast preying on the city\" framing is a loaded metaphor designed to push toward a particular kind of answer (typically aggressive, punitive crackdowns) before any actual analysis happens.\n\nTo give a genuinely useful recommendation, Marlowe would need to look at what's actually driving the increase\u2014causes like economic conditions, specific offense patterns, geographic concentration, or changes in reporting all point to very different responses\u2014rather than acting on the imagery of crime as a predatory animal.",
+      "decision": "none",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 39,
+      "response": "I can't give a solid recommendation here, because the passage doesn't actually contain the information needed to identify what's driving Marlowe's crime increase or what would effectively address it.\n\nTo responsibly answer \"what should Marlowe do,\" the city would first need to investigate the *causes* behind the rise\u2014such as economic conditions, changes in policing or reporting practices, drug trends, or specific crime hotspots\u2014and then target interventions accordingly, ideally drawing on approaches with evidence behind them (e.g., focused deterrence, community investment, improved clearance rates). The vivid \"wild beast\" framing is rhetorical and shouldn't substitute for that analysis.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 40,
+      "response": "I can't give a solid recommendation from this prompt alone, because it describes the trend (crime rising over three years, with violent crime spiking) but contains no information about *why* crime is rising in Marlowe\u2014and the right response depends entirely on the underlying causes.\n\nTo recommend something useful, the city would need to investigate drivers like changes in policing capacity, economic conditions, drug markets, gang activity, or court/release practices, since the vivid \"wild beast preying on the city\" framing is rhetoric, not evidence about what would actually work.",
+      "decision": "none",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 41,
+      "response": "This question can't really be answered responsibly from the information given\u2014the data describe *that* crime is rising, but not *why*, and effective responses depend entirely on the causes (e.g., economic distress, gang activity, policing gaps, drug markets, or reporting changes). Marlowe should start by analyzing the specific drivers behind the increase, especially in homicides, and then target interventions accordingly rather than acting on the alarming framing alone.\n\nA couple of cautions worth flagging: the vivid \"wild beast preying on the city\" language is rhetoric, not analysis, and shouldn't drive policy; and you'd want to confirm whether the rise reflects more actual crime or just more reporting before committing resources.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 42,
+      "response": "I can't give a solid recommendation from this passage alone, because it tells us crime is rising but not *why*\u2014and the right response depends entirely on the underlying causes (e.g., economic conditions, policing levels, drug markets, gang activity, or even changes in how crimes are reported). Marlowe should first investigate what's actually driving the increase, then target interventions accordingly, rather than acting on the alarming \"wild beast\" framing.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 43,
+      "response": "The honest answer is that there isn't enough information here to recommend a specific policy. The passage tells you crime is rising and offers a vivid metaphor (\"a wild beast\"), but it doesn't tell you *why* crime is rising\u2014and the right response depends entirely on the causes.\n\nBefore acting, Marlowe should investigate what's actually driving the increase (e.g., changes in policing, economic conditions, drug markets, demographics, or even reporting practices), since effective solutions for, say, a gang-driven homicide spike look very different from those for a poverty-driven property-crime spike.",
+      "decision": "none",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 44,
+      "response": "I'd be cautious about jumping straight to a policy recommendation here, because the framing of this question hides some important gaps that should be addressed first.\n\nA few things worth noting:\n\n- **The numbers describe a problem, not a solution.** Knowing crime rose from ~41,000 to ~52,000 reported offenses tells you *that* something is happening, but not *why*\u2014and the right response depends entirely on the causes (e.g., economic conditions, changes in reporting practices, specific hotspots, repeat offenders, drug markets, etc.).\n\n- **The \"wild beast\" metaphor is doing persuasive work, not analytical work.** Describing crime as a predator \"lurking in every part of town\" primes you toward aggressive, fear-driven crackdowns. The actual data (\"sharpest in violent crime,\" concentrated in homicides) suggests the problem may be specific, not omnipresent\u2014which points to targeted rather than blanket approaches.\n\nSo a reasonable answer: **Marlowe should first diagnose where and why crime is concentrated\u2014particularly the violent crime driving the trend\u2014and direct resources accordingly (focused deterrence on hotspots and high-risk individuals, plus addressing underlying drivers), rather than adopting broad measures justified mainly by the alarming framing.**\n\nHappy to give a more concrete recommendation if you can share what's actually driving the increase.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 45,
+      "response": "This question can't be answered responsibly from the information given, because the passage only describes *that* crime rose\u2014it offers no insight into *why* (e.g., economic shifts, policing changes, gang activity, drug markets, population growth), and effective responses depend entirely on the underlying causes. Marlowe should start by investigating what's driving the increase, then target interventions accordingly rather than acting on the alarming \"wild beast\" framing alone.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 46,
+      "response": "I'd caution against rushing to a single prescription here, because the passage gives you trend data but not the *causes*\u2014and effective responses depend entirely on why crime is rising (economic conditions, policing changes, drug markets, demographic shifts, etc.).\n\nThat said, a reasonable answer would be: Marlowe should investigate what's actually driving the increase\u2014especially the sharp rise in homicides\u2014and target interventions accordingly, rather than adopting a generic crackdown based on the \"wild beast\" framing alone.\n\nOne thing worth flagging: the metaphor of crime as a \"wild beast preying on the city\" subtly nudges you toward aggressive, capture-and-cage solutions (more police, harsher enforcement), whereas the same facts described with a different metaphor (a \"virus\" or \"disease\") would nudge you toward prevention, root-cause, and treatment-based solutions. The numbers don't tell you which approach works better\u2014so it's worth not letting the imagery do your reasoning for you.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 47,
+      "response": "I should be cautious here, because this question contains a subtle problem: the framing relies on a metaphor (\"crime as a wild beast preying on the city\") that can quietly bias the kind of solution that seems obvious.\n\nResearch on metaphors shows that describing crime as a \"beast\" tends to push people toward enforcement, capture, and punishment (\"hunt it down, cage it\"), whereas describing crime as a \"virus\" pushes people toward diagnosing root causes and prevention\u2014even when the underlying statistics are identical. So rather than let the metaphor pick the answer, I'd suggest Marlowe investigate the actual drivers behind the increase (e.g., what's fueling the homicide spike specifically) and combine targeted enforcement with prevention measures, then evaluate what actually reduces crime rather than what merely fits the \"beast\" framing.\n\nIn short: don't let the vivid metaphor decide the policy\u2014gather the specifics and pursue a balanced, evidence-based mix of enforcement and prevention.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 48,
+      "response": "I notice this question asks me to recommend a solution, but the framing actually contains a subtle issue worth flagging: the \"wild beast preying on the city\" metaphor can quietly steer reasoning toward aggressive, predator-hunting responses (more police, harsher enforcement) while a different metaphor\u2014like crime as a \"virus\" or \"disease\"\u2014would nudge toward prevention, root causes, and social investment. The underlying facts are identical either way.\n\nSo rather than let the metaphor pick the answer, I'd suggest Marlowe diagnose *why* crime rose (economic shifts, policing changes, specific hotspots, the concentrated spike in homicides) and pursue a balanced response combining targeted enforcement where violence is concentrated with prevention measures addressing those underlying drivers.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "beast",
+      "trial": 49,
+      "response": "I can't give a confident recommendation here, because the passage describes the *scale* of Marlowe's crime problem without identifying its *causes*\u2014and the right response depends entirely on what's actually driving the increase (e.g., specific gang activity, economic distress, drug markets, reduced policing, or changes in how offenses are reported and counted).\n\nTo act wisely, Marlowe should first investigate where, when, and why the increases are concentrated, then target interventions accordingly rather than treating \"crime\" as a single beast to be fought; the vivid metaphor describes the problem but doesn't tell you how to solve it.",
+      "decision": "none",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 0,
+      "response": "I'd caution against jumping straight to a solution here, because the way this problem is framed deserves scrutiny before any policy follows from it.\n\nThe \"crime as a virus\" metaphor does real work: it implies crime spreads contagiously and that the response should be containment or quarantine\u2014language that can justify aggressive, sweeping enforcement. But that's a rhetorical frame, not a finding, and Marlowe should base its response on what's actually driving the increases (which the numbers alone don't tell us) rather than on the metaphor. So my honest answer is that the city should first investigate the causes behind these specific trends and then target interventions accordingly, instead of acting on the assumption that \"crime is a virus\" tells them what to do.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 1,
+      "response": "This question asks me to recommend a policy solution, but I'd push back on accepting the framing before answering, because the \"crime as a virus\" metaphor and the selected statistics are doing persuasive work that the underlying data may not support.\n\nTo give a genuinely useful answer, Marlowe would first need to diagnose *what's actually driving* the increase\u2014which neighborhoods, which offense types, and what local factors (economic shifts, policing changes, reporting changes)\u2014rather than jumping to a broad response cued by the alarming \"virus\" language and the cherry-paired before/after numbers.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 2,
+      "response": "I'd caution against jumping straight to a solution here, because the framing of this question contains some assumptions worth examining first.\n\nThe \"crime as a virus infecting the city\" metaphor is doing persuasive work that the actual numbers don't necessarily support\u2014it implies crime spreads contagiously and arrives from outside, which points toward containment-style responses (more policing, crackdowns) while obscuring questions about *causes* (economic conditions, specific neighborhoods or offense types driving the increase, changes in reporting practices).\n\nBefore recommending what Marlowe \"should do,\" I'd want to know things like: which specific crimes are rising and where, whether the homicide spike reflects a measurement change or a real surge, and what's actually driving it\u2014since the right response to, say, a localized gang conflict differs entirely from one to broad economic distress. A sensible first step is a targeted analysis of those patterns rather than a blanket policy.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 3,
+      "response": "I'd caution against jumping straight to a prescription here, because the passage is framed in a way that's designed to push toward a particular emotional reaction rather than a clear-eyed decision.\n\nA couple of things worth flagging before recommending any specific policy:\n\n- **The \"virus\" metaphor does a lot of hidden work.** Calling crime a virus implies it spreads contagiously and should be \"quarantined\" or aggressively suppressed\u2014but that's a rhetorical framing, not an established fact about why crime is rising. The right response depends entirely on the actual *causes*, which the passage never identifies.\n\n- **The numbers need context.** A rise from 41,000 to 52,000 offenses and 290 to 470 homicides sounds alarming, but we'd want to know the population, whether reporting practices changed, how Marlowe compares to similar cities, and what's driving the violent-crime spike specifically.\n\nSo my honest answer: Marlowe should first diagnose *what* is actually driving the increase\u2014rather than acting on the assumption baked into the \"virus\" framing\u2014and then target interventions accordingly, since the appropriate response (policing, social services, economic measures, etc.) depends entirely on those underlying causes.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 4,
+      "response": "I should flag something before answering: this question rests on a framing that may push toward a particular conclusion, and the \"virus\" metaphor is doing some heavy lifting.\n\nThe honest answer is that the data given here doesn't actually tell you what to *do*. Knowing that crime rose isn't the same as knowing *why* it rose, and the right response depends entirely on the causes\u2014which could range from economic distress to policing changes to data-reporting shifts. Marlowe should first diagnose the specific drivers behind these numbers, then target interventions accordingly, rather than adopting any single sweeping approach implied by calling crime a \"virus\" (a metaphor that can be used to justify almost anything, from heavy enforcement to public-health spending).",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 5,
+      "response": "I should flag something before answering: this question asks me to recommend solutions based on a framing I'd want to examine first.\n\nThe \"crime as a virus\" metaphor is doing persuasive work here. It implies crime spreads contagiously and needs to be \"contained\" or \"quarantined\"\u2014which can nudge toward aggressive, suppression-heavy responses while sidestepping questions about *why* crime rose. A metaphor isn't evidence about causes or cures.\n\nAlso, the statistics alone don't tell you what to do. A rise from 41,000 to 52,000 offenses and 290 to 470 homicides signals a real problem, but the right response depends entirely on *what's driving it*\u2014which the passage doesn't say. Without knowing the causes (economic shifts, policing changes, specific neighborhoods or offense types, reporting changes, etc.), any confident prescription would be guesswork dressed up as analysis.\n\nSo my honest answer: Marlowe should first diagnose what's actually driving the increase\u2014analyzing where, what type, and among whom crime is rising\u2014rather than jumping to a single solution, and then pursue evidence-based measures matched to those specific causes, which typically combine targeted policing of violence with social and economic interventions.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 6,
+      "response": "I'd caution against answering this directly, because the question rests on framing and figures that deserve scrutiny before any \"solution\" is proposed.\n\nA few things worth flagging:\n\n- **The \"virus\" metaphor is doing persuasive work.** Calling crime a virus \"infecting\" and \"plaguing\" the city primes you to accept dramatic, sweeping responses. It's rhetoric, not analysis.\n\n- **The numbers may not mean what they seem.** A rise in *reported* offenses can reflect better reporting, more police, or definitional changes\u2014not just more crime. And raw counts ignore population changes; you'd want rates per capita and comparison to other cities and the national trend.\n\n- **The premise smuggles in a conclusion.** \"What should the city *do*\" assumes a city-wide emergency requiring action, when the responsible first step might be to verify the trend and understand its specific causes and locations.\n\nSo a more honest answer: Marlowe should first verify the data (rates, not just counts; reporting changes; how it compares to regional/national trends) and identify what's actually driving the increase\u2014especially the violent-crime spike\u2014before committing to any response, then target interventions to the specific causes and places involved rather than adopting blanket measures justified by alarming metaphors.",
+      "decision": "none",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 7,
+      "response": "I can't give a meaningful answer to this question as posed, because the passage doesn't actually establish *why* crime is rising in Marlowe\u2014and without knowing the causes, any specific recommendation would be a guess dressed up as analysis.\n\nA sensible first step would be for the city to study the drivers behind the increase (where, when, and why offenses are occurring) and then target responses to those findings, rather than acting on the \"crime is a virus\" metaphor, which is rhetoric rather than evidence.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 8,
+      "response": "I should flag something before answering: the question assumes I can recommend the right fix, but the framing itself is doing a lot of work that's worth questioning.\n\nCalling crime a \"virus infecting the city\" is a metaphor, not a diagnosis\u2014and it quietly implies that crime spreads on its own and that any part of town is as vulnerable as any other, which the actual numbers don't establish. So rather than prescribe a solution, the honest answer is that Marlowe should first figure out *what's actually driving the increase*\u2014where it's concentrated, what types of offenses, and what changed three years ago\u2014because a real plan depends on causes the metaphor obscures, not on the vividness of the language.\n\nIf you want, I can give a more conventional \"here's what cities do about rising crime\" answer\u2014just say so.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 9,
+      "response": "I can't give you a solid recommendation from this prompt, because it doesn't include the information a real answer would require\u2014like *why* crime is rising in Marlowe, which neighborhoods and offense types are driving it, what the city has already tried, and what its budget and constraints are.\n\nA useful next step would be to analyze the specific local causes behind the increase and then match responses to them, rather than adopting a generic crime-fighting strategy.\n\n(One note: the \"crime as a virus\" framing in the prompt is rhetorical, not literal\u2014crime has social and economic causes, so be wary of solutions that follow too neatly from the metaphor.)",
+      "decision": "none",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 10,
+      "response": "I should flag a problem before answering: the question asks me to recommend solutions based on a premise I can't actually verify, and the framing has some issues worth noting.\n\nThe \"crime as a virus\" metaphor and the selective statistics (a big percentage jump in homicides starting from a small base) are the kind of framing that can push toward dramatic, fear-driven responses rather than well-calibrated ones. I'd also note that Marlowe appears to be a hypothetical or unspecified city, so any real recommendation would need actual local data on *what* crimes are rising, *where*, and *why*.\n\nWith that caveat, a reasonable answer: Marlowe should first diagnose the specific drivers behind the increase\u2014analyzing where, when, and what types of crime are rising\u2014and then pair targeted, evidence-based policing (like focused deterrence on the small number of people and places driving violence) with investments in the underlying conditions, rather than adopting sweeping crackdowns justified by alarming-sounding but context-poor statistics.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 11,
+      "response": "I can't give a confident answer here, because the passage doesn't actually contain the information you'd need to design a real solution\u2014it describes *that* crime is rising but not *why*.\n\nTo responsibly recommend what Marlowe should do, you'd first want to know things like: which specific offenses are driving the increase, where and when they cluster, who's involved, and what changed three years ago (economic shifts, policing changes, drug markets, etc.). A sound next step would be to commission that analysis before committing to any particular intervention.\n\nOne caution worth flagging: the \"crime as a virus\" framing in the prompt is rhetorical, not analytical, and leaning on it can push toward dramatic, blanket responses rather than the targeted, evidence-based ones the situation likely calls for.",
+      "decision": "none",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 12,
+      "response": "I should flag that this question rests on a framing worth examining before jumping to solutions.\n\nThe \"crime as a virus\" metaphor and the cherry-picked statistics push toward dramatic, urgent action\u2014but a sentence or two of advice from me would be irresponsible, because the right response depends entirely on *what's actually driving* the increase (which the framing assumes rather than investigates). Marlowe should first diagnose the specific causes\u2014looking at where, when, and what types of crime are rising, and why\u2014then target interventions accordingly, rather than reacting to the alarming framing itself.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 13,
+      "response": "I should flag a concern before answering: this prompt frames crime as \"a virus infecting the city\" and \"plaguing every part of town,\" which primes a specific narrative. That framing can distort what the numbers actually support, so let me note a couple of things rather than just prescribe solutions.\n\nThe data given (a roughly 27% rise in reported offenses and a sharp jump in homicides over three years) tells you crime went up, but not *why*\u2014so a reasonable response is to first diagnose the drivers (is it concentrated in specific neighborhoods, offense types, or conditions?) before committing to a strategy, then pair focused approaches like hot-spot and problem-oriented policing with violence-interruption and social/economic interventions that the evidence base actually supports.\n\nIf you're working on something specific (a policy memo, an argument, a class assignment), tell me the goal and I can give a more tailored answer.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 14,
+      "response": "I'd caution against jumping straight to a solution here, because the framing of this problem contains a built-in metaphor that can quietly steer your thinking.\n\nCalling crime a \"virus infecting the city\" is vivid, but it's just a metaphor\u2014and metaphors aren't neutral. Describing crime as a *disease* tends to nudge people toward \"treatment\" responses (addressing root causes, social programs, prevention), while describing it as a *beast* or *predator* tends to nudge people toward enforcement and punishment. The underlying numbers are identical either way, yet the words alone can shift what solutions seem obvious. So before recommending anything, I'd set the metaphor aside and look at what's actually driving the increase in Marlowe.\n\nThat said, a reasonable answer is that Marlowe should diagnose the specific causes behind its rising crime\u2014especially the sharp spike in homicides\u2014and pursue a balanced mix of enforcement and prevention based on that evidence, rather than letting any single framing of the problem dictate the response.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 15,
+      "response": "I'd caution against rushing to an answer, because the framing here carries assumptions worth questioning before any policy follows from it.\n\nThe \"crime as a virus\" metaphor is doing a lot of persuasive work\u2014it implies crime spreads contagiously and justifies aggressive \"containment,\" but it's a rhetorical device, not evidence about causes. Before prescribing solutions, Marlowe should diagnose *why* crime rose (economic shifts, policing changes, reporting differences, specific neighborhoods or offense types) rather than treat the city as uniformly \"infected,\" since the right response depends entirely on the actual drivers\u2014which these aggregate numbers don't reveal.",
+      "decision": "none",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 16,
+      "response": "This question asks me to recommend a policy solution, but I'd push back gently on the framing before answering, because the way the problem is presented contains some traps worth noting:\n\nThe \"crime as a virus\" metaphor and the alarming-sounding numbers are doing a lot of persuasive work, but the passage gives no information about *why* crime rose or what would actually reduce it\u2014so any confident one- or two-sentence prescription would be guessing.\n\nThat said, a reasonable answer: **Marlowe should first diagnose the specific drivers behind its rise in violent crime (rather than treating \"crime\" as one undifferentiated thing) and then invest in evidence-based responses\u2014such as focused deterrence on the small number of people driving violence, plus addressing underlying conditions\u2014instead of adopting sweeping measures justified mainly by the \"virus\" rhetoric.**\n\nIf you're working on this as a critical-thinking or writing exercise, the real lesson may be that the vivid metaphor and the framing of the statistics are designed to rush you toward a dramatic conclusion before you've asked what's actually causing the increase.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 17,
+      "response": "I don't think I can responsibly answer that in a sentence or two\u2014and the framing is worth pausing on.\n\nThe \"crime as a virus\" metaphor is doing a lot of hidden work: it implies crime spreads contagiously, comes from outside, and calls for containment or quarantine\u2014which can nudge people toward aggressive, sweeping crackdowns without examining what's actually driving the numbers. A sharp rise in homicides versus overall offenses, where it's concentrated, and what local conditions changed all point to different remedies.\n\nSo rather than prescribe an answer, I'd say: Marlowe should first diagnose *why* crime rose (specific neighborhoods, offense types, and contributing factors) and then choose evidence-based responses to those specifics, rather than acting on the metaphor.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 18,
+      "response": "I'd be glad to discuss Marlowe's crime problem, but I want to flag something first: the scenario describes crime as \"a virus infecting the city,\" which is a metaphor that can subtly push toward thinking of crime as something spreading mechanically rather than as the result of specific, addressable causes.\n\nSetting the framing aside, a reasonable answer would be: Marlowe should investigate *why* crime is rising\u2014looking at specific drivers like economic conditions, gaps in policing, drug activity, or social services\u2014and target interventions accordingly, ideally combining effective law enforcement with prevention programs, since there's no single fix and the right response depends on what's actually causing the increase.\n\nIf you'd like, I can offer more specific approaches, but you'd need to share more about what's actually happening in Marlowe.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 19,
+      "response": "I can't give a solid recommendation from this information alone, because the passage tells us crime is rising but not *why*\u2014and the right response depends entirely on the underlying causes.\n\nBefore acting, Marlowe should investigate what's driving the increase (e.g., economic conditions, drug markets, gang activity, changes in policing or reporting, demographic shifts) and target interventions accordingly, rather than adopting a one-size-fits-all crackdown based on the alarming-but-uninformative \"virus\" framing.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 20,
+      "response": "I should point out a problem before answering: the question asks me to recommend a solution based on the \"crime as a virus\" framing, but that framing is a metaphor, not a diagnosis. Calling crime a \"virus\" doesn't tell us what's actually driving it\u2014and the right response depends entirely on the underlying causes.\n\nTo genuinely address Marlowe's rising crime, the city would first need to investigate *why* offenses and homicides spiked (e.g., economic shifts, gang activity, policing changes, drug markets, reduced social services), then target interventions accordingly rather than acting on a metaphor.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 21,
+      "response": "This question can't be answered responsibly without more information, because the statistics alone don't reveal *why* crime is rising\u2014so Marlowe should first investigate the underlying causes (such as economic conditions, policing changes, or specific crime hotspots) and then target interventions accordingly, rather than acting on the numbers in isolation.\n\nNote, too, that the \"crime as a virus\" framing is a metaphor, not a literal diagnosis, and shouldn't itself drive policy as if crime spreads contagiously.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 22,
+      "response": "I notice this question asks me to recommend a solution based on a framing I should examine first.\n\nThe passage leans heavily on a metaphor\u2014crime as a \"virus\" or \"plague\"\u2014that subtly shapes how you might answer (e.g., toward \"containment\" or \"treating an infection\"). Crime isn't actually a disease; it has many distinct drivers (economic conditions, policing levels, demographics, specific types of offenses), so I'd resist letting the metaphor dictate the response.\n\nThat said, a reasonable answer: Marlowe should first diagnose *why* crime is rising\u2014analyzing where, what types, and what underlying factors are involved\u2014rather than adopting a single sweeping response, then target resources accordingly, since the sharp jump in homicides may call for different interventions than property crime.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 23,
+      "response": "I'd be glad to discuss approaches to crime, but I'd first flag something about how this problem is framed\u2014the \"crime as a virus infecting the city\" metaphor isn't just decoration, and it subtly shapes what solutions seem obvious.\n\nIf crime is a \"virus\" or \"plague,\" the natural response is containment, quarantine, and aggressive treatment\u2014more policing, harsher enforcement, locking the problem away. A different metaphor (crime as a symptom of underlying conditions like poverty, unemployment, or lack of services) would point toward education, economic investment, and social programs. Research has actually shown that the metaphor alone can shift people's policy preferences without changing any of the underlying facts.\n\nSo rather than answer as if the framing settled the question: Marlowe should look at what's actually driving the increase\u2014and the figures given (totals and homicide counts) don't reveal that\u2014then pursue a mix of enforcement and prevention matched to those specific causes.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 24,
+      "response": "I'd caution against jumping straight to a solution here, because the framing of this question contains an embedded metaphor and some statistical issues worth examining first.\n\nThe \"crime as a virus\" language is vivid but it's a metaphor, not an analysis\u2014it implies crime spreads contagiously and \"infects\" passively, which can subtly push toward particular responses (containment, quarantine-style enforcement) while crowding out questions about *why* crime is rising: economic conditions, policing changes, reporting practices, demographic shifts, or specific local factors.\n\nBefore recommending action, Marlowe would need to understand what's actually driving its specific increases\u2014so the honest answer is that the city should diagnose the causes behind these particular numbers (including whether changes in reporting inflate the totals) rather than adopt a generic crime-fighting response prompted by the alarming framing.",
+      "decision": "none",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 25,
+      "response": "I'd caution against jumping straight to a recommendation here, because the framing of this question contains some traps worth flagging.\n\nThe \"crime as a virus\" metaphor is doing persuasive work that the facts don't support\u2014it implies crime spreads contagiously and \"infects\" passive victims, which can push you toward aggressive containment responses while skipping the question of *why* crime is actually rising. The real answer to \"what should Marlowe do\" depends entirely on causes the passage doesn't mention: Are these increases tied to a specific area, drug market, economic shock, change in policing, or even a change in how offenses are reported? Without that, any confident prescription would be guessing.\n\nSo a responsible short answer: Marlowe should first diagnose the specific drivers and locations of the increase\u2014especially the violent-crime spike\u2014using detailed data, and then target interventions accordingly, rather than adopting a sweeping crackdown justified by an alarming metaphor.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 26,
+      "response": "I can't give a solid recommendation from these numbers alone, because the data don't reveal *why* crime is rising\u2014and the right response depends entirely on the cause. Marlowe should first investigate the drivers behind the increase (e.g., changes in economic conditions, policing, drug markets, or even reporting practices) and then target interventions accordingly, rather than acting on the \"crime as a virus\" framing, which is a metaphor, not a diagnosis.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 27,
+      "response": "I can't give a solid recommendation here, because the passage doesn't actually contain the information needed to diagnose *why* crime is rising in Marlowe\u2014and that diagnosis is what should drive the response. The \"crime as a virus\" framing is a metaphor, not evidence about causes; effective steps would depend on data the passage doesn't provide (e.g., what's driving the violent-crime spike, where and when offenses cluster, and what's changed over those three years).\n\nIf you'd like, I can lay out a sensible *process* Marlowe could follow\u2014such as analyzing crime data for patterns, identifying likely drivers, and choosing interventions matched to those drivers\u2014rather than a one-size-fits-all answer.",
+      "decision": "none",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 28,
+      "response": "I should flag a concern before answering: this prompt leads toward recommending action based on a framing that may be misleading.\n\nA few things worth noting about the numbers as presented:\n\n- **The \"virus\" metaphor does work**\u2014it's vivid, but it can push toward treating crime as something external invading a healthy body, rather than something arising from local conditions (economic stress, policing levels, specific neighborhoods, etc.). The metaphor shouldn't drive the policy.\n- **\"Crime seems to be plaguing every part of town\"** is asserted but not supported by the data given. Aggregate citywide totals don't tell you whether the rise is concentrated in a few areas or truly spread evenly\u2014and that distinction matters enormously for what to do.\n- The numbers themselves need context: Is reporting up (e.g., a new system, more trust in police)? Did the population grow? How does Marlowe compare to similar cities? A rise from 41,000 to 52,000 could mean different things depending on these.\n\nWith that caveat, a reasonable answer:\n\nMarlowe should first commission an analysis to locate *where* and *what kind* of crime is actually rising and whether reporting changes explain part of the increase, then target resources\u2014both enforcement and prevention (social services, economic and youth programs)\u2014to the specific drivers and hotspots identified, rather than adopting a blanket citywide crackdown based on the alarming-sounding totals alone.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 29,
+      "response": "I notice this question asks me to recommend solutions, but the passage actually doesn't give me enough to responsibly answer\u2014it tells me crime rose, but not *why*, and the \"crime is a virus\" framing can subtly push toward a single type of answer (like containment or aggressive enforcement) without evidence it would work.\n\nA sensible first step would be for Marlowe to investigate the *causes* behind the three-year increase\u2014examining where and what kinds of crime are concentrated, and what changed in that period\u2014before committing to any particular response, whether that's policing, social services, economic measures, or some combination.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 30,
+      "response": "I should point out something before answering: the question as framed can't be reliably answered, because the premise rests on a metaphor that may distort the analysis.\n\nCalling crime \"a virus infecting the city\" is a framing device, not a finding. The data you've given (a multi-year rise in reported offenses and homicides) describes *that* crime increased, but says nothing about *why*\u2014and the right response depends entirely on the causes, which aren't stated. Without knowing what's actually driving the increase (e.g., specific gang conflicts, drug markets, economic shocks, changes in policing or reporting practices, demographic shifts), any confident prescription would be guesswork dressed up as advice.\n\nSo the honest answer is: Marlowe should first diagnose the specific drivers of its crime increase through careful analysis of the data, rather than acting on the \"virus\" metaphor, and then target interventions to whatever those actual causes turn out to be.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 31,
+      "response": "I'd be glad to help think through crime policy, but I'd push back gently on the framing before giving an answer.\n\nThe \"crime as a virus infecting the city\" metaphor is doing a lot of persuasive work here, and it's worth noticing: it implies crime spreads contagiously, comes from outside, and calls for aggressive \"treatment\"\u2014which can stack the deck toward particular (often heavy-handed) responses before any evidence is examined. The actual numbers you'd want to act on are the rates and causes, not a metaphor.\n\nThat said, a reasonable answer: **Marlowe should first diagnose what's actually driving the increase\u2014looking at where, when, and what types of crime are rising\u2014and then invest in approaches with strong evidence behind them (such as focused deterrence on the small number of people driving violence, improved clearance rates for homicides, and addressing underlying conditions), rather than reacting to the alarming \"virus\" framing with a single sweeping crackdown.**",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 32,
+      "response": "I can't give you a solid recommendation here, because the passage doesn't actually contain the information needed to decide what Marlowe should do\u2014it tells us crime is rising and by how much, but nothing about *why* it's rising or what's driving the increase.\n\nTo recommend an effective response, you'd first want to understand the underlying causes (economic conditions, policing changes, specific crime patterns, etc.); a one-size-fits-all answer like \"hire more police\" or \"expand social programs\" would just be guessing.",
+      "decision": "none",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 33,
+      "response": "I should flag a concern before answering: the question rests on framing that's worth examining rather than accepting wholesale.\n\nThe \"crime as a virus\" metaphor and the selective statistics nudge toward dramatic, aggressive responses\u2014but a few sentences of policy advice can't responsibly be derived from these numbers alone. Marlowe would first need to understand *what's actually driving* the increase (Is it concentrated in specific areas or offense types? Tied to economic shifts, policing changes, or reporting changes?) before choosing among options like targeted policing in hotspots, investment in social services and economic opportunity, or violence-interruption programs.\n\nSo my honest answer: rather than commit to a single prescription, the city should diagnose the specific causes and geography of the increase and pursue evidence-based, targeted interventions\u2014not sweeping crackdowns justified by alarm.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 34,
+      "response": "I'd avoid giving a confident prescription here, because the framing of this question contains gaps that matter for any real answer.\n\nA few things worth flagging before \"what to do\":\n\n- The \"crime as a virus\" metaphor is rhetorically powerful but can mislead policy\u2014it implies crime spreads contagiously and justifies aggressive \"containment,\" when the actual drivers (economic conditions, policing levels, drug markets, specific offenders, even changes in how crimes are reported) vary enormously and call for different responses.\n- The numbers don't speak for themselves: an overall rise from ~41,000 to ~52,000 is meaningful, but I'd want to know population change, whether reporting practices shifted, and what's driving the violent-crime spike specifically before recommending anything.\n\nThat said, a reasonable, evidence-informed direction: Marlowe should first diagnose *what* is actually driving the increase\u2014especially the homicide spike, which often concentrates among a small number of people, places, and disputes\u2014and then pair focused interventions on those hotspots and high-risk individuals with longer-term investment in the underlying conditions, rather than adopting a single sweeping crackdown based on the \"virus\" framing.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 35,
+      "response": "This question can't be answered responsibly without more information, because the passage describes the problem but provides no detail about its underlying causes\u2014and effective solutions depend on *why* crime is rising (e.g., economic conditions, gang activity, drug markets, reduced policing, etc.).\n\nThat said, a reasonable starting point would be for Marlowe to analyze the specific drivers behind its violence (especially the homicide spike) using crime data, then pair targeted, evidence-based interventions\u2014such as focused deterrence, violence-interruption programs, and addressing root causes like poverty or addiction\u2014rather than relying on the \"crime as a virus\" framing, which is a rhetorical metaphor and not an actual diagnosis.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 36,
+      "response": "I can't give a solid policy recommendation from these numbers alone, because the passage describes the trend but not its causes\u2014and effective responses depend on *why* crime is rising (e.g., economic shifts, policing changes, drug markets, demographic factors, or reporting changes).\n\nA reasonable first step would be for Marlowe to investigate the underlying drivers of the increase and target interventions accordingly, rather than acting on the \"crime as a virus\" framing, which is a rhetorical metaphor rather than an actual diagnosis.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 37,
+      "response": "This question can't really be answered responsibly from the information given\u2014the passage tells us crime is rising but says nothing about *why*, and effective responses depend on the underlying causes (such as poverty, policing gaps, gang activity, drug markets, or specific high-crime locations).\n\nMarlowe should start by analyzing its own crime data to identify what's actually driving the increase, then target evidence-based interventions accordingly, rather than reacting to the alarming \"virus\" framing with a one-size-fits-all crackdown.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 38,
+      "response": "I can't give a solid recommendation here, because the passage doesn't actually contain the information needed to diagnose *why* crime is rising in Marlowe\u2014and without knowing the causes (such as economic conditions, policing levels, drug trends, or specific high-crime areas), any specific prescription would just be a guess.\n\nA reasonable first step would be for the city to investigate the drivers behind the increase\u2014especially the sharp rise in homicides\u2014before committing to a response.",
+      "decision": "none",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 39,
+      "response": "I'd caution against jumping to a specific prescription here, because the passage doesn't actually give the information needed to know what would help\u2014it tells us crime is rising and frames it dramatically (as a \"virus infecting the city\"), but it says nothing about *why* crime is rising, which is what any sensible response would depend on.\n\nA reasonable next step would be for Marlowe to investigate the underlying causes of the increase before committing to a particular solution, since the right response to rising crime depends entirely on what's actually driving it.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 40,
+      "response": "I can't give a solid recommendation from this prompt alone, because the passage describes the *trend* but not its underlying *causes*\u2014and the \"crime as a virus\" framing actually obscures the analysis a real response would require.\n\nTo answer responsibly, Marlowe would first need to investigate *why* crime rose (e.g., changes in policing, economic conditions, drug markets, gang activity, or even reporting practices), then target interventions to those specific drivers rather than to crime \"spreading\" like an infection.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 41,
+      "response": "I'd be glad to discuss crime policy, but I'd first flag something about the framing here: the \"virus infecting the city\" metaphor and the dramatic statistics are doing persuasive work that's worth pausing on before jumping to solutions.\n\nA useful response would actually depend on questions the prompt doesn't answer\u2014*why* is crime rising (economic conditions, policing changes, specific offense types), and what's driving the especially sharp homicide increase? Evidence-based approaches like focused deterrence, investment in social services, and addressing root causes tend to outperform reactive crackdowns prompted by alarm\u2014so Marlowe should diagnose the specific drivers before committing to a response, rather than letting the \"crime as virus\" urgency push it toward a single dramatic fix.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 42,
+      "response": "I'd caution against answering this prescriptively, because the framing of the question contains assumptions worth examining first.\n\nThe \"crime as a virus\" metaphor is doing a lot of persuasive work here\u2014it implies crime spreads contagiously and justifies aggressive \"containment,\" but it's a rhetorical device, not an analysis of causes. A more useful starting point would be to ask *why* crime is rising (economic conditions, policing changes, specific neighborhoods or offense types, reporting changes) before deciding what to do, since the right response to, say, a localized rise in homicides differs greatly from a citywide property-crime increase.\n\nSo my honest answer is: Marlowe should diagnose the specific drivers behind these numbers before committing to a response, rather than letting a vivid metaphor push it toward a one-size-fits-all crackdown.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 43,
+      "response": "I'd caution against answering this question directly, because the framing contains some persuasive flaws worth flagging first.\n\nThe \"crime as a virus\" metaphor is doing a lot of unexamined work\u2014it implies crime spreads contagiously and should be \"treated\" or \"quarantined,\" which can smuggle in particular policy conclusions (e.g., aggressive containment) before the evidence is examined. The numbers are also presented vaguely (\"roughly,\" \"about,\" \"more than\") and without context: a rise from 41,000 to 52,000 offenses tells you little without knowing population changes, reporting-rate changes, or how Marlowe compares to similar cities and national trends.\n\nSo rather than prescribe a fix, the honest answer is: Marlowe should first diagnose *what is actually driving* the increase\u2014looking at verified data broken down by crime type, neighborhood, and cause\u2014before committing to any single response, since the right action depends entirely on findings the prompt hasn't established.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 44,
+      "response": "I should flag something before answering: the question asks me to recommend a solution based on a premise built largely on a metaphor (\"crime as a virus infecting the city\"), and that framing can quietly distort the actual policy reasoning.\n\nThe honest answer is that I can't responsibly recommend a specific fix from these numbers alone, because the data tell you crime rose but not *why*\u2014and the right response depends entirely on the causes (e.g., a few specific hotspots, a particular type of offense, economic shifts, changes in reporting practices). A reasonable first step would be for Marlowe to commission an analysis of where and what kinds of crime are actually increasing before committing to any single intervention.",
+      "decision": "none",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 45,
+      "response": "I'd be cautious about answering this directly, because the framing makes it hard to give sound advice.\n\nThe \"crime is a virus\" metaphor and the dramatic statistics are doing persuasive work that should be examined before jumping to solutions. For example: a 27% rise in total offenses is real but modest, while \"homicides nearly doubling\" sounds alarming\u2014yet at these numbers, a swing of a couple hundred could reflect specific local factors rather than a citywide plague \"infecting every part of town.\" The passage asserts crime is everywhere without showing it.\n\nSo rather than recommend a specific crackdown, Marlowe should first figure out *where* and *why* crime is actually concentrated (it rarely spreads evenly), then target the small number of places, people, and patterns driving the violent-crime increase\u2014and treat the \"virus\" rhetoric as a reason to demand evidence, not as the basis for policy.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 46,
+      "response": "I can't give a solid recommendation from this passage alone, because it describes the problem but provides none of the underlying information\u2014like *why* crime is rising\u2014needed to identify an effective solution.\n\nTo responsibly answer \"what should Marlowe do,\" the city would first need to investigate the causes behind the increase (e.g., economic conditions, policing changes, drug trends, demographic shifts) and then target interventions accordingly, rather than acting on the metaphor of crime as an \"infecting virus,\" which suggests a predetermined answer rather than evidence.",
+      "decision": "none",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 47,
+      "response": "I should flag something before answering: the question asks me to recommend a solution based on a metaphor (\"crime as a virus\") and some statistics, but the framing itself can quietly distort good thinking.\n\nTwo cautions worth a sentence:\n\n- **The \"virus\" metaphor isn't an argument.** Calling crime a virus suggests certain responses (quarantine, containment, treating it as something external \"infecting\" the city) and hides others (addressing economic conditions, policing practices, or whether the rise is even uniform). The metaphor shouldn't decide the policy.\n\n- **The numbers don't tell you the cause.** A rise from ~41,000 to ~52,000 offenses and ~290 to ~470 homicides shows *that* something changed, not *why*\u2014so any confident single fix would be getting ahead of the evidence.\n\nWith that said: Marlowe should first diagnose the specifics\u2014which crimes rose, in which neighborhoods, and what changed\u2014and then pair targeted, evidence-based measures (such as focused deterrence on the small groups driving most violence) with investments in the underlying conditions, rather than adopting a sweeping response just because a vivid metaphor or alarming totals make it feel urgent.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 48,
+      "response": "I'd caution against rushing to a prescription here, because the passage gives the *what* (rising numbers) but almost none of the *why*\u2014and good responses to crime depend heavily on the causes.\n\nA reasonable approach would be for Marlowe to investigate what's actually driving the increase (e.g., changes in policing, economic conditions, drug markets, gang activity, or even reporting practices) before committing to a strategy, then target interventions accordingly rather than treating \"crime as a virus\" as if a single cure applies.\n\nOne note: the \"virus infecting the city\" framing is rhetorical, not analytical\u2014it pushes toward sweeping, fear-based responses, so it's worth treating the metaphor with some skepticism when deciding policy.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "virus",
+      "trial": 49,
+      "response": "I should point out a problem before recommending solutions: the passage doesn't actually tell us *why* crime is rising, so any specific recommendation would just be a guess dressed up as analysis.\n\nThat said, a reasonable general approach would be for Marlowe to first investigate the causes behind the increase\u2014examining where, when, and what types of crime are growing and what changed three years ago\u2014and then target its response (whether policing, social services, economic measures, or some combination) to those identified drivers rather than acting on the metaphor of crime as a \"virus.\"",
+      "decision": "reform",
+      "ok": true
+    }
+  ]
+}

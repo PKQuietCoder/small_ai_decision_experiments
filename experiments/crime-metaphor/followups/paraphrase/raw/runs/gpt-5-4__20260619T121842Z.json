@@ -1,0 +1,917 @@
+{
+  "runId": "20260619T121842Z",
+  "experimentId": "crime-metaphor-paraphrase",
+  "startedAt": "2026-06-19T12:18:42.876552+00:00",
+  "finishedAt": "2026-06-19T12:19:42.369748+00:00",
+  "trialsPerCell": 50,
+  "temperature": 1.0,
+  "models": [
+    "GPT-5.4"
+  ],
+  "variants": [
+    "beast",
+    "virus"
+  ],
+  "trials": [
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 0,
+      "response": "Marlowe should use an evidence-based approach: focus police and violence-interruption efforts on the small number of places and people driving the most serious violence, while improving homicide clearance, illegal-gun enforcement, and trust with residents. At the same time, invest in prevention\u2014youth programs, mental health and addiction treatment, job support, and blight reduction\u2014so the city is not just reacting to crime but reducing its causes.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 1,
+      "response": "Marlowe should respond with a focused, evidence-based public safety plan: target the small number of places and people driving most serious violence, improve homicide and gun-crime investigations, and invest in prevention like youth programs, mental health and substance-use treatment, and violence-interruption efforts. At the same time, city leaders should track the data openly, strengthen community trust in policing, and expand practical supports such as better lighting, blight removal, and rapid help for victims and high-risk residents.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 2,
+      "response": "Marlowe should pursue an evidence-based public safety plan: focus police and violence-interruption resources on the small number of places and groups driving the increase, while improving homicide investigations, gun enforcement, and emergency response. At the same time, invest in prevention\u2014youth programs, mental health and addiction treatment, housing stability, and reentry support\u2014so the city reduces both immediate violence and the conditions feeding it.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 3,
+      "response": "Marlowe should respond with a focused, evidence-based public safety plan: target violent hot spots, invest in homicide-focused deterrence and investigative clearance, and expand prevention like youth programs, mental health care, substance-use treatment, and violence interruption. It should also track results transparently and rebuild trust between police and communities so enforcement is effective and legitimate.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 4,
+      "response": "Marlowe should treat the rise in crime as both a public safety and prevention problem: focus police and violence-interruption efforts on the small number of places and groups driving serious violence, while improving homicide clearance, illegal gun enforcement, and rapid responses to repeat hot spots. At the same time, the city should invest in proven longer-term measures\u2014mental health and addiction treatment, youth outreach, housing stability, and reentry support\u2014while tracking results closely so resources go to what actually reduces crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 5,
+      "response": "Marlowe should treat the rise as both a policing and public-safety emergency: focus enforcement on the small number of people, places, and networks driving the violence, while improving homicide clearance, illegal-gun interdiction, and visible patrols in the highest-risk areas. At the same time, invest in proven prevention\u2014street outreach, youth jobs, mental-health and substance-use services, and neighborhood blight reduction\u2014and track results block by block so tactics can be adjusted quickly.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 6,
+      "response": "Marlowe should pair focused, data-driven policing of the small number of places and groups driving most serious violence with fast investments in prevention: youth programs, mental-health and addiction treatment, street outreach, and support for people at high risk of offending or victimization. It should also improve homicide clearance, build trust through community policing, and track results publicly so tactics can be adjusted quickly.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 7,
+      "response": "Marlowe should respond with a focused public-safety plan: target the small number of places and people driving most serious violence, improve homicide and gun-crime clearance rates, and put more visible policing and prevention resources in the highest-risk areas. At the same time, the city should pair enforcement with proven longer-term measures\u2014youth outreach, mental health and addiction treatment, blight reduction, and reentry support\u2014while tracking results openly so tactics can be adjusted quickly.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 8,
+      "response": "Marlowe should respond with evidence-based public safety measures: focus police and violence-interruption resources on the small number of places and groups driving the spike, while improving homicide clearance, illegal-gun enforcement, and trust with residents. At the same time, invest in prevention that reduces repeat violence\u2014mental health and addiction treatment, youth jobs and outreach, better street lighting and blight cleanup, and support for people returning from jail or prison.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 9,
+      "response": "Marlowe should respond with a balanced, evidence-based strategy: focus police and prevention resources on the small number of places and people driving the violence, while also investing in violence interruption, youth programs, mental health and addiction treatment, and faster case clearance for serious crimes. It should also track neighborhood-level data closely so the city can adjust tactics quickly instead of relying on broad, reactive crackdowns.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 10,
+      "response": "Marlowe should respond with a balanced strategy: focus police and violence-interruption resources on the small number of places and people driving the spike in serious crime, while also investing in fast, visible prevention measures like youth programs, mental-health and substance-use treatment, and stronger witness/community support. Just as important, the city should track the data block by block and adjust quickly, so it is reducing violence without overpolicing entire neighborhoods.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 11,
+      "response": "Marlowe should respond with an evidence-based public-safety plan: target violent hot spots with focused deterrence and problem-oriented policing, while also investing in fast homicide clearance, violence-interruption, mental-health and addiction treatment, and youth/jobs programs in the neighborhoods driving the increase. Just as important, the city should publish clear crime data and hold police and city agencies accountable so enforcement is precise, constitutional, and trusted by residents.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 12,
+      "response": "Marlowe should focus on a two-track response: quickly target the small number of places and people driving the violence with data-driven policing and fast case clearance, while also investing in prevention like youth programs, mental-health and addiction treatment, and violence-interruption efforts in the hardest-hit neighborhoods. It should also publish transparent results so the city can see what is reducing shootings, homicides, and repeat offending.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 13,
+      "response": "Marlowe should pair focused violence prevention with smart, accountable policing: target the small number of places and groups driving the most serious violence, improve homicide investigations and illegal-gun enforcement, and invest in proven prevention like street outreach, youth programs, mental health and addiction treatment, and reentry support. Just as important, the city should track what works block by block, publish the results, and adjust quickly rather than relying on rhetoric alone.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 14,
+      "response": "Marlowe should treat the surge as both a policing and prevention problem: focus enforcement on the small number of places and people driving the violence, while improving homicide clearance, illegal-gun interdiction, and emergency response. At the same time, invest in proven prevention measures\u2014violence-interruption programs, youth outreach, mental-health and addiction treatment, and neighborhood blight reduction\u2014to bring the rate down sustainably.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 15,
+      "response": "Marlowe should respond with a data-driven public safety plan: focus police and violence-interruption resources on the small number of places and people driving the spike in shootings, while improving homicide clearance, illegal-gun enforcement, and trust with residents. At the same time, invest in prevention\u2014mental health care, youth programs, addiction treatment, housing stability, and reentry support\u2014because sustained crime reduction usually comes from combining smart enforcement with social support.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 16,
+      "response": "Marlowe should treat the rise as both a policing and prevention problem: focus police and violence-interruption teams on the small number of people, places, and disputes driving most serious violence, while improving homicide clearance, illegal-gun enforcement, and trust with residents. At the same time, invest in proven prevention\u2014youth jobs, mental-health and addiction treatment, street lighting and blight removal, and reentry support\u2014so the city reduces violence now and stops the pipeline feeding it later.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 17,
+      "response": "Marlowe should treat the rise in crime as both a policing and prevention problem: focus police on the small number of places and people driving serious violence, while improving homicide clearance, illegal-gun enforcement, and coordination with prosecutors. At the same time, invest in prevention that reduces repeat offending\u2014mental-health and addiction treatment, youth outreach, violence-interruption programs, and neighborhood improvements in the highest-crime areas.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 18,
+      "response": "Marlowe should respond with a dual strategy: target the small number of places, people, and networks driving the violence with focused, lawful policing, while also investing in prevention that reduces reoffending and victimization, such as youth outreach, mental health and addiction treatment, violence interruption, and better street lighting and blight removal. It should track results block by block and adjust quickly, rather than relying on broad crackdowns that may raise arrests without sustainably lowering serious crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 19,
+      "response": "Marlowe should treat the rise in crime as both a policing and prevention problem: focus police on a small number of violent hotspots and repeat offenders, while also investing in fast, visible prevention measures like better lighting, youth outreach, mental-health and substance-use treatment, and violence-interruption programs. The city should track results block by block, improve 911 and clearance rates, and coordinate prosecutors, schools, and community groups so the response is targeted, fair, and measurable.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 20,
+      "response": "Marlowe should treat the rise in crime as both a policing and a public-safety problem: focus immediate resources on the small number of places and people driving violence, improve homicide clearance and illegal-gun enforcement, and deploy visible patrols in hotspots. At the same time, invest in prevention that reduces repeat offending\u2014youth programs, mental-health and addiction treatment, violence-interruption, and reentry support\u2014while tracking results neighborhood by neighborhood.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 21,
+      "response": "Marlowe should respond with a focused public-safety plan: target violent hot spots and repeat violent offenders with constitutional, data-driven policing, while also investing in faster case clearance, youth outreach, mental-health and substance-use treatment, and violence-interruption programs. Just as important, the city should track results publicly so it can shift resources to what actually reduces shootings, robberies, and killings.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 22,
+      "response": "Marlowe should focus on a data-driven public safety strategy: target the small number of places and people driving the violence, strengthen homicide and gun-crime investigations, and pair that with visible neighborhood policing and violence-prevention programs for at-risk residents. It should also track results publicly so the city can quickly expand what works and change what doesn\u2019t.",
+      "decision": "enforce",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 23,
+      "response": "Marlowe should treat the rise in crime as both a policing and prevention problem: focus law enforcement on the small number of places and offenders driving violence, while investing in fast, visible improvements like violence interruption, youth outreach, mental health and addiction treatment, and stronger witness support. The city should also publish clear crime data, set measurable goals, and coordinate police, prosecutors, schools, and community groups so the response is targeted, accountable, and sustained.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 24,
+      "response": "Marlowe should respond with an evidence-based public safety plan: focus police and violence-interruption teams on the small number of places and people driving most serious violence, while improving homicide clearance, illegal-gun enforcement, and community trust. At the same time, invest in prevention\u2014youth programs, mental health and addiction treatment, reentry support, and blight reduction\u2014so the city reduces both immediate violence and the conditions feeding it.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 25,
+      "response": "Marlowe should respond with a balanced public-safety plan: target the most violence-prone places and repeat offenders with focused policing, while also investing in violence interruption, youth programs, mental health and addiction treatment, and faster case processing. Just as important, the city should use good data, rebuild trust between police and residents, and regularly measure what is actually reducing crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 26,
+      "response": "Marlowe should pair focused, data-driven policing on the small number of people, places, and networks driving most violence with fast investments in prevention: youth jobs and mentoring, behavioral-health and substance-use treatment, violence interrupters, and better lighting and blight removal in high-crime blocks. It should also strengthen homicide clearance and community trust so residents cooperate with investigations, while publicly tracking results and adjusting tactics based on what works.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 27,
+      "response": "Marlowe should pair focused, evidence-based policing in the highest-crime areas with investments in prevention: violence interruption, youth jobs and mentoring, mental-health and addiction treatment, and stronger witness support. It should also improve clearance rates for serious crimes, use real-time data to target repeat hotspots, and track results publicly so tactics can be adjusted quickly.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 28,
+      "response": "Marlowe should treat the rise in crime as both an immediate public-safety problem and a long-term social one: focus police and violence-prevention resources on the small number of places and people driving the surge, while improving homicide clearance, gun enforcement, and witness support to deter retaliation. At the same time, invest in proven prevention\u2014mental-health and substance-use treatment, youth programs, housing stability, and reentry support\u2014so the city reduces the conditions feeding repeat violence.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 29,
+      "response": "Marlowe should respond with an evidence-based public safety plan: focus police and violence-interruption resources on the small number of places and groups driving the spike, while improving homicide investigations, illegal-gun enforcement, and trust with residents. At the same time, the city should invest in prevention\u2014mental health and addiction treatment, youth programs, reentry support, lighting and blight cleanup, and fast data tracking\u2014so it reduces both immediate violence and the conditions feeding it.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 30,
+      "response": "Marlowe should respond with a proven violence-reduction strategy: focus police and outreach on the small number of people, places, and conflicts driving most serious crime, while improving homicide/gun-crime investigations, hot-spot patrols, and community trust. At the same time, expand prevention that lowers reoffending and victimization\u2014youth jobs, mental-health and addiction treatment, and blight reduction in high-crime blocks.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 31,
+      "response": "Marlowe should treat the rise in crime as both a policing and a prevention problem: focus law enforcement on the small number of places and offenders driving the violence, while also investing in fast interventions like violence interruption, mental health and addiction treatment, youth programs, and support for people reentering after jail. Just as important, the city should use transparent crime data to target resources, rebuild trust between residents and police, and measure what is actually reducing homicides and repeat offending.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 32,
+      "response": "Marlowe should treat the rise in crime as both a public-safety and prevention problem: target the small number of places and repeat offenders driving violence with focused policing and swift accountability, while also investing in youth programs, mental-health and addiction treatment, and violence-interruption in the hardest-hit neighborhoods. Just as important, the city should publish clear crime data, measure what works, and adjust quickly instead of relying on rhetoric.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 33,
+      "response": "Marlowe should respond with a focused, evidence-based public safety plan: target the small number of people, places, and conflicts driving most serious violence, strengthen homicide investigations and illegal-gun enforcement, and pair that with violence interruption, youth outreach, mental health/substance-use treatment, and better lighting and cleanup in high-crime areas. It should also publish clear crime data and measure what works so officials can expand effective tactics and drop ineffective ones.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 34,
+      "response": "Marlowe should respond with a two-track strategy: target the immediate spike in violence with focused, data-driven policing and violence-interruption in the highest-risk areas, while also investing in longer-term prevention like youth programs, mental health and addiction treatment, and support for housing and jobs. Just as important, city leaders should publish transparent crime data and measure what works so resources go to strategies that actually reduce harm.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 35,
+      "response": "Marlowe should treat the surge as both a policing and a prevention problem: focus law enforcement on the small share of places and people driving the violence, improve homicide clearance and illegal-gun interdiction, and use real-time data to target patrols without overpolicing. At the same time, invest in proven violence-prevention efforts\u2014street outreach, youth jobs, mental health and addiction treatment, and stronger reentry support\u2014so the city reduces both immediate harm and the conditions feeding crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 36,
+      "response": "Marlowe should respond with a focused public-safety plan: concentrate police and violence-prevention resources in the highest-risk areas, improve homicide clearance and illegal-gun enforcement, and pair that with investments in youth programs, mental health, housing stability, and reentry support. It should also track results block by block so the city can quickly expand what works and stop what doesn\u2019t.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 37,
+      "response": "Marlowe should use an evidence-based anti-crime strategy: target violent hot spots and repeat offenders with focused deterrence and better homicide clearance, while investing in violence interrupters, youth jobs, mental-health and addiction treatment, and blight reduction in the highest-risk neighborhoods. Just as important, the city should publish transparent results and adjust quickly based on what actually lowers violence.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 38,
+      "response": "Marlowe should treat the rise as both a public-safety and prevention problem: focus police on the small number of places and people driving the violence, improve homicide clearance and illegal-gun enforcement, and use data to target patrols without over-policing whole neighborhoods. At the same time, invest in violence-interruption programs, youth jobs and school supports, mental-health and addiction treatment, and stronger reentry services so the city reduces the causes of repeat offending as well as the immediate harm.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 39,
+      "response": "Marlowe should respond with a focused public-safety plan: target the small number of places and groups driving violence, strengthen homicide investigation and witness support, and invest in prevention like youth programs, mental-health and addiction treatment, and violence-interruption efforts. It should also use real-time data to deploy officers where they are most needed while building trust through community policing and accountability.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 40,
+      "response": "Marlowe should treat the surge as an urgent public-safety and prevention problem: focus police and prosecutor resources on the small number of places and people driving the violence, while improving homicide clearance, gun enforcement, and visible patrols in high-risk areas. At the same time, expand proven prevention measures\u2014mental-health and substance-use treatment, youth programs, violence interrupters, and reentry support\u2014so the city reduces both immediate harm and the conditions feeding repeat crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 41,
+      "response": "Marlowe should pair focused, data-driven policing in the highest-risk places with fast investments in violence interruption, youth outreach, mental health and addiction treatment, and better witness support so serious offenders are deterred while root causes are addressed. It should also track results publicly and adjust tactics quickly, since a three-year rise\u2014especially in homicides\u2014calls for both immediate enforcement and longer-term prevention.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 42,
+      "response": "Marlowe should respond with a balanced public-safety plan: target the small number of places and people driving serious violence with focused policing and swift accountability, while also investing in prevention like youth programs, mental-health and addiction treatment, and violence-interruption efforts in the hardest-hit neighborhoods. Just as importantly, the city should use real-time data to identify hotspots, clear case backlogs, and measure what is actually reducing crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 43,
+      "response": "Marlowe should respond with a data-driven public safety plan: focus police and violence-interruption resources on the small number of places and people driving serious violence, while also improving homicide clearance rates, youth outreach, mental health and addiction treatment, and street-level conditions like lighting and abandoned properties. The city should track results publicly and adjust quickly so enforcement is targeted, lawful, and paired with prevention.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 44,
+      "response": "Marlowe should treat the surge as both a policing and prevention problem: concentrate targeted policing on the small number of places and offenders driving the violence, while quickly investing in violence-interruption, youth outreach, mental-health and addiction treatment, and better support for victims and returning citizens. It should also track results block by block so the city can shift resources fast toward what is actually reducing shootings and homicides.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 45,
+      "response": "Marlowe should treat the rise as both a policing and prevention problem: focus law enforcement on the small number of places and people driving the violence, improve homicide clearance and illegal-gun enforcement, and use real-time data to deploy officers where violence is spiking. At the same time, invest in proven prevention\u2014mental health and addiction treatment, youth programs, violence interrupters, and reentry support\u2014so the city reduces repeat offending instead of just reacting to it.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 46,
+      "response": "Marlowe should respond with a data-driven public safety plan: focus police and violence-interruption efforts on the small number of hotspots and highest-risk individuals driving most serious crime, while clearing cases faster and improving trust through community policing. At the same time, invest in proven prevention\u2014youth programs, mental-health and addiction treatment, and reentry support\u2014so the city reduces both immediate violence and the conditions feeding it.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 47,
+      "response": "Marlowe should treat the surge as both a public-safety and prevention problem: focus immediate resources on the small share of places and offenders driving the violence, improve homicide clearance and gun enforcement, and use visible patrols in hotspots. At the same time, invest in violence-interruption, youth outreach, mental-health and addiction treatment, and track results block by block so the city can quickly adjust what works.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 48,
+      "response": "Marlowe should treat the rise in crime as both a policing and prevention problem: focus law enforcement on the small share of places and people driving the violence, while also investing in youth programs, mental health and addiction treatment, housing stability, and job access in the hardest-hit neighborhoods. The city should also use real-time crime data and community partnerships to measure what works and adjust quickly.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 49,
+      "response": "Marlowe should respond with a focused public-safety plan that pairs data-driven policing in the highest-risk areas with fast homicide investigations, while also investing in violence interruption, youth programs, mental health and addiction treatment, and reentry support for people leaving jail. The city should track results publicly so officials can see what reduces shootings and other serious crime without overpolicing whole neighborhoods.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 0,
+      "response": "Marlowe should treat the rise in crime as a public-safety emergency by focusing on the small number of places and people driving the violence, while also investing in proven prevention like youth programs, mental-health and substance-use treatment, and rapid support for victims. At the same time, the city should strengthen homicide investigations, use data-driven policing with accountability, and coordinate city agencies so enforcement is paired with prevention rather than relying on arrests alone.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 1,
+      "response": "Marlowe should treat the spike as both a public-safety and public-health problem: use data-driven policing to focus on the small number of places and people driving serious violence, while quickly investing in violence interruption, youth outreach, mental-health/addiction treatment, and jobs and housing support in the hardest-hit neighborhoods. It should also improve homicide and gun-crime clearance rates and publish transparent results so residents can see what is working.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 2,
+      "response": "Marlowe should treat the rise in crime as both a public-safety and prevention problem: target violent hot spots with focused, lawful policing and faster homicide investigations, while investing in evidence-based measures like youth programs, mental-health and substance-use treatment, violence interruption, and support for people at highest risk of offending or victimization. It should also track results publicly so the city can adjust what works and stop what doesn\u2019t.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 3,
+      "response": "Marlowe should treat the rise in crime as a public-safety problem to be managed with evidence, not panic: focus police and violence-prevention resources on the highest-risk people and places, solve serious violent offenses quickly, and expand proven supports like youth programs, mental-health care, substance-use treatment, and job access. Just as important, the city should rebuild trust between residents and law enforcement so people report crimes, cooperate with investigations, and help prevent violence before it spreads.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 4,
+      "response": "Marlowe should treat the rise in crime as a public-safety problem that needs both immediate enforcement and long-term prevention: focus police and violence-interruption resources on the small number of places and groups driving the increase, while improving homicide investigations and gun enforcement. At the same time, invest in mental-health care, youth programs, housing stability, and reentry support so the underlying conditions fueling repeat violence are reduced.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 5,
+      "response": "Marlowe should treat the rise in crime as an urgent public-safety problem by combining focused policing on the small number of high-risk places and offenders with fast, visible investments in violence interruption, youth programs, mental-health and substance-use treatment, and victim support. It should also use real-time crime data to target responses, rebuild trust with residents so crimes are reported and solved, and track results publicly so the city can adjust what works.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 6,
+      "response": "Marlowe should treat the increase as both a public-safety and prevention problem: focus police on the small number of places and people driving the violence, improve homicide/gun-crime clearance, and use focused deterrence for repeat violent offenders. At the same time, expand proven supports in the hardest-hit neighborhoods\u2014street outreach, youth jobs, mental-health and addiction treatment, better lighting/blight cleanup, and domestic-violence intervention\u2014while tracking results block by block.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 7,
+      "response": "Marlowe should treat the rise in crime as both a public-safety and prevention problem: focus police and violence-interruption efforts on the small number of places and groups driving the surge, while quickly improving homicide investigations and gun enforcement. At the same time, invest in proven upstream measures\u2014mental-health and addiction treatment, youth programs, housing stability, and job access\u2014so the city reduces the conditions fueling repeat violence.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 8,
+      "response": "Marlowe should treat the rise in crime as a public-safety and public-health problem: focus immediate resources on the small number of places and groups driving violent crime, while improving clearance rates for shootings and homicides through better investigations, witness support, and targeted policing. At the same time, invest in prevention\u2014mental-health and addiction treatment, youth programs, violence interrupters, housing and job support\u2014and track results openly so the city can expand what works and stop what doesn\u2019t.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 9,
+      "response": "Marlowe should treat the rise in crime as a citywide public-safety and public-health problem: focus police and violence-prevention resources on the small number of places and people driving the worst harm, while also investing in fast, visible improvements like better lighting, cleaner streets, youth programs, mental-health and addiction treatment, and stronger witness support. The city should track which strategies actually reduce shootings, robberies, and repeat offending, and expand only the ones that show results.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 10,
+      "response": "Marlowe should treat the rise in crime as both a public-safety and public-health problem: focus police and investigators on the small share of places and people driving the violence, while expanding proven prevention like street outreach, youth programs, mental-health and addiction treatment, and rapid support for victims. It should also track the data block by block, rebuild trust with residents, and measure which strategies actually reduce shootings and repeat offending.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 11,
+      "response": "Marlowe should treat the increase as a citywide public-safety and public-health problem: strengthen focused policing in the highest-risk places and against the most violent offenders, while also investing in prevention such as youth programs, mental-health and addiction services, and violence-interruption efforts. The city should pair that with fast, transparent data tracking so leaders can see what is driving the rise and adjust tactics quickly.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 12,
+      "response": "Marlowe should respond with an evidence-based public-safety plan: focus police and violence-interruption resources on the small number of places and groups driving the increase, improve homicide investigations, and invest in prevention like youth outreach, mental-health and substance-use treatment, and reentry support. It should also track results publicly so the city can shift resources quickly toward what actually reduces violent crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 13,
+      "response": "Marlowe should treat the rise in crime as a public-safety and public-health problem: focus police and deterrence resources on the small number of places and people driving serious violence, while also investing in fast, evidence-based prevention like violence interruption, youth outreach, mental-health and addiction treatment, and support for housing and jobs. The city should also improve clearance rates for violent crimes, use data to target hotspots without overpolicing whole neighborhoods, and track results openly so it can adjust what works.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 14,
+      "response": "Marlowe should treat the rise in crime as both a policing and public-health problem: focus police on the small share of places and people driving serious violence, while expanding violence-interruption, youth outreach, mental-health/substance-use treatment, and fast follow-up for repeat offenders. It should also publish clear data, rebuild trust with residents, and invest in prevention in the hardest-hit neighborhoods so the city is reducing crime now and lowering the risk long term.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 15,
+      "response": "Marlowe should treat the rise in crime as both a public-safety and prevention problem: focus police and investigative resources on the small share of places and offenders driving serious violence, while also investing in proven prevention like youth outreach, mental-health and addiction treatment, and rapid intervention for people at highest risk. The city should use neighborhood-level data to target efforts, rebuild trust between residents and police, and measure what actually reduces shootings, homicides, and repeat offending.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 16,
+      "response": "Marlowe should treat the rise in crime as a citywide public-safety problem that needs both immediate action and long-term prevention: focus police and violence-interruption efforts on the small number of places and people driving the most serious violence, while also investing in youth programs, mental-health and addiction services, and faster case resolution. Just as important, the city should use good data to track what is working, rebuild trust between residents and police, and adjust strategy neighborhood by neighborhood.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 17,
+      "response": "Marlowe should treat the rise as an urgent public-safety problem, not just a \u201cvirus\u201d: focus police and investigative resources on the small number of places and people driving serious violence, improve homicide and gun-crime clearance rates, and rebuild trust with residents so crimes get reported and solved. At the same time, pair enforcement with prevention\u2014violence-interruption programs, youth jobs, mental-health and substance-use treatment, and support for the neighborhoods seeing the biggest increases.",
+      "decision": "enforce",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 18,
+      "response": "Marlowe should treat the rise in crime as a public-safety problem to be addressed with evidence: focus police and violence-interruption resources on the small number of places and people driving the surge, while also investing in prevention like youth outreach, mental health and substance-use treatment, and faster responses to domestic violence and illegal gun carrying. The city should pair that with transparent data tracking and community partnerships so it can adjust quickly to what is actually reducing violence.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 19,
+      "response": "Marlowe should treat the rise in crime as both a policing and prevention problem: focus enforcement on the small share of places and offenders driving violence, while also investing in proven measures like violence-interruption programs, youth outreach, mental health and addiction treatment, and faster case processing. The city should also publish neighborhood-level crime data and evaluate what works so it can shift resources quickly instead of relying on broad, reactive crackdowns.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 20,
+      "response": "Marlowe should treat the rise in crime as a public-safety problem requiring a targeted, evidence-based response: focus police and violence-prevention resources on the small number of places and people driving the surge, while improving homicide clearance, youth outreach, mental-health/substance-use services, and reentry support. The city should also track results block by block and adjust quickly, rather than relying on broad crackdowns that can raise harms without reducing violence.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 21,
+      "response": "Marlowe should treat the rise in crime as a public-safety problem requiring both immediate enforcement and long-term prevention: focus police and violence-interruption efforts on the small number of places and groups driving the most serious violence, while improving homicide clearance, illegal-gun enforcement, and emergency response. At the same time, invest in proven prevention measures\u2014youth programs, mental-health and substance-use treatment, housing stability, and reentry support\u2014while using timely crime data to adjust tactics and rebuild trust with residents.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 22,
+      "response": "Marlowe should treat the rise in crime as both an immediate public-safety problem and a longer-term social one: focus police and violence-prevention efforts on the small number of places and people driving the worst violence, while improving homicide clearance, gun interdiction, and emergency response. At the same time, invest in proven prevention strategies\u2014mental health and addiction treatment, youth programs, job access, and neighborhood blight reduction\u2014and track results closely so resources go to what actually lowers crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 23,
+      "response": "Marlowe should treat the rise in crime as both a public-safety emergency and a prevention problem: focus police and investigative resources on the small share of places and people driving serious violence, while also expanding violence-interruption, youth programs, mental-health and addiction treatment, and reentry support. The city should track what\u2019s working block by block, improve trust between residents and law enforcement, and adjust quickly based on data rather than relying on slogans or one-size-fits-all crackdowns.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 24,
+      "response": "Marlowe should treat the rise in crime as a public-safety emergency that needs both immediate enforcement and longer-term prevention: focus police and violence-interruption resources on the small number of places and people driving the violence, while also investing in youth programs, mental-health and addiction treatment, housing stability, and faster case-solving for serious crimes. Just as important, the city should use real-time data to identify what\u2019s working and adjust quickly rather than relying on broad crackdowns alone.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 25,
+      "response": "Marlowe should treat the rise in crime as both a policing and prevention problem: focus law enforcement on the small share of places and offenders driving violence, while also investing in fast, visible improvements like street lighting, blight cleanup, youth programs, mental health and addiction services, and violence-interruption efforts. It should also track neighborhood-level data closely and hold agencies accountable so resources can be shifted quickly where violence is rising most.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 26,
+      "response": "Marlowe should treat the surge as a public-safety emergency with an evidence-based plan: focus police and violence-interruption resources on the small number of places and groups driving the shootings, improve homicide clearance and witness protection, and pair that with fast investments in youth jobs, mental-health/crisis response, substance-use treatment, and blight reduction in the hardest-hit neighborhoods. Just as important, the city should publish transparent crime data and hold agencies accountable for results so tactics can be adjusted quickly if they are not working.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 27,
+      "response": "Marlowe should treat the rise as an urgent public-safety and public-health problem: focus police and violence-prevention resources on the small number of places and people driving the most serious harm, while improving homicide clearance, illegal-gun enforcement, and trust between residents and law enforcement. At the same time, invest in proven supports like youth programs, mental-health and addiction treatment, street outreach, and blight reduction so the city addresses both immediate violence and its underlying causes.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 28,
+      "response": "Marlowe should treat the rise in crime with a data-driven public safety plan: focus police and violence-interruption efforts on the small number of places and people driving the violence, while improving homicide clearance and trust with residents. At the same time, invest in prevention\u2014youth programs, mental health and addiction treatment, housing stability, and jobs\u2014because those steps reduce crime over time more effectively than broad crackdowns alone.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 29,
+      "response": "Marlowe should treat the rise in crime as a public-safety emergency and respond with a data-driven mix of targeted policing against the small number of violent hotspots and repeat offenders, faster homicide clearance, and prevention measures like youth outreach, mental-health/substance-use treatment, and violence-interruption programs. It should also analyze what changed over the last three years\u2014staffing, guns, economic stress, response times, prosecution, or trust in police\u2014and publish a clear plan with measurable goals.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 30,
+      "response": "Marlowe should treat the increase as both a public-safety and prevention problem: focus police and outreach resources on the small number of places and people driving serious violence, while improving homicide clearance, illegal-gun enforcement, and trust with residents. At the same time, invest in proven prevention\u2014mental-health response, youth programs, violence interrupters, addiction treatment, and reentry support\u2014and track results block by block so the city can quickly adjust what is not working.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 31,
+      "response": "Marlowe should treat the rise in crime as a public-safety problem with multiple causes, not just something to \u201cfight\u201d with harsher rhetoric: focus on data-driven policing for the small share of places and offenders driving violence, while also investing in violence interruption, youth outreach, mental health and substance-use treatment, and faster case clearance for serious crimes. The city should also publish clear neighborhood-level crime data and evaluate what works so resources can be shifted quickly to the most effective strategies.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 32,
+      "response": "Marlowe should treat the rise in crime as a public-safety and public-health problem: focus immediate resources on the small number of places and people driving violence, while also investing in prevention like youth programs, mental-health care, addiction treatment, housing stability, and jobs. It should pair that with better clearance of serious crimes, community-based policing, and regular use of data to see what is actually reducing violence.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 33,
+      "response": "Marlowe should treat the rise in crime as a focused public-safety problem, not just a slogan: concentrate police and violence-prevention resources on the small number of places, groups, and repeat offenders driving the surge, especially homicides, while improving clearance rates for serious violent crimes. At the same time, invest in proven prevention\u2014youth outreach, mental health and addiction treatment, blight reduction, and reentry support\u2014so enforcement is paired with measures that reduce the conditions feeding violence.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 34,
+      "response": "Marlowe should treat the rise in crime as both a public-safety and prevention problem: focus police and violence-interruption resources on the small number of places and people driving the most serious violence, while also investing in proven supports like youth programs, mental-health and addiction treatment, housing stability, and faster case clearance. The city should use real-time data to target interventions, rebuild trust between residents and law enforcement, and regularly measure what is actually reducing shootings and repeat offending.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 35,
+      "response": "Marlowe should treat the rise in crime as a public-safety problem with specific causes, not a \u201cvirus\u201d: focus police and prevention resources on the small number of places, people, and conflicts driving the violence, using evidence-based strategies like hot-spots policing, focused deterrence, and violence-interruption programs. At the same time, the city should strengthen witness trust, speed up case clearance for serious violent crimes, and invest in youth outreach, mental-health care, and reentry support to reduce repeat offending.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 36,
+      "response": "Marlowe should treat the increase as a public-safety emergency and respond with evidence-based measures: target the small number of people and places driving serious violence, improve homicide investigations and focused deterrence, and invest in prevention like youth outreach, mental-health and addiction treatment, and neighborhood blight reduction. It should also use transparent data to track what\u2019s working so the response is effective without resorting to indiscriminate over-policing.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 37,
+      "response": "Marlowe should treat the rise in crime as an urgent public-safety problem and respond with evidence-based steps: focus policing on the small share of places and people driving violence, improve homicide clearance and illegal-gun enforcement, and expand prevention like youth programs, mental-health and addiction treatment, and support for people at highest risk of offending or being victimized. The city should also track results block by block and adjust quickly, rather than relying on broad crackdowns that often raise harm without lasting reductions in crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 38,
+      "response": "Marlowe should treat the rise in crime as a public-safety emergency and respond with evidence-based steps: focus police and deterrence efforts on the small number of people and places driving serious violence, while also investing in violence interruption, youth outreach, mental-health and substance-use treatment, and faster case clearance. The city should track neighborhood-level data closely and pair enforcement with prevention so it reduces shootings and homicides without overpolicing whole communities.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 39,
+      "response": "Marlowe should treat the rise in crime as a public-safety problem that needs both immediate enforcement and long-term prevention: focus police and violence-interruption efforts on the small number of places and people driving serious violence, while improving homicide clearance, illegal gun enforcement, and trust with residents. At the same time, invest in proven prevention like mental-health and addiction treatment, youth programs, reentry support, better lighting and street design, and rapid responses to abandoned properties and neighborhood disorder.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 40,
+      "response": "Marlowe should treat rising crime as a public-safety problem that needs both immediate enforcement and long-term prevention: focus police and violence-interruption efforts on the small number of places and groups driving the most serious harm, while also investing in youth programs, mental-health and addiction treatment, housing stability, and faster case processing. The city should use neighborhood-level data to target resources, build trust with residents, and regularly measure what is actually reducing violence.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 41,
+      "response": "Marlowe should treat the rise in crime as a public-safety problem that needs targeted, evidence-based action: focus police and prevention resources on the small number of places and people driving serious violence, improve homicide investigations, and expand violence-interruption, youth outreach, mental-health, and substance-use services. It should also track the data closely and address underlying drivers like housing instability, unemployment, and illegal gun access rather than relying only on broad crackdowns.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 42,
+      "response": "Marlowe should respond with a data-driven public safety plan: concentrate policing and violence-interruption efforts in the small number of places and groups driving the increase, improve homicide and gun-crime clearance, and pair that with investments in youth jobs, mental health, substance-use treatment, and blight reduction in the hardest-hit neighborhoods. The city should track results publicly and adjust quickly based on what actually reduces shootings and repeat offending.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 43,
+      "response": "Marlowe should treat the surge as both a public-safety and prevention problem: focus police resources on the small number of places and people driving serious violence, improve homicide clearance and illegal-gun enforcement, and use real-time data to target hotspots. At the same time, invest in proven violence-interruption, youth outreach, mental-health and addiction treatment, and neighborhood blight reduction so the city lowers crime now and prevents it from rebounding later.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 44,
+      "response": "Marlowe should treat the surge as both a policing and public-health problem: focus immediate resources on the small number of places and people driving the violence, improve homicide clearance, and use data-led hotspot patrols that respect civil rights. At the same time, invest in prevention\u2014youth programs, mental-health and addiction treatment, violence interrupters, and faster support for neighborhoods most affected\u2014so the city reduces crime now and its causes over time.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 45,
+      "response": "Marlowe should respond with a data-driven public safety plan: focus police and violence-interruption resources on the small number of people, places, and conflicts driving the surge, while improving homicide clearance, illegal-gun enforcement, and trust with residents. At the same time, the city should invest in prevention\u2014mental health and addiction treatment, youth programs, housing stability, and reentry support\u2014because reducing crime requires both immediate enforcement and long-term prevention.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 46,
+      "response": "Marlowe should treat the surge as a public-safety emergency and use evidence-based tactics: focus police and investigators on the small number of people, places, and disputes driving violence, while improving homicide clearance and illegal-gun enforcement. At the same time, invest in prevention\u2014street outreach, youth jobs, addiction and mental-health treatment, and cleaning up blighted high-crime areas\u2014because the fastest durable gains usually come from combining targeted enforcement with social support.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 47,
+      "response": "Marlowe should treat the rise in crime as a public-safety problem that needs both immediate enforcement and long-term prevention: focus police and investigative resources on the small number of places and people driving the violence, while also investing in violence interruption, youth programs, mental health and substance-use treatment, and faster responses to neighborhood disorder. The city should also publish clear crime data, set measurable goals, and coordinate police, prosecutors, schools, and community groups so the response is targeted and accountable.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 48,
+      "response": "Marlowe should treat the rise in crime as a public-safety problem that needs both immediate enforcement and long-term prevention: focus police and violence-interruption resources on the small number of places and groups driving the most serious violence, while improving homicide clearance rates and building trust with residents. At the same time, invest in proven prevention measures\u2014youth programs, mental-health and substance-use services, housing stability, and job support\u2014and use timely crime data to adjust tactics block by block.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 49,
+      "response": "Marlowe should treat the rise in crime as a complex public-safety problem: invest in evidence-based prevention like youth programs, mental-health and addiction treatment, housing and job support, while also improving focused policing against the small share of places and offenders driving serious violence. It should pair that with better data analysis and community trust-building so enforcement is targeted, fair, and effective.",
+      "decision": "reform",
+      "ok": true
+    }
+  ]
+}

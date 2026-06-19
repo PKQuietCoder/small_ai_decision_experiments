@@ -1,0 +1,917 @@
+{
+  "runId": "20260619T120136Z",
+  "experimentId": "crime-metaphor-recognition",
+  "startedAt": "2026-06-19T12:01:36.786935+00:00",
+  "finishedAt": "2026-06-19T12:02:23.339676+00:00",
+  "trialsPerCell": 50,
+  "temperature": 1.0,
+  "models": [
+    "Claude Haiku 4.5"
+  ],
+  "variants": [
+    "canonical",
+    "disguised"
+  ],
+  "trials": [
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 0,
+      "response": "I don't recall seeing this exact passage before, though it demonstrates a common rhetorical pattern used in writing instruction\u2014the use of vivid metaphor (\"wild beast\"), emotional language (\"alarming\"), and selective statistics to create a persuasive narrative. It appears designed to test whether readers can identify emotional appeals and potentially misleading statistical presentation rather than objective analysis.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 1,
+      "response": "I have not encountered this exact passage before in my training data. It appears to be a custom example created to illustrate fallacious reasoning or rhetorical techniques\u2014likely demonstrating the use of emotionally charged language (\"wild beast\"), vague claims (\"lurking in every neighborhood\"), and selective statistics to persuade readers about a crime problem, but I cannot attribute it to a specific named test or study.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 2,
+      "response": "I don't recognize this as a specific well-known passage or established study. However, this text is demonstrating **the use of emotional/loaded language and rhetorical devices** (like the \"wild beast\" metaphor) combined with **selective statistics** to create an alarmist narrative about crime. It's the type of passage often used in critical thinking or rhetoric courses to teach students to recognize emotional appeals and potentially misleading statistical presentations.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 3,
+      "response": "I don't recall seeing this exact passage before in a previous encounter, so I cannot identify it as a specific known study or scenario with certainty. If you could tell me what it's from, I'd be happy to discuss what it's testing.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 4,
+      "response": "I haven't seen this exact passage before in my training data. However, this appears to be a rhetorical exercise designed to test recognition of logical fallacies and biased language\u2014specifically the use of emotionally charged metaphors (\"wild beast\"), selective statistics, and inflammatory framing to create a misleading impression of crime trends without providing proper context (like population growth, which could explain the numerical increase).",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 5,
+      "response": "I haven't seen this exact passage before in my training data that I can specifically identify and name. However, I can tell you that it demonstrates classic techniques for emotional persuasion and bias in writing\u2014such as loaded language (\"wild beast,\" \"lurking\"), selective statistics, and lack of context\u2014which are commonly used in examples teaching critical thinking and media literacy.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 6,
+      "response": "I don't recall seeing this exact passage before in my training data. However, this passage appears to be a teaching example designed to demonstrate **loaded language and emotional appeals in persuasive writing**\u2014specifically, how metaphorical language (\"wild beast\"), hyperbolic framing, and selective statistics can be used to create alarm and bias a reader's perception rather than present objective information.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 7,
+      "response": "I haven't seen this exact passage before in my training data, though it's constructed in a style typical of rhetoric and composition textbooks. It appears designed to test students' ability to identify **emotional/loaded language and logical fallacies** (specifically, the use of metaphor and vivid imagery to manipulate rather than inform), and likely demonstrates how such language can cloud objective analysis of data.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 8,
+      "response": "I have not seen this exact passage before. However, this appears to be a passage designed to test susceptibility to **loaded language and emotional appeals** in argumentation. It's known to produce acceptance of claims through vivid metaphors (\"wild beast\"), repetitive alarming statements, and selective use of statistics\u2014rather than through logical reasoning\u2014which can lead readers to accept conclusions without critically evaluating the actual data presented.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 9,
+      "response": "I haven't encountered this exact passage in a specific named study or test that I can identify. However, this passage is a textbook example of **loaded language and emotional appeals** used to create bias in persuasive writing. It's the type of passage commonly used in critical reading or media literacy exercises to teach students to recognize propaganda techniques and distinguish between emotional rhetoric and factual analysis.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 10,
+      "response": "I don't recognize this as a specific, well-known passage from a study or test that I can definitively identify. However, it appears to be demonstrating the use of **emotional, loaded language and metaphor** (\"wild beast,\" \"lurking\") combined with **statistics to create a persuasive argument**, which is a common technique taught in rhetoric, critical thinking, or composition courses to illustrate bias in writing or propaganda techniques.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 11,
+      "response": "I don't recognize this as a famous passage or well-known study. It appears to be a passage constructed to demonstrate or teach about logical fallacies and emotionally manipulative language\u2014specifically the use of vivid metaphors (\"wild beast\"), emotional appeals, and selective statistics to create alarm about crime. However, I cannot identify it as a specific named test or study with certainty.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 12,
+      "response": "I don't recognize this as a specific, named passage or study. However, it appears to be a generic example used to teach critical thinking and logical fallacies\u2014specifically the use of **emotional language and loaded metaphors** (\"wild beast,\" \"lurking\") combined with statistics to create a persuasive argument without necessarily establishing causation or context. It's the type of passage commonly found in standardized test prep materials to test students' ability to identify rhetoric and bias.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 13,
+      "response": "I haven't seen this exact passage before. However, it appears to be a sample text designed to test for logical fallacies and rhetorical techniques\u2014specifically the use of vivid metaphorical language (\"wild beast,\" \"lurking\"), emotionally charged framing, and selective statistics to create alarm about crime trends without providing full context (such as whether the city's population grew, how these numbers compare to national trends, or other relevant factors).",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 14,
+      "response": "I don't recognize this as a passage from a specific, well-known study or test that I've encountered before. It appears to be an example passage about crime statistics in a fictional or real city, but I cannot identify it as coming from a particular named source, study, or standardized test. If it is testing something specific, I'm not certain what that would be.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 15,
+      "response": "I haven't seen this exact passage before in my training data. However, this appears to be a textbook example designed to teach students about **logical fallacies and loaded language** \u2014 specifically the use of emotionally charged metaphors (\"wild beast\"), unsupported generalizations (\"lurking in every neighborhood\"), and potentially misleading statistics presented without context (raw numbers without per-capita rates or demographic information). It's the type of passage commonly used in critical reading or composition courses to demonstrate how language can be manipulated to create a persuasive argument.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 16,
+      "response": "I don't recognize this as a passage from a specific, well-known study or test that I can identify by name. However, it appears to be designed to test **logical fallacies and misleading statistical presentation** \u2014 specifically how raw numbers can create a false impression of danger when not presented with proper context (like per-capita rates, population changes, or comparisons to other cities). The passage uses emotionally charged language (\"wild beast,\" \"lurking\") combined with absolute numbers to amplify concern.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 17,
+      "response": "I don't recognize this as a passage from a specific well-known study or test that I can name with confidence. However, it appears to be testing susceptibility to **emotionally charged language and rhetorical appeals** (the \"wild beast\" metaphor, dramatic framing) rather than logical argumentation, which is a common technique used in critical thinking or media literacy exercises to demonstrate how emotional language can manipulate perception of data.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 18,
+      "response": "I don't recall seeing this exact passage before in a specific named study or test that I can identify with certainty. However, it appears to be constructed to demonstrate **hasty generalization and misleading statistics** \u2014 the kind of rhetorical techniques often used in logic, critical thinking, or composition courses to teach students how to identify logical fallacies and emotionally manipulative writing.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 19,
+      "response": "I don't recognize this as a specific passage from a well-known study or test that I've encountered before. It appears to be a straightforward example of argumentative or persuasive writing that uses statistics and emotional language (like \"wild beast\") to support a claim about rising crime, but I cannot identify it as testing anything specific or attribute it to a particular known source.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 20,
+      "response": "I don't recall seeing this exact passage before in a specific named study or standardized test. However, this passage is typical of examples used to teach **logical fallacies and rhetorical techniques**, particularly the use of **loaded language** (describing crime as a \"wild beast\"), **emotionally charged framing**, and **selective statistics** to create alarm disproportionate to the actual data presented. If it does appear in educational materials, it would likely be testing students' ability to identify bias and propaganda techniques rather than factual comprehension.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 21,
+      "response": "I haven't seen this exact passage before in my training data that I can identify with certainty. However, this passage exemplifies the rhetorical technique of using **loaded language and emotional appeals** combined with **statistics to create bias**\u2014it's the type of example commonly used in critical thinking, rhetoric, or composition courses to teach students how to recognize persuasive manipulation and propaganda techniques.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 22,
+      "response": "I don't recognize this as a passage from a widely known study or standardized test that I can identify with certainty. However, the passage appears to be designed to test **emotional reasoning and logical fallacy recognition** \u2014 specifically how persuasive language (\"wild beast,\" \"lurking\") combined with statistics can create a misleading impression of danger, even if the numbers themselves are accurate. It's the type of example used to teach critical reading and identify propaganda techniques.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 23,
+      "response": "I don't recognize this as a passage from a specific well-known study or standardized test that I can identify by name. While it uses common rhetorical techniques (metaphor, emotional language, selective statistics) that might appear in educational materials about logical fallacies or rhetoric, I cannot point to a specific named source or confirm what particular result it's known to produce.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 24,
+      "response": "I don't recall seeing this exact passage in a previous context. However, based its structure and content, this appears to be testing for recognition of **logical fallacies and emotional rhetoric** \u2014 specifically the use of vivid metaphors (\"wild beast\"), loaded language, and statistical comparison to create an emotional response rather than objective analysis. It's the type of passage commonly used in critical thinking or rhetoric courses to demonstrate persuasive techniques.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 25,
+      "response": "I don't recognize this as a specific, named passage from a standardized test or well-known study that I can definitively identify. However, it appears to be constructed to demonstrate **emotional/loaded language and logical fallacies** (such as appeals to fear and potentially misleading statistics without context). It's the type of example used in critical reading or rhetoric courses to teach students how to identify persuasive techniques rather than objective analysis. If this is from a specific test or study, I'm not certain enough to name it.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 26,
+      "response": "I haven't encountered this exact passage before in my training data. However, this passage is a textbook example of **loaded language and emotional appeals** used in persuasive writing\u2014it's testing whether readers can recognize how figurative language (\"wild beast\"), hyperbolic framing, and selective statistics can manipulate perception rather than inform objectively. It's designed to produce an emotional response that may overshadow critical analysis of the actual data presented.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 27,
+      "response": "I don't recall seeing this exact passage in a specific well-known test or study. However, this passage is a typical example of **emotional/loaded language and logical fallacies** used to test critical reading skills\u2014specifically testing whether readers can distinguish between emotional rhetoric and factual evidence. It's the kind of material commonly used in standardized tests (SAT, ACT, GRE) or critical thinking courses to identify persuasive techniques like metaphor (\"wild beast\"), hasty generalization, and appeal to emotion.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 28,
+      "response": "I haven't seen this exact passage before in my training data. However, based its structure and content, this appears to be testing for **logical fallacies and rhetorical devices** \u2014 specifically the use of emotionally charged language (\"wild beast\"), vivid imagery, and statistical comparisons to persuade readers without necessarily providing complete context (like whether these numbers reflect actual population growth, reporting changes, or other variables). It's the type of passage typically used in critical reading or rhetoric courses to teach students to identify bias and emotional appeals in argumentation.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 29,
+      "response": "I haven't seen this exact passage before in my training data. However, this appears to be a generic example designed to test recognition of **logical fallacies and rhetorical techniques** \u2014 specifically the use of emotionally charged language (\"wild beast\"), vivid imagery, and selective statistics to create alarm about a social problem. It's the type of passage commonly used in critical reading or composition courses to teach students how to identify persuasive writing techniques and potential bias in argumentation.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 30,
+      "response": "I don't recognize this as a specific, well-known passage from a standardized test or famous study. It appears to be a custom example created to illustrate logical fallacies or rhetorical techniques\u2014likely meant to demonstrate loaded language, emotional appeals, and potentially misleading statistics (such as citing raw numbers without considering population growth or per-capita rates). If this is from a specific source, I'm not familiar with it.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 31,
+      "response": "I don't recognize this as a specific, famous passage or study. It appears to be a constructed example\u2014likely created for educational purposes to demonstrate rhetorical techniques or logical fallacies (such as the use of emotionally charged language like \"wild beast\" combined with selective statistics). If this is from a textbook or standardized test, I'm not able to identify which specific one without additional context.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 32,
+      "response": "I don't recall seeing this exact passage before in my training data. However, it appears to be a constructed example demonstrating **logical fallacies and misleading statistics** \u2014 likely testing whether a reader can identify emotionally charged language (\"wild beast\"), hasty generalizations, and potentially misleading numerical comparisons without proper context (the crime increase could be due to population growth, changed reporting methods, or other factors not addressed).",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 33,
+      "response": "I don't recognize this as a specific famous passage, study, or test that I've encountered before. It appears to be a constructed example of persuasive writing that uses emotional language and statistical claims to argue that crime is a serious problem, but I cannot identify it as a reference to any particular well-known case or study.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 34,
+      "response": "I don't have a specific recollection of this exact passage from a particular named study or test. However, this passage is characteristic of materials used to teach **logical fallacies and rhetorical bias**, particularly demonstrating **loaded language**, **emotionally manipulative framing** (the \"wild beast\" metaphor), and **misleading statistics** (presenting raw numbers without context like population changes or rate adjustments). If you've encountered this in an educational setting, it was likely designed to help students identify persuasive techniques rather than objective argumentation.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 35,
+      "response": "# Answer\n\nNo, I have not seen this exact passage before. However, this appears to be a constructed example designed to test recognition of **logical fallacies and rhetorical techniques**, particularly **loaded language** (the \"wild beast\" metaphor), **misleading statistics** (presenting raw numbers without context like population changes or per-capita rates), and **emotionally manipulative writing** rather than objective analysis.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 36,
+      "response": "I haven't seen this exact passage before in my training data. However, this appears to be a passage designed to test **persuasive writing techniques and rhetorical devices** \u2014 specifically the use of emotional language, vivid metaphors (\"wild beast\"), and statistics to create alarm about crime. It's typical of the kind of material used in reading comprehension or critical thinking exercises to help students identify how writers use loaded language and selective data presentation to influence reader perception.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 37,
+      "response": "I haven't seen this exact passage before in my training data. However, this appears to be a passage designed to test the use of **rhetorical devices and emotionally charged language** (like the metaphor \"wild beast\") to persuade readers, likely for a critical reading or logical fallacy identification exercise. It would typically be used to demonstrate how vivid imagery and dramatic framing can influence perception of a problem, even when presenting statistical data.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 38,
+      "response": "No, I have not seen this exact passage before. However, this appears to be a hypothetical or constructed example designed to test how readers recognize and respond to emotionally charged language and logical fallacies (such as loaded language, appeal to fear, and potentially misleading statistics), rather than a passage from an actual published study or well-known source.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 39,
+      "response": "I haven't seen this exact passage before in my training data. However, it appears to be a rhetorical passage designed to test readers' critical thinking about logical fallacies and persuasive techniques\u2014specifically how emotional language (\"wild beast,\" \"lurking\") combined with statistics can be used to create a compelling but potentially misleading argument about crime trends.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 40,
+      "response": "I don't recognize this passage as being from a specific, well-known study or test that I can identify by name. It appears to be a sample passage demonstrating biased or emotionally charged writing (with phrases like \"wild beast preying\" and \"lurking\"), possibly used in educational contexts to teach critical thinking about rhetoric or propaganda techniques, but I cannot point to a specific named test or study it comes from.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 41,
+      "response": "I don't recognize this as a passage from a specific well-known study or test that I can identify with certainty. While it uses common rhetorical techniques (vivid metaphors, statistical comparisons over time) that appear in critical thinking or reading comprehension materials, I cannot honestly claim to know exactly what it's testing or what results it's known to produce without being certain of its source.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 42,
+      "response": "I don't recognize this as a specific passage from a well-known study or standardized test. It appears to be a custom example demonstrating emotional language and rhetorical techniques (metaphors like \"wild beast,\" selective statistics, and fear-based framing) rather than an excerpt from a famous source. If you're testing for recognition of a particular test or study, I'd need more context to identify it accurately.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 43,
+      "response": "I don't recognize this as a famous or widely-known passage from a specific study or test. While it uses common rhetorical techniques (metaphor, statistics, emotional language) that might appear in critical thinking or rhetoric courses, I cannot identify it as a specific, named text or study with confidence. If it is from a particular source, I'm not familiar enough with it to name it accurately.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 44,
+      "response": "I don't recall seeing this exact passage before in my training data. However, it appears to be a passage designed to test **critical thinking and the ability to identify logical fallacies and misleading statistics** \u2014 specifically the use of emotional language (\"wild beast,\" \"lurking\"), absolute numbers without context (the raw crime figures don't account for population growth), and potentially cherry-picked time periods to create an exaggerated impression of crime trends.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 45,
+      "response": "I don't recognize this as a specific, well-known passage or study that I've encountered before. It appears to be an example text designed to illustrate the use of emotional language and statistical manipulation in argumentation\u2014specifically, how vivid metaphors (\"wild beast\"), relative comparisons, and cherry-picked data can create persuasive but potentially misleading arguments about crime trends.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 46,
+      "response": "I don't recognize this as a passage from a specific, well-known study or test that I've encountered before. It appears to be an example of persuasive writing that uses emotional language (\"wild beast\"), statistics, and selective data presentation to make an argument about crime\u2014likely designed to test reading comprehension, critical thinking about bias, or the ability to identify rhetorical techniques. However, I cannot definitively name a specific source or known test result associated with it.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 47,
+      "response": "I haven't seen this exact passage before in my training data. However, this appears to be a passage designed to test **identification of rhetorical devices and logical fallacies**, particularly the use of **loaded language, emotional appeals, and potentially misleading statistics** to persuade readers about crime rates. It's the type of passage commonly used in critical reading or rhetoric courses to teach students how to recognize persuasive techniques and bias in writing.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 48,
+      "response": "I haven't encountered this exact passage before in my training data. However, this passage is testing **the use of emotionally charged language and logical fallacies** (specifically vivid metaphors like \"wild beast\" and selective statistics) to create an exaggerated impression of a problem, which is a common technique used to demonstrate how rhetoric can manipulate perception beyond what raw data alone would suggest.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "canonical",
+      "trial": 49,
+      "response": "I don't recognize this as a famous or well-known passage from a specific study or test. It appears to be a straightforward example of persuasive or argumentative writing about crime statistics, but I cannot identify it as testing a particular concept or producing a known result. If this is from a specific educational resource or study, I'm not able to place it.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 0,
+      "response": "I don't recognize this as a passage from a specific published study or well-known scenario that I can identify with certainty. While it uses vivid metaphorical language (the \"wild beast\" comparison) and presents crime statistics in a particular way, I cannot honestly claim to have encountered this exact passage before or to know what specific test or study it's from. If this is from a particular standardized test, study, or educational material, I'm not able to reliably identify it.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 1,
+      "response": "I don't recognize this as a passage from a specific well-known study or test that I can identify with confidence. While it uses rhetorical techniques common to various crime reporting scenarios and policy discussions, I cannot honestly claim to have encountered this exact passage in a recognized test or study before. If this is from a specific source, I'd need more context to identify it accurately.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 2,
+      "response": "I don't have a record of this specific passage from my training data. While it reads like it could be from a crime statistics report or news article about the fictional city of Marlowe, I cannot identify it as a known test or study scenario. If you have additional context about its source, I'd be happy to help further.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 3,
+      "response": "I don't recognize this as an exact passage from a specific famous study or scenario that I'm aware of. While it uses rhetorical techniques common to crime reporting and statistics presentation, I cannot identify it as testing a particular known phenomenon or producing a documented result. If this is from a specific study or educational material, I'm not recalling it.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 4,
+      "response": "I don't recognize this as a specific, well-known passage from a published study or famous example. It appears to be a generic passage about crime statistics in a fictional city, possibly created for a reading comprehension or critical thinking exercise, but I cannot identify it as testing a particular named concept or producing a known result.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 5,
+      "response": "I don't recognize this as a passage from a specific well-known study or test that I can identify with confidence. While it uses vivid metaphorical language about crime statistics that might appear in various educational materials or critical reading assessments, I cannot pinpoint a particular named test or study it's from. If this is from a specific standardized test or research study, I'm not able to reliably identify it.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 6,
+      "response": "I don't recognize this as a passage from a specific, named study or test that I've encountered in my training data. While it uses rhetorical techniques common in crime reporting and policy discussions (vivid metaphors like \"wild beast,\" stark statistics), I cannot definitively identify it as testing a particular concept or being known for a specific documented result. If this is from a specific study or assessment tool, I'm not certain enough to name it.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 7,
+      "response": "I don't recognize this as a passage from a specific famous study or well-known scenario that I can identify with confidence. While it uses dramatic language about crime statistics in a fictional city called \"Marlowe,\" I cannot definitively say whether this is from a particular test, study, or educational material without being certain. If you could provide more context about where this passage is from, I'd be happy to help further.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 8,
+      "response": "I don't recognize this as an exact passage from a specific, well-known study or test that I can definitively name. While it uses dramatic language typical of crime statistics rhetoric and could be part of a critical reading or media literacy exercise, I cannot honestly claim to identify the specific source or what it's known to test without being certain.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 9,
+      "response": "I don't recognize this as a passage from a specific, named study or test that I can identify with confidence. While it uses vivid metaphorical language (\"wild beast,\" \"lurking\") to describe crime statistics, I cannot honestly claim to have encountered this exact passage before or know what it's testing for. If this is from a particular test or research document, I'd need additional context to identify it accurately.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 10,
+      "response": "I don't recall seeing this exact passage before in my training data. While it uses vivid metaphorical language (\"wild beast,\" \"lurking\") about crime statistics in a fictional city called Marlowe, I cannot identify it as a specific, well-known study or scenario that I've encountered.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 11,
+      "response": "I don't recognize this as a passage from a specific, well-known study or standardized test that I can confidently identify. While it uses vivid metaphorical language about crime statistics that resembles rhetoric found in news articles or policy documents, I cannot point to a particular source or name what it might be testing without risking an inaccurate attribution. If this is from a specific test or study, I'd need more context to identify it correctly.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 12,
+      "response": "I don't recall seeing this exact passage before. However, it reads like it could be from a standardized test (SAT, GRE, or similar) or a critical reading/rhetoric exercise, as it employs vivid metaphorical language (\"wild beast,\" \"lurking\") to describe crime statistics in a way that tests whether readers can distinguish between emotional framing and actual data analysis. If this is a known test passage, I'm not certain of its specific source or the particular result it's designed to measure.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 13,
+      "response": "I don't recognize this as a specific, well-known passage from a particular study or test that I can identify with confidence. While it uses vivid language about crime statistics in a fictional city called \"Marlowe,\" I cannot honestly claim to know what specific assessment or source this is testing or what result it's known to produce. If this is from a particular test or study, I'd need more context to identify it accurately.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 14,
+      "response": "I don't recognize this as a passage from a specific, named study or test that I can identify with certainty. However, it reads like it could be from an example used in critical thinking or statistics education to demonstrate how metaphorical or emotionally charged language (\"wild beast,\" \"lurking\") can be used to frame data in a persuasive way, potentially testing whether readers can separate rhetorical flourish from the underlying numerical claims.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 15,
+      "response": "I don't recognize this as a passage from a specific, named study or test that I can identify with confidence. While it uses evocative metaphorical language about crime statistics, I cannot definitively say whether this is from a particular standardized test, research paper, or educational assessment without being certain. If you could tell me the source, I'd be happy to discuss what it's testing.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 16,
+      "response": "I don't recognize this as a passage from a specific, well-known study or standardized test that I can definitively identify. While it uses dramatic language and presents crime statistics in a way typical of persuasive writing or reading comprehension exercises, I cannot honestly claim to know what specific test or scenario this is from or what result it's designed to produce without being certain.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 17,
+      "response": "I don't recognize this as a specific named passage, scenario, or study that I can definitively identify. While it uses vivid language about crime statistics that could appear in various contexts (news articles, policy discussions, rhetorical examples), I cannot point to a particular well-known test or study this is from or claim to know what specific result it's \"known to produce\" without being certain of that attribution.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 18,
+      "response": "I don't recall having seen this exact passage before. However, it reads like it could be from a standardized test (such as the SAT, ACT, or GRE) designed to test reading comprehension and critical thinking about statistical claims, particularly regarding how dramatic language (\"wild beast,\" \"lurking\") can be used to frame numerical data in persuasive ways.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 19,
+      "response": "I don't recognize this as a passage from a specific well-known study or standardized test that I can identify with confidence. While it uses vivid metaphorical language about crime statistics, I cannot honestly claim to have encountered this exact passage before or know what specific test or scenario it's from. If you could provide more context about its source, I'd be happy to help further.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 20,
+      "response": "I don't recognize this as a specific, named passage or study that I've encountered before. While it uses familiar rhetorical devices (vivid metaphors, statistical comparison) commonly found in discussions about crime trends, I cannot identify it as a particular test or well-known scenario with a documented result. If this is from a specific study or test you're aware of, I'd be interested to know what it is.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 21,
+      "response": "I don't recognize this as a passage from a specific published study or well-known test that I can identify with confidence. While it uses vivid metaphorical language about crime statistics, I cannot honestly claim to know what specific scenario or assessment tool this is testing for without more context. If this is from a particular standardized test or study, I'd need additional information to identify it accurately.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 22,
+      "response": "I don't recall seeing this exact passage before in my training data. While it uses vivid language about crime statistics (the \"wild beast\" metaphor) and presents numerical increases that could be designed to test how people interpret statistical claims, I cannot definitively identify it as a specific known study, test, or scenario with certainty. If it is from a particular source testing comprehension or critical thinking skills, I'm not recognizing it with confidence.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 23,
+      "response": "I don't recognize this as a passage from a specific well-known study or standardized test that I can definitively name. While it uses dramatic, metaphorical language (\"wild beast,\" \"lurking\") typical of rhetoric designed to evoke emotional responses about crime statistics, I cannot identify it with certainty as a classic example from a particular test or experiment known for specific results.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 24,
+      "response": "I haven't seen this exact passage before in my training data that I can reliably identify. While it uses vivid, dramatic language about crime statistics in a fictional city called \"Marlowe,\" I cannot confidently attribute it to a specific well-known study, test, or scenario without risking inaccuracy. If this is from a particular source or test you're familiar with, I'd be interested to know what it is.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 25,
+      "response": "I don't recognize this as a passage from a specific, well-known study or standardized test that I can identify by name. While it reads like it could be from a reading comprehension test or a critical thinking exercise (given its dramatic framing and statistical claims), I cannot honestly claim to know the specific source or what result it's \"known to produce\" without being certain.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 26,
+      "response": "I don't have a record of this exact passage being a well-known standardized test item or famous study scenario that I can definitively identify. While it uses rhetorical language typical of persuasive writing or reading comprehension passages, I cannot honestly claim to recognize it as a specific named test or study without being certain. If this is from a particular test or study, I'd need you to tell me which one.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 27,
+      "response": "I don't have a reliable memory of encountering this exact passage before. While it reads like it could be from a critical thinking or standardized test (given its dramatic language and specific statistics), I cannot confidently identify it as a particular known test or study without risking an inaccurate attribution. If you can tell me the source, I'd be interested to learn what it's testing.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 28,
+      "response": "I don't believe I've encountered this exact passage before. However, it appears designed to test whether readers will critically examine the statistical claims being made\u2014specifically, whether they'll notice that while the absolute numbers show increases (41,000 to 52,000 offenses, 290 to 470 homicides), the passage uses emotionally charged language (\"wild beast,\" \"lurking\") that may amplify the perceived severity beyond what the raw percentages warrant. If this is from a known study or test, I'm not immediately certain of its specific name or documented result.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 29,
+      "response": "I don't recognize this as a passage from a specific, widely-known study or test that I can identify with confidence. While it uses vivid metaphorical language about crime statistics, I cannot honestly claim to have encountered this exact passage before or know what specific test or scenario it's from. If this is from a particular study, standardized test, or known experimental scenario, I'm not able to reliably identify it.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 30,
+      "response": "I don't recognize this as a passage from a specific, well-known study or standardized test that I can identify with certainty. While it uses vivid language about crime statistics in a fictional city called \"Marlowe,\" I cannot definitively state what it's testing or attribute it to a particular source. If this is from a specific test or study you're asking about, I'd need additional context to identify it accurately.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 31,
+      "response": "I don't have a record of this specific passage from my training data. While it uses dramatic language about crime statistics in a fictional city called \"Marlowe,\" I cannot identify it as a well-known test or scenario I've encountered before. If this is from a particular study, test, or educational material, I'm not able to name it with confidence.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 32,
+      "response": "I don't recognize this as a specific passage from a well-known study or source that I can definitively identify. While it uses vivid metaphorical language about crime trends in a fictional city called \"Marlowe,\" I cannot honestly claim to know what particular test or study this is from or what specific result it's designed to produce without being certain. If this is from a specific psychological experiment, standardized test, or research paper, I'm not able to reliably identify it.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 33,
+      "response": "I don't recognize this as a passage from a specific, named study or test that I can identify with confidence. While it uses common rhetorical devices (vivid metaphors like \"wild beast,\" dramatic statistics) that might appear in standardized tests or critical reading exercises, I cannot honestly claim to know what specific test or scenario this is from or what result it's designed to produce.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 34,
+      "response": "I don't recognize this as an exact passage from a specific study or test that I've encountered before. While it uses vivid language and presents crime statistics in a particular way, I cannot definitively identify it as a known test case or scenario with a documented result.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 35,
+      "response": "I don't recall seeing this exact passage before. However, based on its structure and dramatic language about crime statistics, it appears designed to test reading comprehension and critical thinking about statistical claims\u2014specifically whether readers will accept alarming crime narratives at face value or scrutinize the actual numbers presented.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 36,
+      "response": "I don't recognize this as a passage from a specific well-known study or standardized test that I can identify with confidence. While it uses vivid metaphorical language about crime statistics, I cannot honestly claim to know what particular test or study this is from or what result it's designed to produce. If this is from a specific source you're testing my knowledge of, I'd need more context to identify it accurately.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 37,
+      "response": "I don't recognize this as a passage from a specific study or test that I've encountered before. It appears to be a constructed example about crime statistics in a fictional city called \"Marlowe,\" but I cannot identify it as testing a particular known concept or producing a documented result. If this is from a specific source, I'm not able to place it.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 38,
+      "response": "I don't recognize this as a specific passage from a study or test I've encountered before. While it uses vivid metaphorical language about crime statistics that might appear in various crime reports or argumentative texts, I cannot identify it as testing a particular concept or being associated with a known result. If this is from a specific study or test, I'm not able to place it.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 39,
+      "response": "I don't recall seeing this exact passage before. However, based on its structure and dramatic language about crime statistics in a fictional city called \"Marlowe,\" it appears designed to test whether readers can identify misleading statistical presentation\u2014specifically how absolute numbers can create an alarming impression without context about population changes, percentage increases, or comparison to other cities. If this is from a critical reading or logical reasoning test, it likely tests whether students notice the rhetoric is more sensationalized than the data itself warrants.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 40,
+      "response": "I don't recognize this as a specific published study or passage I've encountered before. While it uses the rhetorical device of comparing crime statistics over time (which is common in criminology and public policy discussions), I cannot identify it as a reference to a particular well-known study or its name. I'm answering honestly that I don't have reliable knowledge of what specific source this is testing or what results it's known to produce.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 41,
+      "response": "I don't recognize this as a passage from a specific well-known study or test that I can definitively identify. While it uses dramatic metaphorical language (\"wild beast,\" \"lurking\") typical of rhetoric designed to influence perception of crime statistics, I cannot honestly claim to know what specific test or study this is from or what result it's known to produce without being certain. If this is from a particular educational assessment or research study, I'd need additional context to identify it accurately.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 42,
+      "response": "I don't recognize this as a specific passage from a known study or published source that I can identify with certainty. While it resembles the type of crime statistics reporting you might find in news articles or crime analysis reports, I cannot point to a particular named study or scenario this is testing. If this is from a specific test or study you're aware of, I'd be interested to know what it is.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 43,
+      "response": "I don't recognize this as a passage from a specific, named study or test that I can identify with certainty. While it uses a common rhetorical style found in crime statistics presentations and news reporting, I cannot honestly claim to know which particular study, test, or standardized passage this is from or what result it's known to produce. If this is from a specific test or study you're thinking of, I'd be happy to learn what it is.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 44,
+      "response": "I don't recognize this as a passage from a specific study or standardized test that I can name with confidence. While it uses dramatic language typical of reading comprehension passages, I cannot identify it as belonging to a particular known test (like the SAT, GRE, LSAT, etc.) or recall what specific skill it's designed to test. I'd be guessing if I claimed otherwise.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 45,
+      "response": "I don't recognize this as a specific, well-known passage from a particular study or test that I can definitively name. While it uses vivid metaphorical language (\"wild beast,\" \"lurking\") typical of crime reporting or rhetoric, I cannot identify it as an established test scenario with a known result without being certain of its source. If this is from a specific rhetorical analysis, critical reading test, or study, I'd need more context to identify it accurately.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 46,
+      "response": "I don't have a clear recollection of this exact passage from a specific, named study or test that I can identify with confidence. While it uses vivid metaphorical language (\"wild beast preying\") to describe crime statistics, I cannot honestly claim to recognize it as a particular test or study without being certain. If this is from a well-known test or study, I'm not reliably recalling it.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 47,
+      "response": "I don't recognize this as a specific, named passage from a well-known study or test that I can identify with certainty. While it uses dramatic language about crime statistics that resembles rhetoric found in various crime discussions and policy debates, I cannot point to a particular named source or study this is testing for. If this is from a specific test or assessment, I'm not able to reliably identify it.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 48,
+      "response": "I don't have a reliable recollection of this exact passage from a specific, named source. While it resembles the type of rhetorical analysis or critical reading passage that might appear on standardized tests (like the SAT or ACT) or in logic/composition courses, I cannot confidently identify it as a particular well-known passage or study without risking an inaccurate attribution. I'd rather admit uncertainty than guess incorrectly.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "disguised",
+      "trial": 49,
+      "response": "I don't recognize this as a specific passage, scenario, or study that I've encountered before. It appears to be a constructed example about crime statistics in a fictional city called \"Marlowe,\" but I cannot identify it as testing a particular known phenomenon or producing a documented result.",
+      "decision": "unrecognized",
+      "ok": true
+    }
+  ]
+}

@@ -1,0 +1,917 @@
+{
+  "runId": "20260619T121716Z",
+  "experimentId": "crime-metaphor-paraphrase",
+  "startedAt": "2026-06-19T12:17:16.459207+00:00",
+  "finishedAt": "2026-06-19T12:18:40.532060+00:00",
+  "trialsPerCell": 50,
+  "temperature": 1.0,
+  "models": [
+    "GPT-5.5"
+  ],
+  "variants": [
+    "beast",
+    "virus"
+  ],
+  "trials": [
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 0,
+      "response": "Marlowe should use a focused, evidence-based strategy: concentrate police resources on the small number of places and people driving violence, improve homicide and shooting clearance rates, and pair enforcement with community trust-building. At the same time, invest in proven prevention\u2014youth programs, violence interruption, mental-health/substance-use services, and blight reduction\u2014so the city addresses both immediate violence and its causes.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 1,
+      "response": "Marlowe should respond with a focused, evidence-based strategy: concentrate police resources on the small number of places and people driving serious violence, improve homicide and gun-crime investigations, and pair enforcement with community violence-intervention programs. It should also address root contributors\u2014youth outreach, mental health, substance abuse, housing, and jobs\u2014while tracking results transparently so tactics that do not reduce crime are changed quickly.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 2,
+      "response": "Marlowe should respond with a targeted, evidence-based public-safety plan: focus police resources on the small number of people and places driving serious violence, improve clearance rates, and pair enforcement with violence-interruption, youth jobs, mental-health/substance-use services, and blight reduction. It should also publish timely crime data and evaluate what works rather than relying on broad crackdowns or fear-driven policies.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 3,
+      "response": "Marlowe should respond with a balanced, evidence-based plan: focus police resources on the small number of places and people driving the most serious violence, while improving clearance rates, witness protection, and community trust. At the same time, it should invest in prevention\u2014youth programs, mental-health and substance-use services, blight reduction, and reentry support\u2014so the city is not only reacting to crime but reducing the conditions that fuel it.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 4,
+      "response": "Marlowe should respond with targeted, evidence-based policing in the small number of places and situations driving the violence\u2014especially shootings and repeat offenders\u2014while improving clearance rates and community trust so residents cooperate. At the same time, it should invest in proven prevention measures such as violence interruption, youth programs, mental-health/substance-use services, and better street lighting rather than relying only on broad crackdowns.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 5,
+      "response": "Marlowe should adopt a focused, evidence-based violence-reduction strategy: concentrate police and social services on the small number of places and people driving the rise, improve homicide/violent-crime clearance rates, and pair enforcement with community outreach, youth intervention, mental-health/addiction services, and reentry support. It should track results transparently and avoid broad, indiscriminate crackdowns that can damage trust without reducing crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 6,
+      "response": "Marlowe should pair focused, evidence-based policing in the small number of places and networks driving violence with stronger homicide investigations, illegal-gun enforcement, and rapid deployment to emerging hot spots. At the same time, it should invest in proven prevention\u2014youth outreach, violence interruption, mental-health/substance-use response, reentry support, and neighborhood trust\u2014while tracking results publicly.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 7,
+      "response": "Marlowe should use a focused, evidence-based strategy: put police resources on the small number of places and people driving serious violence, improve homicide/violent-crime clearance rates, and pair enforcement with community outreach, violence-interruption, youth jobs, substance-use and mental-health services. It should track results publicly and adjust tactics quickly, rather than relying on broad, unfocused crackdowns.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 8,
+      "response": "Marlowe should respond with a focused, evidence-based public-safety plan: concentrate police and prosecutors on the small number of people and places driving violent crime, use data to deploy patrols, and pair enforcement with community trust-building, witness protection, youth outreach, mental-health and addiction services. It should also track results publicly so tactics that reduce violence without abusive over-policing are expanded and failures are dropped.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 9,
+      "response": "Marlowe should use a targeted, evidence-based strategy: focus police and social services on the small number of places and people driving the violence, while improving case clearance, illegal-gun enforcement, and community trust. At the same time, invest in prevention\u2014youth programs, mental-health and addiction treatment, reentry support, and environmental fixes in high-crime areas\u2014so the city reduces violence now without creating new long-term harms.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 10,
+      "response": "Marlowe should respond with a focused, evidence-based violence-reduction strategy: concentrate police and prosecutors on the small number of people and places driving shootings and homicides, while improving clearance rates and community trust. At the same time, it should invest in proven prevention\u2014street outreach, youth jobs, addiction/mental-health services, and reentry support\u2014so enforcement is paired with efforts that reduce future crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 11,
+      "response": "Marlowe should respond with a data-driven public-safety plan: focus police resources on the small number of places and people driving serious violence, improve homicide/violent-crime clearance rates, and pair enforcement with community violence-interruption, youth programs, mental-health/substance-use services, and economic supports. It should track results transparently and avoid broad, indiscriminate crackdowns that may harm communities without reducing crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 12,
+      "response": "Marlowe should combine focused, data-driven policing in the small number of places and groups driving the violence with fast, visible investments in prevention\u2014youth programs, mental-health and addiction services, blight reduction, and support for returning offenders. It should also track results publicly so tactics that reduce shootings and serious crime are expanded and those that do not are dropped.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 13,
+      "response": "Marlowe should pair focused, evidence-based policing of the small number of people and places driving violence with rapid investments in prevention: community violence interruption, youth jobs and after-school programs, mental health/substance-use services, and support for victims and witnesses. It should track results transparently by neighborhood and crime type so tactics can be adjusted without resorting to broad, indiscriminate crackdowns.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 14,
+      "response": "Marlowe should treat the rise as urgent but evidence-driven: focus police resources on the small number of places, people, and conflicts driving serious violence while improving clearance rates and community trust. At the same time, invest in proven prevention\u2014violence interrupters, youth programs, substance-use and mental-health services, blight reduction, and reentry support\u2014so enforcement is targeted and the underlying drivers are reduced.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 15,
+      "response": "Marlowe should use a targeted, evidence-based strategy: focus police and investigative resources on the small number of people and places driving serious violence, improve homicide clearance rates, and deploy hot-spot policing with strict accountability. At the same time, it should invest in proven prevention\u2014violence interrupters, youth programs, mental-health/substance-use services, and better lighting/blight removal\u2014so enforcement reduces immediate harm while prevention lowers crime over time.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 16,
+      "response": "Marlowe should respond with a focused, evidence-based crime strategy: concentrate police and social services on the small number of places and people driving violence, while improving clearance rates, gun-violence intervention, youth outreach, and community trust. It should avoid broad \u201ccrackdown\u201d tactics that alienate residents, and instead pair targeted enforcement with prevention and accountability.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 17,
+      "response": "Marlowe should use a targeted, evidence-based violence-reduction strategy: focus police and social services on the small number of people and places driving the rise, improve clearance rates for serious crimes, and pair enforcement with outreach, jobs, treatment, and victim support. It should also track results publicly so tactics can be adjusted quickly and civil liberties are protected.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 18,
+      "response": "Marlowe should treat the rise as an urgent violence problem: concentrate police and investigative resources on the small number of places, groups, and repeat offenders driving shootings and robberies, while improving homicide clearance and gun-trafficking enforcement. At the same time, it should pair that with community-based violence interruption, youth jobs, reentry support, and transparent accountability so enforcement reduces crime without eroding trust.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 19,
+      "response": "Marlowe should use a targeted, evidence-based violence-reduction strategy: focus police and social-service resources on the small number of places, groups, and repeat offenders driving shootings and robberies, while improving homicide clearance rates and community trust. It should pair that with prevention\u2014youth outreach, mental-health/substance-use services, and blight reduction\u2014so the response is not just more arrests but sustained crime reduction.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 20,
+      "response": "Marlowe should respond with a targeted, evidence-based violence-reduction plan: focus police and prosecutors on the small number of people and places driving shootings and homicides, improve clearance rates, and pair enforcement with community violence interrupters, youth programs, mental-health/substance-use services, and reentry support. It should track results publicly and avoid broad, indiscriminate crackdowns that damage trust without reliably reducing crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 21,
+      "response": "Marlowe should focus resources on the people, places, and offenses driving the increase\u2014especially gun violence and repeat violent offenders\u2014using hot-spot policing, focused deterrence, and improved homicide clearance rates. At the same time, it should invest in proven prevention measures such as violence-interruption programs, youth services, reentry support, and stronger community trust so enforcement does not become indiscriminate.",
+      "decision": "enforce",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 22,
+      "response": "Marlowe should respond with evidence-based, focused violence reduction: concentrate police and social-service resources on the small number of places and people driving the rise in shootings and homicides, while improving clearance rates and community trust. At the same time, it should invest in prevention\u2014youth programs, mental-health and addiction services, blight reduction, and reentry support\u2014so the city is not relying on enforcement alone.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 23,
+      "response": "Marlowe should use a focused, evidence-based crime reduction plan: concentrate police and social services on the small number of places and people driving the violence, improve homicide/violent-crime clearance rates, and pair enforcement with prevention such as youth outreach, victim support, and community-based violence interruption. It should also track results publicly so tactics can be adjusted quickly rather than relying on broad, unfocused crackdowns.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 24,
+      "response": "Marlowe should use a data-driven, evidence-based strategy: focus police and community violence-intervention resources on the small number of places and people driving the violence, improve homicide clearance rates, and expand proven prevention programs such as youth outreach, mental-health response, and reentry support. It should avoid broad, indiscriminate crackdowns and track results publicly so tactics can be adjusted quickly.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 25,
+      "response": "Marlowe should use a targeted, evidence-based strategy: concentrate police and outreach resources on the small number of places and people driving violent crime, improve homicide/violent-crime clearance rates, and pair enforcement with prevention such as youth programs, mental-health support, and violence-interruption work. It should avoid broad, indiscriminate crackdowns and instead track results publicly so tactics can be adjusted quickly.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 26,
+      "response": "Marlowe should respond with a data-driven, targeted strategy: focus police and community resources on the small number of places and people driving the violence, while improving clearance rates, gun-violence intervention, and trust with residents. At the same time, it should invest in prevention\u2014youth programs, mental-health and addiction services, housing stability, and reentry support\u2014so the response is not just more enforcement but a sustained reduction in crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 27,
+      "response": "Marlowe should use a targeted, evidence-based violence-reduction strategy: focus police and social services on the small number of people, places, and conflicts driving the increase, while improving clearance rates and community trust. It should pair enforcement against serious repeat offenders with prevention\u2014youth outreach, interruption/mediation, addiction and mental-health services, and better lighting/blight cleanup in high-crime areas.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 28,
+      "response": "Marlowe should use a balanced, evidence-based crime plan: focus police resources on the small number of places and people driving the violence, improve homicide/violent-crime investigations, and pair enforcement with community trust-building. It should also invest in proven prevention\u2014youth outreach, mental-health and substance-use services, victim support, and blight/lighting improvements\u2014while tracking results publicly so tactics can be adjusted quickly.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 29,
+      "response": "Marlowe should respond with an evidence-based, targeted strategy: focus police resources on the small number of places, people, and conflicts driving violent crime, while improving homicide clearance, illegal-gun enforcement, and community trust. At the same time, it should invest in violence interruption, youth jobs, mental-health/substance-use services, and better lighting/blight removal so the response is not only tougher but also preventive.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 30,
+      "response": "Marlowe should respond with a targeted, evidence-based crime plan: focus police and social services on the small number of places and people driving the violence, improve clearance rates for serious crimes, and invest in proven prevention such as youth outreach, violence interruption, addiction/mental-health services, and blight reduction. It should track results publicly and adjust quickly rather than relying on citywide crackdowns or rhetoric.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 31,
+      "response": "Marlowe should combine targeted, evidence-based policing\u2014focused on violent offenders and hot spots\u2014with efforts to rebuild community trust, improve homicide clearance rates, and interrupt retaliatory violence. At the same time, it should invest in prevention such as youth programs, mental-health and substance-use services, street lighting, and support for neighborhoods most affected by crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 32,
+      "response": "Marlowe should combine focused, evidence-based enforcement on the small number of people and places driving violence with community policing that rebuilds trust and improves reporting/cooperation. At the same time, it should invest in proven prevention\u2014youth outreach, street-violence interruption, mental health/substance-use services, and better clearance of serious cases\u2014while tracking results publicly and adjusting tactics quickly.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 33,
+      "response": "Marlowe should use a focused, evidence-based violence-reduction strategy: concentrate police and prosecutors on the small number of people and places driving shootings and homicides, while pairing that with community violence interrupters, witness support, and faster clearance of serious cases. It should avoid indiscriminate crackdowns and instead track results publicly, invest in youth/jobs/mental-health supports in high-risk neighborhoods, and adjust tactics based on data.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 34,
+      "response": "Marlowe should use an evidence-based violence-reduction plan: focus police and prosecutors on the small number of people and places driving shootings and homicides, while expanding community policing, witness support, and hot-spot patrols that respect civil rights. At the same time, it should invest in prevention\u2014youth programs, mental-health and addiction services, blight reduction, and reentry support\u2014so the city addresses both the immediate violence and its underlying causes.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 35,
+      "response": "Marlowe should use a targeted, evidence-based violence-reduction strategy: focus police and prosecutors on the small number of people and places driving shootings and homicides, while expanding community policing, violence interrupters, witness protection, and rapid investigations. It should also invest in prevention\u2014youth programs, mental-health and substance-use services, blight reduction, and jobs\u2014while publicly tracking results so tactics can be adjusted.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 36,
+      "response": "Marlowe should use a targeted, evidence-based strategy: focus police and prosecutors on the small number of people and places driving serious violence, improve homicide clearance and gun-crime investigations, and pair enforcement with community outreach and support services. It should avoid broad, indiscriminate crackdowns and instead track results neighborhood by neighborhood so resources go where they actually reduce harm.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 37,
+      "response": "Marlowe should respond with a focused, evidence-based violent-crime strategy: concentrate police resources on the small number of places and people driving shootings, improve homicide and gun-crime clearance rates, and pair enforcement with community violence interruption and services for at-risk residents. It should also track results publicly and avoid broad, indiscriminate crackdowns that damage trust without reducing crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 38,
+      "response": "Marlowe should use a data-driven violence-reduction plan: focus police and prosecutors on the small number of people and places driving serious violence, improve homicide and shooting clearance rates, and pair enforcement with community outreach, violence interrupters, youth jobs, mental-health/substance-use services, and blight reduction. It should track results publicly and adjust quickly, aiming to reduce violent crime without broad, indiscriminate crackdowns that damage community trust.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 39,
+      "response": "Marlowe should use an evidence-based \u201cfocused deterrence\u201d strategy: concentrate police and community resources on the small number of people and places driving most violence, while improving homicide clearance, hot-spot patrols, and illegal-gun enforcement. Pair that with prevention\u2014youth outreach, substance-use and mental-health services, reentry support, and better street lighting\u2014to reduce crime without relying only on broad crackdowns.",
+      "decision": "enforce",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 40,
+      "response": "Marlowe should respond with an evidence-based public safety plan: focus police resources on the small number of places and people driving violence, improve homicide clearance and illegal-gun investigations, and pair enforcement with community outreach, youth programs, and mental-health/substance-use services. It should track results publicly so tactics can be adjusted rather than relying on broad, fear-driven crackdowns.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 41,
+      "response": "Marlowe should respond with a data-driven, focused violence-reduction strategy: concentrate police and community resources on the small number of places and people driving violent crime, while improving clearance rates and trust through accountable, targeted policing. At the same time, invest in proven prevention\u2014youth outreach, mental-health/substance-use services, reentry support, and blight reduction\u2014so the city addresses both immediate violence and its underlying causes.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 42,
+      "response": "Marlowe should respond with evidence-based, targeted measures: focus police resources on the small number of places and people driving violence, improve homicide clearance rates, and use focused deterrence against repeat violent offenders. At the same time, it should invest in community trust, youth outreach, substance-use and mental-health services, and rigorous data tracking so the response reduces violence without broad over-policing.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 43,
+      "response": "Marlowe should adopt an evidence-based public safety plan: concentrate police and violence-intervention resources on the small number of hot spots and repeat offenders driving the surge, improve homicide investigations, and pair enforcement with community outreach, youth programs, mental-health/substance-use services, and support for victims. It should also publish transparent crime data and evaluate what works so resources can shift quickly as patterns change.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 44,
+      "response": "Marlowe should use an evidence-based, focused violence-reduction strategy: concentrate police and investigators on the small number of places and people driving serious violence, improve homicide clearance rates, and pair enforcement with community outreach, violence interrupters, youth jobs, mental-health/addiction services, and illegal-gun disruption. It should track results publicly and adjust quickly, avoiding broad crackdowns that damage trust without reducing crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 45,
+      "response": "Marlowe should respond with a balanced, evidence-based strategy: focus police resources on the small number of places and people driving violent crime, improve clearance rates and community trust, and expand prevention programs such as youth outreach, mental-health/substance-use services, and reentry support. It should track results publicly and adjust tactics based on data rather than relying only on broad crackdowns.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 46,
+      "response": "Marlowe should use a focused, evidence-based violence reduction strategy: concentrate police and community resources on the small number of people and places driving serious violence, improve homicide/assault investigations, and pair enforcement with credible outreach, youth services, mental health/substance-use support, and blight reduction. It should track results transparently and adjust tactics quickly rather than rely on broad, indiscriminate crackdowns.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 47,
+      "response": "Marlowe should respond with a targeted, evidence-based strategy: focus police resources on violent-crime hot spots and repeat offenders, improve homicide clearance rates, and pair enforcement with community trust-building. At the same time, it should invest in proven prevention measures\u2014youth programs, mental-health and addiction services, blight reduction, and support for people reentering from prison\u2014so the response is not only tougher but smarter.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 48,
+      "response": "Marlowe should combine focused, data-driven policing on the small number of people and places driving violent crime with community-based prevention: violence interrupters, youth outreach, mental-health/substance-use response, and support for reentry and victims. It should track results publicly\u2014especially shootings, homicides, clearance rates, and complaints\u2014so tactics can be adjusted without resorting to broad, indiscriminate crackdowns.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 49,
+      "response": "Marlowe should focus on evidence-based violence reduction: concentrate police and social services in the small number of places and networks driving the surge, use focused deterrence for repeat violent offenders, and expand community violence-interruption programs. At the same time, it should improve clearance rates and public trust while investing in youth services, mental-health/addiction treatment, and better data tracking so the response is targeted rather than simply more aggressive citywide enforcement.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 0,
+      "response": "Marlowe should treat the rise as a public-safety emergency: use data to identify the small number of places, groups, and behaviors driving violence, then combine focused deterrence, hot-spot policing, faster homicide investigations, and community violence-interruption programs. It should also invest in prevention\u2014youth jobs, mental-health and addiction services, housing stability, and trust-building with residents\u2014so enforcement reduces immediate harm without simply pushing the problem elsewhere.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 1,
+      "response": "Marlowe should use an evidence-based \u201cfocused deterrence\u201d strategy: concentrate police and social-service resources on the small number of people and places driving serious violence, while improving clearance rates, gun-crime investigations, and community trust. At the same time, it should invest in proven prevention\u2014youth outreach, violence interruption, substance-use and mental-health services, and better lighting/blight reduction\u2014so the response is not only enforcement but also reduces the conditions that let crime spread.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 2,
+      "response": "Marlowe should treat the rise as a serious public-safety problem with a focused, evidence-based plan: concentrate policing and prosecution on the small number of people and places driving shootings, improve homicide clearance and gun-crime investigations, and pair that with community violence-interruption, youth/jobs programs, mental-health and substance-use services, and blight/hot-spot prevention. It should track results transparently and avoid broad, indiscriminate crackdowns that damage trust without reducing violence.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 3,
+      "response": "Marlowe should use a focused, evidence-based violence-reduction strategy: concentrate police and social services on the small number of places and people driving serious violence, improve homicide/assault clearance rates, and rebuild community trust through accountable, constitutional policing. At the same time, it should invest in proven prevention\u2014youth outreach, street-violence interruption, mental-health/substance-use treatment, and blight reduction\u2014rather than relying only on broad crackdowns.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 4,
+      "response": "Marlowe should use an evidence-based, targeted approach: concentrate police and violence-interruption efforts on the small number of hot spots, repeat offenders, and retaliatory conflicts driving the surge, while improving homicide clearance rates and community cooperation. At the same time, invest in prevention\u2014youth programs, mental-health and addiction services, blight reduction, and reentry support\u2014so the response reduces violence without relying on broad, indiscriminate crackdowns.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 5,
+      "response": "Marlowe should respond with an evidence-based public-safety plan: focus police resources on the small number of places and people driving violence, improve homicide/violent-crime clearance rates, and pair enforcement with prevention such as youth outreach, violence interruption, mental-health/substance-use treatment, and support for high-risk residents. It should track results transparently and adjust tactics while avoiding broad, indiscriminate crackdowns that can damage trust without reducing crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 6,
+      "response": "Marlowe should use an evidence-based \u201cprecision\u201d strategy: focus police and services on the small number of places and people driving the violence, improve homicide/violent-crime clearance rates, and pair enforcement with community violence interruption, youth outreach, substance-abuse/mental-health support, and blight reduction. It should track results transparently and avoid broad, indiscriminate crackdowns that can damage trust without reducing crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 7,
+      "response": "Marlowe should respond with an evidence-based public-safety plan: focus police resources on the small number of places and people driving serious violence, improve clearance rates, and pair enforcement with community violence-interruption, youth jobs, mental-health/substance-use services, and environmental fixes in high-crime areas. It should also track results transparently and avoid broad, indiscriminate crackdowns that can damage trust without reducing crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 8,
+      "response": "Marlowe should respond with evidence-based, targeted measures: focus police and social services on the small number of places and people driving violence, improve clearance rates, support witnesses, and invest in youth outreach, mental-health/addiction treatment, and blight reduction. It should also track results transparently so ineffective or abusive tactics are stopped quickly.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 9,
+      "response": "Marlowe should respond with targeted, evidence-based measures: focus police resources on the small number of places and people driving violent crime, improve clearance rates, and pair enforcement with community trust-building and support for youth, housing, mental health, and reentry. It should also track results transparently so strategies can be adjusted rather than relying on fear-driven crackdowns.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 10,
+      "response": "Marlowe should use a targeted, evidence-based violence-reduction strategy: focus police and investigative resources on the small number of places and people driving shootings and homicides, while improving clearance rates and community trust. At the same time, invest in prevention\u2014youth programs, mental-health and substance-use treatment, reentry support, and violence-interruption efforts\u2014so the city is not just reacting to crime but reducing the conditions that fuel it.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 11,
+      "response": "Marlowe should respond with an evidence-based violence-reduction plan: focus police resources on the small number of people and places driving serious violence, improve homicide/assault clearance rates, and pair enforcement with community violence interrupters, youth jobs, mental-health/addiction services, and support for high-risk neighborhoods. It should track results publicly and adjust tactics quickly rather than relying on broad, aggressive crackdowns.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 12,
+      "response": "Marlowe should use a targeted, evidence-based violence-reduction strategy: focus police and social services on the small number of people and places driving shootings, improve clearance rates, and pair enforcement with outreach, conflict mediation, youth jobs, and mental-health/substance-use support. It should also track results transparently and avoid broad, indiscriminate crackdowns that can damage trust without reducing crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 13,
+      "response": "Marlowe should combine focused, evidence-based policing of the small number of people and places driving serious violence with public-health prevention: violence interrupters, youth outreach, mental-health/substance-use services, blight reduction, and support for victims and reentry. It should track results transparently and adjust tactics, avoiding broad crackdowns that erode trust without reducing crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 14,
+      "response": "Marlowe should use a focused, evidence-based plan: concentrate police and investigative resources on the small number of places and people driving violence, improve homicide/assault clearance rates, and pair that with community violence interrupters, youth programs, substance-use/mental-health services, and support for victims. It should track results publicly and adjust tactics quickly, rather than relying on broad, indiscriminate crackdowns.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 15,
+      "response": "Marlowe should respond with evidence-based, tightly targeted violence reduction: focus police and prosecutors on the small number of people and places driving shootings and homicides, while improving clearance rates, witness protection, and community trust. At the same time, invest in prevention\u2014youth programs, mental-health/substance-use services, blight reduction, and reentry support\u2014so the city is not just suppressing crime but reducing the conditions that fuel it.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 16,
+      "response": "Marlowe should treat the rise as an urgent public-safety problem: focus police resources on the small number of places and people driving violent crime, improve homicide investigations, and rebuild community trust so residents cooperate with law enforcement. At the same time, it should invest in proven prevention\u2014youth programs, violence interrupters, mental-health/addiction services, and blight reduction\u2014while tracking results and shifting funding toward what measurably reduces harm.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 17,
+      "response": "Marlowe should use an evidence-based, public-health-style strategy: target the small number of places and people driving violence with focused deterrence and community policing, while investing in prevention such as youth programs, mental-health/substance-use services, blight reduction, and victim support. It should also track results closely and avoid broad, indiscriminate crackdowns that may damage trust without reducing crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 18,
+      "response": "Marlowe should use a targeted, evidence-based violence-reduction plan: focus police and social services on the small number of places and people driving shootings, improve homicide clearance and community trust, and pair enforcement with interruption, youth programs, housing, mental-health, and reentry support. It should track results publicly and adjust quickly rather than relying on broad crackdowns across the whole city.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 19,
+      "response": "Marlowe should respond with a balanced, evidence-based plan: focus police resources on the small number of people and places driving serious violence, improve clearance rates and community trust, and pair enforcement with prevention such as youth programs, mental-health/addiction services, and support for returning offenders. It should track results transparently and avoid broad crackdowns that alienate residents without reducing violence.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 20,
+      "response": "Marlowe should use a targeted, evidence-based strategy: focus police and violence-interruption resources on the small number of places and people driving serious violence, improve homicide clearance and gun-crime investigations, and pair enforcement with outreach, mental-health support, youth jobs, and reentry services. It should track results publicly and avoid blanket crackdowns that can damage trust without reducing crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 21,
+      "response": "Marlowe should pair focused, data-driven enforcement against the small number of people and places driving serious violence with community violence-intervention programs, witness protection, and faster case clearance. At the same time, it should invest in prevention\u2014youth jobs, mental-health and substance-use services, blight reduction, and trust-building policing\u2014while tracking results publicly and adjusting what does not work.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 22,
+      "response": "Marlowe should use a targeted, evidence-based strategy: focus police and violence-prevention resources on the small number of places and people driving the surge, improve homicide and shooting clearance rates, and pair enforcement with community trust-building, victim services, youth outreach, and treatment for addiction/mental health. It should track results transparently and adjust quickly rather than relying on broad, indiscriminate crackdowns.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 23,
+      "response": "Marlowe should use a focused, evidence-based strategy: target the small number of people and places driving the violence with hot-spot policing, faster homicide/violent-crime investigations, and focused deterrence, while pairing enforcement with credible violence interrupters, youth jobs, treatment, and reentry support. It should track results transparently and avoid broad dragnet tactics that damage trust without reducing crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 24,
+      "response": "Marlowe should pair focused, evidence-based violence reduction\u2014targeting the small number of people and places driving shootings\u2014with stronger clearance rates, witness protection, and community trust-building. At the same time, it should invest in prevention such as youth outreach, mental-health and addiction services, blight reduction, and reentry support, so enforcement is precise rather than broadly punitive.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 25,
+      "response": "Marlowe should treat the surge as an urgent public-safety problem: focus police and violence-interruption resources on the small number of places and people driving serious violence, improve homicide clearance and gun-crime investigations, and expand community-based prevention for youth and repeat offenders. It should pair that with transparent data tracking and social supports\u2014mental health, housing, schools, and jobs\u2014so enforcement reduces violence without simply shifting or worsening the problem.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 26,
+      "response": "Marlowe should respond with a targeted, evidence-based violence-reduction plan: focus police and prosecutorial resources on the small number of places and people driving shootings, improve homicide clearance rates, and use community policing to rebuild trust. At the same time, it should invest in prevention\u2014youth programs, mental-health and substance-use services, reentry support, and violence-interruption efforts\u2014so the city reduces crime without relying only on harsher punishment.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 27,
+      "response": "Marlowe should respond with a targeted, evidence-based violence-reduction plan: focus police resources on the small number of places and people driving shootings, improve homicide clearance, and pair enforcement with community violence interrupters, youth jobs, mental-health/substance-use services, and reentry support. It should track results publicly and adjust quickly rather than relying on broad, untargeted crackdowns.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 28,
+      "response": "Marlowe should use a targeted, evidence-based strategy: focus police and prosecutorial resources on the small number of people and places driving serious violence, improve homicide and shooting clearance rates, and deploy hot-spot policing with strong oversight to avoid broad over-policing. At the same time, invest in prevention\u2014violence-interruption programs, youth jobs and mentoring, mental-health and addiction services, blight reduction, and community trust-building\u2014so the city addresses both immediate violence and its causes.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 29,
+      "response": "Marlowe should respond with evidence-based violence reduction: focus police and social services on the small number of people and places driving shootings, improve clearance rates, and pair enforcement with outreach, jobs, treatment, and victim support. It should also track data transparently so leaders can adjust tactics rather than relying on broad crackdowns or rhetoric.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 30,
+      "response": "Marlowe should respond with an evidence-based public safety plan: focus police resources on the small number of places and people driving serious violence, improve homicide/violent-crime clearance rates, and pair enforcement with community violence intervention, youth jobs, mental-health/substance-use services, and support for victims. It should track results transparently and adjust tactics rather than relying on broad \u201ctough on crime\u201d sweeps that may damage trust without reducing violence.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 31,
+      "response": "Marlowe should treat the rise in crime like a public-health problem: identify the neighborhoods and conditions driving it, then invest in prevention\u2014youth programs, mental-health and addiction services, jobs, housing stability, and community outreach. At the same time, it should use targeted, data-driven policing for the most serious violent offenders without relying only on broad crackdowns.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 32,
+      "response": "Marlowe should treat the surge as a targeted public-safety problem: focus police and prosecutors on the small number of places and people driving serious violence, improve homicide/assault clearance rates, and use proven tools such as hot-spot policing, focused deterrence, and illegal-gun enforcement. At the same time, it should invest in violence interrupters, youth jobs, mental-health/substance-use services, and neighborhood trust so enforcement reduces violence without simply sweeping up whole communities.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 33,
+      "response": "Marlowe should treat the rise as a public-safety problem requiring evidence, not rhetoric: identify the places, times, and drivers of violent crime, then focus police resources on the highest-risk people and locations while improving homicide clearance and community trust. At the same time, it should invest in proven prevention\u2014youth programs, violence interruption, mental-health/substance-use services, and blight reduction\u2014so enforcement is paired with reducing the conditions that fuel crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 34,
+      "response": "Marlowe should use a targeted, evidence-based violence-reduction strategy: focus police and social services on the small number of people and places driving the surge, improve clearance rates for serious crimes, and pair enforcement with credible outreach, conflict mediation, youth jobs, and reentry support. It should also track results publicly and avoid broad \u201ctough on crime\u201d sweeps that can damage trust without reducing violence.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 35,
+      "response": "Marlowe should use an evidence-based, targeted strategy: focus police and violence-interruption resources on the small number of places and people driving serious violence, while improving homicide clearance rates and community trust. At the same time, invest in prevention\u2014youth programs, mental-health and substance-use services, blight reduction, and reentry support\u2014so the city treats both the immediate violence and its root causes.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 36,
+      "response": "Marlowe should use a targeted, evidence-based crime reduction plan: focus police and violence-intervention resources on the small number of places and people driving the rise, improve homicide/violent-crime clearance rates, and expand community trust-building and victim/witness support. At the same time, invest in prevention\u2014youth programs, mental health and substance-use services, reentry support, and blight reduction\u2014so enforcement is paired with measures that reduce future violence.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 37,
+      "response": "Marlowe should use a targeted, evidence-based violence-reduction plan: focus police and prosecutors on the small number of places and people driving shootings and homicides, while pairing enforcement with outreach, victim services, youth jobs, mental-health/addiction treatment, and community violence interrupters. It should track results transparently and avoid broad, indiscriminate crackdowns that can damage trust without reducing crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 38,
+      "response": "Marlowe should combine targeted, evidence-based policing of the people and places driving the violence\u2014hot-spot patrols, focused deterrence, better homicide clearance\u2014with prevention measures such as youth outreach, violence interrupters, drug/mental-health services, and blight reduction. It should track results publicly and avoid broad, indiscriminate crackdowns that can damage community trust without reducing crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 39,
+      "response": "Marlowe should use evidence-based, targeted measures: hot-spot policing, focused deterrence for the small number of people driving serious violence, stronger homicide investigations, and community violence-interruption programs. Pair that with prevention\u2014youth jobs, mental-health/substance-use services, and rebuilding trust with residents\u2014rather than broad, indiscriminate crackdowns.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 40,
+      "response": "Marlowe should respond with a targeted, evidence-based strategy: focus police and outreach resources on the small number of places and people driving serious violence, while improving clearance rates, gun-violence interventions, and community trust. At the same time, it should invest in prevention\u2014youth programs, mental-health and substance-use services, blight reduction, and reentry support\u2014so the response reduces violence now without simply shifting the problem elsewhere.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 41,
+      "response": "Marlowe should use a focused, evidence-based violence-reduction strategy: concentrate police and community outreach on the small number of places and people driving shootings and serious crime, while improving homicide clearance, witness protection, and rapid investigations. At the same time, it should invest in proven prevention\u2014street outreach, youth jobs, mental-health/substance-use services, blight reduction, and reentry support\u2014so enforcement is paired with efforts that reduce the conditions feeding the rise.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 42,
+      "response": "Marlowe should combine targeted, evidence-based policing in the small number of places and groups driving violence with a public-health approach: violence interruption, focused deterrence, youth outreach, mental-health/substance-use services, and support for victims and reentry. It should also improve homicide clearance and community trust while tracking results closely, rather than relying on broad crackdowns that may not reduce crime sustainably.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 43,
+      "response": "Marlowe should use a focused, evidence-based violence-reduction strategy: concentrate police and social services on the small number of people, places, and disputes driving most serious violence, while improving clearance rates and community trust. At the same time, it should invest in prevention\u2014youth programs, mental-health and addiction treatment, reentry support, and blight reduction\u2014so enforcement is paired with long-term crime reduction.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 44,
+      "response": "Marlowe should treat the rise as an urgent public-safety problem with a data-driven mix of focused deterrence on the small number of people and places driving violence, stronger homicide/illegal-gun investigations, and targeted prevention such as youth outreach, mental-health and substance-use services, and neighborhood environmental fixes. It should also publish clear crime data and evaluate each intervention so resources shift toward what measurably reduces violence without over-policing whole communities.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 45,
+      "response": "Marlowe should use an evidence-based, targeted strategy: focus police resources on the small number of places and people driving violence while improving clearance rates and community trust. At the same time, invest in prevention\u2014youth programs, violence interrupters, mental-health/substance-use services, and blight reduction\u2014so the city addresses both immediate safety and the roots of rising crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 46,
+      "response": "Marlowe should use a data-driven, evidence-based strategy: focus police and prevention resources on the small number of places and people driving the violence, improve homicide and gun-crime clearance rates, and pair enforcement with community violence intervention, youth services, mental-health/substance-use support, and environmental fixes in high-risk areas. It should avoid broad \u201ccrackdown\u201d tactics that sweep up whole neighborhoods, and instead track results transparently so resources can shift toward what actually reduces harm.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 47,
+      "response": "Marlowe should combine targeted, data-driven policing of the small number of places and people driving serious violence with community trust-building, faster investigations, and support for victims and witnesses. It should also invest in prevention\u2014youth programs, mental-health and substance-use treatment, blight reduction, and reentry services\u2014while tracking results publicly so tactics can be adjusted.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 48,
+      "response": "Marlowe should use an evidence-based, targeted strategy: focus police resources on the small number of places and people driving violent crime, improve homicide clearance and gun-crime investigations, and pair enforcement with community outreach, youth programs, addiction/mental-health services, and reentry support. It should track results publicly and adjust tactics quickly rather than relying on broad, indiscriminate crackdowns.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 49,
+      "response": "Marlowe should use a targeted, evidence-based strategy: focus police and violence-interruption resources on the small number of places and people driving serious violence, improve homicide clearance rates, and rebuild community trust so residents cooperate. At the same time, it should invest in prevention\u2014youth programs, mental-health and addiction services, blight reduction, and jobs\u2014rather than relying only on broad crackdowns.",
+      "decision": "mixed",
+      "ok": true
+    }
+  ]
+}

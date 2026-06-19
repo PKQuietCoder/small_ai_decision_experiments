@@ -85,6 +85,38 @@ Each mitigation is a runnable experiment config, ordered by leverage.
    contamination-aware dependent variable. Tracked as a planned analysis-layer
    metric (re-coding existing run transcripts), not a new subject experiment.
 
+## Results (run 2026-06-19, six models, 1,800 trials)
+
+All three controls were run on the same six models as the main study. Full data is
+in [`../followups/`](../followups/) (one folder per control, each with `summary.csv`,
+raw per-trial runs, and per-model analysis). The verdict: **recognition is real but
+does not explain the flat response.**
+
+1. **Recognition is real and scales with capability.** Share of trials showing any
+   recognition (recognized + partial) of the study/paradigm, canonical / disguised:
+   Opus 58% / 100%, Sonnet 52% / 70%, Haiku 22% / 10%, GPT-5.5 100% / 100%,
+   GPT-5.4 76% / 100%, GPT-5.4 mini 94% / 86%. The frontier models name Thibodeau &
+   Boroditsky directly; only the smallest model mostly does not. Mechanism 1
+   (awareness) is confirmed to exist. Two wording effects qualify the canonical vs
+   disguised contrast — the probe asked about "this *exact* passage" (so verbatim
+   text drew hedged "partial" recall) and each trial showed only the beast cue — but
+   the top line is robust: the material is in training and the larger models know it.
+
+2. **The flat response survives un-memorized text — the decisive result.** On the
+   novel wolf-vs-cancer stimulus, swings were +4, +2, −1, 0, −1, −1 points across the
+   six models, none significant. Recognition cannot be doing the work, because the
+   response stays flat on a stimulus no model has seen.
+
+3. **The result is not brittle to paraphrase.** Five of six models stay flat on the
+   rewritten report (swings +1 to +7, none significant). The exception, Sonnet 4.6
+   (−19, p<.001), is near-identical text coded inconsistently and swings *opposite*
+   the human direction — coding noise, the same caveat the main study flagged.
+
+So recognition does not become imitation: knowing the study does not make a model
+reproduce its result. The flat response is the trained disposition (mechanism 2),
+not naïve recall (mechanism 1). The contamination concern is bounded — it does not
+explain away the main finding.
+
 ## A limit that survives all of the above
 
 These controls bound mechanism 1; they cannot eliminate mechanism 2. A

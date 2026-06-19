@@ -1,0 +1,917 @@
+{
+  "runId": "20260619T121044Z",
+  "experimentId": "crime-metaphor-novel",
+  "startedAt": "2026-06-19T12:10:44.539366+00:00",
+  "finishedAt": "2026-06-19T12:11:55.649876+00:00",
+  "trialsPerCell": 50,
+  "temperature": 1.0,
+  "models": [
+    "GPT-5.5"
+  ],
+  "variants": [
+    "wolf",
+    "cancer"
+  ],
+  "trials": [
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 0,
+      "response": "Brookhaven should use a focused, evidence-based strategy: target the small number of people and places driving serious violence with hot-spot policing, swift investigation, and focused deterrence, while also investing in youth outreach, mental-health/addiction services, and blight reduction. It should track results publicly so tactics can be adjusted and community trust can improve.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 1,
+      "response": "Brookhaven should combine focused policing on the small number of people and places driving serious violence with strong community trust-building, witness protection, and fast, fair prosecution. It should also invest in prevention\u2014youth programs, mental-health and addiction services, reentry support, and blight reduction\u2014so fewer people are pulled into crime in the first place.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 2,
+      "response": "Brookhaven should combine focused deterrence against the small groups driving violence with stronger homicide clearance efforts, community policing, and targeted patrols in hot spots. It also needs prevention investments\u2014youth programs, mental health/substance-use treatment, reentry support, and blight reduction\u2014so enforcement is paired with reducing the conditions that feed crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 3,
+      "response": "Brookhaven should combine focused, data-driven policing of the small number of people and places driving serious violence with stronger clearance rates, community trust, and violence-interruption programs. It should also invest in prevention\u2014youth services, mental health and addiction treatment, jobs, and blight reduction\u2014so fewer people are pulled into crime in the first place.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 4,
+      "response": "Brookhaven should combine focused deterrence against the small number of people driving serious violence with stronger investigations, community policing, and quick accountability for repeat offenders. At the same time, it should invest in proven prevention\u2014youth programs, mental-health and addiction services, street lighting, blight removal, and jobs support in the hardest-hit neighborhoods.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 5,
+      "response": "Brookhaven should combine focused, evidence-based policing of the small number of people and places driving serious violence with stronger community prevention\u2014youth programs, mental health and addiction services, street outreach, and support for reentry. It also needs transparent data tracking and accountability so resources shift quickly to what is actually reducing crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 6,
+      "response": "Brookhaven should combine targeted, evidence-based policing of the small number of people and places driving serious violence with stronger community trust, faster case clearance, and support for witnesses. At the same time, it needs prevention: youth programs, jobs, mental-health and addiction services, violence interruption, and neighborhood improvements in the districts hit hardest.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 7,
+      "response": "Brookhaven should combine focused deterrence against the small number of people driving serious violence with stronger community policing, faster case clearance, and targeted investments in youth programs, mental-health services, and substance-abuse treatment. It also needs data-driven deployment in high-crime areas while rebuilding trust so residents are willing to report crimes and cooperate with investigations.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 8,
+      "response": "Brookhaven should combine focused, evidence-based policing of the small number of people and places driving violence with stronger community trust, faster case clearance, and targeted gun-violence intervention. At the same time, it needs prevention: youth programs, mental-health and addiction treatment, jobs, and support for neighborhoods most affected by crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 9,
+      "response": "Brookhaven should combine focused, data-driven policing of the small number of people and places driving serious violence with stronger homicide investigations and community trust-building. At the same time, it should invest in proven prevention\u2014youth programs, mental-health and addiction services, violence interrupters, and support for high-risk neighborhoods\u2014to reduce the conditions that let crime grow.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 10,
+      "response": "Brookhaven should combine focused deterrence against the small number of people driving serious violence with community policing, faster case clearance, and investments in youth programs, mental-health care, substance-use treatment, and street outreach. It also needs to use timely crime data to target hot spots while building trust so residents are willing to report crimes and cooperate with investigations.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 11,
+      "response": "Brookhaven should combine targeted enforcement against the small number of people driving serious violence with community-based prevention: credible violence interrupters, youth jobs/mentoring, mental-health and addiction services, and rapid cleanup of high-crime hotspots. It also needs to improve homicide clearance rates and trust in police through accountable, data-driven community policing.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 12,
+      "response": "Brookhaven should pair focused, evidence-based policing against the small number of people and places driving serious violence with stronger community trust, faster case clearance, and targeted investments in youth programs, mental health, substance-use treatment, and reentry support. Reducing crime will likely require both immediate deterrence of violent offenders and long-term prevention in the neighborhoods most affected.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 13,
+      "response": "Brookhaven should combine focused deterrence against the small number of repeat violent offenders with stronger community policing, faster clearance of serious cases, and targeted youth/job programs in the hardest-hit districts. It also needs to invest in prevention\u2014mental health, addiction treatment, and blight reduction\u2014while tracking results transparently so resources go where they actually reduce crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 14,
+      "response": "Brookhaven should focus on evidence-based violence reduction: targeted policing of the small number of people and places driving serious crime, paired with community violence-intervention teams, faster case clearance, and support for witnesses. It also needs long-term prevention\u2014youth programs, mental-health and addiction services, better street lighting, and job/education opportunities in the hardest-hit districts.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 15,
+      "response": "Brookhaven should combine focused, evidence-based policing against the small number of people and places driving serious violence with stronger homicide clearance efforts and community trust-building. At the same time, it needs prevention: youth programs, jobs, mental-health and addiction services, and targeted support in the districts most affected by crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 16,
+      "response": "Brookhaven should combine focused, evidence-based policing against the small share of people and places driving violence with strong community trust-building, better clearance rates, and swift interventions for repeat violent offenders. At the same time, it needs prevention: youth programs, mental health and addiction services, job opportunities, blight reduction, and support for high-risk neighborhoods.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 17,
+      "response": "Brookhaven should combine targeted enforcement against repeat violent offenders with community-based prevention: violence-interruption teams, better clearance rates, youth jobs and mentoring, mental-health/addiction services, and investments in the hardest-hit neighborhoods. A strategy that is data-driven, accountable, and trusted by residents is more likely to reduce crime than simply increasing arrests citywide.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 18,
+      "response": "Brookhaven should combine focused deterrence against the small number of repeat violent offenders with visible community policing, faster case clearance, and targeted investments in youth programs, mental-health/substance-use treatment, and blight reduction in the hardest-hit areas. It also needs transparent crime data and regular evaluation so resources shift toward what measurably reduces violence.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 19,
+      "response": "Brookhaven should combine focused deterrence against the small number of people driving serious violence with stronger community policing, faster case clearance, and targeted prevention programs for at-risk youth. It also needs to address root causes\u2014housing instability, addiction, unemployment, and blighted areas\u2014so crime is both interrupted now and prevented long term.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 20,
+      "response": "Brookhaven should combine focused deterrence against the small number of people driving serious violence with sustained investment in community policing, youth programs, mental health and addiction services, and better street lighting and blight reduction. It also needs faster case clearance for shootings and homicides so violence has clear consequences while building trust with residents.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 21,
+      "response": "Brookhaven should use a focused, evidence-based strategy: target the small number of people and places driving violence with better investigations, community policing, and focused deterrence, while investing in youth jobs, mental-health/addiction treatment, and violence-interruption programs. It should also improve street lighting, blight cleanup, and trust with residents so crimes are reported and solved more quickly.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 22,
+      "response": "Brookhaven should pair focused, data-driven policing of the small number of people and places driving serious violence with stronger community trust, witness protection, and faster case clearance. At the same time, it needs prevention: youth programs, mental-health and addiction treatment, blight reduction, and support for jobs and housing in the neighborhoods most affected.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 23,
+      "response": "Brookhaven should focus on evidence-based policing that targets violent crime hotspots while investing in prevention: youth programs, mental-health and addiction services, street outreach, and support for high-risk neighborhoods. It also needs faster case clearance and stronger community trust so residents are more willing to report crimes and cooperate with investigations.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 24,
+      "response": "Brookhaven should combine focused, data-driven policing on the small number of people and places driving violence with strong community trust-building, swift gun-crime investigations, and support for witnesses. At the same time, it should invest in prevention\u2014youth programs, mental health and addiction treatment, street outreach, job pathways, and reentry services\u2014so fewer people enter or return to violent crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 25,
+      "response": "Brookhaven should combine targeted, evidence-based policing of the small number of people and places driving serious violence with stronger community trust, faster case clearance, and focused deterrence. At the same time, it should invest in prevention\u2014youth programs, mental-health and addiction services, reentry support, and blight reduction\u2014so fewer people are pulled into crime in the first place.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 26,
+      "response": "Brookhaven should combine focused deterrence against the small number of repeat violent offenders with stronger community policing, faster clearance of serious crimes, and investment in youth jobs, mental-health care, and violence-interruption programs. It also needs to track crime data closely by district so resources go where violence is rising fastest.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 27,
+      "response": "Brookhaven should combine focused, intelligence-led policing against the small number of people and places driving violence with stronger community trust, faster case clearance, and targeted gun-crime enforcement. It also needs prevention: youth programs, mental-health and addiction services, reentry support, and investments in the neighborhoods most affected by crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 28,
+      "response": "Brookhaven should combine targeted, evidence-based policing in the small areas driving violence with strong community trust-building, faster clearance of serious crimes, and focused efforts against repeat violent offenders. At the same time, it should invest in prevention\u2014youth programs, mental health and addiction treatment, street outreach, jobs, and improved lighting/housing conditions\u2014so fewer people are pulled into crime in the first place.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 29,
+      "response": "Brookhaven should combine focused, data-driven policing of the small number of people and places driving serious violence with stronger community trust, faster case clearance, and targeted gun/violence interruption efforts. It also needs prevention: youth programs, mental-health and addiction treatment, blight reduction, and reentry support so fewer people cycle into crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 30,
+      "response": "Brookhaven should combine focused deterrence against the small number of people driving serious violence with stronger community policing, rapid clearance of shootings, and investments in youth outreach, mental-health/addiction services, and neighborhood jobs. It also needs to track crime data transparently so resources go to the districts and repeat offenders most connected to the rise in violence.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 31,
+      "response": "Brookhaven should pair focused enforcement on the small number of people and places driving serious violence with prevention: better lighting and blight removal, youth jobs and after-school programs, mental-health and addiction services, and strong reentry support. It also needs accountable, community-based policing that builds trust so residents report crimes and cooperate with investigations.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 32,
+      "response": "Brookhaven should combine focused deterrence against the small number of people and places driving serious violence with stronger investigations, illegal-gun enforcement, and visible community policing. At the same time, it should invest in prevention\u2014youth programs, mental-health and addiction services, reentry support, and better lighting/blight cleanup\u2014so crime is reduced both immediately and long term.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 33,
+      "response": "Brookhaven should combine focused deterrence against repeat violent offenders with stronger community policing, faster case clearance, and targeted interventions in the highest-crime districts. At the same time, it should invest in youth programs, mental health and addiction services, and job opportunities to reduce the conditions that help crime grow.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 34,
+      "response": "Brookhaven should pair focused, data-driven policing of the small number of people and places driving serious violence with stronger community trust, witness protection, and faster case clearance. It should also invest in prevention\u2014youth programs, mental-health and addiction services, violence interrupters, and reentry support\u2014so fewer residents are pulled into crime in the first place.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 35,
+      "response": "Brookhaven should combine focused, evidence-based policing against the small number of repeat violent offenders with stronger clearance rates, community trust, and targeted patrols in hot spots. At the same time, it needs prevention: youth jobs and mentoring, violence-interruption programs, mental health and addiction treatment, and support for neighborhoods where crime is concentrated.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 36,
+      "response": "Brookhaven should combine focused, data-driven policing on the small number of people and places driving serious violence with stronger community trust, witness protection, and swift prosecution for violent offenders. At the same time, it should invest in prevention\u2014youth programs, mental health and addiction services, jobs, and better street lighting\u2014to reduce the conditions that let crime grow.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 37,
+      "response": "Brookhaven should pair focused, data-driven enforcement against the small number of people and places driving violent crime with stronger community trust, witness protection, and faster case clearance. At the same time, it should invest in prevention\u2014youth programs, mental health and addiction services, housing stability, and reentry support\u2014so the city reduces both immediate violence and the conditions that fuel it.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 38,
+      "response": "Brookhaven should combine focused, data-driven policing against the small groups driving serious violence with stronger community trust, faster case clearance, and support for witnesses. At the same time, it should invest in prevention\u2014youth programs, mental health and addiction services, job pathways, and violence-interruption efforts\u2014so fewer people are pulled into crime in the first place.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 39,
+      "response": "Brookhaven should combine focused, evidence-based policing of the small number of people and places driving violence with stronger community trust, witness protection, and faster case clearance. At the same time, it should invest in prevention\u2014youth programs, mental-health and substance-use treatment, reentry support, and better lighting/housing stability\u2014so the conditions feeding crime are reduced.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 40,
+      "response": "Brookhaven should combine focused policing on the small number of people and places driving violent crime with strong community partnerships, better clearance rates, and targeted gun-violence intervention. At the same time, it needs prevention: youth programs, mental-health and addiction services, jobs, housing stability, and support for reentry so fewer people cycle back into crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 41,
+      "response": "Brookhaven should focus on evidence-based violence reduction: targeted policing of the small number of people and places driving serious crime, paired with community trust-building, witness protection, and quick, fair consequences for violent offenses. It should also invest in prevention\u2014youth programs, mental-health and substance-use treatment, reentry support, and fixing high-crime \u201chot spots\u201d with lighting, blight removal, and services.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 42,
+      "response": "Brookhaven should combine focused deterrence against the small share of repeat violent offenders with stronger community policing, faster case clearance, and targeted investments in youth programs, mental health, substance-abuse treatment, and blight reduction in the hardest-hit districts. It also needs to track results publicly so resources shift quickly toward what actually reduces shootings and repeat offenses.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 43,
+      "response": "Brookhaven should use a focused, evidence-based strategy: target the small number of people and places driving violent crime with sustained policing, while expanding community violence-intervention programs, youth jobs, mental-health/substance-use services, and reentry support. It also needs better clearance rates and trust-building so residents cooperate and offenders are held accountable quickly and fairly.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 44,
+      "response": "Brookhaven should combine focused, evidence-based policing against the small number of people and places driving serious violence with stronger community trust, faster case clearance, and targeted gun-crime enforcement. At the same time, it should invest in prevention\u2014youth programs, mental-health and addiction services, street outreach, and reentry support\u2014to reduce the conditions that keep crime rising.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 45,
+      "response": "Brookhaven should combine focused, data-driven policing of the small number of places and people driving serious violence with stronger community trust, faster case clearance, and targeted prevention programs for youth, mental health, addiction, and reentry. It also needs to measure results publicly so resources shift quickly toward strategies that actually reduce homicides and repeat offending.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 46,
+      "response": "Brookhaven should pair focused, accountable policing in the small number of places and networks driving serious violence with long-term prevention: youth jobs, mental-health and addiction services, violence-interruption programs, and faster clearance of shootings and homicides. It also needs transparent data tracking so leaders can shift resources toward strategies that measurably reduce crime without over-policing entire communities.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 47,
+      "response": "Brookhaven should combine focused, evidence-based policing against the small number of people and places driving serious violence with investments in prevention: youth programs, mental-health and addiction services, reentry support, and better street lighting/housing stability. It also needs transparent crime data and community partnerships so residents trust police enough to cooperate and help stop retaliation before it escalates.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 48,
+      "response": "Brookhaven should use a focused, evidence-based strategy: concentrate police and outreach resources on the small number of places and people driving serious violence, while improving clearance rates, witness protection, and community trust. At the same time, it should invest in prevention\u2014youth jobs, mental-health and addiction services, violence interrupters, and reentry support\u2014so fewer residents are pulled into crime in the first place.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "wolf",
+      "trial": 49,
+      "response": "Brookhaven should pair focused, evidence-based policing of the small number of people and places driving serious violence with stronger community trust, faster case clearance, and targeted gun-violence interventions. At the same time, it should invest in prevention\u2014youth programs, mental health and addiction services, housing stability, and reentry support\u2014so fewer residents are pulled into crime in the first place.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 0,
+      "response": "Brookhaven should combine focused, accountable policing against the small number of people and places driving serious violence with stronger prevention: youth programs, mental-health and addiction treatment, street outreach, and reentry support. It also needs better data-sharing and community trust so residents are willing to report crimes and cooperate with investigations.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 1,
+      "response": "Brookhaven should combine focused deterrence against the small number of repeat violent offenders with stronger community policing, faster investigations, and targeted investments in youth programs, mental-health services, addiction treatment, and blight reduction in the hardest-hit areas. It also needs transparent crime data and regular evaluation so resources go to strategies that demonstrably reduce violence.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 2,
+      "response": "Brookhaven should combine focused, data-driven policing of the small number of people and places driving serious violence with stronger community trust, witness protection, and faster case clearance. At the same time, it should invest in prevention\u2014youth programs, mental health and addiction treatment, job opportunities, and support for high-risk neighborhoods\u2014to reduce the conditions that fuel crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 3,
+      "response": "Brookhaven should combine focused deterrence against the small number of repeat violent offenders with stronger community policing, faster investigations, and targeted investments in youth programs, mental health care, and neighborhood jobs. It also needs transparent crime-data tracking so leaders can shift resources quickly to the districts and offenses driving the increase.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 4,
+      "response": "Brookhaven should use evidence-based policing focused on violent-crime hotspots while investing heavily in prevention: youth programs, mental-health and addiction services, job opportunities, and community outreach. It also needs faster case clearance and stronger trust between residents and police so serious offenders are held accountable and witnesses feel safe cooperating.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 5,
+      "response": "Brookhaven should combine focused deterrence against the small number of repeat violent offenders with stronger community policing, faster case clearance, and investments in youth programs, mental health care, addiction treatment, and jobs in the hardest-hit neighborhoods. It also needs to track crime data closely and fund only the strategies that measurably reduce violence.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 6,
+      "response": "Brookhaven should combine focused, data-driven policing against the small number of people and places driving violent crime with community trust-building, violence-interruption programs, and faster investigations to raise clearance rates. It should also invest in prevention\u2014youth jobs, mental health and addiction treatment, housing stability, and reentry support\u2014so fewer people are pulled into crime in the first place.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 7,
+      "response": "Brookhaven should combine focused, evidence-based policing against violent offenders with strong community prevention efforts\u2014youth programs, mental health and addiction services, job training, and support for at-risk neighborhoods. It also needs faster case clearance and better trust between residents and police so crimes are reported, investigated, and deterred effectively.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 8,
+      "response": "Brookhaven should combine focused, evidence-based policing against the small number of people and places driving serious violence with stronger community trust, faster case clearance, and violence-interruption programs. At the same time, it should invest in youth programs, mental-health and addiction services, jobs, and blight reduction so fewer people are pulled into crime in the first place.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 9,
+      "response": "Brookhaven should use a focused, evidence-based strategy: target the small number of people and places driving serious violence with community policing, swift investigations, and focused deterrence, while investing in youth programs, mental health support, housing stability, and reentry services. It should also track results publicly so resources go to what actually reduces shootings, homicides, and repeat offending.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 10,
+      "response": "Brookhaven should combine focused deterrence against the small number of repeat violent offenders with stronger community policing, faster case clearance, and targeted investments in youth programs, mental health, addiction treatment, and housing stability. It also needs to use data district by district so police and social services are deployed where violence is rising fastest.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 11,
+      "response": "Brookhaven should combine focused deterrence for the small number of people driving serious violence with stronger community policing, faster case clearance, and targeted investments in youth programs, mental health, housing, and jobs in the hardest-hit districts. It also needs transparent crime data and regular evaluation so resources go to strategies that actually reduce shootings and repeat offending.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 12,
+      "response": "Brookhaven should combine focused deterrence against the small number of people driving serious violence with stronger community policing, faster case clearance, and targeted investments in youth programs, mental health care, and addiction treatment. It also needs data-driven deployment in high-crime areas while building trust so residents are willing to report crimes and cooperate with investigations.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 13,
+      "response": "Brookhaven should combine focused, evidence-based policing on the small number of people and places driving serious violence with stronger community trust, faster investigations, and targeted gun-violence prevention. At the same time, it needs long-term investment in youth programs, mental-health and substance-use treatment, housing stability, and reentry support so crime is prevented before it starts.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 14,
+      "response": "Brookhaven should combine focused, data-driven policing on the small number of people and places driving serious violence with stronger community trust, witness protection, and faster clearance of violent crimes. At the same time, it needs prevention: youth programs, mental-health and addiction services, blight reduction, reentry support, and targeted investments in the districts most affected.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 15,
+      "response": "Brookhaven should pair focused, data-driven policing of the small number of people and places driving violent crime with stronger community trust, faster case clearance, and violence-interruption programs. At the same time, it needs prevention: youth programs, mental-health and addiction services, better reentry support, and jobs in the neighborhoods most affected.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 16,
+      "response": "Brookhaven should combine targeted, evidence-based policing focused on the small number of people and places driving violence with stronger community partnerships, violence-interruption programs, and faster clearance of serious cases. It should also invest in prevention\u2014youth programs, mental health and addiction services, housing stability, and reentry support\u2014so fewer residents are pulled into crime in the first place.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 17,
+      "response": "Brookhaven should combine focused deterrence against the small number of people driving serious violence with stronger community policing, witness protection, and faster clearance of shootings and homicides. At the same time, it should invest in proven prevention\u2014youth jobs, violence interruption, mental health/substance-use treatment, and support for high-risk neighborhoods\u2014to reduce the conditions that fuel crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 18,
+      "response": "Brookhaven should combine targeted, data-driven policing against the small share of people and places driving serious violence with community-based prevention: youth programs, mental-health and addiction services, better lighting, and support for neighborhoods most affected. It also needs to improve homicide clearance rates and trust in police so residents are more willing to report crimes and cooperate with investigations.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 19,
+      "response": "Brookhaven should combine focused deterrence against the small number of people driving serious violence with stronger community policing, faster case clearance, and investments in youth programs, mental-health/substance-use treatment, and jobs in the hardest-hit districts. It also needs transparent, data-driven deployment of resources so interventions are targeted, measured, and adjusted quickly.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 20,
+      "response": "Brookhaven should combine focused, data-driven policing for the small number of people and places driving serious violence with stronger community trust, witness protection, and swift prosecution of violent offenses. At the same time, it needs prevention: youth programs, mental-health and addiction treatment, job training, and blight reduction in the neighborhoods most affected.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 21,
+      "response": "Brookhaven should use a focused, evidence-based strategy: target the small number of people and places driving violent crime with intensive policing and prosecution, while expanding youth programs, mental health and addiction services, and job opportunities in high-risk neighborhoods. It also needs better clearance rates for shootings and homicides so offenders are caught quickly and residents regain trust in law enforcement.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 22,
+      "response": "Brookhaven should combine targeted, data-driven policing of violent hotspots with stronger community trust, quicker case clearance, and focused efforts against repeat violent offenders. At the same time, it should invest in prevention\u2014youth programs, mental-health and substance-abuse services, street lighting, and job opportunities in the districts most affected.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 23,
+      "response": "Brookhaven should combine focused deterrence against the small number of repeat violent offenders with stronger community policing, faster investigations, and targeted patrols in high-crime areas. At the same time, it needs prevention investments\u2014youth programs, mental health and addiction services, jobs, and violence-interruption efforts\u2014to reduce the conditions that drive crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 24,
+      "response": "Brookhaven should combine focused, evidence-based policing on the small number of people and places driving serious violence with strong community partnerships, violence interruption, and faster clearance of serious crimes. It also needs prevention: youth jobs and mentoring, mental-health and addiction services, better lighting and blight removal, and reentry support to reduce repeat offending.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 25,
+      "response": "Brookhaven should use focused, evidence-based policing on the small number of people and places driving violent crime, while rebuilding community trust so witnesses cooperate and cases are solved. At the same time, it needs prevention: youth programs, mental health and addiction treatment, reentry support, and better lighting/housing stability in high-crime areas.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 26,
+      "response": "Brookhaven should combine focused, data-driven policing on the small number of people and places driving violent crime with stronger community trust, faster case clearance, and targeted gun-violence prevention. It also needs long-term investments in youth programs, mental-health and addiction services, reentry support, and blight reduction so crime is prevented rather than only punished.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 27,
+      "response": "Brookhaven should focus on evidence-based policing targeted at violent hot spots, while also investing in prevention: youth programs, mental health and addiction services, street lighting, and support for people returning from prison. Reducing crime will likely require both accountability for serious offenders and sustained work on the conditions that make crime more likely.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 28,
+      "response": "Brookhaven should combine focused deterrence against the small number of people driving serious violence with stronger clearance rates, community policing, and targeted investments in youth programs, mental health, substance-use treatment, and blight reduction in high-risk areas. The city also needs transparent data tracking so it can quickly scale what works and stop what doesn\u2019t.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 29,
+      "response": "Brookhaven should combine focused, data-driven policing of the people and places driving serious violence with stronger community trust, faster investigations, and accountability. At the same time, it needs prevention: youth programs, mental-health and addiction services, job opportunities, and support for neighborhoods most affected by crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 30,
+      "response": "Brookhaven should combine focused, evidence-based policing on the small number of people and places driving serious violence with stronger community trust, witness protection, and faster case clearance. At the same time, it should invest in prevention\u2014youth programs, mental health and addiction treatment, job training, and support for high-risk neighborhoods\u2014to address the conditions that fuel crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 31,
+      "response": "Brookhaven should combine focused, evidence-based policing of violent offenders and hot spots with prevention efforts like youth programs, mental-health and addiction services, and better street lighting. It also needs transparent crime data and community partnerships so residents trust police enough to report crimes and cooperate.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 32,
+      "response": "Brookhaven should combine targeted enforcement against the small number of people driving serious violence with community-based prevention: violence interrupters, youth jobs, mental-health and addiction services, and better street lighting in high-risk areas. It also needs to rebuild trust in police so residents report crimes and investigations lead to swift, fair consequences.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 33,
+      "response": "Brookhaven should combine focused, evidence-based policing on the small number of people and places driving serious violence with stronger community trust, quicker case clearance, and support for witnesses. At the same time, it should invest in prevention\u2014youth programs, mental health and addiction services, jobs, housing stability, and blight reduction\u2014so fewer people are pulled into crime in the first place.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 34,
+      "response": "Brookhaven should combine focused enforcement against the small number of people and places driving serious violence with stronger community policing to rebuild trust and improve clearance rates. At the same time, it should invest in prevention\u2014youth jobs, mental-health and addiction services, violence-interruption programs, and better street lighting in high-risk areas.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 35,
+      "response": "Brookhaven should combine focused deterrence against the small number of repeat violent offenders with community policing, faster clearance of serious crimes, and targeted investment in youth programs, mental health care, and neighborhood services. It also needs data-driven deployment and close cooperation between police, residents, schools, and social agencies to prevent violence before it escalates.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 36,
+      "response": "Brookhaven should combine focused deterrence against repeat violent offenders with stronger community policing, faster clearance of serious crimes, and targeted investments in youth programs, mental health, addiction treatment, and jobs in the hardest-hit districts. It also needs better data-driven deployment and accountability so resources go where crime is actually rising.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 37,
+      "response": "Brookhaven should combine focused, data-driven policing against the small number of people and places driving serious violence with stronger community trust, faster case clearance, and illegal-gun enforcement. At the same time, it needs prevention investments\u2014youth programs, mental-health and addiction services, reentry support, and street outreach\u2014to stop crime before it starts.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 38,
+      "response": "Brookhaven should focus on evidence-based violence reduction: targeted policing against repeat violent offenders, stronger community trust and witness protection, and rapid intervention for at-risk youth. It also needs to invest in prevention\u2014mental health services, substance-use treatment, jobs programs, and neighborhood improvements\u2014so crime is reduced at its roots, not just punished after the fact.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 39,
+      "response": "Brookhaven should combine focused, data-driven policing of the small number of people and places driving violent crime with stronger homicide clearance efforts and community trust-building. At the same time, it needs prevention: youth programs, mental-health and addiction services, street outreach, better lighting, and job/housing support in the hardest-hit districts.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 40,
+      "response": "Brookhaven should combine focused, data-driven policing of the small number of people and places driving serious violence with stronger community trust and accountability. At the same time, it needs prevention: youth jobs, mental-health and addiction services, violence-interruption programs, and support for schools and neighborhoods most affected by crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 41,
+      "response": "Brookhaven should combine focused, accountable policing on the small number of people and places driving serious violence with strong prevention: youth programs, mental-health and addiction services, better lighting, and job opportunities in high-crime districts. It also needs transparent crime data and community trust so residents cooperate with police and city leaders can quickly adjust what works.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 42,
+      "response": "Brookhaven should combine targeted, data-driven policing of the small number of places and people driving serious violence with strong community partnerships, witness protection, and swift accountability for repeat violent offenders. At the same time, it needs prevention: youth programs, mental-health and addiction services, job opportunities, and blight reduction in the neighborhoods most affected.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 43,
+      "response": "Brookhaven should combine focused deterrence against the small number of repeat violent offenders with stronger community policing, faster case clearance, and targeted investments in youth programs, mental health, housing, and job opportunities in the hardest-hit districts. It should also use transparent crime data to deploy resources where violence is rising while building trust so residents are willing to report crimes and cooperate with investigations.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 44,
+      "response": "Brookhaven should pair focused, data-driven policing of the small number of people and places driving serious violence with stronger community trust and witness protection. It also needs prevention: youth programs, mental-health and addiction treatment, reentry support, and targeted investments in the neighborhoods where crime is rising fastest.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 45,
+      "response": "Brookhaven should focus on evidence-based violence reduction: targeted policing of the small number of people and places driving serious crime, paired with community trust-building, witness protection, and swift follow-up on shootings. At the same time, it should invest in prevention\u2014youth programs, mental health and addiction treatment, job opportunities, and better street lighting\u2014to address the conditions that let crime grow.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 46,
+      "response": "Brookhaven should combine targeted, data-driven policing against the small number of repeat violent offenders with stronger community trust, faster case clearance, and violence-interruption programs. It also needs long-term prevention: youth jobs, mental-health and addiction treatment, better lighting and housing support, and reentry services to stop cycles of crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 47,
+      "response": "Brookhaven should combine targeted, data-driven policing against repeat violent offenders with stronger community trust, faster case clearance, and violence-interruption programs. It also needs prevention: youth jobs, mental-health and addiction services, better lighting, and support for neighborhoods most affected by crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 48,
+      "response": "Brookhaven should combine focused, data-driven policing against the small number of repeat violent offenders with stronger community policing so residents trust police and cooperate. At the same time, it needs prevention: youth programs, jobs, mental-health and addiction services, better lighting, and support for neighborhoods most affected by violence.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "cancer",
+      "trial": 49,
+      "response": "Brookhaven should pair focused, data-driven policing on the small number of people and places driving serious violence with stronger prevention: youth programs, mental health and addiction treatment, job opportunities, and community-based violence interruption. It also needs better clearance rates and trust between residents and police so witnesses cooperate and repeat offenders are held accountable.",
+      "decision": "mixed",
+      "ok": true
+    }
+  ]
+}

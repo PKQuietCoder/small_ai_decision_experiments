@@ -1,0 +1,201 @@
+{
+  "experimentId": "crime-metaphor-paraphrase",
+  "experimentTitle": "The Metaphor Trap, Paraphrased: Is the Result Brittle to Surface Wording?",
+  "runId": "20260619T121842Z",
+  "runDate": "2026-06-19T12:19:42.369748+00:00",
+  "prompt": "Officials describe crime as {frame} the city of Marlowe. After years of calm,\nthe city has watched its crime rate rise steadily for three years running, and\nlately crime seems to be {spread} every part of town. Reported offenses grew\nfrom roughly 41,000 in one recent year to over 52,000 three years later, and\nthe jump in violent crime is the sharpest part of the trend: homicides went\nfrom about 290 to more than 470 over the same span.\n\nWhat should the city of Marlowe do about its rising crime? Answer in a sentence\nor two.\n",
+  "question": "What should the city of Marlowe do about its rising crime?",
+  "baseline": {
+    "source": "Thibodeau & Boroditsky (2011), Experiment 1 (N=455) \u2014 approximate reference; wording paraphrased",
+    "by_variant": {
+      "beast": {
+        "enforce": 0.74,
+        "reform": 0.26
+      },
+      "virus": {
+        "enforce": 0.56,
+        "reform": 0.44
+      }
+    }
+  },
+  "decisionOptions": [
+    {
+      "id": "enforce",
+      "label": "Enforcement"
+    },
+    {
+      "id": "reform",
+      "label": "Reform"
+    },
+    {
+      "id": "mixed",
+      "label": "Mixed"
+    }
+  ],
+  "models": [
+    "GPT-5.4"
+  ],
+  "variants": [
+    {
+      "id": "beast",
+      "label": "Beast",
+      "metaphor": ""
+    },
+    {
+      "id": "virus",
+      "label": "Virus",
+      "metaphor": ""
+    }
+  ],
+  "primaryDecision": "enforce",
+  "primaryDecisionLabel": "Enforcement",
+  "totalTrials": 100,
+  "trialsPerCell": 50,
+  "parseFailures": 0,
+  "excluded": 0,
+  "byVariant": [
+    {
+      "variantId": "beast",
+      "label": "Beast",
+      "metaphor": "",
+      "total": 50,
+      "counts": {
+        "enforce": 1,
+        "reform": 0,
+        "mixed": 49
+      },
+      "proportions": {
+        "enforce": 0.02,
+        "reform": 0.0,
+        "mixed": 0.98
+      },
+      "ci": {
+        "enforce": [
+          0.0035,
+          0.105
+        ],
+        "reform": [
+          0.0,
+          0.0714
+        ],
+        "mixed": [
+          0.895,
+          0.9965
+        ]
+      }
+    },
+    {
+      "variantId": "human_beast",
+      "label": "Humans \u00b7 Beast",
+      "metaphor": "",
+      "isBaseline": true,
+      "total": null,
+      "counts": {},
+      "proportions": {
+        "enforce": 0.74,
+        "reform": 0.26,
+        "mixed": 0.0
+      },
+      "ci": {}
+    },
+    {
+      "variantId": "virus",
+      "label": "Virus",
+      "metaphor": "",
+      "total": 50,
+      "counts": {
+        "enforce": 1,
+        "reform": 1,
+        "mixed": 48
+      },
+      "proportions": {
+        "enforce": 0.02,
+        "reform": 0.02,
+        "mixed": 0.96
+      },
+      "ci": {
+        "enforce": [
+          0.0035,
+          0.105
+        ],
+        "reform": [
+          0.0035,
+          0.105
+        ],
+        "mixed": [
+          0.8654,
+          0.989
+        ]
+      }
+    },
+    {
+      "variantId": "human_virus",
+      "label": "Humans \u00b7 Virus",
+      "metaphor": "",
+      "isBaseline": true,
+      "total": null,
+      "counts": {},
+      "proportions": {
+        "enforce": 0.56,
+        "reform": 0.44,
+        "mixed": 0.0
+      },
+      "ci": {}
+    }
+  ],
+  "byVariantModel": [
+    {
+      "variantId": "beast",
+      "label": "Beast",
+      "model": "GPT-5.4",
+      "total": 50,
+      "counts": {
+        "enforce": 1,
+        "reform": 0,
+        "mixed": 49
+      },
+      "proportions": {
+        "enforce": 0.02,
+        "reform": 0.0,
+        "mixed": 0.98
+      }
+    },
+    {
+      "variantId": "virus",
+      "label": "Virus",
+      "model": "GPT-5.4",
+      "total": 50,
+      "counts": {
+        "enforce": 1,
+        "reform": 1,
+        "mixed": 48
+      },
+      "proportions": {
+        "enforce": 0.02,
+        "reform": 0.02,
+        "mixed": 0.96
+      }
+    }
+  ],
+  "overall": {
+    "statistic": 1.0103,
+    "pValue": 0.6034122570381183,
+    "dof": 2,
+    "significant": false,
+    "cramersV": 0.1005,
+    "testable": true
+  },
+  "perModel": [
+    {
+      "model": "GPT-5.4",
+      "chiSquare": {
+        "statistic": 1.0103,
+        "pValue": 0.6034122570381183,
+        "dof": 2,
+        "significant": false,
+        "cramersV": 0.1005,
+        "testable": true
+      }
+    }
+  ]
+}

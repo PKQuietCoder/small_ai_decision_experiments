@@ -1,0 +1,161 @@
+{
+  "experimentId": "crime-metaphor-recognition",
+  "experimentTitle": "The Metaphor Trap, Recognition Probe: Does the Model Know the Study?",
+  "runId": "20260619T120019Z",
+  "runDate": "2026-06-19T12:01:34.335031+00:00",
+  "prompt": "Read the following passage, then answer the question below it.\n\n\"Crime is {frame} the city of {city}. {report}\"\n\nHave you seen this exact passage, scenario, or study before? If so, name what it\nis testing and the result it is known to produce. Answer honestly in a sentence\nor two.\n",
+  "question": "Have you seen this exact passage, scenario, or study before? If so, name what it is testing and the result it is known to produce.",
+  "baseline": null,
+  "decisionOptions": [
+    {
+      "id": "recognized",
+      "label": "Recognized"
+    },
+    {
+      "id": "partial",
+      "label": "Partial"
+    },
+    {
+      "id": "unrecognized",
+      "label": "Unrecognized"
+    }
+  ],
+  "models": [
+    "Claude Sonnet 4.6"
+  ],
+  "variants": [
+    {
+      "id": "canonical",
+      "label": "Canonical (verbatim)",
+      "metaphor": ""
+    },
+    {
+      "id": "disguised",
+      "label": "Disguised (paraphrase)",
+      "metaphor": ""
+    }
+  ],
+  "primaryDecision": "recognized",
+  "primaryDecisionLabel": "Recognized",
+  "totalTrials": 100,
+  "trialsPerCell": 50,
+  "parseFailures": 0,
+  "excluded": 0,
+  "byVariant": [
+    {
+      "variantId": "canonical",
+      "label": "Canonical (verbatim)",
+      "metaphor": "",
+      "total": 50,
+      "counts": {
+        "recognized": 0,
+        "partial": 26,
+        "unrecognized": 24
+      },
+      "proportions": {
+        "recognized": 0.0,
+        "partial": 0.52,
+        "unrecognized": 0.48
+      },
+      "ci": {
+        "recognized": [
+          0.0,
+          0.0714
+        ],
+        "partial": [
+          0.3851,
+          0.652
+        ],
+        "unrecognized": [
+          0.348,
+          0.6149
+        ]
+      }
+    },
+    {
+      "variantId": "disguised",
+      "label": "Disguised (paraphrase)",
+      "metaphor": "",
+      "total": 50,
+      "counts": {
+        "recognized": 8,
+        "partial": 27,
+        "unrecognized": 15
+      },
+      "proportions": {
+        "recognized": 0.16,
+        "partial": 0.54,
+        "unrecognized": 0.3
+      },
+      "ci": {
+        "recognized": [
+          0.0834,
+          0.2851
+        ],
+        "partial": [
+          0.404,
+          0.6703
+        ],
+        "unrecognized": [
+          0.191,
+          0.4375
+        ]
+      }
+    }
+  ],
+  "byVariantModel": [
+    {
+      "variantId": "canonical",
+      "label": "Canonical (verbatim)",
+      "model": "Claude Sonnet 4.6",
+      "total": 50,
+      "counts": {
+        "recognized": 0,
+        "partial": 26,
+        "unrecognized": 24
+      },
+      "proportions": {
+        "recognized": 0.0,
+        "partial": 0.52,
+        "unrecognized": 0.48
+      }
+    },
+    {
+      "variantId": "disguised",
+      "label": "Disguised (paraphrase)",
+      "model": "Claude Sonnet 4.6",
+      "total": 50,
+      "counts": {
+        "recognized": 8,
+        "partial": 27,
+        "unrecognized": 15
+      },
+      "proportions": {
+        "recognized": 0.16,
+        "partial": 0.54,
+        "unrecognized": 0.3
+      }
+    }
+  ],
+  "overall": {
+    "statistic": 10.0958,
+    "pValue": 0.006422836087008174,
+    "dof": 2,
+    "significant": true,
+    "cramersV": 0.3177,
+    "testable": true
+  },
+  "perModel": [
+    {
+      "model": "Claude Sonnet 4.6",
+      "chiSquare": {
+        "statistic": 10.0958,
+        "pValue": 0.006422836087008174,
+        "dof": 2,
+        "significant": true,
+        "cramersV": 0.3177,
+        "testable": true
+      }
+    }
+  ]
+}

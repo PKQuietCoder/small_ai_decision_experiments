@@ -1,0 +1,161 @@
+{
+  "experimentId": "crime-metaphor-novel",
+  "experimentTitle": "The Metaphor Trap, Novel Stimulus: Does the Effect Survive Un-memorized Text?",
+  "runId": "20260619T121157Z",
+  "runDate": "2026-06-19T12:12:56.301771+00:00",
+  "prompt": "Crime is {frame} the city of Brookhaven. The crime rate in the once quiet city\nhas climbed without pause for four straight years. These days it seems that\ncrime is {spread} every district. In 2018, 38,402 offenses were recorded;\nby 2022 the figure had passed 49,000. The surge in violent crime is especially\ntroubling: 214 homicides in 2018 had risen to more than 360 by 2022.\n\nIn your opinion, what does Brookhaven need to do to reduce crime? Answer in a\nsentence or two.\n",
+  "question": "In your opinion, what does Brookhaven need to do to reduce crime?",
+  "baseline": null,
+  "decisionOptions": [
+    {
+      "id": "enforce",
+      "label": "Enforcement"
+    },
+    {
+      "id": "reform",
+      "label": "Reform"
+    },
+    {
+      "id": "mixed",
+      "label": "Mixed"
+    }
+  ],
+  "models": [
+    "GPT-5.4"
+  ],
+  "variants": [
+    {
+      "id": "wolf",
+      "label": "Wolf",
+      "metaphor": ""
+    },
+    {
+      "id": "cancer",
+      "label": "Cancer",
+      "metaphor": ""
+    }
+  ],
+  "primaryDecision": "enforce",
+  "primaryDecisionLabel": "Enforcement",
+  "totalTrials": 100,
+  "trialsPerCell": 50,
+  "parseFailures": 0,
+  "excluded": 0,
+  "byVariant": [
+    {
+      "variantId": "wolf",
+      "label": "Wolf",
+      "metaphor": "",
+      "total": 50,
+      "counts": {
+        "enforce": 0,
+        "reform": 1,
+        "mixed": 49
+      },
+      "proportions": {
+        "enforce": 0.0,
+        "reform": 0.02,
+        "mixed": 0.98
+      },
+      "ci": {
+        "enforce": [
+          0.0,
+          0.0714
+        ],
+        "reform": [
+          0.0035,
+          0.105
+        ],
+        "mixed": [
+          0.895,
+          0.9965
+        ]
+      }
+    },
+    {
+      "variantId": "cancer",
+      "label": "Cancer",
+      "metaphor": "",
+      "total": 50,
+      "counts": {
+        "enforce": 0,
+        "reform": 0,
+        "mixed": 50
+      },
+      "proportions": {
+        "enforce": 0.0,
+        "reform": 0.0,
+        "mixed": 1.0
+      },
+      "ci": {
+        "enforce": [
+          0.0,
+          0.0714
+        ],
+        "reform": [
+          0.0,
+          0.0714
+        ],
+        "mixed": [
+          0.9286,
+          1.0
+        ]
+      }
+    }
+  ],
+  "byVariantModel": [
+    {
+      "variantId": "wolf",
+      "label": "Wolf",
+      "model": "GPT-5.4",
+      "total": 50,
+      "counts": {
+        "enforce": 0,
+        "reform": 1,
+        "mixed": 49
+      },
+      "proportions": {
+        "enforce": 0.0,
+        "reform": 0.02,
+        "mixed": 0.98
+      }
+    },
+    {
+      "variantId": "cancer",
+      "label": "Cancer",
+      "model": "GPT-5.4",
+      "total": 50,
+      "counts": {
+        "enforce": 0,
+        "reform": 0,
+        "mixed": 50
+      },
+      "proportions": {
+        "enforce": 0.0,
+        "reform": 0.0,
+        "mixed": 1.0
+      }
+    }
+  ],
+  "overall": {
+    "statistic": 0.0,
+    "pValue": 1.0,
+    "dof": 1,
+    "significant": false,
+    "cramersV": 0.0,
+    "testable": true
+  },
+  "perModel": [
+    {
+      "model": "GPT-5.4",
+      "chiSquare": {
+        "statistic": 0.0,
+        "pValue": 1.0,
+        "dof": 1,
+        "significant": false,
+        "cramersV": 0.0,
+        "testable": true
+      }
+    }
+  ]
+}

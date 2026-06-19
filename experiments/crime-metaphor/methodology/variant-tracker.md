@@ -9,12 +9,17 @@ Update this file whenever a variant is added, run, or its status changes.
 
 ## Variants
 
-| id | role | stimulus | metaphor pair | coding | human baseline | status |
-|---|---|---|---|---|---|---|
-| `crime-metaphor` | published study | canonical T&B Addison text, verbatim | beast / virus | enforce / reform / mixed | yes (T&B 2011) | **run + published** |
-| `crime-metaphor-recognition` | recognition probe | canonical (verbatim) vs disguised paraphrase | beast (held constant) | recognized / partial / unrecognized | n/a | draft — not yet run |
-| `crime-metaphor-novel` | novel isomorphic control | new city (Brookhaven) + new numbers | wolf / cancer | enforce / reform / mixed | none (no human data) | draft — not yet run |
-| `crime-metaphor-paraphrase` | surface-form control | paraphrased report, new city (Marlowe) + new numbers | beast / virus | enforce / reform / mixed | approximate (T&B 2011) | draft — not yet run |
+| id | role | stimulus | metaphor pair | coding | human baseline | status | headline result |
+|---|---|---|---|---|---|---|---|
+| `crime-metaphor` | published study | canonical T&B Addison text, verbatim | beast / virus | enforce / reform / mixed | yes (T&B 2011) | **run + published** | models smooth the bias; swings −9 to +9, ~all n.s. |
+| `crime-metaphor-recognition` | recognition probe | canonical (verbatim) vs disguised paraphrase | beast (held constant) | recognized / partial / unrecognized | n/a | **run 2026-06-19 (6 models)** | recognition real, scales with capability (Haiku 22% → GPT-5.5 100%) |
+| `crime-metaphor-novel` | novel isomorphic control | new city (Brookhaven) + new numbers | wolf / cancer | enforce / reform / mixed | none (no human data) | **run 2026-06-19 (6 models)** | flat survives un-memorized text; swings +4 to −1, all n.s. |
+| `crime-metaphor-paraphrase` | surface-form control | paraphrased report, new city (Marlowe) + new numbers | beast / virus | enforce / reform / mixed | approximate (T&B 2011) | **run 2026-06-19 (6 models)** | flat for 5/6; Sonnet −19 is coding noise (opposite direction) |
+
+Data for the three follow-ups lives in [`../followups/`](../followups/)
+(`summary.csv` + raw runs + analysis per control). Combined verdict: recognition is
+real but does not become imitation — see [`Limitations.md`](./Limitations.md) and
+[`../followups/README.md`](../followups/README.md).
 
 ## What each control tests
 

@@ -86,6 +86,65 @@ Full numbers: `results/summary_by_condition.csv` and `results/significance.csv`.
 
 ---
 
+## Contamination controls (follow-up runs, 2026-06-19)
+
+The Addison passage is the verbatim, widely published T&B stimulus, so a fair objection is
+that the flat response above is not reasoning but recognition — the models having read the
+study during training and echoing (or dodging) it. We ran three controls on the same six
+models (50 trials per condition per model; **1,800 trials**) to test that directly. Data is in
+[`followups/`](followups/) (one folder per control, each with `summary.csv`, raw runs, and
+analysis); the design rationale is in [`methodology/Limitations.md`](methodology/Limitations.md).
+
+**1. Recognition probe — do the models know the study?** Asked outright, the frontier models
+name "Thibodeau and Boroditsky (2011)" and the beast/virus paradigm. Share of trials showing
+any recognition (recognized + partial), canonical / disguised stimulus:
+
+| Model | Canonical | Disguised |
+|-------|----------:|----------:|
+| Claude Opus 4.8 | 58% | 100% |
+| Claude Sonnet 4.6 | 52% | 70% |
+| Claude Haiku 4.5 | 22% | 10% |
+| GPT-5.5 | 100% | 100% |
+| GPT-5.4 | 76% | 100% |
+| GPT-5.4 mini | 94% | 86% |
+
+Recognition is real and scales with capability — only the smallest model (Haiku) mostly fails
+to recognize it. Two wording effects qualify the canonical-vs-disguised contrast: the probe
+asked about "this *exact* passage" (so the verbatim text drew hedged "partial" recall), and each
+trial showed only the beast cue. The top line holds regardless: **the material is in training,
+and the larger models clearly know it.**
+
+**2. Novel isomorphic stimulus — does the flat response survive un-memorized text?** Same
+predator-vs-pathogen structure, but a new city, new numbers, and novel metaphors (crime as a
+marauding *wolf* vs a growing *cancer*). This is the decisive control: if recognition drove the
+flatness, an unfamiliar stimulus should let the swing reappear. It does not.
+
+| Model | wolf | cancer | swing | *p* |
+|-------|-----:|-------:|------:|----:|
+| Claude Opus 4.8 | 44% | 40% | +4 | .41 |
+| Claude Sonnet 4.6 | 47% | 45% | +2 | .57 |
+| Claude Haiku 4.5 | 40% | 41% | −1 | 1.0 |
+| GPT-5.5 | 50% | 50% | 0 | n/a |
+| GPT-5.4 | 49% | 50% | −1 | 1.0 |
+| GPT-5.4 mini | 49% | 50% | −1 | 1.0 |
+
+**3. Paraphrase control — is the result brittle to surface wording?** Same beast/virus
+manipulation and facts, rewritten report and new city/numbers. Five of six models stay flat
+(swings +1 to +7, none significant). The exception is Sonnet 4.6 (−19, *p* < .001) — but the raw
+answers are near-identical "targeted policing + investigate root causes" packages in both
+conditions, with the judge tipping borderline-balanced answers differently; it runs *opposite*
+the human direction (virus more punitive than beast), so it is coding noise, the same caveat
+noted above, slightly larger here.
+
+**Verdict.** Recognition of the study is real and widespread, **yet no model reproduces the
+human swing — not on the canonical text, not on a paraphrase, and not on novel metaphors it has
+never seen.** Knowing the study does not become imitation. The flat response is a general
+trained disposition to resist loaded framing, not naïve recall of this paper, so the
+contamination concern does not explain away the main finding. See
+[`followups/README.md`](followups/README.md) for the full write-up.
+
+---
+
 ## Package contents
 
 ```
@@ -108,6 +167,14 @@ crime-metaphor/
 │   │                                   # Wilson CIs, chi-square, human-baseline overlay)
 │   ├── summary_by_condition.csv    # per source × condition counts + enforcement share
 │   └── significance.csv            # per-model chi-square (statistic, dof, p, Cramér's V)
+├── followups/                      # contamination controls (6 models each; see section above)
+│   ├── README.md                   # headline results + verdict
+│   ├── recognition/                # does the model recognize the study?
+│   ├── novel/                      # does the flat response survive un-memorized text?
+│   └── paraphrase/                 # is the result brittle to surface wording?
+│       ├── summary.csv             # per model × condition: counts, shares, swing, p
+│       ├── raw/runs/<model>__<runId>.json   # full per-trial data (subject + judge)
+│       └── analysis/<model>__<runId>.json   # aggregated stats per model
 └── crime-metaphor-data-package.zip # everything above, zipped for download
 ```
 

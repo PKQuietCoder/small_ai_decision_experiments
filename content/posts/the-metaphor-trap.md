@@ -123,6 +123,62 @@ bars carry **no enforcement at all** — only reform and balanced answers — an
 same whether crime is a beast or a virus. The significance callout reports Opus's own
 beast-vs-virus test (not significant).
 
+## Does the model just know the study?
+
+One objection cuts deeper than the rest. The Addison passage is the *exact* stimulus from a
+widely cited paper, so a frontier model has almost certainly read it — and its result — during
+training. If the models look unbiased only because they recognize the test and sidestep it, the
+finding would be an artifact rather than a behavior. To separate those two explanations we ran
+three controls on all six models (50 trials per condition each, 1,800 further trials).
+
+**First: the models do know the study.** Asked outright whether they recognized the scenario,
+the larger models name it — *Thibodeau and Boroditsky (2011)*, the beast-versus-virus paradigm —
+and recognition tracks capability. The share of answers showing any recognition, for the
+verbatim passage and for a disguised paraphrase of it:
+
+| Model | Verbatim passage | Disguised |
+|---|---:|---:|
+| Claude Opus 4.8 | 58% | 100% |
+| Claude Sonnet 4.6 | 52% | 70% |
+| Claude Haiku 4.5 | 22% | 10% |
+| GPT-5.5 | 100% | 100% |
+| GPT-5.4 | 76% | 100% |
+| GPT-5.4-mini | 94% | 86% |
+
+Only the smallest model, Haiku, usually fails to place it. The material is plainly in the
+training data, and the frontier models clearly know it. Two qualifications on the numbers: we
+asked about "this *exact* passage", so models often hedged on verbatim recall of the canonical
+text even while naming the paradigm, and each probe showed only the beast frame, which is itself
+a cue.
+
+**Second, and decisive: the flat response survives on text no model has seen.** We rebuilt the
+study from scratch — a different city, different statistics, and novel metaphors: crime as a
+marauding **wolf** versus a growing **cancer**, a predator-versus-pathogen contrast with the same
+logic as beast-versus-virus but no memorized surface. If recognition were doing the work, an
+unfamiliar stimulus should let the swing return. It does not.
+
+| Model | Wolf | Cancer | Swing | Significant? |
+|---|---:|---:|---:|---|
+| Claude Opus 4.8 | 44% | 40% | +4 | no (*p* = .41) |
+| Claude Sonnet 4.6 | 47% | 45% | +2 | no (*p* = .57) |
+| Claude Haiku 4.5 | 40% | 41% | −1 | no (*p* = 1.0) |
+| GPT-5.5 | 50% | 50% | 0 | no |
+| GPT-5.4 | 49% | 50% | −1 | no (*p* = 1.0) |
+| GPT-5.4-mini | 49% | 50% | −1 | no (*p* = 1.0) |
+
+A third control — the original beast/virus framing with the report paraphrased and renumbered —
+is flat for five of six models as well. The lone exception, Sonnet 4.6, again produces
+near-identical answers across conditions and its difference runs *opposite* the human direction:
+the same coding wobble flagged earlier, not a reproduction of the bias.
+
+The conclusion is narrow but firm. Recognition is real, yet it does not become imitation. Knowing
+the study does not make a model copy its result — not on the canonical text, not on a paraphrase,
+and not on metaphors it has never encountered. The flat response is a trained disposition to
+resist loaded framing, not naïve recall of one paper. What this cannot prove is the converse: a
+capable model's resistance to framing is itself learned, and no novel stimulus escapes it. We
+measure that disposition rather than claim to have removed it. The recognition, novel-stimulus,
+and paraphrase runs ship in full in the experiment's data package.
+
 ## Caveats
 
 A faithful replication still has limits. The judge is a language model, not the paper's two
@@ -131,28 +187,10 @@ model, but the Sonnet result above shows how coding borderline-balanced answers 
 The models also tend to answer with comprehensive "do both" packages, which is partly why so
 much lands in "mixed." This is a single scenario (Addison, Experiment 1 of the paper), and
 results will shift with model versions and wording. Treat it as evidence that today's models
-resist this particular framing — not as a universal claim that LLMs are immune to metaphor.
-
-### Could the model already know the study?
-
-There is a deeper caveat worth stating plainly. The Addison passage is the *exact* stimulus
-from a widely cited paper. A frontier model has almost certainly read it — along with the
-result and the discussion around it — during training. So the model is not a naïve subject; it
-may recognize the test. That cuts two ways. If a model were simply reproducing what it had
-read, it would recreate the human swing — but none of them do. What we see instead, including
-Opus naming the metaphor as a persuasion technique, looks less like recall of this paper and
-more like a general trained disposition to resist loaded framing. We cannot fully separate
-those two explanations from this run alone, and the more honest claim is the second one: the
-result is about a learned policy, not proof that the bias is absent.
-
-To bound this rather than wave it away, we are extending the series with three controls that
-share this study's pipeline: a **recognition probe** that asks models directly whether they
-recognize the scenario and what result they expect; a **novel isomorphic stimulus** that keeps
-the predator-versus-pathogen structure but rebuilds every memorable surface detail (a new city,
-new numbers, and fresh metaphors the model has not seen); and a **paraphrase** control that
-keeps the beast/virus manipulation but rewrites the surrounding wording. If the flat response
-holds on text the model has demonstrably never seen, recognition is largely ruled out. The full
-method note and a tracker for these follow-ups ship in the experiment's downloadable data package.
+resist this particular framing — not as a universal claim that LLMs are immune to metaphor. The
+related worry — that the models only look unbiased because they recognize this famous stimulus —
+is addressed directly above ("Does the model just know the study?"); recognition is real but
+does not reproduce the swing.
 
 *Every model in the catalog can be rerun from the command line; the chart regenerates from
 the recorded run.*

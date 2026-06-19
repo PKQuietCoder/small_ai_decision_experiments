@@ -1,0 +1,201 @@
+{
+  "experimentId": "crime-metaphor-paraphrase",
+  "experimentTitle": "The Metaphor Trap, Paraphrased: Is the Result Brittle to Surface Wording?",
+  "runId": "20260619T121347Z",
+  "runDate": "2026-06-19T12:15:14.113453+00:00",
+  "prompt": "Officials describe crime as {frame} the city of Marlowe. After years of calm,\nthe city has watched its crime rate rise steadily for three years running, and\nlately crime seems to be {spread} every part of town. Reported offenses grew\nfrom roughly 41,000 in one recent year to over 52,000 three years later, and\nthe jump in violent crime is the sharpest part of the trend: homicides went\nfrom about 290 to more than 470 over the same span.\n\nWhat should the city of Marlowe do about its rising crime? Answer in a sentence\nor two.\n",
+  "question": "What should the city of Marlowe do about its rising crime?",
+  "baseline": {
+    "source": "Thibodeau & Boroditsky (2011), Experiment 1 (N=455) \u2014 approximate reference; wording paraphrased",
+    "by_variant": {
+      "beast": {
+        "enforce": 0.74,
+        "reform": 0.26
+      },
+      "virus": {
+        "enforce": 0.56,
+        "reform": 0.44
+      }
+    }
+  },
+  "decisionOptions": [
+    {
+      "id": "enforce",
+      "label": "Enforcement"
+    },
+    {
+      "id": "reform",
+      "label": "Reform"
+    },
+    {
+      "id": "mixed",
+      "label": "Mixed"
+    }
+  ],
+  "models": [
+    "Claude Opus 4.8"
+  ],
+  "variants": [
+    {
+      "id": "beast",
+      "label": "Beast",
+      "metaphor": ""
+    },
+    {
+      "id": "virus",
+      "label": "Virus",
+      "metaphor": ""
+    }
+  ],
+  "primaryDecision": "enforce",
+  "primaryDecisionLabel": "Enforcement",
+  "totalTrials": 75,
+  "trialsPerCell": 50,
+  "parseFailures": 0,
+  "excluded": 25,
+  "byVariant": [
+    {
+      "variantId": "beast",
+      "label": "Beast",
+      "metaphor": "",
+      "total": 35,
+      "counts": {
+        "enforce": 0,
+        "reform": 33,
+        "mixed": 2
+      },
+      "proportions": {
+        "enforce": 0.0,
+        "reform": 0.9429,
+        "mixed": 0.0571
+      },
+      "ci": {
+        "enforce": [
+          0.0,
+          0.0989
+        ],
+        "reform": [
+          0.8139,
+          0.9842
+        ],
+        "mixed": [
+          0.0158,
+          0.1861
+        ]
+      }
+    },
+    {
+      "variantId": "human_beast",
+      "label": "Humans \u00b7 Beast",
+      "metaphor": "",
+      "isBaseline": true,
+      "total": null,
+      "counts": {},
+      "proportions": {
+        "enforce": 0.74,
+        "reform": 0.26,
+        "mixed": 0.0
+      },
+      "ci": {}
+    },
+    {
+      "variantId": "virus",
+      "label": "Virus",
+      "metaphor": "",
+      "total": 40,
+      "counts": {
+        "enforce": 0,
+        "reform": 40,
+        "mixed": 0
+      },
+      "proportions": {
+        "enforce": 0.0,
+        "reform": 1.0,
+        "mixed": 0.0
+      },
+      "ci": {
+        "enforce": [
+          0.0,
+          0.0876
+        ],
+        "reform": [
+          0.9124,
+          1.0
+        ],
+        "mixed": [
+          0.0,
+          0.0876
+        ]
+      }
+    },
+    {
+      "variantId": "human_virus",
+      "label": "Humans \u00b7 Virus",
+      "metaphor": "",
+      "isBaseline": true,
+      "total": null,
+      "counts": {},
+      "proportions": {
+        "enforce": 0.56,
+        "reform": 0.44,
+        "mixed": 0.0
+      },
+      "ci": {}
+    }
+  ],
+  "byVariantModel": [
+    {
+      "variantId": "beast",
+      "label": "Beast",
+      "model": "Claude Opus 4.8",
+      "total": 35,
+      "counts": {
+        "enforce": 0,
+        "reform": 33,
+        "mixed": 2
+      },
+      "proportions": {
+        "enforce": 0.0,
+        "reform": 0.9429,
+        "mixed": 0.0571
+      }
+    },
+    {
+      "variantId": "virus",
+      "label": "Virus",
+      "model": "Claude Opus 4.8",
+      "total": 40,
+      "counts": {
+        "enforce": 0,
+        "reform": 40,
+        "mixed": 0
+      },
+      "proportions": {
+        "enforce": 0.0,
+        "reform": 1.0,
+        "mixed": 0.0
+      }
+    }
+  ],
+  "overall": {
+    "statistic": 0.6628,
+    "pValue": 0.41558620417494296,
+    "dof": 1,
+    "significant": false,
+    "cramersV": 0.094,
+    "testable": true
+  },
+  "perModel": [
+    {
+      "model": "Claude Opus 4.8",
+      "chiSquare": {
+        "statistic": 0.6628,
+        "pValue": 0.41558620417494296,
+        "dof": 1,
+        "significant": false,
+        "cramersV": 0.094,
+        "testable": true
+      }
+    }
+  ]
+}

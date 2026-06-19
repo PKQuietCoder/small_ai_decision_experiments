@@ -35,11 +35,17 @@ work. When unsure, **remove** rather than add.
 - **Focus:** visible 2px ink outline (`--ring`). Accessibility is non-negotiable.
 - **Motion:** ≤200ms, ease-out `cubic-bezier(0.2,0,0,1)`, only to express a state change.
 
-## Voice (applies to all site copy and generated posts)
+## Voice — the default for ALL site content
 Calm, authoritative, second-person, citation-anchored. **No emoji. No exclamation marks in
 body copy. No marketing verbs** ("unleash", "supercharge", "delightful"). The work is the
 value proposition. Captions use the Nature house style: bold figure number + vertical bar
 ("**Figure 1 |** …").
+
+This restrained editorial voice is the **default** for everything: blog posts, the site UI,
+docs, and READMEs. It is **not** overridden by the `persuasive-writing` skill. That skill's
+marketing/persuasive voice is **opt-in** — apply it only when the user **explicitly** asks for
+marketing or promotional copy (a landing page, pitch, ad copy, launch announcement). Absent an
+explicit request, keep this voice.
 
 ## Reusable building blocks
 - `.eyebrow` utility (small-caps sans kicker) — use for category/section labels.

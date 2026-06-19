@@ -1,10 +1,15 @@
 ---
 name: persuasive-writing
-description: Persuasive writing rules for marketing, emails, pitches, landing pages, storytelling, documents, and code documentation. Use when writing or reviewing any non-code prose, including READMEs, docs, emails, pitches, or landing page copy.
+description: Persuasive/marketing writing rules for outward-facing promotional copy — marketing and landing pages, pitches, ad copy, launch announcements, and sales emails. Opt-in only — apply when the user explicitly asks for marketing or persuasive copy. Do NOT use for this repo's default content (blog posts, docs, READMEs, UI text), which keeps the restrained editorial voice in .claude/rules/design-system.md.
 user-invocable: true
 ---
 
 # Non-Technical Writing Rules
+
+> **Scope.** This is an opt-in marketing voice. Apply it **only** when the user explicitly asks
+> for persuasive or marketing copy. The default voice for everything in this repo (posts, docs,
+> READMEs, UI) is the restrained editorial voice defined in `.claude/rules/design-system.md` —
+> do not apply these rules to that content unless asked.
 
 ## Core Principle
 

@@ -29,19 +29,6 @@ export default function Home() {
 
   return (
     <div className="container mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16">
-      {!siteLoading && site?.intro && (
-        <section className="mb-10 animate-in fade-in slide-in-from-bottom-4 duration-700">
-          <div className="rounded-none border border-border bg-card p-6 md:p-8">
-            <h2 className="eyebrow mb-3">
-              About
-            </h2>
-            <p className="max-w-3xl text-base leading-relaxed text-foreground/80 md:text-lg">
-              {site.intro}
-            </p>
-          </div>
-        </section>
-      )}
-
       <section className="mb-10 animate-in fade-in slide-in-from-bottom-4 duration-700">
         {siteLoading ? (
           <div className="space-y-4">

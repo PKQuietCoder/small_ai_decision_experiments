@@ -30,10 +30,11 @@ CLAUDE.local.md            # personal local overrides (git-ignored)
 ├── commands/              # custom slash commands (/review, /fix-issue)
 │   ├── review.md
 │   └── fix-issue.md
-├── skills/                # task-triggered skills (loaded on demand)
-│   └── deploy/
-│       ├── SKILL.md       # build / run / deploy this app
-│       └── deploy-config.md
+├── skills/                # task-triggered skills (loaded on demand by description)
+│   ├── deploy/
+│   │   ├── SKILL.md       # build / run / deploy this app
+│   │   └── deploy-config.md
+│   └── persuasive-writing/SKILL.md   # persuasion rules for marketing/email/pitch/landing copy
 ├── agents/                # specialized subagents
 │   ├── code-reviewer.md
 │   └── security-auditor.md

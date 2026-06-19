@@ -8,7 +8,6 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/experiments", label: "Experiments" },
     { href: "/about", label: "About" },
   ];
 

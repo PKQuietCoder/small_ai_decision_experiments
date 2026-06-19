@@ -25,20 +25,3 @@ export function usePost(slug: string) {
     retry: false, // Don't retry on 404
   });
 }
-
-export function useExperiments() {
-  return useQuery({
-    queryKey: ["experiments"],
-    queryFn: api.getExperiments,
-    staleTime: 1000 * 60 * 5,
-  });
-}
-
-export function useExperiment(id: string) {
-  return useQuery({
-    queryKey: ["experiment", id],
-    queryFn: () => api.getExperiment(id),
-    staleTime: 1000 * 60 * 5,
-    retry: false,
-  });
-}

@@ -1,103 +1,102 @@
-import { Link } from "wouter";
+import { useMemo, useState } from "react";
 import { useSite, usePosts } from "@/hooks/use-api";
 import { Skeleton } from "@/components/ui/skeleton";
-import { Badge } from "@/components/ui/badge";
-import { format } from "date-fns";
+import { PostCard } from "@/components/post-card";
+
+const ALL = "All Articles";
 
 export default function Home() {
   const { data: site, isLoading: siteLoading } = useSite();
   const { data: posts, isLoading: postsLoading } = usePosts();
+  const [active, setActive] = useState(ALL);
+
+  const categories = useMemo(() => {
+    const seen = new Set<string>();
+    for (const post of posts ?? []) {
+      if (post.category) seen.add(post.category);
+    }
+    return [ALL, ...Array.from(seen)];
+  }, [posts]);
+
+  const visible = useMemo(() => {
+    const list = (posts ?? []).filter(
+      (post) => active === ALL || post.category === active,
+    );
+    return [...list].sort((a, b) => Number(b.featured) - Number(a.featured));
+  }, [posts, active]);
+
+  const author = site?.author ?? "The Lab";
 
   return (
-    <div className="container mx-auto px-4 md:px-6 py-12 md:py-20 max-w-4xl">
-      <section className="mb-20 animate-in fade-in slide-in-from-bottom-4 duration-700">
+    <div className="container mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16">
+      <section className="mb-10 animate-in fade-in slide-in-from-bottom-4 duration-700">
         {siteLoading ? (
           <div className="space-y-4">
-            <Skeleton className="h-12 w-3/4 max-w-md" />
+            <Skeleton className="h-10 w-2/3 max-w-md" />
             <Skeleton className="h-6 w-full max-w-2xl" />
-            <Skeleton className="h-6 w-2/3 max-w-xl" />
           </div>
         ) : (
-          <div className="space-y-6">
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground font-serif">
+          <div className="space-y-4">
+            <h1 className="font-serif text-4xl font-bold tracking-tight text-foreground md:text-5xl">
               {site?.title}
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl">
+            <p className="max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-xl">
               {site?.tagline}
             </p>
           </div>
         )}
       </section>
 
-      <section>
-        <h2 className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-8 border-b border-border/50 pb-4">
-          Latest Publications
-        </h2>
-        
-        {postsLoading ? (
-          <div className="space-y-12">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="space-y-4">
-                <Skeleton className="h-6 w-32" />
-                <Skeleton className="h-8 w-3/4" />
-                <Skeleton className="h-20 w-full" />
-              </div>
-            ))}
-          </div>
-        ) : !posts || posts.length === 0 ? (
-          <div className="py-12 text-center text-muted-foreground bg-muted/20 rounded-xl border border-dashed border-border">
-            <p>No publications found.</p>
-          </div>
-        ) : (
-          <div className="space-y-16">
-            {posts.map((post, i) => (
-              <article 
-                key={post.slug} 
-                className="group relative animate-in fade-in slide-in-from-bottom-4 duration-700 fill-mode-both"
-                style={{ animationDelay: `${(i + 1) * 150}ms` }}
+      {!postsLoading && categories.length > 1 && (
+        <nav className="mb-10 flex flex-wrap gap-2 border-b border-border/60 pb-6">
+          {categories.map((category) => {
+            const isActive = active === category;
+            return (
+              <button
+                key={category}
+                type="button"
+                onClick={() => setActive(category)}
+                className={`rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-wider transition-colors ${
+                  isActive
+                    ? "bg-foreground text-background"
+                    : "bg-muted/60 text-muted-foreground hover:bg-muted hover:text-foreground"
+                }`}
               >
-                <Link href={`/posts/${post.slug}`} className="absolute inset-0 z-10">
-                  <span className="sr-only">Read {post.title}</span>
-                </Link>
-                
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3 text-sm text-muted-foreground font-mono">
-                    <time dateTime={post.date}>
-                      {format(new Date(post.date), "MMMM d, yyyy")}
-                    </time>
-                    <span>&middot;</span>
-                    <span>{post.readingMinutes} min read</span>
-                    {post.featured && (
-                      <>
-                        <span>&middot;</span>
-                        <Badge variant="secondary" className="bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
-                          Featured
-                        </Badge>
-                      </>
-                    )}
-                  </div>
-                  
-                  <h3 className="text-2xl md:text-3xl font-bold font-serif text-foreground group-hover:text-primary transition-colors duration-300">
-                    {post.title}
-                  </h3>
-                  
-                  <p className="text-lg text-muted-foreground leading-relaxed line-clamp-3">
-                    {post.excerpt}
-                  </p>
-                  
-                  <div className="flex items-center gap-2 pt-2">
-                    {post.tags.map(tag => (
-                      <span key={tag} className="text-xs font-medium text-muted-foreground bg-muted px-2.5 py-1 rounded-md">
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
+                {category}
+              </button>
+            );
+          })}
+        </nav>
+      )}
+
+      {postsLoading ? (
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {[1, 2, 3].map((i) => (
+            <div key={i} className="overflow-hidden rounded-2xl border border-card-border bg-card">
+              <Skeleton className="aspect-[16/10] w-full rounded-none" />
+              <div className="space-y-4 p-6">
+                <Skeleton className="h-5 w-20" />
+                <Skeleton className="h-7 w-3/4" />
+                <div className="flex items-center gap-3">
+                  <Skeleton className="h-9 w-9 rounded-full" />
+                  <Skeleton className="h-8 w-32" />
                 </div>
-              </article>
-            ))}
-          </div>
-        )}
-      </section>
+                <Skeleton className="h-16 w-full" />
+              </div>
+            </div>
+          ))}
+        </div>
+      ) : visible.length === 0 ? (
+        <div className="rounded-xl border border-dashed border-border bg-muted/20 py-16 text-center text-muted-foreground">
+          <p>No publications found.</p>
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {visible.map((post, i) => (
+            <PostCard key={post.slug} post={post} author={author} index={i} />
+          ))}
+        </div>
+      )}
     </div>
   );
 }

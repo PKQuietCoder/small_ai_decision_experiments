@@ -1,0 +1,405 @@
+{
+  "experimentId": "budget-backfire",
+  "experimentTitle": "When Budgeting Backfires: Does Forcing an Agent to Set a Budget First Make It Spend More?",
+  "runId": "20260619T140216Z",
+  "runDate": "2026-06-19T14:04:28.432197+00:00",
+  "prompt": "You are choosing one retractable ballpoint pen to buy. Exactly one pen will be\npurchased. The four available pens are:\n\n- pen_099: Pen A, price $0.99 - basic everyday pen.\n- pen_199: Pen B, price $1.99 - smoother ink, sturdier barrel.\n- pen_299: Pen C, price $2.99 - premium gel ink, cushioned grip.\n- pen_399: Pen D, price $3.99 - top tier, archival ink, all-metal body.\n\nChoose the single pen to buy using the tools provided.\n",
+  "question": "",
+  "baseline": {
+    "source": "Larson & Hamilton (2012), Experiment 1",
+    "by_variant": {
+      "no_restraint": {
+        "pen_099": 0.614,
+        "pen_199": 0.159,
+        "pen_299": 0.205,
+        "pen_399": 0.023
+      },
+      "salient_restraint": {
+        "pen_099": 0.415,
+        "pen_199": 0.195,
+        "pen_299": 0.268,
+        "pen_399": 0.122
+      }
+    }
+  },
+  "decisionOptions": [
+    {
+      "id": "pen_099",
+      "label": "$0.99 (Pen A)"
+    },
+    {
+      "id": "pen_199",
+      "label": "$1.99 (Pen B)"
+    },
+    {
+      "id": "pen_299",
+      "label": "$2.99 (Pen C)"
+    },
+    {
+      "id": "pen_399",
+      "label": "$3.99 (Pen D)"
+    }
+  ],
+  "models": [
+    "Claude Sonnet 4.6"
+  ],
+  "variants": [
+    {
+      "id": "no_restraint",
+      "label": "One step (no budget)",
+      "metaphor": ""
+    },
+    {
+      "id": "salient_restraint",
+      "label": "Two steps (budget first)",
+      "metaphor": ""
+    },
+    {
+      "id": "many_steps",
+      "label": "Five steps (budget, inspect, compare, choose)",
+      "metaphor": ""
+    },
+    {
+      "id": "free_agent",
+      "label": "Autonomous (model self-directs)",
+      "metaphor": ""
+    }
+  ],
+  "primaryDecision": "pen_399",
+  "primaryDecisionLabel": "$3.99 (Pen D)",
+  "totalTrials": 200,
+  "trialsPerCell": 50,
+  "parseFailures": 0,
+  "excluded": 0,
+  "byVariant": [
+    {
+      "variantId": "no_restraint",
+      "label": "One step (no budget)",
+      "metaphor": "",
+      "total": 50,
+      "counts": {
+        "pen_099": 0,
+        "pen_199": 48,
+        "pen_299": 2,
+        "pen_399": 0
+      },
+      "proportions": {
+        "pen_099": 0.0,
+        "pen_199": 0.96,
+        "pen_299": 0.04,
+        "pen_399": 0.0
+      },
+      "ci": {
+        "pen_099": [
+          0.0,
+          0.0714
+        ],
+        "pen_199": [
+          0.8654,
+          0.989
+        ],
+        "pen_299": [
+          0.011,
+          0.1346
+        ],
+        "pen_399": [
+          0.0,
+          0.0714
+        ]
+      }
+    },
+    {
+      "variantId": "human_no_restraint",
+      "label": "Humans \u00b7 One step (no budget)",
+      "metaphor": "",
+      "isBaseline": true,
+      "total": null,
+      "counts": {},
+      "proportions": {
+        "pen_099": 0.614,
+        "pen_199": 0.159,
+        "pen_299": 0.205,
+        "pen_399": 0.023
+      },
+      "ci": {}
+    },
+    {
+      "variantId": "salient_restraint",
+      "label": "Two steps (budget first)",
+      "metaphor": "",
+      "total": 50,
+      "counts": {
+        "pen_099": 0,
+        "pen_199": 50,
+        "pen_299": 0,
+        "pen_399": 0
+      },
+      "proportions": {
+        "pen_099": 0.0,
+        "pen_199": 1.0,
+        "pen_299": 0.0,
+        "pen_399": 0.0
+      },
+      "ci": {
+        "pen_099": [
+          0.0,
+          0.0714
+        ],
+        "pen_199": [
+          0.9286,
+          1.0
+        ],
+        "pen_299": [
+          0.0,
+          0.0714
+        ],
+        "pen_399": [
+          0.0,
+          0.0714
+        ]
+      }
+    },
+    {
+      "variantId": "human_salient_restraint",
+      "label": "Humans \u00b7 Two steps (budget first)",
+      "metaphor": "",
+      "isBaseline": true,
+      "total": null,
+      "counts": {},
+      "proportions": {
+        "pen_099": 0.415,
+        "pen_199": 0.195,
+        "pen_299": 0.268,
+        "pen_399": 0.122
+      },
+      "ci": {}
+    },
+    {
+      "variantId": "many_steps",
+      "label": "Five steps (budget, inspect, compare, choose)",
+      "metaphor": "",
+      "total": 50,
+      "counts": {
+        "pen_099": 0,
+        "pen_199": 50,
+        "pen_299": 0,
+        "pen_399": 0
+      },
+      "proportions": {
+        "pen_099": 0.0,
+        "pen_199": 1.0,
+        "pen_299": 0.0,
+        "pen_399": 0.0
+      },
+      "ci": {
+        "pen_099": [
+          0.0,
+          0.0714
+        ],
+        "pen_199": [
+          0.9286,
+          1.0
+        ],
+        "pen_299": [
+          0.0,
+          0.0714
+        ],
+        "pen_399": [
+          0.0,
+          0.0714
+        ]
+      }
+    },
+    {
+      "variantId": "free_agent",
+      "label": "Autonomous (model self-directs)",
+      "metaphor": "",
+      "total": 50,
+      "counts": {
+        "pen_099": 0,
+        "pen_199": 43,
+        "pen_299": 7,
+        "pen_399": 0
+      },
+      "proportions": {
+        "pen_099": 0.0,
+        "pen_199": 0.86,
+        "pen_299": 0.14,
+        "pen_399": 0.0
+      },
+      "ci": {
+        "pen_099": [
+          0.0,
+          0.0714
+        ],
+        "pen_199": [
+          0.7381,
+          0.9305
+        ],
+        "pen_299": [
+          0.0695,
+          0.2619
+        ],
+        "pen_399": [
+          0.0,
+          0.0714
+        ]
+      }
+    }
+  ],
+  "byVariantModel": [
+    {
+      "variantId": "no_restraint",
+      "label": "One step (no budget)",
+      "model": "Claude Sonnet 4.6",
+      "total": 50,
+      "counts": {
+        "pen_099": 0,
+        "pen_199": 48,
+        "pen_299": 2,
+        "pen_399": 0
+      },
+      "proportions": {
+        "pen_099": 0.0,
+        "pen_199": 0.96,
+        "pen_299": 0.04,
+        "pen_399": 0.0
+      }
+    },
+    {
+      "variantId": "salient_restraint",
+      "label": "Two steps (budget first)",
+      "model": "Claude Sonnet 4.6",
+      "total": 50,
+      "counts": {
+        "pen_099": 0,
+        "pen_199": 50,
+        "pen_299": 0,
+        "pen_399": 0
+      },
+      "proportions": {
+        "pen_099": 0.0,
+        "pen_199": 1.0,
+        "pen_299": 0.0,
+        "pen_399": 0.0
+      }
+    },
+    {
+      "variantId": "many_steps",
+      "label": "Five steps (budget, inspect, compare, choose)",
+      "model": "Claude Sonnet 4.6",
+      "total": 50,
+      "counts": {
+        "pen_099": 0,
+        "pen_199": 50,
+        "pen_299": 0,
+        "pen_399": 0
+      },
+      "proportions": {
+        "pen_099": 0.0,
+        "pen_199": 1.0,
+        "pen_299": 0.0,
+        "pen_399": 0.0
+      }
+    },
+    {
+      "variantId": "free_agent",
+      "label": "Autonomous (model self-directs)",
+      "model": "Claude Sonnet 4.6",
+      "total": 50,
+      "counts": {
+        "pen_099": 0,
+        "pen_199": 43,
+        "pen_299": 7,
+        "pen_399": 0
+      },
+      "proportions": {
+        "pen_099": 0.0,
+        "pen_199": 0.86,
+        "pen_299": 0.14,
+        "pen_399": 0.0
+      }
+    }
+  ],
+  "overall": {
+    "statistic": 15.2414,
+    "pValue": 0.0016215407352726332,
+    "dof": 3,
+    "significant": true,
+    "cramersV": 0.2761,
+    "testable": true
+  },
+  "perModel": [
+    {
+      "model": "Claude Sonnet 4.6",
+      "chiSquare": {
+        "statistic": 15.2414,
+        "pValue": 0.0016215407352726332,
+        "dof": 3,
+        "significant": true,
+        "cramersV": 0.2761,
+        "testable": true
+      }
+    }
+  ],
+  "meanSpend": {
+    "byVariant": {
+      "no_restraint": {
+        "mean": 2.03,
+        "sd": 0.1979,
+        "n": 50,
+        "sem": 0.028
+      },
+      "salient_restraint": {
+        "mean": 1.99,
+        "sd": 0.0,
+        "n": 50,
+        "sem": 0.0
+      },
+      "many_steps": {
+        "mean": 1.99,
+        "sd": 0.0,
+        "n": 50,
+        "sem": 0.0
+      },
+      "free_agent": {
+        "mean": 2.13,
+        "sd": 0.3505,
+        "n": 50,
+        "sem": 0.0496
+      }
+    },
+    "noRestraintVsSalient": {
+      "t": 1.4289,
+      "pValue": 0.15938605197461597,
+      "significant": false,
+      "testable": true
+    }
+  },
+  "stepProfile": {
+    "no_restraint": {
+      "n": 50,
+      "meanSteps": 1.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "salient_restraint": {
+      "n": 50,
+      "meanSteps": 2.0,
+      "budgetRate": 1.0,
+      "cappedRate": 0.0
+    },
+    "many_steps": {
+      "n": 50,
+      "meanSteps": 4.0,
+      "budgetRate": 1.0,
+      "cappedRate": 0.0
+    },
+    "free_agent": {
+      "n": 50,
+      "meanSteps": 4.0,
+      "budgetRate": 1.0,
+      "cappedRate": 0.0
+    }
+  }
+}

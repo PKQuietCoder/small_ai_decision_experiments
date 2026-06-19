@@ -1,16 +1,19 @@
 import { useRoute } from "wouter";
-import { usePost } from "@/hooks/use-api";
+import { usePost, useSite } from "@/hooks/use-api";
 import { format } from "date-fns";
 import { Skeleton } from "@/components/ui/skeleton";
 import { ExperimentAnalysis } from "@/components/charts/analysis-charts";
 import { Link } from "wouter";
 import { ArrowLeft } from "lucide-react";
+import authorPhoto from "@assets/PK Photo.jpg";
 
 export default function Post() {
   const [match, params] = useRoute("/posts/:slug");
   const slug = params?.slug || "";
-  
+
   const { data: post, isLoading, error } = usePost(slug);
+  const { data: site } = useSite();
+  const author = site?.author ?? "P.K. Mishra";
 
   if (isLoading) {
     return (
@@ -50,6 +53,12 @@ export default function Post() {
           </Link>
           
           <div className="flex items-center gap-3 text-sm text-muted-foreground font-mono mb-6">
+            {post.type && (
+              <>
+                <span className="uppercase tracking-wider text-primary font-bold">{post.type}</span>
+                <span>&middot;</span>
+              </>
+            )}
             <span className="uppercase tracking-wider text-primary font-bold">{post.category}</span>
             <span>&middot;</span>
             <time dateTime={post.date}>
@@ -66,6 +75,15 @@ export default function Post() {
           <p className="text-xl text-muted-foreground leading-relaxed">
             {post.excerpt}
           </p>
+
+          <div className="mt-8 flex items-center gap-3 text-sm">
+            <img
+              src={authorPhoto}
+              alt={author}
+              className="h-10 w-10 shrink-0 rounded-none object-cover"
+            />
+            <span className="font-medium text-foreground">{author}</span>
+          </div>
         </div>
       </header>
 

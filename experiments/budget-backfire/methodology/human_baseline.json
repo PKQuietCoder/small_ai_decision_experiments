@@ -1,0 +1,17 @@
+{
+  "source": "Larson & Hamilton (2012), Experiment 1",
+  "by_variant": {
+    "no_restraint": {
+      "pen_099": 0.614,
+      "pen_199": 0.159,
+      "pen_299": 0.205,
+      "pen_399": 0.023
+    },
+    "salient_restraint": {
+      "pen_099": 0.415,
+      "pen_199": 0.195,
+      "pen_299": 0.268,
+      "pen_399": 0.122
+    }
+  }
+}

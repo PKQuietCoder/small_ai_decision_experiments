@@ -5,6 +5,7 @@ export interface SiteInfo {
   description: string;
   author: string;
   categories?: string[];
+  types?: string[];
   aboutHtml: string;
   [key: string]: any;
 }
@@ -13,6 +14,7 @@ export interface PostSummary {
   slug: string;
   title: string;
   excerpt: string;
+  type?: string;
   category: string;
   tags: string[];
   date: string;

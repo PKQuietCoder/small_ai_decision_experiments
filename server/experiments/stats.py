@@ -13,6 +13,53 @@ import numpy as np
 from scipy import stats
 
 
+def mean_metric_by_group(
+    values_by_group: Dict[str, List[float]]
+) -> Dict[str, Dict[str, float]]:
+    """Summarize a numeric metric (e.g. chosen-pen price) per group.
+
+    Returns ``{group: {mean, sd, n, sem}}``. Used for the budget experiment's
+    headline measure (mean spend per step-structure condition), which the
+    categorical chi-square chart does not express.
+    """
+    out: Dict[str, Dict[str, float]] = {}
+    for group, xs in values_by_group.items():
+        n = len(xs)
+        if n == 0:
+            out[group] = {"mean": None, "sd": None, "n": 0, "sem": None}
+            continue
+        arr = np.array(xs, dtype=float)
+        sd = float(arr.std(ddof=1)) if n > 1 else 0.0
+        out[group] = {
+            "mean": round(float(arr.mean()), 4),
+            "sd": round(sd, 4),
+            "n": n,
+            "sem": round(sd / math.sqrt(n), 4) if n > 1 else 0.0,
+        }
+    return out
+
+
+def two_sample_t(a: Sequence[float], b: Sequence[float]) -> Dict[str, object]:
+    """Welch's two-sample t-test comparing two groups of numeric values.
+
+    Returns a null-ish result when either group is too small to test.
+    """
+    if len(a) < 2 or len(b) < 2:
+        return {
+            "t": None,
+            "pValue": None,
+            "significant": False,
+            "testable": False,
+        }
+    t, p = stats.ttest_ind(np.array(a, dtype=float), np.array(b, dtype=float), equal_var=False)
+    return {
+        "t": round(float(t), 4),
+        "pValue": float(p),
+        "significant": bool(p < 0.05),
+        "testable": True,
+    }
+
+
 def wilson_interval(count: int, total: int, z: float = 1.96) -> List[float]:
     """Return the [low, high] Wilson score interval for a proportion.
 

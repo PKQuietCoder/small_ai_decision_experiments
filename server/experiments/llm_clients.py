@@ -153,6 +153,166 @@ def decide(
     raise ValueError(f"Unknown provider: {provider}")
 
 
+def run_tool_sequence(
+    model_cfg: Dict[str, Any],
+    scenario: str,
+    tool_defs: List[Dict[str, Any]],
+    valid_ids: List[str],
+    *,
+    steps: Optional[List[Dict[str, Any]]] = None,
+    terminal_tool: str = "choose_product",
+    decision_key: str = "product_id",
+    temperature: float = 1.0,
+    max_steps: int = 8,
+) -> Tuple[str, Dict[str, Any]]:
+    """Run a controlled multi-step tool-use conversation; return (decision, transcript).
+
+    This drives a faithful agentic decision the way the experiment engine needs it:
+    a sequence of tool calls over a single shared scenario, where the model's final
+    pick is read from a constrained enum (never regex-parsed). Anthropic only in v1 —
+    OpenAI's multi-turn tool API differs and is a planned follow-up.
+
+    Two modes, selected by ``steps``:
+
+    * **Forced sequence** (``steps`` is an ordered list of tool defs): each turn pins
+      exactly one tool via ``tool_choice={"type": "tool", ...}``. The step structure is
+      the manipulation — the model chooses *what* (the budget, the pick), never *which*
+      action comes next. Used by the one/two/five-step conditions.
+    * **Autonomous** (``steps`` is None): every turn forces *some* tool via
+      ``tool_choice={"type": "any"}`` but lets the model pick which, looping until it
+      calls ``terminal_tool`` (or ``max_steps`` is hit, after which one final
+      ``terminal_tool`` turn is forced and ``transcript["capped"]`` is set). Records the
+      model's natural step trajectory — what it does *by default*.
+
+    ``tool_defs`` is the full toolset (passed on every call; ``tool_choice`` selects which
+    is forced). Each entry must carry ``name``/``description``/``input_schema``; the
+    terminal tool's ``input_schema`` must constrain ``decision_key`` to ``valid_ids``.
+
+    Returns ``(decision, transcript)`` where ``transcript`` maps each called tool's name
+    to its input dict, plus ``transcript["steps"]`` (ordered tool names actually called)
+    and ``transcript["capped"]`` (autonomous only).
+    """
+    provider = model_cfg["provider"]
+    if provider != "anthropic":
+        raise ValueError(
+            f"run_tool_sequence supports only anthropic in v1, got {provider!r}"
+        )
+
+    model = model_cfg["model"]
+    accepts_temperature = model_cfg.get("accepts_temperature", True)
+    # Each forced step emits one small tool_use block; give generous headroom so the
+    # final tool call is never truncated (catalog defaults can be as low as 128).
+    max_output = max(int(model_cfg.get("max_output", 128)), 512)
+
+    tools = []
+    for t in tool_defs:
+        tool: Dict[str, Any] = {
+            "name": t["name"],
+            "description": t["description"],
+            "input_schema": t["input_schema"],
+        }
+        # Strict tool use guarantees the model's tool input satisfies the schema
+        # (required fields present, value in-enum) — without it the model can emit a
+        # malformed call (e.g. an empty product_id), which we'd reject as a failure.
+        if t.get("strict"):
+            tool["strict"] = True
+        tools.append(tool)
+
+    client = _get_anthropic()
+    messages: List[Dict[str, Any]] = [{"role": "user", "content": scenario}]
+    transcript: Dict[str, Any] = {}
+    taken: List[str] = []
+
+    def base_kwargs() -> Dict[str, Any]:
+        kwargs: Dict[str, Any] = {
+            "model": model,
+            "max_tokens": max_output,
+            "tools": tools,
+            "messages": messages,
+        }
+        if accepts_temperature:
+            kwargs["temperature"] = temperature
+        return kwargs
+
+    def call_step(tool_choice: Dict[str, Any]) -> Any:
+        """One turn: force a tool, append the assistant turn + a synthetic tool_result.
+
+        Returns the chosen tool_use block. The ack string is deterministic and minimal
+        so the only thing that varies between conditions is the number of partitions,
+        not the information delivered (an inspect/compare step that echoed the price list
+        would feed a multi-step agent context the one-step agent never re-reads).
+
+        ``disable_parallel_tool_use`` keeps each turn to a single tool call — without it
+        the model may emit several tool_use blocks at once (and we'd owe a tool_result
+        for each), and the step count would no longer be one-tool-per-turn.
+        """
+        tool_choice = {**tool_choice, "disable_parallel_tool_use": True}
+        response = client.messages.create(tool_choice=tool_choice, **base_kwargs())
+        block = next(
+            (
+                b
+                for b in response.content
+                if b.type == "tool_use"
+                and (tool_choice.get("type") != "tool" or b.name == tool_choice["name"])
+            ),
+            None,
+        )
+        if block is None:
+            raise ValueError(
+                f"Anthropic returned no tool_use block for tool_choice={tool_choice}"
+            )
+        tool_input = dict(block.input)
+        transcript[block.name] = tool_input
+        taken.append(block.name)
+        messages.append({"role": "assistant", "content": response.content})
+        if "budget" in tool_input:
+            ack = f"Noted. Planned spend recorded: ${tool_input['budget']}."
+        else:
+            ack = "Done."
+        messages.append(
+            {
+                "role": "user",
+                "content": [
+                    {
+                        "type": "tool_result",
+                        "tool_use_id": block.id,
+                        "content": ack,
+                    }
+                ],
+            }
+        )
+        return block
+
+    def finalize(block: Any) -> Tuple[str, Dict[str, Any]]:
+        decision = block.input.get(decision_key)
+        if decision not in valid_ids:
+            raise ValueError(
+                f"{terminal_tool} returned out-of-enum {decision_key}: {decision!r}"
+            )
+        transcript["steps"] = taken
+        return decision, transcript
+
+    if steps is not None:
+        # Forced sequence: pin each tool in order.
+        for step in steps:
+            block = call_step({"type": "tool", "name": step["name"]})
+            if step["name"] == terminal_tool:
+                return finalize(block)
+        raise ValueError("forced sequence ended without calling the terminal tool")
+
+    # Autonomous: the model picks a tool each turn (forced to use *some* tool) until it
+    # decides to finalize. max_steps is a safety cap, not the manipulation.
+    transcript["capped"] = False
+    for _ in range(max_steps):
+        block = call_step({"type": "any"})
+        if block.name == terminal_tool:
+            return finalize(block)
+    # Cap reached without finalizing: force one terminal turn so we still record a pick.
+    transcript["capped"] = True
+    block = call_step({"type": "tool", "name": terminal_tool})
+    return finalize(block)
+
+
 def respond(
     model_cfg: Dict[str, Any],
     prompt: str,

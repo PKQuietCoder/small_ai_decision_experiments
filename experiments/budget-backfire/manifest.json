@@ -1,0 +1,74 @@
+{
+  "experiment": "budget-backfire",
+  "title": "When Budgeting Backfires: Does Forcing an Agent to Set a Budget First Make It Spend More?",
+  "type": "agentic_budget",
+  "generatedAt": "2026-06-19T15:18:51.153047+00:00",
+  "models": [
+    "Claude Opus 4.8",
+    "Claude Sonnet 4.6"
+  ],
+  "trialsPerCell": 50,
+  "conditions": [
+    "no_restraint",
+    "salient_restraint",
+    "many_steps",
+    "free_agent"
+  ],
+  "runs": {
+    "Claude Opus 4.8": "20260619T134607Z",
+    "Claude Sonnet 4.6": "20260619T140216Z"
+  },
+  "humanBaseline": {
+    "source": "Larson & Hamilton (2012), Experiment 1",
+    "by_variant": {
+      "no_restraint": {
+        "pen_099": 0.614,
+        "pen_199": 0.159,
+        "pen_299": 0.205,
+        "pen_399": 0.023
+      },
+      "salient_restraint": {
+        "pen_099": 0.415,
+        "pen_199": 0.195,
+        "pen_299": 0.268,
+        "pen_399": 0.122
+      }
+    }
+  },
+  "temperature": 1.0,
+  "maxSteps": 8,
+  "decisionKey": "product_id",
+  "tools": [
+    "set_budget",
+    "inspect_options",
+    "compare_options",
+    "choose_product"
+  ],
+  "products": [
+    {
+      "id": "pen_099",
+      "label": "Pen A",
+      "price": 0.99,
+      "quality": "basic"
+    },
+    {
+      "id": "pen_199",
+      "label": "Pen B",
+      "price": 1.99,
+      "quality": "better"
+    },
+    {
+      "id": "pen_299",
+      "label": "Pen C",
+      "price": 2.99,
+      "quality": "premium"
+    },
+    {
+      "id": "pen_399",
+      "label": "Pen D",
+      "price": 3.99,
+      "quality": "top tier"
+    }
+  ],
+  "note": "Opus 4.8 rejects the temperature parameter, so its run used the model's default sampling; the Sonnet 4.6 run applied temperature 1.0. Forced tool use is pinned with disable_parallel_tool_use; choose_product uses strict tool use so the schema is always satisfied."
+}

@@ -1,16 +1,7 @@
 import { Link } from "wouter";
 import { format } from "date-fns";
 import type { PostSummary } from "@/lib/api";
-
-function getInitials(name: string): string {
-  return name
-    .split(/\s+/)
-    .filter(Boolean)
-    .slice(0, 2)
-    .map((word) => word[0])
-    .join("")
-    .toUpperCase();
-}
+import authorPhoto from "@assets/PK Photo.jpg";
 
 function safeDate(value: string): string {
   const parsed = new Date(value);
@@ -36,6 +27,10 @@ export function PostCard({ post, author, index = 0 }: PostCardProps) {
       </Link>
 
       <div className="flex items-center gap-2">
+        {post.type && <span className="eyebrow">{post.type}</span>}
+        {post.type && post.category && (
+          <span className="text-muted-foreground" aria-hidden="true">·</span>
+        )}
         <span className="eyebrow">{post.category || "Article"}</span>
         {post.featured && (
           <>
@@ -54,12 +49,11 @@ export function PostCard({ post, author, index = 0 }: PostCardProps) {
       </p>
 
       <div className="mt-auto flex items-center gap-3 pt-6 text-sm">
-        <span
-          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-none bg-secondary text-xs font-semibold text-foreground"
-          aria-hidden="true"
-        >
-          {getInitials(author)}
-        </span>
+        <img
+          src={authorPhoto}
+          alt={author}
+          className="h-9 w-9 shrink-0 rounded-none object-cover"
+        />
         <div className="leading-tight">
           <div className="font-medium text-foreground">{author}</div>
           <time className="font-mono text-xs text-muted-foreground" dateTime={post.date}>

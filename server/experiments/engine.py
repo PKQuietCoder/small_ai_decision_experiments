@@ -113,6 +113,18 @@ def run_experiment(
         coder_rubric = coder.get("rubric")
         coder_categories = coder.get("categories") or CODER_CATEGORIES
 
+    # Agentic budget experiments: each variant is a step-structure condition that runs
+    # a multi-step tool-use conversation. The chosen product id becomes the trial's
+    # `decision`, so the downstream analysis (build_analysis) is unchanged.
+    is_budget = experiment.get("type") == "agentic_budget"
+    tool_defs = experiment.get("tools", [])
+    tools_by_name = {t["name"]: t for t in tool_defs}
+    decision_key = experiment.get("decision_key", "product_id")
+    terminal_tool = next(
+        (t["name"] for t in tool_defs if t.get("final")), "choose_product"
+    )
+    max_steps = int(experiment.get("max_steps", 8))
+
     started_at = datetime.now(timezone.utc)
     run_id = started_at.strftime("%Y%m%dT%H%M%SZ")
     trials: List[Dict[str, Any]] = []
@@ -129,10 +141,22 @@ def run_experiment(
         model_label = model_cfg.get("label", model_cfg["model"])
         for variant in variants:
             cell_index += 1
-            # Substitute every string field of the variant, so a template can
-            # use {metaphor} (fill-in-blank) or {frame}/{spread} (open-ended).
-            fields = {k: v for k, v in variant.items() if isinstance(v, str)}
-            prompt = prompt_template.format(**fields)
+            if is_budget:
+                # The scenario is shared (brace-free); a variant may override it
+                # (e.g. the autonomous condition lists the tools without naming a
+                # budget). `steps` resolves to an ordered tool list for forced
+                # conditions, or None for `mode: auto` (model self-directs).
+                prompt = variant.get("scenario_template") or prompt_template
+                if variant.get("mode") == "auto" or not variant.get("steps"):
+                    steps = None
+                else:
+                    steps = [tools_by_name[name] for name in variant["steps"]]
+            else:
+                # Substitute every string field of the variant, so a template can
+                # use {metaphor} (fill-in-blank) or {frame}/{spread} (open-ended).
+                fields = {k: v for k, v in variant.items() if isinstance(v, str)}
+                prompt = prompt_template.format(**fields)
+                steps = None
             for trial_no in range(trials_per_cell):
                 tasks.append(
                     {
@@ -148,6 +172,7 @@ def run_experiment(
                         "variant_id": variant["id"],
                         "trial_no": trial_no,
                         "prompt": prompt,
+                        "steps": steps,
                     }
                 )
                 order += 1
@@ -176,6 +201,26 @@ def run_experiment(
                 )
                 record["response"] = text
                 record["decision"] = code
+                record["ok"] = True
+            elif is_budget:
+                # Multi-step tool-use conversation; the final pick is the decision.
+                decision, transcript = llm_clients.run_tool_sequence(
+                    task["model_cfg"],
+                    task["prompt"],
+                    tool_defs,
+                    valid_ids,
+                    steps=task["steps"],
+                    terminal_tool=terminal_tool,
+                    decision_key=decision_key,
+                    temperature=temperature,
+                    max_steps=max_steps,
+                )
+                record["decision"] = decision
+                record["steps"] = transcript.get("steps", [])
+                record["numSteps"] = len(record["steps"])
+                record["budget"] = transcript.get("set_budget", {}).get("budget")
+                record["capped"] = transcript.get("capped", False)
+                record["transcript"] = transcript
                 record["ok"] = True
             else:
                 decision, raw = llm_clients.decide(

@@ -19,10 +19,11 @@ Site-wide metadata for header/footer/about.
 ```json
 {
   "title": "The Model Notebook",
-  "tagline": "Field notes on language models — creativity, experiments, and science.",
+  "tagline": "Field notes on language models: decisions, science, and creativity.",
   "description": "A file-based notebook of logs and findings on large language models ...",
-  "author": "The Model Notebook",
-  "categories": ["Creativity", "Experiments", "Science"],  // ordered category list for the feed filter
+  "author": "P.K. Mishra",
+  "categories": ["Decisions", "Science", "Creativity"],  // section tags; ordered list for the feed filter
+  "types": ["Experiments", "Methods"],                   // method tags shown alongside each post's section
   "aboutHtml": "<p>...</p>"   // rendered HTML for the About page (from markdown)
 }
 ```
@@ -37,7 +38,8 @@ Ordered newest-first. Use for the home/feed page.
     "slug": "the-metaphor-effect",
     "title": "The Metaphor Effect: ...",
     "excerpt": "We hold a decision scenario perfectly constant ...",
-    "category": "Experiment",
+    "type": "Experiments",      // method tag (one of site.types); may be null
+    "category": "Decisions",    // section tag (one of site.categories), drives the feed filter
     "tags": ["framing", "metaphor", "decision-making", "prompting"],
     "date": "2026-06-18",
     "readingMinutes": 2,
@@ -56,7 +58,8 @@ already sanitized HTML — render with care) and `analysis` (live stats for char
   "slug": "the-metaphor-effect",
   "title": "...",
   "excerpt": "...",
-  "category": "Experiment",
+  "type": "Experiments",
+  "category": "Decisions",
   "tags": ["..."],
   "date": "2026-06-18",
   "readingMinutes": 2,

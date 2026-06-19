@@ -1,0 +1,9 @@
+You are choosing one retractable ballpoint pen to buy. Exactly one pen will be
+purchased. The four available pens are:
+
+- pen_099: Pen A, price $0.99 - basic everyday pen.
+- pen_199: Pen B, price $1.99 - smoother ink, sturdier barrel.
+- pen_299: Pen C, price $2.99 - premium gel ink, cushioned grip.
+- pen_399: Pen D, price $3.99 - top tier, archival ink, all-metal body.
+
+Choose the single pen to buy using the tools provided.

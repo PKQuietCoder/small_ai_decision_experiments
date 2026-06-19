@@ -18,7 +18,12 @@ import markdown as md
 import yaml
 
 from . import config
-from ..experiments.stats import chi_square_contingency, wilson_interval
+from ..experiments.stats import (
+    chi_square_contingency,
+    mean_metric_by_group,
+    two_sample_t,
+    wilson_interval,
+)
 
 MARKDOWN_EXTENSIONS = ["extra", "sane_lists", "tables", "fenced_code", "toc"]
 
@@ -230,6 +235,48 @@ def build_analysis(
         if t.get("ok") and t.get("decision") not in decision_ids
     )
 
+    # Agentic budget experiments carry two extra, additive summaries the categorical
+    # chart can't express: mean spend per condition (Larson & Hamilton's headline DV)
+    # and the step trajectory (how many steps each condition took, how often it set a
+    # budget). Type-gated so all other experiments are untouched.
+    extra: Dict[str, Any] = {}
+    if experiment.get("type") == "agentic_budget":
+        price_map = {
+            p["id"]: p.get("price")
+            for p in experiment.get("products", [])
+            if p.get("price") is not None
+        }
+        prices_by_variant: Dict[str, List[float]] = {}
+        step_profile: Dict[str, Any] = {}
+        for variant in variants:
+            vid = variant["id"]
+            vt = [t for t in trials if t.get("variantId") == vid]
+            prices_by_variant[vid] = [
+                price_map[t["decision"]] for t in vt if t["decision"] in price_map
+            ]
+            n = len(vt)
+            num_steps = [t.get("numSteps") for t in vt if t.get("numSteps") is not None]
+            budget_set = sum(1 for t in vt if t.get("budget") is not None)
+            capped = sum(1 for t in vt if t.get("capped"))
+            step_profile[vid] = {
+                "n": n,
+                "meanSteps": round(sum(num_steps) / len(num_steps), 4)
+                if num_steps
+                else None,
+                "budgetRate": round(budget_set / n, 4) if n else None,
+                "cappedRate": round(capped / n, 4) if n else None,
+            }
+        extra = {
+            "meanSpend": {
+                "byVariant": mean_metric_by_group(prices_by_variant),
+                "noRestraintVsSalient": two_sample_t(
+                    prices_by_variant.get("no_restraint", []),
+                    prices_by_variant.get("salient_restraint", []),
+                ),
+            },
+            "stepProfile": step_profile,
+        }
+
     return {
         "experimentId": experiment["id"],
         "experimentTitle": experiment.get("title", experiment["id"]),
@@ -260,6 +307,7 @@ def build_analysis(
         "byVariantModel": by_variant_model,
         "overall": overall,
         "perModel": per_model,
+        **extra,
     }
 
 
@@ -277,7 +325,10 @@ def _post_summary(post: frontmatter.Post, slug: str) -> Dict[str, Any]:
         "slug": meta.get("slug", slug),
         "title": meta.get("title", slug),
         "excerpt": meta.get("excerpt", ""),
-        "category": meta.get("category", "Experiments"),
+        # Two tag series: `type` is the method (Experiments / Methods); `category`
+        # is the section (Decisions / Science / Creativity) and drives the home filter.
+        "type": meta.get("type"),
+        "category": meta.get("category", "Decisions"),
         "tags": meta.get("tags", []) or [],
         "date": _date_str(meta.get("date")),
         "readingMinutes": _reading_minutes(post.content),
@@ -397,7 +448,10 @@ def get_experiment(experiment_id: str) -> Optional[Dict[str, Any]]:
 # Site metadata
 # --------------------------------------------------------------------------- #
 def get_site_meta() -> Dict[str, Any]:
-    default_categories = ["Creativity", "Experiments", "Science"]
+    # Two tag series: `categories` are the sections (the home filter), `types` are
+    # the methods that label each post alongside its section.
+    default_categories = ["Decisions", "Science", "Creativity"]
+    default_types = ["Experiments", "Methods"]
     if not config.SITE_FILE.exists():
         return {
             "title": "The Model Notebook",
@@ -406,6 +460,7 @@ def get_site_meta() -> Dict[str, Any]:
             "description": "",
             "author": "",
             "categories": default_categories,
+            "types": default_types,
             "aboutHtml": "",
         }
     data = _read_yaml(config.SITE_FILE)
@@ -417,6 +472,7 @@ def get_site_meta() -> Dict[str, Any]:
         "description": data.get("description", ""),
         "author": data.get("author", ""),
         "categories": data.get("categories") or default_categories,
+        "types": data.get("types") or default_types,
         "aboutHtml": about_html,
     }
 

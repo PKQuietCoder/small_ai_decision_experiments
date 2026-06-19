@@ -1,0 +1,145 @@
+id: budget-backfire
+title: "When Budgeting Backfires: Does Forcing an Agent to Set a Budget First Make It Spend More?"
+type: agentic_budget
+status: draft
+summary: >
+  An agentic translation of Larson & Hamilton's 2012 "When Budgeting Backfires."
+  In the human study, simply asking a shopper to state a planned spend before
+  choosing split one decision into two, shifted attention from price to quality,
+  and made people pick pricier products. We map "no restraint" to a one-step agent
+  that just chooses a pen, "salient restraint" to a two-step agent forced to call
+  set_budget before choose_product, and add a five-step condition to test whether
+  more partitioning amplifies the effect. A fourth, autonomous condition offers all
+  the tools but forces nothing, so we can see how many steps the model takes — and
+  whether it budgets — by default.
+hypothesis: >
+  Forcing an agent to declare a budget (and to partition the decision into more
+  steps) before choosing will raise the mean price of the pen it selects, mirroring
+  the human "budgeting backfires" effect. Left to its own devices, the agent will
+  tend toward a single step.
+models:
+  - provider: anthropic
+    model: claude-opus-4-8
+    label: "Claude Opus 4.8"
+trials_per_cell: 50
+temperature: 1.0
+decision_key: product_id
+max_steps: 8
+prompt_template: |
+  You are choosing one retractable ballpoint pen to buy. Exactly one pen will be
+  purchased. The four available pens are:
+
+  - pen_099: Pen A, price $0.99 - basic everyday pen.
+  - pen_199: Pen B, price $1.99 - smoother ink, sturdier barrel.
+  - pen_299: Pen C, price $2.99 - premium gel ink, cushioned grip.
+  - pen_399: Pen D, price $3.99 - top tier, archival ink, all-metal body.
+
+  Choose the single pen to buy using the tools provided.
+decision_options:
+  - id: pen_099
+    label: "$0.99 (Pen A)"
+  - id: pen_199
+    label: "$1.99 (Pen B)"
+  - id: pen_299
+    label: "$2.99 (Pen C)"
+  - id: pen_399
+    label: "$3.99 (Pen D)"
+primary_decision: pen_399
+# Documentation only (the engine ignores unknown keys): prices drive the optional
+# mean-spend metric and the curated write-up.
+products:
+  - { id: pen_099, label: "Pen A", price: 0.99, quality: "basic" }
+  - { id: pen_199, label: "Pen B", price: 1.99, quality: "better" }
+  - { id: pen_299, label: "Pen C", price: 2.99, quality: "premium" }
+  - { id: pen_399, label: "Pen D", price: 3.99, quality: "top tier" }
+tools:
+  - name: set_budget
+    description: "Record how much you plan to spend on the pen, in dollars, before choosing."
+    final: false
+    strict: true
+    input_schema:
+      type: object
+      additionalProperties: false
+      properties:
+        budget:
+          type: number
+          description: "Planned spend in dollars (for example, 1.50)."
+      required: [budget]
+  - name: inspect_options
+    description: "Acknowledge that you have reviewed the full list of available pens."
+    final: false
+    strict: true
+    input_schema:
+      type: object
+      additionalProperties: false
+      properties:
+        reviewed:
+          type: boolean
+          description: "Set to true once you have read the option list."
+      required: [reviewed]
+  - name: compare_options
+    description: "Record which pens you are weighing most closely before deciding."
+    final: false
+    strict: true
+    input_schema:
+      type: object
+      additionalProperties: false
+      properties:
+        finalists:
+          type: array
+          items:
+            type: string
+            enum: [pen_099, pen_199, pen_299, pen_399]
+          description: "The pen ids you are comparing."
+      required: [finalists]
+  - name: choose_product
+    description: "Record the single pen you will buy."
+    final: true
+    strict: true
+    input_schema:
+      type: object
+      additionalProperties: false
+      properties:
+        product_id:
+          type: string
+          enum: [pen_099, pen_199, pen_299, pen_399]
+          description: "The id of the pen to buy."
+      required: [product_id]
+variants:
+  - id: no_restraint
+    label: "One step (no budget)"
+    steps: [choose_product]
+  - id: salient_restraint
+    label: "Two steps (budget first)"
+    steps: [set_budget, choose_product]
+  - id: many_steps
+    label: "Five steps (budget, inspect, compare, choose)"
+    steps: [set_budget, inspect_options, compare_options, choose_product]
+  - id: free_agent
+    label: "Autonomous (model self-directs)"
+    mode: auto
+    scenario_template: |
+      You are choosing one retractable ballpoint pen to buy. Exactly one pen will be
+      purchased. The four available pens are:
+
+      - pen_099: Pen A, price $0.99 - basic everyday pen.
+      - pen_199: Pen B, price $1.99 - smoother ink, sturdier barrel.
+      - pen_299: Pen C, price $2.99 - premium gel ink, cushioned grip.
+      - pen_399: Pen D, price $3.99 - top tier, archival ink, all-metal body.
+
+      You may use any of the available tools, in any order and as many times as you
+      like, and you must finish by calling choose_product to record your pick.
+baseline:
+  source: "Larson & Hamilton (2012), Experiment 1"
+  by_variant:
+    no_restraint:
+      pen_099: 0.614
+      pen_199: 0.159
+      pen_299: 0.205
+      pen_399: 0.023
+    salient_restraint:
+      pen_099: 0.415
+      pen_199: 0.195
+      pen_299: 0.268
+      pen_399: 0.122
+    # many_steps and free_agent have no human analog, so no overlay row is drawn.

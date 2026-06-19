@@ -109,6 +109,24 @@ export default function Post() {
         {post.experimentId && (
           <ExperimentAnalysis analysis={post.analysis} />
         )}
+
+        {/* Author footnote — the byline link lives here at the foot of the piece. */}
+        <footer className="mt-16 border-t border-border pt-6 font-sans text-sm text-muted-foreground">
+          Written by{" "}
+          {site?.authorUrl ? (
+            <a
+              href={site.authorUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-foreground hover:underline"
+            >
+              {author}
+            </a>
+          ) : (
+            <span className="font-medium text-foreground">{author}</span>
+          )}
+          .
+        </footer>
       </div>
     </article>
   );

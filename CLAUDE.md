@@ -25,7 +25,8 @@ CLAUDE.local.md            # personal local overrides (git-ignored)
 ├── rules/                 # modular conventions, imported below so they load every session
 │   ├── code-style.md
 │   ├── testing.md         # NOTE: there is no automated test suite — how to verify instead
-│   └── api-conventions.md
+│   ├── api-conventions.md
+│   └── design-system.md   # the site-wide "Nature PoV" design language (trust through restraint)
 ├── commands/              # custom slash commands (/review, /fix-issue)
 │   ├── review.md
 │   └── fix-issue.md
@@ -45,6 +46,7 @@ The modular rules are imported so they are always in effect:
 @.claude/rules/code-style.md
 @.claude/rules/testing.md
 @.claude/rules/api-conventions.md
+@.claude/rules/design-system.md
 
 ## Commands
 

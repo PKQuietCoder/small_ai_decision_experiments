@@ -128,7 +128,7 @@ export function ExperimentAnalysis({ analysis }: Props) {
                     dataKey={opt.label} 
                     stackId="a" 
                     fill={COLORS[idx % COLORS.length]} 
-                    radius={idx === decisionOptions.length - 1 ? [4, 4, 0, 0] : [0, 0, 0, 0]}
+                    radius={[0, 0, 0, 0]}
                   />
                 ))}
               </BarChart>

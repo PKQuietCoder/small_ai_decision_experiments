@@ -29,6 +29,19 @@ export default function Home() {
 
   return (
     <div className="container mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16">
+      {!siteLoading && site?.intro && (
+        <section className="mb-10 animate-in fade-in slide-in-from-bottom-4 duration-700">
+          <div className="rounded-none border border-border bg-card p-6 md:p-8">
+            <h2 className="eyebrow mb-3">
+              About
+            </h2>
+            <p className="max-w-3xl text-base leading-relaxed text-foreground/80 md:text-lg">
+              {site.intro}
+            </p>
+          </div>
+        </section>
+      )}
+
       <section className="mb-10 animate-in fade-in slide-in-from-bottom-4 duration-700">
         {siteLoading ? (
           <div className="space-y-4">
@@ -47,19 +60,6 @@ export default function Home() {
         )}
       </section>
 
-      {!siteLoading && site?.intro && (
-        <section className="mb-12 animate-in fade-in slide-in-from-bottom-4 duration-700">
-          <div className="rounded-2xl border border-card-border bg-card p-6 md:p-8">
-            <h2 className="mb-3 text-xs font-bold uppercase tracking-widest text-primary">
-              What we're doing
-            </h2>
-            <p className="max-w-3xl text-base leading-relaxed text-foreground/80 md:text-lg">
-              {site.intro}
-            </p>
-          </div>
-        </section>
-      )}
-
       {!postsLoading && categories.length > 1 && (
         <nav className="mb-10 flex flex-wrap gap-2 border-b border-border/60 pb-6">
           {categories.map((category) => {
@@ -69,10 +69,10 @@ export default function Home() {
                 key={category}
                 type="button"
                 onClick={() => setActive(category)}
-                className={`rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-wider transition-colors ${
+                className={`rounded-none border px-4 py-1.5 text-xs font-semibold uppercase tracking-wider transition-colors ${
                   isActive
-                    ? "bg-foreground text-background"
-                    : "bg-muted/60 text-muted-foreground hover:bg-muted hover:text-foreground"
+                    ? "border-foreground bg-foreground text-background"
+                    : "border-border bg-transparent text-muted-foreground hover:border-foreground hover:text-foreground"
                 }`}
               >
                 {category}
@@ -85,16 +85,15 @@ export default function Home() {
       {postsLoading ? (
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {[1, 2, 3].map((i) => (
-            <div key={i} className="overflow-hidden rounded-2xl border border-card-border bg-card">
-              <Skeleton className="aspect-[16/10] w-full rounded-none" />
-              <div className="space-y-4 p-6">
-                <Skeleton className="h-5 w-20" />
+            <div key={i} className="rounded-none border border-border bg-card p-6">
+              <div className="space-y-4">
+                <Skeleton className="h-4 w-20" />
                 <Skeleton className="h-7 w-3/4" />
-                <div className="flex items-center gap-3">
-                  <Skeleton className="h-9 w-9 rounded-full" />
+                <Skeleton className="h-16 w-full" />
+                <div className="flex items-center gap-3 pt-2">
+                  <Skeleton className="h-9 w-9 rounded-none" />
                   <Skeleton className="h-8 w-32" />
                 </div>
-                <Skeleton className="h-16 w-full" />
               </div>
             </div>
           ))}

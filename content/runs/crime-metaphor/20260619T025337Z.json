@@ -1,0 +1,917 @@
+{
+  "runId": "20260619T025337Z",
+  "experimentId": "crime-metaphor",
+  "startedAt": "2026-06-19T02:53:37.536785+00:00",
+  "finishedAt": "2026-06-19T02:54:30.430840+00:00",
+  "trialsPerCell": 50,
+  "temperature": 1.0,
+  "models": [
+    "GPT-5.5"
+  ],
+  "variants": [
+    "beast",
+    "virus"
+  ],
+  "trials": [
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 0,
+      "response": "Addison should focus on both prevention and enforcement: increase community policing in high-crime neighborhoods, invest in youth programs, mental health services, and job opportunities, and improve investigation of violent crimes. The city also needs better data-driven policing so resources are sent where crime is rising fastest.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 1,
+      "response": "Addison should reduce crime by combining stronger community policing with targeted prevention programs, especially for youth, mental health, addiction, and unemployment. The city also needs to focus resources on violent-crime hotspots, improve clearance rates, and build trust so residents are more willing to report crimes and cooperate with police.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 2,
+      "response": "Addison should reduce crime by investing in community policing, faster response times, and targeted patrols in high-crime areas while also expanding youth programs, mental health services, job training, and support for at-risk residents. The city also needs to improve investigations and violence-prevention efforts so repeat offenders are held accountable and conflicts are addressed before they turn deadly.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 3,
+      "response": "Addison should reduce crime by combining stronger community policing with prevention programs\u2014more officers in high-crime areas, better cooperation with residents, and faster investigation of violent crimes. The city should also invest in youth programs, job training, mental health services, and support for at-risk neighborhoods to address the causes of crime before it happens.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 4,
+      "response": "Addison should invest in a balanced strategy: more effective community policing and faster response to violent crime, along with prevention programs such as youth activities, job training, mental health support, and neighborhood revitalization. The city should also use crime data to target high-risk areas while building trust between police and residents.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 5,
+      "response": "Addison should combine targeted, data-driven policing in high-crime areas with stronger community partnerships so residents trust and cooperate with law enforcement. It also needs to invest in prevention\u2014youth programs, jobs, mental health services, and reentry support\u2014to address the causes of crime before violence escalates.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 6,
+      "response": "Addison should reduce crime by combining targeted policing in high-crime areas with prevention programs such as youth outreach, job training, mental health services, and stronger community partnerships. The city also needs to focus on solving violent crimes quickly so offenders are held accountable and residents regain trust in law enforcement.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 7,
+      "response": "Addison should combine targeted, evidence-based policing in high-crime areas with stronger community partnerships so residents trust and cooperate with law enforcement. It should also invest in prevention\u2014youth programs, jobs, mental health services, and violence-intervention efforts\u2014to address the causes of crime before it happens.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 8,
+      "response": "Addison should combine focused, data-driven policing in high-crime areas with stronger community partnerships so residents trust police and report crimes. The city should also invest in prevention\u2014youth programs, jobs, mental health and addiction services, and support for at-risk neighborhoods\u2014to address the causes of crime before it happens.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 9,
+      "response": "Addison should reduce crime with a mix of targeted community policing, faster investigation of violent offenses, and stronger support for youth programs, mental health care, addiction treatment, and job opportunities in high-crime neighborhoods. It should also use data to focus resources on repeat offenders and crime hot spots while building trust between residents and police.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 10,
+      "response": "Addison should invest in a mix of stronger community policing, faster investigation of violent crimes, and prevention programs such as youth outreach, job training, mental health services, and addiction treatment. The city also needs to target high-crime areas with data-driven enforcement while rebuilding trust between residents and police.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 11,
+      "response": "Addison should reduce crime by combining stronger community policing with prevention programs that address poverty, youth violence, addiction, and lack of opportunity. The city also needs targeted enforcement in high-crime areas, faster investigations, and better support for schools, jobs, and mental health services.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 12,
+      "response": "Addison should combine targeted, data-driven policing in high-crime areas with stronger community partnerships so residents trust police and report crime. The city also needs to invest in prevention\u2014youth programs, jobs, mental health services, and reentry support\u2014to address the causes that feed crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 13,
+      "response": "Addison should use a focused crime-reduction plan that combines more visible, community-based policing in high-crime areas with stronger prevention programs for youth, addiction, mental health, and job opportunities. It should also target repeat violent offenders quickly while rebuilding trust between residents and law enforcement so people feel safe reporting crimes.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 14,
+      "response": "Addison should reduce crime through a combined approach: increase effective community policing in high-crime areas while investing in prevention programs such as youth outreach, job training, mental health services, and substance abuse treatment. The city should also use data to target violent crime hotspots and build trust between residents and law enforcement.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 15,
+      "response": "Addison should combine stronger community policing and targeted enforcement in high-crime areas with prevention efforts like youth programs, mental health support, job training, and better lighting/public safety infrastructure. Reducing crime will likely require both holding violent offenders accountable and addressing the conditions that help crime grow.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 16,
+      "response": "Addison should reduce crime by combining stronger community policing with prevention programs, such as youth mentoring, job training, mental health support, and neighborhood outreach. The city should also focus police resources on violent-crime hotspots while building trust with residents so crimes are reported and addressed quickly.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 17,
+      "response": "Addison should focus on both prevention and enforcement: increase community policing, improve trust between residents and police, and target violent-crime hotspots with data-driven patrols. At the same time, the city should invest in youth programs, job training, mental health services, and neighborhood revitalization to address the root causes of crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 18,
+      "response": "Addison should combine targeted community policing in high-crime areas with stronger prevention programs, such as youth outreach, job training, mental health support, and substance-abuse treatment. It also needs to improve clearance rates for violent crimes so offenders are held accountable and residents regain trust in law enforcement.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 19,
+      "response": "Addison should reduce crime with a combination of smarter policing and prevention: focus police resources on violent-crime hotspots while improving community trust and witness cooperation. The city should also invest in youth programs, job training, mental health services, and drug treatment to address the conditions that often lead to crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 20,
+      "response": "Addison should reduce crime by combining stronger community policing and targeted enforcement in high-crime areas with prevention programs such as youth activities, job training, mental health support, and substance-abuse treatment. The city also needs to improve trust between residents and police so people feel safe reporting crimes and cooperating with investigations.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 21,
+      "response": "Addison should combine targeted, data-driven policing of violent-crime hot spots with stronger community partnerships so residents trust and cooperate with police. It should also invest in prevention\u2014youth programs, jobs, mental health and addiction services, and reentry support\u2014to address the causes of crime before they escalate.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 22,
+      "response": "Addison should combine targeted, data-driven policing in high-crime areas with stronger community programs, such as youth outreach, job training, mental health services, and support for families. Reducing crime will require both holding offenders accountable and addressing the conditions that lead people toward violence.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 23,
+      "response": "Addison should focus on a mix of stronger community policing, targeted enforcement in high-crime areas, and prevention programs for youth, jobs, mental health, and addiction. Reducing crime will require both holding violent offenders accountable and addressing the conditions that allow crime to grow.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 24,
+      "response": "Addison should use a balanced approach: increase targeted community policing in high-crime areas while investing in youth programs, mental health support, job training, and addiction treatment to address root causes. The city should also improve data-driven crime prevention and strengthen cooperation between police and residents to build trust and prevent violence.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 25,
+      "response": "Addison should invest in both targeted policing and prevention: focus resources on violent-crime hotspots while expanding youth programs, mental health services, substance-abuse treatment, and job opportunities. Building trust between police and neighborhoods will also help residents report crimes and work with authorities to stop violence early.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 26,
+      "response": "Addison should combine targeted community policing in high-crime areas with stronger prevention programs, such as youth outreach, mental health services, addiction treatment, and job training. It should also improve clearance rates for violent crimes by investing in detectives, data-driven policing, and trust-building between police and residents.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 27,
+      "response": "Addison should reduce crime by combining smarter community policing with prevention programs that address poverty, youth violence, addiction, and lack of opportunity. The city also needs focused enforcement on violent offenders while rebuilding trust between police and neighborhoods so residents feel safe reporting crimes.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 28,
+      "response": "Addison should focus on targeted community policing in the neighborhoods with the highest crime, while also investing in prevention programs such as youth outreach, job training, mental health support, and substance-abuse treatment. At the same time, the city should improve investigations and prosecution of violent crimes so repeat offenders are held accountable.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 29,
+      "response": "Addison should reduce crime by combining stronger, community-focused policing with prevention programs that address root causes like poverty, unemployment, youth violence, and substance abuse. The city should also improve neighborhood lighting, support after-school programs, and build trust between residents and law enforcement so crimes are reported and prevented earlier.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 30,
+      "response": "Addison should reduce crime by combining targeted, community-based policing in high-crime areas with stronger prevention programs such as youth outreach, mental health support, job training, and violence intervention. The city also needs better data-driven policing and cooperation between residents, schools, and local organizations to address the causes of crime before it escalates.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 31,
+      "response": "Addison should reduce crime by combining stronger community policing and faster investigations with prevention programs that address root causes like poverty, youth disengagement, drug abuse, and lack of jobs. The city should also invest in better lighting, neighborhood watch partnerships, and support services for at-risk residents.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 32,
+      "response": "Addison should combine stronger community policing and faster response times with prevention efforts like youth programs, job training, better street lighting, and support for mental health and addiction services. It should also focus resources on violent-crime hotspots and repeat offenders while rebuilding trust between residents and police.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 33,
+      "response": "Addison should invest in both smarter policing and prevention: increase community policing in high-crime areas, improve response times, and focus on repeat violent offenders. At the same time, the city needs youth programs, job training, mental health support, and neighborhood partnerships to address the root causes of crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 34,
+      "response": "Addison should combine stronger community policing with prevention programs, such as youth outreach, mental health support, job training, and neighborhood revitalization. The city also needs to focus police resources on violent-crime hotspots while building trust with residents so crimes are reported and addressed quickly.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 35,
+      "response": "Addison should focus on both prevention and enforcement: increase targeted community policing in high-crime areas, improve clearance rates for violent crimes, and invest in youth programs, mental health services, job training, and addiction treatment. Reducing crime will require addressing immediate public safety threats while also tackling the conditions that help crime grow.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 36,
+      "response": "Addison should invest in community policing, targeted prevention programs for at-risk youth, and better support for neighborhoods with the highest crime rates. At the same time, the city should improve clearance rates for violent crimes by strengthening investigations and building trust between residents and law enforcement.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 37,
+      "response": "Addison should combine stronger community policing with prevention efforts, such as youth programs, mental health and addiction services, and job opportunities in high-crime areas. It should also use data to target violent crime hotspots while building trust between residents and law enforcement.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 38,
+      "response": "Addison should reduce crime by combining stronger community policing and faster investigations with prevention efforts like youth programs, mental health and addiction services, job training, and support for at-risk neighborhoods. It should also use data to target violent-crime hotspots while building trust between residents and law enforcement.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 39,
+      "response": "Addison should reduce crime with a balanced approach: increase effective community policing in high-crime areas while investing in prevention programs like youth outreach, mental health support, job training, and neighborhood revitalization. It should also use data to target violent crime hotspots and strengthen trust between residents and law enforcement.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 40,
+      "response": "Addison should use a mix of targeted policing in high-crime areas and stronger community programs, such as youth outreach, job training, mental health support, and neighborhood partnerships. Reducing crime will likely require both holding offenders accountable and addressing the social conditions that lead people toward crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 41,
+      "response": "Addison should combine more visible, community-based policing with stronger prevention efforts such as youth programs, mental health and addiction services, job training, and better support for high-crime neighborhoods. The city should also use data to target violent-crime hotspots while building trust between residents and law enforcement.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 42,
+      "response": "Addison should reduce crime by combining stronger community policing with prevention programs, such as youth outreach, mental health services, job training, and support for high-risk neighborhoods. The city also needs to focus police resources on violent crime hotspots while building trust between residents and law enforcement.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 43,
+      "response": "Addison should combine smarter policing with prevention: increase community-based patrols in high-crime areas, improve response times, and focus on repeat violent offenders. At the same time, the city should invest in youth programs, jobs, mental health services, and neighborhood improvements to address the causes of crime before they escalate.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 44,
+      "response": "Addison should combine targeted community policing in high-crime areas with stronger prevention efforts, such as youth programs, job training, mental health services, and substance-abuse treatment. It should also improve crime data tracking and focus resources on violent offenders while rebuilding trust between residents and police.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 45,
+      "response": "Addison should reduce crime by combining stronger, community-focused policing with prevention programs that address poverty, youth violence, addiction, and unemployment. The city also needs better lighting, neighborhood watch efforts, and faster investigation of violent crimes to deter offenders and rebuild public trust.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 46,
+      "response": "Addison should reduce crime through a mix of stronger community policing, faster response to violent crime hotspots, and prevention programs for youth, jobs, mental health, and addiction. The city also needs better data-driven policing and cooperation between residents, schools, social services, and law enforcement to address the causes of crime before they escalate.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 47,
+      "response": "Addison should reduce crime with a balanced approach: increase targeted community policing in high-crime areas while investing in youth programs, mental health services, job training, and neighborhood revitalization to address root causes. The city should also improve data-driven policing and build trust between residents and law enforcement so crimes are reported and prevented more effectively.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 48,
+      "response": "Addison should reduce crime by combining stronger community policing with prevention programs: more visible, accountable officers in high-crime areas, better lighting and public safety infrastructure, and youth/jobs programs that address the causes of crime. The city should also use data to target violent-crime hotspots while building trust with residents so people feel safe reporting crimes.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 49,
+      "response": "Addison should reduce crime through a mix of targeted community policing, faster response to violent-crime hotspots, and stronger prevention programs for youth, jobs, and addiction/mental-health support. The city also needs better data-driven enforcement focused on repeat offenders while rebuilding trust between police and residents.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 0,
+      "response": "Addison should reduce crime through a mix of targeted community policing, faster investigation of violent offenses, and prevention programs that address youth violence, poverty, addiction, and unemployment. The city should also invest in neighborhood services and data-driven policing so resources go to the areas and problems driving the increase.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 1,
+      "response": "Addison should combine focused, community-based policing with prevention: target violent-crime hotspots and repeat offenders while investing in youth programs, mental health services, job training, and neighborhood partnerships. Reducing crime will likely require both immediate enforcement and long-term efforts to address the conditions that fuel it.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 2,
+      "response": "Addison should reduce crime by combining focused policing on violent hotspots with prevention: youth programs, jobs, addiction and mental-health services, and community partnerships that build trust. It should also target repeat violent offenders while addressing the neighborhood conditions that allow crime to spread.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 3,
+      "response": "Addison should reduce crime through a mix of focused policing on violent-crime hotspots and long-term prevention: youth programs, mental health and addiction services, job training, and neighborhood investment. It should also build trust between police and residents so crimes are reported and solved more effectively.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 4,
+      "response": "Addison should reduce crime by combining focused, community-based policing with prevention programs that address root causes like poverty, youth unemployment, substance abuse, and lack of education. It should also target violent offenders with strong investigations while investing in neighborhood trust and services that keep people from turning to crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 5,
+      "response": "Addison should use a balanced approach: invest in community policing and targeted enforcement in high-crime areas while also expanding youth programs, mental health services, job opportunities, and reentry support. Reducing crime long-term means addressing both immediate violence and the conditions that help it spread.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 6,
+      "response": "Addison should reduce crime by combining focused policing on violent-crime hotspots with prevention programs such as youth outreach, job training, mental health services, and support for at-risk neighborhoods. It also needs stronger community-police trust so residents feel safe reporting crimes and cooperating with investigations.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 7,
+      "response": "Addison should combine focused, evidence-based policing of violent crime hot spots with stronger community partnerships, youth programs, mental health/substance-abuse services, and reentry support for former offenders. It also needs to track data closely so resources go where they reduce crime most effectively.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 8,
+      "response": "Addison should focus on evidence-based policing targeted at violent-crime hot spots while also investing in prevention: youth programs, mental health and addiction services, job opportunities, and community partnerships. Reducing crime will likely require both stronger accountability for repeat violent offenders and long-term efforts to address the conditions that fuel crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 9,
+      "response": "Addison should combine targeted, data-driven policing in high-crime areas with stronger community partnerships so residents trust and cooperate with law enforcement. At the same time, the city should invest in youth programs, jobs, mental health services, and violence-prevention efforts to address the root causes of crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 10,
+      "response": "Addison should combine targeted, data-driven policing focused on violent-crime hotspots with prevention programs that address root causes like poverty, youth disengagement, substance abuse, and lack of jobs. The city also needs stronger community trust in police so residents are more willing to report crimes and cooperate in investigations.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 11,
+      "response": "Addison should combine targeted policing in high-crime areas with prevention programs such as youth activities, job training, mental health and addiction services, and stronger community partnerships. Reducing crime will require both holding violent offenders accountable and addressing the conditions that allow crime to spread.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 12,
+      "response": "Addison should use a balanced approach: focus police resources on the areas and repeat offenders driving violent crime, while also investing in prevention like youth programs, mental health and addiction services, job opportunities, and community policing. Reducing crime will require both immediate enforcement and long-term efforts to address the conditions that lead people into crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 13,
+      "response": "Addison should use targeted, data-driven policing focused on violent-crime hotspots while also investing in community programs that address root causes like poverty, unemployment, youth disengagement, and substance abuse. Building trust between police and residents is also essential so crimes are reported and prevented earlier.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 14,
+      "response": "Addison should use evidence-based policing focused on the small number of people and places driving violent crime, while rebuilding trust through community policing and accountability. At the same time, the city should invest in prevention\u2014youth programs, mental health and addiction services, job opportunities, and support for neighborhoods most affected by crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 15,
+      "response": "Addison should combine targeted, evidence-based policing in high-crime areas with stronger community programs that address root causes like poverty, youth unemployment, substance abuse, and lack of opportunity. It should also improve trust between residents and police so crimes are reported and prevented earlier.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 16,
+      "response": "Addison should invest in evidence-based community policing and focused violence intervention, targeting the small number of people and places driving the most serious crime. At the same time, the city should expand prevention programs\u2014youth jobs, mental health and addiction services, better lighting, and support for at-risk neighborhoods\u2014to address the causes of crime before it happens.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 17,
+      "response": "Addison should reduce crime with a balanced approach: targeted community policing in high-crime areas, faster investigations, and stronger support for youth programs, mental health services, job training, and addiction treatment. Addressing both immediate violence and the root causes of crime is likely to have the greatest long-term impact.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 18,
+      "response": "Addison should focus on a mix of targeted policing, violence prevention, and community investment\u2014especially in the neighborhoods with the highest crime increases. This could include improving clearance rates for serious crimes, expanding youth programs and job opportunities, and strengthening partnerships between police and residents.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 19,
+      "response": "Addison should combine targeted, data-driven policing in high-crime areas with prevention efforts like youth programs, mental health and substance-abuse services, job training, and community partnerships. Reducing violent crime will require both holding offenders accountable and addressing the conditions that make crime more likely.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 20,
+      "response": "Addison should reduce crime with a mix of focused policing on violent offenders and prevention efforts such as youth programs, mental health services, job training, and support for struggling neighborhoods. Building trust between police and residents is also essential so crimes are reported and communities work together to stop violence.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 21,
+      "response": "Addison should reduce crime through a combination of targeted policing in high-crime areas, stronger community-police partnerships, and investment in prevention programs such as youth outreach, job training, mental health services, and addiction treatment. Focusing on both enforcement and the root causes of crime would give the city the best chance of making neighborhoods safer.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 22,
+      "response": "Addison should focus on both prevention and enforcement: increase targeted community policing in high-crime areas while investing in youth programs, mental health services, job training, and violence-interruption efforts. The city should also use crime data to identify patterns and address repeat offenders without over-policing entire neighborhoods.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 23,
+      "response": "Addison should use a combined approach: invest in community policing and quicker case follow-up while also expanding youth programs, mental health services, substance-abuse treatment, and job opportunities in high-crime neighborhoods. Targeting repeat violent offenders with data-driven policing, while addressing the conditions that fuel crime, would likely reduce crime most effectively.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 24,
+      "response": "Addison should combine focused, community-based policing to target violent crime hotspots with stronger prevention efforts, such as youth programs, job training, mental health services, and support for people leaving prison. It also needs better data tracking and cooperation between police, schools, and community groups to address the causes of crime before they escalate.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 25,
+      "response": "Addison should combine targeted, data-driven policing of violent-crime hotspots with stronger community programs such as youth jobs, mental health services, addiction treatment, and neighborhood outreach. Reducing crime will require both holding repeat violent offenders accountable and addressing the conditions that allow crime to grow.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 26,
+      "response": "Addison should combine targeted, data-driven policing in high-crime areas with stronger community partnerships so residents trust and cooperate with law enforcement. It should also invest in prevention\u2014youth programs, jobs, mental health and addiction services, and violence-interruption efforts\u2014to address the causes of crime before they escalate.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 27,
+      "response": "Addison should combine focused policing on violent-crime hotspots with long-term prevention: youth programs, mental-health and addiction services, job training, and support for high-risk neighborhoods. It also needs stronger community-police trust so residents report crimes and work with authorities to prevent violence.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 28,
+      "response": "Addison should focus on evidence-based violence reduction: targeted policing of repeat violent offenders and hotspots, paired with community programs like youth outreach, job training, mental health services, and addiction treatment. It also needs stronger trust between police and residents so crimes are reported and solved more effectively.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 29,
+      "response": "Addison should reduce crime with a combined approach: strengthen community policing and targeted enforcement in high-crime areas while investing in youth programs, mental health services, jobs, and addiction treatment. Addressing both immediate violence and the root causes of crime is likely to be more effective than punishment alone.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 30,
+      "response": "Addison should use a balanced approach: increase targeted community policing in high-crime areas while also investing in youth programs, job training, mental health services, and support for families. The city should focus on preventing crime before it happens while holding violent offenders accountable.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 31,
+      "response": "Addison should reduce crime by combining focused policing on violent hotspots with prevention programs like youth outreach, mental health and addiction services, job training, and support for at-risk neighborhoods. It also needs stronger community-police trust so residents feel safe reporting crimes and working with authorities.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 32,
+      "response": "Addison should combine focused, data-driven policing of violent-crime hotspots with stronger community partnerships so residents trust police and report crimes. It should also invest in prevention\u2014youth programs, jobs, mental health and addiction services, and reentry support\u2014to address the conditions that help crime grow.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 33,
+      "response": "Addison should combine focused, evidence-based policing in high-crime areas with stronger community partnerships, faster investigation of violent crimes, and support for youth, jobs, and mental health services. Reducing crime will require both holding repeat violent offenders accountable and addressing the conditions that lead people into crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 34,
+      "response": "Addison should use a balanced approach: increase community-focused policing in high-crime areas while also investing in prevention programs such as youth outreach, job training, addiction treatment, and mental health services. The city also needs better data-driven targeting of violent crime, faster follow-up on repeat offenders, and stronger partnerships between police and residents.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 35,
+      "response": "Addison should reduce crime with a two-part approach: invest in prevention\u2014youth programs, mental health and addiction services, jobs, and neighborhood improvements\u2014while also using focused, accountable policing to target repeat violent offenders. Building trust between police and communities is essential so residents feel safe reporting crimes and cooperating with investigations.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 36,
+      "response": "Addison should reduce crime with a mix of targeted policing in high-violence areas and long-term prevention: youth programs, mental health and addiction services, job opportunities, and community-based violence intervention. It also needs better trust between police and residents so crimes are reported, solved, and prevented earlier.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 37,
+      "response": "Addison should use evidence-based, community-focused policing that targets violent-crime hot spots while building trust with residents. It should also invest in prevention\u2014youth programs, mental health and addiction services, jobs, and reentry support\u2014to address the root causes of crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 38,
+      "response": "Addison should combine focused, evidence-based policing of the small number of people and places driving violence with strong community partnerships, better clearance rates, and support for at-risk youth. It also needs prevention efforts\u2014jobs, mental health/substance-abuse services, and neighborhood investment\u2014so crime is reduced at its roots, not just temporarily suppressed.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 39,
+      "response": "Addison should combine focused policing on violent crime hotspots with stronger prevention: youth programs, job training, mental health/substance-abuse services, and support for at-risk neighborhoods. It also needs community trust\u2014more transparent policing and cooperation with residents\u2014so crimes are reported and solved quickly.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 40,
+      "response": "Addison should focus on evidence-based community policing, faster investigations for violent crimes, and targeted prevention in the neighborhoods with the highest risk. It should also invest in youth programs, mental health and addiction services, jobs, and reentry support to address the conditions that often lead to crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 41,
+      "response": "Addison should reduce crime through a mix of targeted community policing, faster investigations of violent crimes, and prevention programs such as youth outreach, mental health and addiction services, and job training. The city also needs to focus resources on the neighborhoods most affected while building trust between residents and law enforcement.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 42,
+      "response": "Addison should combine targeted, data-driven policing in high-crime areas with stronger community partnerships, youth programs, mental health support, and job opportunities. Reducing crime will require both holding violent offenders accountable and addressing the conditions that make crime more likely.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 43,
+      "response": "Addison should reduce crime by combining stronger community policing and targeted enforcement in high-crime areas with prevention programs such as youth outreach, job training, mental health support, and addiction treatment. The city also needs to improve trust between residents and police so people feel safe reporting crimes and working together to solve problems.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 44,
+      "response": "Addison should combine focused, evidence-based policing of violent hot spots with strong community prevention efforts, such as youth programs, mental health and addiction services, job training, and support for at-risk neighborhoods. Reducing crime will require both holding violent offenders accountable and addressing the conditions that allow crime to grow.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 45,
+      "response": "Addison should combine focused, data-driven policing in high-crime areas with stronger community programs, such as youth outreach, job training, mental health services, and neighborhood partnerships. Reducing crime will require both holding violent offenders accountable and addressing the conditions that allow crime to grow.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 46,
+      "response": "Addison should reduce crime by combining focused policing on violent offenders with prevention efforts like youth programs, mental health and addiction services, job training, and stronger neighborhood partnerships. The city also needs to analyze crime data carefully so resources go to the areas and problems driving the increase.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 47,
+      "response": "Addison should combine targeted, data-driven policing focused on violent-crime hot spots with strong community partnerships to rebuild trust and improve reporting. It should also invest in prevention\u2014youth programs, mental health and addiction services, job training, and support for at-risk neighborhoods\u2014to address the causes of crime before they escalate.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 48,
+      "response": "Addison should reduce crime by combining focused, community-based policing with prevention: investing in youth programs, mental health and addiction services, job opportunities, and support for high-risk neighborhoods. It should also target violent offenders and illegal guns while rebuilding trust between residents and law enforcement.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.5",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 49,
+      "response": "Addison should combine targeted, data-driven policing in high-crime areas with stronger community partnerships so residents trust and cooperate with law enforcement. It should also invest in prevention\u2014youth programs, mental health and addiction services, job training, and support for returning offenders\u2014to address the causes of crime before it happens.",
+      "decision": "mixed",
+      "ok": true
+    }
+  ]
+}

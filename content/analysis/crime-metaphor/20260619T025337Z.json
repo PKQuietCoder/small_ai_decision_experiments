@@ -1,0 +1,201 @@
+{
+  "experimentId": "crime-metaphor",
+  "experimentTitle": "The Metaphor Trap: Does One Word Tilt an LLM Toward Punishment or Reform?",
+  "runId": "20260619T025337Z",
+  "runDate": "2026-06-19T02:54:30.430840+00:00",
+  "prompt": "Crime is {frame} the city of Addison. The crime rate in the once peaceful city\nhas steadily increased over the past three years. In fact, these days it seems\nthat crime is {spread} every neighborhood. In 2004, 46,177 crimes were reported\ncompared to more than 55,000 reported in 2007. The rise in violent crime is\nparticularly alarming. In 2004, there were 330 murders in the city, in 2007,\nthere were over 500.\n\nIn your opinion, what does Addison need to do to reduce crime? Answer in a\nsentence or two.\n",
+  "question": "In your opinion, what does Addison need to do to reduce crime?",
+  "baseline": {
+    "source": "Thibodeau & Boroditsky (2011), Experiment 1 (N=455)",
+    "by_variant": {
+      "beast": {
+        "enforce": 0.74,
+        "reform": 0.26
+      },
+      "virus": {
+        "enforce": 0.56,
+        "reform": 0.44
+      }
+    }
+  },
+  "decisionOptions": [
+    {
+      "id": "enforce",
+      "label": "Enforcement"
+    },
+    {
+      "id": "reform",
+      "label": "Reform"
+    },
+    {
+      "id": "mixed",
+      "label": "Mixed"
+    }
+  ],
+  "models": [
+    "GPT-5.5"
+  ],
+  "variants": [
+    {
+      "id": "beast",
+      "label": "Beast",
+      "metaphor": ""
+    },
+    {
+      "id": "virus",
+      "label": "Virus",
+      "metaphor": ""
+    }
+  ],
+  "primaryDecision": "enforce",
+  "primaryDecisionLabel": "Enforcement",
+  "totalTrials": 100,
+  "trialsPerCell": 50,
+  "parseFailures": 0,
+  "excluded": 0,
+  "byVariant": [
+    {
+      "variantId": "beast",
+      "label": "Beast",
+      "metaphor": "",
+      "total": 50,
+      "counts": {
+        "enforce": 0,
+        "reform": 1,
+        "mixed": 49
+      },
+      "proportions": {
+        "enforce": 0.0,
+        "reform": 0.02,
+        "mixed": 0.98
+      },
+      "ci": {
+        "enforce": [
+          0.0,
+          0.0714
+        ],
+        "reform": [
+          0.0035,
+          0.105
+        ],
+        "mixed": [
+          0.895,
+          0.9965
+        ]
+      }
+    },
+    {
+      "variantId": "human_beast",
+      "label": "Humans \u00b7 Beast",
+      "metaphor": "",
+      "isBaseline": true,
+      "total": null,
+      "counts": {},
+      "proportions": {
+        "enforce": 0.74,
+        "reform": 0.26,
+        "mixed": 0.0
+      },
+      "ci": {}
+    },
+    {
+      "variantId": "virus",
+      "label": "Virus",
+      "metaphor": "",
+      "total": 50,
+      "counts": {
+        "enforce": 0,
+        "reform": 0,
+        "mixed": 50
+      },
+      "proportions": {
+        "enforce": 0.0,
+        "reform": 0.0,
+        "mixed": 1.0
+      },
+      "ci": {
+        "enforce": [
+          0.0,
+          0.0714
+        ],
+        "reform": [
+          0.0,
+          0.0714
+        ],
+        "mixed": [
+          0.9286,
+          1.0
+        ]
+      }
+    },
+    {
+      "variantId": "human_virus",
+      "label": "Humans \u00b7 Virus",
+      "metaphor": "",
+      "isBaseline": true,
+      "total": null,
+      "counts": {},
+      "proportions": {
+        "enforce": 0.56,
+        "reform": 0.44,
+        "mixed": 0.0
+      },
+      "ci": {}
+    }
+  ],
+  "byVariantModel": [
+    {
+      "variantId": "beast",
+      "label": "Beast",
+      "model": "GPT-5.5",
+      "total": 50,
+      "counts": {
+        "enforce": 0,
+        "reform": 1,
+        "mixed": 49
+      },
+      "proportions": {
+        "enforce": 0.0,
+        "reform": 0.02,
+        "mixed": 0.98
+      }
+    },
+    {
+      "variantId": "virus",
+      "label": "Virus",
+      "model": "GPT-5.5",
+      "total": 50,
+      "counts": {
+        "enforce": 0,
+        "reform": 0,
+        "mixed": 50
+      },
+      "proportions": {
+        "enforce": 0.0,
+        "reform": 0.0,
+        "mixed": 1.0
+      }
+    }
+  ],
+  "overall": {
+    "statistic": 0.0,
+    "pValue": 1.0,
+    "dof": 1,
+    "significant": false,
+    "cramersV": 0.0,
+    "testable": true
+  },
+  "perModel": [
+    {
+      "model": "GPT-5.5",
+      "chiSquare": {
+        "statistic": 0.0,
+        "pValue": 1.0,
+        "dof": 1,
+        "significant": false,
+        "cramersV": 0.0,
+        "testable": true
+      }
+    }
+  ]
+}

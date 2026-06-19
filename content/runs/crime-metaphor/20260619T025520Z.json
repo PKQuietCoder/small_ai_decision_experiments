@@ -1,0 +1,917 @@
+{
+  "runId": "20260619T025520Z",
+  "experimentId": "crime-metaphor",
+  "startedAt": "2026-06-19T02:55:20.924126+00:00",
+  "finishedAt": "2026-06-19T02:55:59.062913+00:00",
+  "trialsPerCell": 50,
+  "temperature": 1.0,
+  "models": [
+    "GPT-5.4 mini"
+  ],
+  "variants": [
+    "beast",
+    "virus"
+  ],
+  "trials": [
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 0,
+      "response": "Addison needs to strengthen community policing and increase prevention efforts, especially in high-crime neighborhoods, so officers can build trust and intervene early. It should also invest in youth programs, education, job opportunities, and better support services to address the root causes of crime rather than just reacting to it.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 1,
+      "response": "Addison needs to invest in a stronger, more visible police presence and target the neighborhoods with the highest crime rates through focused patrols and community policing. It should also address root causes by expanding youth programs, job opportunities, and violence-prevention services so fewer people turn to crime in the first place.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 2,
+      "response": "Addison should combine stronger, more targeted policing with community-based prevention efforts, such as youth programs, job opportunities, and better support for at-risk neighborhoods. Reducing crime will likely require both holding violent offenders accountable and addressing the social conditions that lead to crime in the first place.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 3,
+      "response": "Addison needs to strengthen community policing and increase visible patrols in high-crime neighborhoods to deter offenders and build trust with residents. It should also invest in youth programs, job opportunities, and better support services, since reducing crime long-term depends on addressing the conditions that often lead to it.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 4,
+      "response": "Addison needs to invest more in community policing, especially in high-crime neighborhoods, so officers can build trust and prevent violence before it happens. It should also focus on youth programs, better street lighting, and stronger support services for at-risk families to address the root causes of crime.",
+      "decision": "enforce",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 5,
+      "response": "Addison needs to invest more in targeted policing, community outreach, and youth prevention programs to address the root causes of crime. It should also improve street lighting, neighborhood watch efforts, and support services for at-risk families to make communities safer.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 6,
+      "response": "Addison needs to invest more in community policing, better street lighting, and youth outreach programs to deter crime before it starts. It should also focus on targeting repeat offenders and high-crime areas with stronger enforcement and prevention efforts.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 7,
+      "response": "Addison needs to strengthen community policing, increase patrols in high-crime areas, and focus on crime prevention through youth programs, better lighting, and neighborhood engagement. It should also invest in addressing root causes like unemployment, addiction, and repeat-offender intervention.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 8,
+      "response": "Addison needs to invest in stronger community policing, with more officers visible in high-crime areas and better relationships between police and residents. It should also focus on prevention by improving youth programs, job opportunities, and neighborhood support services that address the root causes of crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 9,
+      "response": "Addison needs a stronger, more visible police presence in high-crime neighborhoods, along with targeted prevention programs for youth and at-risk families. It should also invest in community outreach, better street lighting, and job opportunities to address the root causes of crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 10,
+      "response": "Addison needs to invest more in community policing, youth programs, and neighborhood outreach to address the root causes of crime before it starts. It should also strengthen lighting, surveillance, and targeted enforcement in the areas with the highest violent-crime rates.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 11,
+      "response": "Addison should invest in stronger community policing, better neighborhood lighting, and more youth and job programs to address the root causes of crime. It should also focus enforcement on repeat offenders and violent crime hotspots to make the city safer more quickly.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 12,
+      "response": "Addison should focus on stronger community policing, putting more officers in high-crime neighborhoods and building trust with residents so crimes are reported earlier. It should also invest in prevention programs like youth outreach, job training, and better street lighting to address the root causes of crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 13,
+      "response": "Addison needs to invest in stronger community policing, better street lighting, and targeted intervention programs for high-risk neighborhoods, while also expanding youth programs and job opportunities. Reducing crime will likely require both tougher enforcement and addressing the social conditions that help crime grow.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 14,
+      "response": "Addison needs to increase targeted policing in high-crime neighborhoods while also investing in prevention programs like youth services, education, and jobs. Reducing crime will likely require both stronger enforcement and addressing the social conditions that contribute to violence.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 15,
+      "response": "Addison needs to invest more in community policing, especially in high-crime neighborhoods, so officers can build trust, respond faster, and deter violence. It should also expand youth programs, job opportunities, and targeted interventions for repeat offenders, since reducing crime takes both enforcement and prevention.",
+      "decision": "enforce",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 16,
+      "response": "Addison needs to increase police presence in high-crime neighborhoods while also investing in prevention programs like youth outreach, job training, and community policing. Reducing crime will likely require both tougher enforcement and addressing the poverty, lack of opportunity, and other conditions that help crime grow.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 17,
+      "response": "Addison needs to invest in stronger community policing, more patrols in high-crime areas, and programs that address root causes like poverty, unemployment, and youth violence. It should also improve street lighting, neighborhood watch efforts, and support services for at-risk residents to help prevent crime before it starts.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 18,
+      "response": "Addison should invest more in community policing, youth programs, and neighborhood patrols to deter crime before it starts. It should also improve street lighting, target repeat offenders, and strengthen cooperation between residents and law enforcement.",
+      "decision": "enforce",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 19,
+      "response": "Addison needs to invest more in community policing, youth programs, and targeted patrols in high-crime neighborhoods so officers can build trust and prevent crime before it happens. It should also focus on addressing root causes like poverty, unemployment, and lack of after-school opportunities, while using data to deploy resources more effectively.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 20,
+      "response": "Addison should invest in a stronger mix of community policing, better neighborhood lighting/surveillance, and targeted anti-violence programs for at-risk youth. It also needs to address root causes like unemployment, poverty, and weak after-school opportunities so fewer people are pushed toward crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 21,
+      "response": "Addison should increase community policing and target the neighborhoods with the highest crime through better patrols, faster response times, and stronger partnerships with residents. It should also invest in youth programs, job training, and violence-prevention efforts to address the root causes of crime before it starts.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 22,
+      "response": "Addison likely needs a stronger mix of community policing, youth prevention programs, and focused enforcement in the neighborhoods most affected by violent crime. It should also invest in better street lighting, social services, and after-school/job programs to address the root causes of crime, not just the symptoms.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 23,
+      "response": "Addison needs a mix of stronger community policing and targeted prevention efforts, such as better street lighting, more patrols in high-crime areas, and programs for at-risk youth. It should also invest in jobs, education, and social services to address the root causes of crime, not just punish it after the fact.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 24,
+      "response": "Addison needs to strengthen community policing, focusing on visible patrols, faster response times, and stronger partnerships between police and neighborhoods. It should also invest in prevention programs\u2014especially youth outreach, education, and job opportunities\u2014to address the root causes of crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 25,
+      "response": "Addison needs to invest in stronger community policing, especially in high-crime neighborhoods, so officers build trust and respond faster to problems. It should also expand violence-prevention programs, youth outreach, and support services that address the root causes of crime before they escalate.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 26,
+      "response": "Addison should combine stronger policing with prevention: increase community policing and patrols in high-crime areas, while also investing in youth programs, job opportunities, and neighborhood improvements like better lighting and surveillance. Reducing crime will take both faster enforcement and long-term support to address the causes behind it.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 27,
+      "response": "Addison needs to invest more in community policing, neighborhood patrols, and targeted prevention programs in the areas with the highest crime. It should also focus on youth outreach, better street lighting, and stronger support services so that residents are protected and at-risk people have alternatives before crime happens.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 28,
+      "response": "Addison needs to invest in stronger community policing, better lighting and surveillance in high-crime areas, and youth intervention programs to address crime before it starts. It should also focus on getting more officers on the streets, improving coordination with residents, and targeting repeat violent offenders.",
+      "decision": "enforce",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 29,
+      "response": "Addison needs to increase targeted community policing, with more officers patrolling high-crime neighborhoods and building trust with residents. It should also invest in prevention programs\u2014youth outreach, job training, and better lighting/camera coverage\u2014to address the causes of crime before they escalate.",
+      "decision": "enforce",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 30,
+      "response": "Addison needs to invest more in community policing, youth outreach, and better street-level crime prevention in neighborhoods with the highest violence. It should also improve lighting, surveillance, and social services while targeting repeat offenders through focused law enforcement.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 31,
+      "response": "Addison needs to invest in stronger community policing, better street lighting, and youth prevention programs so officers and residents can work together to stop crime before it starts. It should also focus on targeting repeat offenders and violent crime hotspots with more focused patrols and intervention services.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 32,
+      "response": "Addison needs to increase community policing and place more officers in the neighborhoods with the highest crime rates to deter violence and build trust with residents. It should also invest in youth programs, job training, and better street lighting and surveillance, since reducing poverty and improving public safety can help prevent crime before it starts.",
+      "decision": "enforce",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 33,
+      "response": "Addison needs to invest in stronger community policing, with more visible patrols, faster response times, and better relationships between officers and residents. It should also focus on prevention by expanding youth programs, job opportunities, and targeted support in the neighborhoods with the highest crime rates.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 34,
+      "response": "Addison needs to invest more in community policing, targeted patrols in high-crime neighborhoods, and youth prevention programs to address the root causes of crime. It should also improve lighting, surveillance, and coordination between police and community members to make arrests more effective and deter offenders.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 35,
+      "response": "Addison needs to increase community policing and focus on prevention by investing in youth programs, education, and neighborhood engagement. It should also target repeat offenders and high-crime areas with better policing, while working to improve jobs and social services that help reduce the conditions that lead to crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 36,
+      "response": "Addison needs to increase community policing, improve neighborhood outreach, and focus on prevention programs for at-risk youth. It should also strengthen law enforcement presence in high-crime areas while addressing root causes like poverty, unemployment, and lack of opportunity.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 37,
+      "response": "Addison needs to strengthen community policing, increase visible patrols in high-crime neighborhoods, and focus on prevention through youth programs, job opportunities, and better access to education and mental health services. It should also improve data-driven policing to target repeat offenders and crime hotspots more effectively.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 38,
+      "response": "Addison needs to invest in stronger community policing, better youth programs, and more support for neighborhoods most affected by crime. It should also focus on improving economic opportunities and coordinating with residents to address the root causes of violence, not just the symptoms.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 39,
+      "response": "Addison needs to increase targeted policing in the neighborhoods with the highest crime, while also investing in youth programs, education, and job opportunities to address the root causes of crime. Stronger community-police partnerships and better support for at-risk families could also help reduce violence over time.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 40,
+      "response": "Addison needs to invest in stronger community policing, better street lighting, and youth outreach programs to address crime before it starts. It should also focus on targeting repeat offenders and improving social services in the neighborhoods most affected by violence.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 41,
+      "response": "Addison should invest more in community policing, targeted patrols, and faster response in high-crime neighborhoods to deter violent offenses. It should also expand youth programs, mental health services, and job opportunities to address some of the root causes of crime long term.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 42,
+      "response": "Addison needs to invest in stronger community policing, better street lighting, and targeted intervention in high-crime neighborhoods, especially for violent offenses. It should also expand youth programs, job opportunities, and mental health and substance-use support to address the root causes of crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 43,
+      "response": "Addison needs to invest in stronger community policing, better street lighting, and youth outreach programs to address crime before it starts. It should also focus on targeting repeat offenders and improving neighborhood cooperation with law enforcement so crimes are reported and solved faster.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 44,
+      "response": "Addison needs a stronger mix of targeted policing and prevention: more patrols in high-crime neighborhoods, better intelligence-sharing, and faster response to repeat offenders. It should also invest in community programs, youth jobs, education, and violence-intervention services to address the root causes of crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 45,
+      "response": "Addison should increase community policing and visible patrols in high-crime neighborhoods, while also investing in youth programs, jobs, and mental health services to address the root causes of crime. Stronger prevention efforts paired with targeted law enforcement would likely make the biggest difference.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 46,
+      "response": "Addison needs to invest more in community policing, better street lighting, and stronger prevention programs for at-risk youth. It should also focus on targeted enforcement in high-crime areas while improving social services, jobs, and education to address the root causes of crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 47,
+      "response": "Addison should invest in stronger community policing, with more officers patrolling high-crime neighborhoods and building trust with residents. It should also focus on prevention by expanding youth programs, improving job opportunities, and addressing repeat offenders through targeted intervention and rehabilitation.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 48,
+      "response": "Addison needs to invest in stronger community policing, better lighting and surveillance in high-crime areas, and more youth outreach and job programs to address the root causes of crime. It should also focus on targeted enforcement against violent offenders while building trust between residents and police.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "beast",
+      "trial": 49,
+      "response": "Addison needs to invest in stronger community policing, especially in the neighborhoods with the highest violence, while also increasing prevention efforts like youth programs, jobs, and better lighting and surveillance in public areas. Reducing crime will likely require both tougher enforcement and addressing the social conditions that help it grow.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 0,
+      "response": "Addison needs a combination of stronger law enforcement and stronger community support: more police presence in high-crime areas, better crime prevention, and faster response to violent offenders. It should also invest in youth programs, jobs, education, and neighborhood services to address the root causes of crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 1,
+      "response": "Addison should invest in community policing and stronger support programs\u2014especially for youth, jobs, education, and mental health\u2014to address the root causes of crime. It should also focus law enforcement on repeat violent offenders while improving neighborhood lighting, reporting, and community trust.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 2,
+      "response": "Addison needs to invest in a stronger mix of community policing, youth prevention programs, and targeted enforcement in the neighborhoods with the highest crime rates. It should also improve schools, job opportunities, and mental health and addiction services, since reducing the conditions that lead to crime is just as important as making arrests.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 3,
+      "response": "Addison needs a stronger, more targeted public safety strategy that combines increased community policing, better youth outreach, and focused enforcement in the neighborhoods with the highest crime rates. It should also invest in prevention efforts like jobs, education, and mental health support, since reducing crime usually takes both tougher policing and stronger community programs.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 4,
+      "response": "Addison needs to invest more in community policing, targeted patrols in high-crime neighborhoods, and youth prevention programs that address the causes of violence before they start. It should also strengthen support services like jobs, mental health care, and after-school programs to reduce the conditions that often lead to crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 5,
+      "response": "Addison should invest in a mix of stronger community policing and prevention programs, especially for youth, so police build trust while the city addresses the root causes of crime like poverty, unemployment, and lack of opportunity. It should also focus enforcement on violent offenders and illegal guns to quickly reduce the most serious crimes.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 6,
+      "response": "Addison should invest in a mix of stronger community policing and prevention efforts, including better neighborhood patrols, youth programs, and job opportunities for at-risk residents. It should also focus on targeted enforcement against violent offenders while improving street lighting, housing, and community trust so residents are more willing to cooperate with police.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 7,
+      "response": "Addison needs to invest more in community policing, youth programs, and neighborhood outreach to address the root causes of crime before they escalate. It should also increase police presence in high-crime areas and improve cooperation between residents and law enforcement to make the city safer.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 8,
+      "response": "Addison needs to invest in a stronger police presence, better community policing, and targeted violence-prevention programs in the neighborhoods most affected by crime. It should also address root causes like poverty, unemployment, and lack of youth opportunities to reduce crime long term.",
+      "decision": "enforce",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 9,
+      "response": "Addison needs to invest in more community policing, targeted patrols in high-crime areas, and stronger support for youth programs, education, and job opportunities. Reducing crime will also require better cooperation between police and residents so problems are reported early and solved before they escalate.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 10,
+      "response": "Addison needs to invest in a stronger, community-focused policing strategy that combines more visible patrols with better intelligence-sharing and faster response times. It should also expand youth programs, job opportunities, and mental health and addiction services to address the root causes of crime before it starts.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 11,
+      "response": "Addison needs a stronger, more coordinated public safety strategy that combines increased community policing, better street lighting and neighborhood patrols, and targeted programs for youth and high-risk areas. It should also invest in prevention\u2014jobs, education, mental health, and addiction services\u2014so fewer people are pushed into crime in the first place.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 12,
+      "response": "Addison needs to invest more in community policing, youth programs, and targeted prevention in the neighborhoods most affected by crime. It should also improve lighting, surveillance, and social services while focusing on arresting repeat violent offenders and building trust between police and residents.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 13,
+      "response": "Addison should invest in a mix of stronger community policing, more youth programs, and better job and education opportunities to address the root causes of crime. It also needs targeted efforts in high-crime neighborhoods, along with better support for mental health and substance abuse treatment.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 14,
+      "response": "Addison should invest more in community policing, youth programs, and social services to address the root causes of crime before they escalate. It should also increase targeted enforcement in high-crime areas while improving lighting, surveillance, and neighborhood engagement to deter violent activity.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 15,
+      "response": "Addison should invest in community-based policing, targeting the neighborhoods with the highest crime rates while building trust between officers and residents. It should also expand youth programs, job opportunities, and social services, since reducing poverty and giving people alternatives can help prevent crime before it starts.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 16,
+      "response": "Addison needs to invest in a stronger mix of community policing, youth intervention, and social services while also increasing targeted enforcement in the neighborhoods most affected by violence. Reducing crime will take both better police presence and addressing the underlying causes like poverty, unemployment, and lack of opportunity.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 17,
+      "response": "Addison needs to invest in a stronger community-policing strategy, with more officers focused on high-crime neighborhoods, better street lighting, and faster response times. It should also expand youth programs, job opportunities, and mental health and addiction services to address the root causes of crime before they escalate.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 18,
+      "response": "Addison needs to invest in stronger community policing, better street lighting, and youth programs that address the root causes of crime before they escalate. It should also focus on targeted enforcement in the highest-crime areas while improving jobs, education, and mental health support for residents.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 19,
+      "response": "Addison needs a stronger mix of **targeted law enforcement and prevention**: more community policing, better lighting and surveillance in high-crime areas, and tougher action against repeat violent offenders. It should also invest in **youth programs, education, and job opportunities** to address the root causes of crime before they lead to violence.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 20,
+      "response": "Addison needs to focus on a mix of more visible community policing, faster response to violent crime hotspots, and strong prevention programs for youth and at-risk neighborhoods. It should also invest in jobs, schools, and neighborhood services, since reducing the conditions that drive crime is just as important as enforcing the law.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 21,
+      "response": "Addison needs to invest in a stronger mix of community policing, youth intervention programs, and faster response to violent crime hotspots. It should also improve job opportunities, education, and neighborhood support services, since reducing crime long-term requires addressing the conditions that help it grow.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 22,
+      "response": "Addison needs to invest in both prevention and enforcement: more community policing, better support for youth programs, and stronger resources for investigating violent crime. It should also focus on fixing the root causes of crime\u2014like poverty, unemployment, and weak neighborhood support\u2014so fewer people turn to crime in the first place.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 23,
+      "response": "Addison needs to invest in a stronger police presence, better community policing, and faster response to violent crime hotspots. It should also expand youth programs, mental health and addiction services, and neighborhood investment to address the root causes of crime, not just the symptoms.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 24,
+      "response": "Addison should invest in a mix of stronger community policing, better street-level patrols, and prevention programs for at-risk youth. It also needs to address root causes like poverty, unemployment, and weak neighborhood services so crime is reduced long term, not just pushed around.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 25,
+      "response": "Addison needs to invest in both prevention and enforcement: more community policing, better street lighting, and youth programs to address root causes, along with targeted action against repeat violent offenders. It should also improve coordination between police, schools, and social services so problems are identified and stopped earlier.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 26,
+      "response": "Addison should strengthen community policing and invest in prevention programs like youth outreach, mental health services, and job opportunities, since reducing the conditions that lead to crime can be as important as enforcement. It should also focus police resources on violent-crime hotspots and improve neighborhood cooperation with law enforcement.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 27,
+      "response": "Addison needs to invest in more community policing, better youth programs, and faster response resources in the neighborhoods most affected by crime. It should also focus on preventing violence early by improving education, job opportunities, and support services for at-risk residents.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 28,
+      "response": "Addison needs to invest in stronger community policing, better youth programs, and more support services to address the root causes of crime. It should also improve street lighting, increase police presence in high-crime areas, and work with residents to build trust and report suspicious activity.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 29,
+      "response": "Addison should invest in a stronger mix of community policing, youth prevention programs, and better support for jobs, education, and mental health services. It also needs to target repeat violent offenders and improve neighborhood engagement so residents and police work together to stop crime before it grows.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 30,
+      "response": "Addison needs to invest in more community policing, better street lighting, and youth programs that give at-risk residents alternatives to crime. It should also focus on targeting repeat violent offenders while strengthening neighborhood partnerships and social services.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 31,
+      "response": "Addison needs to invest in a combination of stronger community policing, targeted crime-prevention programs, and better support for at-risk youth. It should also focus on solving repeat-offender and violent-crime hotspots with smarter enforcement, while improving education, jobs, and neighborhood stability to address the root causes of crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 32,
+      "response": "Addison needs to invest in a stronger mix of community policing, youth outreach, and targeted enforcement in the neighborhoods with the highest crime rates. It should also improve education, job opportunities, and social services, because reducing poverty and hopelessness often helps reduce crime over time.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 33,
+      "response": "Addison needs to increase community policing and focus on prevention by investing in youth programs, mental health support, and job opportunities in high-crime neighborhoods. It should also target violent repeat offenders with faster investigations, better street lighting, and stronger coordination between police and residents.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 34,
+      "response": "Addison should invest in a mix of stronger community policing and crime prevention programs, especially focused on the neighborhoods most affected. That means better street lighting, youth outreach, job opportunities, and quick intervention for repeat offenders to address both the symptoms and the root causes of crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 35,
+      "response": "Addison needs to invest in more community policing, youth programs, and targeted support for the neighborhoods most affected by violence. It should also strengthen prevention efforts\u2014like better job opportunities, mental health services, and quicker responses to repeat offenders\u2014to address the causes of crime, not just the symptoms.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 36,
+      "response": "Addison needs to focus on both prevention and enforcement: increase community policing, improve street lighting and neighborhood surveillance, and invest in youth programs and job opportunities to address root causes of crime. Stronger policing alone won\u2019t be enough unless the city also works to reduce poverty, addiction, and other factors driving violence.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 37,
+      "response": "Addison should increase community policing, improve neighborhood lighting and surveillance, and focus on youth prevention programs to address crime before it starts. It also needs stronger support for jobs, education, and mental health services, since reducing the conditions that lead to crime is just as important as enforcing the law.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 38,
+      "response": "Addison should combine stronger, more targeted policing with long-term prevention efforts like youth programs, job training, and better community services. Reducing crime will require both holding violent offenders accountable and addressing the poverty, lack of opportunity, and neighborhood conditions that often fuel crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 39,
+      "response": "Addison needs a mix of stronger public safety and long-term prevention: more focused policing in high-crime areas, better street lighting and surveillance, and tougher action against repeat violent offenders. It should also invest in youth programs, job training, and community services so fewer people are pushed toward crime in the first place.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 40,
+      "response": "Addison needs to invest in a stronger police presence, especially in high-crime neighborhoods, while also expanding prevention efforts like youth programs, job training, and community outreach. Reducing crime will likely require both tougher enforcement and addressing the social factors that lead people into crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 41,
+      "response": "Addison needs to combine stronger, smarter policing with long-term prevention efforts, such as more community programs, youth outreach, job opportunities, and support for at-risk neighborhoods. Reducing crime will require not just arresting offenders, but also addressing the conditions that lead people into crime in the first place.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 42,
+      "response": "Addison likely needs to increase visible policing in high-crime areas, invest in community programs that address poverty and youth violence, and improve cooperation between residents and law enforcement. Long-term crime reduction usually requires both stronger enforcement and better prevention.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 43,
+      "response": "Addison needs to invest in a stronger, more visible police presence along with community-based prevention programs that address the root causes of crime, such as poverty, unemployment, and youth disengagement. It should also improve neighborhood policing, lighting, and reporting systems so residents feel safer and can work with law enforcement more effectively.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 44,
+      "response": "Addison needs to invest more in community policing, youth programs, and better support services for at-risk neighborhoods to address the root causes of crime. It should also increase police presence in high-crime areas while focusing on prevention, intervention, and stronger partnerships with residents.",
+      "decision": "reform",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 45,
+      "response": "Addison should focus on a mix of stronger community policing, targeted enforcement in the most violent areas, and prevention programs for youth and at-risk residents. It also needs to invest in jobs, education, and social services, since reducing the conditions that fuel crime is just as important as making arrests.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 46,
+      "response": "Addison needs a combination of stronger policing and prevention efforts: more visible patrols in high-crime areas, better crime investigation, and faster response times. At the same time, the city should invest in youth programs, job opportunities, mental health services, and neighborhood improvements to address the root causes of crime.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 47,
+      "response": "Addison needs to invest more in community policing, youth programs, and neighborhood support so officers and residents can work together to prevent crime before it starts. It should also focus enforcement on violent offenders while improving job opportunities, schools, and social services in the areas hit hardest.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 48,
+      "response": "Addison should combine stronger community policing with targeted efforts in the neighborhoods most affected by crime, while also investing in youth programs, job opportunities, and better street lighting. Reducing crime will likely take both enforcement and prevention, not just arrests.",
+      "decision": "mixed",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "virus",
+      "trial": 49,
+      "response": "Addison needs to combine stronger community policing with targeted prevention programs, especially for youth, to address the root causes of violent crime. It should also invest in better street lighting, neighborhood outreach, and quick responses to repeat-offense hotspots so residents feel safer and crime has fewer places to grow.",
+      "decision": "mixed",
+      "ok": true
+    }
+  ]
+}

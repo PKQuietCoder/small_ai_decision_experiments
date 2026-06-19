@@ -134,6 +134,8 @@ def build_analysis(
     variant_meta = {v["id"]: v for v in variants}
     models = [m.get("label", m.get("model")) for m in experiment.get("models", [])]
     primary = experiment.get("primary_decision", decision_ids[0] if decision_ids else None)
+    baseline = experiment.get("baseline") or {}
+    baseline_by_variant = baseline.get("by_variant", {}) if baseline else {}
 
     trials = [t for t in run.get("trials", []) if t.get("ok") and t.get("decision") in decision_ids]
 
@@ -166,6 +168,26 @@ def build_analysis(
             }
         )
         contingency.append([counts[d] for d in decision_ids])
+
+        # Overlay the human baseline (if provided) as a chart-only row right
+        # after its matching model row. Excluded from the contingency above, so
+        # the chi-square stays a test of the *model's* own effect.
+        human = baseline_by_variant.get(vid)
+        if human:
+            by_variant.append(
+                {
+                    "variantId": f"human_{vid}",
+                    "label": f"Humans · {variant.get('label', vid)}",
+                    "metaphor": "",
+                    "isBaseline": True,
+                    "total": None,
+                    "counts": {},
+                    "proportions": {
+                        d: round(float(human.get(d, 0.0)), 4) for d in decision_ids
+                    },
+                    "ci": {},
+                }
+            )
 
     by_variant_model: List[Dict[str, Any]] = []
     per_model: List[Dict[str, Any]] = []
@@ -202,6 +224,11 @@ def build_analysis(
 
     overall = chi_square_contingency(contingency)
     parse_failures = sum(1 for t in run.get("trials", []) if not t.get("ok"))
+    excluded = sum(
+        1
+        for t in run.get("trials", [])
+        if t.get("ok") and t.get("decision") not in decision_ids
+    )
 
     return {
         "experimentId": experiment["id"],
@@ -209,6 +236,8 @@ def build_analysis(
         "runId": run.get("runId"),
         "runDate": run.get("finishedAt") or run.get("startedAt"),
         "prompt": experiment.get("prompt_template", ""),
+        "question": experiment.get("question", ""),
+        "baseline": baseline or None,
         "decisionOptions": [
             {"id": d, "label": decision_labels[d]} for d in decision_ids
         ],
@@ -226,6 +255,7 @@ def build_analysis(
         "totalTrials": len(trials),
         "trialsPerCell": experiment.get("trials_per_cell"),
         "parseFailures": parse_failures,
+        "excluded": excluded,
         "byVariant": by_variant,
         "byVariantModel": by_variant_model,
         "overall": overall,

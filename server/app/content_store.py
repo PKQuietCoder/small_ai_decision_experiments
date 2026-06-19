@@ -371,6 +371,7 @@ def get_site_meta() -> Dict[str, Any]:
         return {
             "title": "LLM Decision Science",
             "tagline": "",
+            "intro": "",
             "description": "",
             "author": "",
             "aboutHtml": "",
@@ -380,6 +381,7 @@ def get_site_meta() -> Dict[str, Any]:
     return {
         "title": data.get("title", "LLM Decision Science"),
         "tagline": data.get("tagline", ""),
+        "intro": (data.get("intro", "") or "").strip(),
         "description": data.get("description", ""),
         "author": data.get("author", ""),
         "aboutHtml": about_html,

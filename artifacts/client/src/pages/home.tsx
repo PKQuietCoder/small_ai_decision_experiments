@@ -47,6 +47,19 @@ export default function Home() {
         )}
       </section>
 
+      {!siteLoading && site?.intro && (
+        <section className="mb-12 animate-in fade-in slide-in-from-bottom-4 duration-700">
+          <div className="rounded-2xl border border-card-border bg-card p-6 md:p-8">
+            <h2 className="mb-3 text-xs font-bold uppercase tracking-widest text-primary">
+              What we're doing
+            </h2>
+            <p className="max-w-3xl text-base leading-relaxed text-foreground/80 md:text-lg">
+              {site.intro}
+            </p>
+          </div>
+        </section>
+      )}
+
       {!postsLoading && categories.length > 1 && (
         <nav className="mb-10 flex flex-wrap gap-2 border-b border-border/60 pb-6">
           {categories.map((category) => {

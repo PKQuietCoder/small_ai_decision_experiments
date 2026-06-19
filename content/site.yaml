@@ -1,5 +1,16 @@
 title: "LLM Decision Science"
-tagline: "Small, careful experiments on how language models actually decide."
+tagline: "Small, careful experiments on how large language models and agents actually decide."
+intro: >
+  For decades, scientists studying how people make decisions have found something
+  surprising: our judgment is shaped by hidden, often counterintuitive biases. We
+  take those well-established human studies as our baseline, replicate them on large
+  language models, and then extend them to AI agents that decide over multiple steps.
+  Each time we ask a simple question — do these systems repeat the same human biases,
+  smooth them out, or amplify them? We answer in plain language. We still run proper
+  A/B tests and check whether the results are statistically solid, but we report what
+  we find in simple, intuitive terms instead of technical jargon. At the very least,
+  you'll come away with a clearer picture of how LLMs and agents actually make
+  decisions — and how those tendencies could add up when models work together.
 description: >
   A running series of decision-science experiments on large language models.
   Each post takes a single, controlled question — change one variable, hold

@@ -1,6 +1,7 @@
 export interface SiteInfo {
   title: string;
   tagline: string;
+  intro: string;
   description: string;
   author: string;
   aboutHtml: string;

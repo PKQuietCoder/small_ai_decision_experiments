@@ -277,7 +277,7 @@ def _post_summary(post: frontmatter.Post, slug: str) -> Dict[str, Any]:
         "slug": meta.get("slug", slug),
         "title": meta.get("title", slug),
         "excerpt": meta.get("excerpt", ""),
-        "category": meta.get("category", "Experiment"),
+        "category": meta.get("category", "Experiments"),
         "tags": meta.get("tags", []) or [],
         "date": _date_str(meta.get("date")),
         "readingMinutes": _reading_minutes(post.content),
@@ -397,23 +397,26 @@ def get_experiment(experiment_id: str) -> Optional[Dict[str, Any]]:
 # Site metadata
 # --------------------------------------------------------------------------- #
 def get_site_meta() -> Dict[str, Any]:
+    default_categories = ["Creativity", "Experiments", "Science"]
     if not config.SITE_FILE.exists():
         return {
-            "title": "LLM Decision Science",
+            "title": "The Model Notebook",
             "tagline": "",
             "intro": "",
             "description": "",
             "author": "",
+            "categories": default_categories,
             "aboutHtml": "",
         }
     data = _read_yaml(config.SITE_FILE)
     about_html = md.markdown(data.get("about", "") or "", extensions=MARKDOWN_EXTENSIONS)
     return {
-        "title": data.get("title", "LLM Decision Science"),
+        "title": data.get("title", "The Model Notebook"),
         "tagline": data.get("tagline", ""),
         "intro": (data.get("intro", "") or "").strip(),
         "description": data.get("description", ""),
         "author": data.get("author", ""),
+        "categories": data.get("categories") or default_categories,
         "aboutHtml": about_html,
     }
 

@@ -26,12 +26,30 @@ MAX_WORKERS = 8
 CODER_CATEGORIES = ["enforce", "reform", "mixed", "none"]
 
 
-def _coder_prompt(question: str, response_text: str) -> str:
+def _coder_prompt(
+    question: str, response_text: str, rubric: Optional[str] = None
+) -> str:
     """Build the judge prompt that codes one free-text answer into a category.
 
     Built by concatenation (never ``str.format``) because ``response_text`` is
     untrusted model output that may contain brace characters.
+
+    ``rubric`` lets an experiment supply its own coding instructions (via the
+    YAML ``coder.rubric`` field) when the default crime enforce/reform scheme
+    does not apply — e.g. the recognition probe codes recognised/unrecognised.
+    When omitted, the original crime rubric below is used unchanged, so existing
+    experiments are unaffected. The trusted ``question`` is substituted; the
+    untrusted ``response_text`` is only ever appended, never formatted.
     """
+    if rubric is not None:
+        return (
+            rubric.strip()
+            + "\n\n"
+            + f'For reference, the respondent was asked: "{question}"\n\n'
+            + "Respond with only the single category label.\n\n"
+            + "--- RESPONSE TO CLASSIFY ---\n"
+            + response_text
+        )
     return (
         "You are a research assistant coding free-text survey responses for a "
         "study on how people propose to address crime in a city. Identify the "
@@ -81,6 +99,8 @@ def run_experiment(
     is_open = experiment.get("type") == "open_response"
     judge_cfg: Optional[Dict[str, Any]] = None
     judge_temp = 0.0
+    coder_rubric: Optional[str] = None
+    coder_categories = CODER_CATEGORIES
     question = experiment.get("question", "")
     max_response_tokens = int(experiment.get("max_response_tokens", 1500))
     if is_open:
@@ -89,6 +109,9 @@ def run_experiment(
         if judge_cfg is None:
             raise ValueError(f"Unknown coder model key: {coder.get('key')!r}")
         judge_temp = float(coder.get("temperature", 0.0))
+        # Optional per-experiment coding scheme. Defaults to the crime rubric.
+        coder_rubric = coder.get("rubric")
+        coder_categories = coder.get("categories") or CODER_CATEGORIES
 
     started_at = datetime.now(timezone.utc)
     run_id = started_at.strftime("%Y%m%dT%H%M%SZ")
@@ -147,8 +170,8 @@ def run_experiment(
                 )
                 code, _raw = llm_clients.decide(
                     judge_cfg,
-                    _coder_prompt(question, text),
-                    CODER_CATEGORIES,
+                    _coder_prompt(question, text, coder_rubric),
+                    coder_categories,
                     judge_temp,
                 )
                 record["response"] = text

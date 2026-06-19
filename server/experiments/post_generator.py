@@ -154,7 +154,7 @@ not as a fixed effect size.
         "title": title,
         "slug": slug,
         "excerpt": (experiment.get("summary") or "").strip().split("\n")[0][:200],
-        "category": "Experiment",
+        "category": "Experiments",
         "tags": ["framing", "metaphor", "decision-making", "prompting"],
         "date": datetime.now(timezone.utc).date().isoformat(),
         "published": False,

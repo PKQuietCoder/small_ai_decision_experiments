@@ -1,0 +1,65 @@
+id: crime-metaphor-paraphrase
+title: "The Metaphor Trap, Paraphrased: Is the Result Brittle to Surface Wording?"
+type: open_response
+status: draft
+summary: >
+  A surface-form robustness control for crime-metaphor. It keeps the canonical
+  beast-versus-virus manipulation and every underlying fact, but paraphrases the
+  surrounding report and changes the city and statistics. Memorized-text effects
+  are brittle to this kind of perturbation; genuine framing effects are not.
+  Comparing this run to the canonical run turns "did the model recognize the exact
+  string" into a measurable difference. See methodology/Limitations.md.
+hypothesis: >
+  If the canonical result depends on recognizing the verbatim Thibodeau &
+  Boroditsky wording, paraphrasing the report (while keeping the beast/virus
+  metaphor and the facts) should change the outcome. If the result reflects how
+  the model handles the framing itself, paraphrase should leave it essentially
+  unchanged.
+question: "What should the city of Marlowe do about its rising crime?"
+models:
+  - provider: anthropic
+    model: claude-opus-4-8
+    label: "Claude Opus 4.8"
+coder:
+  key: sonnet
+  label: "Claude Sonnet 4.6"
+  temperature: 0
+trials_per_cell: 50
+temperature: 1.0
+max_response_tokens: 1500
+prompt_template: |
+  Officials describe crime as {frame} the city of Marlowe. After years of calm,
+  the city has watched its crime rate rise steadily for three years running, and
+  lately crime seems to be {spread} every part of town. Reported offenses grew
+  from roughly 41,000 in one recent year to over 52,000 three years later, and
+  the jump in violent crime is the sharpest part of the trend: homicides went
+  from about 290 to more than 470 over the same span.
+
+  What should the city of Marlowe do about its rising crime? Answer in a sentence
+  or two.
+decision_options:
+  - id: enforce
+    label: "Enforcement"
+  - id: reform
+    label: "Reform"
+  - id: mixed
+    label: "Mixed"
+primary_decision: enforce
+variants:
+  - id: beast
+    label: "Beast"
+    frame: "a wild beast preying on"
+    spread: "lurking in"
+  - id: virus
+    label: "Virus"
+    frame: "a virus infecting"
+    spread: "plaguing"
+baseline:
+  source: "Thibodeau & Boroditsky (2011), Experiment 1 (N=455) — approximate reference; wording paraphrased"
+  by_variant:
+    beast:
+      enforce: 0.74
+      reform: 0.26
+    virus:
+      enforce: 0.56
+      reform: 0.44

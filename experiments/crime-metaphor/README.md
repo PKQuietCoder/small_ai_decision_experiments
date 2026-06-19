@@ -97,7 +97,9 @@ crime-metaphor/
 │   ├── prompt_beast.txt            # rendered subject prompt — beast condition
 │   ├── prompt_virus.txt            # rendered subject prompt — virus condition
 │   ├── coding_rubric.txt           # exact judge prompt used to code answers
-│   └── human_baseline.json         # T&B (2011) Exp. 1 baseline + source
+│   ├── human_baseline.json         # T&B (2011) Exp. 1 baseline + source
+│   ├── Limitations.md              # training-data contamination analysis (hand-written)
+│   └── variant-tracker.md          # status of all follow-up contamination controls
 ├── raw/
 │   ├── runs/<model>__<runId>.json  # full per-trial raw data (one file per model)
 │   └── trials.csv                  # all 600 trials flattened (see dictionary below)
@@ -163,6 +165,11 @@ The experiment is fully specified by `methodology/crime-metaphor.yaml`.
 - Single scenario (Addison, the paper's Experiment 1). Results will shift with model versions
   and wording. This shows current models resist *this* framing — not that LLMs are immune to
   metaphor in general.
+- **Training-data familiarity.** The Addison passage is the verbatim, widely published T&B
+  stimulus, so the models may recognize the study rather than reason over it fresh.
+  `methodology/Limitations.md` analyzes this threat in full, and
+  `methodology/variant-tracker.md` tracks the follow-up controls built to bound it (a
+  recognition probe, a novel isomorphic stimulus, and a paraphrase control).
 
 ## Citation
 

@@ -18,10 +18,11 @@ request carries `?preview=1`. In production they are always hidden.
 Site-wide metadata for header/footer/about.
 ```json
 {
-  "title": "LLM Decision Science",
-  "tagline": "Small, careful experiments on how language models actually decide.",
-  "description": "A running series of decision-science experiments ...",
-  "author": "The LLM Decision Science Lab",
+  "title": "The Model Notebook",
+  "tagline": "Field notes on language models — creativity, experiments, and science.",
+  "description": "A file-based notebook of logs and findings on large language models ...",
+  "author": "The Model Notebook",
+  "categories": ["Creativity", "Experiments", "Science"],  // ordered category list for the feed filter
   "aboutHtml": "<p>...</p>"   // rendered HTML for the About page (from markdown)
 }
 ```

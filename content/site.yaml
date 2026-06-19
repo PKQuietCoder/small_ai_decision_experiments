@@ -1,42 +1,45 @@
-title: "LLM Decision Science"
-tagline: "Small, careful experiments on how large language models and agents actually decide."
+title: "The Model Notebook"
+tagline: "Field notes on language models — creativity, experiments, and science."
+categories:
+  - Creativity
+  - Experiments
+  - Science
 intro: >
-  For decades, scientists studying how people make decisions have found something
-  surprising: our judgment is shaped by hidden, often counterintuitive biases. We
-  take those well-established human studies as our baseline, replicate them on large
-  language models, and then extend them to AI agents that decide over multiple steps.
-  Each time we ask a simple question — do these systems repeat the same human biases,
-  smooth them out, or amplify them? We answer in plain language. We still run proper
-  A/B tests and check whether the results are statistically solid, but we report what
-  we find in simple, intuitive terms instead of technical jargon. At the very least,
-  you'll come away with a clearer picture of how LLMs and agents actually make
-  decisions — and how those tendencies could add up when models work together.
+  A working notebook on how large language models and agents actually behave. We keep
+  our entries in three notebooks. Creativity looks at what models make when the task is
+  open-ended — writing, ideas, the texture of their voice. Experiments reruns classic
+  human studies on models and measures how a single changed word moves their choices.
+  Science is the method we hold ourselves to: controlled comparisons, honest statistics,
+  and findings reported in plain language. The aim is not to rank models but to build an
+  intuitive, well-evidenced picture of how they create, decide, and reason.
 description: >
-  A running series of decision-science experiments on large language models.
-  Each post takes a single, controlled question — change one variable, hold
-  everything else constant — and measures how it moves a model's choices.
-author: "The LLM Decision Science Lab"
+  A file-based notebook of logs and findings on large language models, kept in three
+  parts — creativity, experiments, and science. Each entry isolates one question, holds
+  everything else constant, and reports what the evidence shows in plain language.
+author: "The Model Notebook"
 about: |
-  ## About this project
+  ## About this notebook
 
-  For decades, scientists studying how people make decisions have uncovered something
-  counterintuitive: human judgment is shaped by hidden, systematic biases — predictable
-  ways our choices bend depending on how a question is framed. There is a deep,
-  well-established body of research documenting these effects.
+  The Model Notebook is a running record of how large language models and agents behave.
+  We keep it in three parts, and every entry on the site is filed under one of them.
 
-  This project asks whether AI does the same thing. We take those classic human studies
-  as our baseline, replicate them as simple experiments on large language models, and
-  then extend them to AI agents that make decisions over multiple steps.
+  ### Creativity
 
-  ### What we're looking for
+  What does a model make when the task is open-ended? These entries look at writing,
+  ideas, and the texture of a model's voice — where it reaches, where it defaults, and
+  how its output shifts when we change the prompt rather than the model.
 
-  Each time, we ask one straightforward question: do these systems repeat the same human
-  biases, smooth them out, or amplify them? The goal isn't to rank models — it's to build
-  an intuitive picture of how LLMs and agents actually make decisions, and how those
-  tendencies could compound when models work together.
+  ### Experiments
 
-  ### How we talk about results
+  For decades, researchers studying human judgment have documented hidden, systematic
+  biases — predictable ways our choices bend with how a question is framed. We take those
+  classic studies as a baseline, replicate them on language models, and extend them to
+  agents that decide over multiple steps. Each time we ask one question: do these systems
+  repeat the same biases, smooth them out, or amplify them?
 
-  We still run proper A/B tests and check whether our results are statistically solid. But
-  we report what we find in plain, intuitive language instead of technical terms — so the
-  findings are easy to understand and act on.
+  ### Science
+
+  Science is the method, not a separate topic. We run proper A/B comparisons and check
+  whether a result is statistically solid before we believe it. But we report what we
+  find in plain, intuitive language instead of technical jargon — so the findings are
+  easy to understand and act on.

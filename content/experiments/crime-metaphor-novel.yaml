@@ -1,0 +1,58 @@
+id: crime-metaphor-novel
+title: "The Metaphor Trap, Novel Stimulus: Does the Effect Survive Un-memorized Text?"
+type: open_response
+status: draft
+summary: >
+  A contamination control for crime-metaphor. It preserves the original study's
+  predator-vs-pathogen framing structure but rebuilds every surface detail the
+  model could have memorized: a different city, different statistics, and
+  lexically novel metaphors (crime as a marauding wolf versus a growing cancer)
+  that match no indexed source. If the flat, near-noise metaphor response from the
+  canonical run survives here, recognition of the original Thibodeau & Boroditsky
+  text is largely ruled out as the explanation. See methodology/Limitations.md.
+hypothesis: >
+  If the canonical run's flat response is driven by the model recognizing the
+  famous stimulus, a structurally identical but un-memorized stimulus should
+  reveal a larger framing swing. If instead the response is driven by a general
+  trained disposition to resist loaded framing, the swing should stay near noise,
+  as it did on the canonical text.
+question: "In your opinion, what does Brookhaven need to do to reduce crime?"
+models:
+  - provider: anthropic
+    model: claude-opus-4-8
+    label: "Claude Opus 4.8"
+coder:
+  key: sonnet
+  label: "Claude Sonnet 4.6"
+  temperature: 0
+trials_per_cell: 50
+temperature: 1.0
+max_response_tokens: 1500
+prompt_template: |
+  Crime is {frame} the city of Brookhaven. The crime rate in the once quiet city
+  has climbed without pause for four straight years. These days it seems that
+  crime is {spread} every district. In 2018, 38,402 offenses were recorded;
+  by 2022 the figure had passed 49,000. The surge in violent crime is especially
+  troubling: 214 homicides in 2018 had risen to more than 360 by 2022.
+
+  In your opinion, what does Brookhaven need to do to reduce crime? Answer in a
+  sentence or two.
+decision_options:
+  - id: enforce
+    label: "Enforcement"
+  - id: reform
+    label: "Reform"
+  - id: mixed
+    label: "Mixed"
+primary_decision: enforce
+variants:
+  - id: wolf
+    label: "Wolf"
+    frame: "a marauding wolf hunting"
+    spread: "stalking"
+  - id: cancer
+    label: "Cancer"
+    frame: "a cancer growing inside"
+    spread: "spreading through"
+# No human baseline: these metaphors have no published human data. The comparison
+# is within-model (wolf vs cancer), against the canonical crime-metaphor run.

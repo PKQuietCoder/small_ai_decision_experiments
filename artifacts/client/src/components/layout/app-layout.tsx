@@ -19,7 +19,7 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
             <span className="w-6 h-6 rounded-none bg-primary text-primary-foreground flex items-center justify-center" aria-hidden="true">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" strokeLinejoin="miter"><path d="M4 19V5M4 19h16M8 16V9M12 16V6M16 16v-4M20 16V8"/></svg>
             </span>
-            {isLoading ? <Skeleton className="h-5 w-32" /> : site?.title || "LLM Decision Science"}
+            {isLoading ? <Skeleton className="h-5 w-32" /> : site?.title || "The Model Notebook"}
           </Link>
           
           <nav className="flex items-center gap-6 text-sm font-medium text-muted-foreground">
@@ -43,7 +43,7 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
       <footer className="border-t border-border/50 py-12 mt-20">
         <div className="container mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-muted-foreground">
           <div>
-            <p className="font-serif font-semibold text-foreground">{site?.title || "LLM Decision Science"}</p>
+            <p className="font-serif font-semibold text-foreground">{site?.title || "The Model Notebook"}</p>
             <p className="mt-1">{site?.tagline}</p>
           </div>
           <div className="flex items-center gap-6">

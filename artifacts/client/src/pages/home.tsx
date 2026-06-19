@@ -11,12 +11,13 @@ export default function Home() {
   const [active, setActive] = useState(ALL);
 
   const categories = useMemo(() => {
+    if (site?.categories?.length) return [ALL, ...site.categories];
     const seen = new Set<string>();
     for (const post of posts ?? []) {
       if (post.category) seen.add(post.category);
     }
     return [ALL, ...Array.from(seen)];
-  }, [posts]);
+  }, [site, posts]);
 
   const visible = useMemo(() => {
     const list = (posts ?? []).filter(

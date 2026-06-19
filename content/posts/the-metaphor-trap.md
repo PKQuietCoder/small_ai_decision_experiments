@@ -1,5 +1,5 @@
 ---
-category: Experiment
+category: Experiments
 date: '2026-06-19'
 excerpt: 'In 1,200 trials we reran Thibodeau & Boroditsky''s classic crime-metaphor study on six language models — the exact report, the exact "beast" vs "virus" wording, the exact open-ended question. Humans swing hard with the metaphor. The models barely move — and the frontier model often spots the trap and says so out loud.'
 experimentId: crime-metaphor
@@ -132,6 +132,27 @@ The models also tend to answer with comprehensive "do both" packages, which is p
 much lands in "mixed." This is a single scenario (Addison, Experiment 1 of the paper), and
 results will shift with model versions and wording. Treat it as evidence that today's models
 resist this particular framing — not as a universal claim that LLMs are immune to metaphor.
+
+### Could the model already know the study?
+
+There is a deeper caveat worth stating plainly. The Addison passage is the *exact* stimulus
+from a widely cited paper. A frontier model has almost certainly read it — along with the
+result and the discussion around it — during training. So the model is not a naïve subject; it
+may recognize the test. That cuts two ways. If a model were simply reproducing what it had
+read, it would recreate the human swing — but none of them do. What we see instead, including
+Opus naming the metaphor as a persuasion technique, looks less like recall of this paper and
+more like a general trained disposition to resist loaded framing. We cannot fully separate
+those two explanations from this run alone, and the more honest claim is the second one: the
+result is about a learned policy, not proof that the bias is absent.
+
+To bound this rather than wave it away, we are extending the series with three controls that
+share this study's pipeline: a **recognition probe** that asks models directly whether they
+recognize the scenario and what result they expect; a **novel isomorphic stimulus** that keeps
+the predator-versus-pathogen structure but rebuilds every memorable surface detail (a new city,
+new numbers, and fresh metaphors the model has not seen); and a **paraphrase** control that
+keeps the beast/virus manipulation but rewrites the surrounding wording. If the flat response
+holds on text the model has demonstrably never seen, recognition is largely ruled out. The full
+method note and a tracker for these follow-ups ship in the experiment's downloadable data package.
 
 *Every model in the catalog can be rerun from the command line; the chart regenerates from
 the recorded run.*

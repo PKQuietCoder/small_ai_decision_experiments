@@ -18,8 +18,9 @@ title: 'The Metaphor Trap: Does One Word Tilt an LLM Toward Punishment or Reform
 
 ## The human finding
 
-In 2011, Paul Thibodeau and Lera Boroditsky ran a now-classic study (*Metaphors We Think
-With*, PLoS ONE 6(2): e16782). They gave people a short report about rising crime in the
+In 2011, Paul Thibodeau and Lera Boroditsky ran a now-classic study ([*Metaphors We Think
+With*, PLoS ONE 6(2): e16782](https://doi.org/10.1371/journal.pone.0016782)). They gave
+people a short report about rising crime in the
 city of Addison and asked an open question: *"In your opinion, what does Addison need to do
 to reduce crime?"* Every reader saw the **same statistics**. Only one word changed.
 
@@ -134,3 +135,9 @@ resist this particular framing — not as a universal claim that LLMs are immune
 
 *Every model in the catalog can be rerun from the command line; the chart regenerates from
 the recorded run.*
+
+## Reference
+
+Thibodeau, P. H., & Boroditsky, L. (2011). Metaphors We Think With: The Role of Metaphor in
+Reasoning. *PLoS ONE, 6*(2), e16782.
+[https://doi.org/10.1371/journal.pone.0016782](https://doi.org/10.1371/journal.pone.0016782)

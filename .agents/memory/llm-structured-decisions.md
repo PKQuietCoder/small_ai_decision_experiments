@@ -18,4 +18,4 @@ Draft (unpublished) content is gated by `os.environ.get("REPLIT_DEPLOYMENT") != 
 **How to apply:** never gate sensitive/preview behavior on an env var that is unset in prod with an allow-by-default fallback; key off `REPLIT_DEPLOYMENT` with deny-by-default.
 
 # Re-running the experiment
-`python -m server.run_experiment metaphor-effect --keep-post` re-runs trials (saves fresh run JSON) but preserves a hand-edited post's narrative/`published` flag, only refreshing its `runId`. Use it when the data-generation mechanism changes but you want to keep curated prose. Charts/stats are computed from the run JSON at serve time, but hard-coded numbers in the prose must be updated by hand.
+`python -m server.run_experiment crime-metaphor --keep-post` re-runs trials (saves fresh run JSON) but preserves a hand-edited post's narrative/`published` flag, only refreshing its `runId`. Use it when the data-generation mechanism changes but you want to keep curated prose. Charts/stats are computed from the run JSON at serve time, but hard-coded numbers in the prose must be updated by hand.

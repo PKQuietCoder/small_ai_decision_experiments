@@ -6,7 +6,7 @@ render. Replace it with a real run via ``python -m server.run_experiment`` once
 keys are available. Synthetic posts are marked clearly and left unpublished.
 
 Usage:
-    python -m server.seed_sample metaphor-effect
+    python -m server.seed_sample crime-metaphor
 """
 
 from __future__ import annotations
@@ -19,20 +19,10 @@ from server.app.content_store import load_experiment_config
 from server.experiments.engine import save_run
 from server.experiments.post_generator import generate_post
 
-# Plausible per-variant tilt toward decisions A/B/C/D (weights, not real data).
-_VARIANT_BIAS = {
-    "sinking_ship": [0.55, 0.10, 0.15, 0.20],
-    "garden": [0.05, 0.65, 0.20, 0.10],
-    "machine": [0.30, 0.10, 0.45, 0.15],
-    "patient": [0.10, 0.30, 0.50, 0.10],
-    "battlefield": [0.35, 0.05, 0.10, 0.50],
-    "puzzle": [0.05, 0.15, 0.65, 0.15],
-}
-
 
 def main(argv: list[str] | None = None) -> int:
     argv = argv if argv is not None else sys.argv[1:]
-    experiment_id = argv[0] if argv else "metaphor-effect"
+    experiment_id = argv[0] if argv else "crime-metaphor"
     experiment = load_experiment_config(experiment_id)
     if experiment is None:
         print(f"Experiment '{experiment_id}' not found.", file=sys.stderr)
@@ -47,7 +37,9 @@ def main(argv: list[str] | None = None) -> int:
     for model_cfg in experiment["models"]:
         label = model_cfg.get("label", model_cfg["model"])
         for variant in experiment["variants"]:
-            weights = _VARIANT_BIAS.get(variant["id"], [0.25, 0.25, 0.25, 0.25])
+            # Uniform over whatever decision options this experiment defines —
+            # synthetic data just needs to populate the UI, not be realistic.
+            weights = [1.0] * len(decision_ids)
             for trial_no in range(trials_per_cell):
                 decision = rng.choices(decision_ids, weights=weights, k=1)[0]
                 trials.append(

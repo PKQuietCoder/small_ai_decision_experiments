@@ -74,10 +74,10 @@ export function ExperimentAnalysis({ analysis }: Props) {
   return (
     <div className="my-16 space-y-12 font-sans" data-testid="experiment-analysis">
       {/* Significance Callout */}
-      <div className={`p-6 rounded-xl border-l-4 ${overall.significant ? 'bg-primary/5 border-primary' : 'bg-muted border-muted-foreground'}`}>
-        <div className="flex items-start justify-between">
+      <div className={`p-5 sm:p-6 rounded-xl border-l-4 ${overall.significant ? 'bg-primary/5 border-primary' : 'bg-muted border-muted-foreground'}`}>
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
           <div>
-            <h3 className="text-xl font-bold tracking-tight text-foreground mb-2">
+            <h3 className="text-lg sm:text-xl font-bold tracking-tight text-foreground mb-2">
               {overall.significant ? "Statistically Significant Effect" : "No Significant Effect Detected"}
             </h3>
             <p className="text-muted-foreground max-w-2xl leading-relaxed">
@@ -85,8 +85,8 @@ export function ExperimentAnalysis({ analysis }: Props) {
               {overall.significant ? " had a measurable impact" : " did not meaningfully alter"} on the model's decision distribution.
             </p>
           </div>
-          <div className="text-right flex flex-col items-end">
-            <Badge variant={overall.significant ? "default" : "secondary"} className="mb-2">
+          <div className="flex flex-row items-center gap-3 sm:flex-col sm:items-end sm:gap-2 sm:text-right shrink-0">
+            <Badge variant={overall.significant ? "default" : "secondary"}>
               p {overall.pValue < 0.001 ? "< 0.001" : `= ${overall.pValue.toFixed(3)}`}
             </Badge>
             <span className="text-xs text-muted-foreground font-mono">
@@ -103,9 +103,9 @@ export function ExperimentAnalysis({ analysis }: Props) {
           <CardDescription>Percentage of models selecting each option based on the provided framing</CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="h-[400px] w-full mt-4">
+          <div className="h-[300px] sm:h-[400px] w-full mt-4">
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={mainChartData} margin={{ top: 20, right: 30, left: 0, bottom: 30 }}>
+              <BarChart data={mainChartData} margin={{ top: 20, right: 10, left: -10, bottom: 30 }}>
                 <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="hsl(var(--border))" />
                 <XAxis 
                   dataKey="name" 

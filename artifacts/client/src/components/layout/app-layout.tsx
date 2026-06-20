@@ -1,11 +1,20 @@
+import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { useSite } from "@/hooks/use-api";
 import { Skeleton } from "@/components/ui/skeleton";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetTitle,
+} from "@/components/ui/sheet";
+import { Menu } from "lucide-react";
 import logo from "@assets/logo.png";
 
 export function AppLayout({ children }: { children: React.ReactNode }) {
   const { data: site, isLoading } = useSite();
   const [location] = useLocation();
+  const [open, setOpen] = useState(false);
 
   const navLinks = [
     { href: "/", label: "Home" },
@@ -15,17 +24,28 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="min-h-[100dvh] flex flex-col font-sans">
-      <header className="sticky top-0 z-40 w-full bg-background border-b border-border">
-        <div className="container mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
-          <Link href="/" className="font-serif font-semibold tracking-tight text-foreground text-lg flex items-center gap-2.5">
-            <img src={logo} alt="Borrowed Intuitions logo" className="h-8 w-8 rounded-none object-contain" />
-            {isLoading ? <Skeleton className="h-5 w-32" /> : site?.title || "Borrowed Intuitions"}
+      <header className="sticky top-0 z-40 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border">
+        <div className="container mx-auto px-4 md:px-6 h-16 flex items-center justify-between gap-3">
+          <Link
+            href="/"
+            className="font-serif font-semibold tracking-tight text-foreground text-base sm:text-lg flex items-center gap-2.5 min-w-0"
+          >
+            <img
+              src={logo}
+              alt="Borrowed Intuitions logo"
+              className="h-8 w-8 shrink-0 rounded-none object-contain"
+            />
+            {isLoading ? (
+              <Skeleton className="h-5 w-32" />
+            ) : (
+              <span className="truncate">{site?.title || "Borrowed Intuitions"}</span>
+            )}
           </Link>
-          
-          <nav className="flex items-center gap-6 text-sm font-medium text-muted-foreground">
+
+          <nav className="hidden sm:flex items-center gap-6 text-sm font-medium text-muted-foreground">
             {navLinks.map((link) => (
-              <Link 
-                key={link.href} 
+              <Link
+                key={link.href}
                 href={link.href}
                 className={`transition-colors hover:text-foreground ${location === link.href ? "text-foreground font-semibold" : ""}`}
               >
@@ -33,6 +53,37 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
               </Link>
             ))}
           </nav>
+
+          <Sheet open={open} onOpenChange={setOpen}>
+            <SheetTrigger asChild>
+              <button
+                type="button"
+                aria-label="Open navigation menu"
+                className="sm:hidden -mr-2 inline-flex h-10 w-10 items-center justify-center rounded-md text-foreground transition-colors hover:bg-muted"
+              >
+                <Menu size={22} />
+              </button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-72">
+              <SheetTitle className="mb-6 font-serif text-lg">Menu</SheetTitle>
+              <nav className="flex flex-col gap-1">
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setOpen(false)}
+                    className={`rounded-md px-3 py-2.5 text-base transition-colors ${
+                      location === link.href
+                        ? "bg-muted font-semibold text-foreground"
+                        : "text-muted-foreground hover:bg-muted/60 hover:text-foreground"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </nav>
+            </SheetContent>
+          </Sheet>
         </div>
       </header>
 

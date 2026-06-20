@@ -336,6 +336,15 @@
 
 /* Tables: Nature house style — hairline rules, no fills, double rule on header. */
 .prose table { font-family: var(--app-font-sans); font-size: 0.875rem; border-collapse: collapse; }
+@media (max-width: 640px) {
+  .prose table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+  }
+}
 .prose thead th {
   border-top: 2px solid hsl(var(--foreground));
   border-bottom: 2px solid hsl(var(--foreground));

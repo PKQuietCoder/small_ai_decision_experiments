@@ -53,20 +53,20 @@ export default function Post() {
             Back to publications
           </Link>
           
-          <div className="flex items-center gap-3 text-sm text-muted-foreground font-mono mb-6">
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs sm:text-sm text-muted-foreground font-mono mb-6">
             {post.type && (
               <>
                 <span className="uppercase tracking-wider text-primary font-bold">{post.type}</span>
-                <span>&middot;</span>
+                <span aria-hidden="true">&middot;</span>
               </>
             )}
             <span className="uppercase tracking-wider text-primary font-bold">{post.category}</span>
-            <span>&middot;</span>
-            <time dateTime={post.date}>
+            <span aria-hidden="true">&middot;</span>
+            <time dateTime={post.date} className="whitespace-nowrap">
               {format(new Date(post.date), "MMMM d, yyyy")}
             </time>
-            <span>&middot;</span>
-            <span>{post.readingMinutes} min read</span>
+            <span aria-hidden="true">&middot;</span>
+            <span className="whitespace-nowrap">{post.readingMinutes} min read</span>
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight font-serif text-foreground leading-[1.1] mb-6">

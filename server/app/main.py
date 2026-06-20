@@ -14,7 +14,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from . import config, content_store
 
-app = FastAPI(title="Borrowed Instincts API", version="1.0.0")
+app = FastAPI(title="Borrowed Intuitions API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,

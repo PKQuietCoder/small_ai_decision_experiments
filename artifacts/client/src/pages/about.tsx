@@ -8,7 +8,7 @@ export default function About() {
     <div className="container mx-auto px-4 md:px-6 py-12 md:py-20 max-w-3xl">
       <header className="mb-12 animate-in fade-in slide-in-from-bottom-4 duration-700">
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground font-serif mb-6">
-          About Borrowed Instincts
+          About Borrowed Intuitions
         </h1>
       </header>
 

@@ -1,4 +1,4 @@
-# Borrowed Instincts
+# Borrowed Intuitions
 
 Classic experiments and methods, run on people and rerun on language models and agents.
 

@@ -18,7 +18,7 @@ request carries `?preview=1`. In production they are always hidden.
 Site-wide metadata for header/footer/about.
 ```json
 {
-  "title": "Borrowed Instincts",
+  "title": "Borrowed Intuitions",
   "tagline": "Classic experiments and methods, run on people and rerun on language models and agents.",
   "description": "A file-based notebook of logs and findings on large language models ...",
   "author": "P.K. Mishra",

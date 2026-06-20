@@ -45,9 +45,6 @@ about: |
   - **Smooth** — the model damps the bias toward noise, or removes it entirely.
   - **Amplify** — the model shows the bias more strongly than people do.
 
-  So far the series leans heavily toward *smooth*, with one clear *copy*. Each verdict is a claim
-  you can check against the per-trial data, not an impression.
-
   The point isn't trivia about models. It's practical. The better we understand how these
   systems decide, and where their intuitions line up with ours or pull against them, the
   better we can work alongside them and make good calls together.

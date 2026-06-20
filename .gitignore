@@ -48,6 +48,9 @@ Thumbs.db
 .cache/
 .local/
 
+# Substack paste packs (regenerable export output)
+substack/
+
 # Claude Code — local, personal overrides (not shared)
 CLAUDE.local.md
 .claude/settings.local.json

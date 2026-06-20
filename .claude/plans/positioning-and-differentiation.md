@@ -21,6 +21,17 @@ code change. Research (web + codebase) found:
 intersection of (1) agentic paradigm, (2) recognition/novel-stimulus controls, and (3)
 plain-language reporting at journal-grade statistical rigor.
 
+### The four published studies (current state)
+
+| # | Study (post slug) | Classic replicated | Verdict | Model coverage |
+|---|---|---|---|---|
+| 1 | The Metaphor Trap (`the-metaphor-trap`) | Thibodeau & Boroditsky 2011, crime framing | **Smooth** | 6 models — Opus 4.8, Sonnet 4.6, Haiku 4.5, GPT-5.5 / 5.4 / 5.4-mini |
+| 2 | When Budgeting Backfires (`budget-backfire`) | Larson & Hamilton 2012, pre-commit budget | **Smooth** | Opus 4.8 + Sonnet 4.6 (recognition control pending) |
+| 3 | The Falsification Test (`wason-selection`) | Wason 1968 selection task | **Smooth** (strongest — model produces the normatively correct answer) | Opus 4.8 |
+| 4 | The Decoy Effect (`decoy-effect`) | Huber, Payne & Puto 1982 attraction effect | **Copy** (first non-smooth result) | Opus 4.8 |
+
+All four now carry a verdict badge and a "Controls" callout on their post pages (Tier 1, shipped).
+
 ### How it is already unique (claim these explicitly)
 
 1. **Agentic, not single-shot** — e.g. the decoy result where the bias appears under tool use but
@@ -34,7 +45,9 @@ plain-language reporting at journal-grade statistical rigor.
 
 ### Where it is vulnerable
 
-- Three of four studies run only Opus 4.8 — weakens "do *LLMs*…" to "does Opus…".
+- Cross-family coverage is uneven: two of the four studies (Wason, decoy) run Opus 4.8 only and a
+  third (budget) adds only Sonnet — weakening "do *LLMs*…" to "does Opus…". Only the metaphor study
+  spans all six catalog models.
 - No multi-agent paradigms yet (ultimatum, Asch) — the most shareable experiments are still backlog.
 - Discoverability: a file-based solo blog competes with arxiv on the same search terms.
 

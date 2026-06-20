@@ -4,6 +4,8 @@ type: Experiments
 date: '2026-06-20'
 excerpt: 'A technical report — and the first time in this series a model copies a human bias rather than smoothing it. We rebuilt the attraction (decoy) effect as an agentic purchase: an agent compares two laptops with a genuine price/performance tradeoff, then a third, clearly worse option is added that is dominated by one of them. The decoy is never chosen, yet its mere presence shifts the agent''s choice toward the option it flatters — +37 points in one market and a complete reversal in another. The shift survives on an un-memorized product domain, so it is not recognition. Notably, the agent excludes the decoy from its own shortlist every time and is swayed anyway.'
 experimentId: decoy-effect
+verdict: copy
+controls: "A recognition control reruns the identical design in an un-memorised market (cloud-storage plans). The effect strengthens rather than fades, so it is not recall of a textbook example."
 featured: false
 published: true
 runId: 20260620T024201Z

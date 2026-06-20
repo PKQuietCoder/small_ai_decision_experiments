@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { format } from "date-fns";
 import type { PostSummary } from "@/lib/api";
+import { VerdictBadge } from "@/components/verdict-badge";
 import authorPhoto from "@assets/PK Photo.jpg";
 
 function safeDate(value: string): string {
@@ -44,6 +45,12 @@ export function PostCard({ post, author, index = 0 }: PostCardProps) {
       <p className="mt-3 line-clamp-3 font-serif text-base leading-relaxed text-muted-foreground">
         {post.excerpt}
       </p>
+
+      {post.verdict && (
+        <div className="mt-4">
+          <VerdictBadge verdict={post.verdict} compact />
+        </div>
+      )}
 
       <div className="mt-auto flex items-center gap-3 pt-6 text-sm">
         <img

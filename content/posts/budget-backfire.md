@@ -4,6 +4,8 @@ type: Experiments
 date: '2026-06-19'
 excerpt: 'A technical report. We rebuilt Larson & Hamilton''s 2012 "budgeting backfires" pen study as an agentic decision and forced Claude to partition the purchase into one, two, or up to four tool-calling steps. This report states the human baseline and its methods, the objectives and full design of the re-run — including the planned internal-knowledge control — and the results with their assumptions and limitations. The human backfire does not transfer: across three runs and four conditions the agent lands on the same mid-tier pen, and left alone it budgets anyway.'
 experimentId: budget-backfire
+verdict: smooth
+controls: "A tool-call reliability control (strict output schema) rules out malformed agent calls as the cause. The internal-knowledge (recognition) control is designed but not yet run, so recognition is not yet excluded for this study."
 featured: false
 published: true
 runId: 20260619T134607Z

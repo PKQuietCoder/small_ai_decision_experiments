@@ -335,6 +335,10 @@ def _post_summary(post: frontmatter.Post, slug: str) -> Dict[str, Any]:
         "featured": bool(meta.get("featured", False)),
         "published": bool(meta.get("published", False)),
         "experimentId": meta.get("experimentId"),
+        # The series' headline verdict (copy / smooth / amplify) and a one-line summary
+        # of the recognition/replication controls — both optional, both drive UI badges.
+        "verdict": meta.get("verdict"),
+        "controls": meta.get("controls"),
     }
 
 

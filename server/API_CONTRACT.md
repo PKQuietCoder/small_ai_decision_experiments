@@ -46,7 +46,9 @@ Ordered newest-first. Use for the home/feed page.
     "readingMinutes": 2,
     "featured": true,
     "published": true,
-    "experimentId": "metaphor-effect"
+    "experimentId": "metaphor-effect",
+    "verdict": "smooth",       // optional: headline result vs. the human baseline — "copy" | "smooth" | "amplify"
+    "controls": "A recognition control reruns the design on un-memorized stimuli ..."  // optional: one-line controls summary
   }
 ]
 ```
@@ -67,6 +69,8 @@ already sanitized HTML — render with care) and `analysis` (live stats for char
   "featured": true,
   "published": true,
   "experimentId": "metaphor-effect",
+  "verdict": "smooth",        // optional; see /api/posts above
+  "controls": "A recognition control ...",  // optional; see /api/posts above
   "bodyHtml": "<h2 id=\"...\">...</h2>...",
   "analysis": { /* see Analysis object below; may be null if no run */ }
 }

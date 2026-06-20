@@ -3,6 +3,7 @@ import { usePost, useSite } from "@/hooks/use-api";
 import { format } from "date-fns";
 import { Skeleton } from "@/components/ui/skeleton";
 import { ExperimentAnalysis } from "@/components/charts/analysis-charts";
+import { VerdictBadge } from "@/components/verdict-badge";
 import { Link } from "wouter";
 import { ArrowLeft } from "lucide-react";
 import authorPhoto from "@assets/PK Photo.jpg";
@@ -76,6 +77,12 @@ export default function Post() {
             {post.excerpt}
           </p>
 
+          {post.verdict && (
+            <div className="mt-6">
+              <VerdictBadge verdict={post.verdict} />
+            </div>
+          )}
+
           <div className="mt-8 flex items-center gap-3 text-sm">
             <img
               src={authorPhoto}
@@ -100,7 +107,19 @@ export default function Post() {
 
       {/* Content */}
       <div className="container mx-auto px-4 md:px-6 max-w-3xl animate-in fade-in duration-1000 delay-300 fill-mode-both">
-        <div 
+        {/* Recognition / replication controls — the recurring rigor signal: a model
+            might just recognize a famous experiment, so every entry states how that
+            was ruled out (or, candidly, where it has not yet been). */}
+        {post.controls && (
+          <aside className="mb-12 border border-border bg-card p-5">
+            <p className="eyebrow mb-2">Controls</p>
+            <p className="font-serif text-base leading-relaxed text-muted-foreground">
+              {post.controls}
+            </p>
+          </aside>
+        )}
+
+        <div
           className="prose prose-lg dark:prose-invert prose-headings:font-serif prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-pre:bg-muted prose-pre:text-foreground prose-pre:border prose-pre:border-border max-w-none"
           dangerouslySetInnerHTML={{ __html: post.bodyHtml }}
         />

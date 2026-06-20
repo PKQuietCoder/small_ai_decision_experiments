@@ -1,5 +1,5 @@
 title: "Borrowed Intuitions"
-tagline: "Classic experiments and methods, run on people and rerun on language models and agents."
+tagline: "Classic human-bias experiments, rerun on language models — and on agents that reach the decision over several steps, not just answer in one shot."
 categories:
   - Decisions
   - Science
@@ -8,14 +8,17 @@ types:
   - Experiments
   - Methods
 intro: >
-  An ongoing series that reruns one classic human-bias experiment at a time on language
-  models and agents, then reports in plain language, with real A/B tests, whether the
-  model copies our bias, smooths it out, or makes it worse.
+  An ongoing series that reruns one classic human-bias experiment at a time — not only on a
+  single chat answer, but on agents that reach the decision over several tool-using steps,
+  including a condition where the agent runs the decision itself. Each entry reports in plain
+  language, with real A/B tests, whether the model copies our bias, smooths it out, or makes
+  it worse.
 description: >
   We like to think we reason our way to decisions. Mostly we follow hidden rules,
   predictable and often counterintuitive. This is an ongoing series that reruns classic
-  human-bias experiments on language models and agents to see which of those rules they
-  inherit, which they smooth away, and which they invent on their own.
+  human-bias experiments on language models — and on agents that decide over several
+  tool-using steps, not just answer in one shot — to see which of those rules they inherit,
+  which they smooth away, and which they invent on their own.
 author: "P.K. Mishra"
 authorUrl: "https://www.linkedin.com/in/pradkmishra/"
 about: |
@@ -29,10 +32,25 @@ about: |
   they may inherit from us, soaked up from a training set full of human choices. Some they
   may invent on their own.
 
-  This is an ongoing series. In each entry I take one classic human-bias experiment, rerun it live
-  on a language model or an agent, and ask a simple question: does the model copy our bias,
-  smooth it out, or make it worse? Every post explains the result in plain language and backs
-  it with real A/B tests and significance checks. No vibes. No cherry-picked screenshots.
+  This is an ongoing series. In each entry I take one classic human-bias experiment and rerun it
+  live — not just as a single chat answer, but as an agent that reaches the decision over several
+  tool-using steps, including a condition where the agent directs itself. Then I ask a simple
+  question: does the model copy our bias, smooth it out, or make it worse? Every post explains the
+  result in plain language, backs it with real A/B tests and significance checks, and runs
+  recognition controls that test whether the model is merely recalling a famous experiment rather
+  than deciding. No vibes. No cherry-picked screenshots.
+
+  ### How to read these results: copy, smooth, amplify
+
+  Three words carry the verdict of every entry, always measured against the original study's human
+  baseline:
+
+  - **Copy** — the model reproduces the human bias at a comparable size.
+  - **Smooth** — the model damps the bias toward noise, or removes it entirely.
+  - **Amplify** — the model shows the bias more strongly than people do.
+
+  So far the series leans heavily toward *smooth*, with one clear *copy*. Each verdict is a claim
+  you can check against the per-trial data, not an impression.
 
   The point isn't trivia about models. It's practical. The better we understand how these
   systems decide, and where their intuitions line up with ours or pull against them, the

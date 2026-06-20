@@ -4,6 +4,8 @@ type: Experiments
 date: '2026-06-19'
 excerpt: 'A technical report. We reran Thibodeau & Boroditsky''s 2011 crime-metaphor study on six language models across a 1,200-trial primary replication plus 1,800 trials of contamination controls. This report states the human baseline and its methods, the objectives and design of each re-run experiment, and the results with their assumptions and limitations. Humans swing 18 points with the metaphor; the models do not move beyond noise.'
 experimentId: crime-metaphor
+verdict: smooth
+controls: "Three executed contamination controls — a recognition probe, a novel-stimulus rebuild (wolf/cancer on a new city), and a paraphrase of the report — separate the framing from mere recall. Models often recognised the 2011 passage yet still did not reproduce the swing."
 featured: true
 published: true
 runId: 20260619T025056Z

@@ -4,6 +4,8 @@ type: Experiments
 date: '2026-06-20'
 excerpt: 'A technical report. We rebuilt Wason''s 1968 selection task — the classic confirmation-bias demonstration — as an agentic decision: the agent uses tools to choose which cards to turn over to test a rule. Humans overwhelmingly turn the card that confirms the rule and skip the one that could falsify it; only about 4% pick the logically correct pair. Across 360 trials (a canonical run plus a recognition control and a content-effect control), Claude Opus 4.8 turns the falsifier 90–100% of the time, holds up on un-memorized cards, and never makes the human error. This report states the human baseline and its methods, the objectives and the full experiment inventory, and the results with their assumptions and limitations.'
 experimentId: wason-selection
+verdict: smooth
+controls: "Two executed controls rule out memorised-puzzle recall: a logically identical but un-memorised rule (stars and colours) and a deontic content-effect version. The result holds on both."
 featured: false
 published: true
 runId: 20260620T012847Z

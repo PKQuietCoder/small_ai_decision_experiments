@@ -161,6 +161,10 @@ not as a fixed effect size.
         "featured": True,
         "experimentId": experiment["id"],
         "runId": run["runId"],
+        # Filled in by the admin before publishing: the headline verdict
+        # (copy / smooth / amplify) and a one-line summary of the controls.
+        "verdict": "",
+        "controls": "",
     }
 
     path = config.POSTS_DIR / f"{slug}.md"

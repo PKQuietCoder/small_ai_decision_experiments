@@ -23,6 +23,10 @@ export interface PostSummary {
   featured: boolean;
   published: boolean;
   experimentId?: string;
+  // Headline verdict vs. the human baseline ("copy" | "smooth" | "amplify") and a
+  // one-line summary of the recognition/replication controls. Both optional.
+  verdict?: string;
+  controls?: string;
 }
 
 export interface DecisionOption {

@@ -1,4 +1,4 @@
-# Practical takeaways: what three bias experiments tell you about working with AI
+# Practical takeaways: what four bias experiments tell you about working with AI
 
 **Audience:** semi-technical — you use AI tools and maybe build with them, but you don't need the
 statistics. **How to read this:** every recommendation is tied back to a specific result, in the form
@@ -8,24 +8,28 @@ experiments actually showed.
 ## The series in one idea
 
 Each study re-runs a classic *human* decision-bias experiment on language models and asks: does the
-model **copy** the human bias, **smooth** it away, or **amplify** it? Across all three studies covered
-here the answer was **smooth** — the models did not inherit the human mistake. That single fact drives
-most of what follows: an AI is more useful as a *check on your thinking* than as a thing that thinks
-like you.
+model **copy** the human bias, **smooth** it away, or **amplify** it? In three of the four studies here
+the answer was **smooth** — the models did not inherit the human mistake. The fourth, the decoy effect,
+is the exception: the model **copied** it, and did so invisibly. So the takeaway is two-sided. An AI is
+often more useful as a *check on your thinking* than as a mirror of it — but it is not bias-proof, and
+the one bias it copied here is the hardest to spot, because it rode in through the *options you present*
+rather than the question you ask.
 
 | Study | Human bias | What the model did |
 |---|---|---|
 | The Metaphor Trap | One loaded word swings judgment 18 points | Barely moved (−9 to +9); frontier model named the trick |
 | When Budgeting Backfires | "Set a budget first" makes people overspend | Flat — same mid-tier pick no matter the staging |
 | The Falsification Test | Only ~4% seek evidence that could disprove a rule | Sought the disproof 90–100% of the time |
+| The Decoy Effect | A worse, never-chosen option warps the choice between two others | **Copied it** — a dummy option moved its pick +37 points, invisibly |
 
 ---
 
 ## Cross-cutting takeaways (read these first)
 
-**1. Treat AI as a debiasing partner, not a mirror of your intuitions.**
-*Observed:* in all three studies the model declined to reproduce the human bias — it damped the
-metaphor effect, ignored the budgeting nudge, and inverted the confirmation-bias result.
+**1. Treat AI as a debiasing partner, not a mirror of your intuitions — but not a bias-proof one.**
+*Observed:* in three of the four studies the model declined to reproduce the human bias — it damped the
+metaphor effect, ignored the budgeting nudge, and inverted the confirmation-bias result. The decoy
+effect (takeaway 6) was the exception.
 *Why:* these models were trained toward even-handed, normatively "correct" responses, so loaded
 framing and process tricks that steer people tend to slide off them.
 *Do differently:* use AI to **stress-test** a decision — "what's the framing here?", "what would prove
@@ -67,6 +71,19 @@ did not become imitation.
 *Do differently:* trust that the reasoning *move* generalizes, but for your own decision, push the
 model off the textbook answer and **onto your concrete details** so it reasons about your case, not the
 canonical one.
+
+**6. The one bias it copied is invisible — watch the options you present, not just the question.**
+*Observed:* in the decoy study, adding a clearly worse, never-chosen option shifted the agent's choice
+toward the item that option flattered (+37 points in one market; a full reversal in another). The agent
+explicitly left the decoy off its shortlist in essentially every trial and was swayed anyway.
+*Why:* the attraction effect works on the *comparison between* options, not their absolute merits — so
+it moves the decision underneath the model's stated reasoning, where neither you nor the model can see
+it. (Giving the agent room to self-direct dissolved the effect in the one market that could test it —
+which helps, but is not a guarantee.)
+*Do differently:* curate the **choice set**, not just the prompt. Don't pad a comparison with throwaway
+or dominated options; present alternatives on a clean, comparable basis, and ask the model to score each
+against your criteria **on its own merits** rather than relative to the others. Assume a vendor's
+pricing page or a padded shortlist can steer an AI shopper the same way it steers you.
 
 ---
 
@@ -116,6 +133,23 @@ canonical one.
 
 ---
 
+## Post 4 — The Decoy Effect (agentic)
+
+> **Result in one line:** a third, clearly worse option that nobody ever picks still warps the choice
+> between the two real ones — it pulled the agent's pick toward the option the decoy flattered by 37
+> points in one market and flipped it completely in another, all while the agent insisted the decoy was
+> off its shortlist. This is the first study in the series where the model **copied** the human bias.
+
+| Observed (from the experiment) | Why it happens | Do differently / how to interact |
+|---|---|---|
+| Adding a dominated decoy moved the agent's choice toward the flattered option (+37 pts; a full 0→100% reversal in the storage market), versus its own no-decoy baseline. | The attraction effect acts on the *comparison* between options, not their standalone merit. | When you hand an AI a set of options, **the set itself is part of the prompt**. Don't include filler or obviously-worse choices; compare on a clean, like-for-like basis. |
+| The agent excluded the decoy from its explicit shortlist in essentially every trial, then was swayed by it anyway. | The bias runs *beneath* the model's stated reasoning — its rationale looks clean while its choice is moved. | Don't trust a tidy rationale to mean the choice was clean. Ask it to **score each option against your criteria absolutely**, then pick — not to choose by comparison. |
+| Moving the decoy to flatter the *other* option moved the choice the other way; a decoy on the already-preferred side did nothing. | The shift is directional — it's the genuine attraction effect, not noise from "one more option." | Treat this as exploitable: a "decoy" pricing tier or a stacked shortlist can steer an AI shopper toward a target, just as it steers people. |
+| Letting the agent self-direct (autonomous) erased the effect on laptops, back to its 100% baseline — but the other market couldn't re-test it. | More room to reason can dissolve the susceptibility, but the evidence is domain-limited. | Giving an agent latitude to reason *may* help, but don't rely on it. If the stakes are real, **control the option set** rather than hoping autonomy saves you. |
+| The effect held — and strengthened — on an un-memorized market (cloud storage), ruling out mere recognition. | It is a general disposition, not recall of the textbook decoy example. | Assume this generalizes to *your* novel comparisons too, not just classic decoy setups. |
+
+---
+
 ## One-page cheat sheet (prompts grounded in the results)
 
 - **Detect spin** (Metaphor Trap): "Strip the framing from this. What are the neutral facts, and where
@@ -128,14 +162,17 @@ canonical one.
   way to check it?" / "Make the strongest case against my conclusion."
 - **Anchor to your case** (Metaphor Trap, recognition controls): "Ignore the textbook version. Reason
   only from these specifics: …"
-- **Always verify substance** (all three): read the raw output, not the confidence or the summary
+- **Neutralize a padded option set** (Decoy Effect): "Score each of these options against my criteria on
+  its own merits, independently — then recommend one. Don't choose by comparing them to each other."
+- **Always verify substance** (all four): read the raw output, not the confidence or the summary
   number. Consistency and a long rationale are not evidence of correctness.
 
 ## The honest caveats (so you don't over-generalize)
 
 These come from a handful of scenarios on a few current models (mostly Claude Opus 4.8 / Sonnet 4.6),
-not a sweep across every task. The pattern — models smooth these particular human biases — has held in
-each study so far, but it is *evidence*, not a law. Two specific limits worth carrying: a model can be
-confidently and consistently wrong (so verify quantitative claims yourself), and how you present
-choices to it (menus, schemas, steps) can change what you measure (so design the interaction, not just
-the question).
+not a sweep across every task. The pattern — models smooth *most* of these particular human biases,
+three of the four here — is *evidence*, not a law, and the decoy effect shows it has real exceptions.
+Two specific limits worth carrying: a model can be confidently and consistently wrong (so verify
+quantitative claims yourself), and how you present choices to it (menus, schemas, steps, and the option
+set itself) can change what you measure or even bias the result (so design the interaction, not just the
+question).

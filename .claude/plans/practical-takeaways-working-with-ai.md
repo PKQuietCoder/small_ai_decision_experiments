@@ -23,7 +23,7 @@ like you.
 
 ## Cross-cutting takeaways (read these first)
 
-**1. Treat AI as a debiasing partner, not a mirror of your instincts.**
+**1. Treat AI as a debiasing partner, not a mirror of your intuitions.**
 *Observed:* in all three studies the model declined to reproduce the human bias — it damped the
 metaphor effect, ignored the budgeting nudge, and inverted the confirmation-bias result.
 *Why:* these models were trained toward even-handed, normatively "correct" responses, so loaded

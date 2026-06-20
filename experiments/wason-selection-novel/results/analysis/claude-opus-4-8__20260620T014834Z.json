@@ -1,0 +1,431 @@
+{
+  "experimentId": "wason-selection-novel",
+  "experimentTitle": "The Falsification Test, Novel Stimulus: Does the Result Survive Un-memorized Cards?",
+  "runId": "20260620T014834Z",
+  "runDate": "2026-06-20T01:49:58.953830+00:00",
+  "prompt": "You are testing whether a rule is true. Each card has a symbol on one side and a\ncolour on the other side. The rule is:\n\n  \"If a card has a star on its symbol side, then it has the colour red on its\n  colour side.\"\n\nFour cards are laid out. You can see only the face-up side of each:\n\n  - Card 1 shows: a star\n  - Card 2 shows: a moon\n  - Card 3 shows: red\n  - Card 4 shows: yellow\n\nDecide which card or cards must be turned over to determine whether the rule is\ntrue. Turn over only the cards that could reveal whether the rule is being\nbroken. Record your selection using the tools provided.\n",
+  "question": "",
+  "baseline": null,
+  "decisionOptions": [
+    {
+      "id": "sel_p_q",
+      "label": "Turn the star card and the red card"
+    },
+    {
+      "id": "sel_p",
+      "label": "Turn the star card only"
+    },
+    {
+      "id": "sel_p_notq",
+      "label": "Turn the star card and the yellow card"
+    },
+    {
+      "id": "sel_p_q_notq",
+      "label": "Turn the star, red, and yellow cards"
+    },
+    {
+      "id": "sel_all",
+      "label": "Turn all four cards"
+    },
+    {
+      "id": "sel_other",
+      "label": "Some other combination"
+    }
+  ],
+  "models": [
+    "Claude Opus 4.8"
+  ],
+  "variants": [
+    {
+      "id": "direct",
+      "label": "Direct (no scaffold)",
+      "metaphor": ""
+    },
+    {
+      "id": "falsify_prompt",
+      "label": "Falsification prompt",
+      "metaphor": ""
+    },
+    {
+      "id": "deliberate",
+      "label": "Deliberate (restate, examine, falsify, select)",
+      "metaphor": ""
+    },
+    {
+      "id": "free_agent",
+      "label": "Autonomous (model self-directs)",
+      "metaphor": ""
+    }
+  ],
+  "primaryDecision": "sel_p_q",
+  "primaryDecisionLabel": "Turn the star card and the red card",
+  "totalTrials": 120,
+  "trialsPerCell": 30,
+  "parseFailures": 0,
+  "excluded": 0,
+  "byVariant": [
+    {
+      "variantId": "direct",
+      "label": "Direct (no scaffold)",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "sel_p_q": 0,
+        "sel_p": 0,
+        "sel_p_notq": 29,
+        "sel_p_q_notq": 0,
+        "sel_all": 0,
+        "sel_other": 1
+      },
+      "proportions": {
+        "sel_p_q": 0.0,
+        "sel_p": 0.0,
+        "sel_p_notq": 0.9667,
+        "sel_p_q_notq": 0.0,
+        "sel_all": 0.0,
+        "sel_other": 0.0333
+      },
+      "ci": {
+        "sel_p_q": [
+          0.0,
+          0.1135
+        ],
+        "sel_p": [
+          0.0,
+          0.1135
+        ],
+        "sel_p_notq": [
+          0.8333,
+          0.9941
+        ],
+        "sel_p_q_notq": [
+          0.0,
+          0.1135
+        ],
+        "sel_all": [
+          0.0,
+          0.1135
+        ],
+        "sel_other": [
+          0.0059,
+          0.1667
+        ]
+      }
+    },
+    {
+      "variantId": "falsify_prompt",
+      "label": "Falsification prompt",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "sel_p_q": 0,
+        "sel_p": 0,
+        "sel_p_notq": 30,
+        "sel_p_q_notq": 0,
+        "sel_all": 0,
+        "sel_other": 0
+      },
+      "proportions": {
+        "sel_p_q": 0.0,
+        "sel_p": 0.0,
+        "sel_p_notq": 1.0,
+        "sel_p_q_notq": 0.0,
+        "sel_all": 0.0,
+        "sel_other": 0.0
+      },
+      "ci": {
+        "sel_p_q": [
+          0.0,
+          0.1135
+        ],
+        "sel_p": [
+          0.0,
+          0.1135
+        ],
+        "sel_p_notq": [
+          0.8865,
+          1.0
+        ],
+        "sel_p_q_notq": [
+          0.0,
+          0.1135
+        ],
+        "sel_all": [
+          0.0,
+          0.1135
+        ],
+        "sel_other": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "deliberate",
+      "label": "Deliberate (restate, examine, falsify, select)",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "sel_p_q": 0,
+        "sel_p": 0,
+        "sel_p_notq": 30,
+        "sel_p_q_notq": 0,
+        "sel_all": 0,
+        "sel_other": 0
+      },
+      "proportions": {
+        "sel_p_q": 0.0,
+        "sel_p": 0.0,
+        "sel_p_notq": 1.0,
+        "sel_p_q_notq": 0.0,
+        "sel_all": 0.0,
+        "sel_other": 0.0
+      },
+      "ci": {
+        "sel_p_q": [
+          0.0,
+          0.1135
+        ],
+        "sel_p": [
+          0.0,
+          0.1135
+        ],
+        "sel_p_notq": [
+          0.8865,
+          1.0
+        ],
+        "sel_p_q_notq": [
+          0.0,
+          0.1135
+        ],
+        "sel_all": [
+          0.0,
+          0.1135
+        ],
+        "sel_other": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "free_agent",
+      "label": "Autonomous (model self-directs)",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "sel_p_q": 0,
+        "sel_p": 0,
+        "sel_p_notq": 30,
+        "sel_p_q_notq": 0,
+        "sel_all": 0,
+        "sel_other": 0
+      },
+      "proportions": {
+        "sel_p_q": 0.0,
+        "sel_p": 0.0,
+        "sel_p_notq": 1.0,
+        "sel_p_q_notq": 0.0,
+        "sel_all": 0.0,
+        "sel_other": 0.0
+      },
+      "ci": {
+        "sel_p_q": [
+          0.0,
+          0.1135
+        ],
+        "sel_p": [
+          0.0,
+          0.1135
+        ],
+        "sel_p_notq": [
+          0.8865,
+          1.0
+        ],
+        "sel_p_q_notq": [
+          0.0,
+          0.1135
+        ],
+        "sel_all": [
+          0.0,
+          0.1135
+        ],
+        "sel_other": [
+          0.0,
+          0.1135
+        ]
+      }
+    }
+  ],
+  "byVariantModel": [
+    {
+      "variantId": "direct",
+      "label": "Direct (no scaffold)",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "sel_p_q": 0,
+        "sel_p": 0,
+        "sel_p_notq": 29,
+        "sel_p_q_notq": 0,
+        "sel_all": 0,
+        "sel_other": 1
+      },
+      "proportions": {
+        "sel_p_q": 0.0,
+        "sel_p": 0.0,
+        "sel_p_notq": 0.9667,
+        "sel_p_q_notq": 0.0,
+        "sel_all": 0.0,
+        "sel_other": 0.0333
+      }
+    },
+    {
+      "variantId": "falsify_prompt",
+      "label": "Falsification prompt",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "sel_p_q": 0,
+        "sel_p": 0,
+        "sel_p_notq": 30,
+        "sel_p_q_notq": 0,
+        "sel_all": 0,
+        "sel_other": 0
+      },
+      "proportions": {
+        "sel_p_q": 0.0,
+        "sel_p": 0.0,
+        "sel_p_notq": 1.0,
+        "sel_p_q_notq": 0.0,
+        "sel_all": 0.0,
+        "sel_other": 0.0
+      }
+    },
+    {
+      "variantId": "deliberate",
+      "label": "Deliberate (restate, examine, falsify, select)",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "sel_p_q": 0,
+        "sel_p": 0,
+        "sel_p_notq": 30,
+        "sel_p_q_notq": 0,
+        "sel_all": 0,
+        "sel_other": 0
+      },
+      "proportions": {
+        "sel_p_q": 0.0,
+        "sel_p": 0.0,
+        "sel_p_notq": 1.0,
+        "sel_p_q_notq": 0.0,
+        "sel_all": 0.0,
+        "sel_other": 0.0
+      }
+    },
+    {
+      "variantId": "free_agent",
+      "label": "Autonomous (model self-directs)",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "sel_p_q": 0,
+        "sel_p": 0,
+        "sel_p_notq": 30,
+        "sel_p_q_notq": 0,
+        "sel_all": 0,
+        "sel_other": 0
+      },
+      "proportions": {
+        "sel_p_q": 0.0,
+        "sel_p": 0.0,
+        "sel_p_notq": 1.0,
+        "sel_p_q_notq": 0.0,
+        "sel_all": 0.0,
+        "sel_other": 0.0
+      }
+    }
+  ],
+  "overall": {
+    "statistic": 3.0252,
+    "pValue": 0.3877545856930126,
+    "dof": 3,
+    "significant": false,
+    "cramersV": 0.1588,
+    "testable": true
+  },
+  "perModel": [
+    {
+      "model": "Claude Opus 4.8",
+      "chiSquare": {
+        "statistic": 3.0252,
+        "pValue": 0.3877545856930126,
+        "dof": 3,
+        "significant": false,
+        "cramersV": 0.1588,
+        "testable": true
+      }
+    }
+  ],
+  "meanSpend": {
+    "byVariant": {
+      "direct": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "falsify_prompt": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "deliberate": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "free_agent": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      }
+    },
+    "noRestraintVsSalient": {
+      "t": null,
+      "pValue": null,
+      "significant": false,
+      "testable": false
+    }
+  },
+  "stepProfile": {
+    "direct": {
+      "n": 30,
+      "meanSteps": 1.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "falsify_prompt": {
+      "n": 30,
+      "meanSteps": 2.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "deliberate": {
+      "n": 30,
+      "meanSteps": 4.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "free_agent": {
+      "n": 30,
+      "meanSteps": 4.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    }
+  }
+}

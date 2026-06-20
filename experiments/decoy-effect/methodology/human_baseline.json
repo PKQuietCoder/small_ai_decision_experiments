@@ -1,0 +1,20 @@
+{
+  "source": "Representative attraction-effect result \u2014 Huber, Payne & Puto (1982); Simonson (1989). Proportions approximate.",
+  "by_variant": {
+    "no_decoy": {
+      "laptop_a": 0.5,
+      "laptop_b": 0.5,
+      "laptop_c": 0.0
+    },
+    "decoy_b": {
+      "laptop_a": 0.35,
+      "laptop_b": 0.63,
+      "laptop_c": 0.02
+    },
+    "decoy_a": {
+      "laptop_a": 0.63,
+      "laptop_b": 0.35,
+      "laptop_c": 0.02
+    }
+  }
+}

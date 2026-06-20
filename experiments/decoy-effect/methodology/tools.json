@@ -1,0 +1,72 @@
+[
+  {
+    "name": "inspect_options",
+    "description": "Acknowledge that you have reviewed the full list of available laptops.",
+    "final": false,
+    "strict": true,
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "reviewed": {
+          "type": "boolean",
+          "description": "Set to true once you have read the option list."
+        }
+      },
+      "required": [
+        "reviewed"
+      ]
+    }
+  },
+  {
+    "name": "compare_options",
+    "description": "Record which laptops you are weighing most closely before deciding.",
+    "final": false,
+    "strict": true,
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "finalists": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "laptop_a",
+              "laptop_b",
+              "laptop_c"
+            ]
+          },
+          "description": "The laptop ids you are comparing."
+        }
+      },
+      "required": [
+        "finalists"
+      ]
+    }
+  },
+  {
+    "name": "choose_product",
+    "description": "Record the single laptop you will buy.",
+    "final": true,
+    "strict": true,
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "product_id": {
+          "type": "string",
+          "enum": [
+            "laptop_a",
+            "laptop_b",
+            "laptop_c"
+          ],
+          "description": "The id of the laptop to buy."
+        }
+      },
+      "required": [
+        "product_id"
+      ]
+    }
+  }
+]

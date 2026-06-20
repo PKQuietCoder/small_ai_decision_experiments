@@ -1,0 +1,13 @@
+{
+  "source": "Representative deontic-task result \u2014 Griggs & Cox (1982). Proportions approximate.",
+  "by_variant": {
+    "direct": {
+      "sel_p_notq": 0.75,
+      "sel_p_q": 0.1,
+      "sel_p": 0.05,
+      "sel_all": 0.05,
+      "sel_p_q_notq": 0.03,
+      "sel_other": 0.02
+    }
+  }
+}

@@ -1,0 +1,2 @@
+experiment,source,test,n,statistic,dof,p_value,effect_size,significant
+wason-selection-deontic,Claude Opus 4.8,condition x product (chi-square of independence),120,65.0082,3,4.9958490591047744e-14,0.736,True

@@ -1,0 +1,3739 @@
+{
+  "runId": "20260620T014834Z",
+  "experimentId": "wason-selection-novel",
+  "startedAt": "2026-06-20T01:48:34.308554+00:00",
+  "finishedAt": "2026-06-20T01:49:58.953830+00:00",
+  "trialsPerCell": 30,
+  "temperature": 1.0,
+  "models": [
+    "Claude Opus 4.8"
+  ],
+  "variants": [
+    "direct",
+    "falsify_prompt",
+    "deliberate",
+    "free_agent"
+  ],
+  "trials": [
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 0,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 1,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 2,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 3,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 4,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 5,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 6,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 7,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 8,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 9,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 10,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 11,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 12,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 13,
+      "decision": "sel_other",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_other"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 14,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 15,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 16,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 17,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 18,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 19,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 20,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 21,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 22,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 23,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 24,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 25,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 26,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 27,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 28,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 29,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 0,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour is not red, or a yellow card whose hidden symbol is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 1,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden side is not red, OR a yellow card whose hidden side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 2,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour is not red (Card 1), or a yellow card whose hidden symbol is a star (Card 4)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 3,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour is not red, OR a yellow card whose hidden symbol is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 4,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour is not red, OR a yellow card whose hidden symbol is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 5,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A star card with a non-red color on its back, or a yellow card with a star on its back."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 6,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour side is not red, or a yellow card whose hidden symbol side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 7,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour side is not red, or a yellow card whose hidden symbol side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 8,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden side is not red (e.g., Card 1 backed by a non-red colour), or the yellow card (Card 4) whose hidden side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 9,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour is not red, or a yellow card whose hidden symbol is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 10,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A star on Card 1's hidden side paired with non-red, or yellow on Card 4's hidden side paired with a star \u2014 i.e., a star card that is not red, or a non-red card that is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 11,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A card showing a star (Card 1) with a non-red colour on its hidden side, OR a card showing yellow (Card 4) with a star on its hidden symbol side."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 12,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A card showing a star (Card 1) with a non-red colour on its hidden side, OR a card showing yellow (Card 4) with a star on its hidden side."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 13,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A star card whose other side is not red, OR a yellow card whose other side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 14,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour side is not red, OR a yellow card whose hidden symbol side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 15,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour is not red, OR a yellow card whose hidden symbol is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 16,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour is not red, or a yellow card whose hidden symbol is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 17,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden side is non-red, or a non-red (yellow) card whose hidden side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 18,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour side is not red, or a yellow (non-red) card whose hidden symbol side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 19,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour is not red (e.g., Card 1's back is not red), or the yellow card (Card 4) whose hidden symbol is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 20,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden side is not red, OR a yellow card whose hidden side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 21,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour is not red, or a yellow card whose hidden symbol is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 22,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour is not red, or a non-red (yellow) card whose hidden symbol is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 23,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A star card (Card 1) whose hidden colour is not red, or a yellow card (Card 4) whose hidden symbol is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 24,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour side is not red, or a yellow card whose hidden symbol side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 25,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour side is not red, OR a yellow card whose hidden symbol side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 26,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A card showing a star (Card 1) whose hidden colour side is not red, OR a card showing yellow (Card 4) whose hidden symbol side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 27,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A star card (Card 1) whose hidden colour side is not red, or a yellow card (Card 4) whose hidden symbol side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 28,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour side is not red, or a yellow card whose hidden symbol side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 29,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour side is not red, or a non-red (yellow) card whose hidden symbol side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 0,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a star on its symbol side, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A card that is a star but not red on the other side. Specifically: Card 1 (star) showing a non-red colour on its hidden side, OR Card 4 (yellow) showing a star on its hidden side."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 1,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "The rule claims that any card with a star symbol must have red on its colour side, but says nothing about non-star cards or what symbols red/non-red cards must have."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card (Card 1) revealing a non-red colour on its back, OR the yellow card (Card 4) revealing a star on its back."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 2,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "The rule claims that any card with a star on its symbol side must have red on its colour side, but it says nothing about non-star cards or what red cards must show."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card (Card 1) whose hidden colour side is not red, OR a non-red card (Card 4, yellow) whose hidden symbol side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 3,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a star on its symbol side, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour is not red (e.g., Card 1 turns out non-red), or a non-red card (Card 4, yellow) whose hidden symbol is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 4,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a star on its symbol side, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour is not red, OR a yellow (non-red) card whose hidden symbol is a star. So: Card 1 (star) hiding a non-red colour, or Card 4 (yellow) hiding a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 5,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a star on its symbol side, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A card that is a star with a non-red colour on its hidden side, OR a non-red card that has a star on its hidden side. Specifically: Card 1 (star) revealing a non-red colour, or Card 4 (yellow) revealing a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 6,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a star on its symbol side, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour side is not red, OR a yellow (non-red) card whose hidden symbol side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 7,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a star on its symbol side, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star whose other side is not red (e.g., Card 1 turning out non-red), or a non-red card (Card 4, yellow) whose other side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 8,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a star on its symbol side, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star paired with a non-red colour: i.e., Card 1 (star) having a non-red colour on its back, or Card 4 (yellow) having a star on its back."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 9,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a star on its symbol side, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A card that is a star but not red, OR a non-red (yellow) card that has a star on its hidden side. Specifically: Card 1 (star) revealing a non-red colour, or Card 4 (yellow) revealing a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 10,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a star on its symbol side, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A card with a star whose hidden colour side is not red, OR a yellow card whose hidden symbol side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 11,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "The rule claims that any card with a star on its symbol side must have red on its colour side, but says nothing about non-star cards or about what red cards must show."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour is not red, OR a non-red (yellow) card whose hidden symbol is a star. Specifically: Card 1 (star) having a non-red back, or Card 4 (yellow) having a star back."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 12,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card's symbol side shows a star, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour side is not red, or a non-red (yellow) card whose hidden symbol side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 13,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a star on its symbol side, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour is not red, OR a non-red (yellow) card whose hidden symbol is a star. So Card 1 (star) revealing a non-red colour, or Card 4 (yellow) revealing a star, would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 14,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a star on its symbol side, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour is not red (e.g., Card 1 showing star with a non-red back), OR a non-red card whose hidden symbol is a star (e.g., Card 4 showing yellow with a star back)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 15,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a star on its symbol side, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A card with a star whose hidden colour is not red (e.g., Card 1's back not red), OR a yellow card (Card 4) whose hidden symbol is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 16,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a star on its symbol side, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour side is not red, OR a non-red (yellow) card whose hidden symbol side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 17,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a star on its symbol side, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card (Card 1) whose hidden colour side is not red, OR the yellow card (Card 4) whose hidden symbol side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 18,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "The rule claims that any card showing a star must have red on its other side; it says nothing about non-star cards or about what symbol red/non-red cards must have."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding a non-red colour behind Card 1 (the star), or finding a star behind Card 4 (the yellow card), would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 19,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card's symbol side shows a star, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star whose hidden colour side is not red (e.g., Card 1's hidden side is non-red), OR Card 4 (yellow) hiding a star on its symbol side. Either of these breaks the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 20,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a star on its symbol side, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour side is not red (e.g., Card 1 turning out non-red), or a non-red (yellow) card whose hidden symbol side is a star (Card 4 turning out to be a star)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 21,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a star on its symbol side, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A card with a star whose hidden colour is not red, OR a yellow (non-red) card whose hidden symbol is a star. Specifically: Card 1 (star) revealing a non-red colour, or Card 4 (yellow) revealing a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 22,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a star on its symbol side, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A card with a star whose hidden colour side is not red, OR a yellow (non-red) card whose hidden symbol side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 23,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a star on its symbol side, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card (Card 1) whose hidden colour side is not red, OR the yellow card (Card 4) whose hidden symbol side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 24,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a star on its symbol side, then its colour side is red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card (Card 1) whose hidden colour side is not red, or a yellow card (Card 4) whose hidden symbol side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 25,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a star, its other side must be red; nothing is claimed about non-star cards or about what symbols red cards have."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden side is not red (Card 1 turning out non-red), or a non-red card (Card 4, yellow) whose hidden side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 26,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card's symbol side is a star, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour is not red, OR a non-red (yellow) card whose hidden symbol is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 27,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a star on its symbol side, then its colour side is red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A card with a star whose other side is not red, OR a non-red (yellow) card whose other side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 28,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card's symbol side shows a star, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card (Card 1) whose hidden colour side is not red, OR a yellow card (Card 4) whose hidden symbol side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 29,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a star on its symbol side, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour side is not red (e.g., Card 1's back being non-red), or a non-red card whose hidden symbol side is a star (e.g., Card 4 (yellow) having a star on its back)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 0,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card's symbol side shows a star, then its colour side must be red (it says nothing about non-star cards or about what red cards must show)."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star whose hidden colour side is not red, OR a non-red colour (yellow) whose hidden symbol side is a star. Specifically: Card 1 (star) hiding a non-red colour, or Card 4 (yellow) hiding a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 1,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card's symbol side shows a star, then its colour side must be red (it says nothing about non-star cards or what red cards must have)."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour is not red (e.g., Card 1's back being non-red), or a non-red card whose hidden symbol is a star (e.g., Card 4 'yellow' having a star on its back)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 2,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card's symbol side shows a star, then its colour side must be red (it says nothing about non-star cards or about what red-sided cards must show)."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A card with a star whose hidden colour is not red. This occurs if Card 1 (star) hides a non-red colour, or if Card 4 (yellow) hides a star on its symbol side."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 3,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card's symbol side shows a star, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star paired with a non-red colour: either Card 1 (star) hiding a non-red colour, or Card 4 (yellow) hiding a star on its symbol side."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 4,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a star on its symbol side, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden side is not red, or a non-red (yellow) card whose hidden side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 5,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a star on its symbol side, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour side is not red, OR a yellow (non-red) card whose hidden symbol side is a star. So turning the star card (Card 1) could reveal non-red, and turning the yellow card (Card 4) could reveal a star \u2014 either would falsify the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 6,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a star on its symbol side, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A card whose symbol side is a star but whose colour side is not red, OR a card whose colour side is not red (e.g., yellow) but whose symbol side is a star. So: the star card (Card 1) revealing a non-red colour, or the yellow card (Card 4) revealing a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 7,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a star on its symbol side, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star on the hidden side of the yellow card (Card 4), or a non-red colour on the hidden side of the star card (Card 1), would prove the rule false."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 8,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card's symbol side shows a star, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card (Card 1) whose hidden colour side is not red, OR a yellow card (Card 4) whose hidden symbol side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 9,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card's symbol side shows a star, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A card that is a star but not red. This happens if Card 1 (star) has a non-red colour on its hidden side, or if Card 4 (yellow) has a star on its hidden symbol side."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 10,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card's symbol side is a star, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card (Card 1) whose hidden side is not red, OR a non-red card (Card 4, yellow) whose hidden side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 11,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card's symbol side is a star, then its colour side must be red; it says nothing about non-star cards or about what symbol red/non-red cards must have."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card (Card 1) whose hidden colour side is not red, OR the yellow card (Card 4) whose hidden symbol side is a star. Both would directly violate \"star \u21d2 red\"."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 12,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card's symbol side shows a star, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour side is not red, or a non-red (yellow) card whose hidden symbol side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 13,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card's symbol side shows a star, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour is not red (e.g., Card 1 turning out non-red), or the yellow card (Card 4) whose hidden symbol is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 14,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card's symbol side shows a star, then its colour side must be red (it says nothing about non-star cards or about what red cards must show)."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding a non-red colour on the back of Card 1 (the star), or finding a star on the back of Card 4 (the yellow card)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 15,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card's symbol side shows a star, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card (Card 1) whose hidden side is not red, OR the yellow card (Card 4) whose hidden side is a star \u2014 either reveals a star paired with a non-red colour, breaking the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 16,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card's symbol side shows a star, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card (Card 1) whose hidden colour side is not red, OR a yellow card (Card 4) whose hidden symbol side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 17,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a star on its symbol side, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour is not red, or a non-red (yellow) card whose hidden symbol is a star. Concretely: Card 1 (star) hidden side being non-red, or Card 4 (yellow) hidden side being a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 18,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card's symbol side shows a star, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour side is not red, OR a yellow card whose hidden symbol side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 19,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card's symbol side shows a star, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star on the hidden side of the yellow card (Card 4), or a non-red colour on the hidden side of the star card (Card 1)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 20,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card's symbol side shows a star, then its colour side must be red (it says nothing about non-star cards or about what symbol a red card must have)."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star paired with a non-red colour: i.e., Card 1 (star) revealing a non-red colour on its back, or Card 4 (yellow) revealing a star on its back."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 21,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a star on its symbol side, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card (Card 1) with a non-red colour on its hidden side, or a yellow card (Card 4) with a star on its hidden symbol side."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 22,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card's symbol side shows a star, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour is not red, OR a yellow card whose hidden symbol is a star. The rule is broken only by a star paired with a non-red colour."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 23,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a star on its symbol side, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour is not red, OR a yellow card whose hidden symbol is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 24,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a star on its symbol side, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour side is not red, OR a yellow (non-red) card whose hidden symbol side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 25,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card's symbol side shows a star, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour side is not red, OR a yellow (non-red) card whose hidden symbol side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 26,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a star on its symbol side, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card (Card 1) whose hidden colour is not red, OR the yellow card (Card 4) whose hidden symbol is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 27,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card's symbol side shows a star, then its colour side must be red (it says nothing about non-star cards or about what red cards must show)."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card whose hidden colour is not red, OR a non-red (yellow) card whose hidden symbol is a star. So Card 1 (star) hiding a non-red colour, or Card 4 (yellow) hiding a star, would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 28,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card's symbol side shows a star, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A card with a star whose hidden colour side is not red, OR a yellow (non-red) card whose hidden symbol side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 29,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card's symbol side shows a star, then its colour side must be red."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A star card (Card 1) whose hidden colour side is not red, OR the yellow card (Card 4) whose hidden symbol side is a star."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    }
+  ]
+}

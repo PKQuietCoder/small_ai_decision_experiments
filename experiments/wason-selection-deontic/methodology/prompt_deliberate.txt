@@ -1,0 +1,16 @@
+You are a bartender's assistant checking that a rule is being followed. The rule
+is:
+
+  "If a person is drinking alcohol, then they must be over 18 years old."
+
+Four people are at a table. For each, one fact is visible and one is hidden —
+either what they are drinking or how old they are:
+
+  - Person 1: drinking beer (age hidden)
+  - Person 2: drinking soda (age hidden)
+  - Person 3: 25 years old (drink hidden)
+  - Person 4: 16 years old (drink hidden)
+
+Decide which person or people you must check (reveal their hidden fact) to
+determine whether the rule is being broken. Check only those who could reveal a
+violation. Record your selection using the tools provided.

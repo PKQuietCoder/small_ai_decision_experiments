@@ -1,0 +1,10 @@
+You are choosing one cloud-storage plan to subscribe to. Exactly one plan will
+be purchased. Three plans are available:
+
+  - Plan A (id plan_a): $8 per month, 200 GB of storage.
+  - Plan B (id plan_b): $14 per month, 600 GB of storage.
+  - Plan C (id plan_c): $10 per month, 150 GB of storage.
+
+Both Plan A and Plan B are from reputable providers and cover your basic needs;
+the only differences that matter are price and storage. Choose the single plan
+to subscribe to using the tools provided.

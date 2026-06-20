@@ -1,0 +1,5 @@
+experiment,source,condition,n,plan_a_count,plan_a_share_pct,plan_b_count,plan_b_share_pct,plan_c_count,plan_c_share_pct,mean_price_usd,mean_steps,budget_rate_pct
+decoy-effect-novel,Claude Opus 4.8,no_decoy,30,0,0.0,30,100.0,0,0.0,,3.0,0.0
+decoy-effect-novel,Claude Opus 4.8,decoy_b,30,0,0.0,30,100.0,0,0.0,,3.0,0.0
+decoy-effect-novel,Claude Opus 4.8,decoy_a,30,30,100.0,0,0.0,0,0.0,,3.0,0.0
+decoy-effect-novel,Claude Opus 4.8,free_agent,30,0,0.0,30,100.0,0,0.0,,3.0,0.0

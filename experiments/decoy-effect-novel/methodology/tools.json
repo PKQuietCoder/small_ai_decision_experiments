@@ -1,0 +1,72 @@
+[
+  {
+    "name": "inspect_options",
+    "description": "Acknowledge that you have reviewed the full list of available plans.",
+    "final": false,
+    "strict": true,
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "reviewed": {
+          "type": "boolean",
+          "description": "Set to true once you have read the option list."
+        }
+      },
+      "required": [
+        "reviewed"
+      ]
+    }
+  },
+  {
+    "name": "compare_options",
+    "description": "Record which plans you are weighing most closely before deciding.",
+    "final": false,
+    "strict": true,
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "finalists": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "plan_a",
+              "plan_b",
+              "plan_c"
+            ]
+          },
+          "description": "The plan ids you are comparing."
+        }
+      },
+      "required": [
+        "finalists"
+      ]
+    }
+  },
+  {
+    "name": "choose_product",
+    "description": "Record the single plan you will subscribe to.",
+    "final": true,
+    "strict": true,
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "product_id": {
+          "type": "string",
+          "enum": [
+            "plan_a",
+            "plan_b",
+            "plan_c"
+          ],
+          "description": "The id of the plan to subscribe to."
+        }
+      },
+      "required": [
+        "product_id"
+      ]
+    }
+  }
+]

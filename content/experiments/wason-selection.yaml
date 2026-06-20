@@ -1,0 +1,163 @@
+id: wason-selection
+title: "The Falsification Test: Will an Agent Turn the Card That Could Prove It Wrong?"
+type: agentic_budget
+status: draft
+summary: >
+  An agentic translation of Wason's (1968) selection task, the classic
+  confirmation-bias demonstration. The agent is shown a conditional rule and four
+  cards and must choose which cards to turn over to test whether the rule holds.
+  The logically correct move is to turn the card that names the antecedent (P) and
+  the card that could falsify the rule (not-Q); most people instead turn the card
+  that merely confirms it (P and Q) and never check the falsifier. We reuse the
+  agentic tool-use engine from budget-backfire: every condition is a forced
+  sequence of tool calls ending in a single select_cards choice, so the only thing
+  that changes is how much the agent is made to deliberate (and, in the autonomous
+  condition, whether it deliberates at all) before committing.
+hypothesis: >
+  Like people, the agent will tend to pick the confirming selection (turn E and 4)
+  and skip the falsifier (the 7) in the direct condition. Forcing it to first state
+  what observation would prove the rule false should pull it toward the logically
+  correct selection (turn E and 7). The interesting question is whether a capable
+  model already resists the human bias without scaffolding, and whether more steps
+  move it at all.
+# The agent makes the selection with no feedback (intermediate tools return only a
+# synthetic ack), exactly as human subjects select cards before turning any. The
+# rule and cards are the abstract Wason stimulus:
+#   Rule: if a card has a vowel on its letter side, it has an even number on its
+#   number side  (If P then Q).
+#   Visible faces: E (=P, vowel), K (=not-P), 4 (=Q, even), 7 (=not-Q, odd).
+#   Logically correct: turn E (P) and 7 (not-Q). Human-modal error: turn E and 4.
+models:
+  - provider: anthropic
+    model: claude-opus-4-8
+    label: "Claude Opus 4.8"
+trials_per_cell: 30
+temperature: 1.0
+decision_key: selection
+max_steps: 8
+prompt_template: |
+  You are testing whether a rule is true. Each card has a letter on one side and a
+  number on the other side. The rule is:
+
+    "If a card has a vowel on its letter side, then it has an even number on its
+    number side."
+
+  Four cards are laid out. You can see only the face-up side of each:
+
+    - Card 1 shows: E
+    - Card 2 shows: K
+    - Card 3 shows: 4
+    - Card 4 shows: 7
+
+  Decide which card or cards must be turned over to determine whether the rule is
+  true. Turn over only the cards that could reveal whether the rule is being
+  broken. Record your selection using the tools provided.
+decision_options:
+  - id: sel_p_q
+    label: "Turn E and 4"
+  - id: sel_p
+    label: "Turn E only"
+  - id: sel_p_notq
+    label: "Turn E and 7"
+  - id: sel_p_q_notq
+    label: "Turn E, 4, and 7"
+  - id: sel_all
+    label: "Turn all four"
+  - id: sel_other
+    label: "Some other combination"
+# The human-modal confirming error (turn the named card and the card that confirms
+# the rule, never the falsifier). sel_p_notq is the logically correct selection.
+primary_decision: sel_p_q
+tools:
+  - name: restate_rule
+    description: "Record, in your own words, exactly what the rule claims and does not claim."
+    final: false
+    strict: true
+    input_schema:
+      type: object
+      additionalProperties: false
+      properties:
+        rule_summary:
+          type: string
+          description: "A one-sentence restatement of the rule."
+      required: [rule_summary]
+  - name: examine_cards
+    description: "Acknowledge that you have examined the visible face of all four cards."
+    final: false
+    strict: true
+    input_schema:
+      type: object
+      additionalProperties: false
+      properties:
+        reviewed:
+          type: boolean
+          description: "Set to true once you have read all four visible faces."
+      required: [reviewed]
+  - name: note_disproof
+    description: "Record the single observation that, if found on a card's hidden side, would prove the rule FALSE."
+    final: false
+    strict: true
+    input_schema:
+      type: object
+      additionalProperties: false
+      properties:
+        falsifying_observation:
+          type: string
+          description: "What hidden value, on which visible card, would break the rule."
+      required: [falsifying_observation]
+  - name: select_cards
+    description: "Record the single combination of cards you will turn over to test the rule."
+    final: true
+    strict: true
+    input_schema:
+      type: object
+      additionalProperties: false
+      properties:
+        selection:
+          type: string
+          enum: [sel_p_q, sel_p, sel_p_notq, sel_p_q_notq, sel_all, sel_other]
+          description: "The combination of cards to turn over."
+      required: [selection]
+variants:
+  - id: direct
+    label: "Direct (no scaffold)"
+    steps: [select_cards]
+  - id: falsify_prompt
+    label: "Falsification prompt"
+    steps: [note_disproof, select_cards]
+  - id: deliberate
+    label: "Deliberate (restate, examine, falsify, select)"
+    steps: [restate_rule, examine_cards, note_disproof, select_cards]
+  - id: free_agent
+    label: "Autonomous (model self-directs)"
+    mode: auto
+    scenario_template: |
+      You are testing whether a rule is true. Each card has a letter on one side
+      and a number on the other side. The rule is:
+
+        "If a card has a vowel on its letter side, then it has an even number on
+        its number side."
+
+      Four cards are laid out. You can see only the face-up side of each:
+
+        - Card 1 shows: E
+        - Card 2 shows: K
+        - Card 3 shows: 4
+        - Card 4 shows: 7
+
+      Decide which card or cards must be turned over to determine whether the rule
+      is true. You may use any of the available tools, in any order and as many
+      times as you like, and you must finish by calling select_cards to record the
+      single combination of cards you will turn over.
+baseline:
+  source: "Representative abstract-task distribution — Johnson-Laird & Wason (1970); Wason & Johnson-Laird (1972). Proportions approximate."
+  by_variant:
+    direct:
+      sel_p_q: 0.46
+      sel_p: 0.33
+      sel_p_notq: 0.04
+      sel_p_q_notq: 0.07
+      sel_all: 0.07
+      sel_other: 0.03
+    # The scaffolded and autonomous conditions have no human analog, so no overlay
+    # row is drawn (mirrors budget-backfire's many_steps / free_agent).

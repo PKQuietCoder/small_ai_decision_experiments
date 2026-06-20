@@ -1,0 +1,16 @@
+You are testing whether a rule is true. Each card has a symbol on one side and a
+colour on the other side. The rule is:
+
+  "If a card has a star on its symbol side, then it has the colour red on its
+  colour side."
+
+Four cards are laid out. You can see only the face-up side of each:
+
+  - Card 1 shows: a star
+  - Card 2 shows: a moon
+  - Card 3 shows: red
+  - Card 4 shows: yellow
+
+Decide which card or cards must be turned over to determine whether the rule is
+true. Turn over only the cards that could reveal whether the rule is being
+broken. Record your selection using the tools provided.

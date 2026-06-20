@@ -1,0 +1,8 @@
+experiment,source,condition,n,laptop_a_count,laptop_a_share_pct,laptop_b_count,laptop_b_share_pct,laptop_c_count,laptop_c_share_pct,mean_price_usd,mean_steps,budget_rate_pct
+decoy-effect,Claude Opus 4.8,no_decoy,30,30,100.0,0,0.0,0,0.0,,3.0,0.0
+decoy-effect,Claude Opus 4.8,decoy_b,30,19,63.3,11,36.7,0,0.0,,3.0,0.0
+decoy-effect,Claude Opus 4.8,decoy_a,30,30,100.0,0,0.0,0,0.0,,3.0,0.0
+decoy-effect,Claude Opus 4.8,free_agent,30,30,100.0,0,0.0,0,0.0,,3.0,0.0
+decoy-effect,"Humans (Representative attraction-effect result — Huber, Payne & Puto (1982); Simonson (1989). Proportions approximate.)",no_decoy,,,50.0,,50.0,,0.0,0.0,,
+decoy-effect,"Humans (Representative attraction-effect result — Huber, Payne & Puto (1982); Simonson (1989). Proportions approximate.)",decoy_b,,,35.0,,63.0,,2.0,0.0,,
+decoy-effect,"Humans (Representative attraction-effect result — Huber, Payne & Puto (1982); Simonson (1989). Proportions approximate.)",decoy_a,,,63.0,,35.0,,2.0,0.0,,

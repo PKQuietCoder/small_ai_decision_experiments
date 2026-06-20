@@ -1,0 +1,86 @@
+[
+  {
+    "name": "restate_rule",
+    "description": "Record, in your own words, exactly what the rule claims and does not claim.",
+    "final": false,
+    "strict": true,
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "rule_summary": {
+          "type": "string",
+          "description": "A one-sentence restatement of the rule."
+        }
+      },
+      "required": [
+        "rule_summary"
+      ]
+    }
+  },
+  {
+    "name": "examine_cards",
+    "description": "Acknowledge that you have examined the visible face of all four cards.",
+    "final": false,
+    "strict": true,
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "reviewed": {
+          "type": "boolean",
+          "description": "Set to true once you have read all four visible faces."
+        }
+      },
+      "required": [
+        "reviewed"
+      ]
+    }
+  },
+  {
+    "name": "note_disproof",
+    "description": "Record the single observation that, if found on a card's hidden side, would prove the rule FALSE.",
+    "final": false,
+    "strict": true,
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "falsifying_observation": {
+          "type": "string",
+          "description": "What hidden value, on which visible card, would break the rule."
+        }
+      },
+      "required": [
+        "falsifying_observation"
+      ]
+    }
+  },
+  {
+    "name": "select_cards",
+    "description": "Record the single combination of cards you will turn over to test the rule.",
+    "final": true,
+    "strict": true,
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "selection": {
+          "type": "string",
+          "enum": [
+            "sel_p_q",
+            "sel_p",
+            "sel_p_notq",
+            "sel_p_q_notq",
+            "sel_all",
+            "sel_other"
+          ],
+          "description": "The combination of cards to turn over."
+        }
+      },
+      "required": [
+        "selection"
+      ]
+    }
+  }
+]

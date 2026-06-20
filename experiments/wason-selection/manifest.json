@@ -1,0 +1,43 @@
+{
+  "experiment": "wason-selection",
+  "title": "The Falsification Test: Will an Agent Turn the Card That Could Prove It Wrong?",
+  "type": "agentic_budget",
+  "generatedAt": "2026-06-20T01:32:56.377221+00:00",
+  "models": [
+    "Claude Opus 4.8"
+  ],
+  "trialsPerCell": 30,
+  "conditions": [
+    "direct",
+    "falsify_prompt",
+    "deliberate",
+    "free_agent"
+  ],
+  "runs": {
+    "Claude Opus 4.8": "20260620T012847Z"
+  },
+  "humanBaseline": {
+    "source": "Representative abstract-task distribution \u2014 Johnson-Laird & Wason (1970); Wason & Johnson-Laird (1972). Proportions approximate.",
+    "by_variant": {
+      "direct": {
+        "sel_p_q": 0.46,
+        "sel_p": 0.33,
+        "sel_p_notq": 0.04,
+        "sel_p_q_notq": 0.07,
+        "sel_all": 0.07,
+        "sel_other": 0.03
+      }
+    }
+  },
+  "temperature": 1.0,
+  "maxSteps": 8,
+  "decisionKey": "selection",
+  "tools": [
+    "restate_rule",
+    "examine_cards",
+    "note_disproof",
+    "select_cards"
+  ],
+  "products": [],
+  "note": "Opus 4.8 rejects the temperature parameter, so its run used the model's default sampling; the Sonnet 4.6 run applied temperature 1.0. Forced tool use is pinned with disable_parallel_tool_use; choose_product uses strict tool use so the schema is always satisfied."
+}

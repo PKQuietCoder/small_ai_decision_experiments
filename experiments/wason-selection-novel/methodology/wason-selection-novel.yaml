@@ -1,0 +1,146 @@
+id: wason-selection-novel
+title: "The Falsification Test, Novel Stimulus: Does the Result Survive Un-memorized Cards?"
+type: agentic_budget
+status: draft
+summary: >
+  A recognition control for wason-selection. The abstract vowel/even card task is
+  one of the most reproduced items in psychology, so a capable model has almost
+  certainly seen it and its answer in training. This control preserves the exact
+  logical structure (If P then Q, with P / not-P / Q / not-Q faces) but rebuilds
+  every memorizable surface detail: symbols and colours instead of letters and
+  numbers, and a rule no indexed source states. If the model's selections here match
+  its selections on the canonical abstract run, recognition of the famous puzzle is
+  largely ruled out as the explanation; the behaviour reflects how the model handles
+  the logic, not recall of one item.
+hypothesis: >
+  If the canonical result is driven by the model recognizing the textbook task, a
+  structurally identical but un-memorized stimulus should change its selections. If
+  the result reflects a general disposition to test the falsifying case, the
+  selections should stay the same as on the canonical abstract run.
+# Logical structure identical to wason-selection (If P then Q):
+#   Rule: if a card has a star on its symbol side, it has the colour red on its
+#   colour side.
+#   Visible faces: star (=P), moon (=not-P), red (=Q), yellow (=not-Q).
+#   Logically correct: turn the star card (P) and the yellow card (not-Q).
+# No human baseline: these exact cards have no published human data; the comparison
+# is within-model, against the canonical wason-selection run.
+models:
+  - provider: anthropic
+    model: claude-opus-4-8
+    label: "Claude Opus 4.8"
+trials_per_cell: 30
+temperature: 1.0
+decision_key: selection
+max_steps: 8
+prompt_template: |
+  You are testing whether a rule is true. Each card has a symbol on one side and a
+  colour on the other side. The rule is:
+
+    "If a card has a star on its symbol side, then it has the colour red on its
+    colour side."
+
+  Four cards are laid out. You can see only the face-up side of each:
+
+    - Card 1 shows: a star
+    - Card 2 shows: a moon
+    - Card 3 shows: red
+    - Card 4 shows: yellow
+
+  Decide which card or cards must be turned over to determine whether the rule is
+  true. Turn over only the cards that could reveal whether the rule is being
+  broken. Record your selection using the tools provided.
+decision_options:
+  - id: sel_p_q
+    label: "Turn the star card and the red card"
+  - id: sel_p
+    label: "Turn the star card only"
+  - id: sel_p_notq
+    label: "Turn the star card and the yellow card"
+  - id: sel_p_q_notq
+    label: "Turn the star, red, and yellow cards"
+  - id: sel_all
+    label: "Turn all four cards"
+  - id: sel_other
+    label: "Some other combination"
+primary_decision: sel_p_q
+tools:
+  - name: restate_rule
+    description: "Record, in your own words, exactly what the rule claims and does not claim."
+    final: false
+    strict: true
+    input_schema:
+      type: object
+      additionalProperties: false
+      properties:
+        rule_summary:
+          type: string
+          description: "A one-sentence restatement of the rule."
+      required: [rule_summary]
+  - name: examine_cards
+    description: "Acknowledge that you have examined the visible face of all four cards."
+    final: false
+    strict: true
+    input_schema:
+      type: object
+      additionalProperties: false
+      properties:
+        reviewed:
+          type: boolean
+          description: "Set to true once you have read all four visible faces."
+      required: [reviewed]
+  - name: note_disproof
+    description: "Record the single observation that, if found on a card's hidden side, would prove the rule FALSE."
+    final: false
+    strict: true
+    input_schema:
+      type: object
+      additionalProperties: false
+      properties:
+        falsifying_observation:
+          type: string
+          description: "What hidden value, on which visible card, would break the rule."
+      required: [falsifying_observation]
+  - name: select_cards
+    description: "Record the single combination of cards you will turn over to test the rule."
+    final: true
+    strict: true
+    input_schema:
+      type: object
+      additionalProperties: false
+      properties:
+        selection:
+          type: string
+          enum: [sel_p_q, sel_p, sel_p_notq, sel_p_q_notq, sel_all, sel_other]
+          description: "The combination of cards to turn over."
+      required: [selection]
+variants:
+  - id: direct
+    label: "Direct (no scaffold)"
+    steps: [select_cards]
+  - id: falsify_prompt
+    label: "Falsification prompt"
+    steps: [note_disproof, select_cards]
+  - id: deliberate
+    label: "Deliberate (restate, examine, falsify, select)"
+    steps: [restate_rule, examine_cards, note_disproof, select_cards]
+  - id: free_agent
+    label: "Autonomous (model self-directs)"
+    mode: auto
+    scenario_template: |
+      You are testing whether a rule is true. Each card has a symbol on one side and
+      a colour on the other side. The rule is:
+
+        "If a card has a star on its symbol side, then it has the colour red on its
+        colour side."
+
+      Four cards are laid out. You can see only the face-up side of each:
+
+        - Card 1 shows: a star
+        - Card 2 shows: a moon
+        - Card 3 shows: red
+        - Card 4 shows: yellow
+
+      Decide which card or cards must be turned over to determine whether the rule
+      is true. You may use any of the available tools, in any order and as many
+      times as you like, and you must finish by calling select_cards to record the
+      single combination of cards you will turn over.

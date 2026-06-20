@@ -1,0 +1,2 @@
+experiment,source,test,n,statistic,dof,p_value,effect_size,significant
+decoy-effect-novel,Claude Opus 4.8,condition x product (chi-square of independence),120,120.0,3,7.716790355634162e-26,1.0,True

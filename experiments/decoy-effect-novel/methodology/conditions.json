@@ -1,0 +1,38 @@
+[
+  {
+    "id": "no_decoy",
+    "label": "No decoy (A vs B)",
+    "mode": "forced",
+    "steps": [
+      "inspect_options",
+      "compare_options",
+      "choose_product"
+    ]
+  },
+  {
+    "id": "decoy_b",
+    "label": "Decoy favouring B",
+    "mode": "forced",
+    "steps": [
+      "inspect_options",
+      "compare_options",
+      "choose_product"
+    ]
+  },
+  {
+    "id": "decoy_a",
+    "label": "Decoy favouring A",
+    "mode": "forced",
+    "steps": [
+      "inspect_options",
+      "compare_options",
+      "choose_product"
+    ]
+  },
+  {
+    "id": "free_agent",
+    "label": "Autonomous (decoy for B, model self-directs)",
+    "mode": "auto",
+    "steps": "auto"
+  }
+]

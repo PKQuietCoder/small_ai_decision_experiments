@@ -1,0 +1,2 @@
+experiment,source,test,n,statistic,dof,p_value,effect_size,significant
+wason-selection,Claude Opus 4.8,condition x product (chi-square of independence),120,9.2308,3,0.026374937118239683,0.2774,True

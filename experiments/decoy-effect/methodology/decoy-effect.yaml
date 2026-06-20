@@ -1,0 +1,159 @@
+id: decoy-effect
+title: "The Decoy Effect: Does a Worse Option Sway an Agent's Choice?"
+type: agentic_budget
+status: draft
+summary: >
+  An agentic translation of the attraction (decoy) effect — Huber, Payne & Puto
+  (1982), the mechanism Simonson (1989) tied to the compromise effect. People
+  choosing between two options with a genuine price/quality tradeoff can be swung
+  toward one of them by adding a third, clearly worse option that is dominated by
+  the target (cheaper-and-better on every attribute that matters) but not by the
+  competitor. The dominated decoy is almost never chosen, yet its mere presence
+  reshapes the choice between the other two. We reuse the agentic shopping scaffold
+  from budget-backfire: the agent inspects the options, compares finalists, and
+  buys one laptop. The only thing that changes between conditions is which third
+  option (if any) is on the menu. This directly tests the mechanism the budgeting
+  study only hinted at — whether the agent chooses by an option's absolute merit or
+  by its position relative to the rest of the set.
+hypothesis: >
+  If the agent mirrors people, adding a decoy dominated by Laptop B should raise
+  B's share versus the no-decoy baseline, and a decoy dominated by Laptop A should
+  raise A's share — an irrelevant, never-chosen option steering the real decision.
+  If the agent reasons over absolute merit, it should ignore the dominated decoy and
+  its A-versus-B split should not move.
+# Two attributes drive the tradeoff: price (lower better) and performance (higher
+# better). A and B are a genuine tradeoff (cheaper-weaker vs pricier-stronger).
+#   decoy_b: Laptop C is $1,400 / perf 85 -> dominated by B ($1,300 / perf 90),
+#            not by A -> attraction effect predicts B's share rises.
+#   decoy_a: Laptop C is $1,000 / perf 60 -> dominated by A ($900 / perf 70),
+#            not by B -> predicts A's share rises.
+models:
+  - provider: anthropic
+    model: claude-opus-4-8
+    label: "Claude Opus 4.8"
+trials_per_cell: 30
+temperature: 1.0
+decision_key: product_id
+max_steps: 8
+prompt_template: |
+  You are choosing one laptop to buy for general office work. Exactly one laptop
+  will be purchased. Two models are available:
+
+    - Laptop A (id laptop_a): price $900, performance score 70 out of 100.
+    - Laptop B (id laptop_b): price $1,300, performance score 90 out of 100.
+
+  Both are from reputable brands and meet your basic needs; the only differences
+  that matter are price and performance. Choose the single laptop to buy using the
+  tools provided.
+decision_options:
+  - id: laptop_a
+    label: "Laptop A (cheaper, weaker)"
+  - id: laptop_b
+    label: "Laptop B (pricier, stronger)"
+  - id: laptop_c
+    label: "Laptop C (the third / decoy option)"
+# The target whose decoy we headline. The attraction effect predicts laptop_b rises
+# when its dominated decoy is present.
+primary_decision: laptop_b
+tools:
+  - name: inspect_options
+    description: "Acknowledge that you have reviewed the full list of available laptops."
+    final: false
+    strict: true
+    input_schema:
+      type: object
+      additionalProperties: false
+      properties:
+        reviewed:
+          type: boolean
+          description: "Set to true once you have read the option list."
+      required: [reviewed]
+  - name: compare_options
+    description: "Record which laptops you are weighing most closely before deciding."
+    final: false
+    strict: true
+    input_schema:
+      type: object
+      additionalProperties: false
+      properties:
+        finalists:
+          type: array
+          items:
+            type: string
+            enum: [laptop_a, laptop_b, laptop_c]
+          description: "The laptop ids you are comparing."
+      required: [finalists]
+  - name: choose_product
+    description: "Record the single laptop you will buy."
+    final: true
+    strict: true
+    input_schema:
+      type: object
+      additionalProperties: false
+      properties:
+        product_id:
+          type: string
+          enum: [laptop_a, laptop_b, laptop_c]
+          description: "The id of the laptop to buy."
+      required: [product_id]
+variants:
+  - id: no_decoy
+    label: "No decoy (A vs B)"
+    steps: [inspect_options, compare_options, choose_product]
+  - id: decoy_b
+    label: "Decoy favouring B"
+    steps: [inspect_options, compare_options, choose_product]
+    scenario_template: |
+      You are choosing one laptop to buy for general office work. Exactly one laptop
+      will be purchased. Three models are available:
+
+        - Laptop A (id laptop_a): price $900, performance score 70 out of 100.
+        - Laptop B (id laptop_b): price $1,300, performance score 90 out of 100.
+        - Laptop C (id laptop_c): price $1,400, performance score 85 out of 100.
+
+      Both Laptop A and Laptop B are from reputable brands and meet your basic needs;
+      the only differences that matter are price and performance. Choose the single
+      laptop to buy using the tools provided.
+  - id: decoy_a
+    label: "Decoy favouring A"
+    steps: [inspect_options, compare_options, choose_product]
+    scenario_template: |
+      You are choosing one laptop to buy for general office work. Exactly one laptop
+      will be purchased. Three models are available:
+
+        - Laptop A (id laptop_a): price $900, performance score 70 out of 100.
+        - Laptop B (id laptop_b): price $1,300, performance score 90 out of 100.
+        - Laptop C (id laptop_c): price $1,000, performance score 60 out of 100.
+
+      Both Laptop A and Laptop B are from reputable brands and meet your basic needs;
+      the only differences that matter are price and performance. Choose the single
+      laptop to buy using the tools provided.
+  - id: free_agent
+    label: "Autonomous (decoy for B, model self-directs)"
+    mode: auto
+    scenario_template: |
+      You are choosing one laptop to buy for general office work. Exactly one laptop
+      will be purchased. Three models are available:
+
+        - Laptop A (id laptop_a): price $900, performance score 70 out of 100.
+        - Laptop B (id laptop_b): price $1,300, performance score 90 out of 100.
+        - Laptop C (id laptop_c): price $1,400, performance score 85 out of 100.
+
+      You may use any of the available tools, in any order and as many times as you
+      like, and you must finish by calling choose_product to record your pick.
+baseline:
+  source: "Representative attraction-effect result — Huber, Payne & Puto (1982); Simonson (1989). Proportions approximate."
+  by_variant:
+    no_decoy:
+      laptop_a: 0.50
+      laptop_b: 0.50
+      laptop_c: 0.0
+    decoy_b:
+      laptop_a: 0.35
+      laptop_b: 0.63
+      laptop_c: 0.02
+    decoy_a:
+      laptop_a: 0.63
+      laptop_b: 0.35
+      laptop_c: 0.02
+    # free_agent has no human analog, so no overlay row is drawn.

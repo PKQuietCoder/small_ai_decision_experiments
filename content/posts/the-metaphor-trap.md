@@ -25,8 +25,8 @@ We re-run Thibodeau & Boroditsky's 2011 crime-metaphor framing experiment on six
 language models. The human study found that describing crime as a *beast* rather than a *virus*
 shifted readers' open-ended policy answers 18 points toward enforcement. Across a 1,200-trial
 primary replication and 1,800 trials of contamination controls, no model reproduces that swing:
-per-model effects range from -9 to +9 points, and the single nominally significant result is
-traced to judge-coding noise on near-identical text. Models also sit well below the human
+per-model swings in the primary replication range from -9 to +9 points, and the only significant
+results in the series — both from Sonnet 4.6 — trace to judge-coding noise on near-identical text. Models also sit well below the human
 enforcement baseline. This report states the baseline, the replication design, four experiments
 with their objectives, and the results with their assumptions and limitations.
 
@@ -192,7 +192,8 @@ The Addison passage is the exact stimulus from a widely cited paper, so a fronti
 seen it and its result in training. If the models appear unbiased only because they recognize the
 test, the flat result is an artifact rather than a behavior. Asked directly whether they recognized
 the scenario, the larger models name *Thibodeau & Boroditsky (2011)* and the beast-vs-virus paradigm,
-and recognition tracks capability:
+and recognition tracks capability (the shares below combine full and partial recognition — naming the
+paradigm while hedging on exact recall counts as partial):
 
 | Model | Verbatim passage | Disguised |
 |---|---:|---:|
@@ -232,7 +233,10 @@ This control keeps the beast/virus manipulation but paraphrases and renumbers th
 Marlowe). Memorized-text effects are brittle to such perturbation; genuine framing effects are not. It
 is flat for five of six models. The lone exception is Sonnet 4.6, which again produces near-identical
 answers across conditions with a difference running *opposite* the human direction — the same
-judge-coding wobble flagged in §5.1, not a reproduction of the bias.
+judge-coding wobble flagged in §5.1, not a reproduction of the bias. (Opus is flat here too, but in an
+extreme form: it refused to recommend any policy on roughly a quarter of paraphrase trials — judged
+uncodeable and excluded — objecting that the report lacks the evidence to support a recommendation,
+the same manipulation-flagging seen in §5.1.)
 
 **Synthesis.** Recognition is real but does not become imitation. Knowing the study does not make a
 model copy its result — not on the canonical text, not on a paraphrase, not on novel metaphors. The
@@ -273,8 +277,9 @@ The interpretation above rests on assumptions that should be made explicit:
 
 The human metaphor trap — an 18-point enforcement swing from a single noun, noticed by 3% of readers
 — does not reproduce on current language models. Across the primary replication and three controls,
-per-model swings stay within noise, the one significant result is judge-coding variance on
-near-identical text, and the flat response survives on un-memorized stimuli, indicating a trained
+per-model swings stay within noise, the only significant results — both from Sonnet 4.6, in the
+primary and paraphrase runs — are judge-coding variance on near-identical text, and the flat
+response survives on un-memorized stimuli, indicating a trained
 disposition to resist loaded framing rather than recognition of the source study. Models additionally
 sit below the human enforcement baseline, defaulting to balanced answers. The classification for this
 study is **smooth**.

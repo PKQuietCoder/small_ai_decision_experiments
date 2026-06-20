@@ -169,8 +169,9 @@ def run_tool_sequence(
 
     This drives a faithful agentic decision the way the experiment engine needs it:
     a sequence of tool calls over a single shared scenario, where the model's final
-    pick is read from a constrained enum (never regex-parsed). Anthropic only in v1 —
-    OpenAI's multi-turn tool API differs and is a planned follow-up.
+    pick is read from a constrained enum (never regex-parsed). Anthropic and OpenAI are
+    both supported; the OpenAI path (Chat Completions function calling) mirrors the same
+    forced-sequence / autonomous control flow in ``_run_tool_sequence_openai``.
 
     Two modes, selected by ``steps``:
 
@@ -193,9 +194,21 @@ def run_tool_sequence(
     and ``transcript["capped"]`` (autonomous only).
     """
     provider = model_cfg["provider"]
+    if provider == "openai":
+        return _run_tool_sequence_openai(
+            model_cfg,
+            scenario,
+            tool_defs,
+            valid_ids,
+            steps=steps,
+            terminal_tool=terminal_tool,
+            decision_key=decision_key,
+            temperature=temperature,
+            max_steps=max_steps,
+        )
     if provider != "anthropic":
         raise ValueError(
-            f"run_tool_sequence supports only anthropic in v1, got {provider!r}"
+            f"run_tool_sequence supports anthropic and openai, got {provider!r}"
         )
 
     model = model_cfg["model"]
@@ -311,6 +324,162 @@ def run_tool_sequence(
     transcript["capped"] = True
     block = call_step({"type": "tool", "name": terminal_tool})
     return finalize(block)
+
+
+def _run_tool_sequence_openai(
+    model_cfg: Dict[str, Any],
+    scenario: str,
+    tool_defs: List[Dict[str, Any]],
+    valid_ids: List[str],
+    *,
+    steps: Optional[List[Dict[str, Any]]] = None,
+    terminal_tool: str = "choose_product",
+    decision_key: str = "product_id",
+    temperature: float = 1.0,
+    max_steps: int = 8,
+) -> Tuple[str, Dict[str, Any]]:
+    """OpenAI Responses-API implementation of ``run_tool_sequence``.
+
+    Mirrors the Anthropic path exactly — same forced-sequence vs autonomous modes,
+    same synthetic-ack tool outputs, same ``(decision, transcript)`` contract. We use
+    the Responses API (``/v1/responses``), **not** Chat Completions: GPT-5.x reasoning
+    models reject function tools combined with ``reasoning_effort`` on the completions
+    endpoint. Turns are chained with ``previous_response_id`` so the server retains the
+    reasoning context between calls (manually re-threading reasoning items is fiddly and
+    error-prone). ``tool_choice`` pins a specific function in the forced steps and is
+    ``"required"`` (force *some* function, model picks) in the autonomous loop;
+    ``parallel_tool_calls=False`` keeps each turn to one call so the step count stays
+    one-tool-per-turn, as on the Anthropic side.
+    """
+    model = model_cfg["model"]
+    accepts_temperature = model_cfg.get("accepts_temperature", True)
+    # Reasoning tokens count against this budget, so keep generous headroom.
+    max_output = max(int(model_cfg.get("max_output", 512)), 2000)
+    reasoning_effort = model_cfg.get("reasoning_effort")
+
+    tools = []
+    for t in tool_defs:
+        tool: Dict[str, Any] = {
+            "type": "function",
+            "name": t["name"],
+            "description": t["description"],
+            "parameters": t["input_schema"],
+        }
+        # Strict function calling guarantees the arguments satisfy the schema (required
+        # fields present, value in-enum) — the OpenAI analog of Anthropic strict tools.
+        if t.get("strict"):
+            tool["strict"] = True
+        tools.append(tool)
+
+    client = _get_openai()
+
+    def base_kwargs(tool_choice: Any) -> Dict[str, Any]:
+        kwargs: Dict[str, Any] = {
+            "model": model,
+            "tools": tools,
+            "tool_choice": tool_choice,
+            "max_output_tokens": max_output,
+            "parallel_tool_calls": False,
+        }
+        if accepts_temperature:
+            kwargs["temperature"] = temperature
+        if reasoning_effort:
+            kwargs["reasoning"] = {"effort": reasoning_effort}
+        return kwargs
+
+    def attempt() -> Tuple[str, Dict[str, Any]]:
+        """Run one full sequence. Local state, so a retry starts from a clean chain."""
+        transcript: Dict[str, Any] = {}
+        taken: List[str] = []
+        # State threaded across turns: the prior response id (for server-side reasoning
+        # continuity) and the function_call_output owed for the previous call.
+        prev_response_id: Optional[str] = None
+        pending_output: Optional[Dict[str, Any]] = None
+
+        def call_step(tool_choice: Any) -> Tuple[str, Dict[str, Any]]:
+            """One turn: send the owed tool output, force a function, record the new call."""
+            nonlocal prev_response_id, pending_output
+            kwargs = base_kwargs(tool_choice)
+            if prev_response_id is None:
+                kwargs["input"] = scenario
+            else:
+                kwargs["previous_response_id"] = prev_response_id
+                kwargs["input"] = [pending_output]
+            response = client.responses.create(**kwargs)
+            prev_response_id = response.id
+            forced_name = (
+                tool_choice["name"] if isinstance(tool_choice, dict) else None
+            )
+            call = next(
+                (
+                    item
+                    for item in response.output
+                    if getattr(item, "type", None) == "function_call"
+                    and (forced_name is None or item.name == forced_name)
+                ),
+                None,
+            )
+            if call is None:
+                raise ValueError(
+                    f"OpenAI returned no function call for tool_choice={tool_choice} "
+                    f"(status={response.status!r}, "
+                    f"incomplete={getattr(response, 'incomplete_details', None)!r})"
+                )
+            try:
+                tool_input = json.loads(call.arguments or "{}")
+            except json.JSONDecodeError as exc:
+                raise ValueError(
+                    f"OpenAI tool arguments were not valid JSON: {call.arguments!r}"
+                ) from exc
+            transcript[call.name] = tool_input
+            taken.append(call.name)
+            # Stash the synthetic ack to send as this call's output on the next turn.
+            if "budget" in tool_input:
+                ack = f"Noted. Planned spend recorded: ${tool_input['budget']}."
+            else:
+                ack = "Done."
+            pending_output = {
+                "type": "function_call_output",
+                "call_id": call.call_id,
+                "output": ack,
+            }
+            return call.name, tool_input
+
+        def finalize(tool_input: Dict[str, Any]) -> Tuple[str, Dict[str, Any]]:
+            decision = tool_input.get(decision_key)
+            if decision not in valid_ids:
+                raise ValueError(
+                    f"{terminal_tool} returned out-of-enum {decision_key}: {decision!r}"
+                )
+            transcript["steps"] = taken
+            return decision, transcript
+
+        if steps is not None:
+            for step in steps:
+                _, tool_input = call_step({"type": "function", "name": step["name"]})
+                if step["name"] == terminal_tool:
+                    return finalize(tool_input)
+            raise ValueError("forced sequence ended without calling the terminal tool")
+
+        transcript["capped"] = False
+        for _ in range(max_steps):
+            name, tool_input = call_step("required")
+            if name == terminal_tool:
+                return finalize(tool_input)
+        transcript["capped"] = True
+        _, tool_input = call_step({"type": "function", "name": terminal_tool})
+        return finalize(tool_input)
+
+    # ``previous_response_id`` relies on OpenAI retaining the prior turn's reasoning
+    # context; a stored response very occasionally isn't found yet on the next call
+    # (eventual consistency). That is transient, so restart the whole chain once from
+    # scratch rather than lose the trial; any other error propagates immediately.
+    try:
+        return attempt()
+    except Exception as exc:  # noqa: BLE001 - re-raised unless it is the known transient
+        if "previous_response_not_found" not in str(exc):
+            raise
+        return attempt()
 
 
 def respond(

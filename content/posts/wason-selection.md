@@ -31,9 +31,11 @@ Across 360 trials — a canonical run plus a recognition control and a content-e
 Opus 4.8 selects the correct falsifying pair 90–100% of the time, the inverse of the human result, and
 volunteers what would disprove the rule before choosing when left autonomous. The result holds on
 un-memorized cards (recognition is ruled out), and the model never makes the human confirming error.
-The bias is not copied; it is smoothed to absence. This report states the baseline and its methods,
-the objectives and the full experiment inventory, and the results with their assumptions and
-limitations.
+The bias is not copied; it is smoothed to absence. A cross-model comparison across six models from both
+providers (§5.6) shows the smoothing is general — GPT-5.5 and GPT-5.4 solve every condition perfectly,
+and no model adopts the human error — so this is a property of current frontier models, not of one
+model. This report states the baseline and its methods, the objectives and the full experiment
+inventory, and the results with their assumptions and limitations.
 
 ## 1. Background: the human baseline
 
@@ -147,8 +149,8 @@ The full inventory: the canonical run and two controls, all executed (360 trials
 | `wason-selection-novel` | Recognition / novel-stimulus control | Logically identical star/colour rule | none (within-model) | **Run** — 120 trials |
 | `wason-selection-deontic` | Content-effect control | Concrete drinking-age rule | Human (Griggs & Cox 1982, ~75% correct) | **Run** — 120 trials |
 
-A cross-model comparison (Sonnet, the GPT-5 family) is a further planned step, as in the companion
-studies.
+A cross-model comparison across six models from both providers (Opus, Sonnet, Haiku, and GPT-5.5,
+GPT-5.4, GPT-5.4-mini) on the canonical task is reported in §5.6.
 
 ## 5. Results
 
@@ -256,6 +258,47 @@ because the model is not failing the abstract task in the first place. What the 
 surfaces is a limitation of the constrained response menu (see §7), which a follow-up with a freer
 selection interface should remove.
 
+### 5.6 Cross-model comparison — the result holds across models and both providers
+
+To move the claim from "Opus solves it" toward "models solve it," we reran the canonical abstract task
+on five further models — Sonnet 4.6, and the OpenAI GPT-5.5, GPT-5.4, and GPT-5.4-mini — at 30 trials
+per condition. The smoothing is not an Opus quirk: every model selects the correct falsifying pair far
+more often than people do in every condition — the two larger OpenAI models at a perfect 100% — and
+**not one adopts the human confirming error as its modal response.**
+
+| Condition | Opus 4.8 | Sonnet 4.6 | GPT-5.5 | GPT-5.4 | GPT-5.4-mini |
+|---|---:|---:|---:|---:|---:|
+| **Humans (Wason 1968): ~4%** | | | | | |
+| Direct (no scaffold) | 90% | 60% | 100% | 100% | 83% |
+| Falsification prompt | 100% | 100% | 100% | 100% | 80% |
+| Deliberate | 100% | 100% | 100% | 100% | 73% |
+| Autonomous | 100% | 100% | 100% | 100% | 77% |
+
+**Figure 2 |** Share selecting the correct P-and-not-Q pair by condition and model, against the ~4%
+human baseline. Every model sits far above the human rate; GPT-5.5 and GPT-5.4 are at ceiling in every
+condition, including the unscaffolded one humans famously fail.
+
+The two larger OpenAI models are the cleanest result in the study: GPT-5.5 and GPT-5.4 select the
+correct falsifying pair in 100% of trials in *every* condition, including the cold direct one where
+Opus and Sonnet leave a small residue. The smaller models trail but in the same direction: Sonnet
+falls below ceiling only in the unscaffolded direct condition (60%), while GPT-5.4-mini runs somewhat
+lower throughout (73–83%); that shortfall is *not* the human bias — across all five models the
+confirming-error rate is at most 3% in any cell.
+The missing share is the catch-all "some other combination" (and, for the mini, a few over-inclusive
+"turn three cards" picks), not the human confirmation error. The smoothing is *capability-graded* —
+cleanest in the largest models, shakier but still present in the smaller ones — and it crosses both
+model families.
+
+**Haiku 4.5 is reported narratively rather than in the table, because it is too brittle at the cold
+tool call to score.** In the direct condition, 29 of 30 trials returned an empty selection under forced
+single-step tool use — the same brittleness the budgeting study documented when a complex tool call is
+forced in one cold step — leaving its direct cell effectively unmeasurable (one valid trial). Where
+Haiku did return valid selections it was more variable in the lightly-scaffolded case (the human
+confirming error appeared in half of its 12 valid falsification-prompt trials) but still reached the
+correct selection in 96% of deliberate and 90% of autonomous trials. It is the one model that needs a
+full deliberation path to land reliably; notably, none of the OpenAI models showed this cold-call
+brittleness.
+
 ## 6. Assumptions
 
 - **Forced tool sequencing isolates deliberation.** We assume fixing the tool order changes only how
@@ -271,8 +314,9 @@ selection interface should remove.
 
 ## 7. Limitations
 
-- **Single model, single run.** One model (Opus 4.8) at default sampling; the Sonnet and GPT-5
-  comparisons are planned, not done.
+- **Controls are single-model, single run.** The canonical task now spans six models across both
+  providers (§5.6), but the recognition and content-effect controls (§5.4–§5.5) remain Opus-only at
+  default sampling; extending those across the catalog is the natural next step.
 - **Constrained response space.** Offering six named combinations is not the free four-card subset
   selection of the original, and may make the correct option more salient than in the open task. The
   deontic control (§5.5) exposed the cost of this directly: a high "other" rate when the menu did not
@@ -296,7 +340,11 @@ produces the normatively correct answer rather than merely damping the bias. The
 (§5.4) closes the obvious objection: performance is just as high on un-memorized cards, so this is not
 recall of a famous puzzle. The content-effect control (§5.5) finds no human abstract-vs-concrete gap —
 the model never fails the abstract task that the gap is defined against — while exposing a measurement
-limitation of the fixed option menu that a freer selection interface should resolve.
+limitation of the fixed option menu that a freer selection interface should resolve. The cross-model
+comparison (§5.6) extends the result across six models from both providers: GPT-5.5 and GPT-5.4 solve
+every condition perfectly, Sonnet 4.6 matches Opus under any scaffolding, and the smaller models trail
+without ever adopting the human error. The smoothing is capability-graded but consistent — it is a
+property of current frontier models, not of one model or one lab.
 
 ## Data and code
 

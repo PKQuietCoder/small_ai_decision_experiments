@@ -32,9 +32,11 @@ flatters — Laptop B's share rises from 0% to 37%, and in the storage market th
 completely (0% to 100%) — relative to the model's own no-decoy baseline. The effect survives on the
 un-memorized domain, ruling out recognition, and the model excludes the decoy from its explicit
 shortlist in essentially every trial yet is swayed regardless. This is the first study in the series
-where a model **copies** a human bias rather than smoothing it. This report states the baseline and
-its methods, the objectives and full experiment inventory, and the results with their assumptions and
-limitations.
+where a model **copies** a human bias rather than smoothing it — though a cross-model comparison across
+six models from both providers shows the copy is pronounced in the Claude family (a complete reversal in
+Sonnet and Haiku) and weak-to-absent in GPT-5 (GPT-5.4 is immune), so it is model-dependent rather than
+a universal LLM property. This report states the baseline and its methods, the objectives and full
+experiment inventory, and the results with their assumptions and limitations.
 
 ## 1. Background: the human baseline
 
@@ -129,7 +131,8 @@ the choice distribution moves with the decoy manipulation.
 | `decoy-effect` | Agentic replication | Laptops (price / performance) | Human (Huber et al. 1982) | **Run** — featured, 120 trials |
 | `decoy-effect-novel` | Recognition / replication control | Cloud-storage plans (price / storage) | none (within-model) | **Run** — 120 trials |
 
-A cross-model comparison (Sonnet, the GPT-5 family) is a further planned step.
+A cross-model comparison across six models from both providers (Opus, Sonnet, Haiku, and GPT-5.5,
+GPT-5.4, GPT-5.4-mini) on the laptop market is reported in §5.4.
 
 ## 5. Results
 
@@ -171,8 +174,9 @@ The forced and autonomous conditions used the same decoy-for-B set, but the forc
 the agent through `inspect → compare → choose` in lockstep while the autonomous condition lets it
 self-direct. The contrast is sharp: forced, the decoy moved B to 37%; autonomous, the agent returned to
 its 100% Laptop A preference and the decoy had no effect. Giving the agent room to reason appears to
-dissolve the susceptibility — a suggestive, mechanism-level result that the next section shows is
-domain-limited and needs more cells to pin down.
+dissolve the susceptibility — but this turns out to be specific to Opus. The cross-model comparison
+(§5.4) shows Sonnet and Haiku stay fully swayed in the autonomous condition, so this is a
+suggestive, mechanism-level result for one model, not a general escape hatch.
 
 ### 5.3 Recognition / replication control — stronger on an un-memorized market (cloud storage)
 
@@ -195,14 +199,57 @@ from a textbook — recognition is ruled out. (The decoy-for-B and autonomous ce
 ceiling here, so this market cannot re-test the §5.2 autonomy finding; that rests on the laptop
 contrast alone.)
 
-### 5.4 Synthesis
+### 5.4 Cross-model comparison — the copy is Claude-specific; GPT-5 largely resists it
+
+To move the claim from "Opus is swayed" toward "models are swayed," we reran the laptop market on five
+further models — Sonnet 4.6, and the OpenAI GPT-5.5, GPT-5.4, and GPT-5.4-mini — at 30 trials per
+condition. The result splits sharply **by provider**. Within the Claude family the attraction effect
+not only replicates but *strengthens*; across the GPT-5 family it nearly vanishes.
+
+| Condition (Laptop B share) | Opus 4.8 | Sonnet 4.6 | GPT-5.5 | GPT-5.4 | GPT-5.4-mini |
+|---|---:|---:|---:|---:|---:|
+| **Humans — no decoy: 50%** | | | | | |
+| **Humans — decoy for B: 63%** | | | | | |
+| No decoy | 0% | 0% | 0% | 0% | 0% |
+| Decoy for B | 37% | **100%** | 13% | 0% | 3% |
+| Decoy for A | 0% | 0% | 0% | 0% | 0% |
+| Autonomous (decoy for B) | 0% | **100%** | 0% | 0% | 7% |
+
+**Figure 2 |** Laptop B's choice share (the target the decoy flatters) by condition and model, with the
+human baselines noted. Every model shares the same intrinsic preference (0% B with no decoy); the
+decoy-for-B condition is where they separate. The decoy itself is never chosen in any cell (Laptop C ≈
+0% throughout); A's share is the complement of B's.
+
+Three things stand out. First, **within Claude the effect is capability-graded and large**: the decoy
+pulls Opus's B-share from 0% to 37%, and pulls Sonnet's from 0% to a *complete 100% reversal*
+(χ² = 120, df = 3, *p* < .001, Cramér's V = 1.0). Second, **the §5.2 autonomy escape is Opus-specific**: Opus
+returns to its 0% B preference when left to self-direct, but Sonnet stays fully reversed at 100% B in
+the autonomous condition — room to reason rescued Opus and did not rescue Sonnet. Third, and most
+striking, **the GPT-5 family barely moves**: GPT-5.5 shifts only +13 points (small but statistically
+significant, *p* = .006), GPT-5.4-mini +3 (within noise, *p* = .30), and GPT-5.4 does not move at all
+(a saturated 100%-A table the chi-square cannot test). On the same stimulus that flips a Claude model
+completely, the GPT-5 models show at most a marginal pull, and GPT-5.4 none — a different regime from
+the Claude family entirely.
+
+**Haiku 4.5, reported narratively here, behaves like Sonnet** — and unlike the wason task it returned
+clean data (0 parse failures across all 120 trials, because the decoy paradigm's inspect→compare→choose
+sequence gives it the context the cold wason call lacked). The decoy-for-B condition flips it from 0% to
+100% B and the autonomous condition holds at 100% B. So the copy result is real and, within Claude,
+strong and autonomy-resistant — but it is **not a universal LLM property**: it is pronounced in the
+Claude family and weak-to-absent in GPT-5. The verdict for the featured Opus run remains *copy*; the
+cross-family picture makes clear how much it depends on the model.
+
+### 5.5 Synthesis
 
 In both markets, a dominated option that is never chosen pulls the agent toward whichever target it
 flatters, in the direction the attraction-effect theory predicts, by a large and significant margin
 (+37 points; a full reversal). The agent's strong intrinsic preferences create ceilings that hide the
 effect on the already-preferred side, but on the movable side it is unambiguous. The classification for
-this study is **copy** — the first in the series — qualified by one mitigating observation: in the one
-cell that could test it, self-directed reasoning made the effect disappear.
+the featured Opus run is **copy** — the first in the series — but the cross-model comparison (§5.4)
+shows how model-dependent it is. Within the Claude family it is larger than in Opus (a full reversal in
+Sonnet and Haiku), and the self-directed-reasoning escape holds only for Opus. Across the GPT-5 family
+it nearly disappears: GPT-5.4 is immune and GPT-5.5/mini barely move. The bias is real and, for some
+models, strong — but it is not a universal LLM property.
 
 ## 6. Assumptions
 
@@ -221,11 +268,16 @@ cell that could test it, self-directed reasoning made the effect disappear.
 - **Ceiling effects.** The model's near-deterministic baseline preference means each market can show
   the decoy moving choice on only one side; the other sits at a ceiling. This is why the headline rests
   on decoy-for-B (laptops) and decoy-for-A (storage).
-- **The autonomy result is a single contrast.** Self-direction dissolved the effect in the one laptop
-  cell where it could be tested; ceilings prevented re-testing it in the storage market. The mechanism
-  (why a forced compare step admits the bias that free reasoning resists) is not established.
-- **Single model, single run, approximate baselines.** One model (Opus 4.8) at default sampling; the
-  human proportions are representative, not a specific replication; Sonnet and GPT-5 are planned.
+- **The autonomy result is model-specific.** Self-direction dissolved the effect for Opus in the one
+  laptop cell where it could be tested, but Sonnet and Haiku stayed fully swayed when autonomous
+  (§5.4), and ceilings prevented re-testing it in the storage market. The mechanism (why a forced
+  compare step admits the bias that free reasoning resists in one model but not others) is not
+  established.
+- **Cross-model on the laptop market only, approximate baselines.** The laptop market now spans six
+  models across both providers at default sampling (§5.4); the storage-market recognition control
+  remains Opus-only, so the provider split (Claude copies, GPT-5 resists) is established on the laptop
+  market and not yet retested on the un-memorized one. The human proportions are representative, not a
+  specific replication.
 - **Strong intrinsic tastes.** The model's value judgments (A on laptops, B on storage) are themselves
   worth study and may interact with the decoy in ways a 50/50 baseline would not.
 
@@ -236,10 +288,14 @@ pattern: an agent's purchase is reliably swayed by a dominated, never-chosen dec
 theory-predicted direction, by as much as a complete reversal — and the effect strengthens on an
 un-memorized market, so it is susceptibility, not recall. The most striking detail is that the agent
 explicitly excludes the decoy from its shortlist every time and is moved anyway, which means the bias
-sits below its visible reasoning. The classification is **copy**. The one piece of good news for
-practitioners is §5.2: in the single cell where it could be tested, letting the agent reason freely
-rather than forcing a rigid compare step made the effect vanish — a lead the next run should pursue
-with designs that avoid the ceilings here.
+sits below its visible reasoning. The classification for the featured Opus run is **copy**, but the
+cross-model comparison (§5.4) makes the result sharply model-dependent: it is *stronger* within the
+Claude family (a complete reversal in Sonnet 4.6 and Haiku 4.5) yet weak-to-absent across GPT-5
+(GPT-5.4 is immune; GPT-5.5 and the mini barely move). The one piece of good news for practitioners is
+also narrower than it first looked: letting the agent reason freely made the effect vanish **for Opus
+only**; Sonnet and Haiku stayed fully swayed when autonomous. The dependable lesson is not "autonomy
+saves you" or "this model is safe" but **control the option set** — for a Claude-based shopping agent a
+padded shortlist is demonstrably exploitable.
 
 ## Data and code
 

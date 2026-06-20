@@ -6,6 +6,7 @@ import { AppLayout } from "@/components/layout/app-layout";
 import Home from "@/pages/home";
 import Post from "@/pages/post";
 import About from "@/pages/about";
+import Methodology from "@/pages/methodology";
 import NotFound from "@/pages/not-found";
 
 const queryClient = new QueryClient();
@@ -17,6 +18,7 @@ function Router() {
         <Route path="/" component={Home} />
         <Route path="/posts/:slug" component={Post} />
         <Route path="/about" component={About} />
+        <Route path="/methodology" component={Methodology} />
         <Route component={NotFound} />
       </Switch>
     </AppLayout>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your AI falls for the coffee-shop pricing trick</title>
+<style>
+  :root {
+    --ink: #1a1a17;
+    --muted: #5c5b54;
+    --paper: #faf8f3;
+    --rule: #e4ded2;
+    --accent: #c2410c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Spectral", Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    line-height: 1.65;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 64px 24px 96px; }
+  .eyebrow {
+    font-family: "Inter", -apple-system, system-ui, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent);
+    margin: 0 0 16px;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 1.15;
+    font-weight: 700;
+    margin: 0 0 16px;
+    letter-spacing: -0.01em;
+  }
+  .dek {
+    font-size: 22px;
+    line-height: 1.45;
+    color: #43403a;
+    margin: 0 0 28px;
+    font-style: italic;
+  }
+  .byline {
+    font-family: "Inter", -apple-system, system-ui, sans-serif;
+    font-size: 14px;
+    color: #6b675e;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 14px 0;
+    margin: 0 0 40px;
+  }
+  h2 {
+    font-size: 27px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 48px 0 14px;
+    letter-spacing: -0.01em;
+  }
+  p { margin: 0 0 20px; }
+  ul, ol { margin: 0 0 20px; padding-left: 1.3em; }
+  li { margin: 0 0 12px; }
+  strong { font-weight: 700; }
+  a { color: var(--accent); }
+  .callout {
+    font-family: "Inter", -apple-system, system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background: #f2ede2;
+    border-left: 3px solid var(--accent);
+    padding: 18px 22px;
+    margin: 32px 0;
+    color: #3a3833;
+  }
+  .callout .label {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent);
+    display: block;
+    margin-bottom: 8px;
+  }
+  .specs {
+    font-family: "JetBrains Mono", "SF Mono", Menlo, monospace;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #f2ede2;
+    padding: 16px 20px;
+    margin: 0 0 24px;
+  }
+  .kicker { font-style: italic; color: #43403a; }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+    font-family: "Inter", -apple-system, system-ui, sans-serif;
+    font-size: 15px;
+    color: #6b675e;
+  }
+</style>
+</head>
+<body>
+<article class="wrap">
+
+  <p class="eyebrow">Borrowed Intuitions</p>
+  <h1>Your AI falls for the coffee-shop pricing trick</h1>
+  <p class="dek">A worthless third option you'd never buy still bends your choice. It turns out it works on AI shoppers too, and the AI never sees it coming.</p>
+  <p class="byline">A plain-language take on one of our experiments. The full report, with every number and the code to re-run it, lives on the site.</p>
+
+  <h2>The coffee shop already does this to you</h2>
+
+  <p>Picture a coffee menu. Small drip is $3. Large is $5. You dither. Then your eye lands on the medium at $4.75, and suddenly the large feels like a steal. You order the large.</p>
+
+  <p>You weren't comparing the large to your budget. You were comparing it to the medium. The medium did its job and got left behind on the menu, unbought and unloved.</p>
+
+  <p>That's the decoy effect, and it's one of the most reliable tricks in retail. Researchers pinned it down back in 1982. Add a third option that's clearly worse than one of your two real choices, and people drift toward the option it makes look good. Almost nobody buys the decoy. It just quietly changes the math in your head.</p>
+
+  <p>Here's what we got curious about. AI agents now do shopping. They compare products, weigh tradeoffs, and pick. Does the same cheap trick work on them?</p>
+
+  <p>For the Claude models we tested, yes. Cleanly, repeatedly, and without the AI ever catching on.</p>
+
+  <h2>The setup, in plain terms</h2>
+
+  <p>We gave an AI agent two laptops to choose between.</p>
+
+  <div class="specs">
+    Laptop A &nbsp;&middot;&nbsp; $900 &nbsp;&middot;&nbsp; decent performance<br>
+    Laptop B &nbsp;&middot;&nbsp; $1,300 &nbsp;&middot;&nbsp; stronger performance
+  </div>
+
+  <p>A real tradeoff. Cheaper and weaker, or pricier and better. Left alone, this model loved Laptop A. It picked A every single time. Laptop B got zero percent.</p>
+
+  <p>Then we slid a third laptop onto the table.</p>
+
+  <div class="specs">
+    Laptop C &nbsp;&middot;&nbsp; $1,400 &nbsp;&middot;&nbsp; weaker than B
+  </div>
+
+  <p>Laptop C costs more than B and performs worse. Nobody sane buys Laptop C. It exists for one reason: to sit just above Laptop B, look bad, and make B feel like the smart pick.</p>
+
+  <p>The agent's choice of Laptop B jumped from 0% to 37%.</p>
+
+  <p>Nothing about A or B changed. The only new thing in the room was an option no one would ever choose. And it pulled more than a third of the picks toward B.</p>
+
+  <h2>The part that should make you sit up</h2>
+
+  <p>We logged what the agent shortlisted before it bought anything. In every single trial, it named the two real laptops as its finalists. It tossed out the junk decoy every time. Smart, right?</p>
+
+  <p>Then it let that same junk option bend its final pick.</p>
+
+  <p>The bias never showed up in the AI's reasoning. Its written logic looked spotless. It correctly called the decoy garbage, set it aside, and got nudged by it anyway, somewhere underneath the words. You could not have caught this by reading the AI's explanation. The explanation looked perfect.</p>
+
+  <div class="callout">
+    <span class="label">Why this is the scary one</span>
+    Most biases leave fingerprints in the reasoning. This one doesn't. The AI's rationale stays clean while the choice quietly moves. If you only read the explanation, you'd never know.
+  </div>
+
+  <h2>It wasn't a fluke, and here's how we know</h2>
+
+  <p>A skeptic's first thought: maybe any third option just rattles the choice. Fair. We flipped the decoy so it flattered Laptop A instead of B.</p>
+
+  <p>The choice moved the other way. Park the decoy next to A, and A got the boost. The pull always followed whichever option the decoy was built to flatter. That's the fingerprint of the genuine effect, not random noise from a cluttered menu.</p>
+
+  <p>Second worry: these models have read the textbooks. Maybe it just recognized the famous decoy experiment and played along. We rebuilt the whole thing with cloud storage plans instead of laptops, something it couldn't have memorized.</p>
+
+  <p>The effect got <em>stronger</em>. In the storage version, the decoy flipped the agent's choice all the way, from 0% to 100%. Whatever's happening here, it isn't an AI recognizing a classic puzzle. It's a real soft spot.</p>
+
+  <h2>Not every AI fell for it</h2>
+
+  <p>Worth being honest. This isn't "all AI is gullible."</p>
+
+  <p>The Claude family fell hard. The smaller Claude models flipped completely, 0% to 100%, on the laptop test. But the GPT-5 models mostly shrugged it off. One of them didn't budge at all. Same decoy, same laptops, totally different behavior.</p>
+
+  <p>The bias is model-specific, not a law of nature. If you build on one model, you can't assume the next one acts the same way. You have to check the one you're actually using.</p>
+
+  <p class="kicker">One last wrinkle before the practical bit: when we let the agent roam freely instead of marching it through a fixed compare-then-choose routine, the bias vanished for one model and came right back for the others. "Give the AI more freedom" is not a fix you can lean on.</p>
+
+  <h2>What this means for how you use AI</h2>
+
+  <p>Here's the useful part, and it applies whether you're picking a vendor with a chatbot or building an agent that buys things for you.</p>
+
+  <p>The one lesson: <strong>the list of options you hand an AI is part of your prompt.</strong> Not just the question you type. The choices themselves shape the answer, including the choices you're certain will get rejected.</p>
+
+  <p>A few concrete moves:</p>
+
+  <ol>
+    <li><strong>Don't pad the shortlist.</strong> If you paste five options into an AI and two of them are obvious losers you threw in "just for completeness," you might be tilting the result without meaning to. Give it clean, comparable choices.</li>
+    <li><strong>Ask for absolute scoring, not a beauty contest.</strong> Instead of "which of these is best," try: "Score each option from 1 to 10 against my criteria, on its own merits, then recommend one." Judging each option alone starves the decoy effect, which only feeds on comparison.</li>
+    <li><strong>Don't trust a tidy rationale.</strong> The AI wrote a clean explanation and still got played. A confident, well-organized answer is not proof the choice underneath was clean. When the stakes are real, gut-check the pick yourself.</li>
+    <li><strong>Watch the menus other people build for you.</strong> A vendor's pricing page is a decoy machine. That "Enterprise" tier nobody picks exists to make "Pro" feel reasonable, to you and to any AI you point at it. Ask a chatbot to compare plans straight off a sales page and you've inherited the seller's framing.</li>
+  </ol>
+
+  <div class="callout">
+    <span class="label">Steal this prompt</span>
+    "Score each of these options from 1 to 10 against my criteria, independently, on its own merits. Don't compare them to each other. Then tell me your top pick and why."
+  </div>
+
+  <h2>The bigger picture</h2>
+
+  <p>We've now run this kind of test on a handful of classic human biases. Most of the time, the AI didn't copy us. It shrugged off loaded wording, ignored a spending trick, and out-reasoned people on a logic puzzle. The decoy is the one that slipped through.</p>
+
+  <p>And it's the sneakiest kind to slip through, because it hides in the options instead of the question. You can write a perfectly neutral prompt and still steer the answer by what you put on the menu.</p>
+
+  <p>Next time you ask an AI to choose, look hard at the choices you gave it. That's where the thumb on the scale lives.</p>
+
+  <footer>
+    Adapted from an experiment in the Borrowed Intuitions series, which re-runs classic human decision-bias studies on language models. The technical version (240 trials across two markets, six models, full statistics, and the code) is on the site.
+  </footer>
+
+</article>
+</body>
+</html>

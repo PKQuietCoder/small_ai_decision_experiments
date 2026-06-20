@@ -27,10 +27,26 @@ plain-language reporting at journal-grade statistical rigor.
 |---|---|---|---|---|
 | 1 | The Metaphor Trap (`the-metaphor-trap`) | Thibodeau & Boroditsky 2011, crime framing | **Smooth** | 6 models — Opus 4.8, Sonnet 4.6, Haiku 4.5, GPT-5.5 / 5.4 / 5.4-mini |
 | 2 | When Budgeting Backfires (`budget-backfire`) | Larson & Hamilton 2012, pre-commit budget | **Smooth** | Opus 4.8 + Sonnet 4.6 (recognition control pending) |
-| 3 | The Falsification Test (`wason-selection`) | Wason 1968 selection task | **Smooth** (strongest — model produces the normatively correct answer) | Opus 4.8 |
-| 4 | The Decoy Effect (`decoy-effect`) | Huber, Payne & Puto 1982 attraction effect | **Copy** (first non-smooth result) | Opus 4.8 |
+| 3 | The Falsification Test (`wason-selection`) | Wason 1968 selection task | **Smooth** (strongest — model produces the normatively correct answer; holds across all six models) | 6 models — Opus 4.8, Sonnet 4.6, Haiku 4.5, GPT-5.5 / 5.4 / 5.4-mini (featured task) |
+| 4 | The Decoy Effect (`decoy-effect`) | Huber, Payne & Puto 1982 attraction effect | **Copy** (first non-smooth result) — but provider-split: pronounced in Claude (full reversal in Sonnet/Haiku), weak-to-absent in GPT-5 (5.4 immune) | 6 models — Opus 4.8, Sonnet 4.6, Haiku 4.5, GPT-5.5 / 5.4 / 5.4-mini (featured laptop market) |
 
 All four now carry a verdict badge and a "Controls" callout on their post pages (Tier 1, shipped).
+
+**Tier 2 #4 — shipped (both phases).** Wason and decoy now span all six catalog models on their
+featured experiments, with full cross-family sections added to both posts. Phase 1 added the Claude
+family; Phase 2 added an OpenAI agentic engine (`_run_tool_sequence_openai` in
+`server/experiments/llm_clients.py`, using the Responses API — GPT-5 reasoning models reject function
+tools on Chat Completions) and the three GPT-5 runs. Findings:
+- **Wason → smooth is universal.** All six models avoid the human confirming error; GPT-5.5 and GPT-5.4
+  solve every condition at 100%. Strengthens the headline from "Opus solves it" to "frontier models
+  solve it."
+- **Decoy → copy is Claude-specific.** The attraction effect is *stronger* in Sonnet/Haiku (full
+  0→100% reversal) than Opus (+37), and the Opus-only "autonomy dissolves it" caveat does **not**
+  generalize. But GPT-5 largely resists: GPT-5.4 is immune, GPT-5.5 +13, mini +3. So the one "copy"
+  result is model-dependent, not a universal LLM property.
+- **Model brittleness.** Haiku is brittle on cold forced tool calls (49/120 null selections on the
+  wason `direct` cell) so it is reported narratively, not in the wason table; no OpenAI model showed
+  this. The featured Opus runIds (and verdict badges) are unchanged; all new data was run `--no-post`.
 
 ### How it is already unique (claim these explicitly)
 
@@ -45,9 +61,10 @@ All four now carry a verdict badge and a "Controls" callout on their post pages 
 
 ### Where it is vulnerable
 
-- Cross-family coverage is uneven: two of the four studies (Wason, decoy) run Opus 4.8 only and a
-  third (budget) adds only Sonnet — weakening "do *LLMs*…" to "does Opus…". Only the metaphor study
-  spans all six catalog models.
+- Cross-model coverage on the *featured* experiments is now strong: metaphor, wason, and decoy all
+  span the full six-model catalog across both providers (the agentic engine gained an OpenAI branch).
+  Remaining gap: the *controls* (wason recognition/deontic, decoy storage-market) and the budget study
+  are still single- or few-model, so the cross-family claims rest on the featured stimulus only.
 - No multi-agent paradigms yet (ultimatum, Asch) — the most shareable experiments are still backlog.
 - Discoverability: a file-based solo blog competes with arxiv on the same search terms.
 
@@ -73,6 +90,13 @@ All four now carry a verdict badge and a "Controls" callout on their post pages 
    Re-run each across the catalog (`python -m server.run_experiment <id> --model <key>` per model,
    then a comparison table) so the headline becomes "do *LLMs*…". The metaphor study is the
    template. CLI is admin-only and must finish in one foreground shell call.
+   - **Phase 1 (shipped):** Claude family (Sonnet, Haiku) added to both featured experiments; cross-
+     model sections written into both posts.
+   - **Phase 2 (shipped):** added OpenAI multi-turn tool support (`_run_tool_sequence_openai` in
+     `server/experiments/llm_clients.py`, Responses API) and ran the three GPT-5 models on both
+     featured experiments; both posts now carry full six-model cross-family tables. Headline is now "do
+     *LLMs*…" on the featured stimulus. Open follow-up: extend the controls (recognition/deontic,
+     storage-market) across the catalog too.
 
 5. **Ship the first multi-agent experiment (ultimatum or Asch) from the roadmap.** The most
    shareable results; requires the new two-LLM engine branch noted in

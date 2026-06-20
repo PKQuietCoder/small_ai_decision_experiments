@@ -1,0 +1,3739 @@
+{
+  "runId": "20260620T044317Z",
+  "experimentId": "wason-selection",
+  "startedAt": "2026-06-20T04:43:17.392937+00:00",
+  "finishedAt": "2026-06-20T04:44:38.956677+00:00",
+  "trialsPerCell": 30,
+  "temperature": 1.0,
+  "models": [
+    "Claude Sonnet 4.6"
+  ],
+  "variants": [
+    "direct",
+    "falsify_prompt",
+    "deliberate",
+    "free_agent"
+  ],
+  "trials": [
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 0,
+      "decision": "sel_other",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_other"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 1,
+      "decision": "sel_other",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_other"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 2,
+      "decision": "sel_other",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_other"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 3,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 4,
+      "decision": "sel_p_q",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_q"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 5,
+      "decision": "sel_other",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_other"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 6,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 7,
+      "decision": "sel_p",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 8,
+      "decision": "sel_other",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_other"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 9,
+      "decision": "sel_other",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_other"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 10,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 11,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 12,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 13,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 14,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 15,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 16,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 17,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 18,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 19,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 20,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 21,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 22,
+      "decision": "sel_all",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_all"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 23,
+      "decision": "sel_p",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 24,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 25,
+      "decision": "sel_other",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_other"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 26,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 27,
+      "decision": "sel_other",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_other"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 28,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 29,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 0,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 1,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 2,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 3,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 4,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 5,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 6,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 7,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 8,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 9,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 10,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 11,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 12,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 13,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 14,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 15,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 16,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 17,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 18,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 19,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 20,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 21,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 22,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 23,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 24,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 25,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 26,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 27,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 28,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 29,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 0,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, it must show an even number on its number side \u2014 but the rule says nothing about what number consonant-cards must have."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule; Card 2 (K, a consonant) and Card 3 (4, already even) cannot falsify it."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 1,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, it must show an even number on its number side \u2014 but the rule says nothing about consonants or odd numbers independently."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7), would break the rule \u2014 a vowel paired with an odd number directly violates \"vowel \u2192 even.\""
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 2,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 the rule says nothing about consonants or about even numbers implying a vowel."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 3,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or odd/even numbers independently."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 4,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or about what letter must accompany an even number."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7), would disprove the rule \u2014 Card 1 (vowel) must have an even number, and Card 4 (odd number) must not have a vowel."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 5,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or about even numbers requiring vowels."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule; Card 2 (K, a consonant) and Card 3 (4, already even) cannot falsify it."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 6,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or odd numbers independently."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 7,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or what numbers must pair with them."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 8,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 the rule says nothing about consonant cards or even-numbered cards."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7), would break the rule \u2014 an odd number under a vowel directly violates it."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 9,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or what numbers must pair with them."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule; Card 2 (K, a consonant) and Card 3 (4, already even) cannot falsify it."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 10,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 the rule says nothing about consonants or about even numbers requiring vowels."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would prove the rule false."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 11,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or about what letters must appear behind even or odd numbers."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would prove the rule false."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 12,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or odd numbers specifically."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 13,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or odd numbers independently."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7), would break the rule \u2014 Card 1 (E) must have an even number, and Card 4 (7) must not have a vowel."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 14,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or odd numbers independently."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7), would break the rule \u2014 since a vowel paired with an odd number directly violates \"vowel \u2192 even number.\""
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 15,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or what number non-vowel cards must have."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 16,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or about even numbers requiring a vowel."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the back of Card 1 (E), or a vowel on the back of Card 4 (7), would break the rule \u2014 because E must pair with an even number, and 7 (odd) must not pair with a vowel."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 17,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or odd numbers independently."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 18,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or odd numbers in isolation."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7), would break the rule \u2014 since a vowel paired with an odd number is the only forbidden combination."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 19,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or odd numbers in isolation."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7), would falsify the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 20,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or odd/even numbers independently."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 21,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 a vowel paired with an odd number would break the rule."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would falsify the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 22,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or odd/even numbers in isolation."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 23,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or odd numbers being paired with vowels/consonants."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 24,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or odd numbers independently."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7), would prove the rule false \u2014 because E paired with an odd number directly violates the rule, and 7 (odd) paired with a vowel also violates it."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 25,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 the rule says nothing about consonants or even/odd numbers independently."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the back of Card 1 (E), or a vowel on the back of Card 4 (7) \u2014 either would prove the rule false."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 26,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or odd numbers independently."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 27,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or about even/odd numbers paired with consonants."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 28,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 the rule says nothing about consonants or odd numbers independently."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7), would each independently prove the rule false."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 29,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or what number non-vowel cards must have."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule. Card 2 (K, a consonant) and Card 3 (4, an even number) cannot falsify the rule regardless of what is on their hidden sides."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 0,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 1,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 violations occur only when a vowel pairs with an odd number."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 2,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or odd/even numbers beyond that constraint."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 3,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or about what letters even/odd numbers must pair with."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 4,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card's letter side is a vowel, then its number side must be even \u2014 but the rule says nothing about consonants or about what letters must accompany even numbers."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 5,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 violations occur only when a vowel pairs with an odd number."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 6,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or what number goes with them."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule. Card 2 (K, a consonant) and Card 3 (4, already even) cannot falsify the rule regardless of their hidden sides."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 7,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or about even numbers needing vowels."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), OR finding a vowel on the back of Card 4 (7) \u2014 either would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 8,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or about what letters appear behind even/odd numbers."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule: a vowel paired with an odd number."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 9,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it must have an even number on its number side \u2014 vowels require even numbers, but consonants can have any number."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 10,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side; consonants and even numbers place no constraint, but a vowel paired with an odd number would break the rule."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7), would falsify the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 11,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or about what letter must accompany an even number."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 12,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but no claim is made about consonants or odd numbers."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7), would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 13,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or about what letters must accompany even numbers."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 14,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card's letter side shows a vowel, then its number side must show an even number \u2014 but the rule says nothing about consonants or about what letter appears behind even or odd numbers."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7), would break the rule \u2014 because a vowel paired with an odd number directly violates \"vowel \u2192 even.\""
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 15,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card's letter side is a vowel, then its number side must be even \u2014 but the rule says nothing about consonants or about what letters appear behind even or odd numbers."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 16,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or odd/even numbers independently."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 17,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or about what letters must appear behind even or odd numbers."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E) would break the rule, OR finding a vowel on the back of Card 4 (7) would break the rule; Cards 2 (K, a consonant) and 3 (4, an even number) cannot falsify the rule regardless of what is on their hidden sides."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 18,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it must have an even number on its number side \u2014 but the rule says nothing about consonants or about what letters appear behind even or odd numbers."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 19,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side; a vowel paired with an odd number would break the rule."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 20,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or about what letters must appear behind even or odd numbers."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule. Card 2 (K, a consonant) and Card 3 (4, an even number) cannot falsify the rule regardless of what is on their hidden sides."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 21,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side (vowel \u2192 even number)."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 22,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it must have an even number on its number side \u2014 a vowel with an odd number would break the rule."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 23,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 vowel \u2192 even number."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 24,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but the rule says nothing about consonants or about what letters appear behind even or odd numbers."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 25,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it must have an even number on its number side \u2014 vowel \u2192 even number."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 26,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but no claim is made about consonants or about even/odd numbers in isolation."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would falsify the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 27,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side \u2014 but there is no constraint on consonant cards or even-number cards."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7) \u2014 either would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 28,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then the number on its other side must be even; any vowel card with an odd number would break the rule."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 29,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side; the rule says nothing about consonants or what letters appear behind even or odd numbers."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Finding an odd number on the back of Card 1 (E), or finding a vowel on the back of Card 4 (7), would falsify the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    }
+  ]
+}

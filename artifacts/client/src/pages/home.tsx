@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { useSite, usePosts } from "@/hooks/use-api";
 import { Skeleton } from "@/components/ui/skeleton";
 import { PostCard } from "@/components/post-card";
+import authorPhoto from "@assets/PK Photo.jpg";
 
 const ALL = "All Articles";
 
@@ -23,10 +24,13 @@ export default function Home() {
     const list = (posts ?? []).filter(
       (post) => active === ALL || post.category === active,
     );
-    return [...list].sort((a, b) => Number(b.featured) - Number(a.featured));
+    return [...list].sort(
+      (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+    );
   }, [posts, active]);
 
   const author = site?.author ?? "The Lab";
+  const authorUrl = site?.authorUrl;
 
   return (
     <div className="container mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16">
@@ -37,13 +41,36 @@ export default function Home() {
             <Skeleton className="h-6 w-full max-w-2xl" />
           </div>
         ) : (
-          <div className="space-y-4">
-            <h1 className="font-serif text-4xl font-bold tracking-tight text-foreground md:text-5xl">
-              {site?.title}
-            </h1>
-            <p className="max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-xl">
-              {site?.tagline}
-            </p>
+          <div className="flex flex-col gap-8 sm:flex-row sm:items-stretch sm:justify-between">
+            <div className="space-y-4">
+              <h1 className="font-serif text-4xl font-bold tracking-tight text-foreground md:text-5xl">
+                {site?.title}
+              </h1>
+              <p className="max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-xl">
+                {site?.tagline}
+              </p>
+            </div>
+            <div className="flex shrink-0 flex-col items-center gap-2 sm:justify-between">
+              <img
+                src={authorPhoto}
+                alt={author}
+                className="h-20 w-20 shrink-0 rounded-none object-cover"
+              />
+              <div>
+                {authorUrl ? (
+                  <a
+                    href={authorUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="font-medium text-foreground underline decoration-border underline-offset-4 transition-colors hover:decoration-foreground"
+                  >
+                    {author}
+                  </a>
+                ) : (
+                  <span className="font-medium text-foreground">{author}</span>
+                )}
+              </div>
+            </div>
           </div>
         )}
       </section>
@@ -71,27 +98,24 @@ export default function Home() {
       )}
 
       {postsLoading ? (
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="flex flex-col gap-6">
           {[1, 2, 3].map((i) => (
             <div key={i} className="rounded-none border border-border bg-card p-6">
               <div className="space-y-4">
                 <Skeleton className="h-4 w-20" />
                 <Skeleton className="h-7 w-3/4" />
                 <Skeleton className="h-16 w-full" />
-                <div className="flex items-center gap-3 pt-2">
-                  <Skeleton className="h-9 w-9 rounded-none" />
-                  <Skeleton className="h-8 w-32" />
-                </div>
+                <Skeleton className="h-4 w-32" />
               </div>
             </div>
           ))}
         </div>
       ) : visible.length === 0 ? (
-        <div className="rounded-xl border border-dashed border-border bg-muted/20 py-16 text-center text-muted-foreground">
+        <div className="rounded-none border border-dashed border-border bg-muted/20 py-16 text-center text-muted-foreground">
           <p>No publications found.</p>
         </div>
       ) : (
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="flex flex-col gap-6">
           {visible.map((post, i) => (
             <PostCard key={post.slug} post={post} author={author} index={i} />
           ))}

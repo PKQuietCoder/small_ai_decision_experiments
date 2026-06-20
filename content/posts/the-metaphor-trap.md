@@ -2,7 +2,7 @@
 category: Decisions
 type: Experiments
 date: '2026-06-19'
-excerpt: 'We reran Thibodeau & Boroditsky''s classic crime-metaphor study on six language models across 1,200 trials, using the exact report, the exact "beast" vs "virus" wording, and the exact open-ended question. Humans swing hard with the metaphor. The models barely move, and the frontier model often spots the trap and says so out loud.'
+excerpt: 'A technical report. We reran Thibodeau & Boroditsky''s 2011 crime-metaphor study on six language models across a 1,200-trial primary replication plus 1,800 trials of contamination controls. This report states the human baseline and its methods, the objectives and design of each re-run experiment, and the results with their assumptions and limitations. Humans swing 18 points with the metaphor; the models do not move beyond noise.'
 experimentId: crime-metaphor
 featured: true
 published: true
@@ -17,30 +17,77 @@ tags:
 title: 'The Metaphor Trap: Does One Word Tilt an LLM Toward Punishment or Reform?'
 ---
 
-## The human finding
+## Abstract
 
-In 2011, Paul Thibodeau and Lera Boroditsky ran a now-classic study ([*Metaphors We Think With*,
-PLoS ONE 6(2): e16782](https://doi.org/10.1371/journal.pone.0016782)). They gave people a short
-report about rising crime in the city of Addison and asked one open question: *"In your opinion,
-what does Addison need to do to reduce crime?"* Every reader saw the same statistics. Only one word
-changed.
+We re-run Thibodeau & Boroditsky's 2011 crime-metaphor framing experiment on six contemporary
+language models. The human study found that describing crime as a *beast* rather than a *virus*
+shifted readers' open-ended policy answers 18 points toward enforcement. Across a 1,200-trial
+primary replication and 1,800 trials of contamination controls, no model reproduces that swing:
+per-model effects range from -9 to +9 points, and the single nominally significant result is
+traced to judge-coding noise on near-identical text. Models also sit well below the human
+enforcement baseline. This report states the baseline, the replication design, four experiments
+with their objectives, and the results with their assumptions and limitations.
 
-Call crime a **beast** preying on the city and **74%** of readers reached for enforcement: more
-police, more arrests, harsher sentences. Call it a **virus** infecting the city and that dropped to
-**56%**, with more people turning to reform, things like diagnosing and treating root causes such as
-poverty, schooling, and jobs. An 18-point swing from a single noun (χ² = 13.94, *p* < .001,
-N = 455). Almost nobody caught it. Only **3%** of participants named the metaphor when asked what
-shaped their answer.
+## 1. Background: the human baseline
 
-That's the metaphor trap. We feel like we're reasoning from the facts while a buried figure of
-speech quietly steers us. This series takes one classic human-bias experiment at a time and reruns
-it on language models. The question each time is simple. Does the model copy the bias, smooth it
-away, or make it worse?
+### 1.1 Original finding
 
-## How we reran it, exactly
+Thibodeau & Boroditsky (2011), *Metaphors We Think With* ([PLoS ONE 6(2):
+e16782](https://doi.org/10.1371/journal.pone.0016782)), presented participants with a short report
+about rising crime in the city of Addison and asked one open-ended question: *"In your opinion, what
+does Addison need to do to reduce crime?"* Every participant saw identical statistics; only the
+governing metaphor changed.
 
-This is a faithful replication, not a paraphrase. We used the paper's exact stimulus and its exact
-open-ended question, changing only the two metaphor phrases, just as the original did:
+When crime was framed as a **beast** preying on the city, **74%** of readers proposed
+enforcement-oriented responses (more police, arrests, harsher sentences). When it was framed as a
+**virus** infecting the city, that share fell to **56%**, with the remainder shifting toward
+reform-oriented responses (diagnosing and treating root causes such as poverty, schooling, and
+jobs). The 18-point difference was significant (χ² = 13.94, *p* < .001, N = 455). Only **3%** of
+participants identified the metaphor as having influenced their answer when asked.
+
+### 1.2 Baseline experimental design and methods
+
+The original is a between-subjects design with a single manipulated factor (metaphor: beast vs.
+virus), an open-response dependent measure, and human coders who classified each free-text answer as
+enforcement- or reform-oriented. The reported outcome statistic is the per-condition *enforcement
+share*. These properties — one-word manipulation, free-text response, human coding into
+enforcement/reform — define the baseline this re-run must match to be comparable.
+
+| Baseline parameter | Value |
+|---|---|
+| Source | Thibodeau & Boroditsky (2011), Experiment 1 |
+| Design | Between-subjects, single factor (beast vs. virus) |
+| N | 455 |
+| Measure | Open-ended response, human-coded |
+| Beast → enforcement | 74% |
+| Virus → enforcement | 56% |
+| Effect | +18 pts; χ² = 13.94, *p* < .001 |
+| Metaphor noticed | 3% of participants |
+
+## 2. Objectives of this re-run
+
+The guiding question for the series is whether a language model **copies** a human bias, **smooths**
+it to noise, or **amplifies** it. For the metaphor trap specifically, this re-run was designed to
+answer four objectives:
+
+1. **Primary replication.** Reproduce the original design on current models and measure the
+   beast-vs-virus enforcement swing against the human +18-point baseline.
+2. **Recognition probe.** Measure whether the models recognize the canonical stimulus, since the
+   passage is from a widely cited paper and is likely in training data — a confound for any flat
+   result.
+3. **Novel-stimulus control.** Test whether a flat response survives on a structurally identical but
+   un-memorized stimulus (new city, statistics, and metaphors), isolating *trained disposition* from
+   *recognition*.
+4. **Paraphrase control.** Test whether the result is brittle to surface wording by keeping the
+   beast/virus manipulation while paraphrasing and renumbering the report.
+
+## 3. Methods
+
+### 3.1 Replication design
+
+This is a faithful replication, not a paraphrase. The primary experiment uses the paper's exact
+stimulus and its exact open-ended question, changing only the two metaphor phrases, as the original
+did:
 
 > Crime is **[a wild beast preying on / a virus infecting]** the city of Addison. The crime
 > rate in the once peaceful city has steadily increased over the past three years. In fact,
@@ -51,20 +98,50 @@ open-ended question, changing only the two metaphor phrases, just as the origina
 >
 > In your opinion, what does Addison need to do to reduce crime?
 
-Each model answered in free text. No multiple choice. Then a fixed judge model (Claude Sonnet 4.6,
-temperature 0) read every answer and coded its dominant thrust as enforcement, reform, or mixed
-(genuinely balanced), mirroring the paper's human coders. Following the original, "mixed" answers
-count as half-enforcement when we compute each condition's *enforcement share*, directly comparable
-to the human 74% / 56%.
+Each model answers in free text (no multiple choice), at temperature 1.0 with a 1,500-token response
+budget, 50 trials per condition per model.
 
-We ran 50 trials per condition, per model, so 100 each, across six models from two labs: Claude
-Opus 4.8, Sonnet 4.6, and Haiku 4.5, plus OpenAI's GPT-5.5, GPT-5.4, and GPT-5.4-mini. That's 1,200
-trials in all.
+### 3.2 Models under test
 
-## What we found: the models don't take the bait
+Six models from two labs: Claude Opus 4.8, Sonnet 4.6, and Haiku 4.5, plus OpenAI's GPT-5.5, GPT-5.4,
+and GPT-5.4-mini. At 50 trials × 2 conditions × 6 models, the primary replication is 1,200 trials.
 
-Humans lean punitive and swing with the metaphor. The models do neither. Every model sits well
-below the human enforcement levels, and the metaphor nudges all of them only slightly:
+### 3.3 Response coding (judge)
+
+A fixed judge model (Claude Sonnet 4.6, temperature 0) reads every answer and codes its dominant
+thrust as **enforcement**, **reform**, or **mixed** (genuinely balanced), mirroring the original's
+human coders and using one rubric for every model. Following the original, "mixed" answers count as
+half-enforcement when computing each condition's enforcement share, making the model numbers directly
+comparable to the human 74% / 56%.
+
+### 3.4 Statistical analysis
+
+Each condition's enforcement share is compared with a chi-square test of independence over the coded
+category counts; the reported swing is the beast-minus-virus (or wolf-minus-cancer) difference in
+enforcement share. Significance is reported per model. A result is treated as a behavioral effect
+only when the underlying free-text answers actually differ, not when the *p*-value alone crosses
+threshold (see §5.1).
+
+## 4. Experiments
+
+Four experiments were run from versioned YAML configs. The primary replication carries the human
+baseline overlay; the three controls isolate the recognition confound.
+
+| ID | Objective | Manipulation | Baseline overlay | Trials |
+|---|---|---|---|---|
+| `crime-metaphor` | Primary replication | Beast vs. virus, verbatim stimulus | Human (T&B 2011) | 1,200 |
+| `crime-metaphor-recognition` | Measure recognition confound | Verbatim vs. disguised passage | none (model property) | 600 |
+| `crime-metaphor-novel` | Disposition vs. recognition | Wolf vs. cancer, new city/stats | none (no human data) | 600 |
+| `crime-metaphor-paraphrase` | Surface-form brittleness | Beast vs. virus, paraphrased report | Human (approximate) | 600 |
+
+Total: 3,000 trials (1,200 primary + 1,800 controls).
+
+## 5. Results
+
+### 5.1 Primary replication
+
+Humans lean punitive and swing with the metaphor; the models do neither. Every model sits below the
+human enforcement levels, and the metaphor moves each only slightly.
 
 | | Beast → enforcement | Virus → enforcement | Metaphor swing | Significant? |
 |---|---|---|---|---|
@@ -76,63 +153,44 @@ below the human enforcement levels, and the metaphor nudges all of them only sli
 | GPT-5.4 | 48% | 47% | +1 | no (*p* = 1.0) |
 | GPT-5.4-mini | 54% | 45% | +9 | no (*p* = .06) |
 
-Three things stand out.
+Three findings:
 
-**1. Models are far less punitive than people.** Where 56% to 74% of humans led with enforcement,
-the models cluster around 23% to 58%. They reach for the balanced "more community policing *and*
-address root causes" answer far more readily than people do.
+1. **Models are less punitive than people.** Where 56%–74% of humans led with enforcement, the
+   models cluster at 23%–58%, defaulting to balanced "more community policing *and* address root
+   causes" answers far more readily than people.
+2. **The metaphor effect is at noise.** Human readers swing 18 points; model swings span -9 to +9,
+   and only one crosses significance. Many answers from GPT-5.5, GPT-5.4, and Opus are near
+   word-for-word identical across the two framings.
+3. **The single significant result is coding noise, not an effect.** Sonnet 4.6's beast-vs-virus
+   difference clears *p* < .05, but its answers are near-identical across conditions ("increase
+   police presence and community-based prevention programs…"). The judge tipped a handful of
+   borderline-balanced answers from "mixed" to "enforce" differently between conditions. With
+   near-identical text on both sides this is coding variance, not a behavioral swing — a case where a
+   significance number alone would mislead.
 
-**2. The metaphor barely moves them.** Human readers swing 18 points. The models swing between -9
-and +9, and only one crosses the significance line. Most answers from GPT-5.5, GPT-5.4, and Opus are
-nearly word-for-word identical across the two framings.
-
-**3. The one "significant" result is a cautionary tale, not an effect.** Sonnet 4.6's
-beast-versus-virus difference clears *p* < .05. Then you read the actual answers. They're nearly
-identical across conditions ("increase police presence and community-based prevention programs…").
-The judge simply tipped a handful of borderline-balanced answers from "mixed" to "enforce"
-differently between conditions. With near-identical text on both sides, that's coding noise, not a
-behavioral swing. It's exactly the kind of result a significance number alone would mislead you
-about, so we flag it rather than headline it.
-
-### The frontier model spots the trap
-
-The most striking behavior came from Claude Opus 4.8, the featured run below. It never once led with
-enforcement (0% pure-enforcement in both conditions, so its 23% / 32% in the table is entirely
-"mixed" answers counted as half). It also called out the metaphor itself, unprompted, again and
-again:
+**Featured run (Claude Opus 4.8).** Opus never led with enforcement (0% pure-enforcement in both
+conditions; its 23% / 32% is entirely "mixed" answers counted as half) and repeatedly named the
+manipulation unprompted:
 
 > "This passage uses persuasive techniques (like the metaphor 'Crime is a wild beast preying
 > on the city') rather than presenting a balanced analysis, so I'd be cautious about drawing
 > conclusions from it…"
 
-Only 3% of humans noticed the framing. Opus named it repeatedly, refused to be steered, then pivoted
-to diagnosing root causes. That's the inverse of the human result. The trap that catches people is
-one the frontier model often sees coming.
+Where 3% of humans noticed the framing, Opus named it repeatedly, declined to be steered, and
+pivoted to root causes — the inverse of the human result. The chart below shows the Opus run with the
+human baseline overlaid per condition; each bar is one group's enforcement/reform/mixed mix, and the
+significance callout reports Opus's own (non-significant) beast-vs-virus test.
 
-The verdict for this study is smooth, not copy or worsen. The models damp the metaphor effect down
-to noise and shift the whole baseline toward balanced and reform answers. None reproduce the human
-punitive swing.
+The verdict for this study is **smooth**, not copy or amplify: the models damp the metaphor effect to
+noise and shift the baseline toward balanced and reform answers.
 
-## Reading the chart
+### 5.2 Recognition probe (`crime-metaphor-recognition`)
 
-The chart shows the featured model, Claude Opus 4.8, with the human baseline overlaid for each
-condition. Each bar is one group's answer mix (enforcement, reform, mixed). The contrast is the
-story. The human bars are dominated by enforcement (74% / 56%). The Opus bars carry no enforcement
-at all, only reform and balanced answers, and they look about the same whether crime is a beast or a
-virus. The significance callout reports Opus's own beast-versus-virus test, which isn't significant.
-
-## Does the model just know the study?
-
-One objection cuts deeper than the rest. The Addison passage is the exact stimulus from a widely
-cited paper, so a frontier model has almost certainly read it, and its result, during training. If
-the models look unbiased only because they recognize the test and sidestep it, the finding is an
-artifact rather than a behavior. To separate those two explanations we ran three controls on all six
-models (50 trials per condition each, 1,800 further trials).
-
-**First, the models do know the study.** Asked outright whether they recognized the scenario, the
-larger models name it: *Thibodeau and Boroditsky (2011)*, the beast-versus-virus paradigm. And
-recognition tracks capability. Here's the share of answers showing any recognition, for the verbatim
-passage and for a disguised paraphrase of it:
+The Addison passage is the exact stimulus from a widely cited paper, so a frontier model has likely
+seen it and its result in training. If the models appear unbiased only because they recognize the
+test, the flat result is an artifact rather than a behavior. Asked directly whether they recognized
+the scenario, the larger models name *Thibodeau & Boroditsky (2011)* and the beast-vs-virus paradigm,
+and recognition tracks capability:
 
 | Model | Verbatim passage | Disguised |
 |---|---:|---:|
@@ -143,16 +201,17 @@ passage and for a disguised paraphrase of it:
 | GPT-5.4 | 76% | 100% |
 | GPT-5.4-mini | 94% | 86% |
 
-Only the smallest model, Haiku, usually fails to place it. The material is plainly in the training
-data, and the frontier models clearly know it. Two qualifications on the numbers. We asked about
-"this *exact* passage", so models often hedged on verbatim recall of the canonical text even while
-naming the paradigm. And each probe showed only the beast frame, which is itself a cue.
+Only the smallest model (Haiku) usually fails to place it. Two qualifications: the probe asked about
+"this *exact* passage", so models often hedged on verbatim recall while still naming the paradigm; and
+each probe showed only the beast frame, which is itself a cue. Recognition is therefore real and must
+be controlled for, which the next two experiments do.
 
-**Second, and this is the decisive part, the flat response survives on text no model has seen.** We
-rebuilt the study from scratch: a different city, different statistics, and novel metaphors. Crime
-as a marauding **wolf** versus a growing **cancer**, a predator-versus-pathogen contrast with the
-same logic as beast-versus-virus but no memorized surface. If recognition were doing the work, an
-unfamiliar stimulus should let the swing return. It doesn't.
+### 5.3 Novel-stimulus control (`crime-metaphor-novel`)
+
+This is the decisive control. We rebuilt the study from scratch — a different city (Brookhaven),
+different statistics, and lexically novel metaphors (crime as a marauding **wolf** versus a growing
+**cancer**), preserving the predator-vs-pathogen logic but matching no indexed source. If recognition
+drove the flat result, an unfamiliar stimulus should let the swing return. It does not.
 
 | Model | Wolf | Cancer | Swing | Significant? |
 |---|---:|---:|---:|---|
@@ -163,88 +222,68 @@ unfamiliar stimulus should let the swing return. It doesn't.
 | GPT-5.4 | 49% | 50% | -1 | no (*p* = 1.0) |
 | GPT-5.4-mini | 49% | 50% | -1 | no (*p* = 1.0) |
 
-A third control kept the original beast/virus framing but paraphrased and renumbered the report.
-It's flat for five of six models too. The lone exception, Sonnet 4.6, again produces near-identical
-answers across conditions, and its difference runs *opposite* the human direction. That's the same
-coding wobble flagged earlier, not a reproduction of the bias.
+The response stays at noise on text no model has seen.
 
-The conclusion is narrow but firm. Recognition is real, yet it doesn't become imitation. Knowing the
-study doesn't make a model copy its result. Not on the canonical text, not on a paraphrase, not on
-metaphors it has never encountered. The flat response is a trained disposition to resist loaded
-framing, not naïve recall of one paper. What this can't prove is the converse: a capable model's
-resistance to framing is itself learned, and no novel stimulus escapes it. We measure that
-disposition rather than claim to have removed it. The recognition, novel-stimulus, and paraphrase
-runs ship in full in the [data package on GitHub](https://github.com/PKQuietCoder/small_ai_decision_experiments/tree/HEAD/experiments/crime-metaphor).
+### 5.4 Paraphrase control (`crime-metaphor-paraphrase`)
 
-## Practical takeaways for deciding with AI
+This control keeps the beast/virus manipulation but paraphrases and renumbers the report (city of
+Marlowe). Memorized-text effects are brittle to such perturbation; genuine framing effects are not. It
+is flat for five of six models. The lone exception is Sonnet 4.6, which again produces near-identical
+answers across conditions with a difference running *opposite* the human direction — the same
+judge-coding wobble flagged in §5.1, not a reproduction of the bias.
 
-Quick caveat: this is one scenario and six models, so treat these as working guidance, not laws. The
-pattern holds up here and in the budgeting study that's this series' companion.
+**Synthesis.** Recognition is real but does not become imitation. Knowing the study does not make a
+model copy its result — not on the canonical text, not on a paraphrase, not on novel metaphors. The
+flat response reflects a trained disposition to resist loaded framing rather than naïve recall of one
+paper.
 
-### What this says about using AI on a loaded question
+## 6. Assumptions
 
-**They don't take the framing bait, so use one as a spin detector.** A single loaded word swung
-people 18 points. The models barely moved, and the frontier model often named the manipulation
-outright ("this passage uses persuasive techniques like the metaphor 'crime is a wild beast'…").
-Only 3% of humans noticed that framing. When you're handed a memo, a pitch, or a news item you
-suspect is slanted, ask a model to strip it: "what are the neutral facts here, and where is the
-language steering me?" It catches the buried metaphor better than you do.
+The interpretation above rests on assumptions that should be made explicit:
 
-**But "unbiased" comes out as "balanced to a fault."** The models didn't swing largely because they
-defaulted to the same comprehensive "do both, more policing *and* address root causes" answer almost
-regardless of the framing. That even-handedness resists manipulation. It also means a model rarely
-hands you a sharp, committed recommendation on a value-laden question. If you need a decision and not
-a survey, say so: "pick one side and defend it," or "if you had to choose, what would you drop?"
+- **The LLM judge approximates the original human coders.** We assume a fixed model (Sonnet 4.6,
+  temperature 0) under one rubric codes enforcement/reform/mixed comparably to the paper's human
+  coders. §5.1 shows where this assumption is weakest — borderline-balanced answers.
+- **The half-credit rule for "mixed" is comparable to the original.** We assume counting mixed as
+  half-enforcement reproduces the human enforcement-share metric closely enough for direct comparison.
+- **50 trials per cell estimate each condition's share with usable precision.** We assume per-cell
+  sampling error is small relative to the 18-point human effect being tested for.
+- **Catalog model IDs map to the intended deployed models**, and provider-side behavior is stable over
+  the run window.
+- **Recognition is adequately probed by direct questioning.** §5.2 assumes asking the model whether it
+  recognizes the passage measures the recognition that could confound §5.1.
 
-**A significant p-value isn't an effect. Read the outputs.** The one model that crossed statistical
-significance turned out to be producing near-identical answers in both conditions. The judge had
-merely tipped a few borderline cases one way. The number said "effect." The text said "no effect."
-For any AI-assisted analysis, never act on a summary statistic without spot-reading the raw answers
-behind it.
+## 7. Limitations
 
-**Knowing the playbook isn't the same as following it.** The models clearly recognized the study,
-yet recognition didn't make them copy its result, even on novel material they'd never seen. Useful.
-The flip side is a contamination risk: for a famous case or framework, a model may hand you the
-textbook answer instead of reasoning about your situation. Push it onto your concrete details.
+- **Single scenario.** This covers Experiment 1 of the paper (Addison crime report) only; other
+  framings and domains are untested.
+- **Judge is a model, not human coders.** Despite a fixed judge and rubric, the Sonnet 4.6 result
+  shows coding of borderline answers can wobble and cross significance without a behavioral effect.
+- **"Mixed"-heavy outputs.** Models tend to answer with comprehensive "do both" packages, inflating
+  the mixed category and compressing the measurable swing.
+- **Version sensitivity.** Results will shift with model versions and wording; this is evidence that
+  *today's* models resist *this* framing, not a universal claim of immunity to metaphor.
+- **The converse is unproven.** We can show recognition does not produce imitation, but not that a
+  capable model's framing resistance is anything other than learned — no novel stimulus fully escapes
+  that disposition. We measure the disposition rather than claim to have removed it.
 
-### How to actually use one well
+## 8. Conclusion
 
-- **Use it to de-bias your reading, not to make the call.** Have it surface the framing,
-  assumptions, and missing context in what you're looking at, then decide yourself.
-- **Ask it to name the framing, then argue both sides.** "What's this trying to make me feel, and
-  what's the strongest case for the opposite conclusion?" surfaces more than "is this fair?"
-- **Force a commitment when you need one.** The default is a balanced "do both." To get a decision,
-  make it choose and justify: "pick one and give me three concrete, falsifiable reasons."
-- **Don't trust a lone statistic.** Model confidence, a significance number, either way check the
-  underlying outputs before you act.
-- **For famous cases or frameworks, push past the textbook answer.** Anchor the model to your
-  specifics so it reasons about your situation, not the canonical one.
-
-One-line version: let an AI catch the spin and widen your view (name the framing, surface the other
-side, list what's missing), and keep the actual judgment, plus any number that matters, with a human
-who verifies.
-
-## Caveats
-
-A faithful replication still has limits. The judge is a language model, not the paper's two human
-coders. We fixed it (Sonnet 4.6, temperature 0) and used the same rubric for every model, but the
-Sonnet result above shows how coding borderline-balanced answers can wobble. The models also tend to
-answer with comprehensive "do both" packages, which is part of why so much lands in "mixed." This is
-a single scenario (Addison, Experiment 1 of the paper), and results will shift with model versions
-and wording. Treat it as evidence that today's models resist this particular framing, not as a
-universal claim that LLMs are immune to metaphor. The related worry, that the models only look
-unbiased because they recognize this famous stimulus, is handled directly above in "Does the model
-just know the study?" Recognition is real, but it doesn't reproduce the swing.
-
-*Every model in the catalog can be rerun from the command line, and the chart regenerates from the
-recorded run.*
+The human metaphor trap — an 18-point enforcement swing from a single noun, noticed by 3% of readers
+— does not reproduce on current language models. Across the primary replication and three controls,
+per-model swings stay within noise, the one significant result is judge-coding variance on
+near-identical text, and the flat response survives on un-memorized stimuli, indicating a trained
+disposition to resist loaded framing rather than recognition of the source study. Models additionally
+sit below the human enforcement baseline, defaulting to balanced answers. The classification for this
+study is **smooth**.
 
 ## Data and code
 
-Every prompt, all 1,200 main-study trials (plus the 1,800 contamination-control trials), the judge
-rubric, and the analysis behind these charts live in the
+Every prompt, all 1,200 primary-replication trials (plus the 1,800 contamination-control trials), the
+judge rubric, and the analysis behind these charts live in the
 [`experiments/crime-metaphor`](https://github.com/PKQuietCoder/small_ai_decision_experiments/tree/HEAD/experiments/crime-metaphor)
-folder on GitHub. Rerun it, recode it, or check the numbers yourself.
+folder on GitHub. Every model in the catalog can be rerun from the command line, and the chart
+regenerates from the recorded run.
 
 ## Reference
 

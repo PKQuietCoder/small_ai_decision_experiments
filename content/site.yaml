@@ -14,11 +14,10 @@ intro: >
   language, with real A/B tests, whether the model copies our bias, smooths it out, or makes
   it worse.
 description: >
-  We like to think we reason our way to decisions. Mostly we follow hidden rules,
-  predictable and often counterintuitive. This is an ongoing series that reruns classic
-  human-bias experiments on language models — and on agents that decide over several
-  tool-using steps, not just answer in one shot — to see which of those rules they inherit,
-  which they smooth away, and which they invent on their own.
+  This is an ongoing series that reruns classic human-bias experiments on language models
+  (and on agents that decide over several tool-using steps, not just answer in one shot) to
+  see which of those biases they inherit, which they smooth away, and which they invent on
+  their own.
 author: "P.K. Mishra"
 authorUrl: "https://www.linkedin.com/in/pradkmishra/"
 about: |

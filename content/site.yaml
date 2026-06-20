@@ -34,10 +34,7 @@ about: |
   This is an ongoing series. In each entry I take one classic human-bias experiment and rerun it
   live — not just as a single chat answer, but as an agent that reaches the decision over several
   tool-using steps, including a condition where the agent directs itself. Then I ask a simple
-  question: does the model copy our bias, smooth it out, or make it worse? Every post explains the
-  result in plain language, backs it with real A/B tests and significance checks, and runs
-  recognition controls that test whether the model is merely recalling a famous experiment rather
-  than deciding. No vibes. No cherry-picked screenshots.
+  question: does the model copy our bias, smooth it out, or make it worse?
 
   ### How to read these results: copy, smooth, amplify
 

@@ -42,10 +42,6 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
 
       <footer className="border-t border-border/50 py-12 mt-20">
         <div className="container mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-muted-foreground">
-          <div>
-            <p className="font-serif font-semibold text-foreground">{site?.title || "Borrowed Intuitions"}</p>
-            <p className="mt-1">{site?.tagline}</p>
-          </div>
           <div className="flex items-center gap-6">
             <p>
               © {new Date().getFullYear()}{" "}

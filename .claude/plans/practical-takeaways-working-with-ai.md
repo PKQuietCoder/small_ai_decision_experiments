@@ -13,14 +13,17 @@ the answer was **smooth** — the models did not inherit the human mistake. The 
 is the exception: the model **copied** it, and did so invisibly. So the takeaway is two-sided. An AI is
 often more useful as a *check on your thinking* than as a mirror of it — but it is not bias-proof, and
 the one bias it copied here is the hardest to spot, because it rode in through the *options you present*
-rather than the question you ask.
+rather than the question you ask. It copied the bias on every Claude model tested, and the tempting
+defences turned out to be unreliable: making the agent gather the facts itself rescued Opus but left
+Sonnet and Haiku swayed. The one defence that works regardless of model is upstream of the agent
+entirely: keep the dominated option off the menu.
 
 | Study | Human bias | What the model did |
 |---|---|---|
 | The Metaphor Trap | One loaded word swings judgment 18 points | Barely moved (−9 to +9); frontier model named the trick |
 | When Budgeting Backfires | "Set a budget first" makes people overspend | Flat — same mid-tier pick no matter the staging |
 | The Falsification Test | Only ~4% seek evidence that could disprove a rule | Sought the disproof 90–100% of the time |
-| The Decoy Effect | A worse, never-chosen option warps the choice between two others | **Copied it** — a dummy option moved its pick +37 points, invisibly |
+| The Decoy Effect | A worse, never-chosen option warps the choice between two others | **Copied it across every Claude model.** A dummy option moved the pick 0%→60%; staging didn't matter; making the agent gather the facts itself rescued Opus but not Sonnet/Haiku. Only real fix: keep the decoy off the menu |
 
 ---
 
@@ -46,8 +49,9 @@ reject."
 
 **3. More steps ≠ better thinking — the *right* prompt is what moves the needle.**
 *Observed:* forcing the budgeting agent through 1, 2, or 5 steps produced the **same** choice with more
-justification. But in the Falsification Test, one targeted prompt — "name what would disprove this
-rule" — lifted correct answers from 90% to 100%.
+justification, and in the decoy study a one-shot decision and a forced multi-step ritual were equally
+biased (more deliberation did not help). But in the Falsification Test, one targeted prompt — "name what
+would disprove this rule" — lifted correct answers from 90% to 100%.
 *Why:* generic deliberation ("think step by step") mostly elaborates the existing answer; a prompt that
 demands a specific cognitive move (falsify, compare, argue against) actually changes the process.
 *Do differently:* scaffold for the *move you want*, not for length. Ask it to falsify, to argue the
@@ -72,18 +76,25 @@ did not become imitation.
 model off the textbook answer and **onto your concrete details** so it reasons about your case, not the
 canonical one.
 
-**6. The one bias it copied is invisible — watch the options you present, not just the question.**
+**6. The one bias it copied is invisible — and the only reliable defence is upstream: control the
+option set.**
 *Observed:* in the decoy study, adding a clearly worse, never-chosen option shifted the agent's choice
-toward the item that option flattered (+37 points in one market; a full reversal in another). The agent
-explicitly left the decoy off its shortlist in essentially every trial and was swayed anyway.
-*Why:* the attraction effect works on the *comparison between* options, not their absolute merits — so
-it moves the decision underneath the model's stated reasoning, where neither you nor the model can see
-it. (Giving the agent room to self-direct dissolved the effect in the one market that could test it —
-which helps, but is not a guarantee.)
-*Do differently:* curate the **choice set**, not just the prompt. Don't pad a comparison with throwaway
-or dominated options; present alternatives on a clean, comparable basis, and ask the model to score each
-against your criteria **on its own merits** rather than relative to the others. Assume a vendor's
-pricing page or a padded shortlist can steer an AI shopper the same way it steers you.
+toward the item that option flattered (from 0% to 60% on laptops; a full reversal in a second market),
+and this held for Opus, Sonnet, and Haiku alike. The tempting fixes proved unreliable. Changing *how the
+agent deliberated* — one shot versus a forced multi-step ritual — changed nothing. Autonomy was erratic
+(the same Opus setup shed the bias in one run, kept it in another). And making the agent **retrieve each
+spec itself** instead of reading a menu cleanly removed the bias for Opus, but left Sonnet and Haiku
+fully swayed — even though per-call logs prove all three inspected the decoy every single time.
+*Why:* the attraction effect works on the *comparison between* options, not their absolute merits, so it
+moves the decision underneath the model's stated reasoning. Some models (Opus here) shake it off when
+they assemble the facts themselves; others don't, and there's no way to know from the outside which
+you've got.
+*Do differently:* don't rely on a clever prompt, more steps, or "let the agent look it up" to save you —
+those helped one model and not its siblings. The defence that works regardless of model is to **curate
+the choice set**: don't pad a comparison with throwaway or dominated options, and present alternatives on
+a clean, like-for-like basis. Assume a vendor's pricing page or a padded shortlist can steer an AI
+shopper the same way it steers you. Having the agent score each option on its own merits is worth doing,
+but treat it as a help, not a guarantee.
 
 ---
 
@@ -136,16 +147,19 @@ pricing page or a padded shortlist can steer an AI shopper the same way it steer
 ## Post 4 — The Decoy Effect (agentic)
 
 > **Result in one line:** a third, clearly worse option that nobody ever picks still warps the choice
-> between the two real ones — it pulled the agent's pick toward the option the decoy flattered by 37
-> points in one market and flipped it completely in another, all while the agent insisted the decoy was
-> off its shortlist. This is the first study in the series where the model **copied** the human bias.
+> between the two real ones whenever the agent reads a ready-made menu. It pulled the pick from 0% to
+> 60% on laptops (a full reversal in a second market), on Opus, Sonnet, and Haiku alike; changing how
+> the agent deliberated did nothing; and the tempting fixes were unreliable (autonomy was erratic, and
+> making the agent gather the facts itself rescued Opus but not Sonnet or Haiku — which were swayed even
+> though logs prove they inspected the decoy). This is the first study in the series where the model
+> **copied** the human bias, and the only model-independent defence is to keep the decoy off the menu.
 
 | Observed (from the experiment) | Why it happens | Do differently / how to interact |
 |---|---|---|
-| Adding a dominated decoy moved the agent's choice toward the flattered option (+37 pts; a full 0→100% reversal in the storage market), versus its own no-decoy baseline. | The attraction effect acts on the *comparison* between options, not their standalone merit. | When you hand an AI a set of options, **the set itself is part of the prompt**. Don't include filler or obviously-worse choices; compare on a clean, like-for-like basis. |
-| The agent excluded the decoy from its explicit shortlist in essentially every trial, then was swayed by it anyway. | The bias runs *beneath* the model's stated reasoning — its rationale looks clean while its choice is moved. | Don't trust a tidy rationale to mean the choice was clean. Ask it to **score each option against your criteria absolutely**, then pick — not to choose by comparison. |
+| With the menu in the prompt, a dominated decoy moved the agent's choice toward the flattered option (0→60% on laptops; a full reversal in the storage market), for every Claude model tested. | The attraction effect acts on the *comparison* between options, not their standalone merit. | When you hand an AI a set of options, **the set itself is part of the prompt**. Don't include filler or obviously-worse choices; compare on a clean, like-for-like basis. |
+| A one-shot decision and a forced multi-step "inspect, compare, choose" ritual gave the same bias; full autonomy was erratic (0% to 47% across identical Opus runs). | The bias lives in the side-by-side framing, not in the amount of deliberation; autonomy is too unstable to count on. | Don't expect more steps, a "think step by step" prompt, or turning the agent loose to fix this reliably. |
+| Taking the menu out of the prompt and forcing the agent to retrieve each spec itself removed the effect for Opus but left Sonnet and Haiku swayed — even though logs prove all three inspected the decoy every time. | Some models judge on absolute merit once they assemble the facts themselves; others stay anchored to the comparison, and you can't tell from outside which you have. | Having the agent **retrieve and score each option on its own merits** is worth doing, but treat it as a help, not a guarantee — it rescued one model and not its siblings. |
 | Moving the decoy to flatter the *other* option moved the choice the other way; a decoy on the already-preferred side did nothing. | The shift is directional — it's the genuine attraction effect, not noise from "one more option." | Treat this as exploitable: a "decoy" pricing tier or a stacked shortlist can steer an AI shopper toward a target, just as it steers people. |
-| Letting the agent self-direct (autonomous) erased the effect on laptops, back to its 100% baseline — but the other market couldn't re-test it. | More room to reason can dissolve the susceptibility, but the evidence is domain-limited. | Giving an agent latitude to reason *may* help, but don't rely on it. If the stakes are real, **control the option set** rather than hoping autonomy saves you. |
 | The effect held — and strengthened — on an un-memorized market (cloud storage), ruling out mere recognition. | It is a general disposition, not recall of the textbook decoy example. | Assume this generalizes to *your* novel comparisons too, not just classic decoy setups. |
 
 ---
@@ -162,8 +176,11 @@ pricing page or a padded shortlist can steer an AI shopper the same way it steer
   way to check it?" / "Make the strongest case against my conclusion."
 - **Anchor to your case** (Metaphor Trap, recognition controls): "Ignore the textbook version. Reason
   only from these specifics: …"
-- **Neutralize a padded option set** (Decoy Effect): "Score each of these options against my criteria on
-  its own merits, independently — then recommend one. Don't choose by comparing them to each other."
+- **Neutralize a padded option set** (Decoy Effect): the reliable fix is upstream — **don't include
+  dominated or filler options** in the set you hand the model. As a secondary help (it worked for some
+  models, not all): "Score each of these options against my criteria on its own merits, independently —
+  then recommend one. Don't choose by comparing them to each other," and where you can, have an agent
+  look up each option one at a time rather than judge a finished side-by-side comparison.
 - **Always verify substance** (all four): read the raw output, not the confidence or the summary
   number. Consistency and a long rationale are not evidence of correctness.
 

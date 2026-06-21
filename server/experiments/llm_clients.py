@@ -10,7 +10,7 @@ from __future__ import annotations
 import json
 import os
 import threading
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Callable, Dict, List, Optional, Tuple
 
 from anthropic import Anthropic
 from openai import OpenAI
@@ -164,6 +164,7 @@ def run_tool_sequence(
     decision_key: str = "product_id",
     temperature: float = 1.0,
     max_steps: int = 8,
+    tool_responder: Optional[Callable[[str, Dict[str, Any]], str]] = None,
 ) -> Tuple[str, Dict[str, Any]]:
     """Run a controlled multi-step tool-use conversation; return (decision, transcript).
 
@@ -192,6 +193,12 @@ def run_tool_sequence(
     Returns ``(decision, transcript)`` where ``transcript`` maps each called tool's name
     to its input dict, plus ``transcript["steps"]`` (ordered tool names actually called)
     and ``transcript["capped"]`` (autonomous only).
+
+    ``tool_responder`` makes the tools *real*: when provided, the synthetic tool_result for
+    each non-terminal call is ``tool_responder(name, tool_input)`` instead of a fixed ``"Done."``.
+    A genuinely agentic condition serves option data through it (e.g. ``get_specs`` returns a
+    product's price/performance), so the model must retrieve what it needs rather than read it
+    from the prompt. ``None`` keeps the original information-free acks.
     """
     provider = model_cfg["provider"]
     if provider == "openai":
@@ -205,6 +212,7 @@ def run_tool_sequence(
             decision_key=decision_key,
             temperature=temperature,
             max_steps=max_steps,
+            tool_responder=tool_responder,
         )
     if provider != "anthropic":
         raise ValueError(
@@ -235,6 +243,10 @@ def run_tool_sequence(
     messages: List[Dict[str, Any]] = [{"role": "user", "content": scenario}]
     transcript: Dict[str, Any] = {}
     taken: List[str] = []
+    # Per-call log preserving order *and* the input of every call, so a tool called
+    # more than once (e.g. get_specs per option) is fully recoverable. ``transcript``
+    # keyed by name keeps only the last input; ``calls`` keeps them all.
+    calls: List[Dict[str, Any]] = []
 
     def base_kwargs() -> Dict[str, Any]:
         kwargs: Dict[str, Any] = {
@@ -250,10 +262,12 @@ def run_tool_sequence(
     def call_step(tool_choice: Dict[str, Any]) -> Any:
         """One turn: force a tool, append the assistant turn + a synthetic tool_result.
 
-        Returns the chosen tool_use block. The ack string is deterministic and minimal
-        so the only thing that varies between conditions is the number of partitions,
-        not the information delivered (an inspect/compare step that echoed the price list
-        would feed a multi-step agent context the one-step agent never re-reads).
+        Returns the chosen tool_use block. With no ``tool_responder`` the ack is deterministic
+        and minimal, so the only thing that varies between conditions is the number of partitions,
+        not the information delivered (an inspect/compare step that echoed the price list would
+        feed a multi-step agent context the one-step agent never re-reads). A genuinely agentic
+        condition instead supplies a ``tool_responder`` that returns real data, making retrieval
+        the point of the step rather than ceremony.
 
         ``disable_parallel_tool_use`` keeps each turn to a single tool call — without it
         the model may emit several tool_use blocks at once (and we'd owe a tool_result
@@ -277,8 +291,11 @@ def run_tool_sequence(
         tool_input = dict(block.input)
         transcript[block.name] = tool_input
         taken.append(block.name)
+        calls.append({"tool": block.name, "input": tool_input})
         messages.append({"role": "assistant", "content": response.content})
-        if "budget" in tool_input:
+        if tool_responder is not None:
+            ack = tool_responder(block.name, tool_input)
+        elif "budget" in tool_input:
             ack = f"Noted. Planned spend recorded: ${tool_input['budget']}."
         else:
             ack = "Done."
@@ -303,6 +320,7 @@ def run_tool_sequence(
                 f"{terminal_tool} returned out-of-enum {decision_key}: {decision!r}"
             )
         transcript["steps"] = taken
+        transcript["calls"] = calls
         return decision, transcript
 
     if steps is not None:
@@ -337,6 +355,7 @@ def _run_tool_sequence_openai(
     decision_key: str = "product_id",
     temperature: float = 1.0,
     max_steps: int = 8,
+    tool_responder: Optional[Callable[[str, Dict[str, Any]], str]] = None,
 ) -> Tuple[str, Dict[str, Any]]:
     """OpenAI Responses-API implementation of ``run_tool_sequence``.
 
@@ -391,6 +410,9 @@ def _run_tool_sequence_openai(
         """Run one full sequence. Local state, so a retry starts from a clean chain."""
         transcript: Dict[str, Any] = {}
         taken: List[str] = []
+        # Ordered per-call log (name + input) so repeated calls are fully recoverable;
+        # mirrors the Anthropic path.
+        calls: List[Dict[str, Any]] = []
         # State threaded across turns: the prior response id (for server-side reasoning
         # continuity) and the function_call_output owed for the previous call.
         prev_response_id: Optional[str] = None
@@ -433,8 +455,11 @@ def _run_tool_sequence_openai(
                 ) from exc
             transcript[call.name] = tool_input
             taken.append(call.name)
+            calls.append({"tool": call.name, "input": tool_input})
             # Stash the synthetic ack to send as this call's output on the next turn.
-            if "budget" in tool_input:
+            if tool_responder is not None:
+                ack = tool_responder(call.name, tool_input)
+            elif "budget" in tool_input:
                 ack = f"Noted. Planned spend recorded: ${tool_input['budget']}."
             else:
                 ack = "Done."
@@ -452,6 +477,7 @@ def _run_tool_sequence_openai(
                     f"{terminal_tool} returned out-of-enum {decision_key}: {decision!r}"
                 )
             transcript["steps"] = taken
+            transcript["calls"] = calls
             return decision, transcript
 
         if steps is not None:

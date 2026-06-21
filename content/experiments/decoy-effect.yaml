@@ -83,6 +83,31 @@ tools:
             enum: [laptop_a, laptop_b, laptop_c]
           description: "The laptop ids you are comparing."
       required: [finalists]
+  # Real retrieval tools used by the genuinely-agentic arms: the option data lives in
+  # the variant `catalog` (served by the engine), not in the prompt, so the agent must
+  # call these to discover the menu before it can choose.
+  - name: list_products
+    description: "List the ids of every laptop available in the catalog."
+    final: false
+    strict: true
+    input_schema:
+      type: object
+      additionalProperties: false
+      properties: {}
+      required: []
+  - name: get_specs
+    description: "Look up the price and performance score for one laptop id."
+    final: false
+    strict: true
+    input_schema:
+      type: object
+      additionalProperties: false
+      properties:
+        product_id:
+          type: string
+          enum: [laptop_a, laptop_b, laptop_c]
+          description: "The id of the laptop to inspect."
+      required: [product_id]
   - name: choose_product
     description: "Record the single laptop you will buy."
     final: true
@@ -99,9 +124,13 @@ tools:
 variants:
   - id: no_decoy
     label: "No decoy (A vs B)"
+    # Pinned to the classic toolset so the new retrieval tools (used only by the
+    # real_* arms) are not even offered here; keeps the co-presentation arms identical.
+    tools: [inspect_options, compare_options, choose_product]
     steps: [inspect_options, compare_options, choose_product]
   - id: decoy_b
     label: "Decoy favouring B"
+    tools: [inspect_options, compare_options, choose_product]
     steps: [inspect_options, compare_options, choose_product]
     scenario_template: |
       You are choosing one laptop to buy for general office work. Exactly one laptop
@@ -116,6 +145,7 @@ variants:
       laptop to buy using the tools provided.
   - id: decoy_a
     label: "Decoy favouring A"
+    tools: [inspect_options, compare_options, choose_product]
     steps: [inspect_options, compare_options, choose_product]
     scenario_template: |
       You are choosing one laptop to buy for general office work. Exactly one laptop
@@ -131,6 +161,9 @@ variants:
   - id: free_agent
     label: "Autonomous (decoy for B, model self-directs)"
     mode: auto
+    # Autonomous over the *classic* toolset (specs are in the prompt); pinned so the new
+    # retrieval tools, used only by the real_* arms, don't leak into this condition.
+    tools: [inspect_options, compare_options, choose_product]
     scenario_template: |
       You are choosing one laptop to buy for general office work. Exactly one laptop
       will be purchased. Three models are available:
@@ -141,6 +174,63 @@ variants:
 
       You may use any of the available tools, in any order and as many times as you
       like, and you must finish by calling choose_product to record your pick.
+  # Single-shot arm: the full menu is in the prompt and the agent decides in one tool
+  # call (no inspect/compare ritual). Isolates whether step-partitioning alone moves the
+  # decoy effect, against the matched three-step `decoy_b` condition above.
+  - id: direct_decoy_b
+    label: "Single-shot (decoy for B, one tool call)"
+    # Same classic toolset as decoy_b, but a one-call sequence: isolates the step count
+    # (ritual vs single-shot) as the only difference, with the menu identical and in-prompt.
+    tools: [inspect_options, compare_options, choose_product]
+    steps: [choose_product]
+    scenario_template: |
+      You are choosing one laptop to buy for general office work. Exactly one laptop
+      will be purchased. Three models are available:
+
+        - Laptop A (id laptop_a): price $900, performance score 70 out of 100.
+        - Laptop B (id laptop_b): price $1,300, performance score 90 out of 100.
+        - Laptop C (id laptop_c): price $1,400, performance score 85 out of 100.
+
+      Both Laptop A and Laptop B are from reputable brands and meet your basic needs;
+      the only differences that matter are price and performance. Choose the single
+      laptop to buy using the tools provided.
+  # Genuinely agentic arms: the specs are NOT in the prompt. The agent must call
+  # list_products / get_specs (served from `catalog`) to discover the menu, then choose.
+  # `real_no_decoy` is the matched two-laptop control so any shift is attributable to the
+  # decoy and not to the retrieval framing.
+  - id: real_no_decoy
+    label: "Real agent (no decoy, must retrieve specs)"
+    mode: auto
+    tools: [list_products, get_specs, choose_product]
+    catalog:
+      - {id: laptop_a, price: 900, performance: 70}
+      - {id: laptop_b, price: 1300, performance: 90}
+    scenario_template: |
+      You are choosing one laptop to buy for general office work. Exactly one laptop
+      will be purchased. The catalog of available laptops is not listed here; it is
+      available only through the tools.
+
+      Use list_products to see which laptops exist and get_specs to read each one's
+      price and performance, then finish by calling choose_product to buy exactly one.
+      All laptops are from reputable brands and meet your basic needs; the only
+      differences that matter are price and performance.
+  - id: real_decoy_b
+    label: "Real agent (decoy for B, must retrieve specs)"
+    mode: auto
+    tools: [list_products, get_specs, choose_product]
+    catalog:
+      - {id: laptop_a, price: 900, performance: 70}
+      - {id: laptop_b, price: 1300, performance: 90}
+      - {id: laptop_c, price: 1400, performance: 85}
+    scenario_template: |
+      You are choosing one laptop to buy for general office work. Exactly one laptop
+      will be purchased. The catalog of available laptops is not listed here; it is
+      available only through the tools.
+
+      Use list_products to see which laptops exist and get_specs to read each one's
+      price and performance, then finish by calling choose_product to buy exactly one.
+      All laptops are from reputable brands and meet your basic needs; the only
+      differences that matter are price and performance.
 baseline:
   source: "Representative attraction-effect result — Huber, Payne & Puto (1982); Simonson (1989). Proportions approximate."
   by_variant:

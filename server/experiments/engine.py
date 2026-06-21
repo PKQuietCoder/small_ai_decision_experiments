@@ -75,6 +75,43 @@ def _coder_prompt(
     )
 
 
+def _make_tool_responder(
+    catalog: Dict[str, Dict[str, Any]],
+) -> Callable[[str, Dict[str, Any]], str]:
+    """Build the tool-result responder for a genuinely agentic budget variant.
+
+    A variant that lists a structured ``catalog`` (id -> product attributes) puts the
+    option data *behind* the tools instead of in the prompt: the agent must call
+    ``list_products`` / ``get_specs`` to discover the menu, so the decoy is retrieved
+    rather than handed over. Returned by ``run_tool_sequence`` as each non-terminal
+    tool's synthetic result. Falls back to the original budget/``Done.`` acks so a
+    mixed toolset (e.g. ``set_budget``) keeps working.
+    """
+
+    def respond(name: str, tool_input: Dict[str, Any]) -> str:
+        if name == "list_products":
+            return "Available product ids: " + ", ".join(catalog) + "."
+        if name == "get_specs":
+            product_id = tool_input.get("product_id")
+            item = catalog.get(product_id)
+            if item is None:
+                return f"No such product id: {product_id!r}."
+            # A catalog entry may carry a pre-formatted ``specs`` string (so a market can
+            # phrase its own units, e.g. "$8 per month, 200 GB"); otherwise fall back to
+            # the price/performance pair used by the laptop market.
+            if "specs" in item:
+                return f"{product_id}: {item['specs']}."
+            return (
+                f"{product_id}: price ${item['price']}, "
+                f"performance {item['performance']}/100."
+            )
+        if "budget" in tool_input:
+            return f"Noted. Planned spend recorded: ${tool_input['budget']}."
+        return "Done."
+
+    return respond
+
+
 def run_experiment(
     experiment: Dict[str, Any],
     progress: Optional[Callable[[str], None]] = None,
@@ -151,12 +188,34 @@ def run_experiment(
                     steps = None
                 else:
                     steps = [tools_by_name[name] for name in variant["steps"]]
+                # A variant that ships a structured catalog serves its option data
+                # through the tools (genuinely agentic); without one the tools stay
+                # information-free and the default acks apply.
+                catalog = {p["id"]: p for p in variant.get("catalog", [])}
+                tool_responder = (
+                    _make_tool_responder(catalog) if catalog else None
+                )
+                # A variant may expose only a subset of the toolset (e.g. a genuinely
+                # agentic arm offers list_products/get_specs/choose_product but not the
+                # legacy ceremony tools). Without `tools`, the full set is offered.
+                variant_tool_names = variant.get("tools")
+                if variant_tool_names:
+                    variant_tools = [tools_by_name[name] for name in variant_tool_names]
+                    if terminal_tool not in variant_tool_names:
+                        raise ValueError(
+                            f"variant {variant['id']} `tools` must include terminal "
+                            f"tool {terminal_tool!r}"
+                        )
+                else:
+                    variant_tools = tool_defs
             else:
                 # Substitute every string field of the variant, so a template can
                 # use {metaphor} (fill-in-blank) or {frame}/{spread} (open-ended).
                 fields = {k: v for k, v in variant.items() if isinstance(v, str)}
                 prompt = prompt_template.format(**fields)
                 steps = None
+                tool_responder = None
+                variant_tools = tool_defs
             for trial_no in range(trials_per_cell):
                 tasks.append(
                     {
@@ -173,6 +232,8 @@ def run_experiment(
                         "trial_no": trial_no,
                         "prompt": prompt,
                         "steps": steps,
+                        "tool_responder": tool_responder,
+                        "tool_defs": variant_tools,
                     }
                 )
                 order += 1
@@ -207,16 +268,18 @@ def run_experiment(
                 decision, transcript = llm_clients.run_tool_sequence(
                     task["model_cfg"],
                     task["prompt"],
-                    tool_defs,
+                    task["tool_defs"],
                     valid_ids,
                     steps=task["steps"],
                     terminal_tool=terminal_tool,
                     decision_key=decision_key,
                     temperature=temperature,
                     max_steps=max_steps,
+                    tool_responder=task["tool_responder"],
                 )
                 record["decision"] = decision
                 record["steps"] = transcript.get("steps", [])
+                record["calls"] = transcript.get("calls", [])
                 record["numSteps"] = len(record["steps"])
                 record["budget"] = transcript.get("set_budget", {}).get("budget")
                 record["capped"] = transcript.get("capped", False)

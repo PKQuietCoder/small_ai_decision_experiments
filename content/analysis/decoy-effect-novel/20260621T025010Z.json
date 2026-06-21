@@ -1,0 +1,512 @@
+{
+  "experimentId": "decoy-effect-novel",
+  "experimentTitle": "The Decoy Effect, Novel Stimulus: Does the Result Survive a Different Market?",
+  "runId": "20260621T025010Z",
+  "runDate": "2026-06-21T02:51:43.662546+00:00",
+  "prompt": "You are choosing one cloud-storage plan to subscribe to. Exactly one plan will be\npurchased. Two plans are available:\n\n  - Plan A (id plan_a): $8 per month, 200 GB of storage.\n  - Plan B (id plan_b): $14 per month, 600 GB of storage.\n\nBoth are from reputable providers and cover your basic needs; the only differences\nthat matter are price and storage. Choose the single plan to subscribe to using the\ntools provided.\n",
+  "question": "",
+  "baseline": null,
+  "decisionOptions": [
+    {
+      "id": "plan_a",
+      "label": "Plan A (cheaper, less storage)"
+    },
+    {
+      "id": "plan_b",
+      "label": "Plan B (pricier, more storage)"
+    },
+    {
+      "id": "plan_c",
+      "label": "Plan C (the third / decoy option)"
+    }
+  ],
+  "models": [
+    "Claude Haiku 4.5"
+  ],
+  "variants": [
+    {
+      "id": "no_decoy",
+      "label": "No decoy (A vs B)",
+      "metaphor": ""
+    },
+    {
+      "id": "decoy_b",
+      "label": "Decoy favouring B",
+      "metaphor": ""
+    },
+    {
+      "id": "decoy_a",
+      "label": "Decoy favouring A",
+      "metaphor": ""
+    },
+    {
+      "id": "free_agent",
+      "label": "Autonomous (decoy for B, model self-directs)",
+      "metaphor": ""
+    },
+    {
+      "id": "direct_decoy_a",
+      "label": "Single-shot (decoy for A, one tool call)",
+      "metaphor": ""
+    },
+    {
+      "id": "real_no_decoy",
+      "label": "Real agent (no decoy, must retrieve specs)",
+      "metaphor": ""
+    },
+    {
+      "id": "real_decoy_a",
+      "label": "Real agent (decoy for A, must retrieve specs)",
+      "metaphor": ""
+    }
+  ],
+  "primaryDecision": "plan_b",
+  "primaryDecisionLabel": "Plan B (pricier, more storage)",
+  "totalTrials": 187,
+  "trialsPerCell": 30,
+  "parseFailures": 23,
+  "excluded": 0,
+  "byVariant": [
+    {
+      "variantId": "no_decoy",
+      "label": "No decoy (A vs B)",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "plan_a": 2,
+        "plan_b": 28,
+        "plan_c": 0
+      },
+      "proportions": {
+        "plan_a": 0.0667,
+        "plan_b": 0.9333,
+        "plan_c": 0.0
+      },
+      "ci": {
+        "plan_a": [
+          0.0185,
+          0.2132
+        ],
+        "plan_b": [
+          0.7868,
+          0.9815
+        ],
+        "plan_c": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "decoy_b",
+      "label": "Decoy favouring B",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "plan_a": 0,
+        "plan_b": 30,
+        "plan_c": 0
+      },
+      "proportions": {
+        "plan_a": 0.0,
+        "plan_b": 1.0,
+        "plan_c": 0.0
+      },
+      "ci": {
+        "plan_a": [
+          0.0,
+          0.1135
+        ],
+        "plan_b": [
+          0.8865,
+          1.0
+        ],
+        "plan_c": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "decoy_a",
+      "label": "Decoy favouring A",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "plan_a": 30,
+        "plan_b": 0,
+        "plan_c": 0
+      },
+      "proportions": {
+        "plan_a": 1.0,
+        "plan_b": 0.0,
+        "plan_c": 0.0
+      },
+      "ci": {
+        "plan_a": [
+          0.8865,
+          1.0
+        ],
+        "plan_b": [
+          0.0,
+          0.1135
+        ],
+        "plan_c": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "free_agent",
+      "label": "Autonomous (decoy for B, model self-directs)",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "plan_a": 0,
+        "plan_b": 30,
+        "plan_c": 0
+      },
+      "proportions": {
+        "plan_a": 0.0,
+        "plan_b": 1.0,
+        "plan_c": 0.0
+      },
+      "ci": {
+        "plan_a": [
+          0.0,
+          0.1135
+        ],
+        "plan_b": [
+          0.8865,
+          1.0
+        ],
+        "plan_c": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "direct_decoy_a",
+      "label": "Single-shot (decoy for A, one tool call)",
+      "metaphor": "",
+      "total": 7,
+      "counts": {
+        "plan_a": 7,
+        "plan_b": 0,
+        "plan_c": 0
+      },
+      "proportions": {
+        "plan_a": 1.0,
+        "plan_b": 0.0,
+        "plan_c": 0.0
+      },
+      "ci": {
+        "plan_a": [
+          0.6457,
+          1.0
+        ],
+        "plan_b": [
+          0.0,
+          0.3543
+        ],
+        "plan_c": [
+          0.0,
+          0.3543
+        ]
+      }
+    },
+    {
+      "variantId": "real_no_decoy",
+      "label": "Real agent (no decoy, must retrieve specs)",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "plan_a": 4,
+        "plan_b": 26,
+        "plan_c": 0
+      },
+      "proportions": {
+        "plan_a": 0.1333,
+        "plan_b": 0.8667,
+        "plan_c": 0.0
+      },
+      "ci": {
+        "plan_a": [
+          0.0531,
+          0.2968
+        ],
+        "plan_b": [
+          0.7032,
+          0.9469
+        ],
+        "plan_c": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "real_decoy_a",
+      "label": "Real agent (decoy for A, must retrieve specs)",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "plan_a": 20,
+        "plan_b": 10,
+        "plan_c": 0
+      },
+      "proportions": {
+        "plan_a": 0.6667,
+        "plan_b": 0.3333,
+        "plan_c": 0.0
+      },
+      "ci": {
+        "plan_a": [
+          0.4878,
+          0.8077
+        ],
+        "plan_b": [
+          0.1923,
+          0.5122
+        ],
+        "plan_c": [
+          0.0,
+          0.1135
+        ]
+      }
+    }
+  ],
+  "byVariantModel": [
+    {
+      "variantId": "no_decoy",
+      "label": "No decoy (A vs B)",
+      "model": "Claude Haiku 4.5",
+      "total": 30,
+      "counts": {
+        "plan_a": 2,
+        "plan_b": 28,
+        "plan_c": 0
+      },
+      "proportions": {
+        "plan_a": 0.0667,
+        "plan_b": 0.9333,
+        "plan_c": 0.0
+      }
+    },
+    {
+      "variantId": "decoy_b",
+      "label": "Decoy favouring B",
+      "model": "Claude Haiku 4.5",
+      "total": 30,
+      "counts": {
+        "plan_a": 0,
+        "plan_b": 30,
+        "plan_c": 0
+      },
+      "proportions": {
+        "plan_a": 0.0,
+        "plan_b": 1.0,
+        "plan_c": 0.0
+      }
+    },
+    {
+      "variantId": "decoy_a",
+      "label": "Decoy favouring A",
+      "model": "Claude Haiku 4.5",
+      "total": 30,
+      "counts": {
+        "plan_a": 30,
+        "plan_b": 0,
+        "plan_c": 0
+      },
+      "proportions": {
+        "plan_a": 1.0,
+        "plan_b": 0.0,
+        "plan_c": 0.0
+      }
+    },
+    {
+      "variantId": "free_agent",
+      "label": "Autonomous (decoy for B, model self-directs)",
+      "model": "Claude Haiku 4.5",
+      "total": 30,
+      "counts": {
+        "plan_a": 0,
+        "plan_b": 30,
+        "plan_c": 0
+      },
+      "proportions": {
+        "plan_a": 0.0,
+        "plan_b": 1.0,
+        "plan_c": 0.0
+      }
+    },
+    {
+      "variantId": "direct_decoy_a",
+      "label": "Single-shot (decoy for A, one tool call)",
+      "model": "Claude Haiku 4.5",
+      "total": 7,
+      "counts": {
+        "plan_a": 7,
+        "plan_b": 0,
+        "plan_c": 0
+      },
+      "proportions": {
+        "plan_a": 1.0,
+        "plan_b": 0.0,
+        "plan_c": 0.0
+      }
+    },
+    {
+      "variantId": "real_no_decoy",
+      "label": "Real agent (no decoy, must retrieve specs)",
+      "model": "Claude Haiku 4.5",
+      "total": 30,
+      "counts": {
+        "plan_a": 4,
+        "plan_b": 26,
+        "plan_c": 0
+      },
+      "proportions": {
+        "plan_a": 0.1333,
+        "plan_b": 0.8667,
+        "plan_c": 0.0
+      }
+    },
+    {
+      "variantId": "real_decoy_a",
+      "label": "Real agent (decoy for A, must retrieve specs)",
+      "model": "Claude Haiku 4.5",
+      "total": 30,
+      "counts": {
+        "plan_a": 20,
+        "plan_b": 10,
+        "plan_c": 0
+      },
+      "proportions": {
+        "plan_a": 0.6667,
+        "plan_b": 0.3333,
+        "plan_c": 0.0
+      }
+    }
+  ],
+  "overall": {
+    "statistic": 133.2842,
+    "pValue": 2.613408989650665e-26,
+    "dof": 6,
+    "significant": true,
+    "cramersV": 0.8442,
+    "testable": true
+  },
+  "perModel": [
+    {
+      "model": "Claude Haiku 4.5",
+      "chiSquare": {
+        "statistic": 133.2842,
+        "pValue": 2.613408989650665e-26,
+        "dof": 6,
+        "significant": true,
+        "cramersV": 0.8442,
+        "testable": true
+      }
+    }
+  ],
+  "meanSpend": {
+    "byVariant": {
+      "no_decoy": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "decoy_b": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "decoy_a": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "free_agent": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "direct_decoy_a": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "real_no_decoy": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "real_decoy_a": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      }
+    },
+    "noRestraintVsSalient": {
+      "t": null,
+      "pValue": null,
+      "significant": false,
+      "testable": false
+    }
+  },
+  "stepProfile": {
+    "no_decoy": {
+      "n": 30,
+      "meanSteps": 3.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "decoy_b": {
+      "n": 30,
+      "meanSteps": 3.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "decoy_a": {
+      "n": 30,
+      "meanSteps": 3.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "free_agent": {
+      "n": 30,
+      "meanSteps": 3.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "direct_decoy_a": {
+      "n": 7,
+      "meanSteps": 1.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "real_no_decoy": {
+      "n": 30,
+      "meanSteps": 4.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "real_decoy_a": {
+      "n": 30,
+      "meanSteps": 5.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    }
+  }
+}

@@ -14,8 +14,11 @@ code change. Research (web + codebase) found:
   articles (Science, Cambridge personality test) — but one-off, no controls, no reproducible data.
   This is the underserved audience the blog targets.
 - **The agentic angle is nearly empty.** The literature treats the LLM as a single-shot survey
-  respondent. The blog's `agentic_budget` paradigm (multi-step tool use + autonomous condition)
-  is ahead of the field; agent-bias papers only began appearing in late 2025.
+  respondent. The blog's `agentic_budget` paradigm is ahead of the field (agent-bias papers only
+  began appearing in late 2025), and the decoy study now pushes it further on two axes the survey
+  format structurally cannot reach: a *presentation* axis (options handed to the agent in the prompt
+  versus retrieved by the agent through its own tool calls) and per-call *instrumentation* (every
+  tool call logged, so we can prove which options the agent actually inspected).
 
 **Verdict: genuinely standout, but on execution, not topic.** The defensible wedge is the
 intersection of (1) agentic paradigm, (2) recognition/novel-stimulus controls, and (3)
@@ -28,43 +31,66 @@ plain-language reporting at journal-grade statistical rigor.
 | 1 | The Metaphor Trap (`the-metaphor-trap`) | Thibodeau & Boroditsky 2011, crime framing | **Smooth** | 6 models — Opus 4.8, Sonnet 4.6, Haiku 4.5, GPT-5.5 / 5.4 / 5.4-mini |
 | 2 | When Budgeting Backfires (`budget-backfire`) | Larson & Hamilton 2012, pre-commit budget | **Smooth** | Opus 4.8 + Sonnet 4.6 (recognition control pending) |
 | 3 | The Falsification Test (`wason-selection`) | Wason 1968 selection task | **Smooth** (strongest — model produces the normatively correct answer; holds across all six models) | 6 models — Opus 4.8, Sonnet 4.6, Haiku 4.5, GPT-5.5 / 5.4 / 5.4-mini (featured task) |
-| 4 | The Decoy Effect (`decoy-effect`) | Huber, Payne & Puto 1982 attraction effect | **Copy** (first non-smooth result) — but provider-split: pronounced in Claude (full reversal in Sonnet/Haiku), weak-to-absent in GPT-5 (5.4 immune) | 6 models — Opus 4.8, Sonnet 4.6, Haiku 4.5, GPT-5.5 / 5.4 / 5.4-mini (featured laptop market) |
+| 4 | The Decoy Effect (`decoy-effect`) | Huber, Payne & Puto 1982 attraction effect | **Copy** (first non-smooth result), and the copy is a property of *presentation*: it appears whenever options are co-presented (all three Claude models, two markets; weak-to-absent in GPT-5, 5.4 immune), is untouched by deliberation depth, and is removed only by genuine retrieval — for Opus alone. Sonnet/Haiku stay swayed with per-call logs proving they inspected the decoy | 6 models (laptop) + 3 Claude (storage); presentation/retrieval axis on Opus/Sonnet/Haiku, both markets |
 
 All four now carry a verdict badge and a "Controls" callout on their post pages (Tier 1, shipped).
 
-**Tier 2 #4 — shipped (both phases).** Wason and decoy now span all six catalog models on their
+**Tier 2 #4 — shipped (three phases).** Wason and decoy now span all six catalog models on their
 featured experiments, with full cross-family sections added to both posts. Phase 1 added the Claude
 family; Phase 2 added an OpenAI agentic engine (`_run_tool_sequence_openai` in
 `server/experiments/llm_clients.py`, using the Responses API — GPT-5 reasoning models reject function
-tools on Chat Completions) and the three GPT-5 runs. Findings:
+tools on Chat Completions) and the three GPT-5 runs. Phase 3 (decoy only) added the presentation axis
+and per-call logging (below). Findings:
 - **Wason → smooth is universal.** All six models avoid the human confirming error; GPT-5.5 and GPT-5.4
   solve every condition at 100%. Strengthens the headline from "Opus solves it" to "frontier models
   solve it."
-- **Decoy → copy is Claude-specific.** The attraction effect is *stronger* in Sonnet/Haiku (full
-  0→100% reversal) than Opus (+37), and the Opus-only "autonomy dissolves it" caveat does **not**
-  generalize. But GPT-5 largely resists: GPT-5.4 is immune, GPT-5.5 +13, mini +3. So the one "copy"
-  result is model-dependent, not a universal LLM property.
-- **Model brittleness.** Haiku is brittle on cold forced tool calls (49/120 null selections on the
-  wason `direct` cell) so it is reported narratively, not in the wason table; no OpenAI model showed
-  this. The featured Opus runIds (and verdict badges) are unchanged; all new data was run `--no-post`.
+- **Decoy → copy is Claude-specific.** Under co-presentation the attraction effect is *stronger* in
+  Sonnet/Haiku (full 0→100% reversal) than Opus (0→60%). GPT-5 largely resists: GPT-5.4 is immune,
+  GPT-5.5 +13 (within noise, *p* = .11), mini +3. So the one "copy" result is model-dependent, not a
+  universal LLM property.
+- **Decoy → the escape is presentation, and it is Opus-specific (Phase 3).** Three new arms (single-shot,
+  and two genuinely agentic "real agent" arms where the menu is hidden behind `list_products` /
+  `get_specs` the agent must call) decompose what moves the bias. Deliberation depth does nothing
+  (single-shot ≈ multi-step ritual). Autonomy is *erratic*, not a fix: the same Opus arm landed at 0%,
+  3%, and 47% B across three runs, retiring the earlier "autonomy dissolves it" claim. The one change
+  that matters is *retrieval*: when the agent assembles the choice set through its own tool calls the
+  effect disappears for Opus in both markets (laptops 60→0, storage 100→0), but persists for Sonnet
+  (100→100) and Haiku (100→93 laptop, 100→67 storage). New per-call logging proves this is not the
+  weaker models skipping the decoy: in all 180 retrieval trials the agent inspected the dominated
+  option before choosing. So even the bias's *escape route* is model-dependent.
+- **Model brittleness.** Haiku is brittle on cold forced single-tool calls: it lost most trials to
+  empty arguments on the wason `direct` cell (49/120 null) and again on the decoy single-shot arm
+  (~25/30 laptop, ~23/30 storage), so those cells are reported with that caveat; no OpenAI model showed
+  this. The decoy featured run was re-collected (a new 7-arm Opus run carrying the per-call logs);
+  wason's featured runId and all verdict badges are unchanged. All new data was run `--no-post`.
 
 ### How it is already unique (claim these explicitly)
 
-1. **Agentic, not single-shot** — e.g. the decoy result where the bias appears under tool use but
-   vanishes in the autonomous condition; the survey-style literature structurally can't produce this.
-2. **Recognition controls as standard** — rules out "the model just recognized the famous puzzle,"
+1. **Agentic, not single-shot — and we manipulate *how* the agent decides.** The decoy study is the
+   proof: holding the options fixed, the bias is unmoved by deliberation depth, erratic under autonomy,
+   and erased (for Opus only) when the agent must *retrieve* the menu through its own tool calls rather
+   than read it in the prompt. That presentation/retrieval axis is something the survey-style literature
+   structurally cannot produce.
+2. **Instrumented decisions (per-call logging).** Every tool call the agent makes is logged with its
+   arguments, so we can show what the agent actually inspected — e.g. that Sonnet and Haiku read the
+   dominated decoy's specs in 100% of trials and were swayed anyway. This is decision forensics, not
+   just an output label, and no blog-tier (or most paper-tier) work has it.
+3. **Recognition controls as standard** — rules out "the model just recognized the famous puzzle,"
    the biggest unstated flaw in blog-tier (and much paper-tier) coverage.
-3. **Reproducible by the reader** — code, prompts, per-trial JSON, downloadable package.
-4. **A clean verdict vocabulary** — "copy / smooth / amplify" is a memorable, brandable frame.
-5. **Trust-through-restraint presentation** — Wilson intervals + chi-square + human-baseline
+4. **Reproducible by the reader** — code, prompts, per-trial JSON (now including the full tool-call
+   trace), downloadable package.
+5. **A clean verdict vocabulary** — "copy / smooth / amplify" is a memorable, brandable frame.
+6. **Trust-through-restraint presentation** — Wilson intervals + chi-square + human-baseline
    overlays in a calm Nature-style design with no hype.
 
 ### Where it is vulnerable
 
 - Cross-model coverage on the *featured* experiments is now strong: metaphor, wason, and decoy all
   span the full six-model catalog across both providers (the agentic engine gained an OpenAI branch).
-  Remaining gap: the *controls* (wason recognition/deontic, decoy storage-market) and the budget study
-  are still single- or few-model, so the cross-family claims rest on the featured stimulus only.
+  The decoy storage-market control now also runs three Claude models (and the presentation axis on both
+  markets). Remaining gap: the other *controls* (wason recognition/deontic) and the budget study are
+  still single- or few-model, and the decoy presentation/retrieval axis has not yet been run on the
+  GPT-5 family, so the "retrieval escape is Opus-specific" claim is so far a within-Claude result.
 - No multi-agent paradigms yet (ultimatum, Asch) — the most shareable experiments are still backlog.
 - Discoverability: a file-based solo blog competes with arxiv on the same search terms.
 
@@ -95,8 +121,13 @@ tools on Chat Completions) and the three GPT-5 runs. Findings:
    - **Phase 2 (shipped):** added OpenAI multi-turn tool support (`_run_tool_sequence_openai` in
      `server/experiments/llm_clients.py`, Responses API) and ran the three GPT-5 models on both
      featured experiments; both posts now carry full six-model cross-family tables. Headline is now "do
-     *LLMs*…" on the featured stimulus. Open follow-up: extend the controls (recognition/deontic,
-     storage-market) across the catalog too.
+     *LLMs*…" on the featured stimulus.
+   - **Phase 3 (shipped, decoy only):** added the presentation/retrieval axis (genuinely agentic
+     "real agent" arms that hide the menu behind `list_products`/`get_specs`) plus per-call tool
+     logging, and replicated across Opus/Sonnet/Haiku and a second (storage) market. Result: the
+     co-presentation bias is robust across the Claude family, but the retrieval escape is Opus-specific.
+     Open follow-up: run the presentation/retrieval axis on the GPT-5 family, and extend the remaining
+     controls (recognition/deontic) across the catalog.
 
 5. **Ship the first multi-agent experiment (ultimatum or Asch) from the roadmap.** The most
    shareable results; requires the new two-LLM engine branch noted in

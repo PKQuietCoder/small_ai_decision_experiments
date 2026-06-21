@@ -1,0 +1,3739 @@
+{
+  "runId": "20260620T045653Z",
+  "experimentId": "wason-selection",
+  "startedAt": "2026-06-20T04:56:53.871218+00:00",
+  "finishedAt": "2026-06-20T04:57:54.278773+00:00",
+  "trialsPerCell": 30,
+  "temperature": 1.0,
+  "models": [
+    "GPT-5.4 mini"
+  ],
+  "variants": [
+    "direct",
+    "falsify_prompt",
+    "deliberate",
+    "free_agent"
+  ],
+  "trials": [
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "direct",
+      "trial": 0,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "direct",
+      "trial": 1,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "direct",
+      "trial": 2,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "direct",
+      "trial": 3,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "direct",
+      "trial": 4,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "direct",
+      "trial": 5,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "direct",
+      "trial": 6,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "direct",
+      "trial": 7,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "direct",
+      "trial": 8,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "direct",
+      "trial": 9,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "direct",
+      "trial": 10,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "direct",
+      "trial": 11,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "direct",
+      "trial": 12,
+      "decision": "sel_other",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_other"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "direct",
+      "trial": 13,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "direct",
+      "trial": 14,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "direct",
+      "trial": 15,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "direct",
+      "trial": 16,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "direct",
+      "trial": 17,
+      "decision": "sel_other",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_other"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "direct",
+      "trial": 18,
+      "decision": "sel_other",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_other"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "direct",
+      "trial": 19,
+      "decision": "sel_other",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_other"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "direct",
+      "trial": 20,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "direct",
+      "trial": 21,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "direct",
+      "trial": 22,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "direct",
+      "trial": 23,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "direct",
+      "trial": 24,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "direct",
+      "trial": 25,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "direct",
+      "trial": 26,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "direct",
+      "trial": 27,
+      "decision": "sel_other",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_other"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "direct",
+      "trial": 28,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "direct",
+      "trial": 29,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "falsify_prompt",
+      "trial": 0,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "If the card showing E has an odd number on the hidden side, or if the card showing 7 has a vowel on the hidden side, the rule is false."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "falsify_prompt",
+      "trial": 1,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "If card 1 (E) has an odd number on the hidden side, the rule is broken."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "falsify_prompt",
+      "trial": 2,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A vowel card with an odd number on the hidden side would break the rule; specifically, if Card 1 (E) hides an odd number, the rule is false."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "falsify_prompt",
+      "trial": 3,
+      "decision": "sel_other",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "If Card 1 (E) has an odd number on the hidden side, that would falsify the rule."
+        },
+        "select_cards": {
+          "selection": "sel_other"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "falsify_prompt",
+      "trial": 4,
+      "decision": "sel_other",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A card showing a vowel on the letter side with an odd number on the hidden number side would break the rule; for example, Card 1 (E) would falsify it if its back is odd."
+        },
+        "select_cards": {
+          "selection": "sel_other"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "falsify_prompt",
+      "trial": 5,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "If Card 1 (E) has an odd number on its hidden side, the rule is broken."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "falsify_prompt",
+      "trial": 6,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A card showing a vowel (such as E) with an odd number on the hidden side, or a card showing 7 with a vowel on the hidden side, would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "falsify_prompt",
+      "trial": 7,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "If Card 1 (E) has an odd number on the hidden side, or if Card 4 (7) has a vowel on the hidden side, the rule is broken."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "falsify_prompt",
+      "trial": 8,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A card showing a vowel on the visible side would falsify the rule if its hidden side were an odd number; for example, the E card would break the rule if it hid 7."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "falsify_prompt",
+      "trial": 9,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "If the E card has an odd number on its hidden side, the rule is broken."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "falsify_prompt",
+      "trial": 10,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A vowel card that has an odd number on its hidden side would break the rule; for example, Card 1 (E) showing an odd number."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "falsify_prompt",
+      "trial": 11,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "If the card showing E has an odd number on the hidden side, that would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "falsify_prompt",
+      "trial": 12,
+      "decision": "sel_other",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A vowel card with an odd number on the hidden side\u2014for example, Card 1 (E) hiding 7 or any odd number\u2014would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_other"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "falsify_prompt",
+      "trial": 13,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A vowel on the visible side with an odd number on the hidden side\u2014e.g., Card 1 (E) hiding an odd number\u2014or a visible odd number like Card 4 (7) hiding a vowel would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "falsify_prompt",
+      "trial": 14,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "If Card 1 (E) has an odd number on the hidden side, the rule is broken."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "falsify_prompt",
+      "trial": 15,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A vowel on the hidden side of card 4 or card 7 would break the rule; specifically, card 7 showing an odd number could falsify the rule if its hidden letter is a vowel."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "falsify_prompt",
+      "trial": 16,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A vowel on the visible letter side paired with an odd number on the hidden number side, for example Card 1 (E) hiding 7, would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "falsify_prompt",
+      "trial": 17,
+      "decision": "sel_other",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A card with a vowel on the letter side and an odd number on the hidden side would break the rule; for example, card 1 (E) would falsify it if its hidden number were odd."
+        },
+        "select_cards": {
+          "selection": "sel_other"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "falsify_prompt",
+      "trial": 18,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the back of the E card would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "falsify_prompt",
+      "trial": 19,
+      "decision": "sel_other",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "If the card showing E has an odd number on its hidden side, that would falsify the rule."
+        },
+        "select_cards": {
+          "selection": "sel_other"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "falsify_prompt",
+      "trial": 20,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A vowel on a card's letter side with an odd number on its number side would break the rule; for example, E on one side and 7 on the other."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "falsify_prompt",
+      "trial": 21,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A vowel on Card 1 (E) with an odd number on the hidden side would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "falsify_prompt",
+      "trial": 22,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "If card 1 (E) has an odd number on the hidden side, the rule is broken."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "falsify_prompt",
+      "trial": 23,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "If the card showing E has an odd number on the hidden side, or if the card showing 7 has a vowel on the hidden side, the rule is broken."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "falsify_prompt",
+      "trial": 24,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "If the card with a vowel on its visible side has an odd number on the hidden side, the rule is false."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "falsify_prompt",
+      "trial": 25,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "If the card showing E has an odd number on the hidden side, that would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "falsify_prompt",
+      "trial": 26,
+      "decision": "sel_other",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "If Card 1 (E) has an odd number on the hidden side, that would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_other"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "falsify_prompt",
+      "trial": 27,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A vowel on Card 1 (E) with an odd number on its hidden side would falsify the rule; similarly, any odd number hidden behind the vowel card would break it."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "falsify_prompt",
+      "trial": 28,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "If Card 1 (E) has an odd number on the hidden side, the rule is broken."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "falsify_prompt",
+      "trial": 29,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "A card with a vowel on its visible letter side that has an odd number on the hidden side; for example, Card 1 (E) showing an odd number would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "deliberate",
+      "trial": 0,
+      "decision": "sel_other",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "Any card with a vowel on its letter side must have an even number on its number side; the rule does not say anything about consonants or about even numbers needing vowels."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If the card showing E has an odd number on the hidden side, the rule is broken."
+        },
+        "select_cards": {
+          "selection": "sel_other"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "deliberate",
+      "trial": 1,
+      "decision": "sel_other",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "A card with a vowel on one side must have an even number on the other side; the rule does not require consonants to have odd numbers or even numbers to have vowels."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the hidden side of Card 1 (E) would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_other"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "deliberate",
+      "trial": 2,
+      "decision": "sel_other",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "Any card showing a vowel must have an even number on the opposite side; the rule does not say that consonants must have odd numbers or that even numbers must have vowels."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A vowel on the visible side (such as E) with an odd number on the hidden side would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_other"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "deliberate",
+      "trial": 3,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "Any card with a vowel on one side must have an even number on the other side; the rule does not say anything about consonants or odd numbers unless they are paired with a vowel."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A vowel on the letter side paired with an odd number on the other side, such as E with 7, would falsify the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "deliberate",
+      "trial": 4,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "Any card with a vowel on one side must have an even number on the other side; the rule does not say anything about consonants or odd/even numbers unless they are paired with a vowel."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If Card 1 (E) has an odd number on the hidden side, the rule is broken; likewise, if Card 4 (7) has a vowel on the hidden side, the rule is broken."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "deliberate",
+      "trial": 5,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "A card with a vowel on one side must have an even number on the other side; the rule does not say anything about consonants or even numbers appearing with any particular letters."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If the card showing E has an odd number on the hidden side, the rule is broken."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "deliberate",
+      "trial": 6,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on one side, then its other side must be an even number; the rule does not claim anything about consonants or about even numbers being paired with vowels."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If Card 1 (showing E) has an odd number on the hidden side, that would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "deliberate",
+      "trial": 7,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "A card with a vowel on one side must have an even number on the other side; the rule says nothing about consonants or odd numbers unless they are paired with a vowel."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If card 1 (E) has an odd number on the hidden side, the rule is broken; likewise, if card 4 (7) has a vowel on the hidden side, the rule is broken."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "deliberate",
+      "trial": 8,
+      "decision": "sel_other",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "Any card with a vowel on one side must have an even number on the other side; the rule does not say anything about consonants or about even numbers appearing with any particular letters."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If Card 1 (E) has an odd number on the hidden side, the rule is broken."
+        },
+        "select_cards": {
+          "selection": "sel_other"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "deliberate",
+      "trial": 9,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "Any card with a vowel on the letter side must have an even number on the number side; the rule does not say that consonants must have odd numbers or that even numbers must have vowels."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If Card 1 (E) has an odd number on the hidden side, the rule is broken."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "deliberate",
+      "trial": 10,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "A card with a vowel on one side must have an even number on the other side; the rule says nothing about consonants or odd numbers unless they are on the hidden side of a vowel card."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If card 1 (E) has an odd number on its hidden side, or if card 4 (7) has a vowel on its hidden side, the rule is broken."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "deliberate",
+      "trial": 11,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "Any card with a vowel on one side must have an even number on the other side, and the rule does not say anything about cards with consonants or odd numbers unless they have a vowel on the opposite side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If Card 1 (E) has an odd number on the hidden side, the rule is broken."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "deliberate",
+      "trial": 12,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "A card with a vowel on one side must have an even number on the other side; the rule does not say anything about consonants or odd numbers unless they are paired with a vowel."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If Card 1 (E) has an odd number on the hidden side, the rule is false."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "deliberate",
+      "trial": 13,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "Any card with a vowel on one side must have an even number on the other side; the rule does not say that consonants must have odd numbers or that even numbers must have vowels."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If the card showing E has an odd number on its hidden side, that would violate the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "deliberate",
+      "trial": 14,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "Any card with a vowel on one side must have an even number on the other side; the rule does not say that consonants must have odd numbers or that even numbers must have vowels."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the back of Card 1 (the E card)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "deliberate",
+      "trial": 15,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "A card with a vowel on one side must have an even number on the other side; the rule does not say anything about cards with consonants or about even numbers paired with letters."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If the E card has an odd number on the hidden side, that would break the rule; likewise, if the 7 card has a vowel on the hidden side, that would also break it."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "deliberate",
+      "trial": 16,
+      "decision": "sel_p_q_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "Any card showing a vowel must have an even number on the other side; the rule does not say that consonants must have odd numbers or that even numbers must have vowels."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A vowel on Card 1 (E) with an odd number on the hidden side, or an odd number on Card 4 (7) with a vowel on the hidden side, would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_q_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "deliberate",
+      "trial": 17,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "Any card with a vowel on one side must have an even number on the other side; the rule does not say anything about consonants or odd numbers unless they pair with a vowel."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If the card showing E has an odd number on the hidden side, the rule is broken."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "deliberate",
+      "trial": 18,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "Any card showing a vowel must have an even number on the other side; the rule does not require consonants to have odd or even numbers, and it does not say anything about even numbers unless the letter side is a vowel."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If Card 1 (E) has an odd number on the hidden side, the rule is broken."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "deliberate",
+      "trial": 19,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on one side, then its other side must be an even number; the rule does not say anything about consonants or about even numbers appearing with any particular letters."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If the card showing E has an odd number on the hidden side, that would violate the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "deliberate",
+      "trial": 20,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "Any card with a vowel on one side must have an even number on the other side; the rule does not say anything about consonants or about even numbers in general unless they are paired with vowels."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If the card showing E has an odd number on the hidden side, or if the card showing 7 has a vowel on the hidden side, the rule is false."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "deliberate",
+      "trial": 21,
+      "decision": "sel_other",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "Any card showing a vowel must have an even number on the other side; the rule does not say anything about consonants or about even numbers unless they are on the number side of a vowel card."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If the card showing E has an odd number on the hidden side, that would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_other"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "deliberate",
+      "trial": 22,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on one side, then its other side must be an even number; the rule does not say anything about consonants or about cards showing even numbers."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A vowel card (such as E) would falsify the rule if its hidden side were an odd number; a visible even number card does not by itself falsify the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "deliberate",
+      "trial": 23,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "A card with a vowel on one side must have an even number on the other side; the rule does not require anything about consonants or even numbers in general."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If the hidden side of the E card is odd, or if the hidden side of the 7 card is a vowel, the rule is broken."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "deliberate",
+      "trial": 24,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "A card with a vowel on one side must have an even number on the other side; the rule does not say anything about consonants or odd numbers unless they are paired with a vowel."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A vowel on the letter side paired with an odd number on the number side; for example, turning over E and finding an odd number would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "deliberate",
+      "trial": 25,
+      "decision": "sel_other",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "Any card with a vowel on one side must have an even number on the other side; the rule does not require consonants to have odd numbers, nor even numbers to have vowels."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If Card 1 (E) has an odd number on the hidden side, the rule is broken."
+        },
+        "select_cards": {
+          "selection": "sel_other"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "deliberate",
+      "trial": 26,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "A card with a vowel on one side must have an even number on the other side; the rule does not say anything about cards with consonants or about even numbers paired with any particular letters."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "The rule would be broken if the card showing E has an odd number on its hidden side."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "deliberate",
+      "trial": 27,
+      "decision": "sel_other",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "Any card showing a vowel must have an even number on the other side; the rule does not say anything about consonants or about cards showing even numbers or odd numbers unless they are the number side of a vowel card."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If the card showing E has an odd number on the hidden side, the rule is broken."
+        },
+        "select_cards": {
+          "selection": "sel_other"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "deliberate",
+      "trial": 28,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "Any card showing a vowel on one side must have an even number on the other side; the rule does not say anything about consonants or about even numbers unless they are paired with a vowel."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If the card showing E has an odd number on the other side, that would break the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "deliberate",
+      "trial": 29,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "Any card showing a vowel must have an even number on the reverse; the rule does not say anything about consonants or about even numbers having vowels."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A card showing a vowel with an odd number on the hidden side would break the rule; the key test case is the visible vowel card E."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "free_agent",
+      "trial": 0,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "Any card showing a vowel must have an even number on the other side; the rule does not say that consonants must have odd numbers, nor that even numbers must have vowels."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If the card showing E has an odd number on the hidden side, that would falsify the rule; likewise, if the card showing 7 has a vowel on the hidden side, that would also falsify it."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "free_agent",
+      "trial": 1,
+      "decision": "sel_other",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "The rule says every card with a vowel on its letter side must have an even number on its number side; it does not say anything about consonants or about even numbers needing vowels."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A vowel on the hidden side of card 4, or an odd number on the hidden side of card E, would falsify the rule; the key disproof card among the visible faces is 7, which would break the rule if its hidden side were a vowel."
+        },
+        "select_cards": {
+          "selection": "sel_other"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "free_agent",
+      "trial": 2,
+      "decision": "sel_p_q_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If the letter side is a vowel, then the number side must be even; the rule does not require consonants to have any particular number or even numbers to have vowels."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "On the card showing E, the hidden side is an odd number; on the card showing 7, the hidden side is a vowel."
+        },
+        "select_cards": {
+          "selection": "sel_p_q_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "free_agent",
+      "trial": 3,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "A card with a vowel on one side must have an even number on the other side; the rule does not say anything about consonants or even numbers on their own."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the hidden side of card E, or a vowel on the hidden side of card 7, would falsify the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "free_agent",
+      "trial": 4,
+      "decision": "sel_p_notq",
+      "steps": [
+        "examine_cards",
+        "restate_rule",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "examine_cards": {
+          "reviewed": true
+        },
+        "restate_rule": {
+          "rule_summary": "A card with a vowel on one side must have an even number on the other side; it does not say anything about consonants or even-number cards in general."
+        },
+        "note_disproof": {
+          "falsifying_observation": "If Card 1 (E) has an odd number on the back, the rule is false; likewise, if Card 4 (7) has a vowel on the back, the rule is false."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "examine_cards",
+          "restate_rule",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "free_agent",
+      "trial": 5,
+      "decision": "sel_p_q_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "Any card showing a vowel must have an even number on the other side; the rule does not say that consonants must have odd numbers or that even numbers must have vowels."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If Card 1 (E) has an odd number on the hidden side, the rule is false."
+        },
+        "select_cards": {
+          "selection": "sel_p_q_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "free_agent",
+      "trial": 6,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "Any card showing a vowel on one side must have an even number on the other side; the rule does not say that consonants must have odd numbers or that even numbers must show vowels."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If the card showing E has an odd number on the hidden side, or if the card showing 7 has a vowel on the hidden side, the rule is false."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "free_agent",
+      "trial": 7,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "The rule says every card with a vowel on its letter side must have an even number on its number side; it does not say anything about consonants, and it is falsified by any vowel paired with an odd number."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A vowel on Card 1's hidden side with an odd number would prove the rule false; likewise, an odd number on Card 4's hidden side with a vowel would also falsify it, but the key disproof is finding an odd number behind the vowel card E."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "free_agent",
+      "trial": 8,
+      "decision": "sel_p_notq",
+      "steps": [
+        "examine_cards",
+        "restate_rule",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "examine_cards": {
+          "reviewed": true
+        },
+        "restate_rule": {
+          "rule_summary": "The rule says every card with a vowel on its letter side must have an even number on its number side; it does not say anything about cards with consonants, and it does not require every even number to have a vowel."
+        },
+        "note_disproof": {
+          "falsifying_observation": "If the card showing 7 has a vowel on the hidden letter side, that would falsify the rule because a vowel must have an even number."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "examine_cards",
+          "restate_rule",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "free_agent",
+      "trial": 9,
+      "decision": "sel_other",
+      "steps": [
+        "examine_cards",
+        "restate_rule",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "examine_cards": {
+          "reviewed": true
+        },
+        "restate_rule": {
+          "rule_summary": "Any card showing a vowel must have an even number on the reverse; cards with consonants are unrestricted, and odd-number cards matter only if they could hide a vowel on the other side."
+        },
+        "note_disproof": {
+          "falsifying_observation": "If Card 4 (showing 7) hides a vowel on the other side, the rule is false because a vowel would then be paired with an odd number."
+        },
+        "select_cards": {
+          "selection": "sel_other"
+        },
+        "steps": [
+          "examine_cards",
+          "restate_rule",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "free_agent",
+      "trial": 10,
+      "decision": "sel_p_q_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "The rule says that any card with a vowel on the letter side must have an even number on the number side; it does not claim that consonants must have odd numbers or that even numbers must have vowels."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If the card showing E has an odd number on the other side, or if the card showing 7 has a vowel on the other side, the rule is false."
+        },
+        "select_cards": {
+          "selection": "sel_p_q_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "free_agent",
+      "trial": 11,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "A card with a vowel on one side must have an even number on the other side; the rule does not say anything about consonants or about even numbers appearing with any particular letters."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If card 1 (E) has an odd number on the hidden side, or if card 4 (7) has a vowel on the hidden side, the rule is false; the critical disproof is an odd number behind E or a vowel behind 7."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "free_agent",
+      "trial": 12,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "The rule says every card with a vowel on one side must have an even number on the other side, and it does not say anything about consonants or about even numbers paired with letters."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If the card showing 7 has a vowel on its hidden side, that would falsify the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "free_agent",
+      "trial": 13,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "A card with a vowel on one side must have an even number on the other side; the rule does not say anything about consonants or about even numbers appearing only with vowels."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If card 1 (E) has an odd number on the hidden side, or if card 4 (7) has a vowel on the hidden side, the rule is false."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "free_agent",
+      "trial": 14,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "Any card showing a vowel on one side must have an even number on the other side; the rule does not require consonants to have odd numbers or numbers to be paired with any specific letters."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If the card showing E has an odd number on the hidden side, or if the card showing 7 has a vowel on the hidden side, the rule is false."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "free_agent",
+      "trial": 15,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "The rule says that every card with a vowel on one side must have an even number on the other side; it does not say anything about cards with consonants or about even numbers appearing with any particular letter."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If the card showing E has an odd number on the hidden side, or if the card showing 7 has a vowel on the hidden side, the rule is false."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "free_agent",
+      "trial": 16,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "The rule says every card with a vowel on one side must have an even number on the other side; it does not say that consonants must have odd numbers or that even numbers must have vowels."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If Card 1 (E) has an odd number hidden on the back, or if Card 4 (7) has a vowel hidden on the back, that would prove the rule false."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "free_agent",
+      "trial": 17,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "Any card showing a vowel must have an even number on the other side; the rule does not say anything about consonants or about even numbers requiring vowels."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If card E has an odd number on the hidden side, or if card 7 has a vowel on the hidden side, the rule is false."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "free_agent",
+      "trial": 18,
+      "decision": "sel_other",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "The rule says every card with a vowel on one side must have an even number on the other side; it does not say anything about consonants or even numbers in general."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If the card showing E has an odd number on the hidden side, the rule is false."
+        },
+        "select_cards": {
+          "selection": "sel_other"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "free_agent",
+      "trial": 19,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "The rule says every card with a vowel on the letter side must have an even number on the number side; it does not say anything about consonants, and it is falsified only by a vowel paired with an odd number."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A vowel on the letter side with an odd number on the hidden side, such as E paired with 7, would make the rule false."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "free_agent",
+      "trial": 20,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "A card with a vowel on one side must have an even number on the other side; the rule does not say anything about cards with consonants or about even numbers unless their other side is a vowel."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If the card showing 7 has a vowel on its hidden side, that would violate the rule because a vowel must have an even number."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "free_agent",
+      "trial": 21,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "Any card showing a vowel on its letter side must have an even number on its other side; the rule does not say anything about consonants or about even numbers being paired with vowels."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If the card showing 7 has a vowel on its hidden letter side, the rule is false because a vowel cannot be paired with an odd number."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "free_agent",
+      "trial": 22,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "Any card with a vowel on one side must have an even number on the other side; the rule does not say anything about consonants or about even numbers having to show vowels."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If Card 4 (showing 7) has a vowel on the hidden side, that would falsify the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "free_agent",
+      "trial": 23,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "The rule says that every card with a vowel on its letter side must have an even number on its number side; it does not say anything about consonants, and it is only broken by a vowel paired with an odd number."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If the card showing E has an odd number on the hidden side, the rule is false; equivalently, the card showing 7 would falsify the rule if its hidden side is a vowel."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "free_agent",
+      "trial": 24,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "The rule says every card with a vowel on the letter side must have an even number on the number side; it does not say consonants must have even numbers or that even numbers must have vowels."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If Card 1 (E) has an odd number on the hidden side, or if Card 4 (7) has a vowel on the hidden side, the rule is false."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "free_agent",
+      "trial": 25,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "The rule says that every card with a vowel on one side must have an even number on the other side; it does not say anything about consonants or about cards with even numbers beyond what they imply for vowels."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A vowel on the hidden side of Card 4 (the 7 card) would break the rule, because 7 is odd and a vowel must pair with an even number."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "free_agent",
+      "trial": 26,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "The rule says every card with a vowel on the letter side must have an even number on the other side; it does not say consonant cards must have any particular number, and it can be falsified only by finding a vowel with an odd number or an odd number paired with a vowel."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "A vowel on the hidden letter side of the 7 card would falsify the rule, because 7 is odd and the rule requires vowels to be paired only with even numbers."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "free_agent",
+      "trial": 27,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "The rule says every card with a vowel on the letter side must have an even number on the number side; it does not say anything about consonants or about even numbers always having vowels."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If Card 1 (E) has an odd number on the hidden side, that would prove the rule false."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "free_agent",
+      "trial": 28,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "A card with a vowel on one side must have an even number on the other side; the rule does not require every even number to have a vowel, and it can be falsified by a vowel paired with an odd number."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "On Card 1 (E), finding an odd number would falsify the rule; on Card 4 (7), finding a vowel would also falsify it, but a vowel on Card 1 and an odd number on Card 4 are the critical disproof cases."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4 mini",
+      "provider": "openai",
+      "variantId": "free_agent",
+      "trial": 29,
+      "decision": "sel_p_q_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "Any card with a vowel on the letter side must have an even number on the number side; the rule does not say that consonants must have odd numbers or that even numbers must have vowels."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If the card showing 7 has a vowel on the hidden letter side, that would prove the rule false because a vowel must have an even number."
+        },
+        "select_cards": {
+          "selection": "sel_p_q_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    }
+  ]
+}

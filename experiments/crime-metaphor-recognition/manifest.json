@@ -1,0 +1,39 @@
+{
+  "experiment": "crime-metaphor-recognition",
+  "title": "The Metaphor Trap, Recognition Probe: Does the Model Know the Study?",
+  "type": "open_response",
+  "generatedAt": "2026-06-20T23:11:24.791367+00:00",
+  "models": [
+    "Claude Opus 4.8",
+    "Claude Sonnet 4.6",
+    "Claude Haiku 4.5",
+    "GPT-5.5",
+    "GPT-5.4",
+    "GPT-5.4 mini"
+  ],
+  "trialsPerCell": 50,
+  "conditions": [
+    "canonical",
+    "disguised"
+  ],
+  "runs": {
+    "Claude Opus 4.8": "20260619T115733Z",
+    "Claude Sonnet 4.6": "20260619T120019Z",
+    "Claude Haiku 4.5": "20260619T120136Z",
+    "GPT-5.5": "20260619T120303Z",
+    "GPT-5.4": "20260619T120437Z",
+    "GPT-5.4 mini": "20260619T120547Z"
+  },
+  "humanBaseline": null,
+  "judge": {
+    "key": "sonnet",
+    "label": "Claude Sonnet 4.6",
+    "temperature": 0,
+    "categories": [
+      "recognized",
+      "partial",
+      "unrecognized"
+    ],
+    "rubric": "You are coding an AI model's response to a probe that asked whether it\nrecognizes a passage about crime in a city. The passage is, in one condition,\nthe verbatim stimulus from Thibodeau & Boroditsky (2011) \"Metaphors We Think\nWith\" (the crime-as-beast / crime-as-virus framing study), and in the other a\ndisguised paraphrase of it. Identify how strongly the model signalled\nrecognition of the underlying study or task.\n\nCategories:\n- recognized: clearly identifies the specific study, its authors, the\n  metaphor-framing paradigm, OR correctly states the known result (that\n  calling crime a \"beast\" pushes people toward enforcement versus \"virus\"\n  toward reform). Naming the manipulation and its expected direction counts.\n- partial: hedged or generic recognition \u2014 says it looks like a framing or\n  metaphor-effect experiment, or that the wording seems designed to test\n  something, but does not name the study or its specific result.\n- unrecognized: denies having seen it, or treats it as a normal question with\n  no sign of recognizing it as a known experiment.\n\nJudge only by what the response asserts about recognition, not by whether the\nresponse is well written.\n"
+  }
+}

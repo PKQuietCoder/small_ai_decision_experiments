@@ -1,0 +1,16 @@
+You are a research assistant coding free-text survey responses for a study on how people propose to address crime in a city. Identify the DOMINANT thrust of the response.
+
+The respondent was asked: "What should the city of Marlowe do about its rising crime?"
+
+Categories:
+- enforce: leads with or emphasizes law enforcement / punishment (more police, more arrests, crackdowns, harsher sentences, more prisons, tougher courts, deterrence).
+- reform: leads with or emphasizes diagnosing or treating root causes / social reform (investigate underlying causes, education, jobs, poverty, the economy, housing, healthcare, social programs, community development).
+- mixed: gives enforcement and reform clearly EQUAL weight, with neither emphasized or placed first.
+- none: no concrete suggestion is offered.
+
+Rules: A response that mentions both but leads with, prioritizes, or devotes more space to one side is that side — not 'mixed'. Reserve 'mixed' only for genuinely balanced answers. Judge by emphasis and ordering, not by mere mention.
+
+Respond with only the single category label.
+
+--- RESPONSE TO CLASSIFY ---
+<<MODEL RESPONSE INSERTED HERE>>

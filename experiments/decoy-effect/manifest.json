@@ -2,9 +2,14 @@
   "experiment": "decoy-effect",
   "title": "The Decoy Effect: Does a Worse Option Sway an Agent's Choice?",
   "type": "agentic_budget",
-  "generatedAt": "2026-06-20T02:48:43.875435+00:00",
+  "generatedAt": "2026-06-20T23:11:27.037116+00:00",
   "models": [
-    "Claude Opus 4.8"
+    "Claude Opus 4.8",
+    "Claude Sonnet 4.6",
+    "Claude Haiku 4.5",
+    "GPT-5.4 mini",
+    "GPT-5.4",
+    "GPT-5.5"
   ],
   "trialsPerCell": 30,
   "conditions": [
@@ -14,7 +19,12 @@
     "free_agent"
   ],
   "runs": {
-    "Claude Opus 4.8": "20260620T024201Z"
+    "Claude Opus 4.8": "20260620T024201Z",
+    "Claude Sonnet 4.6": "20260620T044447Z",
+    "Claude Haiku 4.5": "20260620T044601Z",
+    "GPT-5.4 mini": "20260620T050019Z",
+    "GPT-5.4": "20260620T050139Z",
+    "GPT-5.5": "20260620T050326Z"
   },
   "humanBaseline": {
     "source": "Representative attraction-effect result \u2014 Huber, Payne & Puto (1982); Simonson (1989). Proportions approximate.",

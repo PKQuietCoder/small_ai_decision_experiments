@@ -1,0 +1,161 @@
+{
+  "experimentId": "crime-metaphor-recognition",
+  "experimentTitle": "The Metaphor Trap, Recognition Probe: Does the Model Know the Study?",
+  "runId": "20260619T115733Z",
+  "runDate": "2026-06-19T11:58:51.198375+00:00",
+  "prompt": "Read the following passage, then answer the question below it.\n\n\"Crime is {frame} the city of {city}. {report}\"\n\nHave you seen this exact passage, scenario, or study before? If so, name what it\nis testing and the result it is known to produce. Answer honestly in a sentence\nor two.\n",
+  "question": "Have you seen this exact passage, scenario, or study before? If so, name what it is testing and the result it is known to produce.",
+  "baseline": null,
+  "decisionOptions": [
+    {
+      "id": "recognized",
+      "label": "Recognized"
+    },
+    {
+      "id": "partial",
+      "label": "Partial"
+    },
+    {
+      "id": "unrecognized",
+      "label": "Unrecognized"
+    }
+  ],
+  "models": [
+    "Claude Opus 4.8"
+  ],
+  "variants": [
+    {
+      "id": "canonical",
+      "label": "Canonical (verbatim)",
+      "metaphor": ""
+    },
+    {
+      "id": "disguised",
+      "label": "Disguised (paraphrase)",
+      "metaphor": ""
+    }
+  ],
+  "primaryDecision": "recognized",
+  "primaryDecisionLabel": "Recognized",
+  "totalTrials": 100,
+  "trialsPerCell": 50,
+  "parseFailures": 0,
+  "excluded": 0,
+  "byVariant": [
+    {
+      "variantId": "canonical",
+      "label": "Canonical (verbatim)",
+      "metaphor": "",
+      "total": 50,
+      "counts": {
+        "recognized": 3,
+        "partial": 26,
+        "unrecognized": 21
+      },
+      "proportions": {
+        "recognized": 0.06,
+        "partial": 0.52,
+        "unrecognized": 0.42
+      },
+      "ci": {
+        "recognized": [
+          0.0206,
+          0.1622
+        ],
+        "partial": [
+          0.3851,
+          0.652
+        ],
+        "unrecognized": [
+          0.2937,
+          0.5577
+        ]
+      }
+    },
+    {
+      "variantId": "disguised",
+      "label": "Disguised (paraphrase)",
+      "metaphor": "",
+      "total": 50,
+      "counts": {
+        "recognized": 50,
+        "partial": 0,
+        "unrecognized": 0
+      },
+      "proportions": {
+        "recognized": 1.0,
+        "partial": 0.0,
+        "unrecognized": 0.0
+      },
+      "ci": {
+        "recognized": [
+          0.9286,
+          1.0
+        ],
+        "partial": [
+          0.0,
+          0.0714
+        ],
+        "unrecognized": [
+          0.0,
+          0.0714
+        ]
+      }
+    }
+  ],
+  "byVariantModel": [
+    {
+      "variantId": "canonical",
+      "label": "Canonical (verbatim)",
+      "model": "Claude Opus 4.8",
+      "total": 50,
+      "counts": {
+        "recognized": 3,
+        "partial": 26,
+        "unrecognized": 21
+      },
+      "proportions": {
+        "recognized": 0.06,
+        "partial": 0.52,
+        "unrecognized": 0.42
+      }
+    },
+    {
+      "variantId": "disguised",
+      "label": "Disguised (paraphrase)",
+      "model": "Claude Opus 4.8",
+      "total": 50,
+      "counts": {
+        "recognized": 50,
+        "partial": 0,
+        "unrecognized": 0
+      },
+      "proportions": {
+        "recognized": 1.0,
+        "partial": 0.0,
+        "unrecognized": 0.0
+      }
+    }
+  ],
+  "overall": {
+    "statistic": 88.6792,
+    "pValue": 5.540469355453128e-20,
+    "dof": 2,
+    "significant": true,
+    "cramersV": 0.9417,
+    "testable": true
+  },
+  "perModel": [
+    {
+      "model": "Claude Opus 4.8",
+      "chiSquare": {
+        "statistic": 88.6792,
+        "pValue": 5.540469355453128e-20,
+        "dof": 2,
+        "significant": true,
+        "cramersV": 0.9417,
+        "testable": true
+      }
+    }
+  ]
+}

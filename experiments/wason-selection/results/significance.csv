@@ -1,2 +1,7 @@
 experiment,source,test,n,statistic,dof,p_value,effect_size,significant
 wason-selection,Claude Opus 4.8,condition x product (chi-square of independence),120,9.2308,3,0.026374937118239683,0.2774,True
+wason-selection,Claude Haiku 4.5,condition x product (chi-square of independence),71,30.6636,9,0.0003380346653856881,0.3794,True
+wason-selection,Claude Sonnet 4.6,condition x product (chi-square of independence),120,40.0,12,7.190884052842894e-05,0.3333,True
+wason-selection,GPT-5.4 mini,condition x product (chi-square of independence),120,10.4794,6,0.10586041339868513,0.209,False
+wason-selection,GPT-5.4,condition x product (chi-square of independence),120,,,,,False
+wason-selection,GPT-5.5,condition x product (chi-square of independence),120,,,,,False

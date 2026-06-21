@@ -1,0 +1,45 @@
+{
+  "experiment": "crime-metaphor-paraphrase",
+  "title": "The Metaphor Trap, Paraphrased: Is the Result Brittle to Surface Wording?",
+  "type": "open_response",
+  "generatedAt": "2026-06-20T23:11:22.923136+00:00",
+  "models": [
+    "Claude Opus 4.8",
+    "Claude Sonnet 4.6",
+    "Claude Haiku 4.5",
+    "GPT-5.5",
+    "GPT-5.4",
+    "GPT-5.4 mini"
+  ],
+  "trialsPerCell": 50,
+  "conditions": [
+    "beast",
+    "virus"
+  ],
+  "runs": {
+    "Claude Opus 4.8": "20260619T121347Z",
+    "Claude Sonnet 4.6": "20260619T121516Z",
+    "Claude Haiku 4.5": "20260619T121628Z",
+    "GPT-5.5": "20260619T121716Z",
+    "GPT-5.4": "20260619T121842Z",
+    "GPT-5.4 mini": "20260619T121950Z"
+  },
+  "humanBaseline": {
+    "source": "Thibodeau & Boroditsky (2011), Experiment 1 (N=455) \u2014 approximate reference; wording paraphrased",
+    "by_variant": {
+      "beast": {
+        "enforce": 0.74,
+        "reform": 0.26
+      },
+      "virus": {
+        "enforce": 0.56,
+        "reform": 0.44
+      }
+    }
+  },
+  "judge": {
+    "key": "sonnet",
+    "label": "Claude Sonnet 4.6",
+    "temperature": 0
+  }
+}

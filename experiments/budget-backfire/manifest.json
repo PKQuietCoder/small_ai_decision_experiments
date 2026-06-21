@@ -2,7 +2,7 @@
   "experiment": "budget-backfire",
   "title": "When Budgeting Backfires: Does Forcing an Agent to Set a Budget First Make It Spend More?",
   "type": "agentic_budget",
-  "generatedAt": "2026-06-19T15:18:51.153047+00:00",
+  "generatedAt": "2026-06-20T23:11:16.705095+00:00",
   "models": [
     "Claude Opus 4.8",
     "Claude Sonnet 4.6"

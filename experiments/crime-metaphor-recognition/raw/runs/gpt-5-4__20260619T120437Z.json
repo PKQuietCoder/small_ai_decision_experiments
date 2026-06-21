@@ -1,0 +1,917 @@
+{
+  "runId": "20260619T120437Z",
+  "experimentId": "crime-metaphor-recognition",
+  "startedAt": "2026-06-19T12:04:37.304214+00:00",
+  "finishedAt": "2026-06-19T12:05:44.588719+00:00",
+  "trialsPerCell": 50,
+  "temperature": 1.0,
+  "models": [
+    "GPT-5.4"
+  ],
+  "variants": [
+    "canonical",
+    "disguised"
+  ],
+  "trials": [
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 0,
+      "response": "Yes \u2014 this is from the well-known metaphor-framing study by Thibodeau and Boroditsky on crime as a \u201cbeast\u201d versus a \u201cvirus.\u201d It tests whether metaphor changes policy reasoning, and it is known to produce the result that \u201cbeast\u201d framing makes people favor punitive/enforcement responses, while \u201cvirus\u201d framing makes them favor prevention and reform.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 1,
+      "response": "Yes \u2014 this is from the Thibodeau and Boroditsky metaphor-framing study on crime (\u201ccrime is a beast\u201d vs. \u201ccrime is a virus\u201d). It is known to produce different policy preferences: \u201cbeast\u201d framing tends to make people favor punitive/enforcement solutions, while \u201cvirus\u201d framing tends to make people favor reform and prevention.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 2,
+      "response": "I don\u2019t recognize this exact passage as a specific named study stimulus. It does resemble materials used to test susceptibility to emotionally loaded framing and denominator neglect\u2014people often conclude crime is \u201cworse everywhere\u201d from alarming wording and raw totals without checking population-adjusted rates.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 3,
+      "response": "I can\u2019t honestly verify that I\u2019ve seen this exact passage before. It does resemble a common psychology/critical-thinking item testing framing and denominator/base-rate neglect, which tends to make people conclude crime got much worse from raw totals even when population-adjusted rates may tell a different story.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 4,
+      "response": "Yes\u2014this is a well-known metaphor-framing study by Thibodeau and Boroditsky. It tests whether describing crime as a \u201cbeast\u201d versus a \u201cvirus\u201d shifts people\u2019s policy preferences, and it\u2019s known to produce the result that \u201cbeast\u201d framing makes people favor enforcement/punishment, while \u201cvirus\u201d framing makes them favor prevention/reform.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 5,
+      "response": "Yes\u2014this is a well-known metaphor-framing passage from Thibodeau and Boroditsky\u2019s research on how metaphors shape reasoning about social problems. It tests whether describing crime as a \u201cwild beast\u201d versus, for example, a \u201cvirus\u201d changes proposed solutions, and the known result is that \u201cbeast\u201d framing tends to make people favor enforcement/punishment while \u201cvirus\u201d framing tends to make them favor prevention/reform.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 6,
+      "response": "I can\u2019t honestly say I\u2019ve seen this exact passage before, but it strongly resembles a critical-reading/statistics item testing denominator neglect or base-rate reasoning. It\u2019s known to make readers conclude crime got worse from the raw counts alone, even though that conclusion may be misleading without population data and rates.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 7,
+      "response": "Yes \u2014 this is very likely the classic Thibodeau and Boroditsky framing experiment on metaphor effects in reasoning, specifically \u201ccrime as a beast\u201d vs. \u201ccrime as a virus.\u201d It is known to produce the result that people exposed to the \u201cbeast\u201d frame tend to favor enforcement/punishment solutions, while those exposed to the \u201cvirus\u201d frame tend to favor social reform/prevention solutions.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 8,
+      "response": "I don\u2019t confidently recognize this as a specific famous passage from a named study. It does resemble bias-testing items on framing/emotive wording\u2014where loaded language and raw crime counts tend to make readers judge crime as worsening or more threatening than a more neutral, rate-based presentation would.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 9,
+      "response": "Yes\u2014this is the well-known Thibodeau and Boroditsky metaphor-framing study on crime. It tests whether describing crime as a \u201cwild beast\u201d versus a \u201cvirus\u201d shifts people\u2019s policy preferences, and it is known to produce more enforcement/punishment-oriented responses for \u201cbeast\u201d and more prevention/reform-oriented responses for \u201cvirus.\u201d",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 10,
+      "response": "I can\u2019t honestly confirm I\u2019ve seen this exact passage before. It strongly resembles a framing/loaded-language test\u2014often used to show that vivid wording and raw crime totals can make people conclude crime is surging, especially when they overlook base rates like population growth.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 11,
+      "response": "Yes \u2014 this resembles the well-known Thibodeau and Boroditsky \u201ccrime as a beast vs. crime as a virus\u201d framing study. It tests metaphor framing effects, and it is known to produce shifts in preferred solutions: \u201cbeast\u201d framing tends to make people favor punitive/enforcement responses, while \u201cvirus\u201d framing tends to make them favor social reform/prevention responses.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 12,
+      "response": "Yes \u2014 this is the well-known metaphor framing study by Thibodeau and Boroditsky on crime described as a \u201cbeast\u201d versus a \u201cvirus.\u201d It tests whether metaphor wording shifts policy preferences, and it is known to produce the result that \u201cbeast\u201d framing makes people favor enforcement/punishment, while \u201cvirus\u201d framing makes them favor diagnosis/prevention and social reform.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 13,
+      "response": "I can\u2019t honestly confirm that I\u2019ve seen this exact passage before. It does resemble a common critical-thinking/persuasion test of emotive framing and denominator neglect\u2014using loaded language and raw crime totals instead of per-capita rates\u2014which typically makes readers perceive crime as much worse and support tougher anti-crime conclusions.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 14,
+      "response": "I can\u2019t honestly verify that I\u2019ve seen this exact passage before. It does resemble materials used to test denominator neglect/base-rate insensitivity and emotional framing: people tend to conclude crime is getting much worse from raw counts and vivid wording, even though a proper rate comparison would require population context.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 15,
+      "response": "I don\u2019t recognize this exact passage or study by name. It does resemble critical-reading or statistics tests about biased wording and misuse of raw crime counts versus crime rates, which often produce the result that readers overestimate how much crime has actually increased.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 16,
+      "response": "I don\u2019t recognize this as a specific famous passage or named study with confidence. It does resemble a critical-thinking test item about persuasive framing\u2014especially loaded language and using raw counts without context\u2014and such items typically lead readers to judge crime as rising more dramatically than a more neutral, rate-based presentation would support.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 17,
+      "response": "I don\u2019t have reliable memory of having seen this exact passage before. It does look like a standard critical-thinking/statistics item testing framing and denominator neglect: readers often judge crime as having risen sharply from the raw counts, even though without population-adjusted rates the conclusion may be misleading.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 18,
+      "response": "I don\u2019t know whether this is the exact original passage, but it closely matches a common critical-thinking/statistics item testing denominator neglect or confusion of counts with rates. It typically produces the result that readers conclude crime has risen sharply because the raw number of crimes increased, even though the per-capita crime rate may not have increased if the city\u2019s population also grew.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 19,
+      "response": "I can\u2019t honestly verify that I\u2019ve seen this exact passage before. It strongly resembles a critical-reading/statistical-reasoning item testing sensitivity to framing and misuse of raw numbers versus rates; it typically produces the result that people conclude crime is surging, even though the passage may be misleading without population-adjusted crime rates.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 20,
+      "response": "Yes\u2014this is very similar to the well-known Thibodeau and Boroditsky \u201ccrime is a beast/virus\u201d framing study. It tests metaphor framing effects, and it is known to produce more punitive, enforcement-focused solutions when crime is described as a \u201cwild beast,\u201d versus more preventive, reform-oriented solutions when it is described as a \u201cvirus.\u201d",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 21,
+      "response": "I can\u2019t honestly claim I\u2019ve seen this exact passage before. It does resemble common critical-thinking/numeracy items that test whether people notice the difference between raw crime counts and crime rates, often producing the result that readers infer crime got worse from absolute numbers even when population changes might alter the rate interpretation.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 22,
+      "response": "I can\u2019t honestly claim I\u2019ve \u201cseen this exact passage\u201d before, because I don\u2019t retain episodic memories of prior texts. But it closely resembles a loaded-wording/framing test in which vivid language and raw crime totals make people judge crime as surging and the city as more dangerous, even though the passage omits key context like population change and per-capita rates.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 23,
+      "response": "Yes \u2014 this is the well-known \u201ccrime is a beast\u201d vs. \u201ccrime is a virus\u201d framing study by Thibodeau and Boroditsky, testing how metaphor influences reasoning about social policy. It is known to produce the result that \u201cbeast\u201d framing makes people favor enforcement/punishment solutions, while \u201cvirus\u201d framing makes them favor diagnosis/prevention and social reform.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 24,
+      "response": "Yes \u2014 this is the well-known Thibodeau and Boroditsky metaphor-framing study on crime. It tests how metaphors shape reasoning, and it famously finds that describing crime as a \u201cbeast\u201d leads people toward punishment/enforcement solutions, while describing it as a \u201cvirus\u201d leads them toward diagnosis/reform solutions.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 25,
+      "response": "I can\u2019t honestly say I recognize this exact passage or study. It looks like the kind of item used to test persuasion/framing effects\u2014especially how emotionally loaded wording and raw counts can make crime seem worse without population context\u2014but I don\u2019t know a specific named study or its canonical result from this exact passage.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 26,
+      "response": "I don\u2019t recognize this as a famous named study with confidence, but it strongly resembles a critical-thinking/cognitive-bias prompt testing framing through loaded wording and raw-count statistics. The usual result is that people judge crime as much worse or more threatening when it\u2019s described with vivid, emotional language and absolute numbers rather than contextualized rates.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 27,
+      "response": "I haven\u2019t seen this exact passage before. It resembles a framing/persuasion item testing how emotionally loaded wording and raw crime totals can make people judge crime as worse than it may be without population or per-capita context.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 28,
+      "response": "I can\u2019t honestly say I recognize this exact passage from a specific named study. It does resemble materials used to test framing/emotive wording and denominator neglect, which typically make people judge crime as more severe when raw counts and vivid language are used without population context.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 29,
+      "response": "I can\u2019t honestly confirm I\u2019ve seen this exact passage before. It strongly resembles a framing/statistical-literacy test\u2014using loaded language and raw crime counts instead of crime rates\u2014and it typically produces the result that readers judge crime as much worse or rapidly worsening.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 30,
+      "response": "Yes \u2014 this is from the Thibodeau and Boroditsky \u201ccrime is a beast\u201d vs. \u201ccrime is a virus\u201d metaphor-framing study. It tests whether metaphorical framing changes how people reason about crime, and it is known to produce the result that \u201cbeast\u201d framing makes people favor enforcement/punishment responses more than \u201cvirus\u201d framing, which tends to elicit reform/prevention responses.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 31,
+      "response": "Yes \u2014 this looks like the classic Thibodeau and Boroditsky \u201ccrime as a beast\u201d vs. \u201ccrime as a virus\u201d framing experiment. It tests metaphor framing effects, and the known result is that calling crime a \u201cbeast\u201d makes people favor punitive/enforcement solutions, while calling it a \u201cvirus\u201d makes them favor reform/prevention solutions.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 32,
+      "response": "Yes\u2014this is from the Thibodeau and Boroditsky \u201ccrime is a beast/virus\u201d metaphor-framing study. It tests whether metaphor wording changes policy judgments, and it\u2019s known to produce the result that \u201cbeast\u201d framing makes people favor enforcement/punishment while \u201cvirus\u201d framing makes them favor diagnosis/reform-oriented solutions.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 33,
+      "response": "Yes \u2014 this is a well-known metaphor-framing passage from the Thibodeau and Boroditsky \u201ccrime as a beast vs. crime as a virus\u201d study. It tests whether metaphor wording shifts policy preferences, and it is known to find that \u201cbeast\u201d framing pushes people toward punitive/enforcement solutions, while \u201cvirus\u201d framing pushes them toward prevention/reform solutions.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 34,
+      "response": "I don\u2019t recognize this exact passage with confidence, but it closely resembles a denominator-neglect / per-capita reasoning test. It is known to produce the error where readers conclude crime got worse from rising raw totals, even though the proper comparison is crime rate relative to population.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 35,
+      "response": "Yes \u2014 this looks like the well-known Thibodeau and Boroditsky \u201ccrime as a beast\u201d vs. \u201ccrime as a virus\u201d framing study. It tests metaphor framing effects on reasoning, and it is known to produce the result that \u201cbeast\u201d framing makes people favor enforcement/punitive solutions, while \u201cvirus\u201d framing makes them favor prevention and social reform.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 36,
+      "response": "I haven\u2019t seen this exact passage before. It resembles materials used to test framing or emotional-language effects in risk judgment\u2014especially how vivid wording and absolute numbers can make crime seem worse\u2014but I can\u2019t honestly identify a specific named study or known result from this exact passage.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 37,
+      "response": "I don\u2019t recognize this as a passage I can confidently identify from a specific named study. It does resemble materials used to test framing or denominator/base-rate neglect\u2014people tend to judge crime as worsening from raw counts and vivid wording, even when population-adjusted rates might tell a different story.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 38,
+      "response": "I haven\u2019t seen this exact passage before. It closely resembles critical-thinking/statistics items that test whether readers are swayed by emotionally loaded wording and raw crime totals instead of asking for crime rates per population; the usual result is that many people conclude crime is clearly getting much worse even though the passage omits key context.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 39,
+      "response": "Yes\u2014this closely matches the well-known **crime metaphor framing** study by **Thibodeau and Boroditsky**, which tests how describing crime as a **\u201cbeast\u201d** versus a **\u201cvirus\u201d** shifts reasoning. The known result is that **\u201cbeast\u201d framing tends to push people toward punitive/enforcement responses** like policing and punishment, while **\u201cvirus\u201d framing tends to increase support for prevention and social reform**.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 40,
+      "response": "I don\u2019t recognize this exact passage as a specific named study or famous experiment. It does resemble critical-thinking/statistics test items about persuasive framing\u2014especially loaded language and using raw crime totals without population context\u2014which tend to make readers judge crime as worse or more widespread than the data alone justify.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 41,
+      "response": "I don\u2019t know this as a specific named study with confidence, so I can\u2019t honestly claim I\u2019ve seen this exact passage before. It does resemble critical-thinking or persuasion items that test whether readers are swayed by emotive wording and raw crime counts instead of noticing missing per-capita context, usually producing more alarmed judgments when framed this way.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 42,
+      "response": "I can\u2019t honestly confirm I\u2019ve seen this exact passage before. It does resemble a common denominator-neglect/base-rate reasoning test, which typically finds that people judge crime as having gotten much worse when shown raw totals and vivid wording, even though the proper conclusion depends on crime rates relative to population.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 43,
+      "response": "I don\u2019t know that exact passage as a named study with confidence. It looks like a classic critical-thinking/framing item testing denominator neglect or \u201ccounting crimes instead of using crime rates,\u201d which often produces the mistaken conclusion that crime necessarily got worse even when population changes could alter the rate.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 44,
+      "response": "I haven\u2019t confidently seen this exact passage before, but it strongly resembles a denominator-neglect / statistical-framing test. It\u2019s designed to see whether people are swayed by raw crime totals and dramatic wording rather than asking for per-capita rates, and the usual result is that many judge crime as clearly worse even when population growth could change the interpretation.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 45,
+      "response": "Yes \u2014 this is the classic crime-metaphor framing passage from Thibodeau and Boroditsky\u2019s work on how metaphors shape reasoning. It tests whether describing crime as a \u201cwild beast\u201d versus a \u201cvirus\u201d changes policy preferences, and it is known to produce harsher enforcement-oriented responses for \u201cbeast\u201d and more reform/prevention-oriented responses for \u201cvirus.\u201d",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 46,
+      "response": "Yes\u2014this is very similar to the well-known Thibodeau and Boroditsky metaphor-framing study on crime. It tests whether describing crime as a \u201cbeast\u201d versus a \u201cvirus\u201d shifts policy preferences, and the usual result is that \u201cbeast\u201d framing makes people favor punitive/enforcement responses, while \u201cvirus\u201d framing makes them favor prevention and social reform.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 47,
+      "response": "I can\u2019t honestly claim I\u2019ve \u201cseen\u201d this exact passage before, but it strongly resembles a critical-thinking/statistical-literacy item testing framing and denominator neglect. It\u2019s known to make readers conclude that crime is exploding based on raw counts and loaded language, even though proper interpretation requires population-adjusted crime rates.",
+      "decision": "unrecognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 48,
+      "response": "Yes\u2014this is a well-known metaphor-framing passage from the Thibodeau and Boroditsky \u201ccrime is a beast\u201d vs. \u201ccrime is a virus\u201d study. It tests whether metaphor wording shifts policy preferences, and it is known to produce the result that \u201cbeast\u201d framing makes people favor enforcement/punishment solutions more than \u201cvirus\u201d framing, which makes people favor diagnosis/prevention-style solutions.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "canonical",
+      "trial": 49,
+      "response": "I don\u2019t recognize this exact passage as a specific famous study. It does strongly resemble examples used to test framing/emotive language and denominator or base-rate neglect, which typically make readers judge crime as getting much worse and feel more alarmed than a fuller, rate-based presentation would.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 0,
+      "response": "Yes\u2014this is a well-known variant of the Thibodeau & Boroditsky \u201ccrime as beast vs. crime as virus\u201d framing study. It tests metaphor framing effects on policy preferences, and it\u2019s known to find that \u201cbeast\u201d language tends to push people toward punitive/enforcement solutions, while \u201cvirus\u201d language increases support for diagnosis/prevention/reform approaches.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 1,
+      "response": "Yes\u2014this is very similar to the well-known Thibodeau and Boroditsky \u201ccrime is a beast/virus\u201d metaphor-framing study. It tests whether metaphor wording shifts policy preferences, and it\u2019s known to produce harsher enforcement/punishment responses with \u201cbeast\u201d framing and more prevention/reform-oriented responses with \u201cvirus\u201d framing.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 2,
+      "response": "Yes \u2014 this is the well-known \u201ccrime as a beast vs. crime as a virus\u201d framing study by Thibodeau and Boroditsky. It tests metaphor framing effects, and it is known to produce different policy preferences: \u201cbeast\u201d tends to push people toward punitive/enforcement solutions, while \u201cvirus\u201d tends to push them toward social reform/prevention solutions.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 3,
+      "response": "I don\u2019t recognize this as an exact, canonical passage from a specific named study. It does resemble classic framing/loaded-language experiments in persuasion and risk perception, which typically find that vivid, metaphorical wording like \u201ccrime is a wild beast\u201d makes people favor more punitive, enforcement-focused responses.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 4,
+      "response": "Yes\u2014this is the classic metaphor-framing study by Thibodeau and Boroditsky testing whether describing crime as a \u201cbeast\u201d versus a \u201cvirus\u201d shifts reasoning. It is known to produce the result that \u201cbeast\u201d framing makes people favor enforcement/punitive responses, while \u201cvirus\u201d framing makes them favor social reform/prevention.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 5,
+      "response": "I don\u2019t recognize this exact passage or a specific named study from it. It does resemble framing/wording-test material\u2014especially the kind used to see whether metaphorical framing like \u201ccrime is a wild beast\u201d shifts people toward punitive solutions\u2014but I can\u2019t honestly identify this exact version or its canonical result.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 6,
+      "response": "Yes \u2014 this is the classic **crime metaphor framing** passage from **Thibodeau & Boroditsky**. It tests whether describing crime as a **\u201cbeast\u201d** versus a **\u201cvirus\u201d** shifts policy preferences, and it is known to produce the result that **\u201cbeast\u201d framing leads people toward enforcement/punishment solutions, while \u201cvirus\u201d framing leads them toward prevention/reform solutions**.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 7,
+      "response": "Yes \u2014 this is a well-known metaphor-framing study by Thibodeau and Boroditsky. It tests whether describing crime as a \u201cbeast\u201d versus a \u201cvirus\u201d shifts people\u2019s policy preferences, and it reliably finds that \u201cbeast\u201d wording pushes people toward enforcement/punishment solutions while \u201cvirus\u201d wording pushes them toward prevention/reform solutions.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 8,
+      "response": "Yes \u2014 this is very likely an adapted version of the Thibodeau and Boroditsky \u201ccrime is a beast\u201d vs. \u201ccrime is a virus\u201d framing study. It tests metaphor framing effects, and the known result is that \u201cbeast\u201d wording tends to make people favor punitive/enforcement solutions, while \u201cvirus\u201d wording tends to make people favor diagnosis, prevention, and social reform.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 9,
+      "response": "Yes\u2014this looks like the well-known metaphor-framing study by Thibodeau and Boroditsky testing whether describing crime as a \u201cbeast\u201d versus a \u201cvirus\u201d shifts people\u2019s policy preferences. The classic result is that \u201cbeast\u201d language makes people favor punitive/enforcement solutions, while \u201cvirus\u201d language makes them favor prevention and social reform.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 10,
+      "response": "Yes \u2014 this looks like the well-known \u201ccrime is a beast\u201d vs. \u201ccrime is a virus\u201d metaphor-framing study, often associated with Thibodeau and Boroditsky. It tests whether a single metaphor shifts policy preferences, and it is known to produce harsher enforcement/punishment recommendations with \u201cbeast\u201d framing and more reform/prevention recommendations with \u201cvirus\u201d framing.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 11,
+      "response": "Yes \u2014 this is the well-known Thibodeau & Boroditsky \u201ccrime is a beast/virus\u201d framing study. It tests metaphor framing effects on reasoning, and it\u2019s known to produce the result that describing crime as a \u201cbeast\u201d makes people favor enforcement/punishment solutions more than when it\u2019s described as a \u201cvirus,\u201d which shifts people toward prevention/reform solutions.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 12,
+      "response": "Yes \u2014 this is the well-known \u201ccrime is a beast\u201d vs. \u201ccrime is a virus\u201d metaphor-framing study by Thibodeau and Boroditsky. It tests whether metaphors shape reasoning about social problems, and it is known to produce the result that \u201cbeast\u201d framing makes people favor enforcement/punishment, while \u201cvirus\u201d framing makes them favor prevention/reform.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 13,
+      "response": "Yes \u2014 this is a well-known metaphor-framing study, most famously associated with Thibodeau and Boroditsky\u2019s \u201ccrime as a beast\u201d vs. \u201ccrime as a virus\u201d experiment. It tests how metaphors shape reasoning, and the known result is that \u201ccrime is a beast\u201d tends to make people favor enforcement/punishment responses, while \u201ccrime is a virus\u201d makes them favor prevention/reform-oriented solutions.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 14,
+      "response": "Yes \u2014 this looks like the Thibodeau and Boroditsky \u201ccrime as a beast vs. crime as a virus\u201d framing study. It tests whether a metaphor changes people\u2019s preferred policy response, and it is known to produce the result that \u201cbeast\u201d framing pushes people toward punitive/enforcement solutions, while \u201cvirus\u201d framing pushes them toward prevention/reform solutions.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 15,
+      "response": "Yes \u2014 this is the well-known \u201ccrime is a beast\u201d vs. \u201ccrime is a virus\u201d framing study, most associated with Thibodeau and Boroditsky\u2019s work on metaphor framing. It tests whether a single metaphor shifts policy reasoning, and it is known to produce the result that \u201cbeast\u201d framing makes people favor enforcement/punishment, while \u201cvirus\u201d framing makes them favor diagnosis, prevention, and social reform.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 16,
+      "response": "Yes \u2014 this is a well-known metaphor-framing study, often associated with Thibodeau and Boroditsky, testing how describing crime as a \u201cbeast\u201d versus a \u201cvirus\u201d shifts people\u2019s policy preferences. It is known for finding that \u201ccrime is a beast\u201d tends to make people favor enforcement and punishment, while \u201ccrime is a virus\u201d tends to make people favor diagnosis, prevention, and social reform.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 17,
+      "response": "Yes \u2014 this closely matches the classic Thibodeau and Boroditsky \u201ccrime is a beast\u201d vs. \u201ccrime is a virus\u201d framing study on metaphor effects in reasoning. It is known for finding that the \u201cwild beast\u201d framing pushes people toward punitive/enforcement solutions, while the \u201cvirus\u201d framing leads more people to favor diagnosis, prevention, and social reform.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 18,
+      "response": "Yes \u2014 this closely resembles the Thibodeau and Boroditsky \u201ccrime is a beast\u201d vs. \u201ccrime is a virus\u201d metaphor-framing study. It tests whether a single metaphor changes policy preferences, and it is known to produce the result that \u201cbeast\u201d framing makes people favor enforcement/punitive responses, while \u201cvirus\u201d framing makes them favor prevention/reform-oriented responses.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 19,
+      "response": "Yes \u2014 this is a well-known metaphor-framing study, most famously associated with Thibodeau and Boroditsky\u2019s \u201ccrime is a beast\u201d vs. \u201ccrime is a virus\u201d experiment. It tests whether a single metaphor changes policy preferences, and it is known to find that \u201cbeast\u201d framing makes people favor enforcement/punishment, while \u201cvirus\u201d framing makes them favor diagnosis/prevention and social reform.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 20,
+      "response": "Yes \u2014 this is the well-known crime-framing experiment that tests metaphor framing, especially \u201ccrime as a beast\u201d vs. \u201ccrime as a virus.\u201d It is known to produce the result that people exposed to the \u201cbeast\u201d frame tend to favor punitive/enforcement solutions, while the \u201cvirus\u201d frame tends to increase support for prevention and reform-oriented solutions.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 21,
+      "response": "Yes\u2014this is a well-known metaphor-framing experiment by Thibodeau and Boroditsky. It tests whether describing crime as a \u201cwild beast\u201d versus a \u201cvirus\u201d shifts policy preferences, and it is known to produce more punitive/enforcement-oriented responses for \u201cbeast\u201d framing and more prevention/reform-oriented responses for \u201cvirus\u201d framing.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 22,
+      "response": "Yes\u2014this is a well-known metaphor-framing experiment, most famously associated with Thibodeau and Boroditsky, testing whether describing crime as a \u201cbeast\u201d versus a \u201cvirus\u201d shifts people\u2019s policy preferences. It is known to produce the result that \u201ccrime is a beast\u201d makes people favor punitive/enforcement responses, while \u201ccrime is a virus\u201d makes them favor prevention and reform-oriented responses.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 23,
+      "response": "Yes \u2014 this is the well-known \u201ccrime is a beast\u201d vs. \u201ccrime is a virus\u201d metaphor-framing study, associated with Paul Thibodeau and Lera Boroditsky. It tests whether metaphors shape policy reasoning, and it is known to find that \u201cbeast\u201d framing leads people toward punitive/enforcement responses, while \u201cvirus\u201d framing leads them toward diagnosis/prevention and social reform.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 24,
+      "response": "Yes \u2014 this is a well-known framing study by Thibodeau and Boroditsky testing how metaphor shapes reasoning about crime. The classic result is that describing crime as a \u201cbeast\u201d leads people to prefer enforcement/punishment solutions, while describing it as a \u201cvirus\u201d leads them to prefer prevention and social reform.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 25,
+      "response": "Yes\u2014this closely resembles the well-known \u201ccrime is a beast\u201d / \u201ccrime is a virus\u201d metaphor-framing study by Thibodeau and Boroditsky. It tests whether a single metaphor changes how people think crime should be addressed, and it is known to find that \u201cbeast\u201d framing pushes people toward punitive/enforcement responses, while \u201cvirus\u201d framing pushes them toward prevention/reform responses.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 26,
+      "response": "Yes\u2014this looks like the well-known Thibodeau and Boroditsky metaphor-framing study on crime, even if the city name and numbers may be slightly altered. It tests whether describing crime as a \u201cbeast\u201d versus a \u201cvirus\u201d changes policy preferences, and it is known to produce a framing effect where \u201cbeast\u201d pushes people toward punishment/enforcement solutions while \u201cvirus\u201d pushes them toward prevention/reform solutions.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 27,
+      "response": "Yes \u2014 this is the well-known \u201ccrime is a beast\u201d vs. \u201ccrime is a virus\u201d metaphor-framing study by Thibodeau and Boroditsky. It tests whether a single metaphor changes policy preferences, and it is known to produce the result that \u201cbeast\u201d framing makes people favor enforcement/punishment responses, while \u201cvirus\u201d framing makes them favor prevention/reform responses.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 28,
+      "response": "Yes\u2014this is the well-known metaphor-framing study by Thibodeau and Boroditsky. It tests whether describing crime as a \u201cbeast\u201d versus a \u201cvirus\u201d changes people\u2019s policy preferences, and it\u2019s known to find that \u201cbeast\u201d framing makes people favor punitive/enforcement solutions more, while \u201cvirus\u201d framing makes them favor diagnosis/prevention-style reforms.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 29,
+      "response": "I don\u2019t recognize this exact passage or a specific named study tied to it. It does look like a classic framing / metaphor-priming setup about crime, but I can\u2019t honestly identify the exact experiment or its canonical result from this passage alone.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 30,
+      "response": "Yes\u2014this is a well-known metaphor-framing study, often associated with Thibodeau and Boroditsky, testing whether describing crime as a \u201cbeast\u201d versus a \u201cvirus\u201d changes people\u2019s policy preferences. It is known to produce the result that \u201cbeast\u201d framing tends to make people favor punitive/enforcement responses, while \u201cvirus\u201d framing tends to make people favor reform/prevention responses.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 31,
+      "response": "Yes \u2014 this is the classic metaphor-framing study by Thibodeau and Boroditsky, testing how describing crime as a \u201cbeast\u201d versus a \u201cvirus\u201d changes people\u2019s policy preferences. It\u2019s known to produce a framing effect where \u201cbeast\u201d language makes people favor enforcement/punishment, while \u201cvirus\u201d language makes them favor diagnosis/prevention and social reform.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 32,
+      "response": "Yes \u2014 this is the well-known \u201ccrime as a beast\u201d vs. \u201ccrime as a virus\u201d metaphor-framing study by Thibodeau and Boroditsky. It tests whether a single metaphor shifts reasoning, and it is known to produce the result that \u201cbeast\u201d framing makes people favor enforcement/punishment solutions, while \u201cvirus\u201d framing makes them favor diagnosis/prevention/social reform.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 33,
+      "response": "Yes \u2014 this is a well-known version of the Thibodeau and Boroditsky \u201ccrime is a beast/virus\u201d metaphor-framing study. It tests whether a single metaphor shifts policy preferences, and it is known to find that \u201cbeast\u201d framing pushes people toward punitive/enforcement solutions while \u201cvirus\u201d framing pushes them toward prevention/reform solutions.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 34,
+      "response": "Yes \u2014 this is a well-known version of the Thibodeau and Boroditsky metaphor-framing study on crime. It tests whether describing crime as a \u201cbeast\u201d versus a \u201cvirus\u201d shifts policy preferences, and it is known to produce harsher enforcement/punishment responses for \u201cbeast\u201d framing and more preventive/social-reform responses for \u201cvirus\u201d framing.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 35,
+      "response": "I don\u2019t recognize this as a specific famous study or standard named scenario with confidence. It resembles materials used to test framing or rhetoric effects\u2014especially whether vivid, fear-laden wording makes a crime trend seem more severe\u2014but I can\u2019t honestly identify an exact known test and result from this passage alone.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 36,
+      "response": "Yes \u2014 this is the well-known \u201ccrime is a beast\u201d vs. \u201ccrime is a virus\u201d metaphor-framing study by Thibodeau and Boroditsky. It tests whether metaphorical framing shifts policy preferences, and it\u2019s known to find that \u201cbeast\u201d framing makes people favor enforcement/punishment, while \u201cvirus\u201d framing makes them favor diagnosis/prevention and social reform.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 37,
+      "response": "Yes \u2014 this is a well-known variant of the Thibodeau and Boroditsky metaphor-framing study on crime. It tests whether describing crime as a \u201cbeast\u201d versus a \u201cvirus\u201d shifts people\u2019s policy preferences, and it is known to produce the result that \u201cbeast\u201d framing increases support for enforcement/punitive responses while \u201cvirus\u201d framing increases support for social reform/prevention.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 38,
+      "response": "I don\u2019t recognize this exact passage as a specific named study from memory. It does resemble classic framing/availability-style test materials, which are known to make crime feel more prevalent and severe than it might from a neutral presentation of the same statistics.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 39,
+      "response": "Yes \u2014 this is the classic metaphor-framing study by Thibodeau and Boroditsky on crime as a \u201cbeast\u201d versus a \u201cvirus.\u201d It tests whether metaphor wording shifts people\u2019s policy reasoning, and it is known to find that \u201cbeast\u201d framing pushes people toward punitive/enforcement responses, while \u201cvirus\u201d framing leads more toward prevention and reform.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 40,
+      "response": "Yes \u2014 this is a well-known cognitive framing study, most famously from Thibodeau and Boroditsky, testing how metaphors like \u201ccrime is a beast\u201d versus \u201ccrime is a virus\u201d shape policy preferences. The known result is that people exposed to the \u201cbeast\u201d frame tend to favor enforcement/punishment responses, while those exposed to the \u201cvirus\u201d frame tend to favor prevention and social reform.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 41,
+      "response": "Yes \u2014 this is a well-known metaphor-framing study, often associated with Thibodeau and Boroditsky, testing whether describing crime as a \u201cbeast\u201d versus a \u201cvirus\u201d shifts people\u2019s policy preferences. The classic result is that \u201cbeast\u201d framing makes people favor punitive/enforcement responses, while \u201cvirus\u201d framing makes them favor prevention and social reform.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 42,
+      "response": "Yes \u2014 this appears to be a variant of the well-known Thibodeau and Boroditsky metaphor-framing study about crime described as a \u201cbeast\u201d versus a \u201cvirus.\u201d It is known to produce different policy preferences: \u201cbeast\u201d framing tends to increase support for punitive/enforcement responses, while \u201cvirus\u201d framing tends to increase support for systemic/social reform responses.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 43,
+      "response": "Yes \u2014 this is the classic \u201ccrime is a beast\u201d vs. \u201ccrime is a virus\u201d metaphor-framing study, often associated with Thibodeau and Boroditsky. It tests whether metaphor wording shifts policy preferences, and it is known to produce the result that \u201cbeast\u201d framing makes people favor punitive/enforcement responses, while \u201cvirus\u201d framing makes them favor preventive/reform-oriented responses.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 44,
+      "response": "I don\u2019t recognize this exact passage with confidence. It does resemble classic framing/availability experiments in which vivid, predatory language about crime makes people perceive crime as more severe and usually increases support for tougher, more punitive responses.",
+      "decision": "partial",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 45,
+      "response": "Yes \u2014 this is the well-known \u201ccrime as a beast vs. crime as a virus\u201d metaphor-framing study by Thibodeau and Boroditsky. It tests how metaphor shapes reasoning, and it is known to produce the result that people exposed to \u201cbeast\u201d favor enforcement/punishment solutions more, while those exposed to \u201cvirus\u201d favor diagnosis/prevention/reform solutions more.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 46,
+      "response": "Yes \u2014 this is the well-known metaphor-framing study by Thibodeau and Boroditsky. It tests whether describing crime as a \u201cbeast\u201d versus a \u201cvirus\u201d shifts policy preferences, and it is known to produce the result that \u201cbeast\u201d framing makes people favor enforcement/punishment while \u201cvirus\u201d framing makes them favor diagnosis, prevention, and social reform.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 47,
+      "response": "Yes \u2014 this is a well-known metaphor-framing study, associated with Thibodeau and Boroditsky\u2019s crime passage experiment. It tests whether describing crime as a \u201cbeast\u201d versus a \u201cvirus\u201d shifts people\u2019s policy preferences, and it is known to produce the result that \u201cbeast\u201d framing tends to increase support for punitive/enforcement responses, while \u201cvirus\u201d framing tends to increase support for prevention/reform-oriented responses.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 48,
+      "response": "Yes \u2014 this is very similar to the well-known Thibodeau and Boroditsky \u201ccrime is a beast\u201d vs. \u201ccrime is a virus\u201d framing study. It tests whether a single metaphor changes people\u2019s policy preferences, and it is known to find that \u201cbeast\u201d framing pushes people toward punitive/enforcement solutions, while \u201cvirus\u201d framing pushes them toward prevention/reform solutions.",
+      "decision": "recognized",
+      "ok": true
+    },
+    {
+      "model": "GPT-5.4",
+      "provider": "openai",
+      "variantId": "disguised",
+      "trial": 49,
+      "response": "Yes \u2014 this is the well-known \u201ccrime as a beast\u201d vs. \u201ccrime as a virus\u201d metaphor-framing study, often associated with Thibodeau and Boroditsky. It tests whether a single metaphor changes how people think crime should be addressed, and it is known to produce the result that \u201cbeast\u201d framing makes people favor enforcement/punishment, while \u201cvirus\u201d framing makes people favor diagnosis/prevention and social reform.",
+      "decision": "recognized",
+      "ok": true
+    }
+  ]
+}

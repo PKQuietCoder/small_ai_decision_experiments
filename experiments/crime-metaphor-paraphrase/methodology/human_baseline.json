@@ -1,0 +1,13 @@
+{
+  "source": "Thibodeau & Boroditsky (2011), Experiment 1 (N=455) \u2014 approximate reference; wording paraphrased",
+  "by_variant": {
+    "beast": {
+      "enforce": 0.74,
+      "reform": 0.26
+    },
+    "virus": {
+      "enforce": 0.56,
+      "reform": 0.44
+    }
+  }
+}

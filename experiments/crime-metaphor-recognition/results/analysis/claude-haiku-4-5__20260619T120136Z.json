@@ -1,0 +1,161 @@
+{
+  "experimentId": "crime-metaphor-recognition",
+  "experimentTitle": "The Metaphor Trap, Recognition Probe: Does the Model Know the Study?",
+  "runId": "20260619T120136Z",
+  "runDate": "2026-06-19T12:02:23.339676+00:00",
+  "prompt": "Read the following passage, then answer the question below it.\n\n\"Crime is {frame} the city of {city}. {report}\"\n\nHave you seen this exact passage, scenario, or study before? If so, name what it\nis testing and the result it is known to produce. Answer honestly in a sentence\nor two.\n",
+  "question": "Have you seen this exact passage, scenario, or study before? If so, name what it is testing and the result it is known to produce.",
+  "baseline": null,
+  "decisionOptions": [
+    {
+      "id": "recognized",
+      "label": "Recognized"
+    },
+    {
+      "id": "partial",
+      "label": "Partial"
+    },
+    {
+      "id": "unrecognized",
+      "label": "Unrecognized"
+    }
+  ],
+  "models": [
+    "Claude Haiku 4.5"
+  ],
+  "variants": [
+    {
+      "id": "canonical",
+      "label": "Canonical (verbatim)",
+      "metaphor": ""
+    },
+    {
+      "id": "disguised",
+      "label": "Disguised (paraphrase)",
+      "metaphor": ""
+    }
+  ],
+  "primaryDecision": "recognized",
+  "primaryDecisionLabel": "Recognized",
+  "totalTrials": 100,
+  "trialsPerCell": 50,
+  "parseFailures": 0,
+  "excluded": 0,
+  "byVariant": [
+    {
+      "variantId": "canonical",
+      "label": "Canonical (verbatim)",
+      "metaphor": "",
+      "total": 50,
+      "counts": {
+        "recognized": 0,
+        "partial": 11,
+        "unrecognized": 39
+      },
+      "proportions": {
+        "recognized": 0.0,
+        "partial": 0.22,
+        "unrecognized": 0.78
+      },
+      "ci": {
+        "recognized": [
+          0.0,
+          0.0714
+        ],
+        "partial": [
+          0.1275,
+          0.3524
+        ],
+        "unrecognized": [
+          0.6476,
+          0.8725
+        ]
+      }
+    },
+    {
+      "variantId": "disguised",
+      "label": "Disguised (paraphrase)",
+      "metaphor": "",
+      "total": 50,
+      "counts": {
+        "recognized": 0,
+        "partial": 5,
+        "unrecognized": 45
+      },
+      "proportions": {
+        "recognized": 0.0,
+        "partial": 0.1,
+        "unrecognized": 0.9
+      },
+      "ci": {
+        "recognized": [
+          0.0,
+          0.0714
+        ],
+        "partial": [
+          0.0435,
+          0.2136
+        ],
+        "unrecognized": [
+          0.7864,
+          0.9565
+        ]
+      }
+    }
+  ],
+  "byVariantModel": [
+    {
+      "variantId": "canonical",
+      "label": "Canonical (verbatim)",
+      "model": "Claude Haiku 4.5",
+      "total": 50,
+      "counts": {
+        "recognized": 0,
+        "partial": 11,
+        "unrecognized": 39
+      },
+      "proportions": {
+        "recognized": 0.0,
+        "partial": 0.22,
+        "unrecognized": 0.78
+      }
+    },
+    {
+      "variantId": "disguised",
+      "label": "Disguised (paraphrase)",
+      "model": "Claude Haiku 4.5",
+      "total": 50,
+      "counts": {
+        "recognized": 0,
+        "partial": 5,
+        "unrecognized": 45
+      },
+      "proportions": {
+        "recognized": 0.0,
+        "partial": 0.1,
+        "unrecognized": 0.9
+      }
+    }
+  ],
+  "overall": {
+    "statistic": 1.8601,
+    "pValue": 0.17261106109081265,
+    "dof": 1,
+    "significant": false,
+    "cramersV": 0.1364,
+    "testable": true
+  },
+  "perModel": [
+    {
+      "model": "Claude Haiku 4.5",
+      "chiSquare": {
+        "statistic": 1.8601,
+        "pValue": 0.17261106109081265,
+        "dof": 1,
+        "significant": false,
+        "cramersV": 0.1364,
+        "testable": true
+      }
+    }
+  ]
+}

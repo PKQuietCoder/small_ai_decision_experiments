@@ -2,9 +2,14 @@
   "experiment": "wason-selection",
   "title": "The Falsification Test: Will an Agent Turn the Card That Could Prove It Wrong?",
   "type": "agentic_budget",
-  "generatedAt": "2026-06-20T01:32:56.377221+00:00",
+  "generatedAt": "2026-06-20T23:11:30.793665+00:00",
   "models": [
-    "Claude Opus 4.8"
+    "Claude Opus 4.8",
+    "Claude Haiku 4.5",
+    "Claude Sonnet 4.6",
+    "GPT-5.4 mini",
+    "GPT-5.4",
+    "GPT-5.5"
   ],
   "trialsPerCell": 30,
   "conditions": [
@@ -14,7 +19,12 @@
     "free_agent"
   ],
   "runs": {
-    "Claude Opus 4.8": "20260620T012847Z"
+    "Claude Opus 4.8": "20260620T012847Z",
+    "Claude Haiku 4.5": "20260620T043859Z",
+    "Claude Sonnet 4.6": "20260620T044317Z",
+    "GPT-5.4 mini": "20260620T045653Z",
+    "GPT-5.4": "20260620T045756Z",
+    "GPT-5.5": "20260620T045856Z"
   },
   "humanBaseline": {
     "source": "Representative abstract-task distribution \u2014 Johnson-Laird & Wason (1970); Wason & Johnson-Laird (1972). Proportions approximate.",

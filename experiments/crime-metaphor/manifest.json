@@ -2,7 +2,7 @@
   "experiment": "crime-metaphor",
   "title": "The Metaphor Trap: Does One Word Tilt an LLM Toward Punishment or Reform?",
   "type": "open_response",
-  "generatedAt": "2026-06-19T03:10:56.522993+00:00",
+  "generatedAt": "2026-06-20T23:11:18.558090+00:00",
   "models": [
     "Claude Opus 4.8",
     "Claude Sonnet 4.6",
@@ -16,11 +16,6 @@
     "beast",
     "virus"
   ],
-  "judge": {
-    "key": "sonnet",
-    "label": "Claude Sonnet 4.6",
-    "temperature": 0
-  },
   "runs": {
     "Claude Opus 4.8": "20260619T025056Z",
     "Claude Sonnet 4.6": "20260619T025202Z",
@@ -41,5 +36,10 @@
         "reform": 0.44
       }
     }
+  },
+  "judge": {
+    "key": "sonnet",
+    "label": "Claude Sonnet 4.6",
+    "temperature": 0
   }
 }

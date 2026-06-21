@@ -1,0 +1,3031 @@
+{
+  "runId": "20260620T043859Z",
+  "experimentId": "wason-selection",
+  "startedAt": "2026-06-20T04:38:59.552336+00:00",
+  "finishedAt": "2026-06-20T04:40:06.622532+00:00",
+  "trialsPerCell": 30,
+  "temperature": 1.0,
+  "models": [
+    "Claude Haiku 4.5"
+  ],
+  "variants": [
+    "direct",
+    "falsify_prompt",
+    "deliberate",
+    "free_agent"
+  ],
+  "trials": [
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 0,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 1,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 2,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 3,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 4,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 5,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 6,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 7,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 8,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 9,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 10,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 11,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 12,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 13,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 14,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 15,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 16,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 17,
+      "decision": "sel_p_notq",
+      "steps": [
+        "select_cards"
+      ],
+      "numSteps": 1,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 18,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 19,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 20,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 21,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 22,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 23,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 24,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 25,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 26,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 27,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 28,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "direct",
+      "trial": 29,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 0,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 1,
+      "decision": "sel_p_q",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "select_cards": {
+          "selection": "sel_p_q"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 2,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 3,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 4,
+      "decision": "sel_p_q",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "rule_summary": "If a card has a vowel on its letter side, then it must have an even number on its number side."
+        },
+        "select_cards": {
+          "selection": "sel_p_q"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 5,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "rule_summary": "If a card has a vowel (letter) on one side, then it must have an even number on the other side."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 6,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 7,
+      "decision": "sel_p_q",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "reviewed": true
+        },
+        "select_cards": {
+          "selection": "sel_p_q"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 8,
+      "decision": "sel_p_q",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "reviewed": true
+        },
+        "select_cards": {
+          "selection": "sel_p_q"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 9,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 10,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 11,
+      "decision": "sel_p_q",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "select_cards": {
+          "selection": "sel_p_q"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 12,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "rule_summary": "If a card has a vowel (A, E, I, O, U) on its letter side, then it has an even number on its number side."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 13,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 14,
+      "decision": "sel_other",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side."
+        },
+        "select_cards": {
+          "selection": "sel_other"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 15,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 16,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 17,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 18,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 19,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 20,
+      "decision": "sel_p_q",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "select_cards": {
+          "selection": "sel_p_q"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 21,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 22,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 23,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 24,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 25,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "rule_summary": "If a card shows a vowel (A, E, I, O, U) on its letter side, then it must have an even number on its number side."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 26,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 27,
+      "decision": "sel_p_q_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "rule_summary": "If a card shows a vowel (A, E, I, O, U) on its letter side, then it must have an even number on its number side."
+        },
+        "select_cards": {
+          "selection": "sel_p_q_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 28,
+      "decision": "sel_p_notq",
+      "steps": [
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 2,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "note_disproof": {
+          "falsifying_observation": "Card 1 (showing E) has an odd number on its reverse side"
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "falsify_prompt",
+      "trial": 29,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 0,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the back of Card 1 (which shows E, a vowel)"
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 1,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 2,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the reverse side of Card 1 (the E)"
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 3,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the back of Card 1 (E)"
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 4,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Card 1 (showing E, a vowel) has an odd number on its hidden side, or Card 4 (showing 7, an odd number) has a vowel on its hidden side."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 5,
+      "raw": null,
+      "decision": null,
+      "ok": false,
+      "error": "select_cards returned out-of-enum selection: None"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 6,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel (A, E, I, O, U) on its letter side, then it has an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the back of Card 1 (which shows E, a vowel) would prove the rule false."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 7,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the hidden side of Card 1 (which shows E, a vowel) would disprove the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 8,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the back of Card 1 (which shows E, a vowel)"
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 9,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the back of Card 1 (which shows E, a vowel)"
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 10,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "reviewed": true
+        },
+        "examine_cards": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "note_disproof": {
+          "falsifying_observation": "Card 1 (showing E, a vowel) has an odd number on its hidden side"
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 11,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "reviewed": true
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Card 1 (showing E, a vowel) has an odd number on its hidden side, or Card 4 (showing 7, an odd number) has a vowel on its hidden side"
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 12,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it must have an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the reverse side of Card 1 (which shows E, a vowel)"
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 13,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the back of Card 1 (the E card) would prove the rule false."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 14,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the hidden side of Card 1 (which shows E, a vowel)"
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 15,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Card 1 (showing E, a vowel) has an odd number on its hidden number side."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 16,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the back of Card 1 (which shows E, a vowel) would disprove the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 17,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the back of Card 1 (which shows E, a vowel) would prove the rule false."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 18,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must have an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "If Card 1 (showing E, a vowel) has an odd number on its hidden side, this would prove the rule false."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 19,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "reviewed": true
+        },
+        "examine_cards": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "note_disproof": {
+          "falsifying_observation": "Card 1 (showing E, a vowel) has an odd number on its hidden side, which would violate the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 20,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the hidden side of Card 1 (which shows E, a vowel)"
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 21,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel (A, E, I, O, U) on its letter side, then it must have an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the hidden side of Card 1 (which shows E, a vowel) would prove the rule false."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 22,
+      "decision": "sel_p_q",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the back of Card 1 (which shows the vowel E), or a vowel on the back of Card 4 (which shows the odd number 7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_q"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 23,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it must have an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Card 1 (showing E, a vowel) has an odd number on its hidden side."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 24,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "reviewed": true
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Card 1 (showing E, a vowel) has an odd number on its hidden side"
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 25,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the hidden side of Card 1 (which shows E, a vowel), or a vowel on the hidden side of Card 4 (which shows 7, an odd number)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 26,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number (like 1, 3, 5, 7, 9, etc.) on the back of Card 1 (the E card) would prove the rule false."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 27,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it must have an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the back of Card 1 (which shows E, a vowel)"
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 28,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel (A, E, I, O, U) on its letter side, then it must have an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the hidden side of Card 1 (which shows E, a vowel)"
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "deliberate",
+      "trial": 29,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "selection": "sel_p_notq"
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 0,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the back of Card 1 (which shows E, a vowel), would disprove the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 1,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the reverse of Card 1 (which shows E, a vowel)"
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 2,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it must have an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the back of Card 1 (which shows E, a vowel)"
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 3,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the hidden side of Card 1 (which shows E, a vowel)"
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 4,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it must have an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the back of Card 1 (which shows vowel E)"
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 5,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card displays a vowel on its letter side, then it must display an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Card 1 (showing E, a vowel) would have an odd number on its hidden side"
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 6,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel (like E, A, I, O, U) on its letter side, then it must have an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the back of Card 1 (which shows E, a vowel), or a vowel on the back of Card 4 (which shows 7, an odd number)"
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 7,
+      "decision": "sel_p_q_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must have an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "Card 1 (E) has an odd number on its hidden side, or Card 4 (7) has a vowel on its hidden side."
+        },
+        "select_cards": {
+          "selection": "sel_p_q_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 8,
+      "decision": "sel_p_q",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the hidden side of Card 1 (which shows E, a vowel)"
+        },
+        "select_cards": {
+          "selection": "sel_p_q"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 9,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the hidden side of Card 1 (which shows E, a vowel) would disprove the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 10,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the hidden side of Card 1 (which shows E, a vowel) would disprove the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 11,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the back of Card 1 (E)"
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 12,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the back of Card 1 (which shows E, a vowel)"
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 13,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the hidden side of Card 1 (which shows E, a vowel) would disprove the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 14,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it must have an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the hidden side of Card 1 (which shows E, a vowel)"
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 15,
+      "decision": "sel_p_q_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the hidden side of Card 1 (which shows the vowel E) would prove the rule false."
+        },
+        "select_cards": {
+          "selection": "sel_p_q_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 16,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the back of Card 1 (E), which would show a vowel paired with an odd number."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 17,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then its number side must show an even number."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the back of Card 1 (which shows E, a vowel)"
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 18,
+      "decision": "sel_p_notq",
+      "steps": [
+        "examine_cards",
+        "restate_rule",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "examine_cards": {
+          "reviewed": true
+        },
+        "restate_rule": {
+          "rule_summary": "If a card displays a vowel on the letter side, it must display an even number on the number side."
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the hidden side of Card 1 (E)"
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "examine_cards",
+          "restate_rule",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 19,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the hidden side of Card 1 (which shows E, a vowel)"
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 20,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card shows a vowel on its letter side, then it must show an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number (like 5 or 3) on the back of Card 1 (which shows E, a vowel), or a vowel on the back of Card 4 (which shows 7, an odd number)"
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 21,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the back of Card 1 (which shows E, a vowel)"
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 22,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel (A, E, I, O, U) on its letter side, then it must have an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the hidden side of Card 1 (which shows E, a vowel)"
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 23,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number (such as 1, 3, 5, 7, 9) on the back of Card 1 (which shows the vowel E), or a vowel on the back of Card 4 (which shows the odd number 7)."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 24,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the hidden side of Card 1 (which shows E, a vowel) would disprove the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 25,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the hidden side of Card 1 (which shows E, a vowel) would prove the rule false."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 26,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the hidden side of Card 1 (which shows E, a vowel) would disprove the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 27,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the hidden side of Card 1 (which shows E, a vowel) would disprove the rule."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 28,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the hidden side of Card 1 (which shows E, a vowel) would prove the rule false."
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "variantId": "free_agent",
+      "trial": 29,
+      "decision": "sel_p_notq",
+      "steps": [
+        "restate_rule",
+        "examine_cards",
+        "note_disproof",
+        "select_cards"
+      ],
+      "numSteps": 4,
+      "budget": null,
+      "capped": false,
+      "transcript": {
+        "capped": false,
+        "restate_rule": {
+          "rule_summary": "If a card has a vowel on its letter side, then it has an even number on its number side."
+        },
+        "examine_cards": {
+          "reviewed": true
+        },
+        "note_disproof": {
+          "falsifying_observation": "An odd number on the back of Card 1 (which shows E, a vowel)"
+        },
+        "select_cards": {
+          "selection": "sel_p_notq"
+        },
+        "steps": [
+          "restate_rule",
+          "examine_cards",
+          "note_disproof",
+          "select_cards"
+        ]
+      },
+      "ok": true
+    }
+  ]
+}

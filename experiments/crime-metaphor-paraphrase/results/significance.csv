@@ -1,0 +1,7 @@
+experiment,source,test,n,chi_square,dof,p_value,cramers_v,significant
+crime-metaphor-paraphrase,Claude Opus 4.8,condition x decision (chi-square of independence),75,0.6628,1,0.41558620417494296,0.094,False
+crime-metaphor-paraphrase,Claude Sonnet 4.6,condition x decision (chi-square of independence),99,15.5316,2,0.0004239954116435204,0.3961,True
+crime-metaphor-paraphrase,Claude Haiku 4.5,condition x decision (chi-square of independence),99,0.2685,1,0.6043412362633025,0.0521,False
+crime-metaphor-paraphrase,GPT-5.5,condition x decision (chi-square of independence),100,3.0103,2,0.22198296391518169,0.1735,False
+crime-metaphor-paraphrase,GPT-5.4,condition x decision (chi-square of independence),100,1.0103,2,0.6034122570381183,0.1005,False
+crime-metaphor-paraphrase,GPT-5.4 mini,condition x decision (chi-square of independence),100,2.8235,1,0.09289194088370524,0.168,False

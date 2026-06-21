@@ -2,7 +2,7 @@
 category: Decisions
 type: Experiments
 date: '2026-06-20'
-excerpt: 'A technical report — and the first time in this series a model copies a human bias rather than smoothing it. We rebuilt the attraction (decoy) effect as an agentic purchase: an agent compares two laptops with a genuine price/performance tradeoff, then a third, clearly worse option is added that is dominated by one of them. The decoy is never chosen, yet its mere presence shifts the agent''s choice toward the option it flatters — +37 points in one market and a complete reversal in another. The shift survives on an un-memorized product domain, so it is not recognition. Notably, the agent excludes the decoy from its own shortlist every time and is swayed anyway.'
+excerpt: 'A technical report on a case where a model copies a human bias rather than smoothing it away. We rebuilt the attraction (decoy) effect as an agentic purchase: an agent compares two laptops with a genuine price/performance tradeoff, then a third, clearly worse option is added that is dominated by one of them. The decoy is never chosen, yet its mere presence shifts the agent''s choice toward the option it flatters: +37 points in one market and a complete reversal in another. The shift survives on an un-memorized product domain, so it is not recognition. Notably, the agent excludes the decoy from its own shortlist every time and is swayed anyway.'
 experimentId: decoy-effect
 verdict: copy
 controls: "A recognition control reruns the identical design in an un-memorised market (cloud-storage plans). The effect strengthens rather than fades, so it is not recall of a textbook example."
@@ -22,17 +22,17 @@ title: 'The Decoy Effect: Does a Worse Option Sway an Agent''s Choice?'
 
 ## Abstract
 
-We translate the attraction (decoy) effect — Huber, Payne & Puto (1982) — into an agentic purchase
+We translate the attraction (decoy) effect, from Huber, Payne & Puto (1982), into an agentic purchase
 and ask whether a never-chosen, clearly inferior option can shift an agent's choice between two real
 alternatives. The agent compares two products with a genuine price/quality tradeoff and buys one; in
 the manipulated conditions a third option is added that is *dominated* by one of the two targets
 (worse on every attribute that matters) but not by the other. Across 240 trials in two unrelated
 markets (laptops and cloud-storage plans), the decoy reliably moves the agent toward the option it
-flatters — Laptop B's share rises from 0% to 37%, and in the storage market the choice reverses
-completely (0% to 100%) — relative to the model's own no-decoy baseline. The effect survives on the
+flatters: Laptop B's share rises from 0% to 37%, and in the storage market the choice reverses
+completely (0% to 100%), relative to the model's own no-decoy baseline. The effect survives on the
 un-memorized domain, ruling out recognition, and the model excludes the decoy from its explicit
-shortlist in essentially every trial yet is swayed regardless. This is the first study in the series
-where a model **copies** a human bias rather than smoothing it — though a cross-model comparison across
+shortlist in essentially every trial yet is swayed regardless. This is a case where a model
+**copies** a human bias rather than smoothing it, though a cross-model comparison across
 six models from both providers shows the copy is pronounced in the Claude family (a complete reversal in
 Sonnet and Haiku) and weak-to-absent in GPT-5 (GPT-5.4 is immune), so it is model-dependent rather than
 a universal LLM property. This report states the baseline and its methods, the objectives and full
@@ -44,8 +44,8 @@ experiment inventory, and the results with their assumptions and limitations.
 
 The attraction effect (Huber, Payne & Boris Puto, 1982, *Adding asymmetrically dominated alternatives*,
 Journal of Consumer Research 9(1): 90–98) is one of the most reproduced anomalies in choice. People
-choosing between two options with a real tradeoff — say cheaper-but-weaker A versus pricier-but-stronger
-B — split fairly evenly. Add a third option that is **asymmetrically dominated** (clearly worse than B
+choosing between two options with a real tradeoff (say cheaper-but-weaker A versus pricier-but-stronger
+B) split fairly evenly. Add a third option that is **asymmetrically dominated** (clearly worse than B
 on every relevant attribute, but not clearly worse than A), and choice shifts toward B, even though
 almost no one picks the decoy itself. Simonson (1989) tied this to the related compromise effect:
 choice is shaped not only by an option's absolute merits but by how it compares to the rest of the
@@ -68,12 +68,11 @@ These properties define the baseline this re-run must match.
 | No decoy | ~50% / 50% split |
 | Decoy added | Shifts ~10–25 pts toward the flattered target; decoy chosen ~0–5% |
 
+
 ## 2. Objectives of this re-run
 
-The series asks whether a model **copies**, **smooths**, or **amplifies** a human bias. The previous
-three studies all smoothed. The budgeting study left a specific lead: the agent reflexively bought a
-mid-tier option, hinting that set position, not just merit, might drive its choice. This study tests
-that mechanism directly:
+The guiding question is whether a model **copies**, **smooths**, or **amplifies** a human bias. This
+study tests directly whether an agent's choice is shaped by set position rather than merit alone:
 
 1. **Agentic translation.** Have the agent compare two real options and buy one, and measure whether
    adding an asymmetrically dominated decoy shifts its choice toward the flattered target, against the
@@ -91,9 +90,9 @@ that mechanism directly:
 
 ### 3.1 Agentic translation and design
 
-The agent receives two products with two attributes each — price (lower better) and a quality score
-(performance for laptops, storage for plans) — that create a real tradeoff, and buys one using the
-shopping tools from the budgeting study (`inspect_options` → `compare_options` → `choose_product`). The
+The agent receives two products with two attributes each, price (lower better) and a quality score
+(performance for laptops, storage for plans), that create a real tradeoff, and buys one using a
+standard set of shopping tools (`inspect_options` → `compare_options` → `choose_product`). The
 manipulation is which third option is on the menu:
 
 | Condition (variant id) | Choice set | Decoy dominated by | Predicts |
@@ -116,7 +115,7 @@ each run.
 
 Per condition we report each option's choice share, with the **target's share relative to the model's
 own no-decoy baseline** as the headline (the human 50/50 is shown for reference, but the model's
-intrinsic taste is not 50/50 — see §5.1). We also record the model's stated finalists from
+intrinsic taste is not 50/50; see §5.1). We also record the model's stated finalists from
 `compare_options`.
 
 ### 3.4 Statistical analysis
@@ -128,30 +127,29 @@ the choice distribution moves with the decoy manipulation.
 
 | Experiment ID | Goal | Market | Baseline overlay | Status |
 |---|---|---|---|---|
-| `decoy-effect` | Agentic replication | Laptops (price / performance) | Human (Huber et al. 1982) | **Run** — featured, 120 trials |
-| `decoy-effect-novel` | Recognition / replication control | Cloud-storage plans (price / storage) | none (within-model) | **Run** — 120 trials |
+| `decoy-effect` | Agentic replication | Laptops (price / performance) | Human (Huber et al. 1982) | **Run**, featured, 120 trials |
+| `decoy-effect-novel` | Recognition / replication control | Cloud-storage plans (price / storage) | none (within-model) | **Run**, 120 trials |
 
 A cross-model comparison across six models from both providers (Opus, Sonnet, Haiku, and GPT-5.5,
 GPT-5.4, GPT-5.4-mini) on the laptop market is reported in §5.4.
 
 ## 5. Results
 
-### 5.1 Primary result — the decoy moves the agent (Claude Opus 4.8, laptops)
+### 5.1 Primary result: the decoy moves the agent (Claude Opus 4.8, laptops)
 
-Unlike the prior studies, the bias transfers. The model's intrinsic taste is not the human 50/50 — it
-strongly prefers the better-value Laptop A — so the effect is measured against its own no-decoy
-baseline. Adding a decoy dominated by B lifts B's share from **0% to 37%**; the distribution moves
+Here, the bias transfers. The model's intrinsic taste is not the human 50/50 (it strongly prefers the
+better-value Laptop A), so the effect is measured against its own no-decoy baseline. Adding a decoy dominated by B lifts B's share from **0% to 37%**; the distribution moves
 significantly (χ² = 36.3, df = 3, *p* < .001, Cramér's V = 0.55).
 
 | Condition | Laptop A (cheaper/weaker) | Laptop B (pricier/stronger) | Laptop C (decoy) |
 |---|---:|---:|---:|
-| **Humans — no decoy** | **50%** | **50%** | — |
-| **Humans — decoy for B** | 35% | **63%** | 2% |
-| **Humans — decoy for A** | **63%** | 35% | 2% |
-| Opus — no decoy | 100% | 0% | 0% |
-| Opus — decoy for B | 63% | **37%** | 0% |
-| Opus — decoy for A | 100% | 0% | 0% |
-| Opus — autonomous (decoy for B) | 100% | 0% | 0% |
+| **Humans, no decoy** | **50%** | **50%** | — |
+| **Humans, decoy for B** | 35% | **63%** | 2% |
+| **Humans, decoy for A** | **63%** | 35% | 2% |
+| Opus, no decoy | 100% | 0% | 0% |
+| Opus, decoy for B | 63% | **37%** | 0% |
+| Opus, decoy for A | 100% | 0% | 0% |
+| Opus, autonomous (decoy for B) | 100% | 0% | 0% |
 
 **Figure 1 |** Choice share by condition, with the human attraction-effect baselines overlaid. The
 decoy-for-B condition pulls the agent off its otherwise-unanimous preference for Laptop A and toward
@@ -162,7 +160,7 @@ the time (a ceiling).
 the model's stated finalists were exactly the two real options (A and B); it never shortlisted the
 decoy. Yet in the decoy-for-B condition its final choice between the two options it *did* shortlist
 shifted by 37 points. The bias operates beneath the model's explicit reasoning about which options are
-viable — it correctly discards the decoy as a candidate, then lets it tilt the remaining choice.
+viable: it correctly discards the decoy as a candidate, then lets it tilt the remaining choice.
 
 The directionality rules out a trivial "third option perturbs the choice" explanation: the decoy-for-A
 condition adds a third option too, and choice does not move (it stays at the A ceiling). Choice moves
@@ -174,42 +172,42 @@ The forced and autonomous conditions used the same decoy-for-B set, but the forc
 the agent through `inspect → compare → choose` in lockstep while the autonomous condition lets it
 self-direct. The contrast is sharp: forced, the decoy moved B to 37%; autonomous, the agent returned to
 its 100% Laptop A preference and the decoy had no effect. Giving the agent room to reason appears to
-dissolve the susceptibility — but this turns out to be specific to Opus. The cross-model comparison
+dissolve the susceptibility, but this turns out to be specific to Opus. The cross-model comparison
 (§5.4) shows Sonnet and Haiku stay fully swayed in the autonomous condition, so this is a
 suggestive, mechanism-level result for one model, not a general escape hatch.
 
-### 5.3 Recognition / replication control — stronger on an un-memorized market (cloud storage)
+### 5.3 Recognition / replication control: stronger on an un-memorized market (cloud storage)
 
 The decoy paradigm is a textbook example, so the laptop result could be the model recognizing the
-setup. The control reruns the identical structure in an unrelated market — cloud-storage plans traded
+setup. The control reruns the identical structure in an unrelated market: cloud-storage plans traded
 off on price and storage. It does not weaken; it strengthens.
 
 | Condition | Plan A (cheaper/less) | Plan B (pricier/more) | Plan C (decoy) |
 |---|---:|---:|---:|
-| Opus — no decoy | 0% | 100% | 0% |
-| Opus — decoy for B | 0% | 100% | 0% |
-| Opus — decoy for A | **100%** | 0% | 0% |
-| Opus — autonomous (decoy for B) | 0% | 100% | 0% |
+| Opus, no decoy | 0% | 100% | 0% |
+| Opus, decoy for B | 0% | 100% | 0% |
+| Opus, decoy for A | **100%** | 0% | 0% |
+| Opus, autonomous (decoy for B) | 0% | 100% | 0% |
 
-Here the model's intrinsic taste flips — it prefers the storage-rich Plan B by default — so the
+Here the model's intrinsic taste flips (it prefers the storage-rich Plan B by default), so the
 informative cell is the decoy-for-A condition, and it produces a **complete reversal**: a decoy
 dominated by A flips the agent from 0% A to 100% A (χ² = 120, df = 3, *p* < .001, Cramér's V = 1.0). The
 attraction effect therefore replicates, and amplifies, on a domain the model could not be recalling
-from a textbook — recognition is ruled out. (The decoy-for-B and autonomous cells sit at the Plan-B
+from a textbook; recognition is ruled out. (The decoy-for-B and autonomous cells sit at the Plan-B
 ceiling here, so this market cannot re-test the §5.2 autonomy finding; that rests on the laptop
 contrast alone.)
 
-### 5.4 Cross-model comparison — the copy is Claude-specific; GPT-5 largely resists it
+### 5.4 Cross-model comparison: the copy is Claude-specific; GPT-5 largely resists it
 
 To move the claim from "Opus is swayed" toward "models are swayed," we reran the laptop market on five
-further models — Sonnet 4.6, and the OpenAI GPT-5.5, GPT-5.4, and GPT-5.4-mini — at 30 trials per
+further models (Sonnet 4.6, and the OpenAI GPT-5.5, GPT-5.4, and GPT-5.4-mini) at 30 trials per
 condition. The result splits sharply **by provider**. Within the Claude family the attraction effect
 not only replicates but *strengthens*; across the GPT-5 family it nearly vanishes.
 
 | Condition (Laptop B share) | Opus 4.8 | Sonnet 4.6 | GPT-5.5 | GPT-5.4 | GPT-5.4-mini |
 |---|---:|---:|---:|---:|---:|
-| **Humans — no decoy: 50%** | | | | | |
-| **Humans — decoy for B: 63%** | | | | | |
+| **Humans, no decoy: 50%** | | | | | |
+| **Humans, decoy for B: 63%** | | | | | |
 | No decoy | 0% | 0% | 0% | 0% | 0% |
 | Decoy for B | 37% | **100%** | 13% | 0% | 3% |
 | Decoy for A | 0% | 0% | 0% | 0% | 0% |
@@ -224,18 +222,18 @@ Three things stand out. First, **within Claude the effect is capability-graded a
 pulls Opus's B-share from 0% to 37%, and pulls Sonnet's from 0% to a *complete 100% reversal*
 (χ² = 120, df = 3, *p* < .001, Cramér's V = 1.0). Second, **the §5.2 autonomy escape is Opus-specific**: Opus
 returns to its 0% B preference when left to self-direct, but Sonnet stays fully reversed at 100% B in
-the autonomous condition — room to reason rescued Opus and did not rescue Sonnet. Third, and most
+the autonomous condition: room to reason rescued Opus and did not rescue Sonnet. Third, and most
 striking, **the GPT-5 family barely moves**: GPT-5.5 shifts only +13 points (small but statistically
 significant, *p* = .006), GPT-5.4-mini +3 (within noise, *p* = .30), and GPT-5.4 does not move at all
 (a saturated 100%-A table the chi-square cannot test). On the same stimulus that flips a Claude model
-completely, the GPT-5 models show at most a marginal pull, and GPT-5.4 none — a different regime from
+completely, the GPT-5 models show at most a marginal pull, and GPT-5.4 none: a different regime from
 the Claude family entirely.
 
-**Haiku 4.5, reported narratively here, behaves like Sonnet** — and unlike the wason task it returned
+**Haiku 4.5, reported narratively here, behaves like Sonnet**, and unlike the wason task it returned
 clean data (0 parse failures across all 120 trials, because the decoy paradigm's inspect→compare→choose
 sequence gives it the context the cold wason call lacked). The decoy-for-B condition flips it from 0% to
 100% B and the autonomous condition holds at 100% B. So the copy result is real and, within Claude,
-strong and autonomy-resistant — but it is **not a universal LLM property**: it is pronounced in the
+strong and autonomy-resistant, but it is **not a universal LLM property**: it is pronounced in the
 Claude family and weak-to-absent in GPT-5. The verdict for the featured Opus run remains *copy*; the
 cross-family picture makes clear how much it depends on the model.
 
@@ -245,11 +243,11 @@ In both markets, a dominated option that is never chosen pulls the agent toward 
 flatters, in the direction the attraction-effect theory predicts, by a large and significant margin
 (+37 points; a full reversal). The agent's strong intrinsic preferences create ceilings that hide the
 effect on the already-preferred side, but on the movable side it is unambiguous. The classification for
-the featured Opus run is **copy** — the first in the series — but the cross-model comparison (§5.4)
+the featured Opus run is **copy**, but the cross-model comparison (§5.4)
 shows how model-dependent it is. Within the Claude family it is larger than in Opus (a full reversal in
 Sonnet and Haiku), and the self-directed-reasoning escape holds only for Opus. Across the GPT-5 family
 it nearly disappears: GPT-5.4 is immune and GPT-5.5/mini barely move. The bias is real and, for some
-models, strong — but it is not a universal LLM property.
+models, strong, but it is not a universal LLM property.
 
 ## 6. Assumptions
 
@@ -283,10 +281,10 @@ models, strong — but it is not a universal LLM property.
 
 ## 8. Conclusion
 
-After three studies in which models smoothed away the human bias, the attraction effect breaks the
-pattern: an agent's purchase is reliably swayed by a dominated, never-chosen decoy, in the
-theory-predicted direction, by as much as a complete reversal — and the effect strengthens on an
-un-memorized market, so it is susceptibility, not recall. The most striking detail is that the agent
+Unlike biases a model merely damps, the attraction effect transfers to the agent: an agent's purchase
+is reliably swayed by a dominated, never-chosen decoy, in the theory-predicted direction, by as much
+as a complete reversal, and the effect strengthens on an un-memorized market, so it is
+susceptibility, not recall. The most striking detail is that the agent
 explicitly excludes the decoy from its shortlist every time and is moved anyway, which means the bias
 sits below its visible reasoning. The classification for the featured Opus run is **copy**, but the
 cross-model comparison (§5.4) makes the result sharply model-dependent: it is *stronger* within the
@@ -294,7 +292,7 @@ Claude family (a complete reversal in Sonnet 4.6 and Haiku 4.5) yet weak-to-abse
 (GPT-5.4 is immune; GPT-5.5 and the mini barely move). The one piece of good news for practitioners is
 also narrower than it first looked: letting the agent reason freely made the effect vanish **for Opus
 only**; Sonnet and Haiku stayed fully swayed when autonomous. The dependable lesson is not "autonomy
-saves you" or "this model is safe" but **control the option set** — for a Claude-based shopping agent a
+saves you" or "this model is safe" but **control the option set**: for a Claude-based shopping agent a
 padded shortlist is demonstrably exploitable.
 
 ## Data and code

@@ -39,8 +39,8 @@ export default function About() {
             <h3 className="text-foreground font-serif">Methodology Notes</h3>
             <p>
               All data published here is drawn from actual API calls to production model endpoints. 
-              We do not rely on simulated or hand-picked examples. The exact prompts, temperatures, and seeds 
-              (where applicable) are recorded for every trial. Statistical significance is computed 
+              We do not rely on simulated or hand-picked examples. The exact prompts, temperatures, and seeds
+              (where applicable) are recorded for every trial and available in the GitHub repository. Statistical significance is computed
               using standard decision science techniques (e.g., Chi-Square for categorical shifts, 
               ANOVA for broader interactions) with α = 0.05.
             </p>

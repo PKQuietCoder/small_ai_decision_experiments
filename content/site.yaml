@@ -14,10 +14,9 @@ intro: >
   language, with real A/B tests, whether the model copies our bias, smooths it out, or makes
   it worse.
 description: >
-  This is an ongoing series that reruns classic human-bias experiments on language models
-  (and on agents that decide over several tool-using steps, not just answer in one shot) to
-  see which of those biases they inherit, which they smooth away, and which they invent on
-  their own.
+  This is an ongoing series that reruns classic human-bias experiments on language models,
+  and on agents, to see which of those biases they inherit, which they smooth away, and
+  which they invent on their own.
 author: "P.K. Mishra"
 authorUrl: "https://www.linkedin.com/in/pradkmishra/"
 about: |
@@ -27,37 +26,34 @@ about: |
   the answer. Naming a budget makes you spend more, not less.
 
   Today we're handing more of those decisions to language models, and to agents that decide
-  over several steps. Here's the catch. We don't actually know what rules they follow. Some
+  over several steps. Here's the catch: we don't actually know what rules they follow. Some
   they may inherit from us, soaked up from a training set full of human choices. Some they
   may invent on their own.
 
-  This is an ongoing series. In each entry I take one classic human-bias experiment and rerun it
-  live — not just as a single chat answer, but as an agent that reaches the decision over several
-  tool-using steps, including a condition where the agent directs itself. Then I ask a simple
-  question: does the model copy our bias, smooth it out, or make it worse?
+  In each entry I take one classic human-bias experiment and rerun it live, not just as a
+  single chat answer but as an agent that reaches the decision over several tool-using steps,
+  including a condition where the agent directs itself. Then I ask a simple question: does the
+  model copy our bias, smooth it out, or make it worse?
 
   ### How to read these results: copy, smooth, amplify
 
-  Three words carry the verdict of every entry, always measured against the original study's human
-  baseline:
+  Three words carry the verdict of every entry, always measured against the original study's
+  human baseline:
 
-  - **Copy** — the model reproduces the human bias at a comparable size.
-  - **Smooth** — the model damps the bias toward noise, or removes it entirely.
-  - **Amplify** — the model shows the bias more strongly than people do.
+  - **Copy:** the model reproduces the human bias at a comparable size.
+  - **Smooth:** the model damps the bias toward noise, or removes it entirely.
+  - **Amplify:** the model shows the bias more strongly than people do.
 
-  The point isn't trivia about models. It's practical. The better we understand how these
-  systems decide, and where their intuitions line up with ours or pull against them, the
-  better we can work alongside them and make good calls together.
+  ### Why this matters
+
+  Humans have always offloaded work to tools, and AI is another one. To use it well we need
+  to understand both our own skills and our biases, so we can work together, leveraging each
+  other's strengths and cancelling out our biases.
 
   ### Open data and code
 
-  Everything's in the open. Prompts, per-trial data, analysis code, the charts. It all lives
-  in the project's GitHub repository. Check the work. Disagree with a coding call. Rerun it
-  on a model I never touched.
-
-  ### One person, so replicate me
-
-  This is a solo project, and solo projects have bugs. A prompt that leaks a cue. A judge
-  that miscodes a borderline answer. A p-value read too kindly. Independent replication isn't
-  a courtesy here. It's the method. Rerun an entry and get a different number? Tell me. Spot a
-  flaw? Even better. I'd rather be corrected than stay wrong.
+  No findings here are absolute. In science there is a term for that: boundary conditions.
+  Critique, useful feedback, and extensions of these experiments are all encouraged. To make
+  that possible, everything lives in the project's GitHub repository: the prompts, the
+  per-trial data, the analysis code, the charts, the articles themselves, and the setup for
+  running the entire project on Replit.

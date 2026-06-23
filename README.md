@@ -46,8 +46,8 @@ makes a sequence of real tool calls and its final pick is read from a constraine
 │   ├── analysis/<id>/        # aggregated stats per run (drives the charts)
 │   └── posts/                # the write-ups (Markdown + frontmatter)
 ├── experiments/<id>/         # downloadable, replication-ready data packages  <- start here
-│   ├── README.md             # design, results, and how to replicate
-│   ├── manifest.json         # machine-readable index
+│   ├── README.md             # design, results, and how to replicate (when present)
+│   ├── manifest.json         # machine-readable index (start here): models, conditions, trials, baseline
 │   ├── methodology/          # config, rendered prompts, tools, human baseline, rubric
 │   ├── raw/                  # per-trial data: runs/*.json + a flat trials.csv
 │   ├── results/              # analysis JSON + summary/significance CSVs
@@ -137,14 +137,14 @@ PORT=5173 BASE_PATH=/ pnpm --filter @workspace/client run dev   # website
 
 You don't need this code. Inside any `experiments/<id>/` package:
 
-1. Send each model the prompts in `methodology/`, the number of trials per condition stated in the
-   README.
+1. Send each model the prompts in `methodology/`, using the conditions and the trials-per-condition
+   count from `manifest.json`.
 2. Record each trial's decision. For agentic studies, also record the step sequence and any budget
    the model set.
 3. Compute the choice shares and the significance test, then compare against the human baseline in
-   `methodology/human_baseline.json`.
+   `methodology/human_baseline.json` (also in `manifest.json`).
 
-The package README spells this out for that specific study.
+Where a package includes a `README.md`, it walks through these steps for that specific study.
 
 ## A note on trust
 

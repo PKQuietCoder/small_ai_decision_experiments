@@ -67,13 +67,13 @@ makes a sequence of real tool calls and its final pick is read from a constraine
 ## The experiments/ packages (start here to replicate)
 
 This is the part built for other people. Each `experiments/<id>/` folder is a self-contained,
-replication-ready package with its own README, and you don't need this codebase to use it.
-Everything in it is provider-agnostic.
+replication-ready package, and you don't need this codebase to use it. Everything in it is
+provider-agnostic.
 
 ```
 experiments/<id>/
-├── README.md             # read this first: design, results, data dictionaries, how to replicate
-├── manifest.json         # models, run ids, conditions, human baseline, generated-at
+├── README.md             # design, results, data dictionaries, how to replicate (when present)
+├── manifest.json         # read this first: models, run ids, conditions, human baseline, generated-at
 ├── methodology/          # the experiment as code (YAML) + the exact rendered prompts,
 │                         #   the tool definitions or judge rubric, and the human baseline
 ├── raw/
@@ -86,18 +86,20 @@ experiments/<id>/
 └── followups/            # extra controls when a study has them
 ```
 
-Open the folder's `README.md` first. It explains the design, shows the exact prompts, reports the
-results, and walks through replication both with this repo and with any other stack.
+Start with the folder's `manifest.json` and `methodology/` — together they give the design, the
+exact prompts, the tool definitions or judge rubric, and the human baseline, enough to replicate
+with this repo or any other stack. Where a folder also has a `README.md`, read that first.
 
 Currently published:
 
-- [`experiments/crime-metaphor/`](experiments/crime-metaphor/) is a rerun of Thibodeau and
-  Boroditsky (2011), the crime-as-beast-versus-virus framing study, on six models, plus three
-  contamination controls (recognition, a novel stimulus, and a paraphrase). Write-up:
-  [`content/posts/the-metaphor-trap.md`](content/posts/the-metaphor-trap.md).
-- [`experiments/budget-backfire/`](experiments/budget-backfire/) translates Larson and Hamilton
-  (2012), "When Budgeting Backfires," into an agentic decision on Claude Opus 4.8 and Sonnet 4.6.
-  Write-up: [`content/posts/budget-backfire.md`](content/posts/budget-backfire.md).
+- [`experiments/decoy-effect/`](experiments/decoy-effect/) is a rerun of the classic decoy
+  effect (asymmetric dominance), testing whether a deliberately worse third option sways an
+  agent's choice between two products, across six models. Write-up:
+  [`content/posts/decoy-effect.md`](content/posts/decoy-effect.md).
+
+Coming soon (write-ups in progress, data not yet released): the crime-metaphor framing study
+(Thibodeau and Boroditsky, 2011), "When Budgeting Backfires" (Larson and Hamilton, 2012), and
+the Wason selection / falsification task (Wason, 1968).
 
 ## Run or replicate it yourself
 

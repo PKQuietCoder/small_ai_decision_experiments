@@ -32,7 +32,8 @@ Site-wide metadata for header/footer/about.
 
 ## GET /api/posts
 Returns an array of post summaries (published only; drafts with `?preview=1`).
-Ordered newest-first. Use for the home/feed page.
+Ordered newest-first, with any `comingSoon` placeholders sorted to the end. Use for the
+home/feed page.
 ```json
 [
   {
@@ -46,6 +47,7 @@ Ordered newest-first. Use for the home/feed page.
     "readingMinutes": 2,
     "featured": true,
     "published": true,
+    "comingSoon": false,       // optional: a grayed placeholder listed here, but GET /api/posts/{slug} 404s in production
     "experimentId": "metaphor-effect",
     "verdict": "smooth",       // optional: headline result vs. the human baseline — "copy" | "smooth" | "amplify"
     "controls": "A recognition control reruns the design on un-memorized stimuli ..."  // optional: one-line controls summary

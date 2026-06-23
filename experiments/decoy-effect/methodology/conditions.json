@@ -34,5 +34,25 @@
     "label": "Autonomous (decoy for B, model self-directs)",
     "mode": "auto",
     "steps": "auto"
+  },
+  {
+    "id": "direct_decoy_b",
+    "label": "Single-shot (decoy for B, one tool call)",
+    "mode": "forced",
+    "steps": [
+      "choose_product"
+    ]
+  },
+  {
+    "id": "real_no_decoy",
+    "label": "Real agent (no decoy, must retrieve specs)",
+    "mode": "auto",
+    "steps": "auto"
+  },
+  {
+    "id": "real_decoy_b",
+    "label": "Real agent (decoy for B, must retrieve specs)",
+    "mode": "auto",
+    "steps": "auto"
   }
 ]

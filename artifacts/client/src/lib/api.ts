@@ -22,6 +22,9 @@ export interface PostSummary {
   readingMinutes: number;
   featured: boolean;
   published: boolean;
+  // Listed as a grayed, non-clickable "Coming soon" placeholder; its detail page is
+  // withheld by the API (404 in production).
+  comingSoon?: boolean;
   experimentId?: string;
   // Headline verdict vs. the human baseline ("copy" | "smooth" | "amplify") and a
   // one-line summary of the recognition/replication controls. Both optional.

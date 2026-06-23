@@ -1,5 +1,0 @@
-experiment,source,test,n,statistic,dof,p_value,effect_size,significant
-budget-backfire,Claude Opus 4.8,condition x product (chi-square of independence),199,2.9951,3,0.3923889207130905,0.1227,False
-budget-backfire,Claude Opus 4.8,no_restraint vs salient_restraint mean spend (Welch t-test),,1.0,,0.32222340595067517,,False
-budget-backfire,Claude Sonnet 4.6,condition x product (chi-square of independence),200,15.2414,3,0.0016215407352726332,0.2761,True
-budget-backfire,Claude Sonnet 4.6,no_restraint vs salient_restraint mean spend (Welch t-test),,1.4289,,0.15938605197461597,,False

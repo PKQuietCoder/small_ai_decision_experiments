@@ -1,5 +1,0 @@
-experiment,source,condition,n,sel_p_q_count,sel_p_q_share_pct,sel_p_count,sel_p_share_pct,sel_p_notq_count,sel_p_notq_share_pct,sel_p_q_notq_count,sel_p_q_notq_share_pct,sel_all_count,sel_all_share_pct,sel_other_count,sel_other_share_pct,mean_price_usd,mean_steps,budget_rate_pct
-wason-selection-novel,Claude Opus 4.8,direct,30,0,0.0,0,0.0,29,96.7,0,0.0,0,0.0,1,3.3,,1.0,0.0
-wason-selection-novel,Claude Opus 4.8,falsify_prompt,30,0,0.0,0,0.0,30,100.0,0,0.0,0,0.0,0,0.0,,2.0,0.0
-wason-selection-novel,Claude Opus 4.8,deliberate,30,0,0.0,0,0.0,30,100.0,0,0.0,0,0.0,0,0.0,,4.0,0.0
-wason-selection-novel,Claude Opus 4.8,free_agent,30,0,0.0,0,0.0,30,100.0,0,0.0,0,0.0,0,0.0,,4.0,0.0

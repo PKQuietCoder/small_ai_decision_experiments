@@ -1,2 +1,0 @@
-experiment,source,test,n,statistic,dof,p_value,effect_size,significant
-wason-selection-novel,Claude Opus 4.8,condition x product (chi-square of independence),120,3.0252,3,0.3877545856930126,0.1588,False

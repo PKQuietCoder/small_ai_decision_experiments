@@ -334,6 +334,9 @@ def _post_summary(post: frontmatter.Post, slug: str) -> Dict[str, Any]:
         "readingMinutes": _reading_minutes(post.content),
         "featured": bool(meta.get("featured", False)),
         "published": bool(meta.get("published", False)),
+        # A listed-but-not-yet-released study: it appears as a grayed "Coming soon"
+        # card, but its detail page is withheld (see get_post) so no body is served.
+        "comingSoon": bool(meta.get("comingSoon", False)),
         "experimentId": meta.get("experimentId"),
         # The series' headline verdict (copy / smooth / amplify) and a one-line summary
         # of the recognition/replication controls — both optional, both drive UI badges.
@@ -364,7 +367,9 @@ def list_posts(include_unpublished: bool = False) -> List[Dict[str, Any]]:
         summary = _post_summary(post, path.stem)
         if summary["published"] or include_unpublished:
             summaries.append(summary)
-    summaries.sort(key=lambda item: item.get("date") or "", reverse=True)
+    # Newest first, but "Coming soon" placeholders always sort below released studies.
+    summaries.sort(key=lambda item: (item.get("date") or ""), reverse=True)
+    summaries.sort(key=lambda item: item.get("comingSoon", False))
     return summaries
 
 
@@ -375,6 +380,10 @@ def get_post(slug: str, include_unpublished: bool = False) -> Optional[Dict[str,
     post = _load_post_file(path)
     summary = _post_summary(post, slug)
     if not summary["published"] and not include_unpublished:
+        return None
+    # A "Coming soon" study lists as a card but its page is withheld: never served
+    # from a deployment, only previewable in the dev workspace (include_unpublished).
+    if summary["comingSoon"] and not include_unpublished:
         return None
 
     body_html = md.markdown(post.content, extensions=MARKDOWN_EXTENSIONS)

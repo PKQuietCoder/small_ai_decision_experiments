@@ -1,6 +1,6 @@
 # LLM Decision Science Blog
 
-A Statsig-style blog that publishes small, careful experiments on how language models actually decide. The current experiment ("The Metaphor Trap") is a faithful replication of Thibodeau & Boroditsky's 2011 crime-metaphor study: each model reads the paper's exact report and answers its exact open-ended question, varying only one word — is crime a "beast" or a "virus"? — and the results are compared against the paper's human baseline.
+A Statsig-style blog that publishes small, careful experiments on how language models actually decide. The currently published experiment ("The Decoy Effect") tests whether a deliberately worse third option sways an agent's choice between two products, across six models, with the results compared against the human baseline. Other studies (the crime-metaphor framing trap, "When Budgeting Backfires," and the Wason falsification task) are written up as drafts but withheld from the public repo as "Coming soon" until released.
 
 ## Run & Operate
 

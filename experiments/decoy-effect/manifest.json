@@ -2,7 +2,7 @@
   "experiment": "decoy-effect",
   "title": "The Decoy Effect: Does a Worse Option Sway an Agent's Choice?",
   "type": "agentic_budget",
-  "generatedAt": "2026-06-20T23:11:27.037116+00:00",
+  "generatedAt": "2026-06-23T17:02:19.440385+00:00",
   "models": [
     "Claude Opus 4.8",
     "Claude Sonnet 4.6",
@@ -16,12 +16,15 @@
     "no_decoy",
     "decoy_b",
     "decoy_a",
-    "free_agent"
+    "free_agent",
+    "direct_decoy_b",
+    "real_no_decoy",
+    "real_decoy_b"
   ],
   "runs": {
-    "Claude Opus 4.8": "20260620T024201Z",
-    "Claude Sonnet 4.6": "20260620T044447Z",
-    "Claude Haiku 4.5": "20260620T044601Z",
+    "Claude Opus 4.8": "20260621T023923Z",
+    "Claude Sonnet 4.6": "20260621T024144Z",
+    "Claude Haiku 4.5": "20260621T024400Z",
     "GPT-5.4 mini": "20260620T050019Z",
     "GPT-5.4": "20260620T050139Z",
     "GPT-5.5": "20260620T050326Z"
@@ -52,6 +55,8 @@
   "tools": [
     "inspect_options",
     "compare_options",
+    "list_products",
+    "get_specs",
     "choose_product"
   ],
   "products": [],

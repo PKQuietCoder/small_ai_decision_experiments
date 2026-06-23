@@ -1,7 +1,7 @@
 experiment,source,test,n,statistic,dof,p_value,effect_size,significant
-decoy-effect,Claude Opus 4.8,condition x product (chi-square of independence),120,36.3303,3,6.376038409433631e-08,0.5502,True
-decoy-effect,Claude Sonnet 4.6,condition x product (chi-square of independence),120,120.0,3,7.716790355634162e-26,1.0,True
-decoy-effect,Claude Haiku 4.5,condition x product (chi-square of independence),120,120.0,3,7.716790355634162e-26,1.0,True
+decoy-effect,Claude Opus 4.8,condition x product (chi-square of independence),210,94.5421,6,3.4432702627254722e-18,0.671,True
+decoy-effect,Claude Sonnet 4.6,condition x product (chi-square of independence),210,202.4171,6,5.803259358372206e-41,0.9818,True
+decoy-effect,Claude Haiku 4.5,condition x product (chi-square of independence),183,153.8148,6,1.207085425178911e-30,0.9168,True
 decoy-effect,GPT-5.4 mini,condition x product (chi-square of independence),119,3.7045,3,0.2951912736587257,0.1764,False
 decoy-effect,GPT-5.4,condition x product (chi-square of independence),120,,,,,False
 decoy-effect,GPT-5.5,condition x product (chi-square of independence),120,12.4138,3,0.006092106777826193,0.3216,True

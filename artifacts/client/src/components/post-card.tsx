@@ -19,6 +19,37 @@ interface PostCardProps {
 // type and whitespace, not decoration. The author photo lives once in the page header,
 // so it is intentionally omitted here — only the byline name and date remain.
 export function PostCard({ post, author, index = 0 }: PostCardProps) {
+  // A "Coming soon" study is a placeholder: dimmed, non-interactive, and its body is
+  // withheld by the API. We show only the title and category — no excerpt, verdict,
+  // or link — so the card announces the study without exposing unfinished work.
+  if (post.comingSoon) {
+    return (
+      <article
+        aria-disabled="true"
+        className="relative flex min-h-44 cursor-default flex-col border border-border bg-card p-6 opacity-60 animate-in fade-in slide-in-from-bottom-4 fill-mode-both md:flex-row md:items-start md:gap-8"
+        style={{ animationDelay: `${index * 90}ms` }}
+      >
+        <div className="flex-1">
+          <div className="flex items-center gap-2">
+            {post.type && <span className="eyebrow">{post.type}</span>}
+            {post.type && post.category && (
+              <span className="text-muted-foreground" aria-hidden="true">·</span>
+            )}
+            <span className="eyebrow">{post.category || "Article"}</span>
+          </div>
+
+          <h3 className="mt-3 font-serif text-xl font-semibold leading-snug text-muted-foreground">
+            {post.title}
+          </h3>
+        </div>
+
+        <div className="mt-6 flex shrink-0 items-center text-sm md:mt-0 md:w-44 md:flex-col md:items-end md:text-right">
+          <span className="eyebrow text-muted-foreground">Coming soon</span>
+        </div>
+      </article>
+    );
+  }
+
   return (
     <article
       className="group relative flex min-h-44 flex-col border border-border bg-card p-6 transition-colors duration-200 hover:border-foreground animate-in fade-in slide-in-from-bottom-4 fill-mode-both md:flex-row md:items-start md:gap-8"

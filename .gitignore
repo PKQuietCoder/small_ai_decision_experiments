@@ -54,3 +54,21 @@ substack/
 # Claude Code — local, personal overrides (not shared)
 CLAUDE.local.md
 .claude/settings.local.json
+
+# "Coming soon" studies — content withheld from the public repo, kept local for
+# offline work until published. Only decoy-effect (+ decoy-effect-novel) ship publicly.
+# Real post drafts for the withheld studies.
+drafts/
+# Per-study data (runs, analysis, experiment config, replication package).
+content/runs/crime-metaphor*/
+content/runs/budget-backfire/
+content/runs/wason-selection*/
+content/analysis/crime-metaphor*/
+content/analysis/budget-backfire/
+content/analysis/wason-selection*/
+content/experiments/crime-metaphor*.yaml
+content/experiments/budget-backfire.yaml
+content/experiments/wason-selection*.yaml
+experiments/crime-metaphor*/
+experiments/budget-backfire/
+experiments/wason-selection*/

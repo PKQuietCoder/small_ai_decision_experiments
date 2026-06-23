@@ -46,6 +46,42 @@
     }
   },
   {
+    "name": "list_products",
+    "description": "List the ids of every laptop available in the catalog.",
+    "final": false,
+    "strict": true,
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {},
+      "required": []
+    }
+  },
+  {
+    "name": "get_specs",
+    "description": "Look up the price and performance score for one laptop id.",
+    "final": false,
+    "strict": true,
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "product_id": {
+          "type": "string",
+          "enum": [
+            "laptop_a",
+            "laptop_b",
+            "laptop_c"
+          ],
+          "description": "The id of the laptop to inspect."
+        }
+      },
+      "required": [
+        "product_id"
+      ]
+    }
+  },
+  {
     "name": "choose_product",
     "description": "Record the single laptop you will buy.",
     "final": true,

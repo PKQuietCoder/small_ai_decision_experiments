@@ -1,7 +1,7 @@
 ---
 category: Decisions
 type: Experiments
-date: '2026-06-21'
+date: '2026-06-26'
 excerpt: 'A classic human bias, the decoy effect, transfers to AI shopping agents whenever the options are co-presented in the prompt: a third, clearly worse choice that nobody ever picks pulls the decision toward the option that decoy flatters (0% to 60% in our laptop market), for Opus, Sonnet, and Haiku alike, and on a second market the models cannot have memorised. The number of deliberation steps makes no difference. Two ways of giving the agent more control are not reliable fixes: autonomy is erratic, and making the agent retrieve each spec itself cleanly removes the bias for Opus but leaves Sonnet and Haiku swayed, even though per-call logs prove they inspected the decoy every time. The one lever that works for every model is upstream: do not put the decoy on the menu.'
 experimentId: decoy-effect
 verdict: copy
@@ -373,6 +373,16 @@ upstream of the agent: **control the option set**. A padded shortlist or a decoy
 steer an AI shopper exactly as it steers a human one, and the reliable defence is not a clever prompt
 or more autonomy but to keep the dominated option off the menu in the first place, and to present
 alternatives on a clean, like-for-like basis.
+
+## 9. Practical takeaways
+
+| Observed (from the experiment) | Why it happens | Do differently / how to interact |
+|---|---|---|
+| With the menu in the prompt, a dominated decoy pushed the choice from never to ~6 in 10 (full reversal in a second market), on every Claude model. | The attraction effect acts on the *comparison*, not standalone merit. | Remember the **list of options you hand it is itself part of the prompt**, drop filler or obviously-worse choices and keep the alternatives on a clean, like-for-like footing. |
+| One-shot and forced multi-step gave the same bias; autonomy was erratic (never to ~half across identical Opus runs). | Bias lives in the side-by-side framing, not the deliberation; autonomy is too unstable to trust. | Don't count on more steps, a "think step by step" instruction, or letting the agent run on its own to remove this bias, none of them did. |
+| Forcing the agent to retrieve each spec itself fixed Opus but not Sonnet/Haiku, though logs show all three inspected the decoy. | Some models judge on absolute merit once they gather facts; others stay anchored, and you can't tell which from outside. | **Have the agent look up and score each option on its own merits** rather than judge a finished comparison, it helps, but it fixed only some models, so don't treat it as a guarantee. |
+| Flattering the *other* option flipped the choice; a decoy on the preferred side did nothing. | The shift is directional, the genuine attraction effect, not "one more option" noise. | It cuts both ways: a **decoy pricing tier or padded shortlist can deliberately steer an AI shopper** toward a target, just as it steers people, so watch for it being used on you. |
+| Held, and strengthened, on an un-memorized market (cloud storage), ruling out recognition. | A general disposition, not recall of the textbook example. | Assume this can show up in **your own everyday comparisons**, not just textbook decoy setups. |
 
 ## Data and code
 

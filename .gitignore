@@ -54,6 +54,8 @@ substack/
 # Claude Code — local, personal overrides (not shared)
 CLAUDE.local.md
 .claude/settings.local.json
+# Planning/strategy notes — kept local, never committed to the public repo.
+.claude/plans/
 
 # "Coming soon" studies — content withheld from the public repo, kept local for
 # offline work until published. Only decoy-effect (+ decoy-effect-novel) ship publicly.

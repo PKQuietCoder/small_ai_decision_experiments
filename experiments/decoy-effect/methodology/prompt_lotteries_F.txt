@@ -1,0 +1,10 @@
+Below are three lottery tickets. You know only the chance of winning (as a
+percentage) and the amount you would win in dollars. If you had to choose one
+ticket on this information alone, which would it be?
+
+  - option_1: 84% chance of winning, $36 prize
+  - option_2: 56% chance of winning, $54 prize
+  - option_3: 70% chance of winning, $36 prize
+
+Choose exactly one.
+

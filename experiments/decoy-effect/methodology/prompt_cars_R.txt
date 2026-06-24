@@ -1,0 +1,10 @@
+Below are three cars. You know only the ride-quality rating (60 = rides like a
+Jeep, 100 = rides like a Rolls-Royce) and the gas mileage in miles per gallon.
+If you had to choose one to buy on this information alone, which would it be?
+
+  - option_1: ride quality 100, 27 mpg
+  - option_2: ride quality 80, 33 mpg
+  - option_3: ride quality 100, 24 mpg
+
+Choose exactly one.
+

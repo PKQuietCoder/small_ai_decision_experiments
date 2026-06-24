@@ -1,249 +1,449 @@
 id: decoy-effect
-title: "The Decoy Effect: Does a Worse Option Sway an Agent's Choice?"
-type: agentic_budget
-status: draft
+title: "The Decoy Effect: Does a Worse Option Sway a Model's Choice?"
+type: fill_in_blank_decision
+status: published
 summary: >
-  An agentic translation of the attraction (decoy) effect — Huber, Payne & Puto
-  (1982), the mechanism Simonson (1989) tied to the compromise effect. People
-  choosing between two options with a genuine price/quality tradeoff can be swung
-  toward one of them by adding a third, clearly worse option that is dominated by
-  the target (cheaper-and-better on every attribute that matters) but not by the
-  competitor. The dominated decoy is almost never chosen, yet its mere presence
-  reshapes the choice between the other two. We reuse the agentic shopping scaffold
-  from budget-backfire: the agent inspects the options, compares finalists, and
-  buys one laptop. The only thing that changes between conditions is which third
-  option (if any) is on the menu. This directly tests the mechanism the budgeting
-  study only hinted at — whether the agent chooses by an option's absolute merit or
-  by its position relative to the rest of the set.
+  A faithful rerun of Huber, Payne & Puto's (1982) attraction-effect study on a
+  language model. Subjects in the original chose one product from a small menu in
+  six categories (beer, cars, restaurants, lotteries, film, television sets), each
+  option described on two attributes. A target and a competitor form a genuine
+  tradeoff; a third "decoy" option is asymmetrically dominated — clearly worse than
+  the target on both attributes but not worse than the competitor — so it is almost
+  never chosen, yet its presence lifts the target's share. We reproduce the exact
+  six categories and the paper's four decoy-placement strategies (moderate range R,
+  extreme range R*, frequency F, range-frequency RF) and ask the model to pick one
+  option, measuring the target's choice share with and without the decoy.
 hypothesis: >
-  If the agent mirrors people, adding a decoy dominated by Laptop B should raise
-  B's share versus the no-decoy baseline, and a decoy dominated by Laptop A should
-  raise A's share — an irrelevant, never-chosen option steering the real decision.
-  If the agent reasons over absolute merit, it should ignore the dominated decoy and
-  its A-versus-B split should not move.
-# Two attributes drive the tradeoff: price (lower better) and performance (higher
-# better). A and B are a genuine tradeoff (cheaper-weaker vs pricier-stronger).
-#   decoy_b: Laptop C is $1,400 / perf 85 -> dominated by B ($1,300 / perf 90),
-#            not by A -> attraction effect predicts B's share rises.
-#   decoy_a: Laptop C is $1,000 / perf 60 -> dominated by A ($900 / perf 70),
-#            not by B -> predicts A's share rises.
+  If the model mirrors people, adding an asymmetrically dominated decoy should raise
+  the target's choice share relative to the no-decoy menu, even though the decoy is
+  almost never chosen. If the model reasons over absolute merit, it should ignore the
+  dominated decoy and its target-versus-competitor split should not move.
+# Each option is described on two attributes (5 = best on the paper's level scale).
+# Placement (verified against Table 1, beer): Target = (D1 best, D2 mid); Competitor =
+# (D1 mid, D2 best); decoys sit beside the target and are dominated by it, never by the
+# competitor — R=(D1 best, D2 low), R*=(D1 best, D2 lowest), F=(D1 mid-high, D2 mid),
+# RF=(D1 mid-high, D2 low). Attribute values are the paper's Appendix II scales.
+# Option 1 is always the target, Option 2 the competitor, Option 3 the decoy; the model
+# only ever sees option_1/2/3 plus each option's two attributes (the role words never
+# appear in the prompt or the choice enum).
 models:
   - provider: anthropic
     model: claude-opus-4-8
     label: "Claude Opus 4.8"
 trials_per_cell: 30
 temperature: 1.0
-decision_key: product_id
-max_steps: 8
-prompt_template: |
-  You are choosing one laptop to buy for general office work. Exactly one laptop
-  will be purchased. Two models are available:
-
-    - Laptop A (id laptop_a): price $900, performance score 70 out of 100.
-    - Laptop B (id laptop_b): price $1,300, performance score 90 out of 100.
-
-  Both are from reputable brands and meet your basic needs; the only differences
-  that matter are price and performance. Choose the single laptop to buy using the
-  tools provided.
 decision_options:
-  - id: laptop_a
-    label: "Laptop A (cheaper, weaker)"
-  - id: laptop_b
-    label: "Laptop B (pricier, stronger)"
-  - id: laptop_c
-    label: "Laptop C (the third / decoy option)"
-# The target whose decoy we headline. The attraction effect predicts laptop_b rises
-# when its dominated decoy is present.
-primary_decision: laptop_b
-tools:
-  - name: inspect_options
-    description: "Acknowledge that you have reviewed the full list of available laptops."
-    final: false
-    strict: true
-    input_schema:
-      type: object
-      additionalProperties: false
-      properties:
-        reviewed:
-          type: boolean
-          description: "Set to true once you have read the option list."
-      required: [reviewed]
-  - name: compare_options
-    description: "Record which laptops you are weighing most closely before deciding."
-    final: false
-    strict: true
-    input_schema:
-      type: object
-      additionalProperties: false
-      properties:
-        finalists:
-          type: array
-          items:
-            type: string
-            enum: [laptop_a, laptop_b, laptop_c]
-          description: "The laptop ids you are comparing."
-      required: [finalists]
-  # Real retrieval tools used by the genuinely-agentic arms: the option data lives in
-  # the variant `catalog` (served by the engine), not in the prompt, so the agent must
-  # call these to discover the menu before it can choose.
-  - name: list_products
-    description: "List the ids of every laptop available in the catalog."
-    final: false
-    strict: true
-    input_schema:
-      type: object
-      additionalProperties: false
-      properties: {}
-      required: []
-  - name: get_specs
-    description: "Look up the price and performance score for one laptop id."
-    final: false
-    strict: true
-    input_schema:
-      type: object
-      additionalProperties: false
-      properties:
-        product_id:
-          type: string
-          enum: [laptop_a, laptop_b, laptop_c]
-          description: "The id of the laptop to inspect."
-      required: [product_id]
-  - name: choose_product
-    description: "Record the single laptop you will buy."
-    final: true
-    strict: true
-    input_schema:
-      type: object
-      additionalProperties: false
-      properties:
-        product_id:
-          type: string
-          enum: [laptop_a, laptop_b, laptop_c]
-          description: "The id of the laptop to buy."
-      required: [product_id]
+  - id: option_1
+    label: "Target"
+  - id: option_2
+    label: "Competitor"
+  - id: option_3
+    label: "Decoy"
+primary_decision: option_1
+prompt_template: |
+  {scenario}
 variants:
-  - id: no_decoy
-    label: "No decoy (A vs B)"
-    # Pinned to the classic toolset so the new retrieval tools (used only by the
-    # real_* arms) are not even offered here; keeps the co-presentation arms identical.
-    tools: [inspect_options, compare_options, choose_product]
-    steps: [inspect_options, compare_options, choose_product]
-  - id: decoy_b
-    label: "Decoy favouring B"
-    tools: [inspect_options, compare_options, choose_product]
-    steps: [inspect_options, compare_options, choose_product]
-    scenario_template: |
-      You are choosing one laptop to buy for general office work. Exactly one laptop
-      will be purchased. Three models are available:
+  # ---------------------------------------------------------------- Beer
+  - id: beer_no_decoy
+    label: "Beer · no decoy"
+    options: [option_1, option_2]
+    scenario: |
+      Below are two brands of beer. You know only the price per sixpack and the
+      average quality rating (0-100) from a blind taste test. If you had to choose
+      one to buy on this information alone, which would it be?
 
-        - Laptop A (id laptop_a): price $900, performance score 70 out of 100.
-        - Laptop B (id laptop_b): price $1,300, performance score 90 out of 100.
-        - Laptop C (id laptop_c): price $1,400, performance score 85 out of 100.
+        - option_1: $1.80 per sixpack, quality 50/100
+        - option_2: $2.60 per sixpack, quality 70/100
 
-      Both Laptop A and Laptop B are from reputable brands and meet your basic needs;
-      the only differences that matter are price and performance. Choose the single
-      laptop to buy using the tools provided.
-  - id: decoy_a
-    label: "Decoy favouring A"
-    tools: [inspect_options, compare_options, choose_product]
-    steps: [inspect_options, compare_options, choose_product]
-    scenario_template: |
-      You are choosing one laptop to buy for general office work. Exactly one laptop
-      will be purchased. Three models are available:
+      Choose exactly one.
+  - id: beer_R
+    label: "Beer · decoy R (moderate range)"
+    options: [option_1, option_2, option_3]
+    scenario: |
+      Below are three brands of beer. You know only the price per sixpack and the
+      average quality rating (0-100) from a blind taste test. If you had to choose
+      one to buy on this information alone, which would it be?
 
-        - Laptop A (id laptop_a): price $900, performance score 70 out of 100.
-        - Laptop B (id laptop_b): price $1,300, performance score 90 out of 100.
-        - Laptop C (id laptop_c): price $1,000, performance score 60 out of 100.
+        - option_1: $1.80 per sixpack, quality 50/100
+        - option_2: $2.60 per sixpack, quality 70/100
+        - option_3: $1.80 per sixpack, quality 40/100
 
-      Both Laptop A and Laptop B are from reputable brands and meet your basic needs;
-      the only differences that matter are price and performance. Choose the single
-      laptop to buy using the tools provided.
-  - id: free_agent
-    label: "Autonomous (decoy for B, model self-directs)"
-    mode: auto
-    # Autonomous over the *classic* toolset (specs are in the prompt); pinned so the new
-    # retrieval tools, used only by the real_* arms, don't leak into this condition.
-    tools: [inspect_options, compare_options, choose_product]
-    scenario_template: |
-      You are choosing one laptop to buy for general office work. Exactly one laptop
-      will be purchased. Three models are available:
+      Choose exactly one.
+  - id: beer_Rstar
+    label: "Beer · decoy R* (extreme range)"
+    options: [option_1, option_2, option_3]
+    scenario: |
+      Below are three brands of beer. You know only the price per sixpack and the
+      average quality rating (0-100) from a blind taste test. If you had to choose
+      one to buy on this information alone, which would it be?
 
-        - Laptop A (id laptop_a): price $900, performance score 70 out of 100.
-        - Laptop B (id laptop_b): price $1,300, performance score 90 out of 100.
-        - Laptop C (id laptop_c): price $1,400, performance score 85 out of 100.
+        - option_1: $1.80 per sixpack, quality 50/100
+        - option_2: $2.60 per sixpack, quality 70/100
+        - option_3: $1.80 per sixpack, quality 30/100
 
-      You may use any of the available tools, in any order and as many times as you
-      like, and you must finish by calling choose_product to record your pick.
-  # Single-shot arm: the full menu is in the prompt and the agent decides in one tool
-  # call (no inspect/compare ritual). Isolates whether step-partitioning alone moves the
-  # decoy effect, against the matched three-step `decoy_b` condition above.
-  - id: direct_decoy_b
-    label: "Single-shot (decoy for B, one tool call)"
-    # Same classic toolset as decoy_b, but a one-call sequence: isolates the step count
-    # (ritual vs single-shot) as the only difference, with the menu identical and in-prompt.
-    tools: [inspect_options, compare_options, choose_product]
-    steps: [choose_product]
-    scenario_template: |
-      You are choosing one laptop to buy for general office work. Exactly one laptop
-      will be purchased. Three models are available:
+      Choose exactly one.
+  - id: beer_F
+    label: "Beer · decoy F (frequency)"
+    options: [option_1, option_2, option_3]
+    scenario: |
+      Below are three brands of beer. You know only the price per sixpack and the
+      average quality rating (0-100) from a blind taste test. If you had to choose
+      one to buy on this information alone, which would it be?
 
-        - Laptop A (id laptop_a): price $900, performance score 70 out of 100.
-        - Laptop B (id laptop_b): price $1,300, performance score 90 out of 100.
-        - Laptop C (id laptop_c): price $1,400, performance score 85 out of 100.
+        - option_1: $1.80 per sixpack, quality 50/100
+        - option_2: $2.60 per sixpack, quality 70/100
+        - option_3: $2.20 per sixpack, quality 50/100
 
-      Both Laptop A and Laptop B are from reputable brands and meet your basic needs;
-      the only differences that matter are price and performance. Choose the single
-      laptop to buy using the tools provided.
-  # Genuinely agentic arms: the specs are NOT in the prompt. The agent must call
-  # list_products / get_specs (served from `catalog`) to discover the menu, then choose.
-  # `real_no_decoy` is the matched two-laptop control so any shift is attributable to the
-  # decoy and not to the retrieval framing.
-  - id: real_no_decoy
-    label: "Real agent (no decoy, must retrieve specs)"
-    mode: auto
-    tools: [list_products, get_specs, choose_product]
-    catalog:
-      - {id: laptop_a, price: 900, performance: 70}
-      - {id: laptop_b, price: 1300, performance: 90}
-    scenario_template: |
-      You are choosing one laptop to buy for general office work. Exactly one laptop
-      will be purchased. The catalog of available laptops is not listed here; it is
-      available only through the tools.
+      Choose exactly one.
+  - id: beer_RF
+    label: "Beer · decoy RF (range-frequency)"
+    options: [option_1, option_2, option_3]
+    scenario: |
+      Below are three brands of beer. You know only the price per sixpack and the
+      average quality rating (0-100) from a blind taste test. If you had to choose
+      one to buy on this information alone, which would it be?
 
-      Use list_products to see which laptops exist and get_specs to read each one's
-      price and performance, then finish by calling choose_product to buy exactly one.
-      All laptops are from reputable brands and meet your basic needs; the only
-      differences that matter are price and performance.
-  - id: real_decoy_b
-    label: "Real agent (decoy for B, must retrieve specs)"
-    mode: auto
-    tools: [list_products, get_specs, choose_product]
-    catalog:
-      - {id: laptop_a, price: 900, performance: 70}
-      - {id: laptop_b, price: 1300, performance: 90}
-      - {id: laptop_c, price: 1400, performance: 85}
-    scenario_template: |
-      You are choosing one laptop to buy for general office work. Exactly one laptop
-      will be purchased. The catalog of available laptops is not listed here; it is
-      available only through the tools.
+        - option_1: $1.80 per sixpack, quality 50/100
+        - option_2: $2.60 per sixpack, quality 70/100
+        - option_3: $2.20 per sixpack, quality 40/100
 
-      Use list_products to see which laptops exist and get_specs to read each one's
-      price and performance, then finish by calling choose_product to buy exactly one.
-      All laptops are from reputable brands and meet your basic needs; the only
-      differences that matter are price and performance.
+      Choose exactly one.
+  # ---------------------------------------------------------------- Cars
+  - id: cars_no_decoy
+    label: "Cars · no decoy"
+    options: [option_1, option_2]
+    scenario: |
+      Below are two cars. You know only the ride-quality rating (60 = rides like a
+      Jeep, 100 = rides like a Rolls-Royce) and the gas mileage in miles per gallon.
+      If you had to choose one to buy on this information alone, which would it be?
+
+        - option_1: ride quality 100, 27 mpg
+        - option_2: ride quality 80, 33 mpg
+
+      Choose exactly one.
+  - id: cars_R
+    label: "Cars · decoy R (moderate range)"
+    options: [option_1, option_2, option_3]
+    scenario: |
+      Below are three cars. You know only the ride-quality rating (60 = rides like a
+      Jeep, 100 = rides like a Rolls-Royce) and the gas mileage in miles per gallon.
+      If you had to choose one to buy on this information alone, which would it be?
+
+        - option_1: ride quality 100, 27 mpg
+        - option_2: ride quality 80, 33 mpg
+        - option_3: ride quality 100, 24 mpg
+
+      Choose exactly one.
+  - id: cars_Rstar
+    label: "Cars · decoy R* (extreme range)"
+    options: [option_1, option_2, option_3]
+    scenario: |
+      Below are three cars. You know only the ride-quality rating (60 = rides like a
+      Jeep, 100 = rides like a Rolls-Royce) and the gas mileage in miles per gallon.
+      If you had to choose one to buy on this information alone, which would it be?
+
+        - option_1: ride quality 100, 27 mpg
+        - option_2: ride quality 80, 33 mpg
+        - option_3: ride quality 100, 21 mpg
+
+      Choose exactly one.
+  - id: cars_F
+    label: "Cars · decoy F (frequency)"
+    options: [option_1, option_2, option_3]
+    scenario: |
+      Below are three cars. You know only the ride-quality rating (60 = rides like a
+      Jeep, 100 = rides like a Rolls-Royce) and the gas mileage in miles per gallon.
+      If you had to choose one to buy on this information alone, which would it be?
+
+        - option_1: ride quality 100, 27 mpg
+        - option_2: ride quality 80, 33 mpg
+        - option_3: ride quality 90, 27 mpg
+
+      Choose exactly one.
+  - id: cars_RF
+    label: "Cars · decoy RF (range-frequency)"
+    options: [option_1, option_2, option_3]
+    scenario: |
+      Below are three cars. You know only the ride-quality rating (60 = rides like a
+      Jeep, 100 = rides like a Rolls-Royce) and the gas mileage in miles per gallon.
+      If you had to choose one to buy on this information alone, which would it be?
+
+        - option_1: ride quality 100, 27 mpg
+        - option_2: ride quality 80, 33 mpg
+        - option_3: ride quality 90, 24 mpg
+
+      Choose exactly one.
+  # ---------------------------------------------------------------- Restaurants
+  - id: restaurants_no_decoy
+    label: "Restaurants · no decoy"
+    options: [option_1, option_2]
+    scenario: |
+      Below are two restaurants. You know only the driving time in minutes to reach
+      each one and its food-quality rating in stars (1-5). If you had to choose one
+      to go to on this information alone, which would it be?
+
+        - option_1: 5 minutes away, food quality 3/5 stars
+        - option_2: 25 minutes away, food quality 5/5 stars
+
+      Choose exactly one.
+  - id: restaurants_R
+    label: "Restaurants · decoy R (moderate range)"
+    options: [option_1, option_2, option_3]
+    scenario: |
+      Below are three restaurants. You know only the driving time in minutes to reach
+      each one and its food-quality rating in stars (1-5). If you had to choose one
+      to go to on this information alone, which would it be?
+
+        - option_1: 5 minutes away, food quality 3/5 stars
+        - option_2: 25 minutes away, food quality 5/5 stars
+        - option_3: 5 minutes away, food quality 2/5 stars
+
+      Choose exactly one.
+  - id: restaurants_Rstar
+    label: "Restaurants · decoy R* (extreme range)"
+    options: [option_1, option_2, option_3]
+    scenario: |
+      Below are three restaurants. You know only the driving time in minutes to reach
+      each one and its food-quality rating in stars (1-5). If you had to choose one
+      to go to on this information alone, which would it be?
+
+        - option_1: 5 minutes away, food quality 3/5 stars
+        - option_2: 25 minutes away, food quality 5/5 stars
+        - option_3: 5 minutes away, food quality 1/5 stars
+
+      Choose exactly one.
+  - id: restaurants_F
+    label: "Restaurants · decoy F (frequency)"
+    options: [option_1, option_2, option_3]
+    scenario: |
+      Below are three restaurants. You know only the driving time in minutes to reach
+      each one and its food-quality rating in stars (1-5). If you had to choose one
+      to go to on this information alone, which would it be?
+
+        - option_1: 5 minutes away, food quality 3/5 stars
+        - option_2: 25 minutes away, food quality 5/5 stars
+        - option_3: 15 minutes away, food quality 3/5 stars
+
+      Choose exactly one.
+  - id: restaurants_RF
+    label: "Restaurants · decoy RF (range-frequency)"
+    options: [option_1, option_2, option_3]
+    scenario: |
+      Below are three restaurants. You know only the driving time in minutes to reach
+      each one and its food-quality rating in stars (1-5). If you had to choose one
+      to go to on this information alone, which would it be?
+
+        - option_1: 5 minutes away, food quality 3/5 stars
+        - option_2: 25 minutes away, food quality 5/5 stars
+        - option_3: 15 minutes away, food quality 2/5 stars
+
+      Choose exactly one.
+  # ---------------------------------------------------------------- Lotteries
+  - id: lotteries_no_decoy
+    label: "Lotteries · no decoy"
+    options: [option_1, option_2]
+    scenario: |
+      Below are two lottery tickets. You know only the chance of winning (as a
+      percentage) and the amount you would win in dollars. If you had to choose one
+      ticket on this information alone, which would it be?
+
+        - option_1: 84% chance of winning, $36 prize
+        - option_2: 56% chance of winning, $54 prize
+
+      Choose exactly one.
+  - id: lotteries_R
+    label: "Lotteries · decoy R (moderate range)"
+    options: [option_1, option_2, option_3]
+    scenario: |
+      Below are three lottery tickets. You know only the chance of winning (as a
+      percentage) and the amount you would win in dollars. If you had to choose one
+      ticket on this information alone, which would it be?
+
+        - option_1: 84% chance of winning, $36 prize
+        - option_2: 56% chance of winning, $54 prize
+        - option_3: 84% chance of winning, $27 prize
+
+      Choose exactly one.
+  - id: lotteries_Rstar
+    label: "Lotteries · decoy R* (extreme range)"
+    options: [option_1, option_2, option_3]
+    scenario: |
+      Below are three lottery tickets. You know only the chance of winning (as a
+      percentage) and the amount you would win in dollars. If you had to choose one
+      ticket on this information alone, which would it be?
+
+        - option_1: 84% chance of winning, $36 prize
+        - option_2: 56% chance of winning, $54 prize
+        - option_3: 84% chance of winning, $18 prize
+
+      Choose exactly one.
+  - id: lotteries_F
+    label: "Lotteries · decoy F (frequency)"
+    options: [option_1, option_2, option_3]
+    scenario: |
+      Below are three lottery tickets. You know only the chance of winning (as a
+      percentage) and the amount you would win in dollars. If you had to choose one
+      ticket on this information alone, which would it be?
+
+        - option_1: 84% chance of winning, $36 prize
+        - option_2: 56% chance of winning, $54 prize
+        - option_3: 70% chance of winning, $36 prize
+
+      Choose exactly one.
+  - id: lotteries_RF
+    label: "Lotteries · decoy RF (range-frequency)"
+    options: [option_1, option_2, option_3]
+    scenario: |
+      Below are three lottery tickets. You know only the chance of winning (as a
+      percentage) and the amount you would win in dollars. If you had to choose one
+      ticket on this information alone, which would it be?
+
+        - option_1: 84% chance of winning, $36 prize
+        - option_2: 56% chance of winning, $54 prize
+        - option_3: 70% chance of winning, $27 prize
+
+      Choose exactly one.
+  # ---------------------------------------------------------------- Film
+  - id: film_no_decoy
+    label: "Film · no decoy"
+    options: [option_1, option_2]
+    scenario: |
+      Below are two brands of film. You know only the developing time in minutes and
+      the color-fidelity rating (0-100, higher is better). If you had to choose one
+      to buy on this information alone, which would it be?
+
+        - option_1: 0.5 minutes developing time, color fidelity 93/100
+        - option_2: 3 minutes developing time, color fidelity 97/100
+
+      Choose exactly one.
+  - id: film_R
+    label: "Film · decoy R (moderate range)"
+    options: [option_1, option_2, option_3]
+    scenario: |
+      Below are three brands of film. You know only the developing time in minutes and
+      the color-fidelity rating (0-100, higher is better). If you had to choose one
+      to buy on this information alone, which would it be?
+
+        - option_1: 0.5 minutes developing time, color fidelity 93/100
+        - option_2: 3 minutes developing time, color fidelity 97/100
+        - option_3: 0.5 minutes developing time, color fidelity 91/100
+
+      Choose exactly one.
+  - id: film_Rstar
+    label: "Film · decoy R* (extreme range)"
+    options: [option_1, option_2, option_3]
+    scenario: |
+      Below are three brands of film. You know only the developing time in minutes and
+      the color-fidelity rating (0-100, higher is better). If you had to choose one
+      to buy on this information alone, which would it be?
+
+        - option_1: 0.5 minutes developing time, color fidelity 93/100
+        - option_2: 3 minutes developing time, color fidelity 97/100
+        - option_3: 0.5 minutes developing time, color fidelity 89/100
+
+      Choose exactly one.
+  - id: film_F
+    label: "Film · decoy F (frequency)"
+    options: [option_1, option_2, option_3]
+    scenario: |
+      Below are three brands of film. You know only the developing time in minutes and
+      the color-fidelity rating (0-100, higher is better). If you had to choose one
+      to buy on this information alone, which would it be?
+
+        - option_1: 0.5 minutes developing time, color fidelity 93/100
+        - option_2: 3 minutes developing time, color fidelity 97/100
+        - option_3: 1.5 minutes developing time, color fidelity 93/100
+
+      Choose exactly one.
+  - id: film_RF
+    label: "Film · decoy RF (range-frequency)"
+    options: [option_1, option_2, option_3]
+    scenario: |
+      Below are three brands of film. You know only the developing time in minutes and
+      the color-fidelity rating (0-100, higher is better). If you had to choose one
+      to buy on this information alone, which would it be?
+
+        - option_1: 0.5 minutes developing time, color fidelity 93/100
+        - option_2: 3 minutes developing time, color fidelity 97/100
+        - option_3: 1.5 minutes developing time, color fidelity 91/100
+
+      Choose exactly one.
+  # ---------------------------------------------------------------- Television sets
+  - id: tv_no_decoy
+    label: "TV sets · no decoy"
+    options: [option_1, option_2]
+    scenario: |
+      Below are two television sets. You know only the picture distortion (as a
+      percentage, lower is better) and the reliability (average years to first
+      breakdown). If you had to choose one to buy on this information alone, which
+      would it be?
+
+        - option_1: 0.5% picture distortion, 4 years average reliability
+        - option_2: 2.5% picture distortion, 6 years average reliability
+
+      Choose exactly one.
+  - id: tv_R
+    label: "TV sets · decoy R (moderate range)"
+    options: [option_1, option_2, option_3]
+    scenario: |
+      Below are three television sets. You know only the picture distortion (as a
+      percentage, lower is better) and the reliability (average years to first
+      breakdown). If you had to choose one to buy on this information alone, which
+      would it be?
+
+        - option_1: 0.5% picture distortion, 4 years average reliability
+        - option_2: 2.5% picture distortion, 6 years average reliability
+        - option_3: 0.5% picture distortion, 3 years average reliability
+
+      Choose exactly one.
+  - id: tv_Rstar
+    label: "TV sets · decoy R* (extreme range)"
+    options: [option_1, option_2, option_3]
+    scenario: |
+      Below are three television sets. You know only the picture distortion (as a
+      percentage, lower is better) and the reliability (average years to first
+      breakdown). If you had to choose one to buy on this information alone, which
+      would it be?
+
+        - option_1: 0.5% picture distortion, 4 years average reliability
+        - option_2: 2.5% picture distortion, 6 years average reliability
+        - option_3: 0.5% picture distortion, 2 years average reliability
+
+      Choose exactly one.
+  - id: tv_F
+    label: "TV sets · decoy F (frequency)"
+    options: [option_1, option_2, option_3]
+    scenario: |
+      Below are three television sets. You know only the picture distortion (as a
+      percentage, lower is better) and the reliability (average years to first
+      breakdown). If you had to choose one to buy on this information alone, which
+      would it be?
+
+        - option_1: 0.5% picture distortion, 4 years average reliability
+        - option_2: 2.5% picture distortion, 6 years average reliability
+        - option_3: 1.5% picture distortion, 4 years average reliability
+
+      Choose exactly one.
+  - id: tv_RF
+    label: "TV sets · decoy RF (range-frequency)"
+    options: [option_1, option_2, option_3]
+    scenario: |
+      Below are three television sets. You know only the picture distortion (as a
+      percentage, lower is better) and the reliability (average years to first
+      breakdown). If you had to choose one to buy on this information alone, which
+      would it be?
+
+        - option_1: 0.5% picture distortion, 4 years average reliability
+        - option_2: 2.5% picture distortion, 6 years average reliability
+        - option_3: 1.5% picture distortion, 3 years average reliability
+
+      Choose exactly one.
 baseline:
-  source: "Representative attraction-effect result — Huber, Payne & Puto (1982); Simonson (1989). Proportions approximate."
-  by_variant:
-    no_decoy:
-      laptop_a: 0.50
-      laptop_b: 0.50
-      laptop_c: 0.0
-    decoy_b:
-      laptop_a: 0.35
-      laptop_b: 0.63
-      laptop_c: 0.02
-    decoy_a:
-      laptop_a: 0.63
-      laptop_b: 0.35
-      laptop_c: 0.02
-    # free_agent has no human analog, so no overlay row is drawn.
+  source: >
+    Huber, Payne & Puto (1982), Tables 2 and 3. Across six product categories the
+    no-decoy target share averaged ~0.50; adding an asymmetrically dominated decoy
+    raised it by ~9 points between-subjects (range strategies R/R* ~+13, range-frequency
+    RF ~+8, frequency F ~+4), while the decoy itself was chosen ~1-2% of the
+    time. Per-category target shares are reproduced in the post tables. No per-variant
+    chart overlay (30 conditions would render unreadably); the human comparison lives
+    in the publication's tables.

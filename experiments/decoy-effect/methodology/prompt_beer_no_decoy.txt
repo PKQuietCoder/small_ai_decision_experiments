@@ -1,0 +1,9 @@
+Below are two brands of beer. You know only the price per sixpack and the
+average quality rating (0-100) from a blind taste test. If you had to choose
+one to buy on this information alone, which would it be?
+
+  - option_1: $1.80 per sixpack, quality 50/100
+  - option_2: $2.60 per sixpack, quality 70/100
+
+Choose exactly one.
+

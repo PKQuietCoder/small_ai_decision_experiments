@@ -216,6 +216,12 @@ def run_experiment(
                 steps = None
                 tool_responder = None
                 variant_tools = tool_defs
+            # A fill-in-blank variant may restrict the choice enum to a subset of
+            # the global options (e.g. a control condition that offers only two of
+            # the three options); the model must never be able to pick an option it
+            # was not shown. Budget/open variants carry no `options` key and keep
+            # the global enum.
+            cell_valid_ids = variant.get("options") or valid_ids
             for trial_no in range(trials_per_cell):
                 tasks.append(
                     {
@@ -234,6 +240,7 @@ def run_experiment(
                         "steps": steps,
                         "tool_responder": tool_responder,
                         "tool_defs": variant_tools,
+                        "valid_ids": cell_valid_ids,
                     }
                 )
                 order += 1
@@ -269,7 +276,7 @@ def run_experiment(
                     task["model_cfg"],
                     task["prompt"],
                     task["tool_defs"],
-                    valid_ids,
+                    task["valid_ids"],
                     steps=task["steps"],
                     terminal_tool=terminal_tool,
                     decision_key=decision_key,
@@ -289,7 +296,7 @@ def run_experiment(
                 decision, raw = llm_clients.decide(
                     task["model_cfg"],
                     task["prompt"],
-                    valid_ids,
+                    task["valid_ids"],
                     temperature,
                 )
                 record["raw"] = raw

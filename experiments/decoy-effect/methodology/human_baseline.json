@@ -1,20 +1,3 @@
 {
-  "source": "Representative attraction-effect result \u2014 Huber, Payne & Puto (1982); Simonson (1989). Proportions approximate.",
-  "by_variant": {
-    "no_decoy": {
-      "laptop_a": 0.5,
-      "laptop_b": 0.5,
-      "laptop_c": 0.0
-    },
-    "decoy_b": {
-      "laptop_a": 0.35,
-      "laptop_b": 0.63,
-      "laptop_c": 0.02
-    },
-    "decoy_a": {
-      "laptop_a": 0.63,
-      "laptop_b": 0.35,
-      "laptop_c": 0.02
-    }
-  }
+  "source": "Huber, Payne & Puto (1982), Tables 2 and 3. Across six product categories the no-decoy target share averaged ~0.50; adding an asymmetrically dominated decoy raised it by ~9 points between-subjects (range strategies R/R* ~+13, range-frequency RF ~+8, frequency F ~+4), while the decoy itself was chosen ~1-2% of the time. Per-category target shares are reproduced in the post tables. No per-variant chart overlay (30 conditions would render unreadably); the human comparison lives in the publication's tables.\n"
 }

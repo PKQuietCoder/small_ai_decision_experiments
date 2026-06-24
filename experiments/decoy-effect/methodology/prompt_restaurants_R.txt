@@ -1,0 +1,10 @@
+Below are three restaurants. You know only the driving time in minutes to reach
+each one and its food-quality rating in stars (1-5). If you had to choose one
+to go to on this information alone, which would it be?
+
+  - option_1: 5 minutes away, food quality 3/5 stars
+  - option_2: 25 minutes away, food quality 5/5 stars
+  - option_3: 5 minutes away, food quality 2/5 stars
+
+Choose exactly one.
+

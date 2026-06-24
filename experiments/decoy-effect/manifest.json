@@ -1,64 +1,49 @@
 {
   "experiment": "decoy-effect",
-  "title": "The Decoy Effect: Does a Worse Option Sway an Agent's Choice?",
-  "type": "agentic_budget",
-  "generatedAt": "2026-06-23T17:02:19.440385+00:00",
+  "title": "The Decoy Effect: Does a Worse Option Sway a Model's Choice?",
+  "type": "fill_in_blank_decision",
+  "generatedAt": "2026-06-24T02:27:42.436757+00:00",
   "models": [
-    "Claude Opus 4.8",
-    "Claude Sonnet 4.6",
-    "Claude Haiku 4.5",
-    "GPT-5.4 mini",
-    "GPT-5.4",
-    "GPT-5.5"
+    "Claude Opus 4.8"
   ],
   "trialsPerCell": 30,
   "conditions": [
-    "no_decoy",
-    "decoy_b",
-    "decoy_a",
-    "free_agent",
-    "direct_decoy_b",
-    "real_no_decoy",
-    "real_decoy_b"
+    "beer_no_decoy",
+    "beer_R",
+    "beer_Rstar",
+    "beer_F",
+    "beer_RF",
+    "cars_no_decoy",
+    "cars_R",
+    "cars_Rstar",
+    "cars_F",
+    "cars_RF",
+    "restaurants_no_decoy",
+    "restaurants_R",
+    "restaurants_Rstar",
+    "restaurants_F",
+    "restaurants_RF",
+    "lotteries_no_decoy",
+    "lotteries_R",
+    "lotteries_Rstar",
+    "lotteries_F",
+    "lotteries_RF",
+    "film_no_decoy",
+    "film_R",
+    "film_Rstar",
+    "film_F",
+    "film_RF",
+    "tv_no_decoy",
+    "tv_R",
+    "tv_Rstar",
+    "tv_F",
+    "tv_RF"
   ],
   "runs": {
-    "Claude Opus 4.8": "20260621T023923Z",
-    "Claude Sonnet 4.6": "20260621T024144Z",
-    "Claude Haiku 4.5": "20260621T024400Z",
-    "GPT-5.4 mini": "20260620T050019Z",
-    "GPT-5.4": "20260620T050139Z",
-    "GPT-5.5": "20260620T050326Z"
+    "Claude Opus 4.8": "20260624T020831Z"
   },
   "humanBaseline": {
-    "source": "Representative attraction-effect result \u2014 Huber, Payne & Puto (1982); Simonson (1989). Proportions approximate.",
-    "by_variant": {
-      "no_decoy": {
-        "laptop_a": 0.5,
-        "laptop_b": 0.5,
-        "laptop_c": 0.0
-      },
-      "decoy_b": {
-        "laptop_a": 0.35,
-        "laptop_b": 0.63,
-        "laptop_c": 0.02
-      },
-      "decoy_a": {
-        "laptop_a": 0.63,
-        "laptop_b": 0.35,
-        "laptop_c": 0.02
-      }
-    }
+    "source": "Huber, Payne & Puto (1982), Tables 2 and 3. Across six product categories the no-decoy target share averaged ~0.50; adding an asymmetrically dominated decoy raised it by ~9 points between-subjects (range strategies R/R* ~+13, range-frequency RF ~+8, frequency F ~+4), while the decoy itself was chosen ~1-2% of the time. Per-category target shares are reproduced in the post tables. No per-variant chart overlay (30 conditions would render unreadably); the human comparison lives in the publication's tables.\n"
   },
-  "temperature": 1.0,
-  "maxSteps": 8,
-  "decisionKey": "product_id",
-  "tools": [
-    "inspect_options",
-    "compare_options",
-    "list_products",
-    "get_specs",
-    "choose_product"
-  ],
-  "products": [],
-  "note": "Opus 4.8 rejects the temperature parameter, so its run used the model's default sampling; the Sonnet 4.6 run applied temperature 1.0. Forced tool use is pinned with disable_parallel_tool_use; choose_product uses strict tool use so the schema is always satisfied."
+  "judge": null
 }

@@ -3,3 +3,5 @@ decoy-effect,Claude Opus 4.8,condition x decision (chi-square of independence),9
 decoy-effect,GPT-5.5,condition x decision (chi-square of independence),900,518.8831,29,3.759661436745937e-91,0.7593,True
 decoy-effect,GPT-5.4,condition x decision (chi-square of independence),900,559.5273,29,1.5481156940138695e-99,0.7885,True
 decoy-effect,GPT-5.4 mini,condition x decision (chi-square of independence),900,537.1347,58,8.702538198868138e-79,0.5463,True
+decoy-effect,Claude Sonnet 4.6,condition x decision (chi-square of independence),900,824.1284,29,9.903385070570044e-155,0.9569,True
+decoy-effect,Claude Haiku 4.5,condition x decision (chi-square of independence),900,1128.9785,58,2.6897519866949594e-198,0.792,True

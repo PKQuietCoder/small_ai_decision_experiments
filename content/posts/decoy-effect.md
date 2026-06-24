@@ -2,10 +2,10 @@
 category: Decisions
 type: Experiments
 date: '2026-06-24'
-excerpt: 'A faithful rerun of Huber, Payne & Puto (1982) on four models (Claude Opus 4.8 plus GPT-5.5, GPT-5.4, GPT-5.4-mini), in two parts. Part I (replication): the dominated decoy is almost never chosen (0–1% across models), yet range decoys reliably pull toward the target on every model — often amplified well beyond the human +13 — while frequency decoys split, with Opus reversing into a similarity effect and the GPT-5 flagships staying human-like. Part II (agentic extension): the same choice under single-shot, forced-workflow, autonomous, and retrieval scaffolds on Opus — the decoy is never chosen in any scaffold (even when the agent looks it up itself), more deliberation undoes the single-shot frequency reversal (17% → 71%), and retrieval removes the range attraction lift. How options are presented, and how an agent deliberates, change which way a worthless option bends the choice.'
+excerpt: 'A faithful rerun of Huber, Payne & Puto (1982) on six models (the Claude family — Opus 4.8, Sonnet 4.6, Haiku 4.5 — plus GPT-5.5, GPT-5.4, GPT-5.4-mini), in two parts. Part I (replication): the dominated decoy is almost never chosen (0–2% across models), yet range decoys reliably pull toward the target on every model — often amplified well beyond the human +13 — while frequency decoys split by family, with every Claude model reversing into a similarity effect and the GPT-5 flagships staying human-like. Part II (agentic extension): the same choice under single-shot, forced-workflow, autonomous, and retrieval scaffolds on Opus — the decoy is never chosen in any scaffold (even when the agent looks it up itself), more deliberation undoes the single-shot frequency reversal (17% → 71%), and retrieval removes the range attraction lift. How options are presented, and how an agent deliberates, change which way a worthless option bends the choice.'
 experimentId: decoy-effect
 verdict: mixed
-controls: 'Coverage and design controls across two parts. Part I reproduces the paper''s six product categories with exact Appendix II attribute values, crosses all four decoy-placement strategies (R, R*, F, RF) against a no-decoy baseline, verifies that every decoy is asymmetrically dominated by the target and not the competitor, and reruns the 30-condition design on four models. Part II holds that choice fixed for three categories and varies only the agentic scaffold (single-shot / forced-workflow / autonomous / retrieval) within one tool harness — neutral option ids, a per-cell enum clamp so a no-decoy menu cannot offer the decoy, and per-call logging confirming the retrieval agent inspected the decoy in every trial.'
+controls: 'Coverage and design controls across two parts. Part I reproduces the paper''s six product categories with exact Appendix II attribute values, crosses all four decoy-placement strategies (R, R*, F, RF) against a no-decoy baseline, verifies that every decoy is asymmetrically dominated by the target and not the competitor, and reruns the 30-condition design on six models (the Claude family plus three GPT-5 models). Part II holds that choice fixed for three categories and varies only the agentic scaffold (single-shot / forced-workflow / autonomous / retrieval) within one tool harness — neutral option ids, a per-cell enum clamp so a no-decoy menu cannot offer the decoy, and per-call logging confirming the retrieval agent inspected the decoy in every trial.'
 featured: false
 published: true
 runId: 20260624T020831Z
@@ -31,9 +31,9 @@ makes look good, even though almost nobody picks the decoy itself. We reran the 
 Huber, Payne and Puto's *Adding asymmetrically dominated alternatives* (1982) — on a language model,
 faithfully: the same six product categories, two attributes per option, a target and a competitor in
 a genuine tradeoff, an asymmetrically dominated decoy, and the paper's four decoy-placement
-strategies. The featured model is Claude Opus 4.8, and the full design was rerun on three GPT-5 models
-(GPT-5.5, GPT-5.4, GPT-5.4-mini); each of the thirty conditions was run thirty times per model (900
-trials each). The featured Opus run is layered. First, the dominated decoy is essentially inert as a
+strategies. The featured model is Claude Opus 4.8, and the full design was rerun on the rest of the
+Claude family (Sonnet 4.6, Haiku 4.5) and on three GPT-5 models (GPT-5.5, GPT-5.4, GPT-5.4-mini); each
+of the thirty conditions was run thirty times per model (900 trials each). The featured Opus run is layered. First, the dominated decoy is essentially inert as a
 choice: it was picked in **0 of 720** trials where it was offered, cleaner even than the 1–2 percent
 humans gave it. Second, its mere presence still reshapes the choice between the other two, and strongly
 so (overall χ² = 731, *p* ≈ 10⁻¹³⁵, Cramér's V 0.90). Third, and unlike people, the *direction* of
@@ -41,16 +41,17 @@ that shift flips with the decoy's placement. Range-increasing decoys produce the
 theory predicts, pulling choice toward the target (mean change +20 and +17 points); frequency-increasing
 decoys do the opposite, in a pattern consistent with a similarity effect, pushing choice toward the
 distinctive competitor (mean change −28 and −44 points). In the original, every placement nudged the
-target upward, by an average of nine points. Across the four-model panel the picture sharpens: the
+target upward, by an average of nine points. Across the six-model panel the picture sharpens: the
 attraction effect under range decoys is *universal* — every model, Claude and GPT-5 alike, moves toward
-the target, often far more strongly than people — but the frequency reversal is **Opus's alone**.
-GPT-5.5 and GPT-5.4 keep every placement weakly positive, reproducing the human ordering; only Opus
-flips to the similarity effect, and the smaller GPT-5.4-mini is noisier still. The lesson for anyone
+the target, often far more strongly than people — but the frequency reversal is a **Claude-family
+trait**. All three Claude models (Opus, Sonnet, Haiku) flip frequency decoys into the similarity effect,
+abandoning the target; the GPT-5 flagships (5.5, 5.4) instead keep every placement weakly positive,
+reproducing the gentle human ordering, with the small GPT-5.4-mini in between. The lesson for anyone
 handing a model a menu is that the model is not indifferent to a worthless option — and the direction
 in which it bends depends on both where that option sits and which model is choosing.
 
 This report is in two parts. **Part I — Replication** runs the original study faithfully and across the
-four-model panel. **Part II — Extension: agentic scaffolds** takes the same choice and wraps it in the
+six-model panel. **Part II — Extension: agentic scaffolds** takes the same choice and wraps it in the
 scaffolds an agent actually runs inside — a single tool call, a forced inspect-compare-choose workflow,
 autonomous tool use, and a retrieval arm where the agent must look the options up itself — to ask
 whether *how* the agent decides changes the bias.
@@ -176,8 +177,9 @@ the **target's share**, and how it changes when a decoy is added. We summarise w
 distribution moves with a chi-square test of independence and Cramér's V, dropping all-zero option
 columns before testing (so the never-chosen decoy column does not distort the statistic). The featured
 run is Claude Opus 4.8 at its default sampling; to test model generality the entire 30-condition design
-was rerun on GPT-5.5, GPT-5.4, and GPT-5.4-mini (reasoning models, at low reasoning effort), 900 trials
-each. Sections 4.1–4.4 report the featured Opus run; Section 4.5 compares the panel.
+was rerun on the rest of the Claude family (Sonnet 4.6, Haiku 4.5) and on GPT-5.5, GPT-5.4, and
+GPT-5.4-mini (the GPT-5 models are reasoning models, run at low reasoning effort), 900 trials each.
+Sections 4.1–4.4 report the featured Opus run; Section 4.5 compares the six-model panel.
 
 ## 4. Results
 
@@ -256,48 +258,53 @@ on its own: 87 percent rising to 97/100 under range decoys and falling to 27/17 
 ### 4.5 Does it generalize across models?
 
 The featured Opus result raises an obvious question: is the placement split a property of language
-models, or of this one model? Rerunning the full thirty-condition design on three GPT-5 models answers
-it cleanly — one half of the result is universal, the other is not. The table gives each model's mean
-change in target share, by placement, averaged across the six categories.
+models, of the Claude family, or of this one model? Rerunning the full thirty-condition design on the
+rest of the Claude family and on three GPT-5 models answers it cleanly — one half of the result is
+universal, the other splits by model family. The table gives each model's mean change in target share,
+by placement, averaged across the six categories.
 
-| Placement | Opus 4.8 | GPT-5.5 | GPT-5.4 | GPT-5.4-mini | Humans |
-|---|---:|---:|---:|---:|---:|
-| R — moderate range | +20.0 | +39.4 | +47.2 | +12.2 | +13 |
-| R\* — extreme range | +17.2 | +36.7 | +46.1 | +6.7 | +13 |
-| F — frequency | **−27.8** | +8.3 | +0.6 | −16.7 | +4 |
-| RF — range-frequency | **−44.4** | +12.2 | +3.9 | +5.0 | +8 |
-| *Decoy chosen* | 0% | 0% | 0% | 1% | 1–2% |
-| *Cramér's V (overall)* | 0.90 | 0.76 | 0.79 | 0.55 | — |
+| Placement | Opus 4.8 | Sonnet 4.6 | Haiku 4.5 | GPT-5.5 | GPT-5.4 | GPT-5.4-mini | Humans |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| R — moderate range | +20.0 | +16.7 | +12.2 | +39.4 | +47.2 | +12.2 | +13 |
+| R\* — extreme range | +17.2 | +21.7 | +7.2 | +36.7 | +46.1 | +6.7 | +13 |
+| F — frequency | **−27.8** | **−31.7** | **−30.6** | +8.3 | +0.6 | −16.7 | +4 |
+| RF — range-frequency | **−44.4** | **−22.8** | **−16.7** | +12.2 | +3.9 | +5.0 | +8 |
+| *Decoy chosen* | 0% | 0% | 2% | 0% | 0% | 1% | 1–2% |
+| *Cramér's V (overall)* | 0.90 | 0.96 | 0.79 | 0.76 | 0.79 | 0.55 | — |
 
-**Figure 3 |** Mean change in the target's choice share by placement, for each model, against the human
-baseline. Two rows of the result are universal; one is not.
+**Figure 3 |** Mean change in the target's choice share by placement, for all six models, against the
+human baseline. Range rows are positive everywhere; the frequency rows split cleanly by family — every
+Claude model negative, both GPT-5 flagships positive.
 
-Two things hold for every model. The decoy is still almost never chosen — 0 percent for Opus, GPT-5.5
-and GPT-5.4, and 1 percent for the mini, the closest of any to the human 1–2 percent — and the choice
-still moves strongly with the menu (Cramér's V from 0.55 for the mini to 0.90 for Opus, every model
-*p* < 10⁻⁷⁸). And range decoys pull toward the target in all four; the GPT-5 flagships show an even
-larger attraction effect than Opus, with R and R\* near +40 to +47 points, several times the human +13.
+Two things hold for every model. The decoy is still almost never chosen — 0 percent for Opus, Sonnet,
+GPT-5.5 and GPT-5.4, and 1–2 percent for Haiku and the GPT-5.4-mini, the closest of any to the human
+1–2 percent — and the choice still moves strongly with the menu (Cramér's V from 0.55 for the mini to
+0.96 for Sonnet, every model *p* < 10⁻⁷⁸). And range decoys pull toward the target in all six; the
+GPT-5 flagships show the largest attraction effect of all, with R and R\* near +40 to +47 points,
+several times the human +13.
 
-What does not hold is the reversal. The frequency decoys that drove Opus away from the target leave
-GPT-5.5 and GPT-5.4 still leaning toward it: their F and RF changes are small and positive (+8 / +12
-and +1 / +4), which is the human pattern — every placement positive, frequency much weaker than range.
-Only Opus turns the frequency placements sharply negative. GPT-5.4-mini sits in between, with weaker,
-noisier effects and one reversal (F −17). So the similarity effect read off the Opus run is not a
-general property of language models; it is something Opus does on this design that the GPT-5 models do
-not.
+What splits the panel is the reversal — and it splits by family, not by model. All three Claude models
+turn frequency decoys sharply negative (F −28 / −32 / −31 for Opus / Sonnet / Haiku; RF −44 / −23 / −17):
+the similarity effect is a Claude-family signature, not an Opus quirk. The GPT-5 flagships do the
+opposite, staying weakly positive on both frequency placements (GPT-5.5 +8 / +12; GPT-5.4 +1 / +4),
+which is the gentle human pattern — every placement positive, frequency much weaker than range. The
+small GPT-5.4-mini sits between the families: it reverses on F (−17) like Claude but stays flat-positive
+on RF (+5). So whether a dominated near-substitute pushes the choice toward the target or away from it
+is decided by the model family, with Claude and GPT-5 landing on opposite sides.
 
 ### 4.6 Synthesis (replication)
 
 Four findings, ordered by how widely they hold. The dominated decoy is essentially never chosen, in
 every model (Sections 4.1, 4.5). Its presence reshapes the choice strongly and significantly, in every
 model (Sections 4.1, 4.5). Range decoys reproduce — and usually amplify — the attraction effect, in
-every model (Sections 4.2, 4.5). Only the fourth finding is model-specific: under frequency decoys Opus
-reverses into a pattern consistent with the similarity effect, abandoning the target, while the GPT-5
-flagships hold the human-like weakly-positive pattern (Sections 4.3, 4.5). The verdict for this series
-is therefore **mixed**: no model smooths the bias away, and none simply copies the gentle human
-version — the attraction effect is copied and amplified across the board, while the one model-specific
-twist is Opus's frequency reversal. Every model is highly sensitive to a dominated option it never
-picks; what differs is which way a near-substitute decoy bends the choice.
+every model (Sections 4.2, 4.5). Only the fourth finding splits the panel, and it splits by family:
+under frequency decoys every Claude model (Opus, Sonnet, Haiku) reverses into a pattern consistent with
+the similarity effect, abandoning the target, while the GPT-5 flagships hold the human-like
+weakly-positive pattern (Sections 4.3, 4.5). The verdict for this series is therefore **mixed**: no
+model smooths the bias away, and none simply copies the gentle human version — the attraction effect is
+copied and amplified across the board, while the frequency reversal is a Claude-family signature absent
+in the GPT-5 flagships. Every model is highly sensitive to a dominated option it never picks; what
+differs, by family, is which way a near-substitute decoy bends the choice.
 
 # Part II — Extension: agentic scaffolds
 
@@ -474,9 +481,9 @@ decide* is itself part of the experiment.
   unit of inference. This controls position for that contrast but does not estimate a position effect.
 - **One run per model and per scaffold, thirty trials per cell.** Magnitudes at default (or
   low-reasoning) sampling are noisy; the stable results are the *directions* — universal attraction
-  under range decoys, the Opus-specific frequency reversal, and the scaffold effects in Part II — not
-  precise point estimates. Part I reports four models; Part II is Opus only. Repeated runs, a GPT-5
-  scaffold contrast, and a wider panel are natural follow-ups.
+  under range decoys, the Claude-family frequency reversal, and the scaffold effects in Part II — not
+  precise point estimates. Part I reports six models (the Claude family and three GPT-5 models); Part II
+  is Opus only. Repeated runs, a GPT-5 scaffold contrast, and a wider panel are natural follow-ups.
 - **Strong, model-specific intrinsic tastes.** Which option a model favours before any decoy varies by
   category, model, and (in Part II) scaffold; these baselines determine how much headroom a decoy has
   to move the choice and are worth study in their own right.
@@ -490,10 +497,11 @@ decide* is itself part of the experiment.
 
 Handed the original decoy task in full, every model tested reproduces the part everyone remembers — a
 dominated option that nobody picks still bends the choice — and every model is pulled toward the target
-by a range decoy, usually harder than people are. Where they part company is the frequency decoy: Claude
-Opus 4.8 reverses toward the competitor (a near-substitute for the target making it look replaceable),
-while the GPT-5 models keep the gentle, uniformly-positive human pattern. So the bias is real and not
-smoothed away, but its *direction* depends on the placement and the model.
+by a range decoy, usually harder than people are. Where they part company is the frequency decoy, and
+they split by family: every Claude model (Opus, Sonnet, Haiku) reverses toward the competitor (a
+near-substitute for the target making it look replaceable), while the GPT-5 flagships keep the gentle,
+uniformly-positive human pattern. So the bias is real and not smoothed away, but its *direction* depends
+on the placement and the model family.
 
 The agentic extension shows that direction also depends on the scaffold. The decoy is never chosen in
 any scaffold — even when the agent reads its specs itself — so an agent will not *buy* the obvious dud.
@@ -514,9 +522,9 @@ From the replication (Part I):
 
 | Observed | Why it happens | Do differently / how to interact |
 |---|---|---|
-| A dominated option almost nobody picks (0–1% across four models) still swung the choice, by up to a full reversal. | Choice is shaped by the *set*, not each option's standalone merit. | Treat **the list of options you hand a model as part of the prompt**; drop filler and obviously-worse choices and compare alternatives like-for-like. |
-| Range decoys pulled toward the target in every model (up to +47); frequency decoys pushed Opus toward the competitor (−28 / −44) but left the GPT-5 models weakly positive. | A strictly-worse shadow of the target flatters it (attraction); a near-substitute that mimics the target on its weak attribute can make it look replaceable (similarity). | **Where a worse option sits can decide which way the choice moves** — adding "a slightly worse version of the option you want" can backfire on some models. |
-| The range attraction effect was universal and amplified; the frequency reversal was Opus-only. | Part of the bias is general to these models; part is model-specific. | Don't assume one model's decoy behaviour transfers; **measure the actual choice distribution for the model you deploy**. |
+| A dominated option almost nobody picks (0–2% across six models) still swung the choice, by up to a full reversal. | Choice is shaped by the *set*, not each option's standalone merit. | Treat **the list of options you hand a model as part of the prompt**; drop filler and obviously-worse choices and compare alternatives like-for-like. |
+| Range decoys pulled toward the target in every model (up to +47); frequency decoys pushed every Claude model toward the competitor (−28 / −32 / −31 on F) but left the GPT-5 flagships weakly positive. | A strictly-worse shadow of the target flatters it (attraction); a near-substitute that mimics the target on its weak attribute can make it look replaceable (similarity). | **Where a worse option sits can decide which way the choice moves** — adding "a slightly worse version of the option you want" can backfire on a whole model family. |
+| The range attraction effect was universal and amplified; the frequency reversal split by family — every Claude model reversed, both GPT-5 flagships did not. | Part of the bias is general to these models; part is family-specific. | Don't assume one family's decoy behaviour transfers; **measure the actual choice distribution for the model you deploy**. |
 
 From the agentic extension (Part II):
 
@@ -530,7 +538,7 @@ From the agentic extension (Part II):
 ## Data and code
 
 Every prompt, all trials, the per-condition attribute values, and the analysis behind these charts and
-tables live on GitHub: the replication (3,600 trials across four models) in
+tables live on GitHub: the replication (5,400 trials across six models) in
 [`experiments/decoy-effect`](https://github.com/PKQuietCoder/small_ai_decision_experiments/tree/HEAD/experiments/decoy-effect),
 and the agentic extension (1,800 trials with full tool-call transcripts) in
 [`experiments/decoy-effect-agentic`](https://github.com/PKQuietCoder/small_ai_decision_experiments/tree/HEAD/experiments/decoy-effect-agentic).

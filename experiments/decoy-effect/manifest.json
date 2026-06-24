@@ -2,12 +2,14 @@
   "experiment": "decoy-effect",
   "title": "The Decoy Effect: Does a Worse Option Sway a Model's Choice?",
   "type": "fill_in_blank_decision",
-  "generatedAt": "2026-06-24T02:48:12.121477+00:00",
+  "generatedAt": "2026-06-24T04:02:26.764556+00:00",
   "models": [
     "Claude Opus 4.8",
     "GPT-5.5",
     "GPT-5.4",
-    "GPT-5.4 mini"
+    "GPT-5.4 mini",
+    "Claude Sonnet 4.6",
+    "Claude Haiku 4.5"
   ],
   "trialsPerCell": 30,
   "conditions": [
@@ -46,7 +48,9 @@
     "Claude Opus 4.8": "20260624T020831Z",
     "GPT-5.5": "20260624T023209Z",
     "GPT-5.4": "20260624T023826Z",
-    "GPT-5.4 mini": "20260624T024128Z"
+    "GPT-5.4 mini": "20260624T024128Z",
+    "Claude Sonnet 4.6": "20260624T035208Z",
+    "Claude Haiku 4.5": "20260624T035459Z"
   },
   "humanBaseline": {
     "source": "Huber, Payne & Puto (1982), Tables 2 and 3. Across six product categories the no-decoy target share averaged ~0.50; adding an asymmetrically dominated decoy raised it by ~9 points between-subjects (range strategies R/R* ~+13, range-frequency RF ~+8, frequency F ~+4), while the decoy itself was chosen ~1-2% of the time. Per-category target shares are reproduced in the post tables. No per-variant chart overlay (30 conditions would render unreadably); the human comparison lives in the publication's tables.\n"

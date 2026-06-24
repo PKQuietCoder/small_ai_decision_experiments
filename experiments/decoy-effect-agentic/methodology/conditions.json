@@ -1,0 +1,452 @@
+[
+  {
+    "id": "film_no_decoy_shot",
+    "label": "Film \u00b7 no decoy \u00b7 single-shot",
+    "mode": "forced",
+    "steps": [
+      "choose_product"
+    ]
+  },
+  {
+    "id": "film_no_decoy_workflow",
+    "label": "Film \u00b7 no decoy \u00b7 forced workflow",
+    "mode": "forced",
+    "steps": [
+      "inspect_options",
+      "compare_options",
+      "choose_product"
+    ]
+  },
+  {
+    "id": "film_no_decoy_auto",
+    "label": "Film \u00b7 no decoy \u00b7 autonomous",
+    "mode": "auto",
+    "steps": "auto"
+  },
+  {
+    "id": "film_no_decoy_retrieval",
+    "label": "Film \u00b7 no decoy \u00b7 retrieval",
+    "mode": "auto",
+    "steps": "auto"
+  },
+  {
+    "id": "film_R_shot",
+    "label": "Film \u00b7 decoy R (moderate range) \u00b7 single-shot",
+    "mode": "forced",
+    "steps": [
+      "choose_product"
+    ]
+  },
+  {
+    "id": "film_R_workflow",
+    "label": "Film \u00b7 decoy R (moderate range) \u00b7 forced workflow",
+    "mode": "forced",
+    "steps": [
+      "inspect_options",
+      "compare_options",
+      "choose_product"
+    ]
+  },
+  {
+    "id": "film_R_auto",
+    "label": "Film \u00b7 decoy R (moderate range) \u00b7 autonomous",
+    "mode": "auto",
+    "steps": "auto"
+  },
+  {
+    "id": "film_R_retrieval",
+    "label": "Film \u00b7 decoy R (moderate range) \u00b7 retrieval",
+    "mode": "auto",
+    "steps": "auto"
+  },
+  {
+    "id": "film_Rstar_shot",
+    "label": "Film \u00b7 decoy R* (extreme range) \u00b7 single-shot",
+    "mode": "forced",
+    "steps": [
+      "choose_product"
+    ]
+  },
+  {
+    "id": "film_Rstar_workflow",
+    "label": "Film \u00b7 decoy R* (extreme range) \u00b7 forced workflow",
+    "mode": "forced",
+    "steps": [
+      "inspect_options",
+      "compare_options",
+      "choose_product"
+    ]
+  },
+  {
+    "id": "film_Rstar_auto",
+    "label": "Film \u00b7 decoy R* (extreme range) \u00b7 autonomous",
+    "mode": "auto",
+    "steps": "auto"
+  },
+  {
+    "id": "film_Rstar_retrieval",
+    "label": "Film \u00b7 decoy R* (extreme range) \u00b7 retrieval",
+    "mode": "auto",
+    "steps": "auto"
+  },
+  {
+    "id": "film_F_shot",
+    "label": "Film \u00b7 decoy F (frequency) \u00b7 single-shot",
+    "mode": "forced",
+    "steps": [
+      "choose_product"
+    ]
+  },
+  {
+    "id": "film_F_workflow",
+    "label": "Film \u00b7 decoy F (frequency) \u00b7 forced workflow",
+    "mode": "forced",
+    "steps": [
+      "inspect_options",
+      "compare_options",
+      "choose_product"
+    ]
+  },
+  {
+    "id": "film_F_auto",
+    "label": "Film \u00b7 decoy F (frequency) \u00b7 autonomous",
+    "mode": "auto",
+    "steps": "auto"
+  },
+  {
+    "id": "film_F_retrieval",
+    "label": "Film \u00b7 decoy F (frequency) \u00b7 retrieval",
+    "mode": "auto",
+    "steps": "auto"
+  },
+  {
+    "id": "film_RF_shot",
+    "label": "Film \u00b7 decoy RF (range-frequency) \u00b7 single-shot",
+    "mode": "forced",
+    "steps": [
+      "choose_product"
+    ]
+  },
+  {
+    "id": "film_RF_workflow",
+    "label": "Film \u00b7 decoy RF (range-frequency) \u00b7 forced workflow",
+    "mode": "forced",
+    "steps": [
+      "inspect_options",
+      "compare_options",
+      "choose_product"
+    ]
+  },
+  {
+    "id": "film_RF_auto",
+    "label": "Film \u00b7 decoy RF (range-frequency) \u00b7 autonomous",
+    "mode": "auto",
+    "steps": "auto"
+  },
+  {
+    "id": "film_RF_retrieval",
+    "label": "Film \u00b7 decoy RF (range-frequency) \u00b7 retrieval",
+    "mode": "auto",
+    "steps": "auto"
+  },
+  {
+    "id": "cars_no_decoy_shot",
+    "label": "Cars \u00b7 no decoy \u00b7 single-shot",
+    "mode": "forced",
+    "steps": [
+      "choose_product"
+    ]
+  },
+  {
+    "id": "cars_no_decoy_workflow",
+    "label": "Cars \u00b7 no decoy \u00b7 forced workflow",
+    "mode": "forced",
+    "steps": [
+      "inspect_options",
+      "compare_options",
+      "choose_product"
+    ]
+  },
+  {
+    "id": "cars_no_decoy_auto",
+    "label": "Cars \u00b7 no decoy \u00b7 autonomous",
+    "mode": "auto",
+    "steps": "auto"
+  },
+  {
+    "id": "cars_no_decoy_retrieval",
+    "label": "Cars \u00b7 no decoy \u00b7 retrieval",
+    "mode": "auto",
+    "steps": "auto"
+  },
+  {
+    "id": "cars_R_shot",
+    "label": "Cars \u00b7 decoy R (moderate range) \u00b7 single-shot",
+    "mode": "forced",
+    "steps": [
+      "choose_product"
+    ]
+  },
+  {
+    "id": "cars_R_workflow",
+    "label": "Cars \u00b7 decoy R (moderate range) \u00b7 forced workflow",
+    "mode": "forced",
+    "steps": [
+      "inspect_options",
+      "compare_options",
+      "choose_product"
+    ]
+  },
+  {
+    "id": "cars_R_auto",
+    "label": "Cars \u00b7 decoy R (moderate range) \u00b7 autonomous",
+    "mode": "auto",
+    "steps": "auto"
+  },
+  {
+    "id": "cars_R_retrieval",
+    "label": "Cars \u00b7 decoy R (moderate range) \u00b7 retrieval",
+    "mode": "auto",
+    "steps": "auto"
+  },
+  {
+    "id": "cars_Rstar_shot",
+    "label": "Cars \u00b7 decoy R* (extreme range) \u00b7 single-shot",
+    "mode": "forced",
+    "steps": [
+      "choose_product"
+    ]
+  },
+  {
+    "id": "cars_Rstar_workflow",
+    "label": "Cars \u00b7 decoy R* (extreme range) \u00b7 forced workflow",
+    "mode": "forced",
+    "steps": [
+      "inspect_options",
+      "compare_options",
+      "choose_product"
+    ]
+  },
+  {
+    "id": "cars_Rstar_auto",
+    "label": "Cars \u00b7 decoy R* (extreme range) \u00b7 autonomous",
+    "mode": "auto",
+    "steps": "auto"
+  },
+  {
+    "id": "cars_Rstar_retrieval",
+    "label": "Cars \u00b7 decoy R* (extreme range) \u00b7 retrieval",
+    "mode": "auto",
+    "steps": "auto"
+  },
+  {
+    "id": "cars_F_shot",
+    "label": "Cars \u00b7 decoy F (frequency) \u00b7 single-shot",
+    "mode": "forced",
+    "steps": [
+      "choose_product"
+    ]
+  },
+  {
+    "id": "cars_F_workflow",
+    "label": "Cars \u00b7 decoy F (frequency) \u00b7 forced workflow",
+    "mode": "forced",
+    "steps": [
+      "inspect_options",
+      "compare_options",
+      "choose_product"
+    ]
+  },
+  {
+    "id": "cars_F_auto",
+    "label": "Cars \u00b7 decoy F (frequency) \u00b7 autonomous",
+    "mode": "auto",
+    "steps": "auto"
+  },
+  {
+    "id": "cars_F_retrieval",
+    "label": "Cars \u00b7 decoy F (frequency) \u00b7 retrieval",
+    "mode": "auto",
+    "steps": "auto"
+  },
+  {
+    "id": "cars_RF_shot",
+    "label": "Cars \u00b7 decoy RF (range-frequency) \u00b7 single-shot",
+    "mode": "forced",
+    "steps": [
+      "choose_product"
+    ]
+  },
+  {
+    "id": "cars_RF_workflow",
+    "label": "Cars \u00b7 decoy RF (range-frequency) \u00b7 forced workflow",
+    "mode": "forced",
+    "steps": [
+      "inspect_options",
+      "compare_options",
+      "choose_product"
+    ]
+  },
+  {
+    "id": "cars_RF_auto",
+    "label": "Cars \u00b7 decoy RF (range-frequency) \u00b7 autonomous",
+    "mode": "auto",
+    "steps": "auto"
+  },
+  {
+    "id": "cars_RF_retrieval",
+    "label": "Cars \u00b7 decoy RF (range-frequency) \u00b7 retrieval",
+    "mode": "auto",
+    "steps": "auto"
+  },
+  {
+    "id": "tv_no_decoy_shot",
+    "label": "TV \u00b7 no decoy \u00b7 single-shot",
+    "mode": "forced",
+    "steps": [
+      "choose_product"
+    ]
+  },
+  {
+    "id": "tv_no_decoy_workflow",
+    "label": "TV \u00b7 no decoy \u00b7 forced workflow",
+    "mode": "forced",
+    "steps": [
+      "inspect_options",
+      "compare_options",
+      "choose_product"
+    ]
+  },
+  {
+    "id": "tv_no_decoy_auto",
+    "label": "TV \u00b7 no decoy \u00b7 autonomous",
+    "mode": "auto",
+    "steps": "auto"
+  },
+  {
+    "id": "tv_no_decoy_retrieval",
+    "label": "TV \u00b7 no decoy \u00b7 retrieval",
+    "mode": "auto",
+    "steps": "auto"
+  },
+  {
+    "id": "tv_R_shot",
+    "label": "TV \u00b7 decoy R (moderate range) \u00b7 single-shot",
+    "mode": "forced",
+    "steps": [
+      "choose_product"
+    ]
+  },
+  {
+    "id": "tv_R_workflow",
+    "label": "TV \u00b7 decoy R (moderate range) \u00b7 forced workflow",
+    "mode": "forced",
+    "steps": [
+      "inspect_options",
+      "compare_options",
+      "choose_product"
+    ]
+  },
+  {
+    "id": "tv_R_auto",
+    "label": "TV \u00b7 decoy R (moderate range) \u00b7 autonomous",
+    "mode": "auto",
+    "steps": "auto"
+  },
+  {
+    "id": "tv_R_retrieval",
+    "label": "TV \u00b7 decoy R (moderate range) \u00b7 retrieval",
+    "mode": "auto",
+    "steps": "auto"
+  },
+  {
+    "id": "tv_Rstar_shot",
+    "label": "TV \u00b7 decoy R* (extreme range) \u00b7 single-shot",
+    "mode": "forced",
+    "steps": [
+      "choose_product"
+    ]
+  },
+  {
+    "id": "tv_Rstar_workflow",
+    "label": "TV \u00b7 decoy R* (extreme range) \u00b7 forced workflow",
+    "mode": "forced",
+    "steps": [
+      "inspect_options",
+      "compare_options",
+      "choose_product"
+    ]
+  },
+  {
+    "id": "tv_Rstar_auto",
+    "label": "TV \u00b7 decoy R* (extreme range) \u00b7 autonomous",
+    "mode": "auto",
+    "steps": "auto"
+  },
+  {
+    "id": "tv_Rstar_retrieval",
+    "label": "TV \u00b7 decoy R* (extreme range) \u00b7 retrieval",
+    "mode": "auto",
+    "steps": "auto"
+  },
+  {
+    "id": "tv_F_shot",
+    "label": "TV \u00b7 decoy F (frequency) \u00b7 single-shot",
+    "mode": "forced",
+    "steps": [
+      "choose_product"
+    ]
+  },
+  {
+    "id": "tv_F_workflow",
+    "label": "TV \u00b7 decoy F (frequency) \u00b7 forced workflow",
+    "mode": "forced",
+    "steps": [
+      "inspect_options",
+      "compare_options",
+      "choose_product"
+    ]
+  },
+  {
+    "id": "tv_F_auto",
+    "label": "TV \u00b7 decoy F (frequency) \u00b7 autonomous",
+    "mode": "auto",
+    "steps": "auto"
+  },
+  {
+    "id": "tv_F_retrieval",
+    "label": "TV \u00b7 decoy F (frequency) \u00b7 retrieval",
+    "mode": "auto",
+    "steps": "auto"
+  },
+  {
+    "id": "tv_RF_shot",
+    "label": "TV \u00b7 decoy RF (range-frequency) \u00b7 single-shot",
+    "mode": "forced",
+    "steps": [
+      "choose_product"
+    ]
+  },
+  {
+    "id": "tv_RF_workflow",
+    "label": "TV \u00b7 decoy RF (range-frequency) \u00b7 forced workflow",
+    "mode": "forced",
+    "steps": [
+      "inspect_options",
+      "compare_options",
+      "choose_product"
+    ]
+  },
+  {
+    "id": "tv_RF_auto",
+    "label": "TV \u00b7 decoy RF (range-frequency) \u00b7 autonomous",
+    "mode": "auto",
+    "steps": "auto"
+  },
+  {
+    "id": "tv_RF_retrieval",
+    "label": "TV \u00b7 decoy RF (range-frequency) \u00b7 retrieval",
+    "mode": "auto",
+    "steps": "auto"
+  }
+]

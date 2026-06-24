@@ -1,6 +1,6 @@
 # LLM Decision Science Blog
 
-A Statsig-style blog that publishes small, careful experiments on how language models actually decide. The currently published experiment ("The Decoy Effect") is a faithful rerun of Huber, Payne & Puto (1982) on Claude Opus 4.8: a deliberately worse, never-chosen third option across the paper's six product categories and all four decoy-placement strategies, with the results compared against the human baseline. Other studies (the crime-metaphor framing trap, "When Budgeting Backfires," and the Wason falsification task) are written up as drafts but withheld from the public repo as "Coming soon" until released.
+A Statsig-style blog that publishes small, careful experiments on how language models actually decide. The currently published experiment ("The Decoy Effect") is a faithful rerun of Huber, Payne & Puto (1982) on Claude Opus 4.8: a deliberately worse, never-chosen third option across the paper's six product categories and all four decoy-placement strategies, with the results compared against the human baseline. A companion methods study ("The Decoy Effect Under Agentic Scaffolds") crosses that choice with single-shot, forced-workflow, autonomous, and retrieval scaffolds to test whether deliberation and presentation change the bias. Other studies (the crime-metaphor framing trap, "When Budgeting Backfires," and the Wason falsification task) are written up as drafts but withheld from the public repo as "Coming soon" until released.
 
 ## Run & Operate
 

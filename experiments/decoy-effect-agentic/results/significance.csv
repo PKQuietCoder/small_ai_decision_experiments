@@ -1,0 +1,2 @@
+experiment,source,test,n,statistic,dof,p_value,effect_size,significant
+decoy-effect-agentic,Claude Opus 4.8,condition x product (chi-square of independence),1800,1540.4653,118,3.793708937990865e-246,0.6541,True

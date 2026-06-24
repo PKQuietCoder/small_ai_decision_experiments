@@ -1,0 +1,1265 @@
+id: decoy-effect-agentic
+title: 'The Decoy Effect Under Agentic Scaffolds: Does How an Agent Deliberates Change the Bias?'
+type: agentic_budget
+status: draft
+summary: 'An agentic extension of the faithful decoy-effect replication. The paper''s attraction-effect
+  choice (target / competitor / asymmetrically dominated decoy, four placement strategies) is held fixed
+  for three categories (film, cars, television sets) and crossed with how the choice is staged: a single
+  tool call, a forced inspect-compare-choose workflow, fully autonomous tool use, and a retrieval arm
+  where the agent must look up each option''s specs through tools rather than reading a menu. It tests
+  whether the placement signature (range decoys raise the target; Opus''s frequency reversal) survives
+  more deliberation or a different presentation.'
+hypothesis: If the decoy effect lives in the side-by-side comparison, single-shot and forced-workflow
+  arms should match, autonomy should not reliably change it, and requiring the agent to retrieve specs
+  itself may weaken it. If staging drives the effect, the arms should diverge.
+models:
+- provider: anthropic
+  model: claude-opus-4-8
+  label: Claude Opus 4.8
+trials_per_cell: 30
+temperature: 1.0
+decision_key: product_id
+max_steps: 10
+prompt_template: |
+  Choose one option using the tools provided.
+decision_options:
+- id: option_1
+  label: Target
+- id: option_2
+  label: Competitor
+- id: option_3
+  label: Decoy
+primary_decision: option_1
+tools:
+- name: inspect_options
+  description: Acknowledge that you have reviewed the full list of available options.
+  final: false
+  strict: true
+  input_schema:
+    type: object
+    additionalProperties: false
+    properties:
+      reviewed:
+        type: boolean
+        description: Set to true once you have read the option list.
+    required:
+    - reviewed
+- name: compare_options
+  description: Record which options you are weighing most closely before deciding.
+  final: false
+  strict: true
+  input_schema:
+    type: object
+    additionalProperties: false
+    properties:
+      finalists:
+        type: array
+        items:
+          type: string
+          enum: &id001
+          - option_1
+          - option_2
+          - option_3
+        description: The option ids you are comparing.
+    required:
+    - finalists
+- name: list_products
+  description: List the ids of every option available in the catalog.
+  final: false
+  strict: true
+  input_schema:
+    type: object
+    additionalProperties: false
+    properties: {}
+    required: []
+- name: get_specs
+  description: Look up the two attributes for one option id.
+  final: false
+  strict: true
+  input_schema:
+    type: object
+    additionalProperties: false
+    properties:
+      product_id:
+        type: string
+        enum: *id001
+        description: The id of the option to inspect.
+    required:
+    - product_id
+- name: choose_product
+  description: Record the single option you will pick.
+  final: true
+  strict: true
+  input_schema:
+    type: object
+    additionalProperties: false
+    properties:
+      product_id:
+        type: string
+        enum: *id001
+        description: The id of the option to pick.
+    required:
+    - product_id
+variants:
+- id: film_no_decoy_shot
+  label: Film · no decoy · single-shot
+  options:
+  - option_1
+  - option_2
+  tools:
+  - choose_product
+  steps:
+  - choose_product
+  scenario_template: |
+    Below are two brands of film. You know only the developing time in minutes and the color-fidelity rating (0-100, higher is better). If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: 0.5 minutes developing time, color fidelity 93/100
+      - option_2: 3 minutes developing time, color fidelity 97/100
+
+    Choose exactly one using the tools provided.
+- id: film_no_decoy_workflow
+  label: Film · no decoy · forced workflow
+  options:
+  - option_1
+  - option_2
+  tools:
+  - inspect_options
+  - compare_options
+  - choose_product
+  steps:
+  - inspect_options
+  - compare_options
+  - choose_product
+  scenario_template: |
+    Below are two brands of film. You know only the developing time in minutes and the color-fidelity rating (0-100, higher is better). If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: 0.5 minutes developing time, color fidelity 93/100
+      - option_2: 3 minutes developing time, color fidelity 97/100
+
+    Choose exactly one using the tools provided.
+- id: film_no_decoy_auto
+  label: Film · no decoy · autonomous
+  options:
+  - option_1
+  - option_2
+  tools:
+  - inspect_options
+  - compare_options
+  - choose_product
+  mode: auto
+  scenario_template: |
+    Below are two brands of film. You know only the developing time in minutes and the color-fidelity rating (0-100, higher is better). If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: 0.5 minutes developing time, color fidelity 93/100
+      - option_2: 3 minutes developing time, color fidelity 97/100
+
+    You may use the available tools in any order and as many times as you like, and must finish by calling choose_product to record your pick.
+- id: film_no_decoy_retrieval
+  label: Film · no decoy · retrieval
+  options:
+  - option_1
+  - option_2
+  tools:
+  - list_products
+  - get_specs
+  - choose_product
+  mode: auto
+  catalog:
+  - id: option_1
+    specs: 0.5 minutes developing time, color fidelity 93/100
+  - id: option_2
+    specs: 3 minutes developing time, color fidelity 97/100
+  scenario_template: |
+    You are choosing one brand of film to buy. The options are not listed here; they are available only through the tools. Use list_products to see which options exist and get_specs to read each one's attributes, then finish by calling choose_product to pick exactly one. Each option is described by its developing time in minutes and its color-fidelity rating (0-100, higher is better).
+- id: film_R_shot
+  label: Film · decoy R (moderate range) · single-shot
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - choose_product
+  steps:
+  - choose_product
+  scenario_template: |
+    Below are three brands of film. You know only the developing time in minutes and the color-fidelity rating (0-100, higher is better). If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: 0.5 minutes developing time, color fidelity 93/100
+      - option_2: 3 minutes developing time, color fidelity 97/100
+      - option_3: 0.5 minutes developing time, color fidelity 91/100
+
+    Choose exactly one using the tools provided.
+- id: film_R_workflow
+  label: Film · decoy R (moderate range) · forced workflow
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - inspect_options
+  - compare_options
+  - choose_product
+  steps:
+  - inspect_options
+  - compare_options
+  - choose_product
+  scenario_template: |
+    Below are three brands of film. You know only the developing time in minutes and the color-fidelity rating (0-100, higher is better). If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: 0.5 minutes developing time, color fidelity 93/100
+      - option_2: 3 minutes developing time, color fidelity 97/100
+      - option_3: 0.5 minutes developing time, color fidelity 91/100
+
+    Choose exactly one using the tools provided.
+- id: film_R_auto
+  label: Film · decoy R (moderate range) · autonomous
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - inspect_options
+  - compare_options
+  - choose_product
+  mode: auto
+  scenario_template: |
+    Below are three brands of film. You know only the developing time in minutes and the color-fidelity rating (0-100, higher is better). If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: 0.5 minutes developing time, color fidelity 93/100
+      - option_2: 3 minutes developing time, color fidelity 97/100
+      - option_3: 0.5 minutes developing time, color fidelity 91/100
+
+    You may use the available tools in any order and as many times as you like, and must finish by calling choose_product to record your pick.
+- id: film_R_retrieval
+  label: Film · decoy R (moderate range) · retrieval
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - list_products
+  - get_specs
+  - choose_product
+  mode: auto
+  catalog:
+  - id: option_1
+    specs: 0.5 minutes developing time, color fidelity 93/100
+  - id: option_2
+    specs: 3 minutes developing time, color fidelity 97/100
+  - id: option_3
+    specs: 0.5 minutes developing time, color fidelity 91/100
+  scenario_template: |
+    You are choosing one brand of film to buy. The options are not listed here; they are available only through the tools. Use list_products to see which options exist and get_specs to read each one's attributes, then finish by calling choose_product to pick exactly one. Each option is described by its developing time in minutes and its color-fidelity rating (0-100, higher is better).
+- id: film_Rstar_shot
+  label: Film · decoy R* (extreme range) · single-shot
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - choose_product
+  steps:
+  - choose_product
+  scenario_template: |
+    Below are three brands of film. You know only the developing time in minutes and the color-fidelity rating (0-100, higher is better). If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: 0.5 minutes developing time, color fidelity 93/100
+      - option_2: 3 minutes developing time, color fidelity 97/100
+      - option_3: 0.5 minutes developing time, color fidelity 89/100
+
+    Choose exactly one using the tools provided.
+- id: film_Rstar_workflow
+  label: Film · decoy R* (extreme range) · forced workflow
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - inspect_options
+  - compare_options
+  - choose_product
+  steps:
+  - inspect_options
+  - compare_options
+  - choose_product
+  scenario_template: |
+    Below are three brands of film. You know only the developing time in minutes and the color-fidelity rating (0-100, higher is better). If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: 0.5 minutes developing time, color fidelity 93/100
+      - option_2: 3 minutes developing time, color fidelity 97/100
+      - option_3: 0.5 minutes developing time, color fidelity 89/100
+
+    Choose exactly one using the tools provided.
+- id: film_Rstar_auto
+  label: Film · decoy R* (extreme range) · autonomous
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - inspect_options
+  - compare_options
+  - choose_product
+  mode: auto
+  scenario_template: |
+    Below are three brands of film. You know only the developing time in minutes and the color-fidelity rating (0-100, higher is better). If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: 0.5 minutes developing time, color fidelity 93/100
+      - option_2: 3 minutes developing time, color fidelity 97/100
+      - option_3: 0.5 minutes developing time, color fidelity 89/100
+
+    You may use the available tools in any order and as many times as you like, and must finish by calling choose_product to record your pick.
+- id: film_Rstar_retrieval
+  label: Film · decoy R* (extreme range) · retrieval
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - list_products
+  - get_specs
+  - choose_product
+  mode: auto
+  catalog:
+  - id: option_1
+    specs: 0.5 minutes developing time, color fidelity 93/100
+  - id: option_2
+    specs: 3 minutes developing time, color fidelity 97/100
+  - id: option_3
+    specs: 0.5 minutes developing time, color fidelity 89/100
+  scenario_template: |
+    You are choosing one brand of film to buy. The options are not listed here; they are available only through the tools. Use list_products to see which options exist and get_specs to read each one's attributes, then finish by calling choose_product to pick exactly one. Each option is described by its developing time in minutes and its color-fidelity rating (0-100, higher is better).
+- id: film_F_shot
+  label: Film · decoy F (frequency) · single-shot
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - choose_product
+  steps:
+  - choose_product
+  scenario_template: |
+    Below are three brands of film. You know only the developing time in minutes and the color-fidelity rating (0-100, higher is better). If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: 0.5 minutes developing time, color fidelity 93/100
+      - option_2: 3 minutes developing time, color fidelity 97/100
+      - option_3: 1.5 minutes developing time, color fidelity 93/100
+
+    Choose exactly one using the tools provided.
+- id: film_F_workflow
+  label: Film · decoy F (frequency) · forced workflow
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - inspect_options
+  - compare_options
+  - choose_product
+  steps:
+  - inspect_options
+  - compare_options
+  - choose_product
+  scenario_template: |
+    Below are three brands of film. You know only the developing time in minutes and the color-fidelity rating (0-100, higher is better). If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: 0.5 minutes developing time, color fidelity 93/100
+      - option_2: 3 minutes developing time, color fidelity 97/100
+      - option_3: 1.5 minutes developing time, color fidelity 93/100
+
+    Choose exactly one using the tools provided.
+- id: film_F_auto
+  label: Film · decoy F (frequency) · autonomous
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - inspect_options
+  - compare_options
+  - choose_product
+  mode: auto
+  scenario_template: |
+    Below are three brands of film. You know only the developing time in minutes and the color-fidelity rating (0-100, higher is better). If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: 0.5 minutes developing time, color fidelity 93/100
+      - option_2: 3 minutes developing time, color fidelity 97/100
+      - option_3: 1.5 minutes developing time, color fidelity 93/100
+
+    You may use the available tools in any order and as many times as you like, and must finish by calling choose_product to record your pick.
+- id: film_F_retrieval
+  label: Film · decoy F (frequency) · retrieval
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - list_products
+  - get_specs
+  - choose_product
+  mode: auto
+  catalog:
+  - id: option_1
+    specs: 0.5 minutes developing time, color fidelity 93/100
+  - id: option_2
+    specs: 3 minutes developing time, color fidelity 97/100
+  - id: option_3
+    specs: 1.5 minutes developing time, color fidelity 93/100
+  scenario_template: |
+    You are choosing one brand of film to buy. The options are not listed here; they are available only through the tools. Use list_products to see which options exist and get_specs to read each one's attributes, then finish by calling choose_product to pick exactly one. Each option is described by its developing time in minutes and its color-fidelity rating (0-100, higher is better).
+- id: film_RF_shot
+  label: Film · decoy RF (range-frequency) · single-shot
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - choose_product
+  steps:
+  - choose_product
+  scenario_template: |
+    Below are three brands of film. You know only the developing time in minutes and the color-fidelity rating (0-100, higher is better). If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: 0.5 minutes developing time, color fidelity 93/100
+      - option_2: 3 minutes developing time, color fidelity 97/100
+      - option_3: 1.5 minutes developing time, color fidelity 91/100
+
+    Choose exactly one using the tools provided.
+- id: film_RF_workflow
+  label: Film · decoy RF (range-frequency) · forced workflow
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - inspect_options
+  - compare_options
+  - choose_product
+  steps:
+  - inspect_options
+  - compare_options
+  - choose_product
+  scenario_template: |
+    Below are three brands of film. You know only the developing time in minutes and the color-fidelity rating (0-100, higher is better). If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: 0.5 minutes developing time, color fidelity 93/100
+      - option_2: 3 minutes developing time, color fidelity 97/100
+      - option_3: 1.5 minutes developing time, color fidelity 91/100
+
+    Choose exactly one using the tools provided.
+- id: film_RF_auto
+  label: Film · decoy RF (range-frequency) · autonomous
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - inspect_options
+  - compare_options
+  - choose_product
+  mode: auto
+  scenario_template: |
+    Below are three brands of film. You know only the developing time in minutes and the color-fidelity rating (0-100, higher is better). If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: 0.5 minutes developing time, color fidelity 93/100
+      - option_2: 3 minutes developing time, color fidelity 97/100
+      - option_3: 1.5 minutes developing time, color fidelity 91/100
+
+    You may use the available tools in any order and as many times as you like, and must finish by calling choose_product to record your pick.
+- id: film_RF_retrieval
+  label: Film · decoy RF (range-frequency) · retrieval
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - list_products
+  - get_specs
+  - choose_product
+  mode: auto
+  catalog:
+  - id: option_1
+    specs: 0.5 minutes developing time, color fidelity 93/100
+  - id: option_2
+    specs: 3 minutes developing time, color fidelity 97/100
+  - id: option_3
+    specs: 1.5 minutes developing time, color fidelity 91/100
+  scenario_template: |
+    You are choosing one brand of film to buy. The options are not listed here; they are available only through the tools. Use list_products to see which options exist and get_specs to read each one's attributes, then finish by calling choose_product to pick exactly one. Each option is described by its developing time in minutes and its color-fidelity rating (0-100, higher is better).
+- id: cars_no_decoy_shot
+  label: Cars · no decoy · single-shot
+  options:
+  - option_1
+  - option_2
+  tools:
+  - choose_product
+  steps:
+  - choose_product
+  scenario_template: |
+    Below are two cars. You know only the ride-quality rating (60 = rides like a Jeep, 100 = rides like a Rolls-Royce) and the gas mileage in miles per gallon. If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: ride quality 100, 27 mpg
+      - option_2: ride quality 80, 33 mpg
+
+    Choose exactly one using the tools provided.
+- id: cars_no_decoy_workflow
+  label: Cars · no decoy · forced workflow
+  options:
+  - option_1
+  - option_2
+  tools:
+  - inspect_options
+  - compare_options
+  - choose_product
+  steps:
+  - inspect_options
+  - compare_options
+  - choose_product
+  scenario_template: |
+    Below are two cars. You know only the ride-quality rating (60 = rides like a Jeep, 100 = rides like a Rolls-Royce) and the gas mileage in miles per gallon. If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: ride quality 100, 27 mpg
+      - option_2: ride quality 80, 33 mpg
+
+    Choose exactly one using the tools provided.
+- id: cars_no_decoy_auto
+  label: Cars · no decoy · autonomous
+  options:
+  - option_1
+  - option_2
+  tools:
+  - inspect_options
+  - compare_options
+  - choose_product
+  mode: auto
+  scenario_template: |
+    Below are two cars. You know only the ride-quality rating (60 = rides like a Jeep, 100 = rides like a Rolls-Royce) and the gas mileage in miles per gallon. If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: ride quality 100, 27 mpg
+      - option_2: ride quality 80, 33 mpg
+
+    You may use the available tools in any order and as many times as you like, and must finish by calling choose_product to record your pick.
+- id: cars_no_decoy_retrieval
+  label: Cars · no decoy · retrieval
+  options:
+  - option_1
+  - option_2
+  tools:
+  - list_products
+  - get_specs
+  - choose_product
+  mode: auto
+  catalog:
+  - id: option_1
+    specs: ride quality 100, 27 mpg
+  - id: option_2
+    specs: ride quality 80, 33 mpg
+  scenario_template: |
+    You are choosing one car to buy. The options are not listed here; they are available only through the tools. Use list_products to see which options exist and get_specs to read each one's attributes, then finish by calling choose_product to pick exactly one. Each option is described by its ride-quality rating (60 = rides like a Jeep, 100 = rides like a Rolls-Royce) and its gas mileage in mpg.
+- id: cars_R_shot
+  label: Cars · decoy R (moderate range) · single-shot
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - choose_product
+  steps:
+  - choose_product
+  scenario_template: |
+    Below are three cars. You know only the ride-quality rating (60 = rides like a Jeep, 100 = rides like a Rolls-Royce) and the gas mileage in miles per gallon. If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: ride quality 100, 27 mpg
+      - option_2: ride quality 80, 33 mpg
+      - option_3: ride quality 100, 24 mpg
+
+    Choose exactly one using the tools provided.
+- id: cars_R_workflow
+  label: Cars · decoy R (moderate range) · forced workflow
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - inspect_options
+  - compare_options
+  - choose_product
+  steps:
+  - inspect_options
+  - compare_options
+  - choose_product
+  scenario_template: |
+    Below are three cars. You know only the ride-quality rating (60 = rides like a Jeep, 100 = rides like a Rolls-Royce) and the gas mileage in miles per gallon. If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: ride quality 100, 27 mpg
+      - option_2: ride quality 80, 33 mpg
+      - option_3: ride quality 100, 24 mpg
+
+    Choose exactly one using the tools provided.
+- id: cars_R_auto
+  label: Cars · decoy R (moderate range) · autonomous
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - inspect_options
+  - compare_options
+  - choose_product
+  mode: auto
+  scenario_template: |
+    Below are three cars. You know only the ride-quality rating (60 = rides like a Jeep, 100 = rides like a Rolls-Royce) and the gas mileage in miles per gallon. If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: ride quality 100, 27 mpg
+      - option_2: ride quality 80, 33 mpg
+      - option_3: ride quality 100, 24 mpg
+
+    You may use the available tools in any order and as many times as you like, and must finish by calling choose_product to record your pick.
+- id: cars_R_retrieval
+  label: Cars · decoy R (moderate range) · retrieval
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - list_products
+  - get_specs
+  - choose_product
+  mode: auto
+  catalog:
+  - id: option_1
+    specs: ride quality 100, 27 mpg
+  - id: option_2
+    specs: ride quality 80, 33 mpg
+  - id: option_3
+    specs: ride quality 100, 24 mpg
+  scenario_template: |
+    You are choosing one car to buy. The options are not listed here; they are available only through the tools. Use list_products to see which options exist and get_specs to read each one's attributes, then finish by calling choose_product to pick exactly one. Each option is described by its ride-quality rating (60 = rides like a Jeep, 100 = rides like a Rolls-Royce) and its gas mileage in mpg.
+- id: cars_Rstar_shot
+  label: Cars · decoy R* (extreme range) · single-shot
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - choose_product
+  steps:
+  - choose_product
+  scenario_template: |
+    Below are three cars. You know only the ride-quality rating (60 = rides like a Jeep, 100 = rides like a Rolls-Royce) and the gas mileage in miles per gallon. If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: ride quality 100, 27 mpg
+      - option_2: ride quality 80, 33 mpg
+      - option_3: ride quality 100, 21 mpg
+
+    Choose exactly one using the tools provided.
+- id: cars_Rstar_workflow
+  label: Cars · decoy R* (extreme range) · forced workflow
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - inspect_options
+  - compare_options
+  - choose_product
+  steps:
+  - inspect_options
+  - compare_options
+  - choose_product
+  scenario_template: |
+    Below are three cars. You know only the ride-quality rating (60 = rides like a Jeep, 100 = rides like a Rolls-Royce) and the gas mileage in miles per gallon. If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: ride quality 100, 27 mpg
+      - option_2: ride quality 80, 33 mpg
+      - option_3: ride quality 100, 21 mpg
+
+    Choose exactly one using the tools provided.
+- id: cars_Rstar_auto
+  label: Cars · decoy R* (extreme range) · autonomous
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - inspect_options
+  - compare_options
+  - choose_product
+  mode: auto
+  scenario_template: |
+    Below are three cars. You know only the ride-quality rating (60 = rides like a Jeep, 100 = rides like a Rolls-Royce) and the gas mileage in miles per gallon. If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: ride quality 100, 27 mpg
+      - option_2: ride quality 80, 33 mpg
+      - option_3: ride quality 100, 21 mpg
+
+    You may use the available tools in any order and as many times as you like, and must finish by calling choose_product to record your pick.
+- id: cars_Rstar_retrieval
+  label: Cars · decoy R* (extreme range) · retrieval
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - list_products
+  - get_specs
+  - choose_product
+  mode: auto
+  catalog:
+  - id: option_1
+    specs: ride quality 100, 27 mpg
+  - id: option_2
+    specs: ride quality 80, 33 mpg
+  - id: option_3
+    specs: ride quality 100, 21 mpg
+  scenario_template: |
+    You are choosing one car to buy. The options are not listed here; they are available only through the tools. Use list_products to see which options exist and get_specs to read each one's attributes, then finish by calling choose_product to pick exactly one. Each option is described by its ride-quality rating (60 = rides like a Jeep, 100 = rides like a Rolls-Royce) and its gas mileage in mpg.
+- id: cars_F_shot
+  label: Cars · decoy F (frequency) · single-shot
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - choose_product
+  steps:
+  - choose_product
+  scenario_template: |
+    Below are three cars. You know only the ride-quality rating (60 = rides like a Jeep, 100 = rides like a Rolls-Royce) and the gas mileage in miles per gallon. If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: ride quality 100, 27 mpg
+      - option_2: ride quality 80, 33 mpg
+      - option_3: ride quality 90, 27 mpg
+
+    Choose exactly one using the tools provided.
+- id: cars_F_workflow
+  label: Cars · decoy F (frequency) · forced workflow
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - inspect_options
+  - compare_options
+  - choose_product
+  steps:
+  - inspect_options
+  - compare_options
+  - choose_product
+  scenario_template: |
+    Below are three cars. You know only the ride-quality rating (60 = rides like a Jeep, 100 = rides like a Rolls-Royce) and the gas mileage in miles per gallon. If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: ride quality 100, 27 mpg
+      - option_2: ride quality 80, 33 mpg
+      - option_3: ride quality 90, 27 mpg
+
+    Choose exactly one using the tools provided.
+- id: cars_F_auto
+  label: Cars · decoy F (frequency) · autonomous
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - inspect_options
+  - compare_options
+  - choose_product
+  mode: auto
+  scenario_template: |
+    Below are three cars. You know only the ride-quality rating (60 = rides like a Jeep, 100 = rides like a Rolls-Royce) and the gas mileage in miles per gallon. If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: ride quality 100, 27 mpg
+      - option_2: ride quality 80, 33 mpg
+      - option_3: ride quality 90, 27 mpg
+
+    You may use the available tools in any order and as many times as you like, and must finish by calling choose_product to record your pick.
+- id: cars_F_retrieval
+  label: Cars · decoy F (frequency) · retrieval
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - list_products
+  - get_specs
+  - choose_product
+  mode: auto
+  catalog:
+  - id: option_1
+    specs: ride quality 100, 27 mpg
+  - id: option_2
+    specs: ride quality 80, 33 mpg
+  - id: option_3
+    specs: ride quality 90, 27 mpg
+  scenario_template: |
+    You are choosing one car to buy. The options are not listed here; they are available only through the tools. Use list_products to see which options exist and get_specs to read each one's attributes, then finish by calling choose_product to pick exactly one. Each option is described by its ride-quality rating (60 = rides like a Jeep, 100 = rides like a Rolls-Royce) and its gas mileage in mpg.
+- id: cars_RF_shot
+  label: Cars · decoy RF (range-frequency) · single-shot
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - choose_product
+  steps:
+  - choose_product
+  scenario_template: |
+    Below are three cars. You know only the ride-quality rating (60 = rides like a Jeep, 100 = rides like a Rolls-Royce) and the gas mileage in miles per gallon. If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: ride quality 100, 27 mpg
+      - option_2: ride quality 80, 33 mpg
+      - option_3: ride quality 90, 24 mpg
+
+    Choose exactly one using the tools provided.
+- id: cars_RF_workflow
+  label: Cars · decoy RF (range-frequency) · forced workflow
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - inspect_options
+  - compare_options
+  - choose_product
+  steps:
+  - inspect_options
+  - compare_options
+  - choose_product
+  scenario_template: |
+    Below are three cars. You know only the ride-quality rating (60 = rides like a Jeep, 100 = rides like a Rolls-Royce) and the gas mileage in miles per gallon. If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: ride quality 100, 27 mpg
+      - option_2: ride quality 80, 33 mpg
+      - option_3: ride quality 90, 24 mpg
+
+    Choose exactly one using the tools provided.
+- id: cars_RF_auto
+  label: Cars · decoy RF (range-frequency) · autonomous
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - inspect_options
+  - compare_options
+  - choose_product
+  mode: auto
+  scenario_template: |
+    Below are three cars. You know only the ride-quality rating (60 = rides like a Jeep, 100 = rides like a Rolls-Royce) and the gas mileage in miles per gallon. If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: ride quality 100, 27 mpg
+      - option_2: ride quality 80, 33 mpg
+      - option_3: ride quality 90, 24 mpg
+
+    You may use the available tools in any order and as many times as you like, and must finish by calling choose_product to record your pick.
+- id: cars_RF_retrieval
+  label: Cars · decoy RF (range-frequency) · retrieval
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - list_products
+  - get_specs
+  - choose_product
+  mode: auto
+  catalog:
+  - id: option_1
+    specs: ride quality 100, 27 mpg
+  - id: option_2
+    specs: ride quality 80, 33 mpg
+  - id: option_3
+    specs: ride quality 90, 24 mpg
+  scenario_template: |
+    You are choosing one car to buy. The options are not listed here; they are available only through the tools. Use list_products to see which options exist and get_specs to read each one's attributes, then finish by calling choose_product to pick exactly one. Each option is described by its ride-quality rating (60 = rides like a Jeep, 100 = rides like a Rolls-Royce) and its gas mileage in mpg.
+- id: tv_no_decoy_shot
+  label: TV · no decoy · single-shot
+  options:
+  - option_1
+  - option_2
+  tools:
+  - choose_product
+  steps:
+  - choose_product
+  scenario_template: |
+    Below are two television sets. You know only the picture distortion (as a percentage, lower is better) and the reliability (average years to first breakdown). If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: 0.5% picture distortion, 4 years average reliability
+      - option_2: 2.5% picture distortion, 6 years average reliability
+
+    Choose exactly one using the tools provided.
+- id: tv_no_decoy_workflow
+  label: TV · no decoy · forced workflow
+  options:
+  - option_1
+  - option_2
+  tools:
+  - inspect_options
+  - compare_options
+  - choose_product
+  steps:
+  - inspect_options
+  - compare_options
+  - choose_product
+  scenario_template: |
+    Below are two television sets. You know only the picture distortion (as a percentage, lower is better) and the reliability (average years to first breakdown). If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: 0.5% picture distortion, 4 years average reliability
+      - option_2: 2.5% picture distortion, 6 years average reliability
+
+    Choose exactly one using the tools provided.
+- id: tv_no_decoy_auto
+  label: TV · no decoy · autonomous
+  options:
+  - option_1
+  - option_2
+  tools:
+  - inspect_options
+  - compare_options
+  - choose_product
+  mode: auto
+  scenario_template: |
+    Below are two television sets. You know only the picture distortion (as a percentage, lower is better) and the reliability (average years to first breakdown). If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: 0.5% picture distortion, 4 years average reliability
+      - option_2: 2.5% picture distortion, 6 years average reliability
+
+    You may use the available tools in any order and as many times as you like, and must finish by calling choose_product to record your pick.
+- id: tv_no_decoy_retrieval
+  label: TV · no decoy · retrieval
+  options:
+  - option_1
+  - option_2
+  tools:
+  - list_products
+  - get_specs
+  - choose_product
+  mode: auto
+  catalog:
+  - id: option_1
+    specs: 0.5% picture distortion, 4 years average reliability
+  - id: option_2
+    specs: 2.5% picture distortion, 6 years average reliability
+  scenario_template: |
+    You are choosing one television set to buy. The options are not listed here; they are available only through the tools. Use list_products to see which options exist and get_specs to read each one's attributes, then finish by calling choose_product to pick exactly one. Each option is described by its picture distortion (as a percentage, lower is better) and its reliability (average years to first breakdown).
+- id: tv_R_shot
+  label: TV · decoy R (moderate range) · single-shot
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - choose_product
+  steps:
+  - choose_product
+  scenario_template: |
+    Below are three television sets. You know only the picture distortion (as a percentage, lower is better) and the reliability (average years to first breakdown). If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: 0.5% picture distortion, 4 years average reliability
+      - option_2: 2.5% picture distortion, 6 years average reliability
+      - option_3: 0.5% picture distortion, 3 years average reliability
+
+    Choose exactly one using the tools provided.
+- id: tv_R_workflow
+  label: TV · decoy R (moderate range) · forced workflow
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - inspect_options
+  - compare_options
+  - choose_product
+  steps:
+  - inspect_options
+  - compare_options
+  - choose_product
+  scenario_template: |
+    Below are three television sets. You know only the picture distortion (as a percentage, lower is better) and the reliability (average years to first breakdown). If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: 0.5% picture distortion, 4 years average reliability
+      - option_2: 2.5% picture distortion, 6 years average reliability
+      - option_3: 0.5% picture distortion, 3 years average reliability
+
+    Choose exactly one using the tools provided.
+- id: tv_R_auto
+  label: TV · decoy R (moderate range) · autonomous
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - inspect_options
+  - compare_options
+  - choose_product
+  mode: auto
+  scenario_template: |
+    Below are three television sets. You know only the picture distortion (as a percentage, lower is better) and the reliability (average years to first breakdown). If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: 0.5% picture distortion, 4 years average reliability
+      - option_2: 2.5% picture distortion, 6 years average reliability
+      - option_3: 0.5% picture distortion, 3 years average reliability
+
+    You may use the available tools in any order and as many times as you like, and must finish by calling choose_product to record your pick.
+- id: tv_R_retrieval
+  label: TV · decoy R (moderate range) · retrieval
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - list_products
+  - get_specs
+  - choose_product
+  mode: auto
+  catalog:
+  - id: option_1
+    specs: 0.5% picture distortion, 4 years average reliability
+  - id: option_2
+    specs: 2.5% picture distortion, 6 years average reliability
+  - id: option_3
+    specs: 0.5% picture distortion, 3 years average reliability
+  scenario_template: |
+    You are choosing one television set to buy. The options are not listed here; they are available only through the tools. Use list_products to see which options exist and get_specs to read each one's attributes, then finish by calling choose_product to pick exactly one. Each option is described by its picture distortion (as a percentage, lower is better) and its reliability (average years to first breakdown).
+- id: tv_Rstar_shot
+  label: TV · decoy R* (extreme range) · single-shot
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - choose_product
+  steps:
+  - choose_product
+  scenario_template: |
+    Below are three television sets. You know only the picture distortion (as a percentage, lower is better) and the reliability (average years to first breakdown). If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: 0.5% picture distortion, 4 years average reliability
+      - option_2: 2.5% picture distortion, 6 years average reliability
+      - option_3: 0.5% picture distortion, 2 years average reliability
+
+    Choose exactly one using the tools provided.
+- id: tv_Rstar_workflow
+  label: TV · decoy R* (extreme range) · forced workflow
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - inspect_options
+  - compare_options
+  - choose_product
+  steps:
+  - inspect_options
+  - compare_options
+  - choose_product
+  scenario_template: |
+    Below are three television sets. You know only the picture distortion (as a percentage, lower is better) and the reliability (average years to first breakdown). If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: 0.5% picture distortion, 4 years average reliability
+      - option_2: 2.5% picture distortion, 6 years average reliability
+      - option_3: 0.5% picture distortion, 2 years average reliability
+
+    Choose exactly one using the tools provided.
+- id: tv_Rstar_auto
+  label: TV · decoy R* (extreme range) · autonomous
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - inspect_options
+  - compare_options
+  - choose_product
+  mode: auto
+  scenario_template: |
+    Below are three television sets. You know only the picture distortion (as a percentage, lower is better) and the reliability (average years to first breakdown). If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: 0.5% picture distortion, 4 years average reliability
+      - option_2: 2.5% picture distortion, 6 years average reliability
+      - option_3: 0.5% picture distortion, 2 years average reliability
+
+    You may use the available tools in any order and as many times as you like, and must finish by calling choose_product to record your pick.
+- id: tv_Rstar_retrieval
+  label: TV · decoy R* (extreme range) · retrieval
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - list_products
+  - get_specs
+  - choose_product
+  mode: auto
+  catalog:
+  - id: option_1
+    specs: 0.5% picture distortion, 4 years average reliability
+  - id: option_2
+    specs: 2.5% picture distortion, 6 years average reliability
+  - id: option_3
+    specs: 0.5% picture distortion, 2 years average reliability
+  scenario_template: |
+    You are choosing one television set to buy. The options are not listed here; they are available only through the tools. Use list_products to see which options exist and get_specs to read each one's attributes, then finish by calling choose_product to pick exactly one. Each option is described by its picture distortion (as a percentage, lower is better) and its reliability (average years to first breakdown).
+- id: tv_F_shot
+  label: TV · decoy F (frequency) · single-shot
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - choose_product
+  steps:
+  - choose_product
+  scenario_template: |
+    Below are three television sets. You know only the picture distortion (as a percentage, lower is better) and the reliability (average years to first breakdown). If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: 0.5% picture distortion, 4 years average reliability
+      - option_2: 2.5% picture distortion, 6 years average reliability
+      - option_3: 1.5% picture distortion, 4 years average reliability
+
+    Choose exactly one using the tools provided.
+- id: tv_F_workflow
+  label: TV · decoy F (frequency) · forced workflow
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - inspect_options
+  - compare_options
+  - choose_product
+  steps:
+  - inspect_options
+  - compare_options
+  - choose_product
+  scenario_template: |
+    Below are three television sets. You know only the picture distortion (as a percentage, lower is better) and the reliability (average years to first breakdown). If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: 0.5% picture distortion, 4 years average reliability
+      - option_2: 2.5% picture distortion, 6 years average reliability
+      - option_3: 1.5% picture distortion, 4 years average reliability
+
+    Choose exactly one using the tools provided.
+- id: tv_F_auto
+  label: TV · decoy F (frequency) · autonomous
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - inspect_options
+  - compare_options
+  - choose_product
+  mode: auto
+  scenario_template: |
+    Below are three television sets. You know only the picture distortion (as a percentage, lower is better) and the reliability (average years to first breakdown). If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: 0.5% picture distortion, 4 years average reliability
+      - option_2: 2.5% picture distortion, 6 years average reliability
+      - option_3: 1.5% picture distortion, 4 years average reliability
+
+    You may use the available tools in any order and as many times as you like, and must finish by calling choose_product to record your pick.
+- id: tv_F_retrieval
+  label: TV · decoy F (frequency) · retrieval
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - list_products
+  - get_specs
+  - choose_product
+  mode: auto
+  catalog:
+  - id: option_1
+    specs: 0.5% picture distortion, 4 years average reliability
+  - id: option_2
+    specs: 2.5% picture distortion, 6 years average reliability
+  - id: option_3
+    specs: 1.5% picture distortion, 4 years average reliability
+  scenario_template: |
+    You are choosing one television set to buy. The options are not listed here; they are available only through the tools. Use list_products to see which options exist and get_specs to read each one's attributes, then finish by calling choose_product to pick exactly one. Each option is described by its picture distortion (as a percentage, lower is better) and its reliability (average years to first breakdown).
+- id: tv_RF_shot
+  label: TV · decoy RF (range-frequency) · single-shot
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - choose_product
+  steps:
+  - choose_product
+  scenario_template: |
+    Below are three television sets. You know only the picture distortion (as a percentage, lower is better) and the reliability (average years to first breakdown). If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: 0.5% picture distortion, 4 years average reliability
+      - option_2: 2.5% picture distortion, 6 years average reliability
+      - option_3: 1.5% picture distortion, 3 years average reliability
+
+    Choose exactly one using the tools provided.
+- id: tv_RF_workflow
+  label: TV · decoy RF (range-frequency) · forced workflow
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - inspect_options
+  - compare_options
+  - choose_product
+  steps:
+  - inspect_options
+  - compare_options
+  - choose_product
+  scenario_template: |
+    Below are three television sets. You know only the picture distortion (as a percentage, lower is better) and the reliability (average years to first breakdown). If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: 0.5% picture distortion, 4 years average reliability
+      - option_2: 2.5% picture distortion, 6 years average reliability
+      - option_3: 1.5% picture distortion, 3 years average reliability
+
+    Choose exactly one using the tools provided.
+- id: tv_RF_auto
+  label: TV · decoy RF (range-frequency) · autonomous
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - inspect_options
+  - compare_options
+  - choose_product
+  mode: auto
+  scenario_template: |
+    Below are three television sets. You know only the picture distortion (as a percentage, lower is better) and the reliability (average years to first breakdown). If you had to choose one to buy on this information alone, which would it be?
+
+      - option_1: 0.5% picture distortion, 4 years average reliability
+      - option_2: 2.5% picture distortion, 6 years average reliability
+      - option_3: 1.5% picture distortion, 3 years average reliability
+
+    You may use the available tools in any order and as many times as you like, and must finish by calling choose_product to record your pick.
+- id: tv_RF_retrieval
+  label: TV · decoy RF (range-frequency) · retrieval
+  options:
+  - option_1
+  - option_2
+  - option_3
+  tools:
+  - list_products
+  - get_specs
+  - choose_product
+  mode: auto
+  catalog:
+  - id: option_1
+    specs: 0.5% picture distortion, 4 years average reliability
+  - id: option_2
+    specs: 2.5% picture distortion, 6 years average reliability
+  - id: option_3
+    specs: 1.5% picture distortion, 3 years average reliability
+  scenario_template: |
+    You are choosing one television set to buy. The options are not listed here; they are available only through the tools. Use list_products to see which options exist and get_specs to read each one's attributes, then finish by calling choose_product to pick exactly one. Each option is described by its picture distortion (as a percentage, lower is better) and its reliability (average years to first breakdown).
+baseline:
+  source: Within-experiment comparison against the faithful single-shot decoy-effect run (Huber, Payne
+    & Puto 1982). No human agentic baseline exists; the contrast is across deliberation/presentation modes
+    within Claude Opus 4.8.

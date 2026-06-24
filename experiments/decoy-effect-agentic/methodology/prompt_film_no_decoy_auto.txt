@@ -1,0 +1,6 @@
+Below are two brands of film. You know only the developing time in minutes and the color-fidelity rating (0-100, higher is better). If you had to choose one to buy on this information alone, which would it be?
+
+  - option_1: 0.5 minutes developing time, color fidelity 93/100
+  - option_2: 3 minutes developing time, color fidelity 97/100
+
+You may use the available tools in any order and as many times as you like, and must finish by calling choose_product to record your pick.

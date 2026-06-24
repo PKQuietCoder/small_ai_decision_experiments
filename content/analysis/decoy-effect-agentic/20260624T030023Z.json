@@ -1,0 +1,3853 @@
+{
+  "experimentId": "decoy-effect-agentic",
+  "experimentTitle": "The Decoy Effect Under Agentic Scaffolds: Does How an Agent Deliberates Change the Bias?",
+  "runId": "20260624T030023Z",
+  "runDate": "2026-06-24T03:22:19.603325+00:00",
+  "prompt": "Choose one option using the tools provided.\n",
+  "question": "",
+  "baseline": {
+    "source": "Within-experiment comparison against the faithful single-shot decoy-effect run (Huber, Payne & Puto 1982). No human agentic baseline exists; the contrast is across deliberation/presentation modes within Claude Opus 4.8."
+  },
+  "decisionOptions": [
+    {
+      "id": "option_1",
+      "label": "Target"
+    },
+    {
+      "id": "option_2",
+      "label": "Competitor"
+    },
+    {
+      "id": "option_3",
+      "label": "Decoy"
+    }
+  ],
+  "models": [
+    "Claude Opus 4.8"
+  ],
+  "variants": [
+    {
+      "id": "film_no_decoy_shot",
+      "label": "Film \u00b7 no decoy \u00b7 single-shot",
+      "metaphor": ""
+    },
+    {
+      "id": "film_no_decoy_workflow",
+      "label": "Film \u00b7 no decoy \u00b7 forced workflow",
+      "metaphor": ""
+    },
+    {
+      "id": "film_no_decoy_auto",
+      "label": "Film \u00b7 no decoy \u00b7 autonomous",
+      "metaphor": ""
+    },
+    {
+      "id": "film_no_decoy_retrieval",
+      "label": "Film \u00b7 no decoy \u00b7 retrieval",
+      "metaphor": ""
+    },
+    {
+      "id": "film_R_shot",
+      "label": "Film \u00b7 decoy R (moderate range) \u00b7 single-shot",
+      "metaphor": ""
+    },
+    {
+      "id": "film_R_workflow",
+      "label": "Film \u00b7 decoy R (moderate range) \u00b7 forced workflow",
+      "metaphor": ""
+    },
+    {
+      "id": "film_R_auto",
+      "label": "Film \u00b7 decoy R (moderate range) \u00b7 autonomous",
+      "metaphor": ""
+    },
+    {
+      "id": "film_R_retrieval",
+      "label": "Film \u00b7 decoy R (moderate range) \u00b7 retrieval",
+      "metaphor": ""
+    },
+    {
+      "id": "film_Rstar_shot",
+      "label": "Film \u00b7 decoy R* (extreme range) \u00b7 single-shot",
+      "metaphor": ""
+    },
+    {
+      "id": "film_Rstar_workflow",
+      "label": "Film \u00b7 decoy R* (extreme range) \u00b7 forced workflow",
+      "metaphor": ""
+    },
+    {
+      "id": "film_Rstar_auto",
+      "label": "Film \u00b7 decoy R* (extreme range) \u00b7 autonomous",
+      "metaphor": ""
+    },
+    {
+      "id": "film_Rstar_retrieval",
+      "label": "Film \u00b7 decoy R* (extreme range) \u00b7 retrieval",
+      "metaphor": ""
+    },
+    {
+      "id": "film_F_shot",
+      "label": "Film \u00b7 decoy F (frequency) \u00b7 single-shot",
+      "metaphor": ""
+    },
+    {
+      "id": "film_F_workflow",
+      "label": "Film \u00b7 decoy F (frequency) \u00b7 forced workflow",
+      "metaphor": ""
+    },
+    {
+      "id": "film_F_auto",
+      "label": "Film \u00b7 decoy F (frequency) \u00b7 autonomous",
+      "metaphor": ""
+    },
+    {
+      "id": "film_F_retrieval",
+      "label": "Film \u00b7 decoy F (frequency) \u00b7 retrieval",
+      "metaphor": ""
+    },
+    {
+      "id": "film_RF_shot",
+      "label": "Film \u00b7 decoy RF (range-frequency) \u00b7 single-shot",
+      "metaphor": ""
+    },
+    {
+      "id": "film_RF_workflow",
+      "label": "Film \u00b7 decoy RF (range-frequency) \u00b7 forced workflow",
+      "metaphor": ""
+    },
+    {
+      "id": "film_RF_auto",
+      "label": "Film \u00b7 decoy RF (range-frequency) \u00b7 autonomous",
+      "metaphor": ""
+    },
+    {
+      "id": "film_RF_retrieval",
+      "label": "Film \u00b7 decoy RF (range-frequency) \u00b7 retrieval",
+      "metaphor": ""
+    },
+    {
+      "id": "cars_no_decoy_shot",
+      "label": "Cars \u00b7 no decoy \u00b7 single-shot",
+      "metaphor": ""
+    },
+    {
+      "id": "cars_no_decoy_workflow",
+      "label": "Cars \u00b7 no decoy \u00b7 forced workflow",
+      "metaphor": ""
+    },
+    {
+      "id": "cars_no_decoy_auto",
+      "label": "Cars \u00b7 no decoy \u00b7 autonomous",
+      "metaphor": ""
+    },
+    {
+      "id": "cars_no_decoy_retrieval",
+      "label": "Cars \u00b7 no decoy \u00b7 retrieval",
+      "metaphor": ""
+    },
+    {
+      "id": "cars_R_shot",
+      "label": "Cars \u00b7 decoy R (moderate range) \u00b7 single-shot",
+      "metaphor": ""
+    },
+    {
+      "id": "cars_R_workflow",
+      "label": "Cars \u00b7 decoy R (moderate range) \u00b7 forced workflow",
+      "metaphor": ""
+    },
+    {
+      "id": "cars_R_auto",
+      "label": "Cars \u00b7 decoy R (moderate range) \u00b7 autonomous",
+      "metaphor": ""
+    },
+    {
+      "id": "cars_R_retrieval",
+      "label": "Cars \u00b7 decoy R (moderate range) \u00b7 retrieval",
+      "metaphor": ""
+    },
+    {
+      "id": "cars_Rstar_shot",
+      "label": "Cars \u00b7 decoy R* (extreme range) \u00b7 single-shot",
+      "metaphor": ""
+    },
+    {
+      "id": "cars_Rstar_workflow",
+      "label": "Cars \u00b7 decoy R* (extreme range) \u00b7 forced workflow",
+      "metaphor": ""
+    },
+    {
+      "id": "cars_Rstar_auto",
+      "label": "Cars \u00b7 decoy R* (extreme range) \u00b7 autonomous",
+      "metaphor": ""
+    },
+    {
+      "id": "cars_Rstar_retrieval",
+      "label": "Cars \u00b7 decoy R* (extreme range) \u00b7 retrieval",
+      "metaphor": ""
+    },
+    {
+      "id": "cars_F_shot",
+      "label": "Cars \u00b7 decoy F (frequency) \u00b7 single-shot",
+      "metaphor": ""
+    },
+    {
+      "id": "cars_F_workflow",
+      "label": "Cars \u00b7 decoy F (frequency) \u00b7 forced workflow",
+      "metaphor": ""
+    },
+    {
+      "id": "cars_F_auto",
+      "label": "Cars \u00b7 decoy F (frequency) \u00b7 autonomous",
+      "metaphor": ""
+    },
+    {
+      "id": "cars_F_retrieval",
+      "label": "Cars \u00b7 decoy F (frequency) \u00b7 retrieval",
+      "metaphor": ""
+    },
+    {
+      "id": "cars_RF_shot",
+      "label": "Cars \u00b7 decoy RF (range-frequency) \u00b7 single-shot",
+      "metaphor": ""
+    },
+    {
+      "id": "cars_RF_workflow",
+      "label": "Cars \u00b7 decoy RF (range-frequency) \u00b7 forced workflow",
+      "metaphor": ""
+    },
+    {
+      "id": "cars_RF_auto",
+      "label": "Cars \u00b7 decoy RF (range-frequency) \u00b7 autonomous",
+      "metaphor": ""
+    },
+    {
+      "id": "cars_RF_retrieval",
+      "label": "Cars \u00b7 decoy RF (range-frequency) \u00b7 retrieval",
+      "metaphor": ""
+    },
+    {
+      "id": "tv_no_decoy_shot",
+      "label": "TV \u00b7 no decoy \u00b7 single-shot",
+      "metaphor": ""
+    },
+    {
+      "id": "tv_no_decoy_workflow",
+      "label": "TV \u00b7 no decoy \u00b7 forced workflow",
+      "metaphor": ""
+    },
+    {
+      "id": "tv_no_decoy_auto",
+      "label": "TV \u00b7 no decoy \u00b7 autonomous",
+      "metaphor": ""
+    },
+    {
+      "id": "tv_no_decoy_retrieval",
+      "label": "TV \u00b7 no decoy \u00b7 retrieval",
+      "metaphor": ""
+    },
+    {
+      "id": "tv_R_shot",
+      "label": "TV \u00b7 decoy R (moderate range) \u00b7 single-shot",
+      "metaphor": ""
+    },
+    {
+      "id": "tv_R_workflow",
+      "label": "TV \u00b7 decoy R (moderate range) \u00b7 forced workflow",
+      "metaphor": ""
+    },
+    {
+      "id": "tv_R_auto",
+      "label": "TV \u00b7 decoy R (moderate range) \u00b7 autonomous",
+      "metaphor": ""
+    },
+    {
+      "id": "tv_R_retrieval",
+      "label": "TV \u00b7 decoy R (moderate range) \u00b7 retrieval",
+      "metaphor": ""
+    },
+    {
+      "id": "tv_Rstar_shot",
+      "label": "TV \u00b7 decoy R* (extreme range) \u00b7 single-shot",
+      "metaphor": ""
+    },
+    {
+      "id": "tv_Rstar_workflow",
+      "label": "TV \u00b7 decoy R* (extreme range) \u00b7 forced workflow",
+      "metaphor": ""
+    },
+    {
+      "id": "tv_Rstar_auto",
+      "label": "TV \u00b7 decoy R* (extreme range) \u00b7 autonomous",
+      "metaphor": ""
+    },
+    {
+      "id": "tv_Rstar_retrieval",
+      "label": "TV \u00b7 decoy R* (extreme range) \u00b7 retrieval",
+      "metaphor": ""
+    },
+    {
+      "id": "tv_F_shot",
+      "label": "TV \u00b7 decoy F (frequency) \u00b7 single-shot",
+      "metaphor": ""
+    },
+    {
+      "id": "tv_F_workflow",
+      "label": "TV \u00b7 decoy F (frequency) \u00b7 forced workflow",
+      "metaphor": ""
+    },
+    {
+      "id": "tv_F_auto",
+      "label": "TV \u00b7 decoy F (frequency) \u00b7 autonomous",
+      "metaphor": ""
+    },
+    {
+      "id": "tv_F_retrieval",
+      "label": "TV \u00b7 decoy F (frequency) \u00b7 retrieval",
+      "metaphor": ""
+    },
+    {
+      "id": "tv_RF_shot",
+      "label": "TV \u00b7 decoy RF (range-frequency) \u00b7 single-shot",
+      "metaphor": ""
+    },
+    {
+      "id": "tv_RF_workflow",
+      "label": "TV \u00b7 decoy RF (range-frequency) \u00b7 forced workflow",
+      "metaphor": ""
+    },
+    {
+      "id": "tv_RF_auto",
+      "label": "TV \u00b7 decoy RF (range-frequency) \u00b7 autonomous",
+      "metaphor": ""
+    },
+    {
+      "id": "tv_RF_retrieval",
+      "label": "TV \u00b7 decoy RF (range-frequency) \u00b7 retrieval",
+      "metaphor": ""
+    }
+  ],
+  "primaryDecision": "option_1",
+  "primaryDecisionLabel": "Target",
+  "totalTrials": 1800,
+  "trialsPerCell": 30,
+  "parseFailures": 0,
+  "excluded": 0,
+  "byVariant": [
+    {
+      "variantId": "film_no_decoy_shot",
+      "label": "Film \u00b7 no decoy \u00b7 single-shot",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.0,
+          0.1135
+        ],
+        "option_2": [
+          0.8865,
+          1.0
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "film_no_decoy_workflow",
+      "label": "Film \u00b7 no decoy \u00b7 forced workflow",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.0,
+          0.1135
+        ],
+        "option_2": [
+          0.8865,
+          1.0
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "film_no_decoy_auto",
+      "label": "Film \u00b7 no decoy \u00b7 autonomous",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 1,
+        "option_2": 29,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0333,
+        "option_2": 0.9667,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.0059,
+          0.1667
+        ],
+        "option_2": [
+          0.8333,
+          0.9941
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "film_no_decoy_retrieval",
+      "label": "Film \u00b7 no decoy \u00b7 retrieval",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 16,
+        "option_2": 14,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.5333,
+        "option_2": 0.4667,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.3614,
+          0.6977
+        ],
+        "option_2": [
+          0.3023,
+          0.6386
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "film_R_shot",
+      "label": "Film \u00b7 decoy R (moderate range) \u00b7 single-shot",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 29,
+        "option_2": 1,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.9667,
+        "option_2": 0.0333,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8333,
+          0.9941
+        ],
+        "option_2": [
+          0.0059,
+          0.1667
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "film_R_workflow",
+      "label": "Film \u00b7 decoy R (moderate range) \u00b7 forced workflow",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8865,
+          1.0
+        ],
+        "option_2": [
+          0.0,
+          0.1135
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "film_R_auto",
+      "label": "Film \u00b7 decoy R (moderate range) \u00b7 autonomous",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8865,
+          1.0
+        ],
+        "option_2": [
+          0.0,
+          0.1135
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "film_R_retrieval",
+      "label": "Film \u00b7 decoy R (moderate range) \u00b7 retrieval",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 26,
+        "option_2": 4,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.8667,
+        "option_2": 0.1333,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.7032,
+          0.9469
+        ],
+        "option_2": [
+          0.0531,
+          0.2968
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "film_Rstar_shot",
+      "label": "Film \u00b7 decoy R* (extreme range) \u00b7 single-shot",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8865,
+          1.0
+        ],
+        "option_2": [
+          0.0,
+          0.1135
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "film_Rstar_workflow",
+      "label": "Film \u00b7 decoy R* (extreme range) \u00b7 forced workflow",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8865,
+          1.0
+        ],
+        "option_2": [
+          0.0,
+          0.1135
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "film_Rstar_auto",
+      "label": "Film \u00b7 decoy R* (extreme range) \u00b7 autonomous",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8865,
+          1.0
+        ],
+        "option_2": [
+          0.0,
+          0.1135
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "film_Rstar_retrieval",
+      "label": "Film \u00b7 decoy R* (extreme range) \u00b7 retrieval",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8865,
+          1.0
+        ],
+        "option_2": [
+          0.0,
+          0.1135
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "film_F_shot",
+      "label": "Film \u00b7 decoy F (frequency) \u00b7 single-shot",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 15,
+        "option_2": 15,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.5,
+        "option_2": 0.5,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.3315,
+          0.6685
+        ],
+        "option_2": [
+          0.3315,
+          0.6685
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "film_F_workflow",
+      "label": "Film \u00b7 decoy F (frequency) \u00b7 forced workflow",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 28,
+        "option_2": 2,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.9333,
+        "option_2": 0.0667,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.7868,
+          0.9815
+        ],
+        "option_2": [
+          0.0185,
+          0.2132
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "film_F_auto",
+      "label": "Film \u00b7 decoy F (frequency) \u00b7 autonomous",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8865,
+          1.0
+        ],
+        "option_2": [
+          0.0,
+          0.1135
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "film_F_retrieval",
+      "label": "Film \u00b7 decoy F (frequency) \u00b7 retrieval",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.0,
+          0.1135
+        ],
+        "option_2": [
+          0.8865,
+          1.0
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "film_RF_shot",
+      "label": "Film \u00b7 decoy RF (range-frequency) \u00b7 single-shot",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 7,
+        "option_2": 23,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.2333,
+        "option_2": 0.7667,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.1179,
+          0.4093
+        ],
+        "option_2": [
+          0.5907,
+          0.8821
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "film_RF_workflow",
+      "label": "Film \u00b7 decoy RF (range-frequency) \u00b7 forced workflow",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 9,
+        "option_2": 21,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.3,
+        "option_2": 0.7,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.1666,
+          0.4788
+        ],
+        "option_2": [
+          0.5212,
+          0.8334
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "film_RF_auto",
+      "label": "Film \u00b7 decoy RF (range-frequency) \u00b7 autonomous",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 16,
+        "option_2": 14,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.5333,
+        "option_2": 0.4667,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.3614,
+          0.6977
+        ],
+        "option_2": [
+          0.3023,
+          0.6386
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "film_RF_retrieval",
+      "label": "Film \u00b7 decoy RF (range-frequency) \u00b7 retrieval",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 6,
+        "option_2": 24,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.2,
+        "option_2": 0.8,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.095,
+          0.3731
+        ],
+        "option_2": [
+          0.6269,
+          0.905
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "cars_no_decoy_shot",
+      "label": "Cars \u00b7 no decoy \u00b7 single-shot",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 29,
+        "option_2": 1,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.9667,
+        "option_2": 0.0333,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8333,
+          0.9941
+        ],
+        "option_2": [
+          0.0059,
+          0.1667
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "cars_no_decoy_workflow",
+      "label": "Cars \u00b7 no decoy \u00b7 forced workflow",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 27,
+        "option_2": 3,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.9,
+        "option_2": 0.1,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.7438,
+          0.9654
+        ],
+        "option_2": [
+          0.0346,
+          0.2562
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "cars_no_decoy_auto",
+      "label": "Cars \u00b7 no decoy \u00b7 autonomous",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8865,
+          1.0
+        ],
+        "option_2": [
+          0.0,
+          0.1135
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "cars_no_decoy_retrieval",
+      "label": "Cars \u00b7 no decoy \u00b7 retrieval",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 24,
+        "option_2": 6,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.8,
+        "option_2": 0.2,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.6269,
+          0.905
+        ],
+        "option_2": [
+          0.095,
+          0.3731
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "cars_R_shot",
+      "label": "Cars \u00b7 decoy R (moderate range) \u00b7 single-shot",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8865,
+          1.0
+        ],
+        "option_2": [
+          0.0,
+          0.1135
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "cars_R_workflow",
+      "label": "Cars \u00b7 decoy R (moderate range) \u00b7 forced workflow",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8865,
+          1.0
+        ],
+        "option_2": [
+          0.0,
+          0.1135
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "cars_R_auto",
+      "label": "Cars \u00b7 decoy R (moderate range) \u00b7 autonomous",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8865,
+          1.0
+        ],
+        "option_2": [
+          0.0,
+          0.1135
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "cars_R_retrieval",
+      "label": "Cars \u00b7 decoy R (moderate range) \u00b7 retrieval",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.0,
+          0.1135
+        ],
+        "option_2": [
+          0.8865,
+          1.0
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "cars_Rstar_shot",
+      "label": "Cars \u00b7 decoy R* (extreme range) \u00b7 single-shot",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 28,
+        "option_2": 2,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.9333,
+        "option_2": 0.0667,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.7868,
+          0.9815
+        ],
+        "option_2": [
+          0.0185,
+          0.2132
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "cars_Rstar_workflow",
+      "label": "Cars \u00b7 decoy R* (extreme range) \u00b7 forced workflow",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8865,
+          1.0
+        ],
+        "option_2": [
+          0.0,
+          0.1135
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "cars_Rstar_auto",
+      "label": "Cars \u00b7 decoy R* (extreme range) \u00b7 autonomous",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8865,
+          1.0
+        ],
+        "option_2": [
+          0.0,
+          0.1135
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "cars_Rstar_retrieval",
+      "label": "Cars \u00b7 decoy R* (extreme range) \u00b7 retrieval",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.0,
+          0.1135
+        ],
+        "option_2": [
+          0.8865,
+          1.0
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "cars_F_shot",
+      "label": "Cars \u00b7 decoy F (frequency) \u00b7 single-shot",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 28,
+        "option_3": 2
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 0.9333,
+        "option_3": 0.0667
+      },
+      "ci": {
+        "option_1": [
+          0.0,
+          0.1135
+        ],
+        "option_2": [
+          0.7868,
+          0.9815
+        ],
+        "option_3": [
+          0.0185,
+          0.2132
+        ]
+      }
+    },
+    {
+      "variantId": "cars_F_workflow",
+      "label": "Cars \u00b7 decoy F (frequency) \u00b7 forced workflow",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 4,
+        "option_2": 25,
+        "option_3": 1
+      },
+      "proportions": {
+        "option_1": 0.1333,
+        "option_2": 0.8333,
+        "option_3": 0.0333
+      },
+      "ci": {
+        "option_1": [
+          0.0531,
+          0.2968
+        ],
+        "option_2": [
+          0.6644,
+          0.9266
+        ],
+        "option_3": [
+          0.0059,
+          0.1667
+        ]
+      }
+    },
+    {
+      "variantId": "cars_F_auto",
+      "label": "Cars \u00b7 decoy F (frequency) \u00b7 autonomous",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 5,
+        "option_2": 21,
+        "option_3": 4
+      },
+      "proportions": {
+        "option_1": 0.1667,
+        "option_2": 0.7,
+        "option_3": 0.1333
+      },
+      "ci": {
+        "option_1": [
+          0.0734,
+          0.3356
+        ],
+        "option_2": [
+          0.5212,
+          0.8334
+        ],
+        "option_3": [
+          0.0531,
+          0.2968
+        ]
+      }
+    },
+    {
+      "variantId": "cars_F_retrieval",
+      "label": "Cars \u00b7 decoy F (frequency) \u00b7 retrieval",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.0,
+          0.1135
+        ],
+        "option_2": [
+          0.8865,
+          1.0
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "cars_RF_shot",
+      "label": "Cars \u00b7 decoy RF (range-frequency) \u00b7 single-shot",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.0,
+          0.1135
+        ],
+        "option_2": [
+          0.8865,
+          1.0
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "cars_RF_workflow",
+      "label": "Cars \u00b7 decoy RF (range-frequency) \u00b7 forced workflow",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.0,
+          0.1135
+        ],
+        "option_2": [
+          0.8865,
+          1.0
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "cars_RF_auto",
+      "label": "Cars \u00b7 decoy RF (range-frequency) \u00b7 autonomous",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.0,
+          0.1135
+        ],
+        "option_2": [
+          0.8865,
+          1.0
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "cars_RF_retrieval",
+      "label": "Cars \u00b7 decoy RF (range-frequency) \u00b7 retrieval",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.0,
+          0.1135
+        ],
+        "option_2": [
+          0.8865,
+          1.0
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "tv_no_decoy_shot",
+      "label": "TV \u00b7 no decoy \u00b7 single-shot",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.0,
+          0.1135
+        ],
+        "option_2": [
+          0.8865,
+          1.0
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "tv_no_decoy_workflow",
+      "label": "TV \u00b7 no decoy \u00b7 forced workflow",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.0,
+          0.1135
+        ],
+        "option_2": [
+          0.8865,
+          1.0
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "tv_no_decoy_auto",
+      "label": "TV \u00b7 no decoy \u00b7 autonomous",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.0,
+          0.1135
+        ],
+        "option_2": [
+          0.8865,
+          1.0
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "tv_no_decoy_retrieval",
+      "label": "TV \u00b7 no decoy \u00b7 retrieval",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 20,
+        "option_2": 10,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.6667,
+        "option_2": 0.3333,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.4878,
+          0.8077
+        ],
+        "option_2": [
+          0.1923,
+          0.5122
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "tv_R_shot",
+      "label": "TV \u00b7 decoy R (moderate range) \u00b7 single-shot",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8865,
+          1.0
+        ],
+        "option_2": [
+          0.0,
+          0.1135
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "tv_R_workflow",
+      "label": "TV \u00b7 decoy R (moderate range) \u00b7 forced workflow",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8865,
+          1.0
+        ],
+        "option_2": [
+          0.0,
+          0.1135
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "tv_R_auto",
+      "label": "TV \u00b7 decoy R (moderate range) \u00b7 autonomous",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 28,
+        "option_2": 2,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.9333,
+        "option_2": 0.0667,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.7868,
+          0.9815
+        ],
+        "option_2": [
+          0.0185,
+          0.2132
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "tv_R_retrieval",
+      "label": "TV \u00b7 decoy R (moderate range) \u00b7 retrieval",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8865,
+          1.0
+        ],
+        "option_2": [
+          0.0,
+          0.1135
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "tv_Rstar_shot",
+      "label": "TV \u00b7 decoy R* (extreme range) \u00b7 single-shot",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 23,
+        "option_2": 7,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.7667,
+        "option_2": 0.2333,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.5907,
+          0.8821
+        ],
+        "option_2": [
+          0.1179,
+          0.4093
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "tv_Rstar_workflow",
+      "label": "TV \u00b7 decoy R* (extreme range) \u00b7 forced workflow",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8865,
+          1.0
+        ],
+        "option_2": [
+          0.0,
+          0.1135
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "tv_Rstar_auto",
+      "label": "TV \u00b7 decoy R* (extreme range) \u00b7 autonomous",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8865,
+          1.0
+        ],
+        "option_2": [
+          0.0,
+          0.1135
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "tv_Rstar_retrieval",
+      "label": "TV \u00b7 decoy R* (extreme range) \u00b7 retrieval",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 29,
+        "option_2": 1,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.9667,
+        "option_2": 0.0333,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8333,
+          0.9941
+        ],
+        "option_2": [
+          0.0059,
+          0.1667
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "tv_F_shot",
+      "label": "TV \u00b7 decoy F (frequency) \u00b7 single-shot",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 29,
+        "option_3": 1
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 0.9667,
+        "option_3": 0.0333
+      },
+      "ci": {
+        "option_1": [
+          0.0,
+          0.1135
+        ],
+        "option_2": [
+          0.8333,
+          0.9941
+        ],
+        "option_3": [
+          0.0059,
+          0.1667
+        ]
+      }
+    },
+    {
+      "variantId": "tv_F_workflow",
+      "label": "TV \u00b7 decoy F (frequency) \u00b7 forced workflow",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 16,
+        "option_2": 14,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.5333,
+        "option_2": 0.4667,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.3614,
+          0.6977
+        ],
+        "option_2": [
+          0.3023,
+          0.6386
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "tv_F_auto",
+      "label": "TV \u00b7 decoy F (frequency) \u00b7 autonomous",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 29,
+        "option_2": 1,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.9667,
+        "option_2": 0.0333,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8333,
+          0.9941
+        ],
+        "option_2": [
+          0.0059,
+          0.1667
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "tv_F_retrieval",
+      "label": "TV \u00b7 decoy F (frequency) \u00b7 retrieval",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 10,
+        "option_2": 20,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.3333,
+        "option_2": 0.6667,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.1923,
+          0.5122
+        ],
+        "option_2": [
+          0.4878,
+          0.8077
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "tv_RF_shot",
+      "label": "TV \u00b7 decoy RF (range-frequency) \u00b7 single-shot",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.0,
+          0.1135
+        ],
+        "option_2": [
+          0.8865,
+          1.0
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "tv_RF_workflow",
+      "label": "TV \u00b7 decoy RF (range-frequency) \u00b7 forced workflow",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 10,
+        "option_2": 20,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.3333,
+        "option_2": 0.6667,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.1923,
+          0.5122
+        ],
+        "option_2": [
+          0.4878,
+          0.8077
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "tv_RF_auto",
+      "label": "TV \u00b7 decoy RF (range-frequency) \u00b7 autonomous",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.0,
+          0.1135
+        ],
+        "option_2": [
+          0.8865,
+          1.0
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "tv_RF_retrieval",
+      "label": "TV \u00b7 decoy RF (range-frequency) \u00b7 retrieval",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 1,
+        "option_2": 29,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0333,
+        "option_2": 0.9667,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.0059,
+          0.1667
+        ],
+        "option_2": [
+          0.8333,
+          0.9941
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    }
+  ],
+  "byVariantModel": [
+    {
+      "variantId": "film_no_decoy_shot",
+      "label": "Film \u00b7 no decoy \u00b7 single-shot",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "film_no_decoy_workflow",
+      "label": "Film \u00b7 no decoy \u00b7 forced workflow",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "film_no_decoy_auto",
+      "label": "Film \u00b7 no decoy \u00b7 autonomous",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 1,
+        "option_2": 29,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0333,
+        "option_2": 0.9667,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "film_no_decoy_retrieval",
+      "label": "Film \u00b7 no decoy \u00b7 retrieval",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 16,
+        "option_2": 14,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.5333,
+        "option_2": 0.4667,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "film_R_shot",
+      "label": "Film \u00b7 decoy R (moderate range) \u00b7 single-shot",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 29,
+        "option_2": 1,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.9667,
+        "option_2": 0.0333,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "film_R_workflow",
+      "label": "Film \u00b7 decoy R (moderate range) \u00b7 forced workflow",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "film_R_auto",
+      "label": "Film \u00b7 decoy R (moderate range) \u00b7 autonomous",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "film_R_retrieval",
+      "label": "Film \u00b7 decoy R (moderate range) \u00b7 retrieval",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 26,
+        "option_2": 4,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.8667,
+        "option_2": 0.1333,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "film_Rstar_shot",
+      "label": "Film \u00b7 decoy R* (extreme range) \u00b7 single-shot",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "film_Rstar_workflow",
+      "label": "Film \u00b7 decoy R* (extreme range) \u00b7 forced workflow",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "film_Rstar_auto",
+      "label": "Film \u00b7 decoy R* (extreme range) \u00b7 autonomous",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "film_Rstar_retrieval",
+      "label": "Film \u00b7 decoy R* (extreme range) \u00b7 retrieval",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "film_F_shot",
+      "label": "Film \u00b7 decoy F (frequency) \u00b7 single-shot",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 15,
+        "option_2": 15,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.5,
+        "option_2": 0.5,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "film_F_workflow",
+      "label": "Film \u00b7 decoy F (frequency) \u00b7 forced workflow",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 28,
+        "option_2": 2,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.9333,
+        "option_2": 0.0667,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "film_F_auto",
+      "label": "Film \u00b7 decoy F (frequency) \u00b7 autonomous",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "film_F_retrieval",
+      "label": "Film \u00b7 decoy F (frequency) \u00b7 retrieval",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "film_RF_shot",
+      "label": "Film \u00b7 decoy RF (range-frequency) \u00b7 single-shot",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 7,
+        "option_2": 23,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.2333,
+        "option_2": 0.7667,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "film_RF_workflow",
+      "label": "Film \u00b7 decoy RF (range-frequency) \u00b7 forced workflow",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 9,
+        "option_2": 21,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.3,
+        "option_2": 0.7,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "film_RF_auto",
+      "label": "Film \u00b7 decoy RF (range-frequency) \u00b7 autonomous",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 16,
+        "option_2": 14,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.5333,
+        "option_2": 0.4667,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "film_RF_retrieval",
+      "label": "Film \u00b7 decoy RF (range-frequency) \u00b7 retrieval",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 6,
+        "option_2": 24,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.2,
+        "option_2": 0.8,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "cars_no_decoy_shot",
+      "label": "Cars \u00b7 no decoy \u00b7 single-shot",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 29,
+        "option_2": 1,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.9667,
+        "option_2": 0.0333,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "cars_no_decoy_workflow",
+      "label": "Cars \u00b7 no decoy \u00b7 forced workflow",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 27,
+        "option_2": 3,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.9,
+        "option_2": 0.1,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "cars_no_decoy_auto",
+      "label": "Cars \u00b7 no decoy \u00b7 autonomous",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "cars_no_decoy_retrieval",
+      "label": "Cars \u00b7 no decoy \u00b7 retrieval",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 24,
+        "option_2": 6,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.8,
+        "option_2": 0.2,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "cars_R_shot",
+      "label": "Cars \u00b7 decoy R (moderate range) \u00b7 single-shot",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "cars_R_workflow",
+      "label": "Cars \u00b7 decoy R (moderate range) \u00b7 forced workflow",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "cars_R_auto",
+      "label": "Cars \u00b7 decoy R (moderate range) \u00b7 autonomous",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "cars_R_retrieval",
+      "label": "Cars \u00b7 decoy R (moderate range) \u00b7 retrieval",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "cars_Rstar_shot",
+      "label": "Cars \u00b7 decoy R* (extreme range) \u00b7 single-shot",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 28,
+        "option_2": 2,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.9333,
+        "option_2": 0.0667,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "cars_Rstar_workflow",
+      "label": "Cars \u00b7 decoy R* (extreme range) \u00b7 forced workflow",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "cars_Rstar_auto",
+      "label": "Cars \u00b7 decoy R* (extreme range) \u00b7 autonomous",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "cars_Rstar_retrieval",
+      "label": "Cars \u00b7 decoy R* (extreme range) \u00b7 retrieval",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "cars_F_shot",
+      "label": "Cars \u00b7 decoy F (frequency) \u00b7 single-shot",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 28,
+        "option_3": 2
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 0.9333,
+        "option_3": 0.0667
+      }
+    },
+    {
+      "variantId": "cars_F_workflow",
+      "label": "Cars \u00b7 decoy F (frequency) \u00b7 forced workflow",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 4,
+        "option_2": 25,
+        "option_3": 1
+      },
+      "proportions": {
+        "option_1": 0.1333,
+        "option_2": 0.8333,
+        "option_3": 0.0333
+      }
+    },
+    {
+      "variantId": "cars_F_auto",
+      "label": "Cars \u00b7 decoy F (frequency) \u00b7 autonomous",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 5,
+        "option_2": 21,
+        "option_3": 4
+      },
+      "proportions": {
+        "option_1": 0.1667,
+        "option_2": 0.7,
+        "option_3": 0.1333
+      }
+    },
+    {
+      "variantId": "cars_F_retrieval",
+      "label": "Cars \u00b7 decoy F (frequency) \u00b7 retrieval",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "cars_RF_shot",
+      "label": "Cars \u00b7 decoy RF (range-frequency) \u00b7 single-shot",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "cars_RF_workflow",
+      "label": "Cars \u00b7 decoy RF (range-frequency) \u00b7 forced workflow",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "cars_RF_auto",
+      "label": "Cars \u00b7 decoy RF (range-frequency) \u00b7 autonomous",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "cars_RF_retrieval",
+      "label": "Cars \u00b7 decoy RF (range-frequency) \u00b7 retrieval",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "tv_no_decoy_shot",
+      "label": "TV \u00b7 no decoy \u00b7 single-shot",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "tv_no_decoy_workflow",
+      "label": "TV \u00b7 no decoy \u00b7 forced workflow",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "tv_no_decoy_auto",
+      "label": "TV \u00b7 no decoy \u00b7 autonomous",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "tv_no_decoy_retrieval",
+      "label": "TV \u00b7 no decoy \u00b7 retrieval",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 20,
+        "option_2": 10,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.6667,
+        "option_2": 0.3333,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "tv_R_shot",
+      "label": "TV \u00b7 decoy R (moderate range) \u00b7 single-shot",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "tv_R_workflow",
+      "label": "TV \u00b7 decoy R (moderate range) \u00b7 forced workflow",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "tv_R_auto",
+      "label": "TV \u00b7 decoy R (moderate range) \u00b7 autonomous",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 28,
+        "option_2": 2,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.9333,
+        "option_2": 0.0667,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "tv_R_retrieval",
+      "label": "TV \u00b7 decoy R (moderate range) \u00b7 retrieval",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "tv_Rstar_shot",
+      "label": "TV \u00b7 decoy R* (extreme range) \u00b7 single-shot",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 23,
+        "option_2": 7,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.7667,
+        "option_2": 0.2333,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "tv_Rstar_workflow",
+      "label": "TV \u00b7 decoy R* (extreme range) \u00b7 forced workflow",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "tv_Rstar_auto",
+      "label": "TV \u00b7 decoy R* (extreme range) \u00b7 autonomous",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "tv_Rstar_retrieval",
+      "label": "TV \u00b7 decoy R* (extreme range) \u00b7 retrieval",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 29,
+        "option_2": 1,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.9667,
+        "option_2": 0.0333,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "tv_F_shot",
+      "label": "TV \u00b7 decoy F (frequency) \u00b7 single-shot",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 29,
+        "option_3": 1
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 0.9667,
+        "option_3": 0.0333
+      }
+    },
+    {
+      "variantId": "tv_F_workflow",
+      "label": "TV \u00b7 decoy F (frequency) \u00b7 forced workflow",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 16,
+        "option_2": 14,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.5333,
+        "option_2": 0.4667,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "tv_F_auto",
+      "label": "TV \u00b7 decoy F (frequency) \u00b7 autonomous",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 29,
+        "option_2": 1,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.9667,
+        "option_2": 0.0333,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "tv_F_retrieval",
+      "label": "TV \u00b7 decoy F (frequency) \u00b7 retrieval",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 10,
+        "option_2": 20,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.3333,
+        "option_2": 0.6667,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "tv_RF_shot",
+      "label": "TV \u00b7 decoy RF (range-frequency) \u00b7 single-shot",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "tv_RF_workflow",
+      "label": "TV \u00b7 decoy RF (range-frequency) \u00b7 forced workflow",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 10,
+        "option_2": 20,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.3333,
+        "option_2": 0.6667,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "tv_RF_auto",
+      "label": "TV \u00b7 decoy RF (range-frequency) \u00b7 autonomous",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "tv_RF_retrieval",
+      "label": "TV \u00b7 decoy RF (range-frequency) \u00b7 retrieval",
+      "model": "Claude Opus 4.8",
+      "total": 30,
+      "counts": {
+        "option_1": 1,
+        "option_2": 29,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0333,
+        "option_2": 0.9667,
+        "option_3": 0.0
+      }
+    }
+  ],
+  "overall": {
+    "statistic": 1540.4653,
+    "pValue": 3.793708937990865e-246,
+    "dof": 118,
+    "significant": true,
+    "cramersV": 0.6541,
+    "testable": true
+  },
+  "perModel": [
+    {
+      "model": "Claude Opus 4.8",
+      "chiSquare": {
+        "statistic": 1540.4653,
+        "pValue": 3.793708937990865e-246,
+        "dof": 118,
+        "significant": true,
+        "cramersV": 0.6541,
+        "testable": true
+      }
+    }
+  ],
+  "meanSpend": {
+    "byVariant": {
+      "film_no_decoy_shot": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "film_no_decoy_workflow": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "film_no_decoy_auto": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "film_no_decoy_retrieval": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "film_R_shot": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "film_R_workflow": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "film_R_auto": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "film_R_retrieval": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "film_Rstar_shot": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "film_Rstar_workflow": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "film_Rstar_auto": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "film_Rstar_retrieval": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "film_F_shot": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "film_F_workflow": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "film_F_auto": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "film_F_retrieval": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "film_RF_shot": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "film_RF_workflow": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "film_RF_auto": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "film_RF_retrieval": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "cars_no_decoy_shot": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "cars_no_decoy_workflow": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "cars_no_decoy_auto": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "cars_no_decoy_retrieval": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "cars_R_shot": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "cars_R_workflow": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "cars_R_auto": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "cars_R_retrieval": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "cars_Rstar_shot": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "cars_Rstar_workflow": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "cars_Rstar_auto": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "cars_Rstar_retrieval": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "cars_F_shot": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "cars_F_workflow": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "cars_F_auto": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "cars_F_retrieval": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "cars_RF_shot": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "cars_RF_workflow": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "cars_RF_auto": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "cars_RF_retrieval": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "tv_no_decoy_shot": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "tv_no_decoy_workflow": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "tv_no_decoy_auto": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "tv_no_decoy_retrieval": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "tv_R_shot": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "tv_R_workflow": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "tv_R_auto": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "tv_R_retrieval": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "tv_Rstar_shot": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "tv_Rstar_workflow": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "tv_Rstar_auto": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "tv_Rstar_retrieval": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "tv_F_shot": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "tv_F_workflow": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "tv_F_auto": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "tv_F_retrieval": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "tv_RF_shot": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "tv_RF_workflow": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "tv_RF_auto": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      },
+      "tv_RF_retrieval": {
+        "mean": null,
+        "sd": null,
+        "n": 0,
+        "sem": null
+      }
+    },
+    "noRestraintVsSalient": {
+      "t": null,
+      "pValue": null,
+      "significant": false,
+      "testable": false
+    }
+  },
+  "stepProfile": {
+    "film_no_decoy_shot": {
+      "n": 30,
+      "meanSteps": 1.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "film_no_decoy_workflow": {
+      "n": 30,
+      "meanSteps": 3.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "film_no_decoy_auto": {
+      "n": 30,
+      "meanSteps": 3.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "film_no_decoy_retrieval": {
+      "n": 30,
+      "meanSteps": 4.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "film_R_shot": {
+      "n": 30,
+      "meanSteps": 1.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "film_R_workflow": {
+      "n": 30,
+      "meanSteps": 3.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "film_R_auto": {
+      "n": 30,
+      "meanSteps": 3.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "film_R_retrieval": {
+      "n": 30,
+      "meanSteps": 5.0667,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "film_Rstar_shot": {
+      "n": 30,
+      "meanSteps": 1.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "film_Rstar_workflow": {
+      "n": 30,
+      "meanSteps": 3.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "film_Rstar_auto": {
+      "n": 30,
+      "meanSteps": 3.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "film_Rstar_retrieval": {
+      "n": 30,
+      "meanSteps": 5.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "film_F_shot": {
+      "n": 30,
+      "meanSteps": 1.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "film_F_workflow": {
+      "n": 30,
+      "meanSteps": 3.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "film_F_auto": {
+      "n": 30,
+      "meanSteps": 3.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "film_F_retrieval": {
+      "n": 30,
+      "meanSteps": 5.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "film_RF_shot": {
+      "n": 30,
+      "meanSteps": 1.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "film_RF_workflow": {
+      "n": 30,
+      "meanSteps": 3.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "film_RF_auto": {
+      "n": 30,
+      "meanSteps": 3.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "film_RF_retrieval": {
+      "n": 30,
+      "meanSteps": 5.0333,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "cars_no_decoy_shot": {
+      "n": 30,
+      "meanSteps": 1.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "cars_no_decoy_workflow": {
+      "n": 30,
+      "meanSteps": 3.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "cars_no_decoy_auto": {
+      "n": 30,
+      "meanSteps": 3.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "cars_no_decoy_retrieval": {
+      "n": 30,
+      "meanSteps": 4.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "cars_R_shot": {
+      "n": 30,
+      "meanSteps": 1.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "cars_R_workflow": {
+      "n": 30,
+      "meanSteps": 3.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "cars_R_auto": {
+      "n": 30,
+      "meanSteps": 3.0333,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "cars_R_retrieval": {
+      "n": 30,
+      "meanSteps": 5.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "cars_Rstar_shot": {
+      "n": 30,
+      "meanSteps": 1.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "cars_Rstar_workflow": {
+      "n": 30,
+      "meanSteps": 3.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "cars_Rstar_auto": {
+      "n": 30,
+      "meanSteps": 3.2,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "cars_Rstar_retrieval": {
+      "n": 30,
+      "meanSteps": 5.0667,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "cars_F_shot": {
+      "n": 30,
+      "meanSteps": 1.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "cars_F_workflow": {
+      "n": 30,
+      "meanSteps": 3.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "cars_F_auto": {
+      "n": 30,
+      "meanSteps": 3.3333,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "cars_F_retrieval": {
+      "n": 30,
+      "meanSteps": 5.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "cars_RF_shot": {
+      "n": 30,
+      "meanSteps": 1.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "cars_RF_workflow": {
+      "n": 30,
+      "meanSteps": 3.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "cars_RF_auto": {
+      "n": 30,
+      "meanSteps": 3.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "cars_RF_retrieval": {
+      "n": 30,
+      "meanSteps": 5.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "tv_no_decoy_shot": {
+      "n": 30,
+      "meanSteps": 1.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "tv_no_decoy_workflow": {
+      "n": 30,
+      "meanSteps": 3.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "tv_no_decoy_auto": {
+      "n": 30,
+      "meanSteps": 3.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "tv_no_decoy_retrieval": {
+      "n": 30,
+      "meanSteps": 4.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "tv_R_shot": {
+      "n": 30,
+      "meanSteps": 1.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "tv_R_workflow": {
+      "n": 30,
+      "meanSteps": 3.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "tv_R_auto": {
+      "n": 30,
+      "meanSteps": 3.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "tv_R_retrieval": {
+      "n": 30,
+      "meanSteps": 5.0667,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "tv_Rstar_shot": {
+      "n": 30,
+      "meanSteps": 1.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "tv_Rstar_workflow": {
+      "n": 30,
+      "meanSteps": 3.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "tv_Rstar_auto": {
+      "n": 30,
+      "meanSteps": 3.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "tv_Rstar_retrieval": {
+      "n": 30,
+      "meanSteps": 5.2333,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "tv_F_shot": {
+      "n": 30,
+      "meanSteps": 1.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "tv_F_workflow": {
+      "n": 30,
+      "meanSteps": 3.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "tv_F_auto": {
+      "n": 30,
+      "meanSteps": 3.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "tv_F_retrieval": {
+      "n": 30,
+      "meanSteps": 5.1333,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "tv_RF_shot": {
+      "n": 30,
+      "meanSteps": 1.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "tv_RF_workflow": {
+      "n": 30,
+      "meanSteps": 3.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "tv_RF_auto": {
+      "n": 30,
+      "meanSteps": 3.0,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    },
+    "tv_RF_retrieval": {
+      "n": 30,
+      "meanSteps": 5.0667,
+      "budgetRate": 0.0,
+      "cappedRate": 0.0
+    }
+  }
+}

@@ -1,0 +1,108 @@
+[
+  {
+    "name": "inspect_options",
+    "description": "Acknowledge that you have reviewed the full list of available options.",
+    "final": false,
+    "strict": true,
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "reviewed": {
+          "type": "boolean",
+          "description": "Set to true once you have read the option list."
+        }
+      },
+      "required": [
+        "reviewed"
+      ]
+    }
+  },
+  {
+    "name": "compare_options",
+    "description": "Record which options you are weighing most closely before deciding.",
+    "final": false,
+    "strict": true,
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "finalists": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "option_1",
+              "option_2",
+              "option_3"
+            ]
+          },
+          "description": "The option ids you are comparing."
+        }
+      },
+      "required": [
+        "finalists"
+      ]
+    }
+  },
+  {
+    "name": "list_products",
+    "description": "List the ids of every option available in the catalog.",
+    "final": false,
+    "strict": true,
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {},
+      "required": []
+    }
+  },
+  {
+    "name": "get_specs",
+    "description": "Look up the two attributes for one option id.",
+    "final": false,
+    "strict": true,
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "product_id": {
+          "type": "string",
+          "enum": [
+            "option_1",
+            "option_2",
+            "option_3"
+          ],
+          "description": "The id of the option to inspect."
+        }
+      },
+      "required": [
+        "product_id"
+      ]
+    }
+  },
+  {
+    "name": "choose_product",
+    "description": "Record the single option you will pick.",
+    "final": true,
+    "strict": true,
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "product_id": {
+          "type": "string",
+          "enum": [
+            "option_1",
+            "option_2",
+            "option_3"
+          ],
+          "description": "The id of the option to pick."
+        }
+      },
+      "required": [
+        "product_id"
+      ]
+    }
+  }
+]

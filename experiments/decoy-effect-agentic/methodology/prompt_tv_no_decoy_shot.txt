@@ -1,0 +1,6 @@
+Below are two television sets. You know only the picture distortion (as a percentage, lower is better) and the reliability (average years to first breakdown). If you had to choose one to buy on this information alone, which would it be?
+
+  - option_1: 0.5% picture distortion, 4 years average reliability
+  - option_2: 2.5% picture distortion, 6 years average reliability
+
+Choose exactly one using the tools provided.

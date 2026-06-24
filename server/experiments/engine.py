@@ -7,6 +7,7 @@ parses each model's chosen decision letter, and writes a single run JSON file to
 
 from __future__ import annotations
 
+import copy
 import json
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
@@ -112,6 +113,38 @@ def _make_tool_responder(
     return respond
 
 
+def _clamp_tool_enums(
+    tools: List[Dict[str, Any]], allowed_ids: List[str], all_ids: List[str]
+) -> List[Dict[str, Any]]:
+    """Return copies of ``tools`` with any option-id enum narrowed to ``allowed_ids``.
+
+    A budget variant may restrict its choice set (e.g. a no-decoy control that offers
+    only two of three options) via the ``options`` key. The terminal choice tool and
+    any retrieval/compare tool carry an enum of option ids in their input schema; this
+    rewrites every such enum (one whose values are a subset of the experiment's full
+    option-id set) to the variant's allowed ids, so the model is never *offered* an
+    option it was not shown. Tools with no option-id enum are returned unchanged. The
+    final-decision validation still uses the per-cell ``valid_ids`` separately.
+    """
+    all_set = set(all_ids)
+    clamped: List[Dict[str, Any]] = []
+    for tool in tools:
+        t = copy.deepcopy(tool)
+        props = (t.get("input_schema") or {}).get("properties") or {}
+        for prop in props.values():
+            if isinstance(prop.get("enum"), list) and set(prop["enum"]) <= all_set:
+                prop["enum"] = list(allowed_ids)
+            items = prop.get("items")
+            if (
+                isinstance(items, dict)
+                and isinstance(items.get("enum"), list)
+                and set(items["enum"]) <= all_set
+            ):
+                items["enum"] = list(allowed_ids)
+        clamped.append(t)
+    return clamped
+
+
 def run_experiment(
     experiment: Dict[str, Any],
     progress: Optional[Callable[[str], None]] = None,
@@ -208,6 +241,12 @@ def run_experiment(
                         )
                 else:
                     variant_tools = tool_defs
+                # If the variant restricts its choice set, narrow the tool enums to
+                # match so the model can only see (and pick) the options it was shown.
+                if variant.get("options"):
+                    variant_tools = _clamp_tool_enums(
+                        variant_tools, variant["options"], valid_ids
+                    )
             else:
                 # Substitute every string field of the variant, so a template can
                 # use {metaphor} (fill-in-blank) or {frame}/{spread} (open-ended).

@@ -1,2 +1,5 @@
 experiment,source,test,n,chi_square,dof,p_value,cramers_v,significant
 decoy-effect,Claude Opus 4.8,condition x decision (chi-square of independence),900,731.3276,29,2.809756366933308e-135,0.9014,True
+decoy-effect,GPT-5.5,condition x decision (chi-square of independence),900,518.8831,29,3.759661436745937e-91,0.7593,True
+decoy-effect,GPT-5.4,condition x decision (chi-square of independence),900,559.5273,29,1.5481156940138695e-99,0.7885,True
+decoy-effect,GPT-5.4 mini,condition x decision (chi-square of independence),900,537.1347,58,8.702538198868138e-79,0.5463,True

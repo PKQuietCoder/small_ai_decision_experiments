@@ -29,3 +29,93 @@ decoy-effect,Claude Opus 4.8,tv_R,30,30,0,0,0,0.0
 decoy-effect,Claude Opus 4.8,tv_Rstar,30,28,2,0,0,0.0
 decoy-effect,Claude Opus 4.8,tv_F,30,0,30,0,0,0.0
 decoy-effect,Claude Opus 4.8,tv_RF,30,4,26,0,0,0.0
+decoy-effect,GPT-5.5,beer_no_decoy,30,30,0,0,0,0.0
+decoy-effect,GPT-5.5,beer_R,30,30,0,0,0,0.0
+decoy-effect,GPT-5.5,beer_Rstar,30,26,4,0,0,0.0
+decoy-effect,GPT-5.5,beer_F,30,27,3,0,0,0.0
+decoy-effect,GPT-5.5,beer_RF,30,21,9,0,0,0.0
+decoy-effect,GPT-5.5,cars_no_decoy,30,5,25,0,0,0.0
+decoy-effect,GPT-5.5,cars_R,30,29,1,0,0,0.0
+decoy-effect,GPT-5.5,cars_Rstar,30,27,3,0,0,0.0
+decoy-effect,GPT-5.5,cars_F,30,12,18,0,0,0.0
+decoy-effect,GPT-5.5,cars_RF,30,6,24,0,0,0.0
+decoy-effect,GPT-5.5,restaurants_no_decoy,30,0,30,0,0,0.0
+decoy-effect,GPT-5.5,restaurants_R,30,8,22,0,0,0.0
+decoy-effect,GPT-5.5,restaurants_Rstar,30,10,20,0,0,0.0
+decoy-effect,GPT-5.5,restaurants_F,30,11,19,0,0,0.0
+decoy-effect,GPT-5.5,restaurants_RF,30,1,29,0,0,0.0
+decoy-effect,GPT-5.5,lotteries_no_decoy,30,30,0,0,0,0.0
+decoy-effect,GPT-5.5,lotteries_R,30,30,0,0,0,0.0
+decoy-effect,GPT-5.5,lotteries_Rstar,30,30,0,0,0,0.0
+decoy-effect,GPT-5.5,lotteries_F,30,30,0,0,0,0.0
+decoy-effect,GPT-5.5,lotteries_RF,30,30,0,0,0,0.0
+decoy-effect,GPT-5.5,film_no_decoy,30,19,11,0,0,0.0
+decoy-effect,GPT-5.5,film_R,30,29,1,0,0,0.0
+decoy-effect,GPT-5.5,film_Rstar,30,28,2,0,0,0.0
+decoy-effect,GPT-5.5,film_F,30,13,17,0,0,0.0
+decoy-effect,GPT-5.5,film_RF,30,27,3,0,0,0.0
+decoy-effect,GPT-5.5,tv_no_decoy,30,1,29,0,0,0.0
+decoy-effect,GPT-5.5,tv_R,30,30,0,0,0,0.0
+decoy-effect,GPT-5.5,tv_Rstar,30,30,0,0,0,0.0
+decoy-effect,GPT-5.5,tv_F,30,7,23,0,0,0.0
+decoy-effect,GPT-5.5,tv_RF,30,22,8,0,0,0.0
+decoy-effect,GPT-5.4,beer_no_decoy,30,18,12,0,0,0.0
+decoy-effect,GPT-5.4,beer_R,30,5,25,0,0,0.0
+decoy-effect,GPT-5.4,beer_Rstar,30,6,24,0,0,0.0
+decoy-effect,GPT-5.4,beer_F,30,3,27,0,0,0.0
+decoy-effect,GPT-5.4,beer_RF,30,8,22,0,0,0.0
+decoy-effect,GPT-5.4,cars_no_decoy,30,0,30,0,0,0.0
+decoy-effect,GPT-5.4,cars_R,30,27,3,0,0,0.0
+decoy-effect,GPT-5.4,cars_Rstar,30,26,4,0,0,0.0
+decoy-effect,GPT-5.4,cars_F,30,2,28,0,0,0.0
+decoy-effect,GPT-5.4,cars_RF,30,0,30,0,0,0.0
+decoy-effect,GPT-5.4,restaurants_no_decoy,30,17,13,0,0,0.0
+decoy-effect,GPT-5.4,restaurants_R,30,30,0,0,0,0.0
+decoy-effect,GPT-5.4,restaurants_Rstar,30,30,0,0,0,0.0
+decoy-effect,GPT-5.4,restaurants_F,30,11,19,0,0,0.0
+decoy-effect,GPT-5.4,restaurants_RF,30,7,23,0,0,0.0
+decoy-effect,GPT-5.4,lotteries_no_decoy,30,30,0,0,0,0.0
+decoy-effect,GPT-5.4,lotteries_R,30,30,0,0,0,0.0
+decoy-effect,GPT-5.4,lotteries_Rstar,30,30,0,0,0,0.0
+decoy-effect,GPT-5.4,lotteries_F,30,30,0,0,0,0.0
+decoy-effect,GPT-5.4,lotteries_RF,30,30,0,0,0,0.0
+decoy-effect,GPT-5.4,film_no_decoy,30,0,30,0,0,0.0
+decoy-effect,GPT-5.4,film_R,30,29,1,0,0,0.0
+decoy-effect,GPT-5.4,film_Rstar,30,27,3,0,0,0.0
+decoy-effect,GPT-5.4,film_F,30,7,23,0,0,0.0
+decoy-effect,GPT-5.4,film_RF,30,18,12,0,0,0.0
+decoy-effect,GPT-5.4,tv_no_decoy,30,1,29,0,0,0.0
+decoy-effect,GPT-5.4,tv_R,30,30,0,0,0,0.0
+decoy-effect,GPT-5.4,tv_Rstar,30,30,0,0,0,0.0
+decoy-effect,GPT-5.4,tv_F,30,14,16,0,0,0.0
+decoy-effect,GPT-5.4,tv_RF,30,10,20,0,0,0.0
+decoy-effect,GPT-5.4 mini,beer_no_decoy,30,14,16,0,0,0.0
+decoy-effect,GPT-5.4 mini,beer_R,30,20,10,0,0,0.0
+decoy-effect,GPT-5.4 mini,beer_Rstar,30,14,16,0,0,0.0
+decoy-effect,GPT-5.4 mini,beer_F,30,18,12,0,0,0.0
+decoy-effect,GPT-5.4 mini,beer_RF,30,27,3,0,0,0.0
+decoy-effect,GPT-5.4 mini,cars_no_decoy,30,21,9,0,0,0.0
+decoy-effect,GPT-5.4 mini,cars_R,30,16,14,0,0,0.0
+decoy-effect,GPT-5.4 mini,cars_Rstar,30,13,17,0,0,0.0
+decoy-effect,GPT-5.4 mini,cars_F,30,1,24,5,0,0.0
+decoy-effect,GPT-5.4 mini,cars_RF,30,3,27,0,0,0.0
+decoy-effect,GPT-5.4 mini,restaurants_no_decoy,30,19,11,0,0,0.0
+decoy-effect,GPT-5.4 mini,restaurants_R,30,30,0,0,0,0.0
+decoy-effect,GPT-5.4 mini,restaurants_Rstar,30,29,1,0,0,0.0
+decoy-effect,GPT-5.4 mini,restaurants_F,30,10,20,0,0,0.0
+decoy-effect,GPT-5.4 mini,restaurants_RF,30,22,8,0,0,0.0
+decoy-effect,GPT-5.4 mini,lotteries_no_decoy,30,30,0,0,0,0.0
+decoy-effect,GPT-5.4 mini,lotteries_R,30,29,1,0,0,0.0
+decoy-effect,GPT-5.4 mini,lotteries_Rstar,30,28,2,0,0,0.0
+decoy-effect,GPT-5.4 mini,lotteries_F,30,22,8,0,0,0.0
+decoy-effect,GPT-5.4 mini,lotteries_RF,30,30,0,0,0,0.0
+decoy-effect,GPT-5.4 mini,film_no_decoy,30,0,30,0,0,0.0
+decoy-effect,GPT-5.4 mini,film_R,30,5,25,0,0,0.0
+decoy-effect,GPT-5.4 mini,film_Rstar,30,6,24,0,0,0.0
+decoy-effect,GPT-5.4 mini,film_F,30,2,28,0,0,0.0
+decoy-effect,GPT-5.4 mini,film_RF,30,7,23,0,0,0.0
+decoy-effect,GPT-5.4 mini,tv_no_decoy,30,24,6,0,0,0.0
+decoy-effect,GPT-5.4 mini,tv_R,30,30,0,0,0,0.0
+decoy-effect,GPT-5.4 mini,tv_Rstar,30,30,0,0,0,0.0
+decoy-effect,GPT-5.4 mini,tv_F,30,25,3,2,0,0.0
+decoy-effect,GPT-5.4 mini,tv_RF,30,28,2,0,0,0.0

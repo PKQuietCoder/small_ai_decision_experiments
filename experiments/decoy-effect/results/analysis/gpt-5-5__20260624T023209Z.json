@@ -1,0 +1,1591 @@
+{
+  "experimentId": "decoy-effect",
+  "experimentTitle": "The Decoy Effect: Does a Worse Option Sway a Model's Choice?",
+  "runId": "20260624T023209Z",
+  "runDate": "2026-06-24T02:38:21.499111+00:00",
+  "prompt": "{scenario}\n",
+  "question": "",
+  "baseline": {
+    "source": "Huber, Payne & Puto (1982), Tables 2 and 3. Across six product categories the no-decoy target share averaged ~0.50; adding an asymmetrically dominated decoy raised it by ~9 points between-subjects (range strategies R/R* ~+13, range-frequency RF ~+8, frequency F ~+4), while the decoy itself was chosen ~1-2% of the time. Per-category target shares are reproduced in the post tables. No per-variant chart overlay (30 conditions would render unreadably); the human comparison lives in the publication's tables.\n"
+  },
+  "decisionOptions": [
+    {
+      "id": "option_1",
+      "label": "Target"
+    },
+    {
+      "id": "option_2",
+      "label": "Competitor"
+    },
+    {
+      "id": "option_3",
+      "label": "Decoy"
+    }
+  ],
+  "models": [
+    "GPT-5.5"
+  ],
+  "variants": [
+    {
+      "id": "beer_no_decoy",
+      "label": "Beer \u00b7 no decoy",
+      "metaphor": ""
+    },
+    {
+      "id": "beer_R",
+      "label": "Beer \u00b7 decoy R (moderate range)",
+      "metaphor": ""
+    },
+    {
+      "id": "beer_Rstar",
+      "label": "Beer \u00b7 decoy R* (extreme range)",
+      "metaphor": ""
+    },
+    {
+      "id": "beer_F",
+      "label": "Beer \u00b7 decoy F (frequency)",
+      "metaphor": ""
+    },
+    {
+      "id": "beer_RF",
+      "label": "Beer \u00b7 decoy RF (range-frequency)",
+      "metaphor": ""
+    },
+    {
+      "id": "cars_no_decoy",
+      "label": "Cars \u00b7 no decoy",
+      "metaphor": ""
+    },
+    {
+      "id": "cars_R",
+      "label": "Cars \u00b7 decoy R (moderate range)",
+      "metaphor": ""
+    },
+    {
+      "id": "cars_Rstar",
+      "label": "Cars \u00b7 decoy R* (extreme range)",
+      "metaphor": ""
+    },
+    {
+      "id": "cars_F",
+      "label": "Cars \u00b7 decoy F (frequency)",
+      "metaphor": ""
+    },
+    {
+      "id": "cars_RF",
+      "label": "Cars \u00b7 decoy RF (range-frequency)",
+      "metaphor": ""
+    },
+    {
+      "id": "restaurants_no_decoy",
+      "label": "Restaurants \u00b7 no decoy",
+      "metaphor": ""
+    },
+    {
+      "id": "restaurants_R",
+      "label": "Restaurants \u00b7 decoy R (moderate range)",
+      "metaphor": ""
+    },
+    {
+      "id": "restaurants_Rstar",
+      "label": "Restaurants \u00b7 decoy R* (extreme range)",
+      "metaphor": ""
+    },
+    {
+      "id": "restaurants_F",
+      "label": "Restaurants \u00b7 decoy F (frequency)",
+      "metaphor": ""
+    },
+    {
+      "id": "restaurants_RF",
+      "label": "Restaurants \u00b7 decoy RF (range-frequency)",
+      "metaphor": ""
+    },
+    {
+      "id": "lotteries_no_decoy",
+      "label": "Lotteries \u00b7 no decoy",
+      "metaphor": ""
+    },
+    {
+      "id": "lotteries_R",
+      "label": "Lotteries \u00b7 decoy R (moderate range)",
+      "metaphor": ""
+    },
+    {
+      "id": "lotteries_Rstar",
+      "label": "Lotteries \u00b7 decoy R* (extreme range)",
+      "metaphor": ""
+    },
+    {
+      "id": "lotteries_F",
+      "label": "Lotteries \u00b7 decoy F (frequency)",
+      "metaphor": ""
+    },
+    {
+      "id": "lotteries_RF",
+      "label": "Lotteries \u00b7 decoy RF (range-frequency)",
+      "metaphor": ""
+    },
+    {
+      "id": "film_no_decoy",
+      "label": "Film \u00b7 no decoy",
+      "metaphor": ""
+    },
+    {
+      "id": "film_R",
+      "label": "Film \u00b7 decoy R (moderate range)",
+      "metaphor": ""
+    },
+    {
+      "id": "film_Rstar",
+      "label": "Film \u00b7 decoy R* (extreme range)",
+      "metaphor": ""
+    },
+    {
+      "id": "film_F",
+      "label": "Film \u00b7 decoy F (frequency)",
+      "metaphor": ""
+    },
+    {
+      "id": "film_RF",
+      "label": "Film \u00b7 decoy RF (range-frequency)",
+      "metaphor": ""
+    },
+    {
+      "id": "tv_no_decoy",
+      "label": "TV sets \u00b7 no decoy",
+      "metaphor": ""
+    },
+    {
+      "id": "tv_R",
+      "label": "TV sets \u00b7 decoy R (moderate range)",
+      "metaphor": ""
+    },
+    {
+      "id": "tv_Rstar",
+      "label": "TV sets \u00b7 decoy R* (extreme range)",
+      "metaphor": ""
+    },
+    {
+      "id": "tv_F",
+      "label": "TV sets \u00b7 decoy F (frequency)",
+      "metaphor": ""
+    },
+    {
+      "id": "tv_RF",
+      "label": "TV sets \u00b7 decoy RF (range-frequency)",
+      "metaphor": ""
+    }
+  ],
+  "primaryDecision": "option_1",
+  "primaryDecisionLabel": "Target",
+  "totalTrials": 900,
+  "trialsPerCell": 30,
+  "parseFailures": 0,
+  "excluded": 0,
+  "byVariant": [
+    {
+      "variantId": "beer_no_decoy",
+      "label": "Beer \u00b7 no decoy",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8865,
+          1.0
+        ],
+        "option_2": [
+          0.0,
+          0.1135
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "beer_R",
+      "label": "Beer \u00b7 decoy R (moderate range)",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8865,
+          1.0
+        ],
+        "option_2": [
+          0.0,
+          0.1135
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "beer_Rstar",
+      "label": "Beer \u00b7 decoy R* (extreme range)",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 26,
+        "option_2": 4,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.8667,
+        "option_2": 0.1333,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.7032,
+          0.9469
+        ],
+        "option_2": [
+          0.0531,
+          0.2968
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "beer_F",
+      "label": "Beer \u00b7 decoy F (frequency)",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 27,
+        "option_2": 3,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.9,
+        "option_2": 0.1,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.7438,
+          0.9654
+        ],
+        "option_2": [
+          0.0346,
+          0.2562
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "beer_RF",
+      "label": "Beer \u00b7 decoy RF (range-frequency)",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 21,
+        "option_2": 9,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.7,
+        "option_2": 0.3,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.5212,
+          0.8334
+        ],
+        "option_2": [
+          0.1666,
+          0.4788
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "cars_no_decoy",
+      "label": "Cars \u00b7 no decoy",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 5,
+        "option_2": 25,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.1667,
+        "option_2": 0.8333,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.0734,
+          0.3356
+        ],
+        "option_2": [
+          0.6644,
+          0.9266
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "cars_R",
+      "label": "Cars \u00b7 decoy R (moderate range)",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 29,
+        "option_2": 1,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.9667,
+        "option_2": 0.0333,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8333,
+          0.9941
+        ],
+        "option_2": [
+          0.0059,
+          0.1667
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "cars_Rstar",
+      "label": "Cars \u00b7 decoy R* (extreme range)",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 27,
+        "option_2": 3,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.9,
+        "option_2": 0.1,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.7438,
+          0.9654
+        ],
+        "option_2": [
+          0.0346,
+          0.2562
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "cars_F",
+      "label": "Cars \u00b7 decoy F (frequency)",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 12,
+        "option_2": 18,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.4,
+        "option_2": 0.6,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.2459,
+          0.5768
+        ],
+        "option_2": [
+          0.4232,
+          0.7541
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "cars_RF",
+      "label": "Cars \u00b7 decoy RF (range-frequency)",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 6,
+        "option_2": 24,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.2,
+        "option_2": 0.8,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.095,
+          0.3731
+        ],
+        "option_2": [
+          0.6269,
+          0.905
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "restaurants_no_decoy",
+      "label": "Restaurants \u00b7 no decoy",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.0,
+          0.1135
+        ],
+        "option_2": [
+          0.8865,
+          1.0
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "restaurants_R",
+      "label": "Restaurants \u00b7 decoy R (moderate range)",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 8,
+        "option_2": 22,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.2667,
+        "option_2": 0.7333,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.1418,
+          0.4445
+        ],
+        "option_2": [
+          0.5555,
+          0.8582
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "restaurants_Rstar",
+      "label": "Restaurants \u00b7 decoy R* (extreme range)",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 10,
+        "option_2": 20,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.3333,
+        "option_2": 0.6667,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.1923,
+          0.5122
+        ],
+        "option_2": [
+          0.4878,
+          0.8077
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "restaurants_F",
+      "label": "Restaurants \u00b7 decoy F (frequency)",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 11,
+        "option_2": 19,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.3667,
+        "option_2": 0.6333,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.2187,
+          0.5449
+        ],
+        "option_2": [
+          0.4551,
+          0.7813
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "restaurants_RF",
+      "label": "Restaurants \u00b7 decoy RF (range-frequency)",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 1,
+        "option_2": 29,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0333,
+        "option_2": 0.9667,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.0059,
+          0.1667
+        ],
+        "option_2": [
+          0.8333,
+          0.9941
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "lotteries_no_decoy",
+      "label": "Lotteries \u00b7 no decoy",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8865,
+          1.0
+        ],
+        "option_2": [
+          0.0,
+          0.1135
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "lotteries_R",
+      "label": "Lotteries \u00b7 decoy R (moderate range)",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8865,
+          1.0
+        ],
+        "option_2": [
+          0.0,
+          0.1135
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "lotteries_Rstar",
+      "label": "Lotteries \u00b7 decoy R* (extreme range)",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8865,
+          1.0
+        ],
+        "option_2": [
+          0.0,
+          0.1135
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "lotteries_F",
+      "label": "Lotteries \u00b7 decoy F (frequency)",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8865,
+          1.0
+        ],
+        "option_2": [
+          0.0,
+          0.1135
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "lotteries_RF",
+      "label": "Lotteries \u00b7 decoy RF (range-frequency)",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8865,
+          1.0
+        ],
+        "option_2": [
+          0.0,
+          0.1135
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "film_no_decoy",
+      "label": "Film \u00b7 no decoy",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 19,
+        "option_2": 11,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.6333,
+        "option_2": 0.3667,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.4551,
+          0.7813
+        ],
+        "option_2": [
+          0.2187,
+          0.5449
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "film_R",
+      "label": "Film \u00b7 decoy R (moderate range)",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 29,
+        "option_2": 1,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.9667,
+        "option_2": 0.0333,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8333,
+          0.9941
+        ],
+        "option_2": [
+          0.0059,
+          0.1667
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "film_Rstar",
+      "label": "Film \u00b7 decoy R* (extreme range)",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 28,
+        "option_2": 2,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.9333,
+        "option_2": 0.0667,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.7868,
+          0.9815
+        ],
+        "option_2": [
+          0.0185,
+          0.2132
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "film_F",
+      "label": "Film \u00b7 decoy F (frequency)",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 13,
+        "option_2": 17,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.4333,
+        "option_2": 0.5667,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.2738,
+          0.608
+        ],
+        "option_2": [
+          0.392,
+          0.7262
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "film_RF",
+      "label": "Film \u00b7 decoy RF (range-frequency)",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 27,
+        "option_2": 3,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.9,
+        "option_2": 0.1,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.7438,
+          0.9654
+        ],
+        "option_2": [
+          0.0346,
+          0.2562
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "tv_no_decoy",
+      "label": "TV sets \u00b7 no decoy",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 1,
+        "option_2": 29,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0333,
+        "option_2": 0.9667,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.0059,
+          0.1667
+        ],
+        "option_2": [
+          0.8333,
+          0.9941
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "tv_R",
+      "label": "TV sets \u00b7 decoy R (moderate range)",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8865,
+          1.0
+        ],
+        "option_2": [
+          0.0,
+          0.1135
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "tv_Rstar",
+      "label": "TV sets \u00b7 decoy R* (extreme range)",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.8865,
+          1.0
+        ],
+        "option_2": [
+          0.0,
+          0.1135
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "tv_F",
+      "label": "TV sets \u00b7 decoy F (frequency)",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 7,
+        "option_2": 23,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.2333,
+        "option_2": 0.7667,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.1179,
+          0.4093
+        ],
+        "option_2": [
+          0.5907,
+          0.8821
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    },
+    {
+      "variantId": "tv_RF",
+      "label": "TV sets \u00b7 decoy RF (range-frequency)",
+      "metaphor": "",
+      "total": 30,
+      "counts": {
+        "option_1": 22,
+        "option_2": 8,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.7333,
+        "option_2": 0.2667,
+        "option_3": 0.0
+      },
+      "ci": {
+        "option_1": [
+          0.5555,
+          0.8582
+        ],
+        "option_2": [
+          0.1418,
+          0.4445
+        ],
+        "option_3": [
+          0.0,
+          0.1135
+        ]
+      }
+    }
+  ],
+  "byVariantModel": [
+    {
+      "variantId": "beer_no_decoy",
+      "label": "Beer \u00b7 no decoy",
+      "model": "GPT-5.5",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "beer_R",
+      "label": "Beer \u00b7 decoy R (moderate range)",
+      "model": "GPT-5.5",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "beer_Rstar",
+      "label": "Beer \u00b7 decoy R* (extreme range)",
+      "model": "GPT-5.5",
+      "total": 30,
+      "counts": {
+        "option_1": 26,
+        "option_2": 4,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.8667,
+        "option_2": 0.1333,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "beer_F",
+      "label": "Beer \u00b7 decoy F (frequency)",
+      "model": "GPT-5.5",
+      "total": 30,
+      "counts": {
+        "option_1": 27,
+        "option_2": 3,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.9,
+        "option_2": 0.1,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "beer_RF",
+      "label": "Beer \u00b7 decoy RF (range-frequency)",
+      "model": "GPT-5.5",
+      "total": 30,
+      "counts": {
+        "option_1": 21,
+        "option_2": 9,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.7,
+        "option_2": 0.3,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "cars_no_decoy",
+      "label": "Cars \u00b7 no decoy",
+      "model": "GPT-5.5",
+      "total": 30,
+      "counts": {
+        "option_1": 5,
+        "option_2": 25,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.1667,
+        "option_2": 0.8333,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "cars_R",
+      "label": "Cars \u00b7 decoy R (moderate range)",
+      "model": "GPT-5.5",
+      "total": 30,
+      "counts": {
+        "option_1": 29,
+        "option_2": 1,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.9667,
+        "option_2": 0.0333,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "cars_Rstar",
+      "label": "Cars \u00b7 decoy R* (extreme range)",
+      "model": "GPT-5.5",
+      "total": 30,
+      "counts": {
+        "option_1": 27,
+        "option_2": 3,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.9,
+        "option_2": 0.1,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "cars_F",
+      "label": "Cars \u00b7 decoy F (frequency)",
+      "model": "GPT-5.5",
+      "total": 30,
+      "counts": {
+        "option_1": 12,
+        "option_2": 18,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.4,
+        "option_2": 0.6,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "cars_RF",
+      "label": "Cars \u00b7 decoy RF (range-frequency)",
+      "model": "GPT-5.5",
+      "total": 30,
+      "counts": {
+        "option_1": 6,
+        "option_2": 24,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.2,
+        "option_2": 0.8,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "restaurants_no_decoy",
+      "label": "Restaurants \u00b7 no decoy",
+      "model": "GPT-5.5",
+      "total": 30,
+      "counts": {
+        "option_1": 0,
+        "option_2": 30,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0,
+        "option_2": 1.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "restaurants_R",
+      "label": "Restaurants \u00b7 decoy R (moderate range)",
+      "model": "GPT-5.5",
+      "total": 30,
+      "counts": {
+        "option_1": 8,
+        "option_2": 22,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.2667,
+        "option_2": 0.7333,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "restaurants_Rstar",
+      "label": "Restaurants \u00b7 decoy R* (extreme range)",
+      "model": "GPT-5.5",
+      "total": 30,
+      "counts": {
+        "option_1": 10,
+        "option_2": 20,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.3333,
+        "option_2": 0.6667,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "restaurants_F",
+      "label": "Restaurants \u00b7 decoy F (frequency)",
+      "model": "GPT-5.5",
+      "total": 30,
+      "counts": {
+        "option_1": 11,
+        "option_2": 19,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.3667,
+        "option_2": 0.6333,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "restaurants_RF",
+      "label": "Restaurants \u00b7 decoy RF (range-frequency)",
+      "model": "GPT-5.5",
+      "total": 30,
+      "counts": {
+        "option_1": 1,
+        "option_2": 29,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0333,
+        "option_2": 0.9667,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "lotteries_no_decoy",
+      "label": "Lotteries \u00b7 no decoy",
+      "model": "GPT-5.5",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "lotteries_R",
+      "label": "Lotteries \u00b7 decoy R (moderate range)",
+      "model": "GPT-5.5",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "lotteries_Rstar",
+      "label": "Lotteries \u00b7 decoy R* (extreme range)",
+      "model": "GPT-5.5",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "lotteries_F",
+      "label": "Lotteries \u00b7 decoy F (frequency)",
+      "model": "GPT-5.5",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "lotteries_RF",
+      "label": "Lotteries \u00b7 decoy RF (range-frequency)",
+      "model": "GPT-5.5",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "film_no_decoy",
+      "label": "Film \u00b7 no decoy",
+      "model": "GPT-5.5",
+      "total": 30,
+      "counts": {
+        "option_1": 19,
+        "option_2": 11,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.6333,
+        "option_2": 0.3667,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "film_R",
+      "label": "Film \u00b7 decoy R (moderate range)",
+      "model": "GPT-5.5",
+      "total": 30,
+      "counts": {
+        "option_1": 29,
+        "option_2": 1,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.9667,
+        "option_2": 0.0333,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "film_Rstar",
+      "label": "Film \u00b7 decoy R* (extreme range)",
+      "model": "GPT-5.5",
+      "total": 30,
+      "counts": {
+        "option_1": 28,
+        "option_2": 2,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.9333,
+        "option_2": 0.0667,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "film_F",
+      "label": "Film \u00b7 decoy F (frequency)",
+      "model": "GPT-5.5",
+      "total": 30,
+      "counts": {
+        "option_1": 13,
+        "option_2": 17,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.4333,
+        "option_2": 0.5667,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "film_RF",
+      "label": "Film \u00b7 decoy RF (range-frequency)",
+      "model": "GPT-5.5",
+      "total": 30,
+      "counts": {
+        "option_1": 27,
+        "option_2": 3,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.9,
+        "option_2": 0.1,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "tv_no_decoy",
+      "label": "TV sets \u00b7 no decoy",
+      "model": "GPT-5.5",
+      "total": 30,
+      "counts": {
+        "option_1": 1,
+        "option_2": 29,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.0333,
+        "option_2": 0.9667,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "tv_R",
+      "label": "TV sets \u00b7 decoy R (moderate range)",
+      "model": "GPT-5.5",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "tv_Rstar",
+      "label": "TV sets \u00b7 decoy R* (extreme range)",
+      "model": "GPT-5.5",
+      "total": 30,
+      "counts": {
+        "option_1": 30,
+        "option_2": 0,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 1.0,
+        "option_2": 0.0,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "tv_F",
+      "label": "TV sets \u00b7 decoy F (frequency)",
+      "model": "GPT-5.5",
+      "total": 30,
+      "counts": {
+        "option_1": 7,
+        "option_2": 23,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.2333,
+        "option_2": 0.7667,
+        "option_3": 0.0
+      }
+    },
+    {
+      "variantId": "tv_RF",
+      "label": "TV sets \u00b7 decoy RF (range-frequency)",
+      "model": "GPT-5.5",
+      "total": 30,
+      "counts": {
+        "option_1": 22,
+        "option_2": 8,
+        "option_3": 0
+      },
+      "proportions": {
+        "option_1": 0.7333,
+        "option_2": 0.2667,
+        "option_3": 0.0
+      }
+    }
+  ],
+  "overall": {
+    "statistic": 518.8831,
+    "pValue": 3.759661436745937e-91,
+    "dof": 29,
+    "significant": true,
+    "cramersV": 0.7593,
+    "testable": true
+  },
+  "perModel": [
+    {
+      "model": "GPT-5.5",
+      "chiSquare": {
+        "statistic": 518.8831,
+        "pValue": 3.759661436745937e-91,
+        "dof": 29,
+        "significant": true,
+        "cramersV": 0.7593,
+        "testable": true
+      }
+    }
+  ]
+}

@@ -58,7 +58,8 @@ CLAUDE.local.md
 .claude/plans/
 
 # "Coming soon" studies — content withheld from the public repo, kept local for
-# offline work until published. Only decoy-effect (+ decoy-effect-agentic) ship publicly.
+# offline work until published. The decoy-effect post ships publicly, backed by two experiments:
+# decoy-effect (replication) and decoy-effect-agentic (the post's agentic-scaffolds extension).
 # Real post drafts for the withheld studies.
 drafts/
 # Per-study data (runs, analysis, experiment config, replication package).

@@ -2,10 +2,10 @@
 category: Decisions
 type: Experiments
 date: '2026-06-24'
-excerpt: 'A faithful rerun of Huber, Payne & Puto (1982) on four models (Claude Opus 4.8 plus GPT-5.5, GPT-5.4, GPT-5.4-mini) — the exact six product categories, two attributes each, and all four decoy-placement strategies. The dominated decoy is almost never chosen (0–1% across models), yet its presence reshapes the choice sharply. Range decoys reliably pull toward the target in every model — the attraction effect, often amplified well beyond the human +13. Frequency decoys split by model: Claude Opus 4.8 reverses into a similarity effect and abandons the target (mean −28 / −44 points), while GPT-5.5 and GPT-5.4 stay weakly positive, the human-like pattern. The bias is not immune to a worthless option, and its direction depends on both where the option sits and which model is choosing.'
+excerpt: 'A faithful rerun of Huber, Payne & Puto (1982) on four models (Claude Opus 4.8 plus GPT-5.5, GPT-5.4, GPT-5.4-mini), in two parts. Part I (replication): the dominated decoy is almost never chosen (0–1% across models), yet range decoys reliably pull toward the target on every model — often amplified well beyond the human +13 — while frequency decoys split, with Opus reversing into a similarity effect and the GPT-5 flagships staying human-like. Part II (agentic extension): the same choice under single-shot, forced-workflow, autonomous, and retrieval scaffolds on Opus — the decoy is never chosen in any scaffold (even when the agent looks it up itself), more deliberation undoes the single-shot frequency reversal (17% → 71%), and retrieval removes the range attraction lift. How options are presented, and how an agent deliberates, change which way a worthless option bends the choice.'
 experimentId: decoy-effect
 verdict: mixed
-controls: 'Faithfulness and robustness come from coverage. The design reproduces the paper''s six product categories (beer, cars, restaurants, lotteries, film, television sets) with its exact Appendix II attribute values, crosses all four decoy-placement strategies (R, R*, F, RF) against a no-decoy baseline, verifies that every decoy is asymmetrically dominated by the target and not by the competitor, and reruns the whole 30-condition design on four models (Claude Opus 4.8, GPT-5.5, GPT-5.4, GPT-5.4-mini). The attraction effect under range decoys replicates in every model; the frequency reversal is specific to Opus.'
+controls: 'Coverage and design controls across two parts. Part I reproduces the paper''s six product categories with exact Appendix II attribute values, crosses all four decoy-placement strategies (R, R*, F, RF) against a no-decoy baseline, verifies that every decoy is asymmetrically dominated by the target and not the competitor, and reruns the 30-condition design on four models. Part II holds that choice fixed for three categories and varies only the agentic scaffold (single-shot / forced-workflow / autonomous / retrieval) within one tool harness — neutral option ids, a per-cell enum clamp so a no-decoy menu cannot offer the decoy, and per-call logging confirming the retrieval agent inspected the decoy in every trial.'
 featured: false
 published: true
 runId: 20260624T020831Z
@@ -16,6 +16,10 @@ tags:
 - similarity-effect
 - choice
 - decision-making
+- agents
+- tool-use
+- deliberation
+- retrieval
 title: 'The Decoy Effect: Does a Worse Option Sway a Model''s Choice?'
 ---
 
@@ -44,6 +48,14 @@ GPT-5.5 and GPT-5.4 keep every placement weakly positive, reproducing the human 
 flips to the similarity effect, and the smaller GPT-5.4-mini is noisier still. The lesson for anyone
 handing a model a menu is that the model is not indifferent to a worthless option — and the direction
 in which it bends depends on both where that option sits and which model is choosing.
+
+This report is in two parts. **Part I — Replication** runs the original study faithfully and across the
+four-model panel. **Part II — Extension: agentic scaffolds** takes the same choice and wraps it in the
+scaffolds an agent actually runs inside — a single tool call, a forced inspect-compare-choose workflow,
+autonomous tool use, and a retrieval arm where the agent must look the options up itself — to ask
+whether *how* the agent decides changes the bias.
+
+# Part I — Replication
 
 ## 1. Background: the human baseline
 
@@ -274,7 +286,7 @@ noisier effects and one reversal (F −17). So the similarity effect read off th
 general property of language models; it is something Opus does on this design that the GPT-5 models do
 not.
 
-### 4.6 Synthesis
+### 4.6 Synthesis (replication)
 
 Four findings, ordered by how widely they hold. The dominated decoy is essentially never chosen, in
 every model (Sections 4.1, 4.5). Its presence reshapes the choice strongly and significantly, in every
@@ -287,70 +299,242 @@ version — the attraction effect is copied and amplified across the board, whil
 twist is Opus's frequency reversal. Every model is highly sensitive to a dominated option it never
 picks; what differs is which way a near-substitute decoy bends the choice.
 
-## 5. Assumptions
+# Part II — Extension: agentic scaffolds
+
+## 5. Why extend to agents
+
+Part I reran the original as a single forced choice, deliberately stripped of any agentic apparatus to
+stay faithful to the paper. But most real uses of a model to choose among options are *agentic*: the
+model calls tools, takes several steps, or looks things up. The natural follow-up is whether the bias
+is an artifact of the one-shot framing or survives — and changes — when the same choice is wrapped in
+the scaffolds an agent actually runs inside.
+
+This part is a methods extension, not a human comparison: there is no human "agentic" baseline. Every
+comparison here is *within* a single experiment and a single tool harness, where the only thing that
+changes between conditions is the scaffold.
+
+## 6. Agentic design
+
+Two factors are crossed on top of the fixed paper choice.
+
+**The decision (held fixed).** For each of three categories — film, cars, and television sets, chosen
+to span a fragile mid-range default (film), a target-favouring default (cars), and a competitor-
+favouring default (TV) — the target, competitor, and the four placement decoys take the paper's exact
+Appendix II attribute values, identical to Part I. Options are presented neutrally as "option 1/2/3";
+the role words never appear, and the per-cell choice enum is clamped so a no-decoy menu can offer only
+its two real options.
+
+**The scaffold (varied).** Four modes, the first three with the menu in the prompt and the last with
+it hidden behind tools:
+
+| Mode | What the agent does | Menu | Mean tool calls |
+|---|---|---|---:|
+| Single-shot | one `choose` call, decide immediately | in prompt | 1.0 |
+| Forced workflow | pinned `inspect` → `compare` → `choose` | in prompt | 3.0 |
+| Autonomous | calls tools freely until it picks (`mode: auto`) | in prompt | 3.0 |
+| Retrieval | must `list` and `get_specs` each option, then `choose` | retrieved | 4.8 |
+
+Three categories × five placements (no decoy, R, R\*, F, RF) × four modes = sixty conditions, thirty
+trials each, on Claude Opus 4.8 at default sampling. The choice is read from a schema-constrained tool
+field; in the retrieval arm the option data is served only through `get_specs`, and every call is
+logged. **One caveat on baselines:** the single-shot tool harness is not identical to the structured-
+output harness used in Part I, and for the fragile film default the two disagree (film's no-decoy
+default flips between them). So we do not compare these numbers to the Part I run; we compare *modes
+against each other within this experiment*, where the harness is held constant.
+
+## 7. Agentic results
+
+### 7.1 The decoy is never chosen — even when the agent looks it up itself
+
+In all four scaffolds the dominated decoy stays essentially unpicked: 0.8 percent under single-shot,
+0.3 percent under the workflow, 1.1 percent under autonomy, and 0.0 percent under retrieval (across
+1,440 decoy-present trials, fewer than ten picked the decoy). The retrieval arm is the sharpest version
+of the result. There the agent cannot see the decoy without asking for it — and it always asks: in
+**360 of 360** retrieval trials with a decoy present, the agent called `get_specs` on the dominated
+option before choosing, and in none of them did it choose it. Reading the worthless option's numbers,
+one at a time, by its own initiative, does not make the agent pick it — but, as the next sections show,
+it does not make the agent immune to it either.
+
+### 7.2 Range attraction survives deliberation but breaks under retrieval
+
+When the decoy extends the range on the target's weak attribute (the R and R\* strategies), the target-
+ward pull shows up under every co-presented scaffold and is large. Pooling the three categories, a
+range decoy under a co-presented menu lifts the target to **99 percent** of choices; the single-shot,
+forced-workflow, and autonomous arms are indistinguishable on this. Deliberation does not touch the
+range attraction effect.
+
+Retrieval does. When the agent must look the options up itself, the same range decoy leaves the target
+at **62 percent** — essentially its no-decoy retrieval baseline of about 67 percent, i.e. no attraction
+lift at all (co-presented versus retrieval for the range decoy: χ² = 94, *p* < 10⁻²¹, Cramér's V 0.51).
+The lift that is worth roughly +67 points when the menu is handed over drops to about −5 when the agent
+assembles the menu through its own queries. Building the choice set one fact at a time removes the range
+attraction effect that co-presentation reliably produces.
+
+### 7.3 Deliberation undoes the frequency reversal
+
+The frequency decoys are where the scaffold matters most. Under a frequency decoy — one that mimics the
+target on its weak attribute and edges toward the competitor — the single-shot agent shows the same
+reversal Part I found for Opus: it abandons the target for the competitor, with the target taking just
+**17 percent** of choices. Add process and the reversal unwinds. The forced inspect-compare-choose
+workflow lifts the target to **53 percent**, and full autonomy to **71 percent** (single-shot versus
+autonomous: χ² = 57, *p* < 10⁻¹², Cramér's V 0.56; the three-way trend across modes is likewise
+significant). More deliberation pulls the target back out of the similarity trap that the one-shot
+choice falls into. Retrieval goes the opposite way, driving the target well below its baseline. The
+range–frequency (RF) decoy is the noisiest case: it stays mildly target-negative across the co-presented
+modes and does not recover the way the pure frequency decoy does.
+
+| Mean change in target share vs that mode's no-decoy menu | R | R\* | F | RF |
+|---|---:|---:|---:|---:|
+| Single-shot | +66.7 | +57.8 | **−15.6** | −24.4 |
+| Forced workflow | +70.0 | +70.0 | **+23.3** | −8.9 |
+| Autonomous | +63.3 | +65.6 | **+36.7** | −16.7 |
+| Retrieval | −4.4 | −1.1 | −55.6 | −58.9 |
+
+**Figure 4 |** Mean change in the target's choice share (averaged over film, cars, and TV), relative to
+each scaffold's own no-decoy menu. Range columns (R, R\*) stay strongly positive across the three co-
+presented scaffolds and vanish under retrieval. The frequency column (F) climbs from negative under
+single-shot to strongly positive under autonomy — deliberation undoing the reversal — then collapses
+under retrieval.
+
+### 7.4 Retrieval also moves the agent's baseline taste
+
+Retrieval is not just a different delivery of the same decision. The agent's *no-decoy* default shifts
+when it reads specs serially rather than from a menu: the no-decoy target share is 53 percent for film
+and 67 percent for TV under retrieval, against 0 percent for both under the co-presented scaffolds.
+Because retrieval changes both the baseline and the decoy's effect, its column in Figure 4 should be
+read as a distinct regime, not a clean overlay on the others. The robust retrieval findings are the two
+that survive the baseline shift: the range attraction lift disappears (7.2), and frequency decoys drive
+the target sharply below its retrieval baseline (7.3).
+
+### 7.5 Category by category
+
+Because each category sits near a floor or ceiling on the bare menu, the clearest demonstration is in
+film, whose default has room to move both ways.
+
+| Category · placement | Single-shot | Workflow | Autonomous | Retrieval |
+|---|---:|---:|---:|---:|
+| **Film** no decoy | 0% | 0% | 3% | 53% |
+| Film R / R\* | 97% / 100% | 100% / 100% | 100% / 100% | 87% / 100% |
+| Film F | 50% | 93% | 100% | 0% |
+| Film RF | 23% | 30% | 53% | 20% |
+| **Cars** no decoy | 97% | 90% | 100% | 80% |
+| Cars R / R\* | 100% / 93% | 100% / 100% | 100% / 100% | 0% / 0% |
+| Cars F | 0% | 13% | 17% | 0% |
+| Cars RF | 0% | 0% | 0% | 0% |
+| **TV** no decoy | 0% | 0% | 0% | 67% |
+| TV R / R\* | 100% / 77% | 100% / 100% | 93% / 100% | 100% / 97% |
+| TV F | 0% | 53% | 97% | 33% |
+| TV RF | 0% | 33% | 0% | 3% |
+
+**Figure 5 |** Target's choice share (percent of 30 trials) for every category, placement, and scaffold.
+The deliberation-undoes-frequency pattern is clearest in film F (50 → 93 → 100) and TV F (0 → 53 → 97);
+cars, whose target is at the ceiling without a decoy, shows it only weakly. The cars retrieval row is
+the starkest case of retrieval's susceptibility: any decoy at all collapses the target to 0 percent.
+
+### 7.6 Synthesis (extension)
+
+The agentic scaffold is not neutral. Two parts of the decoy result are scaffold-proof: the dominated
+option is never chosen (even when the agent fetches its specs itself), and range decoys pull toward the
+target under every co-presented regime. The rest depends on the scaffold. Deliberation — a forced
+inspect-compare-choose workflow, or full autonomy — pulls the target back out of the single-shot
+frequency reversal, the opposite of a "more steps change nothing" expectation. Retrieval is the most
+consequential intervention of all: it removes the range attraction lift, deepens the frequency
+collapse, and shifts the agent's underlying taste. For the decoy effect, *how you ask the agent to
+decide* is itself part of the experiment.
+
+# Both parts
+
+## 8. Assumptions
 
 - **The two-attribute setup is a genuine tradeoff with true asymmetric dominance.** In every
   category the target and competitor trade off, and each decoy is dominated by the target alone — both
   verified numerically — so a shift reflects attraction or similarity, not a response to a plainly
-  better option.
-- **The shift is measured against each category's own no-decoy baseline,** because the model's
-  intrinsic taste is not the human 50/50. The human baseline is shown for reference, not as the null.
-- **The constrained choice field measures the intended pick,** read from a strict enum, with the
-  decoy-only option withheld from the no-decoy menus so the model can never select an option it was
-  not shown.
-- **Catalogue model identifiers map to the intended deployed model,** with stable behaviour over the
+  better option. This decision is held fixed across both parts and, in Part II, across all four scaffolds.
+- **The shift is measured against the right baseline.** In Part I, each category's own no-decoy menu,
+  because the model's intrinsic taste is not the human 50/50 (the human row is shown for reference). In
+  Part II, each scaffold's own no-decoy menu, because the harness itself moves the baseline.
+- **The constrained choice field measures the intended pick,** read from a strict enum (structured
+  output in Part I, forced tool use in Part II), with the choice enum clamped per cell so the model can
+  never select an option it was not shown; no-decoy menus offer only two options.
+- **Part II comparisons are within one tool harness.** All four scaffolds share the same tool-call
+  mechanism, so the single-shot arm is the within-experiment baseline, not a re-run of Part I's
+  structured-output study; in the retrieval arm the served data is the agent's only source, and
+  per-call logging confirms which options it inspected.
+- **Catalogue model identifiers map to the intended deployed models,** with stable behaviour over the
   run window.
 
-## 6. Limitations
+## 9. Limitations
 
-- **Floor and ceiling effects.** The model's near-deterministic taste means most categories sit at 0
+- **Floor and ceiling effects.** Each model's near-deterministic taste means most categories sit at 0
   or 100 percent on the bare menu, so a decoy can visibly move the choice in only one direction per
-  category. The directional split is read across the six categories and, cleanly, within film, the one
-  category with a mid-range baseline.
+  category. The directional split is read across categories and, cleanly, within film, the one category
+  with a mid-range baseline (in both parts).
 - **Fixed option positions.** The original counterbalanced the target's and decoy's positions across
   groups; here positions are held fixed and the within-category change from no-decoy to decoy is the
   unit of inference. This controls position for that contrast but does not estimate a position effect.
-- **One run per model, thirty trials per cell.** Magnitudes at default (or low-reasoning) sampling are
-  noisy; the stable results are the *directions* — universal attraction under range decoys, the
-  Opus-specific frequency reversal — not precise point estimates. Four models are reported; repeated
-  runs per model and a wider panel (Sonnet, Haiku, other providers) are natural follow-ups.
-- **Strong, model-specific intrinsic tastes.** Which option each model favours before any decoy varies
-  by category and by model (Opus prefers the competitor for beer and TV; the GPT-5 models differ), and
-  these baselines determine how much headroom a decoy has to move the choice. They are worth study in
-  their own right and may interact with placement in ways a 50/50 baseline would not.
+- **One run per model and per scaffold, thirty trials per cell.** Magnitudes at default (or
+  low-reasoning) sampling are noisy; the stable results are the *directions* — universal attraction
+  under range decoys, the Opus-specific frequency reversal, and the scaffold effects in Part II — not
+  precise point estimates. Part I reports four models; Part II is Opus only. Repeated runs, a GPT-5
+  scaffold contrast, and a wider panel are natural follow-ups.
+- **Strong, model-specific intrinsic tastes.** Which option a model favours before any decoy varies by
+  category, model, and (in Part II) scaffold; these baselines determine how much headroom a decoy has
+  to move the choice and are worth study in their own right.
+- **Part II's harness differs from Part I's.** The single-shot tool baseline is not identical to Part
+  I's structured-output baseline (film's default flips between them), which is why Part II is read
+  strictly within-experiment rather than against Part I's numbers.
+- **Retrieval confounds delivery with baseline,** and the RF decoy is the least stable cell — it does
+  not show the clean deliberation-rescue that the pure frequency (F) decoy does.
 
-## 7. Conclusion
+## 10. Conclusion
 
 Handed the original decoy task in full, every model tested reproduces the part everyone remembers — a
 dominated option that nobody picks still bends the choice — and every model is pulled toward the target
-by a range decoy, usually harder than people are. Where they part company is the frequency decoy. For
-human subjects every placement nudged choice toward the target, gently. Claude Opus 4.8 instead splits:
-a decoy that is a strictly worse shadow of the target pulls hard toward it, while a decoy that mimics
-the target on its weak attribute and edges toward the competitor drives the choice to the competitor —
-a reversal the GPT-5 models do not show. Opus is not reasoning over absolute merit and ignoring the
-worthless third option; it is reading the *shape* of the set, and a near-substitute for the best option
-makes that option look replaceable, not better. For anyone building or using an agent to choose among
-options, the practical reading is that the list you provide is part of the instruction: a padded or
-decoy-laden menu does not merely add noise, it can swing the choice — and on some models swing it in
-either direction — depending on where the filler sits. The reliable defence is the same one that
-protects human shoppers: present real alternatives on a clean, like-for-like basis and keep dominated
-options off the menu.
+by a range decoy, usually harder than people are. Where they part company is the frequency decoy: Claude
+Opus 4.8 reverses toward the competitor (a near-substitute for the target making it look replaceable),
+while the GPT-5 models keep the gentle, uniformly-positive human pattern. So the bias is real and not
+smoothed away, but its *direction* depends on the placement and the model.
 
-## 8. Practical takeaways
+The agentic extension shows that direction also depends on the scaffold. The decoy is never chosen in
+any scaffold — even when the agent reads its specs itself — so an agent will not *buy* the obvious dud.
+But whether the decoy *bends* the decision, and which way, shifts with the staging: more deliberation
+pulls the target back out of the single-shot frequency reversal, and making the agent retrieve the
+options itself removes the range attraction lift while quietly changing the agent's default taste.
 
-| Observed (from the experiment) | Why it happens | Do differently / how to interact |
+For anyone building or using an agent to choose among options, the practical reading is the same across
+both parts: the list you provide is part of the instruction, and *how* the agent reads it is part of the
+experiment. A padded or decoy-laden menu does not merely add noise; it can swing the choice — on some
+models, and under some scaffolds, in either direction. The one defence that held everywhere, for people
+and models alike, is upstream of all of it: present real alternatives on a clean, like-for-like basis,
+and keep dominated options off the menu.
+
+## 11. Practical takeaways
+
+From the replication (Part I):
+
+| Observed | Why it happens | Do differently / how to interact |
 |---|---|---|
 | A dominated option almost nobody picks (0–1% across four models) still swung the choice, by up to a full reversal. | Choice is shaped by the *set*, not each option's standalone merit. | Treat **the list of options you hand a model as part of the prompt**; drop filler and obviously-worse choices and compare alternatives like-for-like. |
-| Range decoys pulled toward the target in every model (up to +47); frequency decoys pushed Opus toward the competitor (−28 / −44) but left the GPT-5 models weakly positive. | A strictly-worse shadow of the target flatters it (attraction); a near-substitute that mimics the target on its weak attribute can make it look replaceable (similarity). | **Where a worse option sits can decide which way the choice moves** — adding "a slightly worse version of the option you want" can backfire on some models and steer them away from it. |
-| The range attraction effect was universal and amplified; the frequency reversal was Opus-only, and the smaller model was noisiest. | Part of the bias is general to these models; part is model-specific. | Don't assume one model's decoy behaviour transfers; **measure the actual choice distribution for the model you deploy**. |
-| The effect appeared across all six product categories, with the same range-up signature in every model. | A general sensitivity to set composition, not a quirk of one market. | Expect this in **your own everyday comparisons** — shortlists, pricing tiers, ranked options — not just textbook decoy setups. |
+| Range decoys pulled toward the target in every model (up to +47); frequency decoys pushed Opus toward the competitor (−28 / −44) but left the GPT-5 models weakly positive. | A strictly-worse shadow of the target flatters it (attraction); a near-substitute that mimics the target on its weak attribute can make it look replaceable (similarity). | **Where a worse option sits can decide which way the choice moves** — adding "a slightly worse version of the option you want" can backfire on some models. |
+| The range attraction effect was universal and amplified; the frequency reversal was Opus-only. | Part of the bias is general to these models; part is model-specific. | Don't assume one model's decoy behaviour transfers; **measure the actual choice distribution for the model you deploy**. |
+
+From the agentic extension (Part II):
+
+| Observed | Why it happens | Do differently / how to interact |
+|---|---|---|
+| The decoy was never chosen in any scaffold (0–1%), and retrieval agents inspected it in 100% of trials yet picked it in none. | Tool-use and retrieval do not make an agent buy an obviously worse option. | You can trust an agent not to *buy* the junk tier; the risk is in **how it shifts the choice between the real options**. |
+| Single-shot, forced-workflow, and autonomy all showed the range attraction effect. | The effect lives in the side-by-side comparison and resists added deliberation steps. | Don't expect **"add a planning/inspect step"** to neutralise a decoy-laden menu — it didn't. |
+| Forcing a workflow or autonomy pulled the target back out of the single-shot frequency reversal (17% → 53% → 71%). | More deliberation can change *which* option a borderline decoy favours. | If a choice is decoy-sensitive, **the amount and structure of deliberation is a real lever** — worth testing, not assumed. |
+| Retrieval removed the range attraction lift and shifted the agent's baseline taste. | Making the agent assemble the menu itself changes both the bias and the default decision. | **"Have the agent look it up" is not a neutral swap** — re-validate behaviour when you move from a co-presented menu to tool retrieval. |
 
 ## Data and code
 
-Every prompt, all 3,600 trials across the four models, the per-condition attribute values, and the
-analysis behind these charts live on GitHub:
-[`experiments/decoy-effect`](https://github.com/PKQuietCoder/small_ai_decision_experiments/tree/HEAD/experiments/decoy-effect).
-Rerun it, recode it, or check the numbers yourself.
+Every prompt, all trials, the per-condition attribute values, and the analysis behind these charts and
+tables live on GitHub: the replication (3,600 trials across four models) in
+[`experiments/decoy-effect`](https://github.com/PKQuietCoder/small_ai_decision_experiments/tree/HEAD/experiments/decoy-effect),
+and the agentic extension (1,800 trials with full tool-call transcripts) in
+[`experiments/decoy-effect-agentic`](https://github.com/PKQuietCoder/small_ai_decision_experiments/tree/HEAD/experiments/decoy-effect-agentic).
+Rerun them, recode them, or check the numbers yourself.
 
 ## References
 

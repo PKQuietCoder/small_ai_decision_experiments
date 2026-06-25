@@ -20,40 +20,53 @@ description: >
 author: "P.K. Mishra"
 authorUrl: "https://www.linkedin.com/in/pradkmishra/"
 about: |
-  We like to think we reason our way to decisions. Decades of research says otherwise.
-  Mostly we follow hidden rules, and those rules are predictable and often counterintuitive.
-  A number you saw first drags the next one toward it. The way a question is framed flips
-  the answer. Naming a budget makes you spend more, not less.
+  We like to think we reason our way to our decisions. Decades of research suggests we
+  mostly follow hidden rules instead, and those rules turn out to be fairly regular. A
+  number you read first quietly pulls your next estimate toward it. The same option sounds
+  better described as a gain than as a loss. Adding a third choice that nobody wants can
+  still change which of the first two you pick. None of this looks like reasoning, and yet
+  it shapes the everyday choices people make.
 
-  Today we're handing more of those decisions to language models, and to agents that decide
-  over several steps. Here's the catch: we don't actually know what rules they follow. Some
-  they may inherit from us, soaked up from a training set full of human choices. Some they
-  may invent on their own.
+  We are now handing more of those choices to language models, and to agents that reach a
+  decision over several steps rather than answering in one. The open question is which rules
+  they follow. Some they may have absorbed from us, trained as they were on a record full of
+  human choices. Others they may have arrived at on their own. We do not yet know, and the
+  only honest way to find out is to measure it.
 
-  In each entry I take one classic human-bias experiment and rerun it live, not just as a
-  single chat answer but as an agent that reaches the decision over several tool-using steps,
-  including a condition where the agent directs itself. Then I ask a simple question: does the
-  model copy our bias, smooth it out, or make it worse?
+  That is what this series does. Each entry takes one classic experiment from the study of
+  human judgment and runs it again, this time on a current model or agent through its live
+  API. We keep the original design where we can — the same framing, the same options, and the
+  same human baseline to measure against — and we run it not only as a single chat answer but
+  as an agent that works through tools, including a setup where the agent directs itself. Then
+  we ask a plain question: faced with the same setup that moves people, does the model move
+  the same way?
 
-  ### How to read these results: copy, smooth, amplify
+  ### How to read the results
 
-  Three words carry the verdict of every entry, always measured against the original study's
-  human baseline:
+  Each entry reports its verdict against the original study's human baseline, in one of three
+  words:
 
-  - **Copy:** the model reproduces the human bias at a comparable size.
-  - **Smooth:** the model damps the bias toward noise, or removes it entirely.
+  - **Copy:** the model shows the bias at about the size people do.
+  - **Smooth:** the model damps the bias toward noise, or removes it.
   - **Amplify:** the model shows the bias more strongly than people do.
 
-  ### Why this matters
+  A single model held at a fixed setting is closer to one person with settled tastes than to
+  a crowd of shoppers, so we read these results as the same direction as the human effect
+  rather than the same size, and for anything said across models we lean on the spread among
+  the models we test rather than the number of trials within any one. Each entry notes where
+  that caution applies.
 
-  Humans have always offloaded work to tools, and AI is another one. To use it well we need
-  to understand both our own skills and our biases, so we can work together, leveraging each
-  other's strengths and cancelling out our biases.
+  ### Why it matters
+
+  People have always handed work to tools, and these models are the newest one. Using them
+  well means knowing where they help and where they quietly steer. The practical reading of
+  each entry tends to be the same: the framing you hand a model is part of the instruction,
+  and the choice is often settled there, before any reasoning happens.
 
   ### Open data and code
 
-  No findings here are absolute. In science there is a term for that: boundary conditions.
-  Critique, useful feedback, and extensions of these experiments are all encouraged. To make
-  that possible, everything lives in the project's GitHub repository: the prompts, the
-  per-trial data, the analysis code, the charts, the articles themselves, and the setup for
-  running the entire project on Replit.
+  No result here is the last word; in science the term for that is boundary conditions.
+  Critique, replication, and extensions are all welcome. To make them possible, everything
+  lives in the project's public repository — the prompts, the per-trial data, the analysis
+  code, the charts, the write-ups themselves, and the setup to run the whole project — so you
+  can check the work or run it again.

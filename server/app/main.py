@@ -7,12 +7,11 @@ files directly in Replit and flipping the ``published`` frontmatter flag.
 
 from __future__ import annotations
 
-import os
-
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 
 from . import config, content_store
+from .settings import get_settings
 
 app = FastAPI(title="Borrowed Intuitions API", version="1.0.0")
 
@@ -34,7 +33,7 @@ def _preview_enabled(preview: bool) -> bool:
     """
     if not preview:
         return False
-    return os.environ.get("REPLIT_DEPLOYMENT") != "1"
+    return not get_settings().is_deployment
 
 
 @app.get("/api/healthz")

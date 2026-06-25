@@ -6,9 +6,13 @@ A file-based "LLM Decision Science" blog: it reruns classic human decision-bias 
 on LLMs and publishes the results as posts with live statistical charts. Python/FastAPI
 backend + React/Vite frontend, **no database and no auth** — all content is files on disk.
 
-Two existing companion docs are authoritative and worth reading first:
+Companion docs that are authoritative and worth reading first:
+- `AGENTS.md` — the canonical conventions entry point for contributors and agents (consolidates
+  the production practices, the repo map, and the "add an experiment" checklist; points here for
+  detail). Read it when onboarding or adding an experiment.
 - `replit.md` — operating notes, stack, architecture decisions, gotchas, user preferences.
 - `server/API_CONTRACT.md` — the exact `/api` JSON shapes; the frontend's source of truth.
+- `docs/` — architecture, the experiment authoring guide, and deployment.
 
 ## Claude Code configuration layout (`.claude/`)
 

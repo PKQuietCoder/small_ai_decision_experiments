@@ -18,6 +18,7 @@ import markdown as md
 import yaml
 
 from . import config
+from ..experiments.schemas import validate_experiment_config
 from ..experiments.stats import (
     chi_square_contingency,
     mean_metric_by_group,
@@ -40,7 +41,12 @@ def load_experiment_config(experiment_id: str) -> Optional[Dict[str, Any]]:
     path = config.EXPERIMENTS_DIR / f"{experiment_id}.yaml"
     if not path.exists():
         return None
-    return _read_yaml(path)
+    data = _read_yaml(path)
+    # Fail fast on a malformed config (missing id/type, bad variant, unknown
+    # type) before any run spends API calls. We validate then return the dict
+    # unchanged — the engine and the rest of this module read plain dicts.
+    validate_experiment_config(data, experiment_id=experiment_id)
+    return data
 
 
 def list_experiment_configs() -> List[Dict[str, Any]]:

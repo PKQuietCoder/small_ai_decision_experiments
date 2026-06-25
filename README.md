@@ -86,16 +86,20 @@ experiments/<id>/
 └── followups/            # extra controls when a study has them
 ```
 
-Start with the folder's `manifest.json` and `methodology/` — together they give the design, the
-exact prompts, the tool definitions or judge rubric, and the human baseline, enough to replicate
-with this repo or any other stack. Where a folder also has a `README.md`, read that first.
+Start with the folder's `README.md` and `manifest.json` — together with `methodology/` they give
+the design, the exact prompts, the tool definitions or judge rubric, and the human baseline, enough
+to replicate with this repo or any other stack. The
+[`experiments/` index](experiments/README.md) lists the published studies grouped by theme.
 
-Currently published:
+Currently published — the decoy effect (asymmetric dominance), in two packages:
 
-- [`experiments/decoy-effect/`](experiments/decoy-effect/) is a rerun of the classic decoy
-  effect (asymmetric dominance), testing whether a deliberately worse third option sways an
-  agent's choice between two products, across six models. Write-up:
-  [`content/posts/decoy-effect.md`](content/posts/decoy-effect.md).
+- [`experiments/decoy-effect/`](experiments/decoy-effect/) — the faithful replication of Huber,
+  Payne & Puto (1982) across six models, testing whether a deliberately worse third option sways
+  the choice between two real ones.
+- [`experiments/decoy-effect-agentic/`](experiments/decoy-effect-agentic/) — the same choice under
+  four agentic scaffolds (single-shot, forced workflow, autonomous, retrieval) on Opus 4.8.
+
+Both are reported in one write-up: [`content/posts/decoy-effect.md`](content/posts/decoy-effect.md).
 
 Coming soon (write-ups in progress, data not yet released): the crime-metaphor framing study
 (Thibodeau and Boroditsky, 2011), "When Budgeting Backfires" (Larson and Hamilton, 2012), and
@@ -105,13 +109,17 @@ the Wason selection / falsification task (Wason, 1968).
 
 ### With this repository
 
-Prerequisites: Python (managed with `uv`), Node (managed with `pnpm`), and provider API keys.
+Prerequisites: Python (managed with `uv`), Node (managed with `pnpm`), and — only to *run*
+experiments — provider API keys. The site itself serves without any keys.
 
 ```bash
-uv sync
+uv sync                          # or: pip install -r requirements.txt
 pnpm install
-export ANTHROPIC_API_KEY=...     # and OPENAI_API_KEY for the GPT models
+cp .env.example .env             # then fill in keys you need (read via pydantic-settings)
 ```
+
+`requirements.txt` is a generated convenience for pip users; `pyproject.toml` + `uv.lock` are the
+source of truth. See [`.env.example`](.env.example) for every supported variable.
 
 Run one model across an experiment (one model per run):
 
@@ -157,5 +165,20 @@ Critique and independent replication are the whole point.
 
 A Python and FastAPI backend with the experiment engine, and a React, Vite, and Recharts frontend.
 No database and no auth. All content lives as files on disk. LLM calls go through the official
-OpenAI and Anthropic SDKs. See [`CLAUDE.md`](CLAUDE.md) and [`replit.md`](replit.md) for operating
-notes and the architecture decisions behind this.
+OpenAI and Anthropic SDKs.
+
+## Documentation
+
+- [`docs/`](docs/README.md) — [architecture](docs/architecture.md), the
+  [experiment authoring guide](docs/experiment-guide.md), and [deployment](docs/deployment.md).
+- [`server/API_CONTRACT.md`](server/API_CONTRACT.md) — the exact `/api` JSON shapes.
+- [`AGENTS.md`](AGENTS.md) — conventions for contributors and coding agents.
+- [`CONTRIBUTING.md`](CONTRIBUTING.md) — how to replicate, report a problem, or propose a study.
+- [`replit.md`](replit.md) and [`CLAUDE.md`](CLAUDE.md) — operating notes and architecture decisions.
+
+## License
+
+The software is licensed under the [MIT License](LICENSE). The experiment content — the write-ups,
+the data packages under `experiments/`, and the per-trial data and analysis under `content/` — is
+licensed under [Creative Commons Attribution 4.0 (CC BY 4.0)](LICENSE-DATA). The classic studies
+this project reruns belong to their original authors and are cited in each write-up.

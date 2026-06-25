@@ -17,10 +17,11 @@ if _REPO_ROOT not in sys.path:
 
 import uvicorn  # noqa: E402  (import after sys.path fix)
 
+from server.app.settings import get_settings  # noqa: E402  (import after sys.path fix)
+
 
 def main() -> None:
-    port = int(os.environ.get("PORT", "8080"))
-    uvicorn.run("server.app.main:app", host="0.0.0.0", port=port)
+    uvicorn.run("server.app.main:app", host="0.0.0.0", port=get_settings().port)
 
 
 if __name__ == "__main__":

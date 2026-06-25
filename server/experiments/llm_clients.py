@@ -1,19 +1,21 @@
 """Thin wrappers around the official OpenAI and Anthropic SDKs.
 
-Keys are read from the environment (OPENAI_API_KEY / ANTHROPIC_API_KEY) via the
-Replit Secrets Manager. This deliberately does NOT use the Replit AI proxy — it
-talks to the providers directly through their official Python SDKs.
+Keys are read from validated settings (OPENAI_API_KEY / ANTHROPIC_API_KEY; see
+``server.app.settings``), populated from the environment or a local ``.env``.
+This deliberately does NOT use the Replit AI proxy — it talks to the providers
+directly through their official Python SDKs.
 """
 
 from __future__ import annotations
 
 import json
-import os
 import threading
 from typing import Any, Callable, Dict, List, Optional, Tuple
 
 from anthropic import Anthropic
 from openai import OpenAI
+
+from server.app.settings import get_settings
 
 _openai_client: Optional[OpenAI] = None
 _anthropic_client: Optional[Anthropic] = None
@@ -27,10 +29,11 @@ def _get_openai() -> OpenAI:
     if _openai_client is None:
         with _client_lock:
             if _openai_client is None:
-                key = os.environ.get("OPENAI_API_KEY")
+                key = get_settings().openai_api_key
                 if not key:
                     raise RuntimeError(
-                        "OPENAI_API_KEY is not set. Add it in the Replit Secrets pane."
+                        "OPENAI_API_KEY is not set. Add it to your environment, a "
+                        "local .env file, or the Replit Secrets pane."
                     )
                 _openai_client = OpenAI(api_key=key)
     return _openai_client
@@ -41,10 +44,11 @@ def _get_anthropic() -> Anthropic:
     if _anthropic_client is None:
         with _client_lock:
             if _anthropic_client is None:
-                key = os.environ.get("ANTHROPIC_API_KEY")
+                key = get_settings().anthropic_api_key
                 if not key:
                     raise RuntimeError(
-                        "ANTHROPIC_API_KEY is not set. Add it in the Replit Secrets pane."
+                        "ANTHROPIC_API_KEY is not set. Add it to your environment, a "
+                        "local .env file, or the Replit Secrets pane."
                     )
                 _anthropic_client = Anthropic(api_key=key)
     return _anthropic_client

@@ -85,6 +85,15 @@ entirely, is that *where* the decoy sits matters. Huber and colleagues defined f
 strategies, illustrated for beer (target $1.80 a sixpack at quality 50; competitor $2.60 at quality
 70):
 
+The two words doing the work here are **range** and **frequency**, and they name *how* a decoy is
+placed. A **range** decoy stretches the span of values on the attribute where the target is weak: it
+introduces a new, worse extreme on that dimension, so the target's mediocre value now sits further
+from the bottom of the scale. A **frequency** decoy adds no new extreme; it sits inside the existing
+span and increases *how many* options the target beats on the attribute where the target is strong,
+raising how often the target wins a comparison rather than widening the scale. The four rows below are
+these two ideas and their crosses: **R\*** is simply a more extreme range decoy, and **RF** combines a
+range move with a frequency one.
+
 | Strategy | What it does (Huber et al., p. 92) | Example decoy (beer) |
 |---|---|---|
 | **R** — moderate range | extends the range on the attribute where the target is *weakest* — a worse-quality option at the target's price | $1.80, quality 40 |

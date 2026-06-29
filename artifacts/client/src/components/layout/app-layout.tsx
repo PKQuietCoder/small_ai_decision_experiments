@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { useSite } from "@/hooks/use-api";
-import { Skeleton } from "@/components/ui/skeleton";
 import {
   Sheet,
   SheetContent,
@@ -9,10 +8,10 @@ import {
   SheetTitle,
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
-import logo from "@assets/logo.png";
+import banner from "@assets/banner-wordmark.png";
 
 export function AppLayout({ children }: { children: React.ReactNode }) {
-  const { data: site, isLoading } = useSite();
+  const { data: site } = useSite();
   const [location] = useLocation();
   const [open, setOpen] = useState(false);
 
@@ -28,18 +27,14 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto px-4 md:px-6 h-16 flex items-center justify-between gap-3">
           <Link
             href="/"
-            className="font-serif font-semibold tracking-tight text-foreground text-base sm:text-lg flex items-center gap-2.5 min-w-0"
+            aria-label={site?.title || "Borrowed Intuitions"}
+            className="flex items-center min-w-0"
           >
             <img
-              src={logo}
-              alt="Borrowed Intuitions logo"
-              className="h-8 w-8 shrink-0 rounded-none object-contain"
+              src={banner}
+              alt={site?.title || "Borrowed Intuitions"}
+              className="h-8 sm:h-9 w-auto shrink-0 rounded-none object-contain"
             />
-            {isLoading ? (
-              <Skeleton className="h-5 w-32" />
-            ) : (
-              <span className="truncate">{site?.title || "Borrowed Intuitions"}</span>
-            )}
           </Link>
 
           <nav className="hidden sm:flex items-center gap-6 text-sm font-medium text-muted-foreground">

@@ -21,6 +21,8 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
     { href: "/about", label: "About" },
   ];
 
+  const SUBSTACK_URL = "https://borrowedintuitions.substack.com/";
+
   return (
     <div className="min-h-[100dvh] flex flex-col font-sans">
       <header className="sticky top-0 z-40 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border">
@@ -47,6 +49,15 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
                 {link.label}
               </Link>
             ))}
+            <a
+              href={SUBSTACK_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Subscribe to updates"
+              className="inline-flex items-center rounded-none bg-primary px-3 py-1.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+            >
+              Subscribe
+            </a>
           </nav>
 
           <Sheet open={open} onOpenChange={setOpen}>
@@ -76,6 +87,15 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
                     {link.label}
                   </Link>
                 ))}
+                <a
+                  href={SUBSTACK_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setOpen(false)}
+                  className="mt-2 rounded-none bg-primary px-3 py-2.5 text-center text-base font-medium text-primary-foreground transition-colors hover:bg-foreground"
+                >
+                  Subscribe to updates
+                </a>
               </nav>
             </SheetContent>
           </Sheet>

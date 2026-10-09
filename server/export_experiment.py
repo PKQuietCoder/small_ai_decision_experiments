@@ -12,13 +12,13 @@ package (and anything under ``followups/``) is preserved.
 Handles two shapes:
   * ``open_response`` / ``fill_in_blank_decision`` (e.g. crime-metaphor): a
     coded categorical decision per trial.
-  * ``agentic_budget`` (e.g. budget-backfire): a multi-step tool-use trial whose
+  * ``agentic_budget`` (e.g. decoy-effect-agentic): a multi-step tool-use trial whose
     decision is the chosen product, with extra per-trial fields (planned budget,
     step sequence, capped flag) and a mean-spend metric.
 
 Usage:
     python -m server.export_experiment <experiment_id>
-    python -m server.export_experiment budget-backfire
+    python -m server.export_experiment crime-metaphor
 """
 
 from __future__ import annotations

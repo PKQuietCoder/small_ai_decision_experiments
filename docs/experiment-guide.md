@@ -87,7 +87,7 @@ This builds the self-contained, downloadable package under `experiments/<id>/`
 (methodology, raw data, results, manifest, zip). The export **preserves a
 hand-written `README.md`** in the package, so write one — describe the design,
 the human baseline, the results, and how to replicate independently. Use
-[`experiments/budget-backfire/README.md`](../experiments/budget-backfire/README.md)
+[`experiments/decoy-effect/README.md`](../experiments/decoy-effect/README.md)
 as the model for tone and structure.
 
 Finally, add the study to the index in

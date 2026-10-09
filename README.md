@@ -91,7 +91,9 @@ the design, the exact prompts, the tool definitions or judge rubric, and the hum
 to replicate with this repo or any other stack. The
 [`experiments/` index](experiments/README.md) lists the published studies grouped by theme.
 
-Currently published — the decoy effect (asymmetric dominance), in two packages:
+Currently published — two studies.
+
+The decoy effect (asymmetric dominance), in two packages:
 
 - [`experiments/decoy-effect/`](experiments/decoy-effect/) — the faithful replication of Huber,
   Payne & Puto (1982) across six models, testing whether a deliberately worse third option sways
@@ -101,9 +103,10 @@ Currently published — the decoy effect (asymmetric dominance), in two packages
 
 Both are reported in one write-up: [`content/posts/decoy-effect.md`](content/posts/decoy-effect.md).
 
-Coming soon (write-ups in progress, data not yet released): the crime-metaphor framing study
-(Thibodeau and Boroditsky, 2011), "When Budgeting Backfires" (Larson and Hamilton, 2012), and
-the Wason selection / falsification task (Wason, 1968).
+The metaphor trap (crime-as-virus vs. crime-as-beast framing, after Thibodeau and Boroditsky,
+2011) — the [`experiments/crime-metaphor/`](experiments/crime-metaphor/) replication plus
+novel-stimulus, paraphrase, recognition, and multi-step/tool-calling controls, reported in
+[`content/posts/the-metaphor-trap.md`](content/posts/the-metaphor-trap.md).
 
 ## Run or replicate it yourself
 

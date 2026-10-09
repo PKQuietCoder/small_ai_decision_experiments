@@ -27,6 +27,22 @@ two-part write-up
 | Replication | [`decoy-effect/`](decoy-effect/) | The faithful original — six categories, four decoy placements — across six models (the Claude family + three GPT-5 models), 5,400 trials. The decoy is almost never chosen, yet range decoys reliably pull toward the target and frequency decoys split Claude from GPT-5. |
 | Agentic extension | [`decoy-effect-agentic/`](decoy-effect-agentic/) | The same choice under four agentic scaffolds (single-shot, forced workflow, autonomous, retrieval) on Opus 4.8, 1,800 trials. *How* the agent deliberates changes which way the decoy bends the choice. |
 
+### Framing — the metaphor trap
+
+Whether a single framing word — crime as a *virus* to be cured versus a *beast* to be
+caged — tilts a model toward reform or punishment, after
+**Thibodeau and Boroditsky (2011)**. Reported in the two-part write-up
+[`content/posts/the-metaphor-trap.md`](../content/posts/the-metaphor-trap.md).
+
+| Study | Package | What it adds |
+|---|---|---|
+| Replication | [`crime-metaphor/`](crime-metaphor/) | The core framing contrast across the model panel. |
+| Novel stimulus | [`crime-metaphor-novel/`](crime-metaphor-novel/) | The same contrast on an unfamiliar scenario, to rule out memorized priors. |
+| Paraphrase | [`crime-metaphor-paraphrase/`](crime-metaphor-paraphrase/) | The metaphor expressed in different wording, isolating the concept from the exact phrase. |
+| Recognition probe | [`crime-metaphor-recognition/`](crime-metaphor-recognition/) | Whether the model can name the framing it was given. |
+| Multi-step | [`crime-metaphor-novel-multistep/`](crime-metaphor-novel-multistep/) | The framing carried through a multi-step deliberation. |
+| Tool-calling | [`crime-metaphor-novel-tools/`](crime-metaphor-novel-tools/) | The framing under a tool-calling agentic scaffold. |
+
 ## More to come
 
 Further studies — additional classic biases, rerun on models and agents — are in

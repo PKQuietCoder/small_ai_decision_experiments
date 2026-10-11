@@ -8,7 +8,7 @@ types:
   - Experiments
   - Methods
 intro: >
-  An ongoing series that reruns one classic human-bias experiment at a time — not only on a
+  An ongoing series that reruns one classic human-bias experiment at a time, not only on a
   single chat answer, but on agents that reach the decision over several tool-using steps,
   including a condition where the agent runs the decision itself. Each entry reports in plain
   language, with real A/B tests, whether the model copies our bias, smooths it out, or makes
@@ -35,8 +35,8 @@ about: |
 
   That is what this series does. Each entry takes one classic experiment from the study of
   human judgment and runs it again, this time on a current model or agent through its live
-  API. We keep the original design where we can — the same framing, the same options, and the
-  same human baseline to measure against — and we run it not only as a single chat answer but
+  API. We keep the original design where we can (the same framing, the same options, and the
+  same human baseline to measure against), and we run it not only as a single chat answer but
   as an agent that works through tools, including a setup where the agent directs itself. Then
   we ask a plain question: faced with the same setup that moves people, does the model move
   the same way?
@@ -67,6 +67,6 @@ about: |
 
   No result here is the last word; in science the term for that is boundary conditions.
   Critique, replication, and extensions are all welcome. To make them possible, everything
-  lives in the project's public repository — the prompts, the per-trial data, the analysis
-  code, the charts, the write-ups themselves, and the setup to run the whole project — so you
+  lives in the project's public repository (the prompts, the per-trial data, the analysis
+  code, the charts, the write-ups themselves, and the setup to run the whole project) so you
   can check the work or run it again.

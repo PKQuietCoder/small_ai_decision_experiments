@@ -6,6 +6,8 @@ import authorPhoto from "@assets/PK Photo.jpg";
 
 const ALL = "All Articles";
 
+const SUBSTACK_URL = "https://borrowedintuitions.substack.com/";
+
 export default function Home() {
   const { data: site, isLoading: siteLoading } = useSite();
   const { data: posts, isLoading: postsLoading } = usePosts();
@@ -73,6 +75,31 @@ export default function Home() {
             </div>
           </div>
         )}
+      </section>
+
+      <section className="mb-10 border border-border bg-card p-5 md:p-6">
+        <p className="eyebrow mb-2">For general readers</p>
+        <p className="max-w-3xl font-serif text-base leading-relaxed text-foreground md:text-lg">
+          This is the technical write-up of each experiment, with full methods, data,
+          and statistics. For plain-language explanations of the same findings, read
+          the companion publication on Substack.
+        </p>
+        <a
+          href={SUBSTACK_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 inline-flex items-center gap-2 rounded-none bg-primary px-3 py-1.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            className="h-4 w-4"
+            fill="currentColor"
+          >
+            <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z" />
+          </svg>
+          Read on Substack
+        </a>
       </section>
 
       {!postsLoading && categories.length > 1 && (

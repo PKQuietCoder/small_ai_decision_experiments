@@ -66,6 +66,12 @@ export default defineConfig({
     fs: {
       strict: true,
     },
+    // Opt-in: forward /api to a backend on another origin when running the dev
+    // client outside the Replit router (e.g. API_PROXY=http://localhost:8080).
+    // Unset, the client expects the API on its own origin as before.
+    proxy: process.env.API_PROXY
+      ? { "/api": { target: process.env.API_PROXY, changeOrigin: true } }
+      : undefined,
   },
   preview: {
     port,

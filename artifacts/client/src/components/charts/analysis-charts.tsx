@@ -87,10 +87,12 @@ export function ExperimentAnalysis({ analysis }: Props) {
           </div>
           <div className="flex flex-row items-center gap-3 sm:flex-col sm:items-end sm:gap-2 sm:text-right shrink-0">
             <Badge variant={overall.significant ? "default" : "secondary"}>
-              p {overall.pValue < 0.001 ? "< 0.001" : `= ${overall.pValue.toFixed(3)}`}
+              {overall.pValue === null
+                ? "not testable"
+                : `p ${overall.pValue < 0.001 ? "< 0.001" : `= ${overall.pValue.toFixed(3)}`}`}
             </Badge>
             <span className="text-xs text-muted-foreground font-mono">
-              Cramér's V: {overall.cramersV.toFixed(3)}
+              Cramér's V: {overall.cramersV === null ? "—" : overall.cramersV.toFixed(3)}
             </span>
           </div>
         </div>

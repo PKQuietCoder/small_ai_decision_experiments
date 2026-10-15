@@ -1,12 +1,20 @@
+import { useLayoutEffect, useMemo, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { useRoute } from "wouter";
 import { usePost, useSite } from "@/hooks/use-api";
 import { format } from "date-fns";
 import { Skeleton } from "@/components/ui/skeleton";
 import { ExperimentAnalysis } from "@/components/charts/analysis-charts";
 import { VerdictBadge } from "@/components/verdict-badge";
+import { WIDGETS } from "@/components/widgets/registry";
 import { Link } from "wouter";
 import { ArrowLeft } from "lucide-react";
 import authorPhoto from "@assets/PK Photo.jpg";
+
+interface WidgetMount {
+  node: HTMLElement;
+  widget: string;
+}
 
 export default function Post() {
   const [match, params] = useRoute("/posts/:slug");
@@ -15,6 +23,35 @@ export default function Post() {
   const { data: post, isLoading, error } = usePost(slug);
   const { data: site } = useSite();
   const author = site?.author ?? "P.K. Mishra";
+
+  // In-article widgets. A post marks a slot with `<div data-widget="name">…</div>`
+  // whose children are a static fallback (a table + caption that also serve the
+  // print/no-JS reading). After the body HTML lands, each registered slot is
+  // emptied and a React widget is portalled into it, fed by the analysis JSON.
+  // Unregistered names keep their fallback. Hooks sit above the early returns.
+  const proseRef = useRef<HTMLDivElement>(null);
+  const [mounts, setMounts] = useState<WidgetMount[]>([]);
+  const bodyHtml = post?.bodyHtml;
+  // Memoised so the prop object is stable: React re-assigns innerHTML whenever
+  // the `dangerouslySetInnerHTML` object identity changes, which would wipe the
+  // cleared slots (and detach the portals) on every re-render.
+  const innerHtml = useMemo(() => ({ __html: bodyHtml ?? "" }), [bodyHtml]);
+  useLayoutEffect(() => {
+    const root = proseRef.current;
+    if (!root || !bodyHtml) {
+      setMounts([]);
+      return;
+    }
+    const found: WidgetMount[] = [];
+    root.querySelectorAll<HTMLElement>("[data-widget]").forEach((node) => {
+      const widget = node.dataset.widget ?? "";
+      if (!WIDGETS[widget]) return;
+      node.replaceChildren();
+      node.classList.add("not-prose");
+      found.push({ node, widget });
+    });
+    setMounts(found);
+  }, [bodyHtml]);
 
   if (isLoading) {
     return (
@@ -120,12 +157,22 @@ export default function Post() {
         )}
 
         <div
+          ref={proseRef}
           className="prose prose-lg dark:prose-invert prose-headings:font-serif prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-pre:bg-muted prose-pre:text-foreground prose-pre:border prose-pre:border-border max-w-none"
-          dangerouslySetInnerHTML={{ __html: post.bodyHtml }}
+          dangerouslySetInnerHTML={innerHtml}
         />
-        
-        {/* Analysis Charts injected below the content */}
-        {post.experimentId && (
+        {mounts.map(({ node, widget }) => {
+          const Widget = WIDGETS[widget];
+          return createPortal(
+            <Widget data={post.analysis?.systemone ?? null} />,
+            node,
+            widget,
+          );
+        })}
+
+        {/* Generic analysis chart below the content. A systemone_probe post
+            renders its figures in-article via the widgets instead. */}
+        {post.experimentId && !post.analysis?.systemone && (
           <ExperimentAnalysis analysis={post.analysis} />
         )}
 

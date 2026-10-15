@@ -39,6 +39,8 @@ each post's body plus charts built from the analysis JSON.
 | `app/main.py` | FastAPI handlers — read-only, GET-only, `/api/*`. |
 | `experiments/engine.py` | Parallel trial execution (`ThreadPoolExecutor`); branches on the experiment `type`. |
 | `experiments/llm_clients.py` | Official OpenAI / Anthropic SDK wrappers; `decide()` (enforced choice) and `respond()` (free text). |
+| `experiments/typesafe_client.py` | TypeSafe System One (Jev) HTTP client: `probe()` with retries and a hard spend cap. |
+| `experiments/systemone_analysis.py` | Per-probe summaries for `systemone_probe` runs (the analysis's `systemone` block). |
 | `experiments/model_catalog.py` | Selectable models and their capability flags. |
 | `experiments/schemas.py` | Pydantic models that validate an experiment YAML on load. |
 | `experiments/stats.py` | Chi-square test of independence, Cramér's V, Wilson intervals. |
@@ -55,6 +57,11 @@ each post's body plus charts built from the analysis JSON.
 - **`agentic_budget`** — a multi-step tool-using decision; the final pick is read
   from a constrained tool field, with extra per-trial fields (planned budget,
   step sequence, capped flag).
+- **`systemone_probe`** — one typed question per variant against a JSON `state`,
+  answered by TypeSafe's Jev with a probability distribution rather than text. No
+  prompt templating and no chi-square: `build_analysis` returns mean probabilities as
+  `proportions` plus a `systemone` block; the post renders in-article widgets
+  (`components/widgets/`) instead of the generic chart.
 
 Prompt templating substitutes the string fields of a variant into
 `prompt_template` (e.g. `{scenario}`, or `{frame}` + `{spread}`); the only braces

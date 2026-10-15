@@ -178,6 +178,33 @@ or analysis `null` if it has never been run. 404 if not found.
 }
 ```
 
+When a table is degenerate (`testable: false` — e.g. one option chosen every trial, or a
+`systemone_probe` run, which has no sampling to test) `statistic`, `pValue`, `dof` and
+`cramersV` are `null`; clients must guard before formatting.
+
+### `systemone_probe` experiments (TypeSafe Jev)
+A probe returns probability distributions, not sampled choices, so the analysis keeps the
+shape above with these differences, plus one extra block:
+
+- `byVariant` / `byVariantModel` rows carry the model's **mean probabilities** as
+  `proportions` for Choice variants whose option set equals `decisionOptions`; like the
+  human-baseline rows they have `total: null`, `counts: {}`, `ci: {}`. Score/Noul variants
+  and other option sets are not listed and are counted in `excluded`.
+- `overall` and `perModel[*].chiSquare` are the untestable null result.
+- `systemone` (object; produced by `server/experiments/systemone_analysis.py`):
+  `state`, `meta` (`responseModels`, `calls`, `okCalls`, `inputTokens`, `estimatedUsd`,
+  `latencyMs{mean,min,max,total}`…), `variants` (per-variant answer summaries keyed by id:
+  `questionType`, `probabilities`, `choice`, `confidence`, `confidenceRecomputed`, `score`,
+  `p`…), `confidenceCheck`, `sieve`, and per-probe readouts `e0`…`e8` present only when the
+  run contains that probe's variants. TypeScript shapes: `SystemOneAnalysis` in
+  `artifacts/client/src/lib/api.ts`.
+
+When `analysis.systemone` is present the post page does **not** render the generic
+chart; the post's Markdown places in-article widgets with
+`<div data-widget="<name>" markdown="1">…static fallback…</div>` and
+`pages/post.tsx` portals the registered React widget (`components/widgets/registry.ts`)
+into each slot, fed by `analysis.systemone`. Unregistered names keep their fallback.
+
 ### Charting guidance
 - **Main chart:** grouped/stacked bars of `byVariant[*].proportions` keyed by
   `decisionOptions`, x-axis = variant `label`. Shows how the metaphor moves the
@@ -185,6 +212,6 @@ or analysis `null` if it has never been run. 404 if not found.
 - **Per-model comparison:** use `byVariantModel` to facet by `model` or focus on
   the `primaryDecision` proportion per variant per model.
 - **Significance callout:** surface `overall.pValue`, `overall.cramersV`,
-  `overall.significant`, plus `perModel`.
+  `overall.significant`, plus `perModel` — guarding for `null` when `testable` is false.
 - `proportions` already sum to ~1 per row; multiply by 100 for percentages.
 - Handle `analysis: null` gracefully (experiment defined but not yet run).

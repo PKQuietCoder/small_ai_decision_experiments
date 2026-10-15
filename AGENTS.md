@@ -73,7 +73,12 @@ Hold these when adding code or experiments:
   `server/app/content_store.py` and the paths in `server/app/config.py`.
 - **LLM calls go through `server/experiments/llm_clients.py`** using the official
   `openai` / `anthropic` SDKs — never the Replit AI proxy, never regex-parse a
-  model's choice (use structured output / forced tool use).
+  model's choice (use structured output / forced tool use). TypeSafe's Jev (a
+  probabilistic, non-generative model) goes through `typesafe_client.py` instead,
+  which adds retries and a hard spend cap; it serves `systemone_probe` experiments only.
+- **Posts quote numbers from their analysis, not from memory.** Run
+  `python -m server.check_post_numbers <slug>` before publishing a data-driven post; it
+  fails when a number in the body is not derivable from the pinned analysis JSON.
 - **The API stays "open."** Response objects may carry extra keys; clients read what
   they need. Do not add strict pydantic response models that would strip keys the
   charts depend on.

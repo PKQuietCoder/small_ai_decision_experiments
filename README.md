@@ -91,7 +91,7 @@ the design, the exact prompts, the tool definitions or judge rubric, and the hum
 to replicate with this repo or any other stack. The
 [`experiments/` index](experiments/README.md) lists the published studies grouped by theme.
 
-Currently published — two studies.
+Currently published — two studies, plus a methods piece on calibration in draft.
 
 The decoy effect (asymmetric dominance), in two packages:
 
@@ -102,6 +102,11 @@ The decoy effect (asymmetric dominance), in two packages:
   four agentic scaffolds (single-shot, forced workflow, autonomous, retrieval) on Opus 4.8.
 
 Both are reported in one write-up: [`content/posts/decoy-effect.md`](content/posts/decoy-effect.md).
+
+The average human (what a calibrated model's `confidence`, expectation and argmax describe, after
+Taleb's one-breast, one-testicle illustration) — [`experiments/jev-average-human/`](experiments/jev-average-human/),
+eight probes against TypeSafe's Jev, reported in
+[`content/posts/the-average-human.md`](content/posts/the-average-human.md).
 
 The metaphor trap (crime-as-virus vs. crime-as-beast framing, after Thibodeau and Boroditsky,
 2011) — the [`experiments/crime-metaphor/`](experiments/crime-metaphor/) replication plus

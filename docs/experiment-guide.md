@@ -15,7 +15,7 @@ is a good `fill_in_blank_decision` template. The fields, validated by
 |---|---|---|
 | `id` | yes | Slug; must match the filename. |
 | `title` | yes | Human title for the study. |
-| `type` | yes | `fill_in_blank_decision` \| `open_response` \| `agentic_budget`. |
+| `type` | yes | `fill_in_blank_decision` \| `open_response` \| `agentic_budget` \| `systemone_probe`. |
 | `status` | yes | `draft` until the write-up is ready, then `published`. |
 | `summary`, `hypothesis` | recommended | Plain-language framing. |
 | `models` | yes | List of `{provider, model, label}`. One model per run (see below). |
@@ -34,6 +34,14 @@ Type-specific fields:
 - **`agentic_budget`** — `decision_key`, `max_steps`, `tools` (JSON-schema tool
   definitions), and `products`. Variants set `steps` (a forced tool sequence) or
   `mode: auto` (autonomous), and may carry a `catalog` for retrieval arms.
+- **`systemone_probe`** (TypeSafe Jev; `models: [{provider: typesafe, …}]`, run with
+  `--model jev`) — a top-level `state` (the JSON sent with every call) and, per variant, a
+  `question` object (`type: noul|choice|score`, `instructions`, `criteria`: an ordered
+  mapping for Choice, a list of levels for Score, `{true, false}` for Noul), an optional
+  `state` override, an `experiment` tag (E0, E1, …) used by `--only` and the analysis, and
+  an optional `trials` repeat count. `prompt_template` is unused. See
+  [`content/experiments/jev-average-human.yaml`](../content/experiments/jev-average-human.yaml).
+  Use `--dry-run` to print the exact request bodies before spending calls.
 
 Any field not listed above is preserved (the schema allows extras), so
 experiment-specific variant fields are fine.

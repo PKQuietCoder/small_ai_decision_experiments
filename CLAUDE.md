@@ -78,14 +78,17 @@ pnpm run build                                       # typecheck + build all art
 ```bash
 # Run ONE model per run; persists run JSON + analysis JSON + a draft post.
 python -m server.run_experiment <experiment_id> --model <key> [--no-post|--keep-post]
-#   <key> ∈ opus | sonnet | haiku | gpt-5.5 | gpt-5.4 | gpt-5.4-mini  (omit --model for an interactive menu)
+#   <key> ∈ opus | sonnet | haiku | gpt-5.5 | gpt-5.4 | gpt-5.4-mini | jev  (omit --model for an interactive menu)
+#   systemone_probe only: --dry-run (print request bodies, no calls), --only E0 E3 (subset by probe tag)
 
 python -m server.export_experiment <experiment_id>   # build the downloadable data package under experiments/<id>/
 python -m server.seed_sample <experiment_id>         # fabricate synthetic data to bootstrap the UI without API keys
+python -m server.check_post_numbers <slug>           # assert every number in a post's body is in its analysis JSON
 ```
 Requires `OPENAI_API_KEY` and `ANTHROPIC_API_KEY` in the environment (official SDKs, **not** the
-Replit AI proxy). A run is hundreds of foreground API calls and must finish within the shell
-call — backgrounded runs get killed when the call returns.
+Replit AI proxy); `TYPESAFE_API_KEY` for `jev` (`systemone_probe` experiments; hard spend cap
+`TYPESAFE_BUDGET_USD`, default 0.50). A run is hundreds of foreground API calls and must finish
+within the shell call — backgrounded runs get killed when the call returns.
 
 ## Architecture
 
@@ -104,9 +107,11 @@ content/experiments/<id>.yaml   →  engine runs models × variants × trials
 - `server/experiments/stats.py` — chi-square test of independence, Cramér's V, Wilson intervals.
 - `server/app/config.py` — all `content/` paths (`REPO_ROOT`-relative).
 
-### Two experiment types (set by `type:` in the YAML)
+### Experiment types (set by `type:` in the YAML)
 - `fill_in_blank_decision` — model picks one option from an enum; `llm_clients.decide()` enforces the choice via OpenAI structured outputs / Anthropic forced tool use (never regex parsing).
 - `open_response` — model answers free-text (`llm_clients.respond()`), then a fixed judge model (config `coder:`) codes each answer into the decision categories via `decide()`. The judge prompt is built in `engine._coder_prompt`.
+- `agentic_budget` — multi-step tool-use decision; the final pick is read from a constrained tool field.
+- `systemone_probe` — TypeSafe Jev (provider `typesafe`, `server/experiments/typesafe_client.py`): each variant is one typed `question` (`noul`/`choice`/`score`) against a JSON `state`, answered with a probability distribution. No templating; `engine.build_probe_requests` builds the bodies; `build_analysis` skips chi-square and attaches a `systemone` block (`systemone_analysis.py`) that the post's in-article widgets read. Per-variant `trials:` repeats a call (E0-style repeatability).
 - Prompt templating substitutes **all string fields** of a variant: `{metaphor}`, or `{frame}`+`{spread}`, etc. The only braces allowed in a `prompt_template` are field placeholders.
 
 ### Model capability flags — the reason `llm_clients` is parameterized

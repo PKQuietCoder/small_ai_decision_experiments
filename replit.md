@@ -7,7 +7,7 @@ A Statsig-style blog that publishes small, careful experiments on how language m
 - `python /home/runner/workspace/server/serve.py` — run the FastAPI backend (reads `PORT`, served via the `api-server` artifact workflow).
 - `pnpm --filter @workspace/client run dev` — run the React + Vite frontend (served via the `client` artifact workflow).
 - `python -m server.run_experiment <experiment_id>` — admin CLI: run an experiment (calls OpenAI + Anthropic), persist the run JSON, and auto-generate an editable draft Markdown post. Flags: `--no-post` (skip post), `--keep-post` (only refresh runId).
-- Required secrets: `OPENAI_API_KEY`, `ANTHROPIC_API_KEY` (read directly from env via the official SDKs — NOT the Replit AI proxy).
+- Required secrets: `OPENAI_API_KEY`, `ANTHROPIC_API_KEY` (read directly from env via the official SDKs — NOT the Replit AI proxy). `TYPESAFE_API_KEY` only for `systemone_probe` experiments (`--model jev`); optional `TYPESAFE_BUDGET_USD` caps a run's spend (default 0.50). A Secret added mid-session is not visible to an already-running shell; a git-ignored `.env` works immediately.
 
 ## Stack
 

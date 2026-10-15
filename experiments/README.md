@@ -43,6 +43,17 @@ caged — tilts a model toward reform or punishment, after
 | Multi-step | [`crime-metaphor-novel-multistep/`](crime-metaphor-novel-multistep/) | The framing carried through a multi-step deliberation. |
 | Tool-calling | [`crime-metaphor-novel-tools/`](crime-metaphor-novel-tools/) | The framing under a tool-calling agentic scaffold. |
 
+### Calibration — the average human
+
+What a calibrated probabilistic model's outputs are statements *about*. Taleb's
+one-breast, one-testicle average human, rebuilt as a three-sentence state and put to
+TypeSafe's Jev in eight probes. Reported in
+[`content/posts/the-average-human.md`](../content/posts/the-average-human.md).
+
+| Study | Package | What it adds |
+|---|---|---|
+| Demonstration | [`jev-average-human/`](jev-average-human/) | 42 calls on pinned `jev-1.13.0`: the naive question, per-person decomposition, a five-way paraphrase ensemble, an option-order shuffle, a planted sentence, arithmetic in the model vs. in code, a non-exclusive option set, and a Noul battery. Repetition and reordering moved nothing; paraphrase and decomposition exposed the uncertainty. No human baseline — a method piece, not a replication. |
+
 ## More to come
 
 Further studies — additional classic biases, rerun on models and agents — are in

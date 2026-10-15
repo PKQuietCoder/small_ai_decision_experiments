@@ -1,0 +1,18 @@
+{
+  "state": {
+    "population": "Adult humans. About half are women and half are men.",
+    "women": "Each woman has two breasts and zero testicles.",
+    "men": "Each man has zero breasts and two testicles."
+  },
+  "model": "jev-1.13.0",
+  "questions": {
+    "e8_fewer_than_two": {
+      "type": "noul",
+      "instructions": "Does the average human being have fewer than two breasts?",
+      "criteria": {
+        "true": "Yes, fewer than two.",
+        "false": "No, two or more."
+      }
+    }
+  }
+}

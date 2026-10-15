@@ -1,0 +1,20 @@
+{
+  "state": {
+    "group": "A group of 10 adults: 6 women and 4 men.",
+    "women": "Each woman has two breasts.",
+    "men": "Each man has zero breasts."
+  },
+  "model": "jev-1.13.0",
+  "questions": {
+    "e6_mean_breasts": {
+      "type": "choice",
+      "instructions": "What is the arithmetic mean number of breasts per person in the group described in the state?",
+      "criteria": {
+        "under_one": "Less than 1 breast per person.",
+        "one": "Exactly 1 breast per person.",
+        "over_one": "More than 1 but fewer than 2 breasts per person.",
+        "two": "Exactly 2 breasts per person."
+      }
+    }
+  }
+}

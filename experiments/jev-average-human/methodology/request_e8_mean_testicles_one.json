@@ -1,0 +1,18 @@
+{
+  "state": {
+    "population": "Adult humans. About half are women and half are men.",
+    "women": "Each woman has two breasts and zero testicles.",
+    "men": "Each man has zero breasts and two testicles."
+  },
+  "model": "jev-1.13.0",
+  "questions": {
+    "e8_mean_testicles_one": {
+      "type": "noul",
+      "instructions": "Is the arithmetic mean number of testicles per person across the population described in the state equal to one?",
+      "criteria": {
+        "true": "Yes, the mean is one.",
+        "false": "No, the mean is not one."
+      }
+    }
+  }
+}

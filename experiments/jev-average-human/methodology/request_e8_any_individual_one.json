@@ -1,0 +1,18 @@
+{
+  "state": {
+    "population": "Adult humans. About half are women and half are men.",
+    "women": "Each woman has two breasts and zero testicles.",
+    "men": "Each man has zero breasts and two testicles."
+  },
+  "model": "jev-1.13.0",
+  "questions": {
+    "e8_any_individual_one": {
+      "type": "noul",
+      "instructions": "Does any individual in the population described in the state have exactly one breast?",
+      "criteria": {
+        "true": "Yes, at least one person has exactly one breast.",
+        "false": "No, nobody has exactly one breast."
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "state": {
+    "population": "Adult humans. About half are women and half are men.",
+    "women": "Each woman has two breasts and zero testicles.",
+    "men": "Each man has zero breasts and two testicles."
+  },
+  "model": "jev-1.13.0",
+  "questions": {
+    "e8_typical_man_two": {
+      "type": "noul",
+      "instructions": "Does a typical man in the population described in the state have two testicles?",
+      "criteria": {
+        "true": "Yes.",
+        "false": "No."
+      }
+    }
+  }
+}

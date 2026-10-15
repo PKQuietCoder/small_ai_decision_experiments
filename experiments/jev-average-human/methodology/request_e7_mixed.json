@@ -1,0 +1,21 @@
+{
+  "state": {
+    "population": "Adult humans. About half are women and half are men.",
+    "women": "Each woman has two breasts and zero testicles.",
+    "men": "Each man has zero breasts and two testicles."
+  },
+  "model": "jev-1.13.0",
+  "questions": {
+    "e7_mixed": {
+      "type": "choice",
+      "instructions": "What does the average human being have?",
+      "criteria": {
+        "one_testicle": "Exactly one testicle.",
+        "one_breast": "Exactly one breast.",
+        "two_breasts": "Two breasts.",
+        "two_testicles": "Two testicles.",
+        "other": "Something else, or the question cannot be answered this way."
+      }
+    }
+  }
+}

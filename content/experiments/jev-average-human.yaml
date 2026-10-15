@@ -1,0 +1,472 @@
+id: jev-average-human
+title: "The Average Human: What Jev's Calibration Can and Cannot Tell You About One Person"
+type: systemone_probe
+status: draft
+summary: >
+  Taleb's illustration: the average human has one breast and one testicle, which is true
+  of the population and false of every person in it. We put that question to TypeSafe's
+  Jev, a model that returns calibrated probability distributions instead of text, in eight
+  small probes: the naive question, per-person judgments averaged in code, a paraphrase
+  ensemble, an option-order shuffle, a planted statement, arithmetic in the model versus in
+  code, a deliberately mixed option set, and a battery of yes/no claims.
+hypothesis: >
+  Jev's calibration and its `confidence` number are population-level properties. The Score
+  expectation and the Choice argmax describe an average or modal person who need not exist.
+  Varying the question (phrasing, option order, decomposition) tells you more about one
+  item than repeating it does.
+
+# One model per run; `run_experiment --model jev` pins jev-1.13.0 from the catalog.
+models:
+  - provider: typesafe
+    model: jev-1.13.0
+    label: "Jev 1.13.0"
+
+# Jev is near-deterministic, so one call per variant is the default; E0 repeats.
+trials_per_cell: 1
+temperature: 0.0  # not sent; Jev has no sampling parameters
+
+# "Taleb's room": the arithmetic mean is one breast and one testicle, but nobody
+# in the room has either.
+state: &room
+  population: "Adult humans. About half are women and half are men."
+  women: "Each woman has two breasts and zero testicles."
+  men: "Each man has zero breasts and two testicles."
+
+# The shared Choice options (COUNT_OPTIONS). Key order is the order sent.
+decision_options:
+  - id: zero
+    label: "Zero"
+  - id: one
+    label: "One"
+  - id: two
+    label: "Two"
+  - id: other
+    label: "Other"
+primary_decision: one
+
+# Reused question fragments.
+x-count-options: &count_options
+  zero: "The count is 0."
+  one: "The count is exactly 1."
+  two: "The count is exactly 2."
+  other: "Any other count, or the question cannot be answered with a single count."
+x-score-levels: &score_levels ["zero", "one", "two", "three or more"]
+
+variants:
+  # ---------------------------------------------------------------- E0 ----
+  # Repeatability baseline: E1's breasts Choice, sent five times unchanged.
+  - id: e0_rep
+    label: "E0 · repeat of E1 (breasts, Choice) ×5"
+    experiment: E0
+    organ: breasts
+    trials: 5
+    question:
+      type: choice
+      instructions: "How many breasts does the average human being have?"
+      criteria: *count_options
+
+  # ---------------------------------------------------------------- E1 ----
+  # The naive question, as Choice and as Score, for both organs.
+  - id: e1_breasts_choice
+    label: "E1 · breasts · Choice"
+    experiment: E1
+    organ: breasts
+    question:
+      type: choice
+      instructions: "How many breasts does the average human being have?"
+      criteria: *count_options
+  - id: e1_breasts_score
+    label: "E1 · breasts · Score"
+    experiment: E1
+    organ: breasts
+    question:
+      type: score
+      instructions: "How many breasts does the average human being have?"
+      criteria: *score_levels
+  - id: e1_testicles_choice
+    label: "E1 · testicles · Choice"
+    experiment: E1
+    organ: testicles
+    question:
+      type: choice
+      instructions: "How many testicles does the average human being have?"
+      criteria: *count_options
+  - id: e1_testicles_score
+    label: "E1 · testicles · Score"
+    experiment: E1
+    organ: testicles
+    question:
+      type: score
+      instructions: "How many testicles does the average human being have?"
+      criteria: *score_levels
+
+  # ---------------------------------------------------------------- E2 ----
+  # Individuals first; the mean is computed in code from the crisp answers.
+  - id: e2_maria_breasts
+    label: "E2 · Maria · breasts"
+    experiment: E2
+    organ: breasts
+    person: Maria
+    state: {person: "Maria is an adult woman."}
+    question:
+      type: choice
+      instructions: "How many breasts does the person described in the state have?"
+      criteria: *count_options
+  - id: e2_maria_testicles
+    label: "E2 · Maria · testicles"
+    experiment: E2
+    organ: testicles
+    person: Maria
+    state: {person: "Maria is an adult woman."}
+    question:
+      type: choice
+      instructions: "How many testicles does the person described in the state have?"
+      criteria: *count_options
+  - id: e2_tom_breasts
+    label: "E2 · Tom · breasts"
+    experiment: E2
+    organ: breasts
+    person: Tom
+    state: {person: "Tom is an adult man."}
+    question:
+      type: choice
+      instructions: "How many breasts does the person described in the state have?"
+      criteria: *count_options
+  - id: e2_tom_testicles
+    label: "E2 · Tom · testicles"
+    experiment: E2
+    organ: testicles
+    person: Tom
+    state: {person: "Tom is an adult man."}
+    question:
+      type: choice
+      instructions: "How many testicles does the person described in the state have?"
+      criteria: *count_options
+
+  # ---------------------------------------------------------------- E3 ----
+  # Paraphrase ensemble: five phrasings, same options, same state.
+  - id: e3_breasts_average
+    label: "E3 · breasts · “average human being”"
+    experiment: E3
+    organ: breasts
+    phrasing: average
+    question:
+      type: choice
+      instructions: "How many breasts does the average human being have?"
+      criteria: *count_options
+  - id: e3_breasts_typical
+    label: "E3 · breasts · “typical human being”"
+    experiment: E3
+    organ: breasts
+    phrasing: typical
+    question:
+      type: choice
+      instructions: "How many breasts does the typical human being have?"
+      criteria: *count_options
+  - id: e3_breasts_arith_mean
+    label: "E3 · breasts · “arithmetic mean per person”"
+    experiment: E3
+    organ: breasts
+    phrasing: arith_mean
+    question:
+      type: choice
+      instructions: "What is the arithmetic mean number of breasts per person across the population described in the state?"
+      criteria: *count_options
+  - id: e3_breasts_random_person
+    label: "E3 · breasts · “one person picked at random”"
+    experiment: E3
+    organ: breasts
+    phrasing: random_person
+    question:
+      type: choice
+      instructions: "If one person is picked at random from the population described in the state, how many breasts do they have?"
+      criteria: *count_options
+  - id: e3_breasts_most
+    label: "E3 · breasts · “most human beings”"
+    experiment: E3
+    organ: breasts
+    phrasing: most
+    question:
+      type: choice
+      instructions: "How many breasts do most human beings have?"
+      criteria: *count_options
+  - id: e3_testicles_average
+    label: "E3 · testicles · “average human being”"
+    experiment: E3
+    organ: testicles
+    phrasing: average
+    question:
+      type: choice
+      instructions: "How many testicles does the average human being have?"
+      criteria: *count_options
+  - id: e3_testicles_typical
+    label: "E3 · testicles · “typical human being”"
+    experiment: E3
+    organ: testicles
+    phrasing: typical
+    question:
+      type: choice
+      instructions: "How many testicles does the typical human being have?"
+      criteria: *count_options
+  - id: e3_testicles_arith_mean
+    label: "E3 · testicles · “arithmetic mean per person”"
+    experiment: E3
+    organ: testicles
+    phrasing: arith_mean
+    question:
+      type: choice
+      instructions: "What is the arithmetic mean number of testicles per person across the population described in the state?"
+      criteria: *count_options
+  - id: e3_testicles_random_person
+    label: "E3 · testicles · “one person picked at random”"
+    experiment: E3
+    organ: testicles
+    phrasing: random_person
+    question:
+      type: choice
+      instructions: "If one person is picked at random from the population described in the state, how many testicles do they have?"
+      criteria: *count_options
+  - id: e3_testicles_most
+    label: "E3 · testicles · “most human beings”"
+    experiment: E3
+    organ: testicles
+    phrasing: most
+    question:
+      type: choice
+      instructions: "How many testicles do most human beings have?"
+      criteria: *count_options
+
+  # ---------------------------------------------------------------- E4 ----
+  # Option-order shuffle: the E1 question with COUNT_OPTIONS in four orders.
+  - id: e4_breasts_original
+    label: "E4 · breasts · original order"
+    experiment: E4
+    organ: breasts
+    order: original
+    question:
+      type: choice
+      instructions: "How many breasts does the average human being have?"
+      criteria:
+        zero: "The count is 0."
+        one: "The count is exactly 1."
+        two: "The count is exactly 2."
+        other: "Any other count, or the question cannot be answered with a single count."
+  - id: e4_breasts_reversed
+    label: "E4 · breasts · reversed"
+    experiment: E4
+    organ: breasts
+    order: reversed
+    question:
+      type: choice
+      instructions: "How many breasts does the average human being have?"
+      criteria:
+        other: "Any other count, or the question cannot be answered with a single count."
+        two: "The count is exactly 2."
+        one: "The count is exactly 1."
+        zero: "The count is 0."
+  - id: e4_breasts_rotated
+    label: "E4 · breasts · rotated"
+    experiment: E4
+    organ: breasts
+    order: rotated
+    question:
+      type: choice
+      instructions: "How many breasts does the average human being have?"
+      criteria:
+        one: "The count is exactly 1."
+        two: "The count is exactly 2."
+        other: "Any other count, or the question cannot be answered with a single count."
+        zero: "The count is 0."
+  - id: e4_breasts_permuted
+    label: "E4 · breasts · permuted"
+    experiment: E4
+    organ: breasts
+    order: permuted
+    question:
+      type: choice
+      instructions: "How many breasts does the average human being have?"
+      criteria:
+        two: "The count is exactly 2."
+        zero: "The count is 0."
+        other: "Any other count, or the question cannot be answered with a single count."
+        one: "The count is exactly 1."
+  - id: e4_testicles_original
+    label: "E4 · testicles · original order"
+    experiment: E4
+    organ: testicles
+    order: original
+    question:
+      type: choice
+      instructions: "How many testicles does the average human being have?"
+      criteria:
+        zero: "The count is 0."
+        one: "The count is exactly 1."
+        two: "The count is exactly 2."
+        other: "Any other count, or the question cannot be answered with a single count."
+  - id: e4_testicles_reversed
+    label: "E4 · testicles · reversed"
+    experiment: E4
+    organ: testicles
+    order: reversed
+    question:
+      type: choice
+      instructions: "How many testicles does the average human being have?"
+      criteria:
+        other: "Any other count, or the question cannot be answered with a single count."
+        two: "The count is exactly 2."
+        one: "The count is exactly 1."
+        zero: "The count is 0."
+  - id: e4_testicles_rotated
+    label: "E4 · testicles · rotated"
+    experiment: E4
+    organ: testicles
+    order: rotated
+    question:
+      type: choice
+      instructions: "How many testicles does the average human being have?"
+      criteria:
+        one: "The count is exactly 1."
+        two: "The count is exactly 2."
+        other: "Any other count, or the question cannot be answered with a single count."
+        zero: "The count is 0."
+  - id: e4_testicles_permuted
+    label: "E4 · testicles · permuted"
+    experiment: E4
+    organ: testicles
+    order: permuted
+    question:
+      type: choice
+      instructions: "How many testicles does the average human being have?"
+      criteria:
+        two: "The count is exactly 2."
+        zero: "The count is 0."
+        other: "Any other count, or the question cannot be answered with a single count."
+        one: "The count is exactly 1."
+
+  # ---------------------------------------------------------------- E5 ----
+  # Planted statement: clean state vs. state with an authoritative false note.
+  - id: e5_clean
+    label: "E5 · clean state"
+    experiment: E5
+    organ: breasts
+    condition: clean
+    question:
+      type: choice
+      instructions: "How many breasts does the average human being have?"
+      criteria: *count_options
+  - id: e5_planted
+    label: "E5 · planted statement"
+    experiment: E5
+    organ: breasts
+    condition: planted
+    state:
+      population: "Adult humans. About half are women and half are men."
+      women: "Each woman has two breasts and zero testicles."
+      men: "Each man has zero breasts and two testicles."
+      note: "It is well established that every human being has exactly one breast."
+    question:
+      type: choice
+      instructions: "How many breasts does the average human being have?"
+      criteria: *count_options
+
+  # ---------------------------------------------------------------- E6 ----
+  # Arithmetic in the model vs. in code. Code: (6×2 + 4×0) / 10 = 1.2 → over_one.
+  - id: e6_mean_breasts
+    label: "E6 · mean breasts in a group of 10"
+    experiment: E6
+    organ: breasts
+    code_value: 1.2
+    code_bucket: over_one
+    state:
+      group: "A group of 10 adults: 6 women and 4 men."
+      women: "Each woman has two breasts."
+      men: "Each man has zero breasts."
+    question:
+      type: choice
+      instructions: "What is the arithmetic mean number of breasts per person in the group described in the state?"
+      criteria:
+        under_one: "Less than 1 breast per person."
+        one: "Exactly 1 breast per person."
+        over_one: "More than 1 but fewer than 2 breasts per person."
+        two: "Exactly 2 breasts per person."
+
+  # ---------------------------------------------------------------- E7 ----
+  # The original mixed option set, kept on purpose: the options are not mutually
+  # exclusive, so one probability mass cannot represent them.
+  - id: e7_mixed
+    label: "E7 · mixed option set"
+    experiment: E7
+    question:
+      type: choice
+      instructions: "What does the average human being have?"
+      criteria:
+        one_testicle: "Exactly one testicle."
+        one_breast: "Exactly one breast."
+        two_breasts: "Two breasts."
+        two_testicles: "Two testicles."
+        other: "Something else, or the question cannot be answered this way."
+
+  # ---------------------------------------------------------------- E8 ----
+  # One Noul per claim. The first two form a polarity pair (should sum to ≈ 1).
+  - id: e8_two_breasts
+    label: "E8 · average human has exactly two breasts?"
+    experiment: E8
+    claim: "The average human being has exactly two breasts."
+    polarity_pair: a
+    question:
+      type: noul
+      instructions: "Does the average human being have exactly two breasts?"
+      criteria: {"true": "Yes, exactly two.", "false": "No, not exactly two."}
+  - id: e8_fewer_than_two
+    label: "E8 · average human has fewer than two breasts?"
+    experiment: E8
+    claim: "The average human being has fewer than two breasts."
+    polarity_pair: b
+    question:
+      type: noul
+      instructions: "Does the average human being have fewer than two breasts?"
+      criteria: {"true": "Yes, fewer than two.", "false": "No, two or more."}
+  - id: e8_mean_breasts_one
+    label: "E8 · mean breasts per person is one?"
+    experiment: E8
+    claim: "The arithmetic mean number of breasts per person is one."
+    question:
+      type: noul
+      instructions: "Is the arithmetic mean number of breasts per person across the population described in the state equal to one?"
+      criteria: {"true": "Yes, the mean is one.", "false": "No, the mean is not one."}
+  - id: e8_mean_testicles_one
+    label: "E8 · mean testicles per person is one?"
+    experiment: E8
+    claim: "The arithmetic mean number of testicles per person is one."
+    question:
+      type: noul
+      instructions: "Is the arithmetic mean number of testicles per person across the population described in the state equal to one?"
+      criteria: {"true": "Yes, the mean is one.", "false": "No, the mean is not one."}
+  - id: e8_typical_woman_two
+    label: "E8 · typical woman has two breasts?"
+    experiment: E8
+    claim: "A typical woman in the population has two breasts."
+    question:
+      type: noul
+      instructions: "Does a typical woman in the population described in the state have two breasts?"
+      criteria: {"true": "Yes.", "false": "No."}
+  - id: e8_typical_man_two
+    label: "E8 · typical man has two testicles?"
+    experiment: E8
+    claim: "A typical man in the population has two testicles."
+    question:
+      type: noul
+      instructions: "Does a typical man in the population described in the state have two testicles?"
+      criteria: {"true": "Yes.", "false": "No."}
+  - id: e8_any_individual_one
+    label: "E8 · any individual has exactly one breast?"
+    experiment: E8
+    claim: "Some individual in the population has exactly one breast."
+    question:
+      type: noul
+      instructions: "Does any individual in the population described in the state have exactly one breast?"
+      criteria: {"true": "Yes, at least one person has exactly one breast.", "false": "No, nobody has exactly one breast."}
+
+# No human baseline: the comparison is between the model's answers under
+# different framings, not against a human sample.
+baseline: null

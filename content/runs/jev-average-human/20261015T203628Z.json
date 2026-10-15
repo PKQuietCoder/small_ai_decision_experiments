@@ -1,0 +1,2784 @@
+{
+  "runId": "20261015T203628Z",
+  "experimentId": "jev-average-human",
+  "startedAt": "2026-10-15T20:36:28.532321+00:00",
+  "finishedAt": "2026-10-15T20:36:29.683062+00:00",
+  "trialsPerCell": 1,
+  "temperature": 0.0,
+  "models": [
+    "Jev 1.13.0"
+  ],
+  "variants": [
+    "e0_rep",
+    "e1_breasts_choice",
+    "e1_breasts_score",
+    "e1_testicles_choice",
+    "e1_testicles_score",
+    "e2_maria_breasts",
+    "e2_maria_testicles",
+    "e2_tom_breasts",
+    "e2_tom_testicles",
+    "e3_breasts_average",
+    "e3_breasts_typical",
+    "e3_breasts_arith_mean",
+    "e3_breasts_random_person",
+    "e3_breasts_most",
+    "e3_testicles_average",
+    "e3_testicles_typical",
+    "e3_testicles_arith_mean",
+    "e3_testicles_random_person",
+    "e3_testicles_most",
+    "e4_breasts_original",
+    "e4_breasts_reversed",
+    "e4_breasts_rotated",
+    "e4_breasts_permuted",
+    "e4_testicles_original",
+    "e4_testicles_reversed",
+    "e4_testicles_rotated",
+    "e4_testicles_permuted",
+    "e5_clean",
+    "e5_planted",
+    "e6_mean_breasts",
+    "e7_mixed",
+    "e8_two_breasts",
+    "e8_fewer_than_two",
+    "e8_mean_breasts_one",
+    "e8_mean_testicles_one",
+    "e8_typical_woman_two",
+    "e8_typical_man_two",
+    "e8_any_individual_one"
+  ],
+  "trials": [
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e0_rep",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e0_rep": {
+            "type": "choice",
+            "instructions": "How many breasts does the average human being have?",
+            "criteria": {
+              "zero": "The count is 0.",
+              "one": "The count is exactly 1.",
+              "two": "The count is exactly 2.",
+              "other": "Any other count, or the question cannot be answered with a single count."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e0_rep": {
+            "type": "choice",
+            "choice": "one",
+            "confidence": 1.0,
+            "probabilities": {
+              "zero": 0.0,
+              "one": 1.0,
+              "two": 0.0,
+              "other": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 417,
+          "output_tokens": 47
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "one",
+        "confidence": 1.0,
+        "probabilities": {
+          "zero": 0.0,
+          "one": 1.0,
+          "two": 0.0,
+          "other": 0.0
+        }
+      },
+      "decision": "one",
+      "confidence": 1.0,
+      "usage": {
+        "input_tokens": 417,
+        "output_tokens": 47
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 1110.6,
+      "estimatedUsd": 1.7514e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e0_rep",
+      "trial": 1,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e0_rep": {
+            "type": "choice",
+            "instructions": "How many breasts does the average human being have?",
+            "criteria": {
+              "zero": "The count is 0.",
+              "one": "The count is exactly 1.",
+              "two": "The count is exactly 2.",
+              "other": "Any other count, or the question cannot be answered with a single count."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e0_rep": {
+            "type": "choice",
+            "choice": "one",
+            "confidence": 1.0,
+            "probabilities": {
+              "zero": 0.0,
+              "one": 1.0,
+              "two": 0.0,
+              "other": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 417,
+          "output_tokens": 47
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "one",
+        "confidence": 1.0,
+        "probabilities": {
+          "zero": 0.0,
+          "one": 1.0,
+          "two": 0.0,
+          "other": 0.0
+        }
+      },
+      "decision": "one",
+      "confidence": 1.0,
+      "usage": {
+        "input_tokens": 417,
+        "output_tokens": 47
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 131.5,
+      "estimatedUsd": 1.7514e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e0_rep",
+      "trial": 2,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e0_rep": {
+            "type": "choice",
+            "instructions": "How many breasts does the average human being have?",
+            "criteria": {
+              "zero": "The count is 0.",
+              "one": "The count is exactly 1.",
+              "two": "The count is exactly 2.",
+              "other": "Any other count, or the question cannot be answered with a single count."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e0_rep": {
+            "type": "choice",
+            "choice": "one",
+            "confidence": 1.0,
+            "probabilities": {
+              "zero": 0.0,
+              "one": 1.0,
+              "two": 0.0,
+              "other": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 417,
+          "output_tokens": 47
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "one",
+        "confidence": 1.0,
+        "probabilities": {
+          "zero": 0.0,
+          "one": 1.0,
+          "two": 0.0,
+          "other": 0.0
+        }
+      },
+      "decision": "one",
+      "confidence": 1.0,
+      "usage": {
+        "input_tokens": 417,
+        "output_tokens": 47
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 139.7,
+      "estimatedUsd": 1.7514e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e0_rep",
+      "trial": 3,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e0_rep": {
+            "type": "choice",
+            "instructions": "How many breasts does the average human being have?",
+            "criteria": {
+              "zero": "The count is 0.",
+              "one": "The count is exactly 1.",
+              "two": "The count is exactly 2.",
+              "other": "Any other count, or the question cannot be answered with a single count."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e0_rep": {
+            "type": "choice",
+            "choice": "one",
+            "confidence": 1.0,
+            "probabilities": {
+              "zero": 0.0,
+              "one": 1.0,
+              "two": 0.0,
+              "other": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 417,
+          "output_tokens": 47
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "one",
+        "confidence": 1.0,
+        "probabilities": {
+          "zero": 0.0,
+          "one": 1.0,
+          "two": 0.0,
+          "other": 0.0
+        }
+      },
+      "decision": "one",
+      "confidence": 1.0,
+      "usage": {
+        "input_tokens": 417,
+        "output_tokens": 47
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 133.6,
+      "estimatedUsd": 1.7514e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e0_rep",
+      "trial": 4,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e0_rep": {
+            "type": "choice",
+            "instructions": "How many breasts does the average human being have?",
+            "criteria": {
+              "zero": "The count is 0.",
+              "one": "The count is exactly 1.",
+              "two": "The count is exactly 2.",
+              "other": "Any other count, or the question cannot be answered with a single count."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e0_rep": {
+            "type": "choice",
+            "choice": "one",
+            "confidence": 1.0,
+            "probabilities": {
+              "zero": 0.0,
+              "one": 1.0,
+              "two": 0.0,
+              "other": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 417,
+          "output_tokens": 47
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "one",
+        "confidence": 1.0,
+        "probabilities": {
+          "zero": 0.0,
+          "one": 1.0,
+          "two": 0.0,
+          "other": 0.0
+        }
+      },
+      "decision": "one",
+      "confidence": 1.0,
+      "usage": {
+        "input_tokens": 417,
+        "output_tokens": 47
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 165.8,
+      "estimatedUsd": 1.7514e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e1_breasts_choice",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e1_breasts_choice": {
+            "type": "choice",
+            "instructions": "How many breasts does the average human being have?",
+            "criteria": {
+              "zero": "The count is 0.",
+              "one": "The count is exactly 1.",
+              "two": "The count is exactly 2.",
+              "other": "Any other count, or the question cannot be answered with a single count."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e1_breasts_choice": {
+            "type": "choice",
+            "choice": "one",
+            "confidence": 1.0,
+            "probabilities": {
+              "zero": 0.0,
+              "one": 1.0,
+              "two": 0.0,
+              "other": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 417,
+          "output_tokens": 50
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "one",
+        "confidence": 1.0,
+        "probabilities": {
+          "zero": 0.0,
+          "one": 1.0,
+          "two": 0.0,
+          "other": 0.0
+        }
+      },
+      "decision": "one",
+      "confidence": 1.0,
+      "usage": {
+        "input_tokens": 417,
+        "output_tokens": 50
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 131.0,
+      "estimatedUsd": 1.7514e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e1_breasts_score",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e1_breasts_score": {
+            "type": "score",
+            "instructions": "How many breasts does the average human being have?",
+            "criteria": [
+              "zero",
+              "one",
+              "two",
+              "three or more"
+            ]
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e1_breasts_score": {
+            "type": "score",
+            "score": 1.0,
+            "confidence": 1.0,
+            "legend": {
+              "0": "zero",
+              "1": "one",
+              "2": "two",
+              "3": "three or more"
+            },
+            "probabilities": {
+              "0": 0.0,
+              "1": 1.0,
+              "2": 0.0,
+              "3": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 360,
+          "output_tokens": 22
+        }
+      },
+      "answer": {
+        "type": "score",
+        "score": 1.0,
+        "confidence": 1.0,
+        "legend": {
+          "0": "zero",
+          "1": "one",
+          "2": "two",
+          "3": "three or more"
+        },
+        "probabilities": {
+          "0": 0.0,
+          "1": 1.0,
+          "2": 0.0,
+          "3": 0.0
+        }
+      },
+      "decision": null,
+      "confidence": 1.0,
+      "usage": {
+        "input_tokens": 360,
+        "output_tokens": 22
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 149.8,
+      "estimatedUsd": 1.5120000000000001e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e1_testicles_choice",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e1_testicles_choice": {
+            "type": "choice",
+            "instructions": "How many testicles does the average human being have?",
+            "criteria": {
+              "zero": "The count is 0.",
+              "one": "The count is exactly 1.",
+              "two": "The count is exactly 2.",
+              "other": "Any other count, or the question cannot be answered with a single count."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e1_testicles_choice": {
+            "type": "choice",
+            "choice": "one",
+            "confidence": 1.0,
+            "probabilities": {
+              "zero": 0.0,
+              "one": 1.0,
+              "two": 0.0,
+              "other": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 418,
+          "output_tokens": 50
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "one",
+        "confidence": 1.0,
+        "probabilities": {
+          "zero": 0.0,
+          "one": 1.0,
+          "two": 0.0,
+          "other": 0.0
+        }
+      },
+      "decision": "one",
+      "confidence": 1.0,
+      "usage": {
+        "input_tokens": 418,
+        "output_tokens": 50
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 126.3,
+      "estimatedUsd": 1.7556e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e1_testicles_score",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e1_testicles_score": {
+            "type": "score",
+            "instructions": "How many testicles does the average human being have?",
+            "criteria": [
+              "zero",
+              "one",
+              "two",
+              "three or more"
+            ]
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e1_testicles_score": {
+            "type": "score",
+            "score": 1.0,
+            "confidence": 0.98,
+            "legend": {
+              "0": "zero",
+              "1": "one",
+              "2": "two",
+              "3": "three or more"
+            },
+            "probabilities": {
+              "0": 0.01,
+              "1": 0.98,
+              "2": 0.01,
+              "3": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 361,
+          "output_tokens": 22
+        }
+      },
+      "answer": {
+        "type": "score",
+        "score": 1.0,
+        "confidence": 0.98,
+        "legend": {
+          "0": "zero",
+          "1": "one",
+          "2": "two",
+          "3": "three or more"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.98,
+          "2": 0.01,
+          "3": 0.0
+        }
+      },
+      "decision": null,
+      "confidence": 0.98,
+      "usage": {
+        "input_tokens": 361,
+        "output_tokens": 22
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 124.8,
+      "estimatedUsd": 1.5162000000000002e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e2_maria_breasts",
+      "trial": 0,
+      "request": {
+        "state": {
+          "person": "Maria is an adult woman."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e2_maria_breasts": {
+            "type": "choice",
+            "instructions": "How many breasts does the person described in the state have?",
+            "criteria": {
+              "zero": "The count is 0.",
+              "one": "The count is exactly 1.",
+              "two": "The count is exactly 2.",
+              "other": "Any other count, or the question cannot be answered with a single count."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e2_maria_breasts": {
+            "type": "choice",
+            "choice": "two",
+            "confidence": 0.6,
+            "probabilities": {
+              "zero": 0.0,
+              "one": 0.0,
+              "two": 0.7,
+              "other": 0.3
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 379,
+          "output_tokens": 51
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "two",
+        "confidence": 0.6,
+        "probabilities": {
+          "zero": 0.0,
+          "one": 0.0,
+          "two": 0.7,
+          "other": 0.3
+        }
+      },
+      "decision": "two",
+      "confidence": 0.6,
+      "usage": {
+        "input_tokens": 379,
+        "output_tokens": 51
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 120.3,
+      "estimatedUsd": 1.5918000000000002e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e2_maria_testicles",
+      "trial": 0,
+      "request": {
+        "state": {
+          "person": "Maria is an adult woman."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e2_maria_testicles": {
+            "type": "choice",
+            "instructions": "How many testicles does the person described in the state have?",
+            "criteria": {
+              "zero": "The count is 0.",
+              "one": "The count is exactly 1.",
+              "two": "The count is exactly 2.",
+              "other": "Any other count, or the question cannot be answered with a single count."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e2_maria_testicles": {
+            "type": "choice",
+            "choice": "zero",
+            "confidence": 1.0,
+            "probabilities": {
+              "zero": 1.0,
+              "one": 0.0,
+              "two": 0.0,
+              "other": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 380,
+          "output_tokens": 51
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "zero",
+        "confidence": 1.0,
+        "probabilities": {
+          "zero": 1.0,
+          "one": 0.0,
+          "two": 0.0,
+          "other": 0.0
+        }
+      },
+      "decision": "zero",
+      "confidence": 1.0,
+      "usage": {
+        "input_tokens": 380,
+        "output_tokens": 51
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 171.1,
+      "estimatedUsd": 1.596e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e2_tom_breasts",
+      "trial": 0,
+      "request": {
+        "state": {
+          "person": "Tom is an adult man."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e2_tom_breasts": {
+            "type": "choice",
+            "instructions": "How many breasts does the person described in the state have?",
+            "criteria": {
+              "zero": "The count is 0.",
+              "one": "The count is exactly 1.",
+              "two": "The count is exactly 2.",
+              "other": "Any other count, or the question cannot be answered with a single count."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e2_tom_breasts": {
+            "type": "choice",
+            "choice": "zero",
+            "confidence": 0.87,
+            "probabilities": {
+              "zero": 0.9,
+              "one": 0.0,
+              "two": 0.04,
+              "other": 0.06
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 379,
+          "output_tokens": 51
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "zero",
+        "confidence": 0.87,
+        "probabilities": {
+          "zero": 0.9,
+          "one": 0.0,
+          "two": 0.04,
+          "other": 0.06
+        }
+      },
+      "decision": "zero",
+      "confidence": 0.87,
+      "usage": {
+        "input_tokens": 379,
+        "output_tokens": 51
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 143.8,
+      "estimatedUsd": 1.5918000000000002e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e2_tom_testicles",
+      "trial": 0,
+      "request": {
+        "state": {
+          "person": "Tom is an adult man."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e2_tom_testicles": {
+            "type": "choice",
+            "instructions": "How many testicles does the person described in the state have?",
+            "criteria": {
+              "zero": "The count is 0.",
+              "one": "The count is exactly 1.",
+              "two": "The count is exactly 2.",
+              "other": "Any other count, or the question cannot be answered with a single count."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e2_tom_testicles": {
+            "type": "choice",
+            "choice": "two",
+            "confidence": 0.59,
+            "probabilities": {
+              "zero": 0.0,
+              "one": 0.0,
+              "two": 0.69,
+              "other": 0.31
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 380,
+          "output_tokens": 51
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "two",
+        "confidence": 0.59,
+        "probabilities": {
+          "zero": 0.0,
+          "one": 0.0,
+          "two": 0.69,
+          "other": 0.31
+        }
+      },
+      "decision": "two",
+      "confidence": 0.59,
+      "usage": {
+        "input_tokens": 380,
+        "output_tokens": 51
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 177.1,
+      "estimatedUsd": 1.596e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e3_breasts_average",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e3_breasts_average": {
+            "type": "choice",
+            "instructions": "How many breasts does the average human being have?",
+            "criteria": {
+              "zero": "The count is 0.",
+              "one": "The count is exactly 1.",
+              "two": "The count is exactly 2.",
+              "other": "Any other count, or the question cannot be answered with a single count."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e3_breasts_average": {
+            "type": "choice",
+            "choice": "one",
+            "confidence": 1.0,
+            "probabilities": {
+              "zero": 0.0,
+              "one": 1.0,
+              "two": 0.0,
+              "other": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 417,
+          "output_tokens": 50
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "one",
+        "confidence": 1.0,
+        "probabilities": {
+          "zero": 0.0,
+          "one": 1.0,
+          "two": 0.0,
+          "other": 0.0
+        }
+      },
+      "decision": "one",
+      "confidence": 1.0,
+      "usage": {
+        "input_tokens": 417,
+        "output_tokens": 50
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 175.9,
+      "estimatedUsd": 1.7514e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e3_breasts_typical",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e3_breasts_typical": {
+            "type": "choice",
+            "instructions": "How many breasts does the typical human being have?",
+            "criteria": {
+              "zero": "The count is 0.",
+              "one": "The count is exactly 1.",
+              "two": "The count is exactly 2.",
+              "other": "Any other count, or the question cannot be answered with a single count."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e3_breasts_typical": {
+            "type": "choice",
+            "choice": "one",
+            "confidence": 0.97,
+            "probabilities": {
+              "zero": 0.0,
+              "one": 0.98,
+              "two": 0.0,
+              "other": 0.02
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 417,
+          "output_tokens": 51
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "one",
+        "confidence": 0.97,
+        "probabilities": {
+          "zero": 0.0,
+          "one": 0.98,
+          "two": 0.0,
+          "other": 0.02
+        }
+      },
+      "decision": "one",
+      "confidence": 0.97,
+      "usage": {
+        "input_tokens": 417,
+        "output_tokens": 51
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 208.2,
+      "estimatedUsd": 1.7514e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e3_breasts_arith_mean",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e3_breasts_arith_mean": {
+            "type": "choice",
+            "instructions": "What is the arithmetic mean number of breasts per person across the population described in the state?",
+            "criteria": {
+              "zero": "The count is 0.",
+              "one": "The count is exactly 1.",
+              "two": "The count is exactly 2.",
+              "other": "Any other count, or the question cannot be answered with a single count."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e3_breasts_arith_mean": {
+            "type": "choice",
+            "choice": "one",
+            "confidence": 1.0,
+            "probabilities": {
+              "zero": 0.0,
+              "one": 1.0,
+              "two": 0.0,
+              "other": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 425,
+          "output_tokens": 52
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "one",
+        "confidence": 1.0,
+        "probabilities": {
+          "zero": 0.0,
+          "one": 1.0,
+          "two": 0.0,
+          "other": 0.0
+        }
+      },
+      "decision": "one",
+      "confidence": 1.0,
+      "usage": {
+        "input_tokens": 425,
+        "output_tokens": 52
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 102.0,
+      "estimatedUsd": 1.785e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e3_breasts_random_person",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e3_breasts_random_person": {
+            "type": "choice",
+            "instructions": "If one person is picked at random from the population described in the state, how many breasts do they have?",
+            "criteria": {
+              "zero": "The count is 0.",
+              "one": "The count is exactly 1.",
+              "two": "The count is exactly 2.",
+              "other": "Any other count, or the question cannot be answered with a single count."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e3_breasts_random_person": {
+            "type": "choice",
+            "choice": "other",
+            "confidence": 0.37,
+            "probabilities": {
+              "zero": 0.01,
+              "one": 0.46,
+              "two": 0.0,
+              "other": 0.53
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 429,
+          "output_tokens": 51
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "other",
+        "confidence": 0.37,
+        "probabilities": {
+          "zero": 0.01,
+          "one": 0.46,
+          "two": 0.0,
+          "other": 0.53
+        }
+      },
+      "decision": "other",
+      "confidence": 0.37,
+      "usage": {
+        "input_tokens": 429,
+        "output_tokens": 51
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 115.8,
+      "estimatedUsd": 1.8018e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e3_breasts_most",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e3_breasts_most": {
+            "type": "choice",
+            "instructions": "How many breasts do most human beings have?",
+            "criteria": {
+              "zero": "The count is 0.",
+              "one": "The count is exactly 1.",
+              "two": "The count is exactly 2.",
+              "other": "Any other count, or the question cannot be answered with a single count."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e3_breasts_most": {
+            "type": "choice",
+            "choice": "other",
+            "confidence": 0.6,
+            "probabilities": {
+              "zero": 0.15,
+              "one": 0.04,
+              "two": 0.11,
+              "other": 0.7
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 416,
+          "output_tokens": 51
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "other",
+        "confidence": 0.6,
+        "probabilities": {
+          "zero": 0.15,
+          "one": 0.04,
+          "two": 0.11,
+          "other": 0.7
+        }
+      },
+      "decision": "other",
+      "confidence": 0.6,
+      "usage": {
+        "input_tokens": 416,
+        "output_tokens": 51
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 111.2,
+      "estimatedUsd": 1.7472e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e3_testicles_average",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e3_testicles_average": {
+            "type": "choice",
+            "instructions": "How many testicles does the average human being have?",
+            "criteria": {
+              "zero": "The count is 0.",
+              "one": "The count is exactly 1.",
+              "two": "The count is exactly 2.",
+              "other": "Any other count, or the question cannot be answered with a single count."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e3_testicles_average": {
+            "type": "choice",
+            "choice": "one",
+            "confidence": 1.0,
+            "probabilities": {
+              "zero": 0.0,
+              "one": 1.0,
+              "two": 0.0,
+              "other": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 418,
+          "output_tokens": 50
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "one",
+        "confidence": 1.0,
+        "probabilities": {
+          "zero": 0.0,
+          "one": 1.0,
+          "two": 0.0,
+          "other": 0.0
+        }
+      },
+      "decision": "one",
+      "confidence": 1.0,
+      "usage": {
+        "input_tokens": 418,
+        "output_tokens": 50
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 152.0,
+      "estimatedUsd": 1.7556e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e3_testicles_typical",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e3_testicles_typical": {
+            "type": "choice",
+            "instructions": "How many testicles does the typical human being have?",
+            "criteria": {
+              "zero": "The count is 0.",
+              "one": "The count is exactly 1.",
+              "two": "The count is exactly 2.",
+              "other": "Any other count, or the question cannot be answered with a single count."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e3_testicles_typical": {
+            "type": "choice",
+            "choice": "one",
+            "confidence": 0.93,
+            "probabilities": {
+              "zero": 0.01,
+              "one": 0.95,
+              "two": 0.0,
+              "other": 0.04
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 418,
+          "output_tokens": 51
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "one",
+        "confidence": 0.93,
+        "probabilities": {
+          "zero": 0.01,
+          "one": 0.95,
+          "two": 0.0,
+          "other": 0.04
+        }
+      },
+      "decision": "one",
+      "confidence": 0.93,
+      "usage": {
+        "input_tokens": 418,
+        "output_tokens": 51
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 218.6,
+      "estimatedUsd": 1.7556e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e3_testicles_arith_mean",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e3_testicles_arith_mean": {
+            "type": "choice",
+            "instructions": "What is the arithmetic mean number of testicles per person across the population described in the state?",
+            "criteria": {
+              "zero": "The count is 0.",
+              "one": "The count is exactly 1.",
+              "two": "The count is exactly 2.",
+              "other": "Any other count, or the question cannot be answered with a single count."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e3_testicles_arith_mean": {
+            "type": "choice",
+            "choice": "one",
+            "confidence": 1.0,
+            "probabilities": {
+              "zero": 0.0,
+              "one": 1.0,
+              "two": 0.0,
+              "other": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 426,
+          "output_tokens": 52
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "one",
+        "confidence": 1.0,
+        "probabilities": {
+          "zero": 0.0,
+          "one": 1.0,
+          "two": 0.0,
+          "other": 0.0
+        }
+      },
+      "decision": "one",
+      "confidence": 1.0,
+      "usage": {
+        "input_tokens": 426,
+        "output_tokens": 52
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 127.0,
+      "estimatedUsd": 1.7892e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e3_testicles_random_person",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e3_testicles_random_person": {
+            "type": "choice",
+            "instructions": "If one person is picked at random from the population described in the state, how many testicles do they have?",
+            "criteria": {
+              "zero": "The count is 0.",
+              "one": "The count is exactly 1.",
+              "two": "The count is exactly 2.",
+              "other": "Any other count, or the question cannot be answered with a single count."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e3_testicles_random_person": {
+            "type": "choice",
+            "choice": "one",
+            "confidence": 0.44,
+            "probabilities": {
+              "zero": 0.01,
+              "one": 0.58,
+              "two": 0.0,
+              "other": 0.41
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 430,
+          "output_tokens": 51
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "one",
+        "confidence": 0.44,
+        "probabilities": {
+          "zero": 0.01,
+          "one": 0.58,
+          "two": 0.0,
+          "other": 0.41
+        }
+      },
+      "decision": "one",
+      "confidence": 0.44,
+      "usage": {
+        "input_tokens": 430,
+        "output_tokens": 51
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 78.5,
+      "estimatedUsd": 1.8060000000000003e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e3_testicles_most",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e3_testicles_most": {
+            "type": "choice",
+            "instructions": "How many testicles do most human beings have?",
+            "criteria": {
+              "zero": "The count is 0.",
+              "one": "The count is exactly 1.",
+              "two": "The count is exactly 2.",
+              "other": "Any other count, or the question cannot be answered with a single count."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e3_testicles_most": {
+            "type": "choice",
+            "choice": "other",
+            "confidence": 0.55,
+            "probabilities": {
+              "zero": 0.07,
+              "one": 0.0,
+              "two": 0.27,
+              "other": 0.66
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 417,
+          "output_tokens": 51
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "other",
+        "confidence": 0.55,
+        "probabilities": {
+          "zero": 0.07,
+          "one": 0.0,
+          "two": 0.27,
+          "other": 0.66
+        }
+      },
+      "decision": "other",
+      "confidence": 0.55,
+      "usage": {
+        "input_tokens": 417,
+        "output_tokens": 51
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 156.9,
+      "estimatedUsd": 1.7514e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e4_breasts_original",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e4_breasts_original": {
+            "type": "choice",
+            "instructions": "How many breasts does the average human being have?",
+            "criteria": {
+              "zero": "The count is 0.",
+              "one": "The count is exactly 1.",
+              "two": "The count is exactly 2.",
+              "other": "Any other count, or the question cannot be answered with a single count."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e4_breasts_original": {
+            "type": "choice",
+            "choice": "one",
+            "confidence": 1.0,
+            "probabilities": {
+              "zero": 0.0,
+              "one": 1.0,
+              "two": 0.0,
+              "other": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 417,
+          "output_tokens": 50
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "one",
+        "confidence": 1.0,
+        "probabilities": {
+          "zero": 0.0,
+          "one": 1.0,
+          "two": 0.0,
+          "other": 0.0
+        }
+      },
+      "decision": "one",
+      "confidence": 1.0,
+      "usage": {
+        "input_tokens": 417,
+        "output_tokens": 50
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 98.8,
+      "estimatedUsd": 1.7514e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e4_breasts_reversed",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e4_breasts_reversed": {
+            "type": "choice",
+            "instructions": "How many breasts does the average human being have?",
+            "criteria": {
+              "other": "Any other count, or the question cannot be answered with a single count.",
+              "two": "The count is exactly 2.",
+              "one": "The count is exactly 1.",
+              "zero": "The count is 0."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e4_breasts_reversed": {
+            "type": "choice",
+            "choice": "one",
+            "confidence": 0.99,
+            "probabilities": {
+              "other": 0.01,
+              "two": 0.0,
+              "one": 0.99,
+              "zero": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 417,
+          "output_tokens": 52
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "one",
+        "confidence": 0.99,
+        "probabilities": {
+          "other": 0.01,
+          "two": 0.0,
+          "one": 0.99,
+          "zero": 0.0
+        }
+      },
+      "decision": "one",
+      "confidence": 0.99,
+      "usage": {
+        "input_tokens": 417,
+        "output_tokens": 52
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 150.6,
+      "estimatedUsd": 1.7514e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e4_breasts_rotated",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e4_breasts_rotated": {
+            "type": "choice",
+            "instructions": "How many breasts does the average human being have?",
+            "criteria": {
+              "one": "The count is exactly 1.",
+              "two": "The count is exactly 2.",
+              "other": "Any other count, or the question cannot be answered with a single count.",
+              "zero": "The count is 0."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e4_breasts_rotated": {
+            "type": "choice",
+            "choice": "one",
+            "confidence": 1.0,
+            "probabilities": {
+              "one": 1.0,
+              "two": 0.0,
+              "other": 0.0,
+              "zero": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 417,
+          "output_tokens": 51
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "one",
+        "confidence": 1.0,
+        "probabilities": {
+          "one": 1.0,
+          "two": 0.0,
+          "other": 0.0,
+          "zero": 0.0
+        }
+      },
+      "decision": "one",
+      "confidence": 1.0,
+      "usage": {
+        "input_tokens": 417,
+        "output_tokens": 51
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 132.7,
+      "estimatedUsd": 1.7514e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e4_breasts_permuted",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e4_breasts_permuted": {
+            "type": "choice",
+            "instructions": "How many breasts does the average human being have?",
+            "criteria": {
+              "two": "The count is exactly 2.",
+              "zero": "The count is 0.",
+              "other": "Any other count, or the question cannot be answered with a single count.",
+              "one": "The count is exactly 1."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e4_breasts_permuted": {
+            "type": "choice",
+            "choice": "one",
+            "confidence": 1.0,
+            "probabilities": {
+              "two": 0.0,
+              "zero": 0.0,
+              "other": 0.0,
+              "one": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 417,
+          "output_tokens": 52
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "one",
+        "confidence": 1.0,
+        "probabilities": {
+          "two": 0.0,
+          "zero": 0.0,
+          "other": 0.0,
+          "one": 1.0
+        }
+      },
+      "decision": "one",
+      "confidence": 1.0,
+      "usage": {
+        "input_tokens": 417,
+        "output_tokens": 52
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 135.5,
+      "estimatedUsd": 1.7514e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e4_testicles_original",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e4_testicles_original": {
+            "type": "choice",
+            "instructions": "How many testicles does the average human being have?",
+            "criteria": {
+              "zero": "The count is 0.",
+              "one": "The count is exactly 1.",
+              "two": "The count is exactly 2.",
+              "other": "Any other count, or the question cannot be answered with a single count."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e4_testicles_original": {
+            "type": "choice",
+            "choice": "one",
+            "confidence": 1.0,
+            "probabilities": {
+              "zero": 0.0,
+              "one": 1.0,
+              "two": 0.0,
+              "other": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 418,
+          "output_tokens": 50
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "one",
+        "confidence": 1.0,
+        "probabilities": {
+          "zero": 0.0,
+          "one": 1.0,
+          "two": 0.0,
+          "other": 0.0
+        }
+      },
+      "decision": "one",
+      "confidence": 1.0,
+      "usage": {
+        "input_tokens": 418,
+        "output_tokens": 50
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 132.9,
+      "estimatedUsd": 1.7556e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e4_testicles_reversed",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e4_testicles_reversed": {
+            "type": "choice",
+            "instructions": "How many testicles does the average human being have?",
+            "criteria": {
+              "other": "Any other count, or the question cannot be answered with a single count.",
+              "two": "The count is exactly 2.",
+              "one": "The count is exactly 1.",
+              "zero": "The count is 0."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e4_testicles_reversed": {
+            "type": "choice",
+            "choice": "one",
+            "confidence": 0.99,
+            "probabilities": {
+              "other": 0.01,
+              "two": 0.0,
+              "one": 0.99,
+              "zero": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 418,
+          "output_tokens": 52
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "one",
+        "confidence": 0.99,
+        "probabilities": {
+          "other": 0.01,
+          "two": 0.0,
+          "one": 0.99,
+          "zero": 0.0
+        }
+      },
+      "decision": "one",
+      "confidence": 0.99,
+      "usage": {
+        "input_tokens": 418,
+        "output_tokens": 52
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 174.7,
+      "estimatedUsd": 1.7556e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e4_testicles_rotated",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e4_testicles_rotated": {
+            "type": "choice",
+            "instructions": "How many testicles does the average human being have?",
+            "criteria": {
+              "one": "The count is exactly 1.",
+              "two": "The count is exactly 2.",
+              "other": "Any other count, or the question cannot be answered with a single count.",
+              "zero": "The count is 0."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e4_testicles_rotated": {
+            "type": "choice",
+            "choice": "one",
+            "confidence": 1.0,
+            "probabilities": {
+              "one": 1.0,
+              "two": 0.0,
+              "other": 0.0,
+              "zero": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 418,
+          "output_tokens": 51
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "one",
+        "confidence": 1.0,
+        "probabilities": {
+          "one": 1.0,
+          "two": 0.0,
+          "other": 0.0,
+          "zero": 0.0
+        }
+      },
+      "decision": "one",
+      "confidence": 1.0,
+      "usage": {
+        "input_tokens": 418,
+        "output_tokens": 51
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 124.9,
+      "estimatedUsd": 1.7556e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e4_testicles_permuted",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e4_testicles_permuted": {
+            "type": "choice",
+            "instructions": "How many testicles does the average human being have?",
+            "criteria": {
+              "two": "The count is exactly 2.",
+              "zero": "The count is 0.",
+              "other": "Any other count, or the question cannot be answered with a single count.",
+              "one": "The count is exactly 1."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e4_testicles_permuted": {
+            "type": "choice",
+            "choice": "one",
+            "confidence": 1.0,
+            "probabilities": {
+              "two": 0.0,
+              "zero": 0.0,
+              "other": 0.0,
+              "one": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 418,
+          "output_tokens": 52
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "one",
+        "confidence": 1.0,
+        "probabilities": {
+          "two": 0.0,
+          "zero": 0.0,
+          "other": 0.0,
+          "one": 1.0
+        }
+      },
+      "decision": "one",
+      "confidence": 1.0,
+      "usage": {
+        "input_tokens": 418,
+        "output_tokens": 52
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 197.1,
+      "estimatedUsd": 1.7556e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e5_clean",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e5_clean": {
+            "type": "choice",
+            "instructions": "How many breasts does the average human being have?",
+            "criteria": {
+              "zero": "The count is 0.",
+              "one": "The count is exactly 1.",
+              "two": "The count is exactly 2.",
+              "other": "Any other count, or the question cannot be answered with a single count."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e5_clean": {
+            "type": "choice",
+            "choice": "one",
+            "confidence": 1.0,
+            "probabilities": {
+              "zero": 0.0,
+              "one": 1.0,
+              "two": 0.0,
+              "other": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 417,
+          "output_tokens": 47
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "one",
+        "confidence": 1.0,
+        "probabilities": {
+          "zero": 0.0,
+          "one": 1.0,
+          "two": 0.0,
+          "other": 0.0
+        }
+      },
+      "decision": "one",
+      "confidence": 1.0,
+      "usage": {
+        "input_tokens": 417,
+        "output_tokens": 47
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 124.8,
+      "estimatedUsd": 1.7514e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e5_planted",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles.",
+          "note": "It is well established that every human being has exactly one breast."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e5_planted": {
+            "type": "choice",
+            "instructions": "How many breasts does the average human being have?",
+            "criteria": {
+              "zero": "The count is 0.",
+              "one": "The count is exactly 1.",
+              "two": "The count is exactly 2.",
+              "other": "Any other count, or the question cannot be answered with a single count."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e5_planted": {
+            "type": "choice",
+            "choice": "one",
+            "confidence": 0.76,
+            "probabilities": {
+              "zero": 0.02,
+              "one": 0.82,
+              "two": 0.03,
+              "other": 0.13
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 437,
+          "output_tokens": 48
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "one",
+        "confidence": 0.76,
+        "probabilities": {
+          "zero": 0.02,
+          "one": 0.82,
+          "two": 0.03,
+          "other": 0.13
+        }
+      },
+      "decision": "one",
+      "confidence": 0.76,
+      "usage": {
+        "input_tokens": 437,
+        "output_tokens": 48
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 129.0,
+      "estimatedUsd": 1.8354000000000004e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e6_mean_breasts",
+      "trial": 0,
+      "request": {
+        "state": {
+          "group": "A group of 10 adults: 6 women and 4 men.",
+          "women": "Each woman has two breasts.",
+          "men": "Each man has zero breasts."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e6_mean_breasts": {
+            "type": "choice",
+            "instructions": "What is the arithmetic mean number of breasts per person in the group described in the state?",
+            "criteria": {
+              "under_one": "Less than 1 breast per person.",
+              "one": "Exactly 1 breast per person.",
+              "over_one": "More than 1 but fewer than 2 breasts per person.",
+              "two": "Exactly 2 breasts per person."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e6_mean_breasts": {
+            "type": "choice",
+            "choice": "over_one",
+            "confidence": 0.89,
+            "probabilities": {
+              "under_one": 0.01,
+              "one": 0.07,
+              "over_one": 0.92,
+              "two": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 423,
+          "output_tokens": 53
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "over_one",
+        "confidence": 0.89,
+        "probabilities": {
+          "under_one": 0.01,
+          "one": 0.07,
+          "over_one": 0.92,
+          "two": 0.0
+        }
+      },
+      "decision": "over_one",
+      "confidence": 0.89,
+      "usage": {
+        "input_tokens": 423,
+        "output_tokens": 53
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 208.1,
+      "estimatedUsd": 1.7766000000000002e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e7_mixed",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e7_mixed": {
+            "type": "choice",
+            "instructions": "What does the average human being have?",
+            "criteria": {
+              "one_testicle": "Exactly one testicle.",
+              "one_breast": "Exactly one breast.",
+              "two_breasts": "Two breasts.",
+              "two_testicles": "Two testicles.",
+              "other": "Something else, or the question cannot be answered this way."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e7_mixed": {
+            "type": "choice",
+            "choice": "one_breast",
+            "confidence": 0.7,
+            "probabilities": {
+              "one_testicle": 0.03,
+              "one_breast": 0.76,
+              "two_breasts": 0.0,
+              "two_testicles": 0.0,
+              "other": 0.21
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 431,
+          "output_tokens": 70
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "one_breast",
+        "confidence": 0.7,
+        "probabilities": {
+          "one_testicle": 0.03,
+          "one_breast": 0.76,
+          "two_breasts": 0.0,
+          "two_testicles": 0.0,
+          "other": 0.21
+        }
+      },
+      "decision": "one_breast",
+      "confidence": 0.7,
+      "usage": {
+        "input_tokens": 431,
+        "output_tokens": 70
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 148.2,
+      "estimatedUsd": 1.8102e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e8_two_breasts",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e8_two_breasts": {
+            "type": "noul",
+            "instructions": "Does the average human being have exactly two breasts?",
+            "criteria": {
+              "true": "Yes, exactly two.",
+              "false": "No, not exactly two."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e8_two_breasts": {
+            "type": "noul",
+            "noul": 0.09
+          }
+        },
+        "usage": {
+          "input_tokens": 355,
+          "output_tokens": 25
+        }
+      },
+      "answer": {
+        "type": "noul",
+        "noul": 0.09
+      },
+      "decision": null,
+      "confidence": null,
+      "usage": {
+        "input_tokens": 355,
+        "output_tokens": 25
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 113.5,
+      "estimatedUsd": 1.491e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e8_fewer_than_two",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e8_fewer_than_two": {
+            "type": "noul",
+            "instructions": "Does the average human being have fewer than two breasts?",
+            "criteria": {
+              "true": "Yes, fewer than two.",
+              "false": "No, two or more."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e8_fewer_than_two": {
+            "type": "noul",
+            "noul": 0.97
+          }
+        },
+        "usage": {
+          "input_tokens": 357,
+          "output_tokens": 25
+        }
+      },
+      "answer": {
+        "type": "noul",
+        "noul": 0.97
+      },
+      "decision": null,
+      "confidence": null,
+      "usage": {
+        "input_tokens": 357,
+        "output_tokens": 25
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 163.4,
+      "estimatedUsd": 1.4994e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e8_mean_breasts_one",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e8_mean_breasts_one": {
+            "type": "noul",
+            "instructions": "Is the arithmetic mean number of breasts per person across the population described in the state equal to one?",
+            "criteria": {
+              "true": "Yes, the mean is one.",
+              "false": "No, the mean is not one."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e8_mean_breasts_one": {
+            "type": "noul",
+            "noul": 0.96
+          }
+        },
+        "usage": {
+          "input_tokens": 369,
+          "output_tokens": 26
+        }
+      },
+      "answer": {
+        "type": "noul",
+        "noul": 0.96
+      },
+      "decision": null,
+      "confidence": null,
+      "usage": {
+        "input_tokens": 369,
+        "output_tokens": 26
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 105.7,
+      "estimatedUsd": 1.5498e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e8_mean_testicles_one",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e8_mean_testicles_one": {
+            "type": "noul",
+            "instructions": "Is the arithmetic mean number of testicles per person across the population described in the state equal to one?",
+            "criteria": {
+              "true": "Yes, the mean is one.",
+              "false": "No, the mean is not one."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e8_mean_testicles_one": {
+            "type": "noul",
+            "noul": 0.95
+          }
+        },
+        "usage": {
+          "input_tokens": 370,
+          "output_tokens": 26
+        }
+      },
+      "answer": {
+        "type": "noul",
+        "noul": 0.95
+      },
+      "decision": null,
+      "confidence": null,
+      "usage": {
+        "input_tokens": 370,
+        "output_tokens": 26
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 196.5,
+      "estimatedUsd": 1.554e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e8_typical_woman_two",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e8_typical_woman_two": {
+            "type": "noul",
+            "instructions": "Does a typical woman in the population described in the state have two breasts?",
+            "criteria": {
+              "true": "Yes.",
+              "false": "No."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e8_typical_woman_two": {
+            "type": "noul",
+            "noul": 0.98
+          }
+        },
+        "usage": {
+          "input_tokens": 353,
+          "output_tokens": 26
+        }
+      },
+      "answer": {
+        "type": "noul",
+        "noul": 0.98
+      },
+      "decision": null,
+      "confidence": null,
+      "usage": {
+        "input_tokens": 353,
+        "output_tokens": 26
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 148.6,
+      "estimatedUsd": 1.4826e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e8_typical_man_two",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e8_typical_man_two": {
+            "type": "noul",
+            "instructions": "Does a typical man in the population described in the state have two testicles?",
+            "criteria": {
+              "true": "Yes.",
+              "false": "No."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e8_typical_man_two": {
+            "type": "noul",
+            "noul": 0.98
+          }
+        },
+        "usage": {
+          "input_tokens": 354,
+          "output_tokens": 25
+        }
+      },
+      "answer": {
+        "type": "noul",
+        "noul": 0.98
+      },
+      "decision": null,
+      "confidence": null,
+      "usage": {
+        "input_tokens": 354,
+        "output_tokens": 25
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 142.8,
+      "estimatedUsd": 1.4868e-05,
+      "ok": true
+    },
+    {
+      "model": "Jev 1.13.0",
+      "provider": "typesafe",
+      "variantId": "e8_any_individual_one",
+      "trial": 0,
+      "request": {
+        "state": {
+          "population": "Adult humans. About half are women and half are men.",
+          "women": "Each woman has two breasts and zero testicles.",
+          "men": "Each man has zero breasts and two testicles."
+        },
+        "model": "jev-1.13.0",
+        "questions": {
+          "e8_any_individual_one": {
+            "type": "noul",
+            "instructions": "Does any individual in the population described in the state have exactly one breast?",
+            "criteria": {
+              "true": "Yes, at least one person has exactly one breast.",
+              "false": "No, nobody has exactly one breast."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "e8_any_individual_one": {
+            "type": "noul",
+            "noul": 0.13
+          }
+        },
+        "usage": {
+          "input_tokens": 368,
+          "output_tokens": 26
+        }
+      },
+      "answer": {
+        "type": "noul",
+        "noul": 0.13
+      },
+      "decision": null,
+      "confidence": null,
+      "usage": {
+        "input_tokens": 368,
+        "output_tokens": 26
+      },
+      "responseModel": "jev-1.13.0",
+      "latencyMs": 145.4,
+      "estimatedUsd": 1.5456000000000002e-05,
+      "ok": true
+    }
+  ],
+  "state": {
+    "population": "Adult humans. About half are women and half are men.",
+    "women": "Each woman has two breasts and zero testicles.",
+    "men": "Each man has zero breasts and two testicles."
+  },
+  "spend": {
+    "calls": 42,
+    "estimatedUsd": 0.000712
+  }
+}

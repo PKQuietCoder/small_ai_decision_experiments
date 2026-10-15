@@ -1,0 +1,18 @@
+{
+  "state": {
+    "person": "Maria is an adult woman."
+  },
+  "model": "jev-1.13.0",
+  "questions": {
+    "e2_maria_testicles": {
+      "type": "choice",
+      "instructions": "How many testicles does the person described in the state have?",
+      "criteria": {
+        "zero": "The count is 0.",
+        "one": "The count is exactly 1.",
+        "two": "The count is exactly 2.",
+        "other": "Any other count, or the question cannot be answered with a single count."
+      }
+    }
+  }
+}

@@ -1,0 +1,931 @@
+{
+  "experimentId": "jev-average-human",
+  "experimentTitle": "The Average Human: What Jev's Calibration Can and Cannot Tell You About One Person",
+  "runId": "20261015T203606Z",
+  "runDate": "2026-10-15T20:36:06.560985+00:00",
+  "prompt": "",
+  "question": "",
+  "baseline": null,
+  "decisionOptions": [
+    {
+      "id": "zero",
+      "label": "Zero"
+    },
+    {
+      "id": "one",
+      "label": "One"
+    },
+    {
+      "id": "two",
+      "label": "Two"
+    },
+    {
+      "id": "other",
+      "label": "Other"
+    }
+  ],
+  "models": [
+    "Jev 1.13.0"
+  ],
+  "variants": [
+    {
+      "id": "e0_rep",
+      "label": "E0 \u00b7 repeat of E1 (breasts, Choice) \u00d75",
+      "metaphor": ""
+    },
+    {
+      "id": "e1_breasts_choice",
+      "label": "E1 \u00b7 breasts \u00b7 Choice",
+      "metaphor": ""
+    },
+    {
+      "id": "e1_breasts_score",
+      "label": "E1 \u00b7 breasts \u00b7 Score",
+      "metaphor": ""
+    },
+    {
+      "id": "e1_testicles_choice",
+      "label": "E1 \u00b7 testicles \u00b7 Choice",
+      "metaphor": ""
+    },
+    {
+      "id": "e1_testicles_score",
+      "label": "E1 \u00b7 testicles \u00b7 Score",
+      "metaphor": ""
+    },
+    {
+      "id": "e2_maria_breasts",
+      "label": "E2 \u00b7 Maria \u00b7 breasts",
+      "metaphor": ""
+    },
+    {
+      "id": "e2_maria_testicles",
+      "label": "E2 \u00b7 Maria \u00b7 testicles",
+      "metaphor": ""
+    },
+    {
+      "id": "e2_tom_breasts",
+      "label": "E2 \u00b7 Tom \u00b7 breasts",
+      "metaphor": ""
+    },
+    {
+      "id": "e2_tom_testicles",
+      "label": "E2 \u00b7 Tom \u00b7 testicles",
+      "metaphor": ""
+    },
+    {
+      "id": "e3_breasts_average",
+      "label": "E3 \u00b7 breasts \u00b7 \u201caverage human being\u201d",
+      "metaphor": ""
+    },
+    {
+      "id": "e3_breasts_typical",
+      "label": "E3 \u00b7 breasts \u00b7 \u201ctypical human being\u201d",
+      "metaphor": ""
+    },
+    {
+      "id": "e3_breasts_arith_mean",
+      "label": "E3 \u00b7 breasts \u00b7 \u201carithmetic mean per person\u201d",
+      "metaphor": ""
+    },
+    {
+      "id": "e3_breasts_random_person",
+      "label": "E3 \u00b7 breasts \u00b7 \u201cone person picked at random\u201d",
+      "metaphor": ""
+    },
+    {
+      "id": "e3_breasts_most",
+      "label": "E3 \u00b7 breasts \u00b7 \u201cmost human beings\u201d",
+      "metaphor": ""
+    },
+    {
+      "id": "e3_testicles_average",
+      "label": "E3 \u00b7 testicles \u00b7 \u201caverage human being\u201d",
+      "metaphor": ""
+    },
+    {
+      "id": "e3_testicles_typical",
+      "label": "E3 \u00b7 testicles \u00b7 \u201ctypical human being\u201d",
+      "metaphor": ""
+    },
+    {
+      "id": "e3_testicles_arith_mean",
+      "label": "E3 \u00b7 testicles \u00b7 \u201carithmetic mean per person\u201d",
+      "metaphor": ""
+    },
+    {
+      "id": "e3_testicles_random_person",
+      "label": "E3 \u00b7 testicles \u00b7 \u201cone person picked at random\u201d",
+      "metaphor": ""
+    },
+    {
+      "id": "e3_testicles_most",
+      "label": "E3 \u00b7 testicles \u00b7 \u201cmost human beings\u201d",
+      "metaphor": ""
+    },
+    {
+      "id": "e4_breasts_original",
+      "label": "E4 \u00b7 breasts \u00b7 original order",
+      "metaphor": ""
+    },
+    {
+      "id": "e4_breasts_reversed",
+      "label": "E4 \u00b7 breasts \u00b7 reversed",
+      "metaphor": ""
+    },
+    {
+      "id": "e4_breasts_rotated",
+      "label": "E4 \u00b7 breasts \u00b7 rotated",
+      "metaphor": ""
+    },
+    {
+      "id": "e4_breasts_permuted",
+      "label": "E4 \u00b7 breasts \u00b7 permuted",
+      "metaphor": ""
+    },
+    {
+      "id": "e4_testicles_original",
+      "label": "E4 \u00b7 testicles \u00b7 original order",
+      "metaphor": ""
+    },
+    {
+      "id": "e4_testicles_reversed",
+      "label": "E4 \u00b7 testicles \u00b7 reversed",
+      "metaphor": ""
+    },
+    {
+      "id": "e4_testicles_rotated",
+      "label": "E4 \u00b7 testicles \u00b7 rotated",
+      "metaphor": ""
+    },
+    {
+      "id": "e4_testicles_permuted",
+      "label": "E4 \u00b7 testicles \u00b7 permuted",
+      "metaphor": ""
+    },
+    {
+      "id": "e5_clean",
+      "label": "E5 \u00b7 clean state",
+      "metaphor": ""
+    },
+    {
+      "id": "e5_planted",
+      "label": "E5 \u00b7 planted statement",
+      "metaphor": ""
+    },
+    {
+      "id": "e6_mean_breasts",
+      "label": "E6 \u00b7 mean breasts in a group of 10",
+      "metaphor": ""
+    },
+    {
+      "id": "e7_mixed",
+      "label": "E7 \u00b7 mixed option set",
+      "metaphor": ""
+    },
+    {
+      "id": "e8_two_breasts",
+      "label": "E8 \u00b7 average human has exactly two breasts?",
+      "metaphor": ""
+    },
+    {
+      "id": "e8_fewer_than_two",
+      "label": "E8 \u00b7 average human has fewer than two breasts?",
+      "metaphor": ""
+    },
+    {
+      "id": "e8_mean_breasts_one",
+      "label": "E8 \u00b7 mean breasts per person is one?",
+      "metaphor": ""
+    },
+    {
+      "id": "e8_mean_testicles_one",
+      "label": "E8 \u00b7 mean testicles per person is one?",
+      "metaphor": ""
+    },
+    {
+      "id": "e8_typical_woman_two",
+      "label": "E8 \u00b7 typical woman has two breasts?",
+      "metaphor": ""
+    },
+    {
+      "id": "e8_typical_man_two",
+      "label": "E8 \u00b7 typical man has two testicles?",
+      "metaphor": ""
+    },
+    {
+      "id": "e8_any_individual_one",
+      "label": "E8 \u00b7 any individual has exactly one breast?",
+      "metaphor": ""
+    }
+  ],
+  "primaryDecision": "one",
+  "primaryDecisionLabel": "One",
+  "trialsPerCell": 1,
+  "totalTrials": 5,
+  "parseFailures": 0,
+  "excluded": 0,
+  "byVariant": [
+    {
+      "variantId": "e0_rep",
+      "label": "E0 \u00b7 repeat of E1 (breasts, Choice) \u00d75",
+      "metaphor": "",
+      "total": null,
+      "counts": {},
+      "proportions": {
+        "zero": 0.0,
+        "one": 1.0,
+        "two": 0.0,
+        "other": 0.0
+      },
+      "ci": {}
+    }
+  ],
+  "byVariantModel": [
+    {
+      "variantId": "e0_rep",
+      "label": "E0 \u00b7 repeat of E1 (breasts, Choice) \u00d75",
+      "model": "Jev 1.13.0",
+      "total": null,
+      "counts": {},
+      "proportions": {
+        "zero": 0.0,
+        "one": 1.0,
+        "two": 0.0,
+        "other": 0.0
+      }
+    }
+  ],
+  "overall": {
+    "statistic": null,
+    "pValue": null,
+    "dof": null,
+    "significant": false,
+    "cramersV": null,
+    "testable": false
+  },
+  "perModel": [
+    {
+      "model": "Jev 1.13.0",
+      "chiSquare": {
+        "statistic": null,
+        "pValue": null,
+        "dof": null,
+        "significant": false,
+        "cramersV": null,
+        "testable": false
+      }
+    }
+  ],
+  "systemone": {
+    "state": {
+      "population": "Adult humans. About half are women and half are men.",
+      "women": "Each woman has two breasts and zero testicles.",
+      "men": "Each man has zero breasts and two testicles."
+    },
+    "meta": {
+      "responseModels": [
+        "jev-1.13.0"
+      ],
+      "requestedModel": "jev-1.13.0",
+      "runId": "20261015T203606Z",
+      "startedAt": "2026-10-15T20:36:06.025883+00:00",
+      "finishedAt": "2026-10-15T20:36:06.560985+00:00",
+      "calls": 5,
+      "okCalls": 5,
+      "failedCalls": 0,
+      "variants": 38,
+      "experiments": [
+        "E0",
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E8"
+      ],
+      "inputTokens": 2085,
+      "outputTokens": 235,
+      "estimatedUsd": 8.8e-05,
+      "latencyMs": {
+        "mean": 200.6,
+        "min": 138.1,
+        "max": 236.1,
+        "total": 1002.9
+      }
+    },
+    "variants": {
+      "e0_rep": {
+        "variantId": "e0_rep",
+        "label": "E0 \u00b7 repeat of E1 (breasts, Choice) \u00d75",
+        "experiment": "E0",
+        "organ": "breasts",
+        "questionType": "choice",
+        "instructions": "How many breasts does the average human being have?",
+        "trials": 5,
+        "latencyMs": 200.6,
+        "options": [
+          "zero",
+          "one",
+          "two",
+          "other"
+        ],
+        "probabilities": {
+          "zero": 0.0,
+          "one": 1.0,
+          "two": 0.0,
+          "other": 0.0
+        },
+        "choice": "one",
+        "choices": [
+          "one",
+          "one",
+          "one",
+          "one",
+          "one"
+        ],
+        "confidence": 1.0,
+        "confidenceRecomputed": 1.0,
+        "topProbability": 1.0,
+        "topToSecondRatio": null
+      },
+      "e1_breasts_choice": {
+        "variantId": "e1_breasts_choice",
+        "label": "E1 \u00b7 breasts \u00b7 Choice",
+        "experiment": "E1",
+        "organ": "breasts",
+        "questionType": "choice",
+        "instructions": "How many breasts does the average human being have?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e1_breasts_score": {
+        "variantId": "e1_breasts_score",
+        "label": "E1 \u00b7 breasts \u00b7 Score",
+        "experiment": "E1",
+        "organ": "breasts",
+        "questionType": "score",
+        "instructions": "How many breasts does the average human being have?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e1_testicles_choice": {
+        "variantId": "e1_testicles_choice",
+        "label": "E1 \u00b7 testicles \u00b7 Choice",
+        "experiment": "E1",
+        "organ": "testicles",
+        "questionType": "choice",
+        "instructions": "How many testicles does the average human being have?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e1_testicles_score": {
+        "variantId": "e1_testicles_score",
+        "label": "E1 \u00b7 testicles \u00b7 Score",
+        "experiment": "E1",
+        "organ": "testicles",
+        "questionType": "score",
+        "instructions": "How many testicles does the average human being have?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e2_maria_breasts": {
+        "variantId": "e2_maria_breasts",
+        "label": "E2 \u00b7 Maria \u00b7 breasts",
+        "experiment": "E2",
+        "organ": "breasts",
+        "questionType": "choice",
+        "instructions": "How many breasts does the person described in the state have?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e2_maria_testicles": {
+        "variantId": "e2_maria_testicles",
+        "label": "E2 \u00b7 Maria \u00b7 testicles",
+        "experiment": "E2",
+        "organ": "testicles",
+        "questionType": "choice",
+        "instructions": "How many testicles does the person described in the state have?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e2_tom_breasts": {
+        "variantId": "e2_tom_breasts",
+        "label": "E2 \u00b7 Tom \u00b7 breasts",
+        "experiment": "E2",
+        "organ": "breasts",
+        "questionType": "choice",
+        "instructions": "How many breasts does the person described in the state have?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e2_tom_testicles": {
+        "variantId": "e2_tom_testicles",
+        "label": "E2 \u00b7 Tom \u00b7 testicles",
+        "experiment": "E2",
+        "organ": "testicles",
+        "questionType": "choice",
+        "instructions": "How many testicles does the person described in the state have?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e3_breasts_average": {
+        "variantId": "e3_breasts_average",
+        "label": "E3 \u00b7 breasts \u00b7 \u201caverage human being\u201d",
+        "experiment": "E3",
+        "organ": "breasts",
+        "questionType": "choice",
+        "instructions": "How many breasts does the average human being have?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e3_breasts_typical": {
+        "variantId": "e3_breasts_typical",
+        "label": "E3 \u00b7 breasts \u00b7 \u201ctypical human being\u201d",
+        "experiment": "E3",
+        "organ": "breasts",
+        "questionType": "choice",
+        "instructions": "How many breasts does the typical human being have?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e3_breasts_arith_mean": {
+        "variantId": "e3_breasts_arith_mean",
+        "label": "E3 \u00b7 breasts \u00b7 \u201carithmetic mean per person\u201d",
+        "experiment": "E3",
+        "organ": "breasts",
+        "questionType": "choice",
+        "instructions": "What is the arithmetic mean number of breasts per person across the population described in the state?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e3_breasts_random_person": {
+        "variantId": "e3_breasts_random_person",
+        "label": "E3 \u00b7 breasts \u00b7 \u201cone person picked at random\u201d",
+        "experiment": "E3",
+        "organ": "breasts",
+        "questionType": "choice",
+        "instructions": "If one person is picked at random from the population described in the state, how many breasts do they have?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e3_breasts_most": {
+        "variantId": "e3_breasts_most",
+        "label": "E3 \u00b7 breasts \u00b7 \u201cmost human beings\u201d",
+        "experiment": "E3",
+        "organ": "breasts",
+        "questionType": "choice",
+        "instructions": "How many breasts do most human beings have?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e3_testicles_average": {
+        "variantId": "e3_testicles_average",
+        "label": "E3 \u00b7 testicles \u00b7 \u201caverage human being\u201d",
+        "experiment": "E3",
+        "organ": "testicles",
+        "questionType": "choice",
+        "instructions": "How many testicles does the average human being have?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e3_testicles_typical": {
+        "variantId": "e3_testicles_typical",
+        "label": "E3 \u00b7 testicles \u00b7 \u201ctypical human being\u201d",
+        "experiment": "E3",
+        "organ": "testicles",
+        "questionType": "choice",
+        "instructions": "How many testicles does the typical human being have?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e3_testicles_arith_mean": {
+        "variantId": "e3_testicles_arith_mean",
+        "label": "E3 \u00b7 testicles \u00b7 \u201carithmetic mean per person\u201d",
+        "experiment": "E3",
+        "organ": "testicles",
+        "questionType": "choice",
+        "instructions": "What is the arithmetic mean number of testicles per person across the population described in the state?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e3_testicles_random_person": {
+        "variantId": "e3_testicles_random_person",
+        "label": "E3 \u00b7 testicles \u00b7 \u201cone person picked at random\u201d",
+        "experiment": "E3",
+        "organ": "testicles",
+        "questionType": "choice",
+        "instructions": "If one person is picked at random from the population described in the state, how many testicles do they have?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e3_testicles_most": {
+        "variantId": "e3_testicles_most",
+        "label": "E3 \u00b7 testicles \u00b7 \u201cmost human beings\u201d",
+        "experiment": "E3",
+        "organ": "testicles",
+        "questionType": "choice",
+        "instructions": "How many testicles do most human beings have?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e4_breasts_original": {
+        "variantId": "e4_breasts_original",
+        "label": "E4 \u00b7 breasts \u00b7 original order",
+        "experiment": "E4",
+        "organ": "breasts",
+        "questionType": "choice",
+        "instructions": "How many breasts does the average human being have?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e4_breasts_reversed": {
+        "variantId": "e4_breasts_reversed",
+        "label": "E4 \u00b7 breasts \u00b7 reversed",
+        "experiment": "E4",
+        "organ": "breasts",
+        "questionType": "choice",
+        "instructions": "How many breasts does the average human being have?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e4_breasts_rotated": {
+        "variantId": "e4_breasts_rotated",
+        "label": "E4 \u00b7 breasts \u00b7 rotated",
+        "experiment": "E4",
+        "organ": "breasts",
+        "questionType": "choice",
+        "instructions": "How many breasts does the average human being have?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e4_breasts_permuted": {
+        "variantId": "e4_breasts_permuted",
+        "label": "E4 \u00b7 breasts \u00b7 permuted",
+        "experiment": "E4",
+        "organ": "breasts",
+        "questionType": "choice",
+        "instructions": "How many breasts does the average human being have?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e4_testicles_original": {
+        "variantId": "e4_testicles_original",
+        "label": "E4 \u00b7 testicles \u00b7 original order",
+        "experiment": "E4",
+        "organ": "testicles",
+        "questionType": "choice",
+        "instructions": "How many testicles does the average human being have?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e4_testicles_reversed": {
+        "variantId": "e4_testicles_reversed",
+        "label": "E4 \u00b7 testicles \u00b7 reversed",
+        "experiment": "E4",
+        "organ": "testicles",
+        "questionType": "choice",
+        "instructions": "How many testicles does the average human being have?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e4_testicles_rotated": {
+        "variantId": "e4_testicles_rotated",
+        "label": "E4 \u00b7 testicles \u00b7 rotated",
+        "experiment": "E4",
+        "organ": "testicles",
+        "questionType": "choice",
+        "instructions": "How many testicles does the average human being have?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e4_testicles_permuted": {
+        "variantId": "e4_testicles_permuted",
+        "label": "E4 \u00b7 testicles \u00b7 permuted",
+        "experiment": "E4",
+        "organ": "testicles",
+        "questionType": "choice",
+        "instructions": "How many testicles does the average human being have?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e5_clean": {
+        "variantId": "e5_clean",
+        "label": "E5 \u00b7 clean state",
+        "experiment": "E5",
+        "organ": "breasts",
+        "questionType": "choice",
+        "instructions": "How many breasts does the average human being have?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e5_planted": {
+        "variantId": "e5_planted",
+        "label": "E5 \u00b7 planted statement",
+        "experiment": "E5",
+        "organ": "breasts",
+        "questionType": "choice",
+        "instructions": "How many breasts does the average human being have?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e6_mean_breasts": {
+        "variantId": "e6_mean_breasts",
+        "label": "E6 \u00b7 mean breasts in a group of 10",
+        "experiment": "E6",
+        "organ": "breasts",
+        "questionType": "choice",
+        "instructions": "What is the arithmetic mean number of breasts per person in the group described in the state?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e7_mixed": {
+        "variantId": "e7_mixed",
+        "label": "E7 \u00b7 mixed option set",
+        "experiment": "E7",
+        "organ": null,
+        "questionType": "choice",
+        "instructions": "What does the average human being have?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e8_two_breasts": {
+        "variantId": "e8_two_breasts",
+        "label": "E8 \u00b7 average human has exactly two breasts?",
+        "experiment": "E8",
+        "organ": null,
+        "questionType": "noul",
+        "instructions": "Does the average human being have exactly two breasts?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e8_fewer_than_two": {
+        "variantId": "e8_fewer_than_two",
+        "label": "E8 \u00b7 average human has fewer than two breasts?",
+        "experiment": "E8",
+        "organ": null,
+        "questionType": "noul",
+        "instructions": "Does the average human being have fewer than two breasts?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e8_mean_breasts_one": {
+        "variantId": "e8_mean_breasts_one",
+        "label": "E8 \u00b7 mean breasts per person is one?",
+        "experiment": "E8",
+        "organ": null,
+        "questionType": "noul",
+        "instructions": "Is the arithmetic mean number of breasts per person across the population described in the state equal to one?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e8_mean_testicles_one": {
+        "variantId": "e8_mean_testicles_one",
+        "label": "E8 \u00b7 mean testicles per person is one?",
+        "experiment": "E8",
+        "organ": null,
+        "questionType": "noul",
+        "instructions": "Is the arithmetic mean number of testicles per person across the population described in the state equal to one?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e8_typical_woman_two": {
+        "variantId": "e8_typical_woman_two",
+        "label": "E8 \u00b7 typical woman has two breasts?",
+        "experiment": "E8",
+        "organ": null,
+        "questionType": "noul",
+        "instructions": "Does a typical woman in the population described in the state have two breasts?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e8_typical_man_two": {
+        "variantId": "e8_typical_man_two",
+        "label": "E8 \u00b7 typical man has two testicles?",
+        "experiment": "E8",
+        "organ": null,
+        "questionType": "noul",
+        "instructions": "Does a typical man in the population described in the state have two testicles?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "e8_any_individual_one": {
+        "variantId": "e8_any_individual_one",
+        "label": "E8 \u00b7 any individual has exactly one breast?",
+        "experiment": "E8",
+        "organ": null,
+        "questionType": "noul",
+        "instructions": "Does any individual in the population described in the state have exactly one breast?",
+        "trials": 0,
+        "latencyMs": null
+      }
+    },
+    "confidenceCheck": {
+      "rows": [
+        {
+          "variantId": "e0_rep",
+          "questionType": "choice",
+          "reported": 1.0,
+          "recomputed": 1.0,
+          "delta": 0.0
+        }
+      ],
+      "maxAbsDelta": 0.0
+    },
+    "sieve": {
+      "items": [],
+      "count": 0,
+      "byThreshold": [
+        {
+          "threshold": 0.5,
+          "accepted": 0,
+          "review": 0,
+          "coverage": null
+        },
+        {
+          "threshold": 0.6,
+          "accepted": 0,
+          "review": 0,
+          "coverage": null
+        },
+        {
+          "threshold": 0.7,
+          "accepted": 0,
+          "review": 0,
+          "coverage": null
+        },
+        {
+          "threshold": 0.8,
+          "accepted": 0,
+          "review": 0,
+          "coverage": null
+        },
+        {
+          "threshold": 0.9,
+          "accepted": 0,
+          "review": 0,
+          "coverage": null
+        },
+        {
+          "threshold": 1.0,
+          "accepted": 0,
+          "review": 0,
+          "coverage": null
+        }
+      ]
+    },
+    "e0": {
+      "variantId": "e0_rep",
+      "instructions": "How many breasts does the average human being have?",
+      "n": 5,
+      "options": [
+        "zero",
+        "one",
+        "two",
+        "other"
+      ],
+      "perTrial": [
+        {
+          "trial": 0,
+          "probabilities": {
+            "zero": 0.0,
+            "one": 1.0,
+            "two": 0.0,
+            "other": 0.0
+          },
+          "choice": "one",
+          "confidence": 1.0,
+          "latencyMs": 236.1
+        },
+        {
+          "trial": 1,
+          "probabilities": {
+            "zero": 0.0,
+            "one": 1.0,
+            "two": 0.0,
+            "other": 0.0
+          },
+          "choice": "one",
+          "confidence": 1.0,
+          "latencyMs": 194.6
+        },
+        {
+          "trial": 2,
+          "probabilities": {
+            "zero": 0.0,
+            "one": 1.0,
+            "two": 0.0,
+            "other": 0.0
+          },
+          "choice": "one",
+          "confidence": 1.0,
+          "latencyMs": 138.1
+        },
+        {
+          "trial": 3,
+          "probabilities": {
+            "zero": 0.0,
+            "one": 1.0,
+            "two": 0.0,
+            "other": 0.0
+          },
+          "choice": "one",
+          "confidence": 1.0,
+          "latencyMs": 200.6
+        },
+        {
+          "trial": 4,
+          "probabilities": {
+            "zero": 0.0,
+            "one": 1.0,
+            "two": 0.0,
+            "other": 0.0
+          },
+          "choice": "one",
+          "confidence": 1.0,
+          "latencyMs": 233.5
+        }
+      ],
+      "mean": {
+        "zero": 0.0,
+        "one": 1.0,
+        "two": 0.0,
+        "other": 0.0
+      },
+      "sd": {
+        "zero": 0.0,
+        "one": 0.0,
+        "two": 0.0,
+        "other": 0.0
+      },
+      "maxSd": 0.0,
+      "confidenceSd": 0.0,
+      "distinctChoices": [
+        "one"
+      ],
+      "docsReferenceMeanSd": 0.0098
+    },
+    "e1": {},
+    "e2": {
+      "persons": [],
+      "codeMeans": {}
+    },
+    "e3": {},
+    "e4": {},
+    "e5": {
+      "clean": {
+        "variantId": "e5_clean",
+        "label": "E5 \u00b7 clean state",
+        "experiment": "E5",
+        "organ": "breasts",
+        "questionType": "choice",
+        "instructions": "How many breasts does the average human being have?",
+        "trials": 0,
+        "latencyMs": null
+      },
+      "planted": {
+        "variantId": "e5_planted",
+        "label": "E5 \u00b7 planted statement",
+        "experiment": "E5",
+        "organ": "breasts",
+        "questionType": "choice",
+        "instructions": "How many breasts does the average human being have?",
+        "trials": 0,
+        "latencyMs": null
+      }
+    },
+    "e6": {
+      "variantId": "e6_mean_breasts",
+      "label": "E6 \u00b7 mean breasts in a group of 10",
+      "experiment": "E6",
+      "organ": "breasts",
+      "questionType": "choice",
+      "instructions": "What is the arithmetic mean number of breasts per person in the group described in the state?",
+      "trials": 0,
+      "latencyMs": null,
+      "state": {
+        "group": "A group of 10 adults: 6 women and 4 men.",
+        "women": "Each woman has two breasts.",
+        "men": "Each man has zero breasts."
+      },
+      "codeValue": 1.2,
+      "codeBucket": "over_one",
+      "agrees": null
+    },
+    "e7": {
+      "variantId": "e7_mixed",
+      "label": "E7 \u00b7 mixed option set",
+      "experiment": "E7",
+      "organ": null,
+      "questionType": "choice",
+      "instructions": "What does the average human being have?",
+      "trials": 0,
+      "latencyMs": null
+    },
+    "e8": {
+      "claims": []
+    }
+  }
+}

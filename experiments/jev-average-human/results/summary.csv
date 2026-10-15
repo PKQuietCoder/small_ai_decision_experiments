@@ -1,0 +1,39 @@
+experiment,source,condition,probe,organ,question_type,instructions,calls,answer,confidence,probabilities,mean_latency_ms
+jev-average-human,Jev 1.13.0,e0_rep,E0,breasts,choice,How many breasts does the average human being have?,5,one,1.0,"{""zero"": 0.0, ""one"": 1.0, ""two"": 0.0, ""other"": 0.0}",336.2
+jev-average-human,Jev 1.13.0,e1_breasts_choice,E1,breasts,choice,How many breasts does the average human being have?,1,one,1.0,"{""zero"": 0.0, ""one"": 1.0, ""two"": 0.0, ""other"": 0.0}",131.0
+jev-average-human,Jev 1.13.0,e1_breasts_score,E1,breasts,score,How many breasts does the average human being have?,1,1.0,1.0,"{""zero"": 0.0, ""one"": 1.0, ""two"": 0.0, ""three or more"": 0.0}",149.8
+jev-average-human,Jev 1.13.0,e1_testicles_choice,E1,testicles,choice,How many testicles does the average human being have?,1,one,1.0,"{""zero"": 0.0, ""one"": 1.0, ""two"": 0.0, ""other"": 0.0}",126.3
+jev-average-human,Jev 1.13.0,e1_testicles_score,E1,testicles,score,How many testicles does the average human being have?,1,1.0,0.98,"{""zero"": 0.01, ""one"": 0.98, ""two"": 0.01, ""three or more"": 0.0}",124.8
+jev-average-human,Jev 1.13.0,e2_maria_breasts,E2,breasts,choice,How many breasts does the person described in the state have?,1,two,0.6,"{""zero"": 0.0, ""one"": 0.0, ""two"": 0.7, ""other"": 0.3}",120.3
+jev-average-human,Jev 1.13.0,e2_maria_testicles,E2,testicles,choice,How many testicles does the person described in the state have?,1,zero,1.0,"{""zero"": 1.0, ""one"": 0.0, ""two"": 0.0, ""other"": 0.0}",171.1
+jev-average-human,Jev 1.13.0,e2_tom_breasts,E2,breasts,choice,How many breasts does the person described in the state have?,1,zero,0.87,"{""zero"": 0.9, ""one"": 0.0, ""two"": 0.04, ""other"": 0.06}",143.8
+jev-average-human,Jev 1.13.0,e2_tom_testicles,E2,testicles,choice,How many testicles does the person described in the state have?,1,two,0.59,"{""zero"": 0.0, ""one"": 0.0, ""two"": 0.69, ""other"": 0.31}",177.1
+jev-average-human,Jev 1.13.0,e3_breasts_average,E3,breasts,choice,How many breasts does the average human being have?,1,one,1.0,"{""zero"": 0.0, ""one"": 1.0, ""two"": 0.0, ""other"": 0.0}",175.9
+jev-average-human,Jev 1.13.0,e3_breasts_typical,E3,breasts,choice,How many breasts does the typical human being have?,1,one,0.97,"{""zero"": 0.0, ""one"": 0.98, ""two"": 0.0, ""other"": 0.02}",208.2
+jev-average-human,Jev 1.13.0,e3_breasts_arith_mean,E3,breasts,choice,What is the arithmetic mean number of breasts per person across the population described in the state?,1,one,1.0,"{""zero"": 0.0, ""one"": 1.0, ""two"": 0.0, ""other"": 0.0}",102.0
+jev-average-human,Jev 1.13.0,e3_breasts_random_person,E3,breasts,choice,"If one person is picked at random from the population described in the state, how many breasts do they have?",1,other,0.37,"{""zero"": 0.01, ""one"": 0.46, ""two"": 0.0, ""other"": 0.53}",115.8
+jev-average-human,Jev 1.13.0,e3_breasts_most,E3,breasts,choice,How many breasts do most human beings have?,1,other,0.6,"{""zero"": 0.15, ""one"": 0.04, ""two"": 0.11, ""other"": 0.7}",111.2
+jev-average-human,Jev 1.13.0,e3_testicles_average,E3,testicles,choice,How many testicles does the average human being have?,1,one,1.0,"{""zero"": 0.0, ""one"": 1.0, ""two"": 0.0, ""other"": 0.0}",152.0
+jev-average-human,Jev 1.13.0,e3_testicles_typical,E3,testicles,choice,How many testicles does the typical human being have?,1,one,0.93,"{""zero"": 0.01, ""one"": 0.95, ""two"": 0.0, ""other"": 0.04}",218.6
+jev-average-human,Jev 1.13.0,e3_testicles_arith_mean,E3,testicles,choice,What is the arithmetic mean number of testicles per person across the population described in the state?,1,one,1.0,"{""zero"": 0.0, ""one"": 1.0, ""two"": 0.0, ""other"": 0.0}",127.0
+jev-average-human,Jev 1.13.0,e3_testicles_random_person,E3,testicles,choice,"If one person is picked at random from the population described in the state, how many testicles do they have?",1,one,0.44,"{""zero"": 0.01, ""one"": 0.58, ""two"": 0.0, ""other"": 0.41}",78.5
+jev-average-human,Jev 1.13.0,e3_testicles_most,E3,testicles,choice,How many testicles do most human beings have?,1,other,0.55,"{""zero"": 0.07, ""one"": 0.0, ""two"": 0.27, ""other"": 0.66}",156.9
+jev-average-human,Jev 1.13.0,e4_breasts_original,E4,breasts,choice,How many breasts does the average human being have?,1,one,1.0,"{""zero"": 0.0, ""one"": 1.0, ""two"": 0.0, ""other"": 0.0}",98.8
+jev-average-human,Jev 1.13.0,e4_breasts_reversed,E4,breasts,choice,How many breasts does the average human being have?,1,one,0.99,"{""other"": 0.01, ""two"": 0.0, ""one"": 0.99, ""zero"": 0.0}",150.6
+jev-average-human,Jev 1.13.0,e4_breasts_rotated,E4,breasts,choice,How many breasts does the average human being have?,1,one,1.0,"{""one"": 1.0, ""two"": 0.0, ""other"": 0.0, ""zero"": 0.0}",132.7
+jev-average-human,Jev 1.13.0,e4_breasts_permuted,E4,breasts,choice,How many breasts does the average human being have?,1,one,1.0,"{""two"": 0.0, ""zero"": 0.0, ""other"": 0.0, ""one"": 1.0}",135.5
+jev-average-human,Jev 1.13.0,e4_testicles_original,E4,testicles,choice,How many testicles does the average human being have?,1,one,1.0,"{""zero"": 0.0, ""one"": 1.0, ""two"": 0.0, ""other"": 0.0}",132.9
+jev-average-human,Jev 1.13.0,e4_testicles_reversed,E4,testicles,choice,How many testicles does the average human being have?,1,one,0.99,"{""other"": 0.01, ""two"": 0.0, ""one"": 0.99, ""zero"": 0.0}",174.7
+jev-average-human,Jev 1.13.0,e4_testicles_rotated,E4,testicles,choice,How many testicles does the average human being have?,1,one,1.0,"{""one"": 1.0, ""two"": 0.0, ""other"": 0.0, ""zero"": 0.0}",124.9
+jev-average-human,Jev 1.13.0,e4_testicles_permuted,E4,testicles,choice,How many testicles does the average human being have?,1,one,1.0,"{""two"": 0.0, ""zero"": 0.0, ""other"": 0.0, ""one"": 1.0}",197.1
+jev-average-human,Jev 1.13.0,e5_clean,E5,breasts,choice,How many breasts does the average human being have?,1,one,1.0,"{""zero"": 0.0, ""one"": 1.0, ""two"": 0.0, ""other"": 0.0}",124.8
+jev-average-human,Jev 1.13.0,e5_planted,E5,breasts,choice,How many breasts does the average human being have?,1,one,0.76,"{""zero"": 0.02, ""one"": 0.82, ""two"": 0.03, ""other"": 0.13}",129.0
+jev-average-human,Jev 1.13.0,e6_mean_breasts,E6,breasts,choice,What is the arithmetic mean number of breasts per person in the group described in the state?,1,over_one,0.89,"{""under_one"": 0.01, ""one"": 0.07, ""over_one"": 0.92, ""two"": 0.0}",208.1
+jev-average-human,Jev 1.13.0,e7_mixed,E7,,choice,What does the average human being have?,1,one_breast,0.7,"{""one_testicle"": 0.03, ""one_breast"": 0.76, ""two_breasts"": 0.0, ""two_testicles"": 0.0, ""other"": 0.21}",148.2
+jev-average-human,Jev 1.13.0,e8_two_breasts,E8,,noul,Does the average human being have exactly two breasts?,1,0.09,0.82,{},113.5
+jev-average-human,Jev 1.13.0,e8_fewer_than_two,E8,,noul,Does the average human being have fewer than two breasts?,1,0.97,0.94,{},163.4
+jev-average-human,Jev 1.13.0,e8_mean_breasts_one,E8,,noul,Is the arithmetic mean number of breasts per person across the population described in the state equal to one?,1,0.96,0.92,{},105.7
+jev-average-human,Jev 1.13.0,e8_mean_testicles_one,E8,,noul,Is the arithmetic mean number of testicles per person across the population described in the state equal to one?,1,0.95,0.9,{},196.5
+jev-average-human,Jev 1.13.0,e8_typical_woman_two,E8,,noul,Does a typical woman in the population described in the state have two breasts?,1,0.98,0.96,{},148.6
+jev-average-human,Jev 1.13.0,e8_typical_man_two,E8,,noul,Does a typical man in the population described in the state have two testicles?,1,0.98,0.96,{},142.8
+jev-average-human,Jev 1.13.0,e8_any_individual_one,E8,,noul,Does any individual in the population described in the state have exactly one breast?,1,0.13,0.74,{},145.4

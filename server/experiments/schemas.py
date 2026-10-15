@@ -22,7 +22,9 @@ from typing import Any, Literal
 
 from pydantic import BaseModel, ConfigDict, Field
 
-ExperimentType = Literal["fill_in_blank_decision", "open_response", "agentic_budget"]
+ExperimentType = Literal[
+    "fill_in_blank_decision", "open_response", "agentic_budget", "systemone_probe"
+]
 
 
 class ModelSpec(BaseModel):
@@ -30,7 +32,7 @@ class ModelSpec(BaseModel):
 
     model_config = ConfigDict(extra="allow")
 
-    provider: Literal["anthropic", "openai"]
+    provider: Literal["anthropic", "openai", "typesafe"]
     model: str
     label: str
 
@@ -109,6 +111,10 @@ class ExperimentConfig(BaseModel):
     max_steps: int | None = None
     tools: list[dict[str, Any]] | None = None
     products: list[dict[str, Any]] | None = None
+
+    # systemone_probe: the shared ``state`` sent with every request (a variant may
+    # override it); each variant carries its own ``question`` object.
+    state: Any = None
 
 
 def validate_experiment_config(data: dict[str, Any], *, experiment_id: str | None = None) -> ExperimentConfig:

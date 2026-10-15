@@ -48,6 +48,11 @@ Thumbs.db
 .cache/
 .local/
 
+# Local secrets (see .env.example). Keys live in Replit Secrets or an untracked .env.
+.env
+.env.*
+!.env.example
+
 # Substack paste packs (regenerable export output)
 substack/
 

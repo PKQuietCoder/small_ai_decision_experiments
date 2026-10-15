@@ -18,6 +18,7 @@ import markdown as md
 import yaml
 
 from . import config
+from ..experiments import systemone_analysis
 from ..experiments.schemas import validate_experiment_config
 from ..experiments.stats import (
     chi_square_contingency,
@@ -147,6 +148,12 @@ def build_analysis(
     primary = experiment.get("primary_decision", decision_ids[0] if decision_ids else None)
     baseline = experiment.get("baseline") or {}
     baseline_by_variant = baseline.get("by_variant", {}) if baseline else {}
+
+    # System One probes return probability distributions, not sampled choices,
+    # so the count/chi-square machinery below does not apply (and would drop
+    # every Score/Noul trial as "excluded"). They get their own summary.
+    if experiment.get("type") == "systemone_probe":
+        return _build_probe_analysis(experiment, run)
 
     trials = [t for t in run.get("trials", []) if t.get("ok") and t.get("decision") in decision_ids]
 
@@ -284,29 +291,8 @@ def build_analysis(
         }
 
     return {
-        "experimentId": experiment["id"],
-        "experimentTitle": experiment.get("title", experiment["id"]),
-        "runId": run.get("runId"),
-        "runDate": run.get("finishedAt") or run.get("startedAt"),
-        "prompt": experiment.get("prompt_template", ""),
-        "question": experiment.get("question", ""),
-        "baseline": baseline or None,
-        "decisionOptions": [
-            {"id": d, "label": decision_labels[d]} for d in decision_ids
-        ],
-        "models": models,
-        "variants": [
-            {
-                "id": v["id"],
-                "label": v.get("label", v["id"]),
-                "metaphor": v.get("metaphor", ""),
-            }
-            for v in variants
-        ],
-        "primaryDecision": primary,
-        "primaryDecisionLabel": decision_labels.get(primary, primary),
+        **_analysis_envelope(experiment, run),
         "totalTrials": len(trials),
-        "trialsPerCell": experiment.get("trials_per_cell"),
         "parseFailures": parse_failures,
         "excluded": excluded,
         "byVariant": by_variant,
@@ -314,6 +300,117 @@ def build_analysis(
         "overall": overall,
         "perModel": per_model,
         **extra,
+    }
+
+
+def _analysis_envelope(
+    experiment: Dict[str, Any], run: Dict[str, Any]
+) -> Dict[str, Any]:
+    """The run/experiment header every analysis carries, whatever its type."""
+    decision_options = experiment.get("decision_options", [])
+    decision_ids = [opt["id"] for opt in decision_options]
+    decision_labels = {opt["id"]: opt.get("label", opt["id"]) for opt in decision_options}
+    primary = experiment.get("primary_decision", decision_ids[0] if decision_ids else None)
+    return {
+        "experimentId": experiment["id"],
+        "experimentTitle": experiment.get("title", experiment["id"]),
+        "runId": run.get("runId"),
+        "runDate": run.get("finishedAt") or run.get("startedAt"),
+        "prompt": experiment.get("prompt_template", ""),
+        "question": experiment.get("question", ""),
+        "baseline": experiment.get("baseline") or None,
+        "decisionOptions": [
+            {"id": d, "label": decision_labels[d]} for d in decision_ids
+        ],
+        "models": [m.get("label", m.get("model")) for m in experiment.get("models", [])],
+        "variants": [
+            {
+                "id": v["id"],
+                "label": v.get("label", v["id"]),
+                "metaphor": v.get("metaphor", ""),
+            }
+            for v in experiment.get("variants", [])
+        ],
+        "primaryDecision": primary,
+        "primaryDecisionLabel": decision_labels.get(primary, primary),
+        "trialsPerCell": experiment.get("trials_per_cell"),
+    }
+
+
+def _build_probe_analysis(
+    experiment: Dict[str, Any], run: Dict[str, Any]
+) -> Dict[str, Any]:
+    """Analysis for a ``systemone_probe`` run.
+
+    Keeps the generic shape the API promises: ``byVariant`` rows carry the
+    model's *mean probabilities* as ``proportions`` (shaped like the existing
+    human-baseline rows: no counts, no CI) for every Choice variant whose option
+    set is the experiment's ``decision_options``; Score/Noul variants and
+    Choice variants with other option sets are not in ``byVariant`` and are
+    counted in ``excluded``. There is no sampling, so chi-square is reported as
+    untestable. The substantive readouts live in ``systemone``.
+    """
+    decision_ids = [opt["id"] for opt in experiment.get("decision_options", [])]
+    variants = experiment.get("variants", [])
+    models = [m.get("label", m.get("model")) for m in experiment.get("models", [])]
+    all_trials = run.get("trials", [])
+    ok_trials = [t for t in all_trials if t.get("ok") and t.get("answer")]
+
+    def mean_probabilities(trials: List[Dict[str, Any]]) -> Dict[str, float]:
+        return {
+            d: round(sum(t["answer"]["probabilities"].get(d, 0.0) for t in trials) / len(trials), 4)
+            for d in decision_ids
+        }
+
+    by_variant: List[Dict[str, Any]] = []
+    by_variant_model: List[Dict[str, Any]] = []
+    in_chart = 0
+    for variant in variants:
+        vid = variant["id"]
+        question = variant.get("question") or {}
+        if question.get("type") != "choice":
+            continue
+        if set((question.get("criteria") or {}).keys()) != set(decision_ids):
+            continue
+        vt = [t for t in ok_trials if t.get("variantId") == vid]
+        if not vt:
+            continue
+        in_chart += len(vt)
+        row = {
+            "variantId": vid,
+            "label": variant.get("label", vid),
+            "metaphor": "",
+            "total": None,
+            "counts": {},
+            "proportions": mean_probabilities(vt),
+            "ci": {},
+        }
+        by_variant.append(row)
+        for model_label in models:
+            mt = [t for t in vt if t.get("model") == model_label]
+            if mt:
+                by_variant_model.append(
+                    {
+                        "variantId": vid,
+                        "label": variant.get("label", vid),
+                        "model": model_label,
+                        "total": None,
+                        "counts": {},
+                        "proportions": mean_probabilities(mt),
+                    }
+                )
+
+    untestable = chi_square_contingency([])
+    return {
+        **_analysis_envelope(experiment, run),
+        "totalTrials": len(ok_trials),
+        "parseFailures": sum(1 for t in all_trials if not t.get("ok")),
+        "excluded": len(ok_trials) - in_chart,
+        "byVariant": by_variant,
+        "byVariantModel": by_variant_model,
+        "overall": untestable,
+        "perModel": [{"model": m, "chiSquare": untestable} for m in models],
+        "systemone": systemone_analysis.summarize(experiment, run),
     }
 
 

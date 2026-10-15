@@ -15,7 +15,7 @@ from pathlib import Path
 from typing import Any, Callable, Dict, List, Optional
 
 from ..app import config
-from . import llm_clients, model_catalog
+from . import llm_clients, model_catalog, typesafe_client
 
 # Independent API calls are run concurrently to keep full runs well within a
 # reasonable wall-clock time. Kept modest to avoid provider rate limits.
@@ -145,6 +145,56 @@ def _clamp_tool_enums(
     return clamped
 
 
+def build_probe_requests(
+    experiment: Dict[str, Any],
+    model_id: Optional[str] = None,
+    only: Optional[List[str]] = None,
+) -> List[Dict[str, Any]]:
+    """Build the System One request body for every variant of a ``systemone_probe``.
+
+    A probe variant is one API call: the experiment's shared ``state`` (or the
+    variant's own override), the pinned model id, and a single ``question``
+    keyed by the variant id. Centralised so the engine, ``--dry-run`` and the
+    export package all serialise exactly the same bytes. ``only`` filters by the
+    variant's ``experiment`` tag (e.g. ``["E0"]``). Each entry carries
+    ``variant_id``, ``experiment``, ``trials`` (per-variant repeat count,
+    default ``trials_per_cell``) and ``body``.
+    """
+    models = experiment.get("models", [])
+    resolved_model = model_id or (models[0]["model"] if models else None)
+    default_trials = int(experiment.get("trials_per_cell", 1))
+    shared_state = experiment.get("state")
+    requests: List[Dict[str, Any]] = []
+    for variant in experiment.get("variants", []):
+        tag = variant.get("experiment")
+        if only and tag not in only:
+            continue
+        question = variant.get("question")
+        if not isinstance(question, dict):
+            raise ValueError(f"probe variant {variant['id']!r} has no `question` object")
+        state = variant["state"] if "state" in variant else shared_state
+        requests.append(
+            {
+                "variant_id": variant["id"],
+                "experiment": tag,
+                "trials": int(variant.get("trials", default_trials)),
+                "body": {
+                    "state": state,
+                    "model": resolved_model,
+                    "questions": {variant["id"]: question},
+                },
+            }
+        )
+    return requests
+
+
+def _probe_argmax(answer: Dict[str, Any]) -> Optional[str]:
+    """The reported ``choice`` for a Choice answer; ``None`` for Score/Noul."""
+    if answer.get("type") == "choice":
+        return answer.get("choice")
+    return None
+
+
 def run_experiment(
     experiment: Dict[str, Any],
     progress: Optional[Callable[[str], None]] = None,
@@ -157,7 +207,7 @@ def run_experiment(
         if progress:
             progress(message)
 
-    prompt_template = experiment["prompt_template"]
+    prompt_template = experiment.get("prompt_template", "")
     temperature = float(experiment.get("temperature", 1.0))
     trials_per_cell = int(experiment.get("trials_per_cell", 20))
     valid_ids = [opt["id"] for opt in experiment.get("decision_options", [])]
@@ -195,6 +245,13 @@ def run_experiment(
     )
     max_steps = int(experiment.get("max_steps", 8))
 
+    # System One probes (TypeSafe's Jev): each variant is one typed question
+    # against a JSON state, answered with a probability distribution rather than
+    # text. No prompt templating; the request body is built once per variant and
+    # repeated ``variant.trials`` times (E0-style repeatability checks).
+    is_probe = experiment.get("type") == "systemone_probe"
+    probe_requests: Dict[str, Dict[str, Any]] = {}
+
     started_at = datetime.now(timezone.utc)
     run_id = started_at.strftime("%Y%m%dT%H%M%SZ")
     trials: List[Dict[str, Any]] = []
@@ -209,9 +266,24 @@ def run_experiment(
     cell_index = 0
     for model_cfg in models:
         model_label = model_cfg.get("label", model_cfg["model"])
+        if is_probe:
+            probe_requests = {
+                r["variant_id"]: r
+                for r in build_probe_requests(experiment, model_cfg["model"])
+            }
         for variant in variants:
             cell_index += 1
-            if is_budget:
+            request: Optional[Dict[str, Any]] = None
+            cell_trials = trials_per_cell
+            if is_probe:
+                spec = probe_requests[variant["id"]]
+                request = spec["body"]
+                cell_trials = spec["trials"]
+                prompt = None
+                steps = None
+                tool_responder = None
+                variant_tools = tool_defs
+            elif is_budget:
                 # The scenario is shared (brace-free); a variant may override it
                 # (e.g. the autonomous condition lists the tools without naming a
                 # budget). `steps` resolves to an ordered tool list for forced
@@ -261,7 +333,7 @@ def run_experiment(
             # was not shown. Budget/open variants carry no `options` key and keep
             # the global enum.
             cell_valid_ids = variant.get("options") or valid_ids
-            for trial_no in range(trials_per_cell):
+            for trial_no in range(cell_trials):
                 tasks.append(
                     {
                         "order": order,
@@ -280,6 +352,7 @@ def run_experiment(
                         "tool_responder": tool_responder,
                         "tool_defs": variant_tools,
                         "valid_ids": cell_valid_ids,
+                        "request": request,
                     }
                 )
                 order += 1
@@ -331,6 +404,23 @@ def run_experiment(
                 record["capped"] = transcript.get("capped", False)
                 record["transcript"] = transcript
                 record["ok"] = True
+            elif is_probe:
+                # One typed question, one probability distribution. The full
+                # request and response are kept so the run file is the raw data.
+                result = typesafe_client.probe(task["model_cfg"], task["request"])
+                answer = result["answers"].get(task["variant_id"]) or next(
+                    iter(result["answers"].values())
+                )
+                record["request"] = task["request"]
+                record["response"] = result["response"]
+                record["answer"] = answer
+                record["decision"] = _probe_argmax(answer)
+                record["confidence"] = answer.get("confidence")
+                record["usage"] = result["usage"]
+                record["responseModel"] = result["responseModel"]
+                record["latencyMs"] = result["latencyMs"]
+                record["estimatedUsd"] = result["estimatedUsd"]
+                record["ok"] = True
             else:
                 decision, raw = llm_clients.decide(
                     task["model_cfg"],
@@ -375,6 +465,10 @@ def run_experiment(
         "variants": [v["id"] for v in variants],
         "trials": trials,
     }
+    if is_probe:
+        # Provenance for probes: the shared state and the process-wide spend.
+        run["state"] = experiment.get("state")
+        run["spend"] = typesafe_client.spend_summary()
 
     save_run(run)
     log(f"Saved run {run_id} ({len(trials)} trials).")

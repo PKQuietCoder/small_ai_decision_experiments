@@ -76,10 +76,20 @@ MODEL_CATALOG: Dict[str, Dict[str, Any]] = {
         "max_output": 2000,
         "reasoning_effort": "low",
     },
+    # TypeSafe's Jev is not a chat model: it returns typed probability
+    # distributions (see ``typesafe_client``), so none of the sampling flags
+    # apply. Only ``systemone_probe`` experiments can run on it. Pinned to a
+    # versioned id — the ``jev-latest``/``jev-preview`` aliases move.
+    "jev": {
+        "provider": "typesafe",
+        "model": "jev-1.13.0",
+        "label": "Jev 1.13.0",
+        "input_usd_per_mtok": 0.042,  # output tokens are free
+    },
 }
 
-# Display order for the interactive menu (Anthropic trio, then OpenAI trio).
-ORDER: List[str] = ["opus", "sonnet", "haiku", "gpt-5.5", "gpt-5.4", "gpt-5.4-mini"]
+# Display order for the interactive menu (Anthropic trio, OpenAI trio, TypeSafe).
+ORDER: List[str] = ["opus", "sonnet", "haiku", "gpt-5.5", "gpt-5.4", "gpt-5.4-mini", "jev"]
 
 
 def resolve(key: str) -> Optional[Dict[str, Any]]:

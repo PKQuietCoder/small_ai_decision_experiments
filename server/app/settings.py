@@ -32,6 +32,10 @@ class Settings(BaseSettings):
     # Provider credentials — optional; required only when running experiments.
     openai_api_key: str | None = None
     anthropic_api_key: str | None = None
+    typesafe_api_key: str | None = None
+
+    # Hard spend cap (USD) for a TypeSafe/Jev run; see experiments.typesafe_client.
+    typesafe_budget_usd: float = 0.50
 
     # Web server. PORT is assigned by Replit; BASE_PATH is the client mount point.
     port: int = 8080

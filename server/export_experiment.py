@@ -15,6 +15,10 @@ Handles two shapes:
   * ``agentic_budget`` (e.g. decoy-effect-agentic): a multi-step tool-use trial whose
     decision is the chosen product, with extra per-trial fields (planned budget,
     step sequence, capped flag) and a mean-spend metric.
+  * ``systemone_probe`` (e.g. jev-average-human): one typed question per variant
+    answered with a probability distribution. Methodology ships the exact request
+    bodies; ``trials.csv`` is long-format (one row per outcome); results carry the
+    ``systemone`` summary block as ``summary.json`` + ``summary.csv``.
 
 Usage:
     python -m server.export_experiment <experiment_id>
@@ -89,6 +93,7 @@ def export(experiment_id: str) -> Path:
     decision_options = experiment.get("decision_options", [])
     decision_ids = [o["id"] for o in decision_options]
     is_budget = experiment.get("type") == "agentic_budget"
+    is_probe = experiment.get("type") == "systemone_probe"
     products = experiment.get("products", [])
     price_of = {p["id"]: p.get("price") for p in products}
 
@@ -100,13 +105,22 @@ def export(experiment_id: str) -> Path:
         content_store.config.EXPERIMENTS_DIR / f"{experiment_id}.yaml",
         pkg / "methodology" / f"{experiment_id}.yaml",
     )
+    if is_probe:
+        # A probe's "prompt" is the request body itself; ship the exact bytes sent.
+        model_id = next(iter(by_model.values())).get("trials", [{}])[0].get("request", {}).get("model")
+        for spec in engine.build_probe_requests(experiment, model_id):
+            (pkg / "methodology" / f"request_{spec['variant_id']}.json").write_text(
+                json.dumps(spec["body"], indent=2, ensure_ascii=False), encoding="utf-8"
+            )
     for v in variants:
+        if is_probe:
+            continue
         if is_budget:
             # A condition's scenario is its override (autonomous) or the shared one.
-            rendered = v.get("scenario_template") or experiment["prompt_template"]
+            rendered = v.get("scenario_template") or experiment.get("prompt_template", "")
         else:
             fields = {k: val for k, val in v.items() if isinstance(val, str)}
-            rendered = experiment["prompt_template"].format(**fields)
+            rendered = experiment.get("prompt_template", "").format(**fields)
         (pkg / "methodology" / f"prompt_{v['id']}.txt").write_text(rendered, encoding="utf-8")
     if experiment.get("type") == "open_response":
         rubric = engine._coder_prompt(question, "<<MODEL RESPONSE INSERTED HERE>>")
@@ -144,7 +158,9 @@ def export(experiment_id: str) -> Path:
         name = f"{_slug(label)}__{run['runId']}.json"
         (pkg / "raw" / "runs" / name).write_text(json.dumps(run, indent=2), encoding="utf-8")
         for t in run.get("trials", []):
-            if is_budget:
+            if is_probe:
+                trials_rows.extend(_probe_trial_rows(experiment_id, variant_meta, t))
+            elif is_budget:
                 trials_rows.append(
                     {
                         "experiment": experiment_id,
@@ -178,7 +194,9 @@ def export(experiment_id: str) -> Path:
                         "response": (t.get("response") or t.get("raw") or ""),
                     }
                 )
-    if is_budget:
+    if is_probe:
+        trials_fields = PROBE_TRIAL_FIELDS
+    elif is_budget:
         trials_fields = ["experiment", "model", "provider", "condition", "trial",
                          "chosen_product", "price_usd", "planned_budget", "num_steps",
                          "steps", "capped", "ok", "error"]
@@ -197,7 +215,9 @@ def export(experiment_id: str) -> Path:
             json.dumps(analyses[label], indent=2), encoding="utf-8"
         )
 
-    if is_budget:
+    if is_probe:
+        _write_probe_results(pkg, experiment_id, variants, analyses)
+    elif is_budget:
         _write_budget_results(pkg, experiment_id, variants, decision_ids, price_of,
                               by_model, analyses, baseline)
     else:
@@ -216,7 +236,21 @@ def export(experiment_id: str) -> Path:
         "runs": {label: run["runId"] for label, run in by_model.items()},
         "humanBaseline": baseline,
     }
-    if is_budget:
+    if is_probe:
+        manifest["state"] = experiment.get("state")
+        manifest["probes"] = sorted({v.get("experiment") for v in variants if v.get("experiment")})
+        manifest["callsPerVariant"] = {v["id"]: int(v.get("trials", 1)) for v in variants}
+        manifest["responseModels"] = sorted(
+            {t.get("responseModel") for run in by_model.values() for t in run.get("trials", []) if t.get("responseModel")}
+        )
+        manifest["spend"] = {label: run.get("spend") for label, run in by_model.items()}
+        manifest["note"] = (
+            "TypeSafe's Jev returns a probability distribution per question, so each "
+            "variant is a single call (E0 repeats five times). Probabilities are the "
+            "API's own; `confidence` is recomputed from TypeSafe's published formulas "
+            "as a check (see results/summary.json confidenceCheck)."
+        )
+    elif is_budget:
         manifest["temperature"] = experiment.get("temperature")
         manifest["maxSteps"] = experiment.get("max_steps")
         manifest["decisionKey"] = experiment.get("decision_key")
@@ -246,6 +280,105 @@ def export(experiment_id: str) -> Path:
     print(f"  trials.csv rows: {len(trials_rows)}")
     print(f"  zip: {zip_path} ({zip_path.stat().st_size // 1024} KB)")
     return pkg
+
+
+PROBE_TRIAL_FIELDS = [
+    "experiment", "model", "provider", "condition", "probe", "organ", "question_type",
+    "trial", "outcome", "probability", "choice", "confidence", "score", "noul",
+    "response_model", "input_tokens", "latency_ms", "ok", "error",
+]
+
+
+def _probe_trial_rows(experiment_id: str, variant_meta: Dict[str, Any],
+                      t: Dict[str, Any]) -> List[Dict[str, Any]]:
+    """Long-format rows for one probe trial: one row per option/level/polarity."""
+    vm = variant_meta.get(t.get("variantId"), {})
+    question = vm.get("question") or {}
+    answer = t.get("answer") or {}
+    base = {
+        "experiment": experiment_id,
+        "model": t.get("model"),
+        "provider": t.get("provider"),
+        "condition": t.get("variantId"),
+        "probe": vm.get("experiment", ""),
+        "organ": vm.get("organ", ""),
+        "question_type": question.get("type", ""),
+        "trial": t.get("trial"),
+        "choice": answer.get("choice", ""),
+        "confidence": answer.get("confidence", ""),
+        "score": answer.get("score", ""),
+        "noul": answer.get("noul", ""),
+        "response_model": t.get("responseModel", ""),
+        "input_tokens": (t.get("usage") or {}).get("input_tokens", ""),
+        "latency_ms": t.get("latencyMs", ""),
+        "ok": t.get("ok"),
+        "error": t.get("error", ""),
+    }
+    if not t.get("ok"):
+        return [{**base, "outcome": "", "probability": ""}]
+    qtype = question.get("type")
+    if qtype == "choice":
+        return [
+            {**base, "outcome": opt, "probability": p}
+            for opt, p in (answer.get("probabilities") or {}).items()
+        ]
+    if qtype == "score":
+        legend = answer.get("legend") or {}
+        return [
+            {**base, "outcome": legend.get(idx, idx), "probability": p}
+            for idx, p in (answer.get("probabilities") or {}).items()
+        ]
+    p = float(answer.get("noul", 0.0))
+    return [
+        {**base, "outcome": "true", "probability": p},
+        {**base, "outcome": "false", "probability": round(1 - p, 6)},
+    ]
+
+
+def _write_probe_results(pkg, experiment_id, variants, analyses) -> None:
+    """summary.json (the analysis's ``systemone`` block) + a per-variant summary.csv.
+
+    No significance.csv: a probe has no sampling distribution to test.
+    """
+    blocks = {label: a.get("systemone", {}) for label, a in analyses.items()}
+    summary = next(iter(blocks.values())) if len(blocks) == 1 else blocks
+    (pkg / "results" / "summary.json").write_text(
+        json.dumps(summary, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
+    rows: List[Dict[str, Any]] = []
+    for label, block in blocks.items():
+        for v in variants:
+            s = (block.get("variants") or {}).get(v["id"], {})
+            answer = s.get("choice") if s.get("questionType") == "choice" else (
+                s.get("score") if s.get("questionType") == "score" else s.get("p")
+            )
+            rows.append(
+                {
+                    "experiment": experiment_id,
+                    "source": label,
+                    "condition": v["id"],
+                    "probe": v.get("experiment", ""),
+                    "organ": v.get("organ", ""),
+                    "question_type": s.get("questionType", ""),
+                    "instructions": s.get("instructions", ""),
+                    "calls": s.get("trials", 0),
+                    "answer": answer,
+                    "confidence": s.get("confidence", s.get("confidenceAbs", "")),
+                    "probabilities": json.dumps(
+                        s.get("probabilitiesByLevel") or s.get("probabilities") or {}
+                    ),
+                    "mean_latency_ms": s.get("latencyMs", ""),
+                }
+            )
+    with (pkg / "results" / "summary.csv").open("w", encoding="utf-8", newline="") as fh:
+        w = csv.DictWriter(
+            fh,
+            fieldnames=["experiment", "source", "condition", "probe", "organ", "question_type",
+                        "instructions", "calls", "answer", "confidence", "probabilities",
+                        "mean_latency_ms"],
+        )
+        w.writeheader()
+        w.writerows(rows)
 
 
 def _write_coded_results(pkg, experiment_id, variants, decision_ids,
